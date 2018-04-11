@@ -1,4 +1,4 @@
-government = feudal_monarchy
+government = early_feudal_monarchy
 government_rank = 1
 technology_group = western
 primary_culture = cosmopolitan_french
@@ -143,6 +143,8 @@ capital = 178	# Anjou
 } 	# Also Monarch of Provence 1434.11.12 - 1480.7.10
 	# Also Monarch of Lorraine 1434.11.12 - 1453.2.28
 	# Also Monarch of Neaples  1435.2.2 - 1442.6.2
+
+1440.1.1 = { government = feudal_monarchy }
 
 1454.9.10 = {
 	queen = {

@@ -1,4 +1,4 @@
-government = feudal_monarchy
+government = early_feudal_monarchy
 primary_culture = serbian
 religion = orthodox
 technology_group = eastern
@@ -158,6 +158,8 @@ historical_friend = BOS
 		mil = 1
 	}
 }
+
+1440.1.1 = { government = feudal_monarchy }
 
 1456.12.25 = {
 	monarch = {

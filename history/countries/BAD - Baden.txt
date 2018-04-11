@@ -1,4 +1,4 @@
-government = feudal_monarchy
+government = early_feudal_monarchy
 government_rank = 1
 primary_culture = swabian
 religion = catholic
@@ -125,6 +125,8 @@ capital = 74	# Baden
 		dynasty = "von Zähringen"		
 	}
 }
+
+1440.1.1 = { government = feudal_monarchy }
 		
 1453.10.14 = {
 	monarch = {

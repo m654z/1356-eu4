@@ -1,4 +1,4 @@
-government = feudal_monarchy
+government = early_feudal_monarchy
 government_rank = 1
 technology_group = western
 primary_culture = irish
@@ -70,6 +70,10 @@ capital = 374	# Waterford
 	clear_scripted_personalities = yes
 	add_ruler_personality = bold_fighter_personality
 	add_ruler_personality = naive_personality
+}
+
+1440.1.1 = {
+	government = feudal_monarchy
 }
 
 1458.1.1 = {

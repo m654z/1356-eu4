@@ -1,4 +1,4 @@
-government = feudal_monarchy
+government = early_feudal_monarchy
 government_rank = 1
 primary_culture = burgundian
 religion = catholic
@@ -82,3 +82,5 @@ capital = 193	# Frenche-Comte
 }
 
 # 1405.3.16 - Finally to Burgundy after Marguerites death
+
+1440.1.1 = { government = feudal_monarchy }

@@ -1,4 +1,4 @@
-government = feudal_monarchy
+government = early_feudal_monarchy
 government_rank = 1
 primary_culture = burgundian
 religion = catholic
@@ -154,6 +154,8 @@ capital = 189	# Nancy
 		mil = 2
 	}
 }
+
+1440.1.1 = { government = feudal_monarchy }
 
 1453.2.28 = {
 	monarch = {

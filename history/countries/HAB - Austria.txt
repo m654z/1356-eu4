@@ -1,4 +1,4 @@
-government = feudal_monarchy
+government = early_feudal_monarchy
 government_rank = 1
 primary_culture = austrian
 religion = catholic
@@ -259,6 +259,8 @@ national_focus = ADM
 	clear_scripted_personalities = yes
 	add_ruler_personality = careful_personality
 }
+
+1440.1.1 = { government = feudal_monarchy }
 
 #1450.1.1 = { decision = court_of_wards_and_liveries }
 

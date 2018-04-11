@@ -1,4 +1,4 @@
-government = feudal_monarchy
+government = early_feudal_monarchy
 government_rank = 1
 primary_culture = romagnan
 religion = catholic
@@ -195,6 +195,8 @@ capital = 109	# Mantova
 		mil = 3
 	}
 }
+
+1440.1.1 = { government = feudal_monarchy }
 
 1444.9.23 = {
 	monarch = {

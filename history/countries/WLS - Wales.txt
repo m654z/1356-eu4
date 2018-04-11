@@ -1,4 +1,4 @@
-government = feudal_monarchy
+government = early_feudal_monarchy
 government_rank = 1
 technology_group = western
 primary_culture = welsh
@@ -51,4 +51,8 @@ capital = 242	# Gwynedd
 		dip = 3
 		mil = 4
 	}
+}
+
+1440.1.1 = {
+	government = feudal_monarchy
 }

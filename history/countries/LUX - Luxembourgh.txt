@@ -1,4 +1,4 @@
-government = feudal_monarchy
+government = early_feudal_monarchy
 government_rank = 1
 primary_culture = wallonian
 religion = catholic
@@ -112,5 +112,7 @@ fixed_capital = 94 # Cannot move capital away from this province & no power cost
 		mil = 3
 	}
 }
+
+1440.1.1 = { government = feudal_monarchy }
 
 # 1443, Burgundy attacks Luxembourg and inherits the duchy

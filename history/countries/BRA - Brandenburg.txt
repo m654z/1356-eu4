@@ -1,4 +1,4 @@
-government = feudal_monarchy
+government = early_feudal_monarchy
 government_rank = 1
 elector = yes
 technology_group = western
@@ -211,6 +211,8 @@ capital = 50	# Berlin
 		mil = 2
 	}
 }
+
+1440.1.1 = { government = feudal_monarchy }
 
 1440.9.21 = {
 	monarch = {

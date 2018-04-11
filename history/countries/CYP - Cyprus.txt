@@ -1,4 +1,4 @@
-government = feudal_monarchy
+government = early_feudal_monarchy
 primary_culture = cosmopolitan_french
 add_accepted_culture = greek
 religion = catholic
@@ -228,6 +228,8 @@ fixed_capital = 321 # Cannot move capital away from this province & no power cos
 		mil = 2
 	}
 }
+
+1440.1.1 = { government = feudal_monarchy }
 
 1442.2.3 = {
 	queen = {

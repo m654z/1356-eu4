@@ -1,4 +1,4 @@
-﻿government = feudal_monarchy
+government = early_feudal_monarchy
 government_rank = 1
 technology_group = western
 primary_culture = irish
@@ -51,6 +51,7 @@ capital = 376	# Galway
 }
 
 1440.1.1 = {
+	government = feudal_monarchy
 	heir = {
 		name = "Ulick Fionn"
 		monarch_name = "Ulick Fionn"

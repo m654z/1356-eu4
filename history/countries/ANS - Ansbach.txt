@@ -1,4 +1,4 @@
-government = feudal_monarchy
+government = early_feudal_monarchy
 government_rank = 1
 technology_group = western
 primary_culture = franconian
@@ -153,6 +153,8 @@ fixed_capital = 71 # Cannot move capital away from this province & no power cost
 	add_ruler_personality = inspiring_leader_personality
 }
 # remark = "Also ruler of Brandenburg."
+
+1440.1.1 = { government = feudal_monarchy }
 
 1486.3.11 = {
 	monarch = {

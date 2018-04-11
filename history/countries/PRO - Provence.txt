@@ -1,4 +1,4 @@
-government = feudal_monarchy
+government = early_feudal_monarchy
 government_rank = 1
 primary_culture = occitain
 add_accepted_culture = cosmopolitan_french
@@ -209,6 +209,8 @@ capital = 201 # Aix-en-Provence
 	# Also Monarch of Neaples  1435.2.2 - 1442.6.2
 
 1435.2.2 = { add_accepted_culture = sicilian }
+
+1440.1.1 = { government = feudal_monarchy }
 
 1442.6.2 = { remove_accepted_culture = sicilian }
 

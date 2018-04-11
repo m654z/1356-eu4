@@ -1,4 +1,4 @@
-government = feudal_monarchy
+government = early_feudal_monarchy
 government_rank = 1
 primary_culture = occitain
 religion = catholic
@@ -124,5 +124,7 @@ fixed_capital = 203 # Cannot move capital away from this province & no power cos
 ###########################################
 #  PU with Bourbonnais from 1417.9.22 on  #
 ###########################################
+
+1440.1.1 = { government = feudal_monarchy }
 
 # 1531.9.22 - To French Royal Domain

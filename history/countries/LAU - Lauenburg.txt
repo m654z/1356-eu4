@@ -1,4 +1,4 @@
-government = feudal_monarchy
+government = early_feudal_monarchy
 government_rank = 1
 technology_group = western
 primary_culture = hannoverian
@@ -158,6 +158,8 @@ fixed_capital = 1857 # Cannot move capital away from this province & no power co
 		mil = 1
 	}
 }
+
+1440.1.1 = { government = feudal_monarchy }
 
 1463.7.16 = {
 	monarch = {

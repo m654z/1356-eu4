@@ -1,4 +1,4 @@
-government = feudal_monarchy
+government = early_feudal_monarchy
 government_rank = 1
 primary_culture = hessian
 add_accepted_culture = bavarian
@@ -196,6 +196,8 @@ capital = 77	# Pfalz
 	clear_scripted_personalities = yes
 	add_ruler_personality = bold_fighter_personality
 }
+
+1440.1.1 = { government = feudal_monarchy }
 
 1445.10.18 = {
 	queen = {

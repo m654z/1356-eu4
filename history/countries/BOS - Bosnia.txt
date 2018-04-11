@@ -1,4 +1,4 @@
-government = feudal_monarchy
+government = early_feudal_monarchy
 government_rank = 1
 primary_culture = serbian
 add_accepted_culture = croatian
@@ -263,6 +263,8 @@ historical_friend = SER
 		mil = 2
 	}
 }
+
+1440.1.1 = { government = feudal_monarchy }
 
 1443.6.23 = {
 	monarch = {

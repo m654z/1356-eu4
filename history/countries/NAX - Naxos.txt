@@ -1,4 +1,4 @@
-government = feudal_monarchy
+government = early_feudal_monarchy
 government_rank = 1
 primary_culture = venetian
 add_accepted_culture = greek
@@ -225,6 +225,8 @@ fixed_capital = 164 # Cannot move capital away from this province & no power cos
 	clear_scripted_personalities = yes
 	add_ruler_personality = intricate_web_weaver_personality
 }
+
+1440.1.1 = { government = feudal_monarchy }
 
 1446.1.1 = {
 	heir = {
