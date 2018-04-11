@@ -1,0 +1,119 @@
+country_decisions = {
+
+	mnf_brittany = {
+		major = yes
+		potential = {
+			NOT = { exists = BRI }
+			tag = MNF
+			BLS = {
+				exists = yes
+				ai = yes
+			}
+		}
+		allow = {
+			is_subject = no
+			stability = 1
+			is_at_war = no
+			owns = 170				# Finistére
+			owns = 171				# Morbihan
+			is_core = 170			# Finistére
+			is_core = 171			# Morbihan
+			senior_union_with = BLS
+			NOT = { personal_union = 2 }
+		}
+		effect = {
+			change_tag = BRI
+			inherit = BLS
+			set_capital = 172 # Vendee
+			random_owned_province = {
+				limit = { culture = breton }
+				add_base_tax = 1
+			}
+			add_prestige = 25
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 400
+	}
+
+	blo_brittany = {
+		major = yes
+		potential = {
+			NOT = { exists = BRI }
+			tag = BLS
+			MNF = {
+				exists = yes
+				ai = yes
+			}
+		}
+		allow = {
+			is_subject = no
+			stability = 1
+			is_at_war = no
+			owns = 169				# Armor
+			owns = 172				# Vendeé
+			is_core = 169			# Armor
+			is_core = 172			# Vendeé
+			senior_union_with = MNF
+			NOT = { personal_union = 2 }
+		}
+		effect = {
+			change_tag = BRI
+			inherit = MNF
+			set_capital = 172 # Vendee
+			random_owned_province = {
+				limit = { culture = breton }
+				add_base_tax = 1
+			}
+			add_prestige = 25
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 200
+	}
+	
+	brittany_nation = {
+		major = yes
+		potential = {
+	
+		primary_culture = breton
+		NOT = { exists = BRI }
+		NOT = { tag = FRA }
+			OR = {
+				ai = no
+				AND = {
+					ai = yes
+					num_of_cities = 2
+				}
+			}
+		}
+		allow = {
+			is_at_war = no
+			NOT = { exists = BRI }
+			owns = 169	# Armor
+			owns = 170	# Finistere
+			owns = 171	# Morbihan
+			owns = 172	# Vendee
+			is_core = 169	# Armor
+			is_core = 170	# Finistere
+			is_core = 171	# Morbihan
+			is_core = 172	# Vendee		
+		}
+		effect = {
+			add_prestige = 25
+			change_tag = BRI
+			set_capital = 172 # Vendee
+			random_owned_province = {
+				limit = { culture = breton }
+				add_base_tax = 1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 200
+	}
+	
+}

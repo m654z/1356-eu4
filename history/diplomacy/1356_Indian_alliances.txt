@@ -1,0 +1,76 @@
+vassal = {
+	first = DLH
+	second = JSL
+	start_date = 1356.1.1
+	end_date = 1398.1.1 
+}
+
+vassal = {
+	first = DLH
+	second = BGA
+	start_date = 1356.1.1
+	end_date = 1407.1.1
+}
+
+vassal = {
+	first = DLH
+	second = GUJ
+	start_date = 1391.1.1
+	end_date = 1407.1.1
+}
+
+vassal = {
+	first = DLH
+	second = TRT
+	start_date = 1356.1.1
+	end_date = 1394.1.1
+}
+
+vassal = {
+	first = DLH
+	second = MAW
+	start_date = 1356.1.1
+	end_date = 1388.9.20
+}
+
+vassal = {
+	first = DLH
+	second = SND
+	start_date = 1367.1.1
+	end_date = 1388.9.20
+}
+
+vassal = {
+	first = JNP
+	second = TRT
+	start_date = 1394.1.1
+	end_date = 1486.1.1
+}
+
+vassal = {
+	first = DLH
+	second = TRT
+	start_date = 1499.1.1
+	end_date = 1526.1.1
+}
+
+vassal = {
+	first = MLW
+	second = SIR
+	start_date = 1418.1.1
+	end_date = 1531.1.1
+}
+
+vassal = {
+	first = VIJ
+	second = KRK
+	start_date = 1356.1.1
+	end_date = 1378.1.1
+}
+
+vassal = {
+	first = VIJ
+	second = MYS
+	start_date = 1399.1.1
+	end_date = 1444.1.1
+}

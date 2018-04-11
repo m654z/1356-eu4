@@ -1,0 +1,35 @@
+hussite_council_aspect = {
+	modifier = { 
+		tolerance_heretic = 2
+	}
+	ai_will_do = {
+		factor = 12
+		modifier = {
+			factor = 2
+			NOT = { religious_unity = 0.8 }
+		}
+	}
+}
+
+wagon_forts_aspect = {
+	modifier = { 
+		infantry_power = 0.05
+	}
+	ai_will_do = {
+		factor = 12
+		modifier = {
+			factor = 2
+			is_at_war = yes
+		}
+	}
+}
+
+zizka_legacy_aspect = {
+	modifier = { 
+		leader_land_fire = 1
+		leader_land_manuever = -1
+	}
+	ai_will_do = {
+		factor = 0
+	}
+}

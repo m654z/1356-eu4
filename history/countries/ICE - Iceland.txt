@@ -1,0 +1,8 @@
+government = oligarchic_republic
+primary_culture = norwegian
+religion = catholic
+technology_group = western
+historical_rival = SCO
+historical_friend = NOR
+capital = 370	# Reykjavic
+

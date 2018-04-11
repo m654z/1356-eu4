@@ -1,0 +1,105 @@
+# Order here is the priority for taking them, if trigger is true.
+
+CAS = {
+	NOT = { 
+		exists = SPA 
+		is_year = 1700
+	}
+}
+
+SPA = {
+	NOT = { 
+		exists = CAS
+		is_year = 1700
+	}
+}
+
+TUR = {
+	NOT = { 
+		is_year = 1700
+	}
+}
+
+RUS = {
+	always = yes
+}
+
+MOS = {
+	NOT = { 
+		exists = RUS
+	}
+}
+
+GBR = {
+	always = yes
+}
+
+ENG = {
+	NOT = { 
+		exists = GBR
+	}
+}
+
+FRA = {
+	is_year = 1428
+}
+
+HAB = {
+	always = yes
+}
+
+PRU = {
+	is_year = 1700
+}
+
+NED = {
+	always = yes
+}
+
+POR = {
+	NOT = { 
+		is_year = 1700
+	}
+}
+
+SWE = {
+	NOT = { 
+		is_year = 1700
+	}
+}
+
+PLC = {
+	NOT = { 
+		is_year = 1700
+	}
+}
+
+BUR = {
+	NOT = {
+		is_year = 1450
+	}
+}
+
+DAN = {
+	NOT = {
+		is_year = 1450
+	}
+}
+
+ARA = {
+	NOT = {
+		is_year = 1500
+	}
+}
+
+LIT = {
+	NOT = {
+		is_year = 1420
+	}
+}
+
+NOR = {
+	NOT = {
+		is_year = 1387
+	}
+}

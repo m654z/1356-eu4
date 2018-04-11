@@ -1,0 +1,16 @@
+government = despotic_monarchy
+government_rank = 1
+primary_culture = bornean
+technology_group = chinese
+religion = hinduism
+capital = 640
+
+1341.1.1 = {
+	monarch = {
+		name = "Sri Gitarja" # fictional
+		dynasty = "Seduwaragama"
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+}

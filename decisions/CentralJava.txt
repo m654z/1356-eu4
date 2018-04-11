@@ -1,0 +1,110 @@
+country_decisions = {
+	kendal_conquest = {
+		potential = {
+			primary_culture = javanese
+			2689 = { is_empty = yes }
+			OR = {
+				owns = 2688
+				owns = 625
+				owns = 629
+				owns = 2690
+				owns = 626
+			}
+		}
+		allow = {
+			is_subject = no
+			is_at_war = no
+			manpower = 8
+		}
+		effect = {
+			random_list = {
+				5 = {
+					2689 = {
+						add_core = ROOT
+						change_controller = ROOT
+						cede_province = ROOT
+						change_native_size = -50
+					}
+				}
+				15 = {
+					add_base_manpower = -2
+					2689 = {
+						change_native_size = -50
+						add_core = ROOT
+						change_controller = ROOT
+						cede_province = ROOT
+					}
+				}
+				25 = {
+					add_base_manpower = -5
+					2689 = {
+						change_native_size = -25
+					}
+				}
+				55 = {
+					add_base_manpower = -8
+					2689 = {
+						change_native_size = -5
+					}
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	karta_conquest = {
+		potential = {
+			primary_culture = javanese
+			626 = { is_empty = yes }
+			OR = {
+				owns = 625
+				owns = 2690
+				owns = 2689
+			}
+		}
+		allow = {
+			is_subject = no
+			is_at_war = no
+			manpower = 8
+		}
+		effect = {
+			random_list = {
+				5 = {
+					626 = {
+						add_core = ROOT
+						change_controller = ROOT
+						cede_province = ROOT
+						change_native_size = -50
+					}
+				}
+				15 = {
+					add_base_manpower = -2
+					626 = {
+						change_native_size = -50
+						add_core = ROOT
+						change_controller = ROOT
+						cede_province = ROOT
+					}
+				}
+				25 = {
+					add_base_manpower = -5
+					626 = {
+						change_native_size = -25
+					}
+				}
+				55 = {
+					add_base_manpower = -8
+					626 = {
+						change_native_size = -5
+					}
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+}

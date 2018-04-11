@@ -1,0 +1,108 @@
+#Scandinavia
+ORK = "countries/Orkney.txt"
+SKN = "countries/Skane.txt"
+
+#Balkans
+DOB = "countries/Dobruja.txt"
+VID = "countries/Vidin.txt"
+TES = "countries/Thessaly.txt"
+MAC = "countries/Macedonia.txt"
+
+#British Isles 
+YOK = "countries/York.txt"
+LNC = "countries/Lancaster.txt"
+
+#Colonies
+
+
+#Eastern Europe
+
+#France 
+PBG = "countries/Palatinate of Burgundy.txt"
+ANJ = "countries/Anjou.txt"
+MNF = "countries/Monfortreval.txt"
+BLS = "countries/Blois.txt"
+FOZ = "countries/Forez.txt"
+POU = "countries/Poitou.txt"
+	
+#HRE
+GOR = "countries/Gorizia.txt"
+BRG = "countries/Berg.txt"
+OST = "countries/Osterland.txt"
+FRB = "countries/Freiburg.txt"
+THG = "countries/Thurgau.txt"
+WLI = "countries/Wallis.txt"
+RAE = "countries/Raetia.txt"
+	
+#Spain
+CTR = "countries/Trastamara.txt"
+MJO = "countries/Majorca.txt"
+
+
+#Italy
+VRN = "countries/Verona.txt"
+
+
+#Low Countries
+ARS = "countries/Artois.txt"
+RET = "countries/Rethel.txt"
+LOO = "countries/Loon.txt"
+
+#Russia 
+GLY = "countries/Galich.txt"
+MRM = "countries/Murom.txt"
+
+#Arabia	
+JLR = "countries/Jalayirid.txt"
+		
+#Asia Minor		
+CIC = "countries/Cilicia.txt"
+CNI = "countries/Canik.txt"
+HMD = "countries/Hamid.txt"
+KRS = "countries/Karasid.txt"
+TEK = "countries/Teke.txt"
+
+#Levant
+ATO = "countries/Antioch.txt"
+	
+#Maghreb
+
+
+#Central Asia
+WHI = "countries/White Horde.txt"
+
+#Persia	
+CHB = "countries/Chobanids.txt"
+KHC = "countries/Khachen.txt"
+
+#Americas
+SCN = "countries/Sican.txt"
+AZC = "countries/Azcapotzalco.txt"
+TPY = "countries/Tepeyac.txt"
+
+#Africa
+
+
+#Far East
+SRI = "countries/Srivijaya.txt"
+SDN = "countries/Sukadana.txt"
+LAM = "countries/Lampung.txt"
+MGM = "countries/MongMao.txt"
+MHA = "countries/Minahasa.txt"
+TOL = "countries/Tolaki.txt"
+SED = "countries/Sedu.txt"
+SAM = "countries/Sampit.txt"
+PIN = "countries/Pinya.txt"
+SAG = "countries/Sagaing.txt"
+KAL = "countries/Kale.txt"
+KEN = "countries/Kengtung.txt"
+HKA = "countries/Hkamti Long.txt"
+
+#Japan
+SCJ = "countries/SouthCourt.txt"
+
+#India
+MND = "countries/Mandla.txt"
+DEO = "countries/Deogarh.txt"
+SIR = "countries/Sirpur.txt"
+

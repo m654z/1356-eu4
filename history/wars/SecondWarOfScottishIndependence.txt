@@ -1,0 +1,134 @@
+﻿name = "War for the Scottish Throne"
+#casus_belli = cb_vassalize_mission
+war_goal = {
+	type = take_capital_vassalize
+	casus_belli = cb_vassalize_mission
+	tag = SCO
+}
+
+1332.3.1 = {
+	add_attacker = ENG
+	add_attacker = WLS
+	add_attacker = YOK
+	add_attacker = LNC
+	add_attacker = NOL
+	add_defender = SCO
+}
+
+1332.8.11 = {
+	battle = {
+		name = "Dupplin Moor"
+		location = 250 # Fife
+		attacker = {
+			infantry = 3000
+			losses = 5	# percent
+			country = ENG
+		}
+		defender = {
+			infantry = 15000
+			losses = 85	# percent
+			country = SCO
+		}
+		result = yes
+	}
+}
+
+1333.3.25 = {
+	battle = {
+		name = "Dornock"
+		location = 249 # Ayrshire
+		attacker = {
+			infantry = 800
+			losses = 2	# percent
+			country = ENG
+		}
+		defender = {
+			infantry = 100
+			losses = 50	# percent
+			country = SCO
+		}
+		result = yes
+	}
+}
+
+1333.3.25 = {
+	battle = {
+		name = "Dornock"
+		location = 249 # Ayrshire
+		attacker = {
+			infantry = 800
+			losses = 2	# percent
+			country = ENG
+		}
+		defender = {
+			infantry = 100
+			losses = 50	# percent
+			country = SCO
+		}
+		result = yes
+	}
+}
+
+1333.7.19 = {
+	battle = {
+		name = "Halidon Hill"
+		location = 246 # Northumberland
+		attacker = {
+			commander = "Edward III"
+			infantry = 10000
+			losses = 15	# percent
+			country = ENG
+		}
+		defender = {
+			infantry = 14000
+			losses = 85	# percent
+			country = SCO
+		}
+		result = yes
+	}
+}
+
+1335.7.30 = {
+	battle = {
+		name = "Boroughmuir"
+		location = 248 # Lothian
+		attacker = {
+			infantry = 500
+			losses = 50	# percent
+			country = ENG
+		}
+		defender = {
+			infantry = 300
+			losses = 50	# percent
+			country = SCO
+		}
+		result = no
+	}
+}
+
+1335.11.30 = {
+	battle = {
+		name = "Culblean"
+		location = 251 # Aberdeen
+		attacker = {
+			infantry = 3000
+			losses = 50	# percent
+			country = ENG
+		}
+		defender = {
+			infantry = 1100
+			losses = 50	# percent
+			country = SCO
+		}
+		result = no
+	}
+}
+
+1343.1.19 = { # Scotland guarantees independence, truce
+	rem_attacker = ENG
+	rem_attacker = WLS
+	rem_attacker = YOK
+	rem_attacker = LNC
+	rem_attacker = NOL
+	rem_defender = SCO
+}

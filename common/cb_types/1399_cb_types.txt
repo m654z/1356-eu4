@@ -1,0 +1,77 @@
+cb_hussite_conformance = {
+	
+		prerequisites = {
+			is_neighbor_of = FROM
+			religion = catholic
+			NOT = { religion = FROM }
+			FROM = { religion = hussite }
+		}
+	
+	war_goal = hussite_capital_conformance
+	
+}
+
+cb_romuva_conformance = {
+	
+		prerequisites = {
+			is_neighbor_of = FROM
+			religion = catholic
+			NOT = { religion = FROM }
+			FROM = { religion = baltic_pagan_reformed }
+		}
+	
+	war_goal = romuva_capital_conformance
+	
+}
+
+cb_chinese_civil_war = {
+
+		prerequisites = {
+			is_neighbor_of = FROM
+			OR = {
+				primary_culture = cantonese
+				primary_culture = chihan				
+				primary_culture = jin
+				primary_culture = wu
+				primary_culture = chimin
+				primary_culture = hakka
+				primary_culture = gan
+				primary_culture = xiang
+				primary_culture = sichuanese
+			}
+			FROM = { 
+				OR = {
+					primary_culture = cantonese
+					primary_culture = chihan
+					primary_culture = jin
+					primary_culture = wu
+					primary_culture = chimin
+					primary_culture = hakka
+					primary_culture = gan
+					primary_culture = xiang
+					primary_culture = sichuanese
+				}
+			}
+		}
+	
+	war_goal = goal_chinese_civil_war
+	
+}
+
+cb_medieval_crusade = {
+
+	prerequisites = {
+
+		OR = {
+			is_papal_controller = yes
+			AND = { 
+				tag = PAP
+				NOT = { is_religion_enabled = protestant }
+			}
+		}
+		crusade_target = { tag = FROM }
+		
+	}
+	
+	war_goal = superiority_crusade
+}

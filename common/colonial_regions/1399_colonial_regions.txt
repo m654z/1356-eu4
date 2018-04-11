@@ -1,0 +1,97 @@
+colonial_south_africa = {
+	color = { 252 181 20 }
+
+
+	provinces = {
+	833 1177 1179 1180 1181 1175 1176 1178 2856 2880 2864 789
+	}
+	
+
+	names = {
+		trigger = {
+				primary_culture = dutch
+		}
+		name = "Kaapkolonie"
+	}
+	
+	names = {
+		trigger = {
+				primary_culture = english
+		}
+		name = "Cape Colony"
+	}
+	
+	names = {
+		trigger = {
+				OR = {
+					tag = SPA
+					tag = CAS
+				}
+		}
+		name = "Colonia del Cabo"
+	}	
+	
+	names = {
+		trigger = {
+				OR = {
+					tag = POR
+				}
+		}
+		name = "Colônia da Caba"
+	}		
+	
+	
+	# Generic
+	names = {
+		name = "[Root.GetAdjectiveCap] Cape"
+	}
+}
+
+colonial_philippines = {
+	color = { 255 255 20 }
+
+
+	provinces = {
+	657 658 2698 2697 656 2699 655 2700 654 653 2702 2701 652 651
+	}
+	
+
+	names = {
+		trigger = {
+				primary_culture = dutch
+		}
+		name = "Filipijnen"
+	}
+	
+	names = {
+		trigger = {
+				primary_culture = english
+		}
+		name = "Phillippines"
+	}
+	
+	names = {
+		trigger = {
+				OR = {
+					tag = SPA
+					tag = CAS
+				}
+		}
+		name = "Filipinas"
+	}	
+	
+	names = {
+		trigger = {
+				OR = {
+					tag = POR
+				}
+		}
+		name = "San Lázaro"
+	}		
+	
+	
+	# Generic
+	names = {
+		name = "[Root.GetAdjectiveCap] Phillippines"
+	}
+}

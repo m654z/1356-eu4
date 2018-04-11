@@ -1,0 +1,15 @@
+government = despotic_monarchy
+technology_group = chinese
+religion = animism
+primary_culture = sulawesi
+capital = 644
+
+1356.1.1 = {
+	monarch = {
+		name = "Tlin"
+		dynasty = "Minahasa"
+		adm = 1
+		dip = 2
+		mil = 2
+	}
+}

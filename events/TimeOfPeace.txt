@@ -1,0 +1,76 @@
+namespace = peace
+
+country_event = {
+	id = peace.1
+	title = peace.1.t
+	desc = peace.1.d
+	picture = ACCUSATION_eventPicture
+	fire_only_once = yes
+
+	trigger = {
+		tag = LIT
+		ai = yes
+		OR = {
+			is_lesser_in_union = yes
+			POL = { exists = no }
+			POL = { is_subject = yes }
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 48
+	}
+
+	option = {
+		name = peace.1.a
+		clr_country_flag = time_of_peace
+	}
+}
+
+#country_event = {
+#	id = peace.2
+#	title = peace.2.t
+#	desc = peace.2.d
+#	picture = HORDE_ON_HORSEBACK_eventPicture
+#	fire_only_once = yes
+#
+#	trigger = {
+#		tag = GOL
+#		is_year = 1359
+#	}
+#
+#	mean_time_to_happen = {
+#		months = 48
+#	}
+#
+#	option = {
+#		name = peace.2.a
+#		kill_ruler = yes
+#		clr_country_flag = time_of_peace
+#	}
+#}
+
+#country_event = {
+#	id = peace.3
+#	title = peace.3.t
+#	desc = peace.3.d
+#	picture = HORDE_ON_HORSEBACK_eventPicture
+#	fire_only_once = yes
+#
+#	trigger = {
+#		OR = {
+#			tag = NOG
+#			tag = SHY
+#		}
+#		GOL = { NOT = { has_country_flag = time_of_peace } }
+#	}
+#
+#	mean_time_to_happen = {
+#		days = 1
+#	}
+#
+#	option = {
+#		name = peace.3.a
+#		clr_country_flag = time_of_peace
+#	}
+#}

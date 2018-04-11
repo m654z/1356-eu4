@@ -1,0 +1,39 @@
+namespace = oir
+
+country_event = {
+	id = oir.1
+	title = oir.1.t
+	desc = oir.1.d
+	picture = HORDE_ON_HORSEBACK_eventPicture
+	fire_only_once = yes
+
+	trigger = {
+		tag = YUA
+		NOT = { defensive_war_with = CHG }
+		OIR = { exists = no }
+		MNG = { num_of_cities = 8 }
+		ai = yes
+	}
+
+	mean_time_to_happen = {
+		months = 12
+	}
+
+	option = {
+		name = oir.1.a
+		every_owned_province = {
+			limit = {
+				is_core = OIR
+			}
+			cede_province = OIR
+			change_controller = OIR
+			remove_core = KHA
+			disband_rebels = nationalist_rebels
+			disband_rebels = patriot_rebels
+		}
+		OIR = {
+			disband_rebels = nationalist_rebels
+			disband_rebels = patriot_rebels
+		}
+	}
+}

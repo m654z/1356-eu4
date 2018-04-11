@@ -1,0 +1,65 @@
+government = feudal_monarchy
+government_rank = 1
+technology_group = eastern
+primary_culture = greek
+religion = orthodox
+historical_rival = SER
+capital = 3001 # Skopje
+
+1355.12.20 = {
+	monarch = {
+		name = "Vukašin"
+		dynasty = "Mrnjavcevic"
+		birth_date = 1320.1.1
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+	queen = {
+		country_of_origin = WAL
+		name = "Jelena"
+		dynasty = "Basarab"
+		birth_date = 1325.1.1
+		death_date = 1388.1.1
+		female = yes
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+	heir = {
+		name = "Marko"
+		monarch_name = "Marko"
+		dynasty = "Mrnjavcevic"
+		birth_date = 1335.1.1
+		death_date = 1395.5.17
+		claim = 100
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1365.1.1  = { government_rank = 2 }
+
+1371.9.27 = {
+	government_rank = 1
+	monarch = {
+		name = "Marko"
+		dynasty = "Mrnjavcevic"
+		birth_date = 1335.1.1
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+	queen = {
+		country_of_origin = MAC
+		name = "Jelena"
+		dynasty = "Hlapenovic"
+		birth_date = 1356.1.1
+		death_date = 1400.1.1
+		female = yes
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}

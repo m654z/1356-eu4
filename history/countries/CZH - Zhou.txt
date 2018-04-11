@@ -1,0 +1,40 @@
+government = despotic_monarchy
+technology_group = chinese
+religion = confucianism
+primary_culture = cantonese
+historical_rival = MNG
+capital = 662	# Yunnan
+
+1368.9.14 = { 
+	religion = mahayana
+	monarch = {
+		name = "Basalawarmi"
+		dynasty = "Liang"
+		adm = 3
+		dip = 4
+		mil = 2
+	}
+}
+
+1382.1.6 = { religion = confucianism }
+
+1662.1.1 = { 
+	government_rank = 1
+	monarch = {
+		name = "Sangui"
+		dynasty = "Wu"
+		adm = 3
+		dip = 3
+		mil = 4
+	}
+}
+
+1678.8.1 = {
+	monarch = {
+		name = "Shifan"
+		dynasty = "Wu"
+		adm = 1
+		dip = 1
+		mil = 1
+	}
+}

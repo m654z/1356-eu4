@@ -1,0 +1,70 @@
+union = {
+	first = ENG
+	second = WLS
+	start_date = 1283.1.1
+	end_date = 1404.1.1
+}
+
+union = {
+	first = ENG
+	second = GUY
+	start_date = 1300.1.1
+	end_date = 1360.5.8
+}
+
+union = {
+	first = LNC
+	second = GUY
+	start_date = 1390.1.1
+	end_date = 1399.2.3
+}
+
+
+vassal = {
+	first = SCO
+	second = KOI
+	start_date = 1266.1.1
+	end_date = 1399.1.1
+}
+
+vassal = {
+	first = ENG
+	second = NOL
+	start_date = 1300.1.1
+	end_date = 1403.7.21
+}
+
+vassal = {
+	first = ENG
+	second = YOK
+	start_date = 1300.1.1
+	end_date = 1415.10.25
+}
+
+vassal = {
+	first = ENG
+	second = LNC
+	start_date = 1300.1.1
+	end_date = 1399.2.3
+}
+
+vassal = {
+	first = ENG
+	second = KID
+	start_date = 1356.1.1
+	end_date = 1477.2.3
+}
+
+vassal = {
+	first = GUY
+	second = AMG
+	start_date = 1356.10.1
+	end_date = 1369.5.1.
+}
+
+alliance = {
+	first = ENG
+	second = NAV
+	start_date = 1349.8.1
+	end_date = 1357.9.23
+}

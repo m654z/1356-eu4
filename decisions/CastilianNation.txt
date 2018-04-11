@@ -1,0 +1,88 @@
+country_decisions = {
+
+	castilian_nation = {
+		major = yes
+		potential = {
+			normal_or_historical_nations = yes
+			NOT = { has_country_flag = formed_castile_flag }
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
+			TAG = CTR
+		}
+		allow = {
+			NOT = { exists = CAS }
+			is_free_or_tributary_trigger = yes
+			is_nomad = no
+			is_at_war = no
+			owns_core_province = 215	# Castilla La Vieja
+			owns_core_province = 216	# Salamanca
+			owns_core_province = 224	# Andalucia
+			owns_core_province = 219	# Toledo
+		}
+		effect = {
+			change_tag = CAS
+			every_owned_province = {
+				remove_core = CTR
+			}
+			if = {
+				limit = {
+					is_part_of_hre = yes
+					is_elector = no
+					is_emperor = no
+				}
+				every_owned_province = {
+					limit = {
+						is_part_of_hre = yes
+					}
+					set_in_empire = no
+				}
+			}
+			if = {
+				limit = { NOT = { government_rank = 2 } }
+				set_government_rank = 2
+			}
+			if = {
+				limit = {
+					has_custom_ideas = no
+					OR = {
+						ai = no
+						AND = {
+							ai = yes
+							has_idea_group = default_ideas
+						}
+					}
+				}
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+			custom_tooltip = castilian_unification_effect.tooltip
+			hidden_effect = {
+				iberia_region = {
+					limit = {
+						NOT = { area = macaronesia_area }
+						NOT = { area = alentejo_area }
+						NOT = { area = beieras_area }
+						NOT = { owned_by = POR }
+						NOT = { owned_by = ARA }
+						NOT = { owned_by = GRA }
+					}
+					add_permanent_claim = CAS
+				}
+			}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			set_country_flag = formed_castile_flag
+			add_prestige = 25
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 400
+	}
+
+}
+
+}

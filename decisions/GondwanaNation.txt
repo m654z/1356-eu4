@@ -1,0 +1,32 @@
+country_decisions = {
+
+	gondwana_nation = {
+		major = yes
+		potential = {
+			NOT = { exists = GDW }
+			is_colonial_nation = no
+			OR = {
+				is_former_colonial_nation = no
+				AND = {
+					is_former_colonial_nation = yes
+					ai = no
+				}
+			}
+			primary_culture = gondi
+		}
+		allow = {
+			is_subject = no
+			is_at_war = no			
+			owns_core_province = 551
+			owns_core_province = 2092
+			owns_core_province = 2082		
+		}
+		effect = {
+			add_prestige = 5
+			change_tag = GDW
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

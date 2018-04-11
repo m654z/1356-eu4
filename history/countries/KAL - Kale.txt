@@ -1,0 +1,15 @@
+government = despotic_monarchy
+technology_group = chinese
+religion = buddhism
+primary_culture = shan
+capital = 580
+
+1335.1.1 = {
+	monarch = {
+		name = "Sao Kwang"
+		dynasty = "Kale"
+		ADM = 4
+		DIP = 3
+		MIL = 3
+	}
+}

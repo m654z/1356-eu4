@@ -1,0 +1,17 @@
+government = despotic_monarchy
+technology_group = chinese
+religion = confucianism
+primary_culture = wu
+historical_rival = MNG
+capital = 684	#Hangzhou
+
+1354.1.1 = {
+	monarch = {
+		name = "Shicheng"
+		dynasty = "Zhang"
+		birth_date = 1321.1.1
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}

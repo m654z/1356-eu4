@@ -1,0 +1,131 @@
+#theoretically ends the majapahit empire
+
+namespace = maj
+
+country_event = {
+	id = maj.1
+	title = maj.1.t
+	desc = maj.1.d
+	picture = COUNTRY_COLLAPSE_eventPicture
+	fire_only_once = yes
+
+	trigger = {
+	
+		tag = MAJ
+	
+		OR = {
+			has_heir = no
+			MTR = { exists = yes }
+			DMK = { exists = yes }
+			stability = -3
+			NOT = { legitimacy = 30 }
+			prestige = -25	
+			is_year = 1406
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 60
+		modifier = {
+			factor = 0.05
+			stability = 3
+		}
+			modifier = {
+			factor = 0.05
+			prestige = 75
+		}
+		modifier = {
+			factor = 0.05
+			legitimacy = 95
+		}
+	}
+
+	option = {
+		name = maj.1.a
+		free_vassal = SDN
+		free_vassal = KUT
+		free_vassal = ATJ
+		free_vassal = MLC
+		free_vassal = MKS
+		free_vassal = SUL
+		free_vassal = LAM
+		free_vassal = SRI
+		free_vassal = PAT
+		free_vassal = TOL
+		free_vassal = TER
+		free_vassal = TID
+		free_vassal = MHA
+		free_vassal = LIG
+		free_vassal = KED
+		free_vassal = BTN
+		free_vassal = LUW
+		free_vassal = SAK
+		free_vassal = PSA
+		free_vassal = PGR
+		free_vassal = PLB
+		free_vassal = SED
+		free_vassal = SAM
+		free_vassal = BNJ
+		add_prestige = -25
+		add_legitimacy = -25
+		add_stability = -3
+	}
+}
+		
+country_event = {
+	id = maj.2
+	title = maj.2.t
+	desc = maj.2.d
+	picture = CONQUEST_eventPicture
+	fire_only_once = yes
+
+	trigger = {
+		tag = MAJ
+		2689 = { 
+			is_empty = yes
+			native_size = 0
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 12
+	}
+
+	option = {
+		name = maj.1.a
+		2689 = {
+			cede_province = MAJ
+			add_core = MAJ
+			change_controller = MAJ
+		}
+	}
+}
+	
+country_event = {
+	id = maj.3
+	title = maj.3.t
+	desc = maj.3.d
+	picture = CONQUEST_eventPicture
+	fire_only_once = yes
+
+	trigger = {
+		tag = MAJ
+		626 = { 
+			is_empty = yes
+			native_size = 0
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 12
+	}
+
+	option = {
+		name = maj.3.a
+		626 = {
+			cede_province = MAJ
+			add_core = MAJ
+			change_controller = MAJ
+		}
+	}
+}

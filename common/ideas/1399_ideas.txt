@@ -1,0 +1,281 @@
+gen_anatolian_beyliks_ideas = {
+	start = {
+		discipline = 0.05
+		core_creation = -0.20
+	}
+	
+	bonus = {
+		army_tradition = 1
+	}
+	
+	trigger = {
+		OR = {
+			tag = CNI
+			tag = KRS
+			tag = HMD
+			tag = TEK
+		}
+	}
+	free = yes
+	
+	travelling_ozan= {
+		global_unrest = -1
+	}
+	seljuq_marches = {
+		global_manpower_modifier = 0.10
+	}
+	akinci_cavalry = {
+		cavalry_power = 0.15
+	}
+	ghazi = {
+		#uses ottoman ideas
+	}
+	caravanserais = {
+		trade_efficiency = 0.1
+	}
+	anatolian_architecture = {
+		build_cost = -0.10
+	}
+	legacy_seljuqs_empire = {
+		prestige = 1
+	}
+}
+
+gen_CYP_ideas = {
+	start = {
+		naval_forcelimit_modifier = 0.2
+		galley_cost = -0.2
+	}
+	bonus = {
+		navy_tradition_decay = -0.01
+	}
+	trigger = {
+		OR = {
+			tag = CIC
+			tag = ANT
+		}
+	}
+	free = yes
+
+	king_of_jerusalem = {
+		legitimacy = 0.5
+		fabricate_claims_cost = -0.25
+	}
+	frankish_crusaders = {
+		army_tradition = 1.0
+	}
+	commandaria_wine = {
+		production_efficiency = 0.1
+	}
+	lusignan_diplomacy = {
+		diplomatic_reputation = 1
+	}
+	cypriot_fortifications = {
+		defensiveness = 0.25
+	}
+	repel_the_corsairs = {
+		galley_power = 0.2
+	}
+	raid_turkish_commerce = {
+		embargo_efficiency = 0.1
+		privateer_efficiency = 0.15
+	}
+}
+
+gen_BUL_ideas = {
+	start = {	
+		merchants = 1
+		core_creation = -0.1		
+	}
+	bonus = {
+		infantry_power = 0.15
+	}
+	trigger = {
+		OR = {
+			tag = DOB
+			tag = VID
+		}
+	}
+	free = yes
+	
+	bul_idea_1 = {
+		stability_cost_modifier = -0.1
+	}
+	bul_idea_2 = {
+		global_heretic_missionary_strength = 0.02		
+	}
+	bul_idea_3 = {
+ 		global_unrest = -1
+	}
+	bul_idea_4 = {
+		infantry_cost = -0.1
+	}
+	bul_idea_5 = {
+		prestige = 1
+	}
+	bul_idea_6 = {
+		land_morale = 0.10
+	}
+	bul_idea_7 = {
+		legitimacy = 1
+	}
+}
+
+gen_BRI_ideas = {
+	start = {
+		navy_tradition = 1
+		trade_steering = 0.10
+	}
+	
+	bonus = {
+		naval_forcelimit_modifier = 0.25
+	}
+	
+	trigger = {
+		OR = {
+			tag = MNF
+			tag = BLS
+		}
+	}
+	free = yes
+	
+	legacy_of_breton_independence = {
+		enemy_core_creation = 0.5
+	}
+	estates_of_brittany = {
+		global_unrest = -1		
+	}
+	breton_march = {
+		defensiveness = 0.2
+	}
+	breton_catholicism = {
+		papal_influence = 2
+		global_missionary_strength = 0.01
+	}
+	protect_the_coastline = {
+		global_ship_cost = -0.1
+	}
+	league_of_the_public_weal = {
+		diplomatic_reputation = 1
+	}
+	catholicon = {
+		prestige = 1
+ 	}
+}
+
+gen_SWI_ideas = {
+	start = {
+		global_manpower_modifier = 0.1
+		infantry_power = 0.1
+	}
+	
+	bonus = {
+		discipline = 0.05
+	}
+	
+	trigger = {
+		OR = {
+			tag = THG
+			tag = WLI
+		}
+	}
+	free = yes  #will be triggered at load
+	
+	the_swiss_confederation = {
+		stability_cost_modifier = -0.1
+	}
+	swiss_mercenaries = {
+		mercenary_cost = -0.2
+	}
+	alpine_defensiveness = {
+		fort_maintenance_modifier = -0.2
+	}
+	oasis_of_peace_and_prosperity = {
+		development_cost = -0.1
+	}
+	swiss_tolerance = {
+		tolerance_heretic = 2
+	}
+	haven_for_refugees = {
+		prestige = 1
+	}
+	clockwork = {
+		production_efficiency = 0.1
+	}
+}
+
+gen_BUR_Ideas = {
+	start = {
+		merc_maintenance_modifier = -0.25
+		cavalry_power = 0.05
+	}
+	
+	bonus = {
+		trade_steering = 0.10
+	}
+	
+	trigger = {
+		tag = PBG
+	}
+	free = yes
+	
+	golden_fleece = {
+		prestige = 1
+	}
+	compagnies_ordonnance = {
+		mercenary_cost = -0.20
+	}
+	bur_estates_general = {
+		possible_mercenaries = 1.0
+	}
+	reform_of_feudal_army = {
+		discipline = 0.05
+	}
+	integrated_towns = {
+		trade_efficiency = 0.1
+	}
+	freedom_of_worship = {
+		tolerance_heretic = 2
+	}
+	bur_regimental_system = {
+		global_manpower_modifier = 0.25
+	}
+}
+
+gen_ARM_ideas = {
+	start = {
+		war_exhaustion_cost = -0.1
+		recover_army_morale_speed = 0.05
+	}
+
+	bonus = {
+		hostile_attrition = 1
+	}
+	
+	trigger = {
+		tag = KHC
+	}
+	free = yes		#will be added at load.
+	
+	apostolic_church = {
+		global_missionary_strength = 0.02
+	}
+	land_reclamation = {
+		build_cost = -0.1
+	}
+	border_nation = {
+		diplomatic_reputation = 1
+	}
+	melikdom_organization = {
+		global_tax_modifier = 0.1
+	}
+	sygnakhs = {
+		global_regiment_cost = -0.1
+	}
+	nakharar_titles = {
+		enemy_core_creation = 0.25
+	}
+	end_of_armenian_diaspora = {
+		production_efficiency = 0.1
+	}
+}

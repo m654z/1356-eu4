@@ -1,0 +1,56 @@
+namespace = por_djm
+
+country_event = {
+	id = por_djm.1
+	title = por_djm.1.t
+	desc = por_djm.1.d
+	picture = EXPLORERS_eventPicture
+	
+	fire_only_once = yes
+
+	trigger = {
+		tag = POR
+		is_year = 1412.1.1
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = {
+
+		name = por_djm.1.a
+		
+		define_advisor = {
+			type = navigator
+			skill = 2
+			discount = yes
+			name = "Henry the Navigator"
+		}
+		
+		define_explorer = {
+			name = "João Gonçalves Zarco"
+			fire = 2
+			shock = 2
+			manuever = 6
+
+		}
+		
+		add_country_modifier = {
+			name = "rush_of_colonists"
+			duration = 3650
+		}		
+
+		add_country_modifier = {
+			name = "colonial_enthusiasm"
+			duration = 3650
+		}
+
+		add_country_modifier = {
+			name = "navigator_boost"
+			duration = 3650
+		}	
+	
+	}
+	
+}

@@ -1,0 +1,14 @@
+government = feudal_monarchy
+government_rank = 1
+technology_group = western
+religion = finnish_pagan_reformed
+primary_culture = estonian
+capital = 36
+
+1400.1.1 = {
+	religion = catholic
+}
+
+1542.1.1 = {
+	religion = protestant
+}

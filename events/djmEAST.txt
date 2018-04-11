@@ -1,0 +1,154 @@
+namespace = djm_east
+
+country_event = {
+	id = djm_east.1
+	title = flavor_mng.17.t
+	desc = flavor_mng.17.d
+	picture = COURT_eventPicture
+		
+	trigger = {
+		government = celestial_empire
+		technology_group = western
+	}
+	
+	mean_time_to_happen = {
+		months = 6
+	}	
+	
+	option = {
+		name = flavor_mng.17.a
+		change_government = feudal_monarchy
+	}
+}
+
+country_event = {
+	id = djm_east.2
+	title = djm_east.2.t
+	desc = djm_east.2.d
+	picture = HORDE_ON_HORSEBACK_eventPicture
+	
+	major = yes
+	
+	trigger = {
+		tag = YUA
+		government = celestial_empire
+		not = { num_of_cities = 20 }
+		NOT = {
+			OR = {
+				owns = 665
+				owns = 670
+				owns = 674
+				owns = 682
+				owns = 691
+			}
+		}
+	}
+		
+
+	
+	mean_time_to_happen = {
+		months = 6
+	}	
+	
+	option = {
+		name = djm_east.2.a
+		change_government = steppe_horde
+		
+	}
+}
+
+country_event = {
+	id = djm_east.3
+	title = djm_east.3.t
+	desc = djm_east.3.d
+	picture = COURT_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		OR = {
+			AND = {
+				owns = 665
+				owns = 670
+				owns = 674
+				owns = 682
+
+			}
+			
+			AND = {
+				owns = 665
+				owns = 670
+				owns = 674
+
+				owns = 691
+			}
+			
+			AND = {
+				owns = 665
+				owns = 670
+
+				owns = 682
+				owns = 691
+			}
+			
+			AND = {
+				owns = 665
+
+				owns = 674
+				owns = 682
+				owns = 691
+			}
+			
+			AND = {
+
+				owns = 670
+				owns = 674
+				owns = 682
+				owns = 691
+			}
+		}
+		culture_group = east_asian
+		OR = {
+			NOT = { technology_group = western }
+			NOT = { technology_group = eastern }
+		}
+		NOT = { government = celestial_empire }
+		NOT = { primary_culture =japanese }
+		NOT = { primary_culture =korean }
+		NOT = { is_year = 1550 }
+		num_of_cities = 20
+		
+			
+	}
+		
+	
+	mean_time_to_happen = {
+		months = 6
+	}	
+	
+	option = {
+		name = djm_east.3.a
+		change_government = celestial_empire
+	}
+}
+
+
+country_event = {
+	id = djm_east.4
+	title = "cleanup"
+	desc = "cleanup"
+	picture = COURT_eventPicture
+		
+	trigger = {
+		government = nogovernment
+	}
+	
+	mean_time_to_happen = {
+		days=1
+	}	
+	
+	option = {
+		name = "cleanup"
+		change_government = despotic_monarchy
+	}
+}

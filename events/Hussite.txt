@@ -1,0 +1,375 @@
+namespace=hussite_spr
+
+# The Hussite Reformation
+country_event = {
+	id = hussite_spr.1
+	title = hussite_spr.1.t
+	desc = hussite_spr.1.d
+	picture = JAN_HUS_eventPicture
+	
+	fire_only_once = yes
+	major = yes
+	
+	trigger = {
+		NOT = { is_religion_enabled = hussite }
+		religion = catholic
+		is_defender_of_faith = no	
+		NOT = { government = papal_government }
+		reform_desire = 0.15
+		is_year = 1415
+		NOT = { is_year = 1500 }
+		num_of_cities = 2
+		capital_scope = {
+			continent = europe
+			NOT = { has_province_modifier = religious_center }
+		}
+		
+	}
+	
+	mean_time_to_happen = {
+		months = 14000
+		
+modifier = {
+			factor = 0.6
+			NOT = { monthly_income = 20 }
+
+		}
+
+		modifier = {
+			factor = 0.5
+			culture_group = west_slavic
+
+		}
+		
+		modifier = {
+			factor = 0.4
+			tag = BOH
+		}
+				
+		modifier = {
+			factor = 0.6
+			is_part_of_hre = yes
+		}
+		modifier = {
+			factor = 0.4
+			OR = {
+				primary_culture = czech
+				primary_culture = schlesian
+			}
+		}
+		modifier = {
+			factor = 0.75
+			reform_desire = 0.2
+		}
+		modifier = {
+			factor = 0.66
+			reform_desire = 0.4
+		}
+		modifier = {
+			factor = 0.50
+			reform_desire = 0.8
+		}
+		modifier = {
+			factor = 0.8
+			is_year = 1405
+		}
+		modifier = {
+			factor = 0.8
+			is_year = 1410
+		}
+		modifier = {
+			factor = 0.8
+			is_year = 1415
+		}
+		modifier = {
+			factor = 0.8
+			is_year = 1420
+		}
+		modifier = {
+			factor = 0.8
+			is_year = 1425
+		}
+		modifier = {
+			factor = 0.8
+			is_year = 1430
+		}
+		modifier = {
+			factor = 0.25
+			reform_desire = 1
+		}
+		
+		
+		modifier = {
+			factor = 0.75
+			has_idea_group = innovativeness_ideas
+		}
+		modifier = {
+			factor = 1.25
+			has_idea_group = religious_ideas
+		}
+
+		modifier = {
+			factor = 0.95
+			NOT = { has_opinion = { who = PAP value = -50 } }
+		}
+		modifier = {
+			factor = 0.85
+			NOT = { has_opinion = { who = PAP value = -100 } }
+		}
+		modifier = {
+			factor = 0.75
+			NOT = { has_opinion = { who = PAP value = -150 } }
+		}		
+		modifier = {
+			factor = 0.5
+			num_of_revolts = 1
+		}
+		modifier = {
+			factor = 2.0
+			government = theocratic_government
+		}
+		modifier = {
+			factor = 8.0
+			OR = {
+				culture_group = latin
+				culture_group = iberian
+			}
+		}
+	}
+
+	option = {
+		name = hussite_spr.1.a
+		enable_religion = hussite
+		random_owned_province = {
+			change_religion = hussite
+			add_reform_center = hussite
+			set_province_flag = "hussite_center"
+			add_province_modifier = {
+				name = "religious_zeal_at_conv"
+				duration = 1500
+			}
+		}
+		capital_scope = { 			
+			spawn_rebels = {
+				type = hussite_rebels
+				size = 2
+			}
+		}
+		set_country_flag = "hussite_reformation" 
+		add_reform_desire = -1
+	}
+}
+
+country_event = { 
+
+	id = hussite_spr.2
+	title = hussite_spr.2.t
+	desc = hussite_spr.2.d
+	picture = JAN_ZIZKA_eventPicture
+
+	fire_only_once = yes
+	
+	trigger = {
+
+		has_country_flag = "hussite_reformation"
+		religion = hussite
+		
+	}
+	
+	option = {
+		name = hussite_spr.2.a
+		define_general = {
+			name = "Jan 'One-Eye' Zizka"
+			fire = 5
+			shock = 2
+			manuever = 1
+			siege = 2
+		}
+	}
+}
+
+province_event = {
+
+	id = hussite_spr.5
+	title = hussite_spr.5.t
+	desc = hussite_spr.5.d
+	picture = RELIGION_eventPicture
+	
+	trigger = {
+	
+		religion = hussite
+		is_reformation_center = yes
+		NOT = { has_province_flag = "hussite_center" }
+	
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = hussite_spr.5.a
+		
+		change_religion = catholic
+	}
+	
+}
+
+country_event = {
+
+	id = hussite_spr.6
+	title = hussite_spr.6.t
+	desc = hussite_spr.6.d
+	picture = JAN_ZIZKA_eventPicture
+	
+	major = yes
+	fire_only_once = yes
+	
+	trigger = {
+	
+		is_religion_enabled = hussite
+		OR = {
+			AND = {
+				is_emperor = yes
+				any_country = {
+					is_part_of_hre = yes
+					has_country_flag = "hussite_reformation"
+					religion = hussite
+				}
+			}
+			AND = {
+				any_neighbor_country = {  
+					is_part_of_hre = no
+					has_country_flag = "hussite_reformation"
+					religion = hussite
+				}
+			is_great_power = yes
+			}
+	
+		}
+		
+	}
+	
+	mean_time_to_happen = {
+		years = 1
+	}
+	
+	option = {
+		ai_chance = { 
+			factor = 100 
+			modifier = {
+				factor = 0
+				AND = {
+					is_at_war = yes
+					NOT = { war_score = 0 }
+					war_exhaustion = 10
+				}
+			}
+		}
+		
+		name = hussite_spr.6.a
+		
+		random_country = {  
+			limit = {
+				has_country_flag = "hussite_reformation"
+				religion = hussite
+			}
+			ROOT = {
+				declare_war_with_cb = {
+					who = PREV
+					casus_belli = cb_hussite_conformance
+				}
+			}
+		}
+		
+		set_global_flag = "hussite_wars"
+		
+	}
+
+	
+	option = {
+		ai_chance = { 
+			factor = 0 
+			modifier = {
+				factor = 100
+				AND = {
+					is_at_war = yes
+					NOT = { war_score = 0 }
+					war_exhaustion = 10
+				}
+			}
+		}
+	
+		name = hussite_spr.6.b
+		
+		add_stability = -1
+		add_prestige = -20
+
+	}
+
+}
+
+country_event = { 
+
+	id = hussite_spr.8
+	title = hussite_spr.8.t
+	desc = hussite_spr.8.d
+	picture = JAN_ZIZKA_eventPicture
+	is_triggered_only = yes
+	
+	option = {
+		name = hussite_spr.8.a
+		FROM = {
+			declare_war_with_cb = {
+				who = ROOT
+				casus_belli = cb_hussite_conformance
+			}
+		}
+	}
+}
+
+
+province_event = {
+
+	id = hussite_spr.4
+	title = hussite_spr.4.t
+	desc = hussite_spr.4.d
+	picture = RELIGION_eventPicture
+	
+	major = yes
+	fire_only_once = yes
+	
+	trigger = {
+	
+		owner = {
+			has_country_flag = "hussite_reformation"
+			NOT = { religion = hussite }
+		}
+		OR = {
+			AND = {
+				is_reformation_center = yes
+				has_province_flag = "hussite_center"
+				has_global_flag = "hussite_wars"
+			}
+			AND = { 
+				has_province_flag = "hussite_center"
+				NOT = { religion = hussite }
+			}
+		}
+
+	
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = hussite_spr.4.a
+		
+		add_prestige = -20
+		change_religion = catholic
+		add_reform_desire = -0.25
+	}
+	
+}

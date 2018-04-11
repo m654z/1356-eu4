@@ -1,0 +1,79 @@
+namespace = dalmatia
+
+country_event = {
+	id = dalmatia.1
+	title = dalmatia.1.t
+	desc = dalmatia.1.d
+	picture = NAVAL_MILITARY_eventPicture
+	fire_only_once = yes
+
+	trigger = {
+		tag = HUN
+		owns = 136
+		is_at_war = no
+		CRO = {
+			exists = yes
+			is_subject_of = HUN
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 1
+	}
+
+	option = {
+		ai_chance = { 
+			factor = 100 
+		}
+		name = dalmatia.1.a
+		136 = { cede_province = CRO change_controller = CRO }
+	}
+	option = {
+		name = dalmatia.1.b
+		add_legitimacy = -5
+	}
+}
+
+country_event = {
+	id = dalmatia.2
+	title = dalmatia.2.t
+	desc = dalmatia.2.d
+	picture = NAVAL_MILITARY_eventPicture
+	fire_only_once = yes
+
+	trigger = {
+		tag = VEN
+		is_at_war = no
+		NOT = { owns = 136 }
+		RAG = { is_subject_of = VEN }
+	}
+
+	mean_time_to_happen = {
+		months = 1
+	}
+
+	option = {
+		name = dalmatia.2.a
+		free_vassal = RAG
+	}
+	option = {
+		ai_chance = { 
+			factor = 100 
+			modifier = {
+				factor = 0
+				AND = {
+					is_at_war = yes
+					NOT = { war_score = 0 }
+					war_exhaustion = 10
+				}
+			}
+		}	
+		name = dalmatia.2.b
+		add_prestige = -5
+		free_vassal = RAG
+		declare_war_with_cb = {
+			who = RAG
+			casus_belli = cb_disloyal_vassal
+		}
+	}
+}

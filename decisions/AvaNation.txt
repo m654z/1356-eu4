@@ -1,0 +1,34 @@
+country_decisions = {
+
+	ava_nation = {
+		major = yes
+		potential = {
+			OR = {
+				tag = PIN
+				tag = SAG
+				tag = TAU
+			}
+			NOT = { exists = AVA }
+		}
+		allow = {
+			is_at_war = no
+			is_subject = no
+			owns_core_province = 585
+			owns_core_province = 581
+			owns_core_province = 584
+			owns_core_province = 2399
+		}
+		effect = {
+			change_tag = AVA
+			add_prestige = 10
+			swap_free_idea_group = yes		#keep progress
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 3650
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

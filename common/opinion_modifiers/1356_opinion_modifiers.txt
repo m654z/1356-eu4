@@ -1,0 +1,5 @@
+
+avignon_pap_end = {
+	opinion = -100
+	yearly_decay = 2.5
+}

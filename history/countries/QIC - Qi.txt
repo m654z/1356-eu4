@@ -1,0 +1,17 @@
+government = despotic_monarchy
+technology_group = chinese
+religion = confucianism
+primary_culture = shandong_culture
+historical_rival = YUA
+historical_rival = MNG
+capital = 690	#Qingzhou
+
+1355.1.1 = {
+	monarch = {
+		name = "Han Lin'er"
+		dynasty = "Sung"
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+}

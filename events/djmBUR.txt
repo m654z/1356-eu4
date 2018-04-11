@@ -1,0 +1,90 @@
+namespace = bur_djm
+
+country_event = {
+	id = bur_djm.1
+	title = bur_djm.1.t
+	desc = bur_djm.1.d
+	picture = DIPLOMACY_eventPicture
+	
+	fire_only_once = yes
+	major = yes
+
+	trigger = {
+		tag = BUR
+		OR = {
+			has_ruler = "Philippe I"
+			has_ruler = "Philippe II"
+		}
+		marriage_with = FLA
+		FLA = {
+			has_ruler = "Marguerite III"
+			ai = yes
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 6
+	}
+	
+	option = {
+
+		name = bur_djm.1.a
+		create_union = FLA
+		set_ruler_flag = "flanders_inheritance"
+		
+	}
+}
+
+country_event = {
+
+	id = bur_djm.2
+	title = bur_djm.2.t
+	desc = bur_djm.2.d
+	picture = DIPLOMACY_eventPicture
+	
+	fire_only_once = yes
+
+	trigger = {
+		tag = BUR
+		senior_union_with = PBG
+		NOT = { has_ruler_flag = "burgundy_inheritance" }
+	}
+	
+	mean_time_to_happen = {
+		months = 6
+	}
+	
+	option = {
+
+		name = bur_djm.2.a
+		inherit = PBG
+		
+	}
+}
+
+country_event = {
+
+	id = bur_djm.3
+	title = bur_djm.3.t
+	desc = bur_djm.3.d
+	picture = DIPLOMACY_eventPicture
+	
+	fire_only_once = yes
+
+	trigger = {
+		tag = BUR
+		senior_union_with = FLA
+		NOT = { has_ruler_flag = "flanders_inheritance" }
+	}
+	
+	mean_time_to_happen = {
+		months = 6
+	}
+	
+	option = {
+
+		name = bur_djm.3.a
+		inherit = FLA
+		
+	}
+}

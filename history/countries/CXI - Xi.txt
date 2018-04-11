@@ -1,0 +1,52 @@
+government = despotic_monarchy
+technology_group = chinese
+religion = confucianism
+primary_culture = hubei
+historical_rival = YUA
+historical_rival = MNG
+capital = 2171
+
+1351.1.1 = {
+	monarch = {
+		name = "Xu Shouhui"
+		dynasty = "Tianwan"
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+	capital = 2172
+}
+
+1360.1.1 = {
+	monarch = {
+		name = "Chen Youliang"
+		dynasty = "Dahan"
+		birth_date = 1320.1.1
+		adm = 2
+		dip = 2
+		mil = 4
+	}
+}
+
+1363.8.23 = {
+	monarch = {
+		name = "Chen Li"
+		dynasty = "Dahan"
+		adm = 1
+		dip = 1
+		mil = 1
+	}
+}
+
+1630.1.1 = {
+	monarch = {
+		name = "Xianzhong"
+		dynasty = "Zhang"
+		adm = 1
+		dip = 1
+		mil = 3
+	}
+	capital = 681	# Yichuan
+}
+
+1644.8.9 = { capital = 679 } # Sichuan

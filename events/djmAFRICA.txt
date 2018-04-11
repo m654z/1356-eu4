@@ -1,0 +1,101 @@
+namespace = flavor_afr
+normal_or_historical_nations = yes
+
+
+
+# Spawn TGT
+province_event = {
+	id = flavor_afr.1
+	title = flavor_afr.1.t
+	desc = flavor_afr.1.d
+	picture = RELIGIOUS_TURMOIL_eventPicture
+	fire_only_once = yes
+
+	trigger = {
+		province_id = 351
+		NOT = { exists = TGT }
+		is_year = 1414
+		north_saharan_area = {
+			is_empty = yes
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 180
+	}
+	
+	immediate = {
+		hidden_effect = {
+			every_province = {
+				limit = {
+					NOT = { tag = ROOT }
+					OR = {
+						area = north_saharan_area
+						province_id = 351
+						province_id = 2456 
+						province_id = 2472
+					}
+				}
+				owner = {
+					set_country_flag = tgt_information
+				}
+			}
+		}
+	}
+	
+	option = { 
+		name = flavor_afr.1.a
+		every_country = {
+			limit = { has_country_flag = tgt_information }
+			country_event = { id = flavor_afr.3 }
+			clr_country_flag = tgt_information
+		}	
+
+		351 = {
+			add_core = TGT
+		}
+		2456  = {
+			add_core = TGT
+		}
+		2472 = {
+			add_core = TGT
+		}
+		every_province = {
+			limit = {
+				is_empty = yes
+				is_core = TGT
+			}
+			cede_province = TGT
+		}
+	}
+}
+
+# Event to send to other province owners of the area when Funj is formed.
+country_event = {
+	id = flavor_afr.3
+	title = flavor_afr.1.t
+	desc = flavor_afr.1.d
+	picture = RELIGIOUS_TURMOIL_eventPicture
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		NOT = { owns = 351 }
+	}
+
+	option = {
+		name = flavor_afr.1.a
+		tooltip = {
+
+			351 = {
+				add_core = TGT
+			}
+			2456  = {
+				add_core = TGT
+			}
+			2472 = {
+				add_core = TGT
+			}
+		}
+	}
+}
