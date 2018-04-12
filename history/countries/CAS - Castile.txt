@@ -6,7 +6,7 @@ religion = catholic
 technology_group = western
 historical_friend = POR
 historical_rival = GRA
-capital = 219 # Toledo
+capital = 208 # Leon
 national_focus = MIL
 add_army_professionalism = 0.1
 

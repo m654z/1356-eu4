@@ -2,7 +2,7 @@ government = steppe_horde
 primary_culture = khazak
 religion = sunni
 technology_group = nomad_group
-capital = 476	# Orda-Bazar
+capital = 2352	# Alty-Kuduk
 
 1344.1.1 = { 
 	monarch = { 

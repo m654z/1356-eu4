@@ -2,7 +2,7 @@ government = despotic_monarchy
 technology_group = chinese
 primary_culture = javanese
 religion = hinduism
-capital = 624	# Banten
+capital = 625	# Kawali
 
 1426.1.1 = {
 	monarch = {

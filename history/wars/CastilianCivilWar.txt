@@ -7,7 +7,7 @@ war_goal = {
 	casus_belli = cb_insult
 }
 
-1366.3.13 = { # Start of Castillian Civil War
+1351.3.13 = { # Start of Castillian Civil War
 	add_attacker = CTR
 	add_attacker = FRA
 	add_attacker = ARA

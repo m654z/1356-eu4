@@ -4,7 +4,7 @@ religion = sunni
 technology_group = nomad_group
 historical_friend = WHI
 historical_rival = SHY
-capital = 1969	# Sozak
+capital = 478	# Argyn
 religious_school = hanafi_school
 
 ### 1344.1.1 - 1396.1.1 PU under WHI ###

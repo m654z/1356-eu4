@@ -8,7 +8,7 @@ capital = 3001 # Skopje
 
 1355.12.20 = {
 	monarch = {
-		name = "Vukaöin"
+		name = "Vuka≈°in"
 		dynasty = "Mrnjavcevic"
 		birth_date = 1320.1.1
 		adm = 3

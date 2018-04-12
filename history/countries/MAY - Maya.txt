@@ -2,7 +2,7 @@ government = tribal_despotism
 primary_culture = putun
 religion = mesoamerican_religion
 technology_group = mesoamerican
-capital = 842	# Petén
+capital = 845	# Campeche
 
 1326.1.1 = {
 	monarch = {

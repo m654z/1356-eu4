@@ -79,7 +79,7 @@ historical_friend = SER
 
 1391.3.10 = {
 	monarch = { 
-		name = "Stjepan Dabiöa"
+		name = "Stjepan Dabi≈°a"
 		dynasty = "Kotromanic"
 		birth_date  = 1340.1.1
 		adm = 4
@@ -268,7 +268,7 @@ historical_friend = SER
 
 1443.6.23 = {
 	monarch = {
-		name = "Stjepan Tomaö Ostojic"
+		name = "Stjepan Toma≈° Ostojic"
 		dynasty = "Kotromanic"
 		birth_date = 1412.7.10
 		adm = 0
@@ -281,8 +281,8 @@ historical_friend = SER
 
 1443.6.23 = {
 	heir = {
-		name = "Stjepan Tomaöevic"
-		monarch_name = "Stjepan Tomaöevic"
+		name = "Stjepan Toma≈°evic"
+		monarch_name = "Stjepan Toma≈°evic"
 		dynasty = "Kotromanic"
 		birth_date = 1438.1.1
 		death_date = 1463.6.5
@@ -295,7 +295,7 @@ historical_friend = SER
 
 1461.7.11 = {
 	monarch = {
-		name = "Stjepan Tomaöevic"
+		name = "Stjepan Toma≈°evic"
 		dynasty = "Kotromanic"
 		birth_date = 1438.1.1
 		adm = 3

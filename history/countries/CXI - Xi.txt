@@ -4,7 +4,7 @@ religion = confucianism
 primary_culture = hubei
 historical_rival = YUA
 historical_rival = MNG
-capital = 2171
+capital = 2172 # Jingzhou
 
 1351.1.1 = {
 	monarch = {
