@@ -1,4 +1,4 @@
-government = feudal_monarchy
+government = early_feudal_monarchy
 government_rank = 1
 technology_group = western
 primary_culture = normand
@@ -6,6 +6,8 @@ add_accepted_culture = cosmopolitan_french
 religion = catholic
 historical_friend = NAV
 capital = 168	# Caen
+
+1440.1.1 = { government = feudal_monarchy }
 
 1465.8.15 = {
 	monarch = {

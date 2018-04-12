@@ -1,4 +1,4 @@
-government = feudal_monarchy
+government = early_feudal_monarchy
 government_rank = 1
 technology_group = western
 primary_culture = saxon
@@ -123,6 +123,8 @@ fixed_capital = 58 # Cannot move capital away from this province & no power cost
 	add_ruler_personality = benevolent_personality
 	add_ruler_personality = charismatic_negotiator_personality
 }
+
+1440.1.1 = { government = feudal_monarchy }
 
 1450.1.1 = {
 	heir = {

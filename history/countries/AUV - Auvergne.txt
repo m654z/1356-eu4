@@ -1,4 +1,4 @@
-government = feudal_monarchy
+government = early_feudal_monarchy
 government_rank = 1
 technology_group = western
 primary_culture = occitain
@@ -218,6 +218,8 @@ capital = 199	# Clermont
 		mil = 2
 	}
 }
+
+1440.1.1 = { government = feudal_monarchy }
 		
 1461.3.22 = {
 	monarch = {

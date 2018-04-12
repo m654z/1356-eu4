@@ -1,4 +1,4 @@
-government = feudal_monarchy
+government = early_feudal_monarchy
 government_rank = 1
 technology_group = western
 religion = catholic
@@ -145,6 +145,8 @@ capital = 70	# Stuttgart
 		mil = 2
 	}
 }
+
+1440.1.1 = { government = feudal_monarchy }
 
 1442.1.25 = {
 	monarch = {

@@ -1,4 +1,4 @@
-government = feudal_monarchy
+government = early_feudal_monarchy
 government_rank = 1
 primary_culture = hessian
 religion = catholic
@@ -136,6 +136,8 @@ capital = 81	# Kassel
 		mil = 0
 	}
 }
+
+1440.1.1 = { government = feudal_monarchy }
 
 1458.1.18 = {
 	monarch = {

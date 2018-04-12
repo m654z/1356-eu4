@@ -1,14 +1,14 @@
-government = feudal_monarchy
+government = despotic_monarchy
 government_rank = 1
 technology_group = eastern
 primary_culture = greek
 religion = orthodox
 historical_rival = SER
-capital = 148 # Macedonia
+capital = 3001 # Skopje
 
 1355.12.20 = {
 	monarch = {
-		name = "Vukaöin"
+		name = "Vuka≈°in"
 		dynasty = "Mrnjavcevic"
 		birth_date = 1320.1.1
 		adm = 3

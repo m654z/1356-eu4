@@ -1,4 +1,4 @@
-government = feudal_monarchy
+government = early_feudal_monarchy
 primary_culture = czech
 religion = catholic
 elector = yes
@@ -95,6 +95,8 @@ add_army_professionalism = 0.1
 		mil = 2
 	}
 }
+
+1440.1.1 = { government = feudal_monarchy }
 
 1400.8.20 = {
 	monarch = {

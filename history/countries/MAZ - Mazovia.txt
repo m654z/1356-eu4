@@ -1,4 +1,4 @@
-government = feudal_monarchy
+government = early_feudal_monarchy
 government_rank = 1
 technology_group = eastern
 religion = catholic
@@ -100,6 +100,8 @@ capital = 257	# Warsaw
 	clear_scripted_personalities = yes
 	add_ruler_personality = architectural_visionary_personality
 }
+
+1440.1.1 = { government = feudal_monarchy }
 
 1448.1.1 = {
 	heir = {

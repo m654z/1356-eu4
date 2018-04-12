@@ -1,4 +1,4 @@
-government = feudal_monarchy
+government = early_feudal_monarchy
 government_rank = 1
 primary_culture = breton
 religion = catholic
@@ -106,6 +106,8 @@ capital = 172	# Nantes
 		mil = 2
 	}
 }
+
+1440.1.1 = { government = feudal_monarchy }
 
 1442.8.29 = {
 	monarch = {

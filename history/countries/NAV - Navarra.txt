@@ -1,4 +1,4 @@
-government = feudal_monarchy
+government = early_feudal_monarchy
 primary_culture = basque
 religion = catholic
 technology_group = western
@@ -103,6 +103,8 @@ capital = 210	# Pamplona
 		mil = 0
 	}
 }
+
+1440.1.1 = { government = feudal_monarchy }
 
 1441.4.1 = { # King 'de facto', married with Blanca I
 	monarch = {

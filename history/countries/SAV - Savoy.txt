@@ -1,4 +1,4 @@
-government = feudal_monarchy
+government = early_feudal_monarchy
 government_rank = 1
 primary_culture = piedmontese
 religion = catholic
@@ -144,6 +144,8 @@ add_army_professionalism = 0.05
 		mil = 0
 	}
 }
+
+1440.1.1 = { government = feudal_monarchy }
 
 1465.1.30 = {
 	monarch = {

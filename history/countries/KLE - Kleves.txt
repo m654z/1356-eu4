@@ -1,4 +1,4 @@
-government = feudal_monarchy
+government = early_feudal_monarchy
 government_rank = 1
 primary_culture = hessian
 religion = catholic
@@ -121,6 +121,8 @@ capital = 2975	# Cleves
 	clear_scripted_personalities = yes
 	add_heir_personality = well_connected_personality
 }
+
+1440.1.1 = { government = feudal_monarchy }
 
 1448.9.24 = {
 	monarch = {

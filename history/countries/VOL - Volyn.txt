@@ -1,4 +1,4 @@
-government = feudal_monarchy
+government = early_feudal_monarchy
 technology_group = eastern
 government_rank = 1
 religion = orthodox
@@ -34,3 +34,5 @@ capital = 2961
 1386.7.1 = { government_rank = 2 capital = 279 } 
 
 1425.1.1 = { religion = catholic }
+
+1440.1.1 = { government = feudal_monarchy }

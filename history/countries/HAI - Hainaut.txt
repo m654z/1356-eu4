@@ -1,4 +1,4 @@
-government = feudal_monarchy
+government = early_feudal_monarchy
 government_rank = 1
 technology_group = western
 religion = catholic
@@ -170,3 +170,5 @@ capital = 91	# Mons
 		mil = 2
 	}
 }
+
+1440.1.1 = { government = feudal_monarchy }

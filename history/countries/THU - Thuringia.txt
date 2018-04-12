@@ -1,4 +1,4 @@
-government = feudal_monarchy
+government = early_feudal_monarchy
 government_rank = 1
 primary_culture = saxon
 religion = catholic
@@ -82,6 +82,8 @@ capital = 63	# Erfurt
 		mil = 2
 	}
 }
+
+1440.1.1 = { government = feudal_monarchy }
 
 # 1440.5.7 - 1445.9.10 Part of Saxony
 

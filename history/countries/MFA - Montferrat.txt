@@ -1,4 +1,4 @@
-government = feudal_monarchy
+government = early_feudal_monarchy
 government_rank = 1
 primary_culture = piedmontese
 religion = catholic
@@ -239,6 +239,8 @@ capital = 2981	# Montferrat
 		mil = 3
 	}
 }
+
+1440.1.1 = { government = feudal_monarchy }
 
 1445.3.12 = {
 	monarch = {

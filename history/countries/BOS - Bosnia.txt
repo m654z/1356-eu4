@@ -1,4 +1,4 @@
-government = feudal_monarchy
+government = early_feudal_monarchy
 government_rank = 1
 primary_culture = serbian
 add_accepted_culture = croatian
@@ -79,7 +79,7 @@ historical_friend = SER
 
 1391.3.10 = {
 	monarch = { 
-		name = "Stjepan Dabiöa"
+		name = "Stjepan Dabi≈°a"
 		dynasty = "Kotromanic"
 		birth_date  = 1340.1.1
 		adm = 4
@@ -181,20 +181,19 @@ historical_friend = SER
 	}
 }
 
-# "History entry before birth of character [Jelena] birth date"
-#1415.17.1 = {
-#	queen = {
-#		country_of_origin = CRO
-#		name = "Jelena"
-#		dynasty = "Nelipcic"
-#		birth_date = 1380.1.1
-#		death_date = 1423.1.1
-#		female = yes
-#		adm = 2
-#		dip = 2
-#		mil = 2
-#	}
-#}
+1415.17.1 = {
+	queen = {
+		country_of_origin = CRO
+		name = "Jelena"
+		dynasty = "Nelipcic"
+		birth_date = 1380.1.1
+		death_date = 1423.1.1
+		female = yes
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
 
 1418.9.1 = {
 	monarch = {
@@ -265,9 +264,11 @@ historical_friend = SER
 	}
 }
 
+1440.1.1 = { government = feudal_monarchy }
+
 1443.6.23 = {
 	monarch = {
-		name = "Stjepan Tomaö Ostojic"
+		name = "Stjepan Toma≈° Ostojic"
 		dynasty = "Kotromanic"
 		birth_date = 1412.7.10
 		adm = 0
@@ -280,8 +281,8 @@ historical_friend = SER
 
 1443.6.23 = {
 	heir = {
-		name = "Stjepan Tomaöevic"
-		monarch_name = "Stjepan Tomaöevic"
+		name = "Stjepan Toma≈°evic"
+		monarch_name = "Stjepan Toma≈°evic"
 		dynasty = "Kotromanic"
 		birth_date = 1438.1.1
 		death_date = 1463.6.5
@@ -294,7 +295,7 @@ historical_friend = SER
 
 1461.7.11 = {
 	monarch = {
-		name = "Stjepan Tomaöevic"
+		name = "Stjepan Toma≈°evic"
 		dynasty = "Kotromanic"
 		birth_date = 1438.1.1
 		adm = 3

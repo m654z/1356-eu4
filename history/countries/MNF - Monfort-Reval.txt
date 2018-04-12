@@ -1,4 +1,4 @@
-government = feudal_monarchy
+government = early_feudal_monarchy
 government_rank = 1
 primary_culture = breton
 religion = catholic
@@ -126,6 +126,8 @@ capital = 170	# Finistere
 		mil = 2
 	}
 }
+
+1440.1.1 = { government = feudal_monarchy }
 
 1589.8.3 = { government = administrative_monarchy }
 

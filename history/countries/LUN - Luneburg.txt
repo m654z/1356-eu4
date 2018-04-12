@@ -1,4 +1,4 @@
-government = feudal_monarchy
+government = early_feudal_monarchy
 government_rank = 1
 technology_group = western
 primary_culture = hannoverian
@@ -270,6 +270,8 @@ fixed_capital = 53 # Cannot move capital away from this province & no power cost
 	add_ruler_personality = architectural_visionary_personality
 	add_heir_personality = craven_personality
 }
+
+1440.1.1 = { government = feudal_monarchy }
 
 1445.6.1 = {
 	monarch = {
