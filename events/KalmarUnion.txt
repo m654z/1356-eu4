@@ -1,0 +1,121 @@
+namespace = kalmar
+
+# Norwegian Inheritance
+country_event = {
+	id = kalmar.1
+	title = "norway_union_name"
+	desc = "norway_union_desc"
+	picture = GOOD_WITH_MONARCH_eventPicture
+	fire_only_once = yes
+	
+	trigger = {
+		tag = DAN
+		NOT = { is_year = 1456 }
+		NOR = {
+			is_subject = no
+			has_regency = yes
+			marriage_with = ROOT
+		}
+	}
+	mean_time_to_happen = {
+		months = 1
+	}
+	option = {
+		name = "norway_union_opt1"
+		set_country_flag = inherited_norway
+		NOR = {
+			create_union = DAN
+		}
+		add_prestige = 15
+	}
+	option = {
+	name = "norway_union_opt2"
+		add_prestige = -5
+	}
+}
+
+# Swedish Nobility Estate Reduction
+country_event = {
+	id = kalmar.2
+	title = "sweden_estate_name"
+	desc = "sweden_estate_desc"
+	picture = COURT_eventPicture
+	fire_only_once = yes
+	
+	trigger = {
+		tag = SWE
+		NOT = { is_year = 1456 }
+		is_subject = no
+	}
+	mean_time_to_happen = {
+		months = 396
+	}
+	option = {
+		name = "sweden_estate_opt1"
+		set_global_flag = sweden_reduced_noble_estates
+		IF = {
+			limit = { has_dlc = "The Cossacks" }
+			add_estate_loyalty = {
+				estate = estate_nobles
+				loyalty = -20
+			}
+		}
+		IF = {
+			limit = { NOT = { has_dlc = "The Cossacks" } }
+			every_owned_province = {
+				add_unrest = 1
+			}
+		}
+	}
+	option = {
+		name = "sweden_estate_opt1"
+		add_estate_loyalty = {
+			estate = estate_nobles
+			loyalty = 10
+		}
+		IF = {
+			limit = { has_dlc = "The Cossacks" }
+			every_owned_province = {
+				limit = {
+					has_estate = estate_nobles
+				}
+				add_local_autonomy = 20
+			}
+		}
+		IF = {
+			limit = { NOT = { has_dlc = "The Cossacks" }}
+			every_owned_province = {
+				add_local_autonomy = 10
+			}
+		}
+	}
+}
+
+# Swedish Nobility Requests Help
+country_event = {
+	id = kalmar.3
+	title = "sweden_estate_name"
+	desc = "sweden_estate_desc"
+	picture = COURT_eventPicture
+	fire_only_once = yes
+	
+	trigger = {
+		tag = DAN
+		has_global_flag = sweden_reduced_noble_estates
+		NOT = { is_year = 1456 }
+	}
+	mean_time_to_happen = {
+		months = 24
+	}
+	option = {
+		name = "sweden_estate_opt1"
+		add_manpower = -5000
+		SWE = {
+			create_union = DAN
+		}
+	}
+	option = {
+		name = "sweden_estate_opt1"
+		add_prestige = -5
+	}
+}
