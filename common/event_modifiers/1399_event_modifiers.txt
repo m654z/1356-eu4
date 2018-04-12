@@ -57,3 +57,35 @@ turkish_settlement = {
 	local_production_efficiency = -0.25
 	local_manpower_modifier = -0.25
 }
+
+
+#French Region
+
+french_ducal_paris_conquest = {
+	diplomatic_reputation = 1
+	improve_relation_modifier = 0.1
+	legitimacy = 0.5
+	prestige = 0.5
+}
+
+claim_to_kingdom_france = {
+	diplomatic_reputation = 1
+	stability_cost_modifier = -0.15
+	global_autonomy = -0.05
+}
+
+french_ducal_aquitaine_conquest = {
+	diplomatic_reputation = 1
+	improve_relation_modifier = 0.1
+	global_autonomy = -0.05
+	stability_cost_modifier = -0.05
+}
+
+claim_to_kingdom_aquitaine = {
+	prestige = 0.5
+	legitimacy = 0.5
+	stability_cost_modifier = -0.05
+	advisor_cost = -0.1
+	
+	
+}
