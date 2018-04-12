@@ -1,0 +1,169 @@
+french_ducal_aqu_unify_core_area = {
+	slot = 1
+	generic = no
+	ai = yes
+	potential = { #All French Minors
+		OR = { #French Minors
+			tag = AMG
+			tag = FOI
+			tag = AUV
+			tag = BOU
+			tag = FOZ
+			tag = DAU 
+			tag = POU 
+			tag = TOU 
+			tag = PRO 
+			tag = BER
+			and = { #Guy Union
+				tag = GUY
+				is_lesser_in_union = no
+				}
+		}
+		OR = {
+			primary_culture = gascon
+			primary_culture = occitan
+		}
+	}
+	has_country_shield = yes
+
+	aqu_expand_ducal_influence = { #First step in the dukes to gaining the influence to stand independently.
+		icon = mission_conquer_50_development
+		required_missions = { }
+		#completed_by = 1450.1.1
+		trigger = {
+			num_of_cities = 3
+		}
+		effect = {
+			add_country_modifier = {
+				name = "influential_diplomacy"
+				duration = 5475
+			}
+		}
+	}
+	aqu_ducal_gain_regional_influence = { #The second step in leaving the shadow of france is to gain international recognition.
+		icon = mission_monarch_in_throne_room
+		required_missions = { aqu_expand_ducal_influence }
+		position = 2
+		#completed_by = 1491.12.6
+		trigger = {
+			num_of_allies = 2
+			num_of_royal_marriages = 2
+			has_advisor = yes
+		}
+		effect = {
+			pyrenees_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			languedoc_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			guyenne_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			201 = { #Provence
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			204 = { #Dauphine
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			173 = { #Labourd
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	
+	
+	
+	aqu_ducal_conquer_aquitaine_region = {
+		icon = mission_assemble_an_army
+		required_missions = { aqu_ducal_gain_regional_influence }
+		position = 4
+		#completed_by = 1477.1.5
+		trigger = {
+			num_of_states = 3
+			num_of_cities = 9
+		}
+		effect = {
+			174 = { #aquitaine prov
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	aqu_ducal_to_aquitaine_prov = {
+		icon = mission_assemble_an_army
+		required_missions = { aqu_ducal_conquer_aquitaine_region }
+		position = 5
+		#completed_by = 1558.1.7
+		provinces_to_highlight = {
+			province_id = 174
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			174 = { #Aquitaine Prov
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+				add_country_modifier = {
+					name = "french_ducal_aquitaine_conquest"
+					duration = 5475
+				}
+		}
+	}
+
+
+
+	aqu_ducal_form_aquitaine = {
+		icon = mission_unite_home_region
+		required_missions = { aqu_ducal_to_aquitaine_prov }
+		position = 7
+		#completed_by = 1558.1.7
+		trigger = {
+			owns = guyenne_area
+			owns = languedoc_area
+			owns = pyrenees_area
+			owns = 173 #Labourd
+			owns = 201 #Provence
+			owns = 2991 #Forcalquier
+			owns = 203 #Lyonnais
+			owns = 204 #Dauphine
+		}
+		effect = {
+				add_country_modifier = {
+					name = "claim_to_kingdom_aquitaine"
+					duration = 5475
+				}
+		}
+	}
+}
+
