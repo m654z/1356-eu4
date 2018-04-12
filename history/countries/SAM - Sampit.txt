@@ -3,7 +3,7 @@ government_rank = 1
 primary_culture = bornean
 technology_group = chinese
 religion = hinduism
-capital = 2707
+capital = 2708 # Sampit
 
 1298.1.1 = {
 	monarch = {

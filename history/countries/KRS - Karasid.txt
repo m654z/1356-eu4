@@ -4,7 +4,7 @@ primary_culture = turkish
 religion = sunni
 technology_group = ottoman
 historical_rival = MAM
-capital = 1848
+capital = 2296 # Biga
 religious_school = hanafi_school
 
 1351.1.1 = {

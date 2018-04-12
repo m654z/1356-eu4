@@ -2,7 +2,7 @@ government = feudal_theocracy
 primary_culture = omani_culture
 religion = ibadi
 technology_group = muslim
-capital = 400	# Muscat
+capital = 403	# Nizwa
 government_rank = 1
 religious_school = hanbali_school
 

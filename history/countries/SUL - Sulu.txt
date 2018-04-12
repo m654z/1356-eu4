@@ -2,7 +2,7 @@ government = despotic_monarchy
 technology_group = chinese
 religion = animism
 primary_culture = filipino
-capital = 651	# Jolo
+capital = 2703	# Lehad Datu
 
 1350.1.1 = {
 	monarch = {

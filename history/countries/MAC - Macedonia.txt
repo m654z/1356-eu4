@@ -4,7 +4,7 @@ technology_group = eastern
 primary_culture = greek
 religion = orthodox
 historical_rival = SER
-capital = 3001 # Skopje
+capital = 148 # Macedonia
 
 1355.12.20 = {
 	monarch = {

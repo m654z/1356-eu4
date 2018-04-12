@@ -181,19 +181,20 @@ historical_friend = SER
 	}
 }
 
-1415.17.1 = {
-	queen = {
-		country_of_origin = CRO
-		name = "Jelena"
-		dynasty = "Nelipcic"
-		birth_date = 1380.1.1
-		death_date = 1423.1.1
-		female = yes
-		adm = 2
-		dip = 2
-		mil = 2
-	}
-}
+# "History entry before birth of character [Jelena] birth date"
+#1415.17.1 = {
+#	queen = {
+#		country_of_origin = CRO
+#		name = "Jelena"
+#		dynasty = "Nelipcic"
+#		birth_date = 1380.1.1
+#		death_date = 1423.1.1
+#		female = yes
+#		adm = 2
+#		dip = 2
+#		mil = 2
+#	}
+#}
 
 1418.9.1 = {
 	monarch = {

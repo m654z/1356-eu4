@@ -3,7 +3,7 @@ government_rank = 1
 technology_group = western
 religion = catholic
 primary_culture = swiss
-capital = 165 # Bern
+capital = 166 # Waldstätte
 add_army_professionalism = 0.1
 
 1356.1.1 = {
