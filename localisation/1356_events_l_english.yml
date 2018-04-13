@@ -239,3 +239,8 @@
  estate_help_desc: "After reducing the estates of the Swedish nobles, the Swedish king lost his support in Stockholm. Now the nobles have come to request aid from us! In return, we will inherit the kingdom of Sweden."
  estate_help_opt1: "Send them some troops!"
  estate_help_opt2: "We can't spare the manpower."
+ denmark_ultimatum_name: "Denmark Presents Ultimatum"
+ denmark_ultimatum_desc: "The treacherous nobles whose estates we reduced have gone to Denmark to ask for help against us! Denmark has sent then a considerable amount of soldiers. They have also presented us with an ultimatum: give up the throne, or pay them a large sum of money. Refusing may lead to war!"
+ denmark_ultimatum_opt1: "Very well. Pay them the money."
+ denmark_ultimatum_opt2: "Very well. I will give up the throne."
+ denmark_ultimatum_opt3: "Absolutely not!"
