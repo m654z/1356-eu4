@@ -61,7 +61,7 @@ country_event = { #Castile Wins Civil War
 	}
 
 	mean_time_to_happen = {
-		months = 5
+		months = 3
 	}
 
 	option = {
@@ -85,7 +85,7 @@ country_event = { #House Trastamara wins Civil War
 	}
 
 	mean_time_to_happen = {
-		months = 5
+		months = 3
 	}
 
 	option = {
