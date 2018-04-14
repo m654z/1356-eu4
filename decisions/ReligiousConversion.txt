@@ -1,4 +1,4 @@
-religion_decisions = {
+country_decisions = {
 
 	join_the_counter_reformation = {
 		major = yes
@@ -81,6 +81,7 @@ religion_decisions = {
 		potential = {
 			government = daimyo
 			religion = shinto
+			NOT = { has_dlc = "Mandate of Heaven" } #Uses incidents instead.
 			any_owned_province = {
 				religion = catholic
 			}

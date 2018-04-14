@@ -24,6 +24,7 @@ country_decisions = {
 		effect = {
 			change_tag = BRI
 			inherit = BLS
+            swap_non_generic_missions = yes
 			set_capital = 172 # Vendee
 			random_owned_province = {
 				limit = { culture = breton }
@@ -104,6 +105,7 @@ country_decisions = {
 		effect = {
 			add_prestige = 25
 			change_tag = BRI
+            swap_non_generic_missions = yes
 			set_capital = 172 # Vendee
 			random_owned_province = {
 				limit = { culture = breton }

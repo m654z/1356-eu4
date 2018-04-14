@@ -1,14 +1,17 @@
 country_decisions = {
-
+	
 	arab_nation = {
 		major = yes
 		potential = {
 			normal_or_historical_nations = yes
+			NOT = { has_country_flag = formed_arabia_flag }
 			OR = {
 				ai = no
 				is_playing_custom_nation = no
 			}
 			NOT = { exists = ARB }
+			NOT = { tag = HLR }
+			NOT = { tag = PAP }
 			is_colonial_nation = no
 			OR = {
 				is_former_colonial_nation = no
@@ -20,8 +23,30 @@ country_decisions = {
 			culture_group = turko_semitic #Arabic
 			NOT = { primary_culture = turkish }
 		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 358			#Alexandria
+				province_id = 361			#Cairo
+				province_id = 377			#Aleppo
+				province_id = 379			#Jerusalem
+				province_id = 382			#Damascus
+				province_id = 384			#Medina
+				province_id = 385			#Mecca
+				province_id = 388			#Aden
+				province_id = 390			#Sanaa
+				province_id = 392			#Al-Arid
+				province_id = 394			#Qatif
+				province_id = 400			#Muscat
+				province_id = 403			#Nizwa
+				province_id = 410			#Baghdad
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+			}
+		}
 		allow = {
-			is_subject = no
+			is_free_or_tributary_trigger = yes
 			is_at_war = no
 			adm_tech = 15
 			owns_core_province = 358			#Alexandria
@@ -40,19 +65,7 @@ country_decisions = {
 			owns_core_province = 410			#Baghdad
 		}
 		effect = {
-			if = {
-				limit = {
-					is_part_of_hre = yes
-					is_elector = no
-					is_emperor = no
-				}
-				every_owned_province = {
-					limit = {
-						is_part_of_hre = yes
-					}
-					set_in_empire = no
-				}
-			}
+			remove_non_electors_emperors_from_empire_effect = yes
 			if = {
 				limit = {
 					NOT = { government_rank = 3 }
@@ -83,6 +96,7 @@ country_decisions = {
 				duration = 7300
 			}
 			add_prestige = 25
+			set_country_flag = formed_arabia_flag
 			change_tag = ARB
 		}
 		ai_will_do = {

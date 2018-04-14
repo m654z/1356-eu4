@@ -56,14 +56,19 @@ country_decisions = {
 		allow = {
 			advisor = theologian
 		}
-		effect = {	
+		effect = {
 			add_country_modifier = {
 				name = "the_advancement_of_true_religion_act"
 				duration = -1
 			}
 		}
 		ai_will_do = {
-			factor = 0
+			factor = 1
+			modifier = {
+				factor = 0
+				NOT = { full_idea_group = religious_ideas  }
+				NOT = { government = theocracy }
+			}
 		}
 	}
 	
@@ -71,7 +76,11 @@ country_decisions = {
 		potential = {
 			NOT = { has_country_modifier = the_blasphemy_act }
 			religion_group = christian
-			is_year = 1570
+			OR = {
+				current_age = age_of_reformation
+				current_age = age_of_absolutism
+				current_age = age_of_revolutions
+			}
 		}
 		allow = {
 			adm = 3
@@ -89,11 +98,11 @@ country_decisions = {
 
 	declaration_of_indulgence = {
 		potential = {
-			NOT = { has_country_modifier = the_declaration_of_indulgence }
-			NOT = { has_country_modifier = the_test_act }
 			religion_group = christian
+			NOT = { has_country_modifier = the_declaration_of_indulgence }
 		}
 		allow = {
+			NOT = { has_country_modifier = the_test_act }
 			adm_tech = 15
 		}
 		effect = {	
@@ -121,7 +130,7 @@ country_decisions = {
 			religion_group = christian
 		}
 		allow = {
-			adm_tech = 8
+			adm_tech = 1-
 		}
 		effect = {	
 			add_country_modifier = {
@@ -131,6 +140,11 @@ country_decisions = {
 		}
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				factor = 0
+				NOT = { full_idea_group = religious_ideas  }
+				NOT = { government = theocracy }
+			}
 		}
 	}
 	
@@ -210,7 +224,6 @@ country_decisions = {
 			NOT = { has_country_modifier = the_conventicle_act }
 			religion_group = christian
 			OR = {
-				is_religion_enabled = hussite
 				is_religion_enabled = protestant
 				is_religion_enabled = reformed
 			}
@@ -257,16 +270,15 @@ country_decisions = {
 	
 	test_act = {
 		potential = {
-			NOT = { has_country_modifier = the_declaration_of_indulgence }
 			NOT = { has_country_modifier = the_test_act }
 			OR = {
-				religion = hussite
 				religion = protestant
 				religion = reformed
 			}
 		}
 		allow = {
-			adm_tech = 15
+			adm_tech = 10
+			NOT = { has_country_modifier = the_declaration_of_indulgence }
 		}
 		effect = {	
 			add_country_modifier = {
@@ -314,11 +326,10 @@ country_decisions = {
 		potential = {
 			NOT = { has_country_modifier = the_popery_act }
 			OR = {
-				religion = hussite
 				religion = protestant
 				religion = reformed
 			}
-			adm_tech = 11
+			adm_tech = 14
 		}
 		allow = {
 			mil = 3
@@ -336,9 +347,9 @@ country_decisions = {
 	}
 	
 	# Muslim modifiers
-	sheikh_ul_islam = {
+	enforce_religion_muslim = {
 		potential = {
-			NOT = { has_ruler_modifier = the_sheikh_ul_islam }
+			NOT = { has_ruler_modifier = muslim_enforced_religion }
 			religion_group = muslim
 		}
 		allow = {
@@ -347,17 +358,12 @@ country_decisions = {
 		}
 		effect = {	
 			add_ruler_modifier = {
-				name = "the_sheikh_ul_islam"
+				name = "muslim_enforced_religion"
 				duration = -1
 			}
-			add_piety = 0.10
 		}
 		ai_will_do = {
-			factor = 1
-			modifier = { 
-				NOT = { piety = -0.1 }
-				factor = 0
-			}			
+			factor = 1		
 		}
 	}
 	
@@ -365,6 +371,7 @@ country_decisions = {
 		potential = {
 			NOT = { has_ruler_modifier = khalifah }
 			religion = sunni
+			NOT = { tag = MAM } #Controls the Caliph already.
 		}
 		allow = {
 			mil = 3
@@ -455,7 +462,7 @@ country_decisions = {
 				name = "per_capita_tax"
 				duration = -1
 			}
-			add_piety = -0.15
+			add_piety = 0.15
 		}
 		ai_will_do = {
 			factor = 1
@@ -493,6 +500,76 @@ country_decisions = {
 		}
 	}
 	
+	adopt_wahabism = {
+		potential = {
+			has_dlc = "Cradle of Civilization"
+			religion = sunni
+			government = tribal_federation
+			has_global_flag = wahabism_founded
+			NOT = {
+				religious_school = {
+					group = muslim
+					school = hanbali_school
+				}
+			}
+		}
+		allow = {
+			piety = 1.0 #100 Legalism
+		}
+		effect = {
+			add_stability = -3
+			add_legitimacy = 30
+			set_religious_school = {
+				group = muslim
+				school = hanbali_school
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	
+	trade_propagation_convert_to_islam = {
+		potential = {
+			has_dlc = "Cradle of Civilization"
+			NOT = { religion_group = muslim }
+			capital_scope = {
+				religion_group = muslim
+				is_node_in_trade_company_region = yes
+			}
+		}
+		allow = {
+			legitimacy = 90
+			has_regency = no
+			is_free_or_tributary_trigger = yes
+			custom_trigger_tooltip = {
+				tooltip = the_dominant_religion_is_a_form_of_islam_tooltip
+				OR = {
+					dominant_religion = sunni
+					dominant_religion = shiite
+					dominant_religion = ibadi
+				}
+			}
+		}
+		effect = {
+			change_religion = capital
+			add_stability = 1
+			add_legitimacy = 10
+			clr_country_flag = sultan_titles_for_non_muslims
+			remove_country_modifier = islamic_titles
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				has_country_flag = sultan_titles_for_non_muslims
+				had_country_flag = { flag = sultan_titles_for_non_muslims days = 10950 } #After 30 years
+				NOT = { tag = ARK }
+			}
+		}
+	}
+	
 	regulate_the_monastaries = {
 		potential = {
 			NOT = { has_country_modifier = regulated_monasteries }
@@ -519,7 +596,7 @@ country_decisions = {
 			any_owned_province = {
 				religion = vajrayana
 			}
-			is_subject = no
+			is_free_or_tributary_trigger = yes
 		}
 		allow = {
 			stability = 1
@@ -923,6 +1000,10 @@ country_decisions = {
 		potential = {
 			NOT = { has_country_modifier = enforcing_heritage }
 			religion_group = eastern
+			OR = {
+				NOT = { religion = confucianism }
+				NOT = { has_dlc = "Mandate of Heaven" }
+			}
 		}
 		allow = {
 			any_neighbor_country = {
@@ -1013,13 +1094,13 @@ country_decisions = {
 	
 	tengri_black_shamanism = {
 		potential = {
-			NOT = { has_country_modifier = yellow_shamanism_modifier }
 			NOT = { has_country_modifier = black_shamanism_modifier }
 			religion = tengri_pagan_reformed
 			NOT = { has_secondary_religion = yes }
 		}
 		allow = {
 			ADM = 3
+			NOT = { has_country_modifier = yellow_shamanism_modifier }
 		}
 		effect = {	
 			add_country_modifier = {
@@ -1422,6 +1503,7 @@ country_decisions = {
 			any_owned_province = {
 				religion_group = christian
 			}
+			is_free_or_tributary_trigger = yes
 		}
 		allow = {
 			NOT = { government = tribal }
@@ -1448,6 +1530,7 @@ country_decisions = {
 			any_owned_province = {
 				religion_group = muslim
 			}
+			is_free_or_tributary_trigger = yes
 		}
 		allow = {
 			NOT = { government = tribal }
@@ -1474,6 +1557,7 @@ country_decisions = {
 			any_owned_province = {
 				religion_group = eastern
 			}
+			is_free_or_tributary_trigger = yes
 		}
 		allow = {
 			NOT = { government = tribal }
@@ -1500,6 +1584,7 @@ country_decisions = {
 			any_owned_province = {
 				religion_group = dharmic
 			}
+			is_free_or_tributary_trigger = yes
 		}
 		allow = {
 			NOT = { government = tribal }
@@ -1526,6 +1611,7 @@ country_decisions = {
 			any_owned_province = {
 				religion_group = zoroastrian_group
 			}
+			is_free_or_tributary_trigger = yes
 		}
 		allow = {
 			NOT = { government = tribal }
@@ -1550,8 +1636,9 @@ country_decisions = {
 			religion_group = pagan
 			NOT = { religion = tengri_pagan_reformed }
 			any_owned_province = {
-				religion_group = zoroastrian_group
+				religion = jewish
 			}
+			is_free_or_tributary_trigger = yes
 		}
 		allow = {
 			NOT = { government = tribal }
@@ -1571,4 +1658,122 @@ country_decisions = {
 			}
 		}
 	}
+	
+	muslim_conversion_to_sikhism = {
+		potential = {
+			religion_group = muslim
+			any_owned_province = {
+				religion_group = sikhism
+			}
+			is_free_or_tributary_trigger = yes
+		}
+		allow = {
+			stability = 1
+		}
+		effect = {
+			add_prestige = -100
+			add_stability = -2
+			change_religion = sikhism
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				NOT = { tag = PUN }
+			}
+		}
+	}
+	
+	shinto_christian_decision = {
+		potential = {
+			has_dlc = "Mandate of Heaven"
+			religion = shinto
+			OR = {
+				is_incident_active = incident_spread_of_christianity
+				has_country_flag = christians_present
+				has_ruler_flag = christian_tutors
+			}
+			NOT = {
+				has_ruler_modifier = christian_ruler
+			}
+		}
+		allow = {
+			NOT = { has_regency = yes }
+			stability = 2
+		}
+		effect = {
+			set_ruler_religion = catholic
+			if = {
+				limit = { has_heir = yes }
+				set_heir_religion = catholic
+			}
+			add_ruler_modifier = {
+				name = "christian_ruler"
+				duration = -1
+			}
+			if = {
+				limit = {
+					is_incident_active = incident_spread_of_christianity
+				}
+				add_incident_variable_value = {
+					incident = incident_spread_of_christianity
+					value = 1
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				num_of_cities = 2
+				NOT = { has_ruler_flag = christian_tutors }
+			}
+			modifier = {
+				factor = 0
+				NOT = { has_ruler_flag = christian_tutors }
+				NOT = { primary_culture = togoku }
+			}
+		}
+	}
+	
+	conversion_of_convenience = {
+		potential = {
+			NOT = { ruler_religion = ROOT }
+			is_lesser_in_union = no
+			OR = {
+				ai = no
+				has_idea_group = religious_ideas
+			}
+		}
+		allow = {
+			stability = 1
+			capital_scope = {
+				has_owner_religion = yes
+			}
+		}
+		effect = {
+			add_stability = -2
+			add_legitimacy = 10
+			set_ruler_religion = ROOT
+			if = {
+				limit = {
+					has_heir = yes
+					NOT = { heir_religion = ROOT }
+				}
+				set_heir_religion = ROOT
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				OR = {
+					government = daimyo
+					has_ruler_modifier = christian_ruler
+					has_country_flag = a_kirishitan_realm
+				}
+			}
+		}
+	}
+	
 }

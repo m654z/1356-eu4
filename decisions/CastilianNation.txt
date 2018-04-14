@@ -23,6 +23,7 @@ country_decisions = {
 		}
 		effect = {
 			change_tag = CAS
+            swap_non_generic_missions = yes
 			every_owned_province = {
 				remove_core = CTR
 			}
