@@ -1,0 +1,229 @@
+danish_missions = {
+	slot = 1
+	generic = no
+	potential = {
+		tag = DAN
+	}
+	has_country_shield = yes
+	
+	annex_holstein = {
+		icon = mission_unite_home_region
+		position = 1
+		provinces_to_highlight = {
+			province_id = 1775
+		}
+		trigger = {
+			SHL = { is_subject_of = DAN }
+		}
+		effect = {
+			holstein_area = {
+				add_permanent_claim = ROOT
+			}
+			add_prestige = 20
+		}
+	}
+	
+	norway_subject = {
+		icon = mission_have_two_subjects
+		required_missions = { annex_holstein }
+		position = 2
+		trigger = {
+			NOR = {
+				is_subject_of = DAN
+			}
+		}
+		effect = {
+			add_prestige = 25
+		}
+	}
+	
+	sweden_subject = {
+		icon = mission_have_two_subjects
+		required_missions = { norway_subject }
+		position = 3
+		trigger = {
+			SWE = {
+				is_subject_of = DAN
+			}
+		}
+		effect = {
+			add_prestige = 25
+		}
+	}
+	
+	colonize_greenland = {
+		icon = mission_establish_high_seas_navy
+		position = 4
+		required_missions = { sweden_subject }
+		provinces_to_highlight = {
+			OR = {
+				province_id = 1105
+				province_id = 1104
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			greenland_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			add_prestige = 15
+			add_country_modifier = {
+				name = "the_unknown_frontier"
+				duration = 1200
+			}
+		}
+	}
+	
+	dan_baltic_fleet = {
+		icon = mission_galleys_in_port
+		position = 5
+		trigger = {
+			navy_size_percentage = 0.9
+		}
+		effect = {
+			add_country_modifier = {
+				name = "baltic_ambition_new"
+				duration = 5475
+			}
+		}
+	}
+
+	reclaim_estonia = {
+		icon = mission_conquer_5_states
+		position = 6
+		required_missions = { dan_baltic_fleet }
+		provinces_to_highlight = {
+			OR = {
+				province_id = 35
+				province_id = 36
+				province_id = 1842
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			35 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			36 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			1842 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			livonia_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			curonia_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	
+	conquer_baltics = {
+		icon = mission_conquer_5_states
+		position = 7
+		required_missions = { reclaim_estonia }
+		provinces_to_highlight = {
+			OR = {
+				area = livonia_area
+				area = curonia_area
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			livonia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			curonia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			add_prestige = 20
+			add_adm_power = 100
+		}
+	}
+	
+	reconquer_danelaw = {
+		icon = mission_conquer_5_states
+		position = 8
+		provinces_to_highlight = {
+			area = scottish_marches_area
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			scottish_marches_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			add_prestige = 25
+			yorkshire_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			west_midlands_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			east_midlands_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			wessex_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			home_counties_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			east_anglia_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+}
