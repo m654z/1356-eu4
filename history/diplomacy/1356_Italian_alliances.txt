@@ -63,13 +63,6 @@ alliance = {
 #################
 
 vassal = {
-	first = CAS
-	second = CTR
-	start_date = 1350.3.26
-	end_date = 1366.3.13
-}
-
-vassal = {
 	first = SAV
 	second = MFA
 	start_date = 1433.4.26
