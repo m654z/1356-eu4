@@ -226,10 +226,10 @@ christian = {
 			}			
 		}
 	}
-
+	
 	anglican = {
 		color = { 135 77 255 }
-		icon = 33
+		icon = 28
 
 		allowed_center_conversion = {
 			catholic
@@ -296,7 +296,7 @@ christian = {
 			allow_usury_aspect
 			translated_bibles_aspect
 		}
-		aspects_name = PROTESTANT_ASPECTS
+		aspects_name = PROTESTANT_ASPECTS						   
 		
 		hre_heretic_religion = yes
 		
@@ -336,8 +336,36 @@ christian = {
 					random_owned_province = {
 						limit = {
 							can_have_center_of_reformation_trigger = {
+							
+						  
+						  
+						 
+		
+							   
+								 
+					   
+					 
+			  
+								 
+									
+		 
+		
+			  
+						
+					
+									
 								RELIGION = protestant
+		 
 							}
+								  
+									 
+								   
+										
+											 
+									 
+									 
+									  
+									   
 						}
 						change_religion = protestant
 						add_reform_center = protestant
@@ -363,8 +391,36 @@ christian = {
 					random_owned_province = {
 						limit = {
 							can_have_center_of_reformation_trigger = {
+							 
+						   
+						   
+						  
+		
+							   
+								 
+								  
+					   
+					 
+			  
+								 
+									
+		 
+		
+			  
+						
+					
 								RELIGION = protestant
+									
+		 
 							}
+									 
+								   
+										
+											 
+									 
+									 
+									  
+									   
 						}
 						change_religion = protestant
 						add_reform_center = protestant
@@ -422,9 +478,38 @@ christian = {
 		will_get_center = { #Refered to even for initial CoR Spawn
 			any_owned_province = {
 				can_have_center_of_reformation_trigger = {
+						  
+						
+						
+	 
+							   
+							
+							  
+		  
 					RELIGION = reformed
+					 
 				}
-
+				  
+		   
+							  
+								 
+	  
+	 
+		   
+					 
+				 
+						 
+								 
+	  
+	 
+								  
+								
+									 
+										  
+								  
+								  
+								   
+									
 			}
 		}
 		
@@ -456,9 +541,36 @@ christian = {
 					random_owned_province = {
 						limit = {
 							can_have_center_of_reformation_trigger = {
+							 
+						   
 								RELIGION = reformed
-
-							}			NOT = { has_climate = tropical }
+						  
+							}
+								  
+							   
+								 
+					 
+					   
+			  
+								 
+									
+		 
+		
+			  
+						
+					
+							
+									
+		 
+		
+									 
+								   
+										
+											 
+									 
+									 
+									  
+									   
 						}
 						change_religion = reformed
 						add_reform_center = reformed
@@ -484,9 +596,36 @@ christian = {
 					random_owned_province = {
 						limit = {
 							can_have_center_of_reformation_trigger = {
+							 
+						   
 								RELIGION = reformed
-
+						  
 							}
+							   
+								 
+					 
+								  
+					   
+			  
+								 
+									
+		 
+		
+			  
+						
+					
+							
+									
+		 
+		
+									 
+								   
+										
+											 
+									 
+									 
+									  
+									   
 						}
 						change_religion = reformed
 						add_reform_center = reformed
@@ -497,7 +636,7 @@ christian = {
 			add_country_modifier = {
 				name = "conversion_zeal"
 				duration = 3650
-			}			
+			}
 			set_country_flag = "reformation_money"
 			every_known_country = {
 				limit = {
@@ -995,6 +1134,11 @@ muslim = {
 	sunni = {
 		color = { 0 153 0 }
 		icon = 5
+		allowed_center_conversion = {
+			buddhism
+			animism
+			hinduism
+		}
 		country = {
 			cav_to_inf_ratio = 0.10
 			heir_chance = 1.0
@@ -1453,6 +1597,11 @@ jewish_group = {
 		
 		heretic = { SAMARITAN KARAITE }
 	}
+	
+	harmonized_modifier = harmonized_jewish_group
+	
+	crusade_name = HOLY_WAR
+
 }
 
 
@@ -1476,22 +1625,21 @@ christian = {
 		country_as_secondary = {
 			adm_tech_cost_modifier = -0.1
 		}
-		
-		uses_church_power = yes				# Uses church power/aspect mechanics		
-		aspects = {
-			organised_through_bishops_aspect
-			priests_may_marry_aspect
-			adult_baptism_aspect
-			hussite_council_aspect
-			saints_accept_prayers_aspect
-			wagon_forts_aspect
-			legalised_divorces_aspect
-			zizka_legacy_aspect
-			parish_registers_aspect
-			individual_creeds_aspect
-			allow_usury_aspect
-			translated_bibles_aspect
-		}
+		#uses_church_power = yes				# Uses church power/aspect mechanics		
+		#aspects = {
+		#	organised_through_bishops_aspect
+		#	priests_may_marry_aspect
+		#	adult_baptism_aspect
+		#	hussite_council_aspect
+		#	saints_accept_prayers_aspect
+		#	wagon_forts_aspect
+		#	legalised_divorces_aspect
+		#	zizka_legacy_aspect
+		#	parish_registers_aspect
+		#	individual_creeds_aspect
+		#	allow_usury_aspect
+		#	translated_bibles_aspect
+		#}
 	
 		on_convert = {
 			change_religion = hussite
@@ -1507,63 +1655,43 @@ christian = {
 			if = {
 				limit = {
 					has_country_flag = reformation_money
-					NOT = {
-						calc_true_if = {
-							all_province = {
-								religion = hussite
-								is_reformation_center = yes
-							}
-							amount = 3
-						}
-					}
 				}
-				hidden_effect = {
-					random_owned_province = {
-						limit = {
-							can_have_center_of_reformation_trigger = {
-								RELIGION = hussite
-
-							}			NOT = { has_climate = tropical }
+				random_owned_province = {
+					limit = {
+						OR = {
+							religion = protestant
+							religion = catholic
+							religion = reformed
+							religion = hussite
 						}
-						change_religion = hussite
-						add_reform_center = hussite
+						is_in_capital_area = yes
+						is_reformation_center = no
 					}
+					change_religion = hussite
+					add_reform_center = hussite
 				}
-				custom_tooltip = CENTER_OF_REFORMATION_POSSIBLE
-			}
+			}	
 			if = {
 				limit = {
 					NOT = { has_country_flag = reformation_money }
-					NOT = {
-						calc_true_if = {
-							all_province = {
-								religion = hussite
-								is_reformation_center = yes
-							}
-							amount = 3
-						}
-					}
 				}
 				add_years_of_income = 1.0
-				hidden_effect = {
-					random_owned_province = {
-						limit = {
-							can_have_center_of_reformation_trigger = {
-								RELIGION = hussite
-
-							}
-						}
-						change_religion = hussite
-						add_reform_center = hussite
+				random_owned_province = {
+					limit = {
+						religion = catholic
+						is_in_capital_area = yes
+						is_reformation_center = no
 					}
+					change_religion = hussite
+					add_reform_center = hussite
 				}
-				custom_tooltip = CENTER_OF_REFORMATION_POSSIBLE
 			}
+			
 			add_country_modifier = {
 				name = "conversion_zeal"
 				duration = 3650
 			}			
-			set_country_flag = "reformation_money"
+			set_country_flag = reformation_money
 			every_known_country = {
 				limit = {
 					reverse_has_opinion_modifier = {
@@ -1699,6 +1827,29 @@ pagan = {
 		
 		
 		heretic = { OLD_SLAVIC }	
+	}
+	
+	hellenic_pagan = {
+		color = { 0.6 0.1 0.1 }
+		icon = 33
+		country = {
+			tolerance_own = 1
+			tolerance_heretic = -1
+		}
+		
+		on_convert = {
+			change_religion = hellenic_pagan
+			add_stability = -3
+			remove_country_modifier = counter_reformation
+			remove_country_modifier = the_statue_in_restraint_of_appeals
+			remove_country_modifier = bavarian_jesuits
+			remove_country_modifier = the_societas_jesu
+			remove_country_modifier = the_declaration_of_indulgence
+			remove_country_modifier = de_heretico_comburendo			
+		}
+		
+		
+		heretic = { GOAT_SKULL }	
 	}	
 }
 
