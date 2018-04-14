@@ -95,6 +95,7 @@ country_event = { #House Trastamara wins Civil War
                 inherit = CAS
 		set_global_flag = "trastamara_wins_civil_war"
                 change_tag = CAS
+		swap_non_generic_missions = yes
                 set_government_rank = 2
                 add_truce_with = POR
                 add_truce_with = GRA 
