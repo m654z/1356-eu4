@@ -6,7 +6,7 @@ latent_trade_goods = {
 }
 
 owner = CTR
-controller = CTR
+controller = CAS
 add_core = CTR
 add_core = LON
 culture = leonese

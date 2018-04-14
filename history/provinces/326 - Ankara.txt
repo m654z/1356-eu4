@@ -14,7 +14,7 @@ base_manpower = 3
 is_city = yes
 estate = estate_nobles
 add_core = GRM
-add_claim = TUR
+add_core = TUR
 
 discovered_by = western
 discovered_by = eastern
