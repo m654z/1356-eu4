@@ -1,0 +1,5 @@
+on_new_monarch = {
+	events = { 
+		cri_cleanup.1
+	}
+}	
