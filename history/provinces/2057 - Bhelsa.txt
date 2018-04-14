@@ -13,6 +13,7 @@ base_production = 2
 base_manpower = 1
 is_city = yes
 add_core = MLW
+add_core = DLH	
 estate = estate_nobles
 
 discovered_by = indian
