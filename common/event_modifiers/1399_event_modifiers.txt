@@ -57,3 +57,19 @@ turkish_settlement = {
 	local_production_efficiency = -0.25
 	local_manpower_modifier = -0.25
 }
+Tamerlane = {
+	land_maintenance_modifier = -0.50
+	manpower_recovery_speed = 0.35
+	land_morale = 0.20
+	discipline = 0.10
+	land_forcelimit = 25
+    ae_impact = -0.50
+    province_warscore_cost = -0.50
+    core_creation = -0.50
+	years_of_nationalism = -5
+}
+disunited_tribes = {
+    horde_unity = -3
+	land_morale = -0.10
+	land_forcelimit = -15
+}
