@@ -98,10 +98,3 @@ alliance = {
 	start_date = 1386.5.19
 	end_date = 1409.7.25
 }
-
-royal_marriage = {
-	first = ARA
-	second = SIC
-	start_date = 1386.5.19
-	end_date = 1409.7.25
-}

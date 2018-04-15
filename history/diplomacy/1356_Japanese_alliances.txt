@@ -79,13 +79,6 @@ vassal = {
 
 vassal = {
 	first = ASK
-	second = SBA
-	start_date = 1356.1.1
-	end_date = 1392.1.1
-}
-
-vassal = {
-	first = ASK
 	second = AKM
 	start_date = 1356.1.1
 	end_date = 1392.1.1
@@ -193,13 +186,6 @@ vassal = {
 
 vassal = {
 	first = ASK
-	second = SBA
-	start_date = 1392.1.1
-	end_date = 1444.11.11
-}
-
-vassal = {
-	first = ASK
 	second = DTE
 	start_date = 1392.1.1
 	end_date = 1444.11.11
@@ -209,7 +195,7 @@ vassal = {
 	first = ASK
 	second = UTN
 	start_date = 1392.1.1
-	end_date = 1392.1.1
+	end_date = 1392.1.2
 }
 
 vassal = {
