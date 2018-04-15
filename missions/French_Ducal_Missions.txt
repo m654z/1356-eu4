@@ -133,7 +133,7 @@ french_ducal_unify_core_area = {
 		#completed_by = 1558.1.7
 		trigger = {
 			OR = {
-				NOT { exists = FRA }
+				NOT = { exists = FRA }
 				tag = FRA
 			}
 		}

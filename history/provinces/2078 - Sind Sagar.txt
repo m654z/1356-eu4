@@ -49,7 +49,7 @@ discovered_by = chinese
 	    } # Bairam Khan occupies Multan
 1600.1.1  = { discovered_by = TUR }
 1690.1.1  = { discovered_by = ENG }
-1707.5.12 = { discovered_by = GBR 
+1707.5.12 = { discovered_by = GBR }
 1738.1.1  = { controller = PER } # Captured by Persia, Nadir Shah
 1739.5.1  = {	owner = PER
 		add_core = PER

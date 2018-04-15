@@ -13,7 +13,8 @@ country_decisions = {
 			NOT = { exists = AQT }
 			OR = { #Culture
 				primary_culture = gascon
-				primary_culture = occitan
+				primary_culture = occitain
+				primary_culture = aquitaine
 			}
 			is_colonial_nation = no
 			OR = {

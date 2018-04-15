@@ -36,11 +36,16 @@ french_ducal_vassal = {
 	copy_from = daimyo_vassal
 	count = vassal
 	
+	#properties
+	pays_overlord = 0.0
+	
 	gives_daimyo_bonuses = no
 	gets_help_with_rebels = yes
 	separatists_become_subjects = yes
 	allows_taking_land_without_independence = yes
 	can_use_claims = no
+	has_power_projection = yes
+	can_have_subjects_of_other_types = yes
 	
 	trust_on_start = 0
 	
