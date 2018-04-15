@@ -18,7 +18,6 @@ capital = "Belgorod"
 is_city = yes
 estate = estate_cossacks
 add_core = CHR
-add_core = CRI
 
 discovered_by = western
 discovered_by = eastern

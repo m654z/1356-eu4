@@ -4,6 +4,7 @@ country_decisions = {
 		major = yes
 		potential = {
 			normal_or_historical_nations = yes
+			NOT = { has_country_flag = formed_hannover_flag }
 			OR = {
 				ai = no
 				is_playing_custom_nation = no
@@ -33,9 +34,21 @@ country_decisions = {
 				}
 			}
 		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 53	# Lüneburg
+				province_id = 54	# Stade
+				province_id = 1758	# Hannover
+				province_id = 2971	# Hoya
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+			}
+		}
 		allow = {
 			adm_tech = 15
-			is_subject = no
+			is_free_or_tributary_trigger = yes
 			is_nomad = no
 			is_at_war = no
 			OR = {
@@ -48,6 +61,9 @@ country_decisions = {
 			owns_core_province = 2971	# Hoya
 		}
 		effect = {
+			1758 = {
+				move_capital_effect = yes
+			}
 			change_tag = HAN
 			1758 = {
 				add_base_tax = 1
@@ -73,6 +89,7 @@ country_decisions = {
 				}
 				add_permanent_claim = HAN
 			}
+			set_country_flag = formed_hannover_flag
 			add_prestige = 25
 			if = {
 				limit = {
@@ -80,8 +97,11 @@ country_decisions = {
 				}
 				set_government_rank = 2
 			}
-			HAN = {
-				set_capital = 1758 # Hannover
+			if = {
+				limit = {
+					is_playing_custom_nation = no
+				}
+				country_event = { id = ideagroups.1 } #Swap Ideas
 			}
 		}
 		ai_will_do = {
@@ -98,6 +118,7 @@ country_decisions = {
 		major = yes
 		potential = {
 			normal_or_historical_nations = yes
+			NOT = { has_country_flag = formed_westphalia_flag }
 			OR = {
 				ai = no
 				is_playing_custom_nation = no
@@ -109,6 +130,7 @@ country_decisions = {
 			NOT = { tag = PRU }
 			NOT = { tag = SWI }
 			NOT = { exists = WES }
+			NOT = { government = celestial_empire }
 			OR = {
 				primary_culture = hannoverian #Westphalian
 				primary_culture = hessian
@@ -136,9 +158,22 @@ country_decisions = {
 				}
 			}
 		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 52	# Magdeburg
+				province_id = 82	# Westfalen
+				province_id = 1758	# Hannover
+				province_id = 1762	# Kassel
+				province_id = 2972	# Paderborn
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+			}
+		}
 		allow = {
 			adm_tech = 15
-			is_subject = no
+			is_free_or_tributary_trigger = yes
 			is_nomad = no
 			is_at_war = no
 			OR = {
@@ -155,7 +190,11 @@ country_decisions = {
 			owns_core_province = 2972	# Paderborn
 		}
 		effect = {
+			1762 = {
+				move_capital_effect = yes
+			}
 			change_tag = WES
+			set_country_flag = formed_westphalia_flag
 			if = {
 				limit = {
 					NOT = { government_rank = 2 }
@@ -195,9 +234,6 @@ country_decisions = {
 			}
 			add_prestige = 25
 			change_government = administrative_monarchy
-			WES = {
-				set_capital = 1762 # Kassel
-			}
 			set_country_flag = formed_westphalia
 		}
 		ai_will_do = {
@@ -214,6 +250,7 @@ country_decisions = {
 		major = yes
 		potential = {
 			normal_or_historical_nations = yes
+			NOT = { has_country_flag = formed_greece_flag }
 			OR = {
 				ai = no
 				is_playing_custom_nation = no
@@ -241,9 +278,22 @@ country_decisions = {
 				}
 			}
 		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 144
+				province_id = 145
+				province_id = 146
+				province_id = 164
+				province_id = 1773
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+			}
+		}
 		allow = {
 			adm_tech = 15
-			is_subject = no
+			is_free_or_tributary_trigger = yes
 			is_nomad = no
 			is_at_war = no
 			owns_core_province = 144
@@ -254,19 +304,7 @@ country_decisions = {
 		}
 		effect = {
 			change_tag = GRE
-			if = {
-				limit = {
-					is_part_of_hre = yes
-					is_elector = no
-					is_emperor = no
-				}
-				every_owned_province = {
-					limit = {
-						is_part_of_hre = yes
-					}
-					set_in_empire = no
-				}
-			}
+			remove_non_electors_emperors_from_empire_effect = yes
 			if = {
 				limit = {
 					NOT = { government_rank = 2 }
@@ -320,6 +358,7 @@ country_decisions = {
 				}
 				set_capital = 146
 			}
+			set_country_flag = formed_greece_flag
 			if = {
 				limit = {
 					NOT = { has_idea_group = greek_ideas } 
@@ -363,12 +402,30 @@ country_decisions = {
 				}
 			}
 		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 370
+				province_id = 371
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+			}
+		}
 		allow = {
 			NOT = { num_of_cities = 4 }
 			owns_core_province = 370
 			owns_core_province = 371
 		}
 		effect = {
+			if = {
+				limit = {
+					capital_scope = { NOT = { area = subarctic_islands_area } }
+				}
+				370 = {
+					move_capital_effect = yes
+				}
+			}
 			hidden_effect = {
 				every_province = {
 					limit = {
@@ -392,12 +449,6 @@ country_decisions = {
 			}		
 			change_tag = ICE
 			set_country_flag = formed_iceland
-			if = {
-				limit = {
-					capital_scope = { NOT = { area = subarctic_islands_area } }
-				}
-				set_capital = 370
-			}
 			if = {
 				limit = { NOT = { primary_culture = norwegian } }
 				change_primary_culture = CAPITAL

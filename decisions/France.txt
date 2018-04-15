@@ -48,11 +48,7 @@ country_decisions = {
 				name = "the_state_is_me"
 				duration = -1
 			}
-			change_government = absolute_monarchy
-			add_country_modifier = {
-				name = "centralization_modifier"
-				duration = 7300
-			}
+			add_absolutism = 10
 		}
 		ai_will_do = {
 			factor = 1
@@ -126,6 +122,7 @@ country_decisions = {
 		}
 		effect = {
 			remove_country_modifier = edict_de_nantes
+            set_country_flag = revoked_the_edict_of_nantes
 			add_prestige = 10
 		}
 		ai_will_do = {

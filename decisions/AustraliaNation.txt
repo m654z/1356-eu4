@@ -22,7 +22,7 @@ country_decisions = {
 		allow = {
 			adm_tech = 15
 			is_former_colonial_nation = yes
-			is_subject = no
+			is_free_or_tributary_trigger = yes
 			is_at_war = no
 			capital_scope = {
 				colonial_region = colonial_australia
@@ -32,19 +32,7 @@ country_decisions = {
 		}
 		effect = {
 			change_tag = AUS
-			if = {
-				limit = {
-					is_part_of_hre = yes
-					is_elector = no
-					is_emperor = no
-				}
-				every_owned_province = {
-					limit = {
-						is_part_of_hre = yes
-					}
-					set_in_empire = no
-				}
-			}
+			remove_non_electors_emperors_from_empire_effect = yes
 			if = {
 				limit = {
 					NOT = { government_rank = 2 }

@@ -3,6 +3,7 @@ country_decisions = {
 	kingdom_of_jerusalem = {
 		major = yes
 		potential = {
+			NOT = { has_country_flag = formed_jerusalem }
 			NOT = { exists = KOJ }
 			normal_or_historical_nations = yes
 			OR = {
@@ -11,6 +12,7 @@ country_decisions = {
 			}
 			religion = catholic
 			NOT = { government = republic }
+			NOT = { government = celestial_empire }
 			OR = {
 				owns = 379
 				AND = {
@@ -21,26 +23,55 @@ country_decisions = {
 					ai = no
 					tag = CYP
 				}
+				AND = {
+					ai = no
+					tag = PRO
+				}
 			}
-			NOT = { is_year = 1650 } #end of crusades
+			OR = {
+				current_age = age_of_discovery
+				current_age = age_of_reformation
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 364 #Gazzah
+				province_id = 379 #Jerusalem
+				province_id = 1854 #Jaffa
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+			}
 		}
 		allow = {
 			is_at_war = no
-			owns_core_province = 1854
-			owns_core_province = 364
-			owns_core_province = 379
+			owns_core_province = 364 #Gazzah
+			owns_core_province = 379 #Jerusalem
+			owns_core_province = 1854 #Jaffa
+			379 = {
+				is_state = yes
+			}
 		}
 		effect = {
 			add_prestige = 25
+			every_province = {
+				limit = {
+					OR = {
+						area = trans_jordan_area
+						area = palestine_area
+						province_id = 378 #County of Tripoli
+						province_id = 1855 #Sayda
+						province_id = 4268 #Aqaba
+					}
+				}
+				add_core = KOJ
+			}
 			if = {
 				limit = {
 					NOT = { tag = KNI }
 					NOT = { tag = CYP }
-				}
-				KOJ = {
-					add_core = 379
-					add_core = 1854
-					add_core = 364
+					NOT = { tag = PRO }
 				}
 				release = KOJ
 				KOJ = { change_primary_culture = ROOT }
@@ -50,25 +81,35 @@ country_decisions = {
 					OR = {
 						tag = KNI
 						tag = CYP
+						tag = PRO
 					}
 				}
 				change_tag = KOJ
-				country_event = { id = ideagroups.1 } #Swap Ideas
+				if = {
+					limit = { has_custom_ideas = no }
+					country_event = { id = ideagroups.1 } #Swap Ideas
+				}
 			}
 			if = {
 				limit = { tag = KNI }
 				set_country_flag = knights_formed_jerusalem
 			}
 			KOJ = {
-				set_capital = 379
+				set_capital = 379 #Jerusalem
 				change_religion = catholic
-				change_government = feudal_monarchy
+				if = {
+					limit = {
+						NOT = { government = monarchy }
+					}
+					change_government = feudal_monarchy
+				}
 				if = {
 					limit = {
 						NOT = { government_rank = 2 }
 					}
 					set_government_rank = 2
 				}
+				set_country_flag = formed_jerusalem
 			}
 		}
 		ai_will_do = {

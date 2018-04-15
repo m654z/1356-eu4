@@ -4,6 +4,7 @@ country_decisions = {
 		major = yes
 		potential = {
 			normal_or_historical_nations = yes
+			NOT = { has_country_flag = formed_ruthenia_flag }
 			OR = {
 				ai = no
 				is_playing_custom_nation = no
@@ -31,9 +32,33 @@ country_decisions = {
 				}
 			}
 		}
+		provinces_to_highlight = {
+			OR = {	
+				AND = {
+					ROOT = { DIP = 5 }
+					OR = {
+						province_id = 280		#Kiev -center
+					province_id = 283		#Zaporozhie -eastern/southern center of rebellions
+					}
+				}
+				AND = {
+					ROOT = { NOT = { DIP = 5 } }
+					OR = {
+						province_id = 280		#Kiev -center
+						province_id = 283		#Zaporozhie -eastern/southern center of rebellions
+						province_id = 261		#Ruthenia/Lvov -western
+						province_id = 279		#Volhynia -western
+					}
+				}
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+			}
+		}
 		allow = {
 			adm_tech = 15
-			is_subject = no
+			is_free_or_tributary_trigger = yes
 			is_nomad = no
 			is_at_war = no
 			
@@ -54,6 +79,9 @@ country_decisions = {
 			}
 		}
 		effect = {
+			280 = {
+				move_capital_effect = yes
+			}
 			ruthenia_region = {
 				limit = {
 					NOT = { owned_by = ROOT }
@@ -70,23 +98,20 @@ country_decisions = {
 			}
 			add_prestige = 25
 			change_tag = UKR
-			UKR = {
-				set_capital = 280 #Kiev
-			}
+			remove_non_electors_emperors_from_empire_effect = yes
 			if = {
 				limit = {
-					is_part_of_hre = yes
-					is_elector = no
-					is_emperor = no
-				}
-				every_owned_province = {
-					limit = {
-						is_part_of_hre = yes
+					OR = {
+						government = veche_republic
+						government = principality
 					}
-					set_in_empire = no
+				}
+				set_government_and_rank = {
+					government = tsardom
+					rank = 3
 				}
 			}
-			if = {
+			else_if = {
 				limit = {
 					NOT = {
 						government_rank = 3
@@ -94,6 +119,7 @@ country_decisions = {
 				}
 				set_government_rank = 3
 			}
+			set_country_flag = formed_ruthenia_flag
 			if = {
 				limit = { has_custom_ideas = no }
 				country_event = { id = ideagroups.1 } #Swap Ideas

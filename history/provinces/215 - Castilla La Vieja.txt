@@ -11,10 +11,10 @@ base_tax = 5
 base_production = 3
 trade_goods = wool 
 base_manpower = 2
-fort_15th = yes
 capital = "Valladolid"
 is_city = yes
 add_core = CTR
+fort_15th = yes
 
 discovered_by = western
 discovered_by = eastern

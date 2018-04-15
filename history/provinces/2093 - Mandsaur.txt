@@ -13,6 +13,7 @@ base_production = 3
 base_manpower = 2
 is_city = yes
 add_core = MLW
+add_core = DLH
 estate = estate_dhimmi
 fort_15th = yes # Mandsaur Fort
 

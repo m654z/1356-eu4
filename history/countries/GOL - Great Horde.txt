@@ -18,6 +18,10 @@ religious_school = hanafi_school
 		DIP = 1
 		MIL = 3
 	}
+	add_country_modifier = {
+		name = "disunited_tribes"
+		duration = 3650
+	}
 }
 
 1359.1.1 = {

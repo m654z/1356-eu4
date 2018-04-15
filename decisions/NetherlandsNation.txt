@@ -4,6 +4,7 @@ country_decisions = {
 		major = yes
 		potential = {
 			normal_or_historical_nations = yes
+			NOT = { has_country_flag = formed_netherlands_flag }
 			OR = {
 				ai = no
 				is_playing_custom_nation = no
@@ -28,9 +29,23 @@ country_decisions = {
 				}
 			}
 		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 95 # Breda
+				province_id = 96 # Zeeland
+				province_id = 97 # Holland
+				province_id = 98 # Utrecht
+				province_id = 99 # Gelre
+				province_id = 100 # Friesland
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+			}
+		}
 		allow = {
 			adm_tech = 15
-			is_subject = no
+			is_free_or_tributary_trigger = yes
 			is_nomad = no
 			is_at_war = no
 			NOT = { exists = NED }
@@ -48,6 +63,7 @@ country_decisions = {
 						is_part_of_hre = yes
 					}
 					is_elector = no
+					is_emperor = no
 				}
 				every_owned_province = {
 					limit = {
@@ -61,7 +77,9 @@ country_decisions = {
 	  				tag = BUR
 	  			}
 	  			change_primary_culture = dutch
-	  			set_capital = 97
+				97 = {
+					move_capital_effect = yes
+				}
 			}
 			if = {
 				limit = {
@@ -133,9 +151,14 @@ country_decisions = {
 					NOT = { owned_by = ROOT }
 					NOT = { province_id = 87 }
 					NOT = { province_id = 181 }
-					NOT = { province_id = 1931 }
 				}
 				add_permanent_claim = NED
+			}
+			wallonia_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
 			}
 			picardy_area = {
 				limit = {
@@ -154,6 +177,7 @@ country_decisions = {
 				}
 				set_government_rank = 2
 			}
+			set_country_flag = formed_netherlands_flag
 			add_prestige = 25
 			if = {
 				limit = {

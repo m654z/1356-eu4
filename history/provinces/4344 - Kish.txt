@@ -15,7 +15,6 @@ base_manpower = 2
 is_city = yes
 fort_15th = yes
 add_core = TRS
-add_core = TIM
 
 discovered_by = KAS
 discovered_by = muslim

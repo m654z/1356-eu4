@@ -4,6 +4,7 @@ country_decisions = {
 		major = yes
 		potential = {
 			normal_or_historical_nations = yes
+			NOT = { has_country_flag = formed_ireland_flag }
 			OR = {
 				ai = no
 				is_playing_custom_nation = no
@@ -28,9 +29,23 @@ country_decisions = {
 				}
 			}
 		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 372			# Ulster
+				province_id = 373			# Meath
+				province_id = 374			# Leinster
+				province_id = 375			# Munster
+				province_id = 376			# Connaught
+				province_id = 4118			# Desmond
+				province_id = 4119			# Sligo
+				province_id = 4120			# Kildare
+				province_id = 4121			# Ulster
+			}
+			NOT = { owned_by = ROOT }
+		}
 		allow = {
 			adm_tech = 15
-			is_subject = no
+			is_free_or_tributary_trigger = yes
 			is_nomad = no
 			is_at_war = no
 			owns = 372			# Ulster
@@ -45,19 +60,9 @@ country_decisions = {
 		}
 		effect = {
 			change_tag = IRE
-			if = {
-				limit = {
-					is_part_of_hre = yes
-					is_elector = no
-					is_emperor = no
-				}
-				every_owned_province = {
-					limit = {
-						is_part_of_hre = yes
-					}
-					set_in_empire = no
-				}
-			}
+			remove_non_electors_emperors_from_empire_effect = yes
+			swap_non_generic_missions = yes
+			# should grant cores on all ireland
 			if = {
 				limit = {
 					NOT = { government_rank = 2 }
@@ -69,6 +74,11 @@ country_decisions = {
 				duration = 7300
 			}
 			add_prestige = 10
+			set_country_flag = formed_ireland_flag
+			if = {
+				limit = { has_custom_ideas = no }
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
 		}
 		ai_will_do = {
 			factor = 1
