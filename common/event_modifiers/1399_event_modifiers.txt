@@ -85,6 +85,7 @@ claim_to_kingdom_aquitaine = {
 	legitimacy = 0.5
 	stability_cost_modifier = -0.05
 	advisor_cost = -0.1
+}
  
 # Near East region
 	
@@ -101,7 +102,7 @@ Tamerlane = {
 }
 
 disunited_tribes = {
-  horde_unity = -3
+	horde_unity = -3
 	land_morale = -0.10
 	land_forcelimit = -15
 }
