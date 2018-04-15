@@ -134,4 +134,3 @@ country_event = { #Castile Inherits Trastamara, Adds Aragon as a Historical Riva
                 add_truce_with = ARA 
 		}	
 	}
-}
