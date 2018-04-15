@@ -24,7 +24,6 @@ MNF = "countries/Monfortreval.txt"
 BLS = "countries/Blois.txt"
 FOZ = "countries/Forez.txt"
 POU = "countries/Poitou.txt"
-AQT = "countries/Aquitaine.txt"
 	
 #HRE
 GOR = "countries/Gorizia.txt"
