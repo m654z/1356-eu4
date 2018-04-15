@@ -34,3 +34,5 @@
  castilian_nation_desc: "After years of fighting between the houses of Trastámara and Ivrea, [Root.Monarch.GetName] is victorious, and now stands as [Root.Monarch.GetTitle] of all Castile.
  castilian_unification_effect.tooltip:0 "§YCastile§! will get a permanent claim on the entire §YCastilian§! region."
  yua_fix_government_tooltip: "Will remove the §YYuan Decline§! triggered modifier"
+ proclaim_kalmar_union_title: "Proclaim the Kalmar Union"
+ proclaim_kalmar_union_desc: "The Kalmar Union was proclaimed in 1397, as a union of the Danish, Norwegian and Swedish kingdoms. The three kingdoms were ruled by a single monarch. The Union lasted until the year 1523."

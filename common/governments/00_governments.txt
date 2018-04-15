@@ -358,6 +358,19 @@ revolutionary_empire = {
 	fixed_rank = 3
 }
 
+kalmar_union = {
+	monarchy = yes
+	color = { 53 130 255 }
+	valid_for_new_country = no
+	rank = {
+		2 = {
+			reduced_liberty_desire = 10
+			global_autonomy = 0.05
+		}
+	}
+	fixed_rank = 2
+}
+
 
 ####################################
 #

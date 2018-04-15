@@ -34,4 +34,26 @@ country_decisions = {
 			factor = 1
 		}
 	}
+	
+	proclaim_kalmar_union = {
+		major = yes
+		potential = {
+			tag = DAN
+			exists = SWE
+			exists = NOR
+			is_subject = no
+		}
+		allow = {
+			NOR = { is_subject_of = DAN }
+			SWE = { is_subject_of = DAN }
+			is_at_war = no
+		}
+		effect = {
+			change_government = kalmar_union
+			add_prestige = 20
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
 }
