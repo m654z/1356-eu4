@@ -1,6 +1,3 @@
-# 2078 - Sind Sagar (1356)
-# Changes: DLH/TIM/MUL/unrest
-
 owner = DLH
 controller = DLH
 add_core = DLH
@@ -61,4 +58,4 @@ discovered_by = chinese
 		controller = AFG
 		add_core = AFG
 		remove_core = MUG
-	    } # Ahmad Shah established the Durrani empire
+} # Ahmad Shah established the Durrani empire
