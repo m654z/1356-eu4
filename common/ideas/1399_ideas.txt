@@ -279,3 +279,130 @@ gen_ARM_ideas = {
 		production_efficiency = 0.1
 	}
 }
+
+#French Ducal Ideas
+
+NRM_ideas = { #Norman ideas
+	start = {
+		fort_maintenance_modifier = -0.1
+		infantry_power = 0.1
+	}
+	
+	bonus = {
+		discipline = 0.05
+	}
+	
+	trigger = {
+		tag = NRM
+	}
+	free = yes
+	
+	norman_leadership = { #Our leaders took us to Sicily and beyond, why can't it do it a second time?
+		leader_land_shock = 1
+		leader_naval_shock = 1
+	}
+	viking_roots = { #While we may now be civilized frenchmen, that doesn't mean we ourselves can't take inspiration from our ancestors!
+		may_perform_slave_raid = yes
+	}
+	norman_shipbuilders = { #Normans sailed across the known world, just like the vikings! From Normandy to Sicily and further, we truly were the explorers of our time!
+		global_ship_cost = -0.15
+		global_ship_repair = 0.10
+	}
+	norman_religious_conviction = { #Quickly adapting to the christian faith, we Normans fervently follow our faith.
+		tolerance_own = 2
+	}
+	norman_colonizers = { #While the rest of the world sets out to explore the new lands to the west, we must once again show the world we adapt the best to new environments!
+		range = 0.1
+		global_colonial_growth = 10
+	}
+	norman_prestige = { #Being known for conquest, colonizing, and adapting to other areas of Europe has to account for something, right?
+		prestige = 1
+	}
+	norman_seafarers = { #We must once again show the world the strength of the Norman Navy! Maybe we'll even rival the English?
+		galley_power = 0.15
+		sunk_ship_morale_hit_recieved = -0.15
+	}
+}
+
+DAU_ideas = { #Dauphine ideas -Apparently Dauphin is french for Dolphin?-
+	start = { #Papal bonus because the power of the local Bishops was a problem for many Dauphine rulers, represents their strength. Protestant bonus because they became a Huguenot stronghold later.
+		army_tradition = 0.5
+		papal_influence = 1.5
+		church_power_modifier = 0.15
+		
+	}
+	
+	bonus = {
+		diplomats = 1
+	}
+	
+	trigger = {
+		tag = DAU
+	}
+	free = yes
+	
+	the_dauphin_of_france = { #After the Duchy of Dauphin fell into the hands of the King of France, by the terms of the treaty of romans, france would hold Dauphin, but all future heirs were to be called "le dauphin". This happened up till the french revolution.
+		legitimacy = 1
+		prestige = 0.5
+	}
+	dau_delphinal_statute = { #Part of dauphin's treaty was tax exemption for the people residing in the duchy, the crown honored this for a period of time.
+		global_tax_modifier = 0.1
+	}
+	delphinal_council = { #A special council, that was sort of a pre-parliment thing, that helped keep the local nobles, bishops, and peasants happy by presiding over various issues. 
+		global_unrest = -2
+	}
+	louix_11th_economic_development = { #When Louix XI ruled over Dauphine, he developed the economy of the province by building roads and markets.
+		build_cost = -0.15
+		development_cost = -0.1
+	}
+	university_of_valence_and_grenoble = { #Humbert II and Louis XI ruled over france, they both helped fund one university each, both being important centers of learning in the region for centuries to come.
+		technology_cost = -0.1
+	}
+	dauphine_noble_military_support = { #The Dauphine nobility participated in many key french battles. 
+		manpower_recovery_speed = 0.15
+	}
+	dauphine_military = { #I dunno, they helped the french kings a lot in battles. It works, sorta.
+		global_manpower_modifier = 0.1
+		
+	}
+}
+
+AMG_ideas = { #Armagnac ideas
+	start = {
+		development_cost = -0.1
+		embracement_cost = -0.15
+	}
+	
+	bonus = {
+		loot_amount = 0.15 #From how loot heavy the Armagnac merc band was.
+	}
+	
+	trigger = {
+		tag = AMG
+	}
+	free = yes
+	
+	the_armagnacs = { #After the hundred years war ended, many veterens of it joined a merc band known as "The armagnacs" which became notorious in france.
+		possible_mercenaries = 0.5
+		merc_maintenance_modifier = -0.15
+	}
+	taxes_of_the_black_prince = { #During the short reign of the black prince over Armagnac he levied heavy taxes on the nobility, and gave many priviliges to the towns.
+		global_tax_modifier = 0.15
+	}
+	the_armagnacs_p2 = { #After the Armagnac war between the Swiss and Armagnac mercs, Charles VII incorporated them into his personal army.
+		discipline = 0.05
+	}
+	expansion_through_marriage = { #During the Feudal Era the Counts of Armagnac expanded their land holdings frequently through marriage.
+		diplomatic_reputation = 1
+		heir_chance = 0.25
+	}
+	ARM_stability = { #Honestly my research into Armagnac fielded little more than the above, so I'm basing this and everything below this on the characteristics exibited by the Nobility and how the state typically acted.
+		stability_cost_modifier = -0.15
+	}
+	ARM_production = {
+		production_efficiency = 0.1
+	}
+	ARM_agressive_expansion = {
+		ae_impact = -0.1
+	}
+}

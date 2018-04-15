@@ -1,0 +1,112 @@
+country_decisions = {
+
+	aquitaine_nation = {
+		major = yes
+		potential = {
+			normal_or_historical_nations = yes
+			NOT = { has_country_flag = formed_aquitaine_flag }
+			NOT = { tag = HLR }
+			NOT = { tag = FRA }
+			NOT = { tag = PAP }
+			NOT = { tag = SPA }# Basque is a valid culture for both FRA and SPA
+			NOT = { tag = AQT }
+			NOT = { exists = AQT }
+			OR = { #Culture
+				primary_culture = gascon
+				primary_culture = occitan
+			}
+			is_colonial_nation = no
+			OR = {
+				is_former_colonial_nation = no
+				AND = {
+					is_former_colonial_nation = yes
+					ai = no
+				}
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 174	# Aquitaine
+				province_id = 173	# Labourd
+				province_id = 194	# Perigord
+				province_id = 198	# Rouergue
+				province_id = 2753	# Narbonne
+				province_id = 196	# Toulouse
+				province_id = 176	# Bearn
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+			}
+		}
+		allow = {
+			is_at_war = no
+			is_free_or_tributary_trigger = yes
+			is_nomad = no			
+			NOT = { exists = AQT }
+			owns_core_province = 174	# Aquitaine
+			owns_core_province = 173	# Labourd
+			owns_core_province = 194	# Perigord
+			owns_core_province = 198	# Rouergue
+			owns_core_province = 2753	# Narbonne
+			owns_core_province = 196	# Toulouse
+			owns_core_province = 176	# Bearn	
+		}
+		effect = {
+			174 = { #Aquitaine
+				move_capital_effect = yes
+			}
+			change_tag = AQT
+			swap_non_generic_missions = yes
+			remove_non_electors_emperors_from_empire_effect = yes
+			if = {
+				limit = {
+					NOT = { government_rank = 2 }
+				}
+				set_government_rank = 2
+			}
+			guyenne_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = AQT
+			}
+			languedoc_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = AQT
+			}
+			pyrenees_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = AQT
+			}
+			
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_prestige = 25
+			if = {
+				limit = {
+					has_custom_ideas = no
+					OR = {
+						ai = no
+						AND = {
+							ai = yes
+							has_idea_group = default_ideas
+						}
+					}
+				}
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+			set_country_flag = formed_aquitaine_flag
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+}
