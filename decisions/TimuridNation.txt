@@ -73,7 +73,7 @@ country_decisions = {
 	#	}
 	#}
 
-	#timurid_nation = {
+	timurid_nation = {
 		major = yes
 		potential = {
 			NOT = { TRS = { has_heir = "Tamerlan" } }
@@ -272,6 +272,4 @@ country_decisions = {
 		ai_will_do = {
 			factor = 400
 		}
-		ai_importance = 600
-	}
 }

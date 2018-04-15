@@ -130,7 +130,7 @@ country_decisions = {
 			religion_group = christian
 		}
 		allow = {
-			adm_tech = 1-
+			adm_tech = 1
 		}
 		effect = {	
 			add_country_modifier = {
@@ -553,7 +553,7 @@ country_decisions = {
 			}
 		}
 		effect = {
-			change_religion = capital
+			change_religion = sunni
 			add_stability = 1
 			add_legitimacy = 10
 			clr_country_flag = sultan_titles_for_non_muslims
@@ -1663,7 +1663,7 @@ country_decisions = {
 		potential = {
 			religion_group = muslim
 			any_owned_province = {
-				religion_group = sikhism
+				religion = sikhism
 			}
 			is_free_or_tributary_trigger = yes
 		}

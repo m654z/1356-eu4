@@ -9,7 +9,7 @@ country_decisions = {
 				ai = no
 				is_playing_custom_nation = no
 			}
-			TAG = CTR
+			tag = CTR
 		}
 		allow = {
 			NOT = { exists = CAS }
@@ -83,7 +83,5 @@ country_decisions = {
 		}
 		ai_importance = 400
 	}
-
-}
 
 }

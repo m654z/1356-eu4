@@ -8,7 +8,7 @@ country_decisions = {
 		}
 		allow = {
 			owns = 149
-			OR { 
+			OR = { 
 				owns = 2296			
 				owns = 151
 			}
