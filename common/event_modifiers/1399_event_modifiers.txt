@@ -60,6 +60,13 @@ turkish_settlement = {
 
 #French Region
 
+HYW_france_beat_back_occupation = {
+	
+
+
+}
+
+
 french_ducal_paris_conquest = {
 	diplomatic_reputation = 1
 	improve_relation_modifier = 0.1

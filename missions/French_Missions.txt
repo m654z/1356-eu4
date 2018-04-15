@@ -1,4 +1,50 @@
-french_missions_north = {
+french_hundred_years_war_missions = {
+	slot = 1
+	generic = no
+	ai = yes
+	potential = { tag = FRA }
+	has_country_shield = yes
+	
+	hyw_swing_war_in_our_favor = { #Get the war in our favor
+		icon = mission_conquer_50_development
+		required_missions = { }
+		#completed_by = 1440.1.1
+		trigger = {
+			war_score_against = {
+				who = ENG
+				value = 10
+			}
+		
+		}
+		effect = {
+			army_tradition = 10
+			add_prestige = 5
+			add_war_exhaustion = -5
+			add_manpower = 2
+		}	
+	}
+	hyw_end_phase_1_fra_war = { #End the war
+		icon = mission_conquer_50_development
+		required_missions = { hyw_swing_war_in_our_favor }
+		#completed_by = 1440.1.1
+		trigger = {
+			NOT = { war_with = ENG }
+		}
+		effect = {
+			add_war_exhaustion = -5
+			add_prestige = 5
+			
+		
+		}
+	}
+
+
+
+}
+
+
+
+french_missions_north = { #Take the North
 	slot = 1
 	generic = no
 	ai = yes
@@ -7,7 +53,7 @@ french_missions_north = {
 	}
 	has_country_shield = yes
 
-	reconquer_normandy = {
+	reconquer_normandy = { #Normandy
 		icon = mission_conquer_50_development
 		required_missions = { }
 		completed_by = 1450.1.1
@@ -33,7 +79,7 @@ french_missions_north = {
 			}
 		}
 	}
-	subjugate_brittany = {
+	subjugate_brittany = { #Brittany
 		icon = mission_have_two_subjects
 		required_missions = { reconquer_normandy }
 		position = 3
@@ -94,7 +140,7 @@ french_missions_north = {
 			}
 		}
 	}
-	conquer_picardy_fra = {
+	conquer_picardy_fra = { #Take Picarde
 		icon = mission_assemble_an_army
 		required_missions = { subjugate_brittany }
 		position = 5
@@ -153,7 +199,7 @@ french_missions_north = {
 			}
 		}
 	}
-	recover_calais = {
+	recover_calais = { #Take Calais
 		icon = mission_galleys_in_port
 		required_missions = { conquer_picardy_fra }
 		completed_by = 1558.1.7
@@ -179,7 +225,7 @@ french_missions_north = {
 	}
 }
 
-french_mission_slot_2 = {
+french_mission_slot_2 = { #More from North
 	slot = 2
 	generic = no
 	ai = yes
@@ -188,7 +234,7 @@ french_mission_slot_2 = {
 	}
 	has_country_shield = yes
 	
-	conquer_flanders_wallonia = {
+	conquer_flanders_wallonia = { #Take Flanders
 		icon = mission_cannons_firing
 		required_missions = { conquer_picardy_fra }
 		position = 6
@@ -228,7 +274,7 @@ french_mission_slot_2 = {
 	}
 }
 
-french_missions_colonial = {
+french_missions_colonial = { #Colonize and Expand south
 	slot = 3
 	generic = no
 	ai = yes
@@ -237,7 +283,7 @@ french_missions_colonial = {
 		is_random_new_world = no
 	}
 	has_country_shield = yes
-	build_french_fleet = {
+	build_french_fleet = { #Make a Navy
 		icon = mission_galleys_in_port
 		required_missions = { }
 		trigger = { num_of_heavy_ship = 20 }
@@ -248,7 +294,7 @@ french_missions_colonial = {
 			}
 		}
 	}
-	france_discovers_north_america = {
+	france_discovers_north_america = { #Explore!
 		icon = mission_establish_high_seas_navy
 		required_missions = { build_french_fleet }
 		completed_by = 1535.1.1
@@ -281,7 +327,7 @@ french_missions_colonial = {
 			}
 		}
 	}
-	french_colony_in_north_america = {
+	french_colony_in_north_america = { #Colonize it!
 		icon = mission_colonial
 		required_missions = { france_discovers_north_america }
 		completed_by = 1608.7.3
@@ -327,7 +373,7 @@ french_missions_colonial = {
 			}
 		}
 	}
-	france_discovers_the_carribean = {
+	france_discovers_the_carribean = { #Discover Carribean!
 		icon = mission_sea_battles
 		required_missions = { french_colony_in_north_america }
 		trigger = {
@@ -372,7 +418,7 @@ french_missions_colonial = {
 			}
 		}
 	}
-	fra_india_expansion = {
+	fra_india_expansion = { #Take parts of India!
 		icon = mission_trade_company_region_abroad
 		required_missions = { france_discovers_the_carribean }
 		provinces_to_highlight = {
@@ -420,7 +466,7 @@ french_missions_colonial = {
 			}
 		}
 	}
-	conquer_milan = {
+	conquer_milan = { #Take Milan! -From Expand South/East-
 		icon = mission_cannons_firing
 		required_missions = { annex_savoy }
 		position = 7
@@ -502,7 +548,7 @@ french_missions_colonial = {
 			}
 		}
 	}
-	french_claim_to_naples = {
+	french_claim_to_naples = { #Take Naples! - From Expand South/East-
 		icon = mission_monarch_in_throne_room
 		required_missions = { conquer_milan }
 		provinces_to_highlight = {
@@ -555,7 +601,7 @@ french_missions_colonial = {
 	}	
 }
 
-france_expand_south = {
+france_expand_south = { #Expand South!
 	slot = 5
 	generic = no
 	ai = yes
@@ -563,7 +609,7 @@ france_expand_south = {
 		tag = FRA
 	}
 	has_country_shield = yes
-	reconquer_gascony = {
+	reconquer_gascony = { #Take Gascony
 		icon = mission_conquer_50_development
 		required_missions = { }
 		completed_by = 1453.7.18
@@ -597,7 +643,7 @@ france_expand_south = {
 			}
 		}
 	}
-	conquer_provence = {
+	conquer_provence = { #Take Provence
 		icon = mission_cannons_firing
 		required_missions = { reconquer_gascony }
 		position = 3
@@ -631,7 +677,7 @@ france_expand_south = {
 			}
 		}
 	}
-	conquer_burgundy_area = {
+	conquer_burgundy_area = { #Take Burgundy
 		icon = mission_unite_home_region
 		required_missions = { conquer_provence }
 		position = 5
@@ -671,7 +717,7 @@ france_expand_south = {
 			}
 		}
 	}
-	subjugate_lorraine = {
+	subjugate_lorraine = { #Take Lorraine
 		icon = mission_build_up_to_force_limit
 		required_missions = { conquer_burgundy_area }
 		provinces_to_highlight = {
@@ -696,7 +742,7 @@ france_expand_south = {
 			}
 		}
 	}
-	annex_alsace = {
+	annex_alsace = { #Take Alsace
 		icon = mission_assemble_an_army
 		required_missions = { subjugate_lorraine }
 		provinces_to_highlight = {
@@ -719,7 +765,7 @@ france_expand_south = {
 		}
 	}
 }
-france_expand_south_2 = {
+france_expand_south_2 = { #Expand South More!
 	slot = 4
 	generic = no
 	ai = yes
@@ -727,7 +773,7 @@ france_expand_south_2 = {
 		tag = FRA
 	}
 	has_country_shield = yes
-	annex_savoy = {
+	annex_savoy = { #Annex Savoy
 		icon = mission_unite_home_region
 		required_missions = { conquer_burgundy_area }
 		position = 6
@@ -767,7 +813,7 @@ france_expand_south_2 = {
 			}
 		}
 	}
-	annex_genoa = {
+	annex_genoa = { #Annex Genoa
 		icon = mission_galleys_in_port
 		required_missions = { annex_savoy }
 		provinces_to_highlight = {
