@@ -1,17 +1,29 @@
+# To use a created subject type in history you need to use this structure
+#dependency = {
+#	subject_type = "[subject type]"
+#	first = [Overlord tag]
+#	second = [Subject tag]
+#	start_date = YYYY.M.DD
+#	end_date = YYYY.M.DD
+#}
+
+
 #########################################
 # Vassals + Alliances of French minors	#
 #########################################
 
 # Berry, a French duchy vassal (1360-1416)
-vassal = {
+dependency = {
+	subject_type = "french_ducal_vassal"
 	first = FRA
 	second = BER
 	start_date = 1360.10.1 # duchy created
 	end_date = 1416.6.15 # duchy inherited
 }
 
-# Bourbonnais, a French duchy  (1327-1523)
-alliance = {
+# Bourbonnais, a French duchy vassal  (1327-1523)
+dependency = {
+	subject_type = "french_ducal_vassal"
 	first = FRA
 	second = BOU
 	start_date = 1327.12.27 # duchy created
@@ -19,7 +31,8 @@ alliance = {
 }
 
 # Bourbonnais, a French duchy vassal (1523-1531)
-vassal = {
+dependency = {
+	subject_type = "french_ducal_vassal"
 	first = FRA
 	second = BOU
 	start_date = 1523.10.9 # duchy to Kingmother Louise de Savoie
@@ -27,7 +40,8 @@ vassal = {
 }
 
 # Orleanais, a French duchy vassal (1344-1376)
-vassal = {
+dependency = {
+	subject_type = "french_ducal_vassal"
 	first = FRA
 	second = ORL
 	start_date = 1344.1.1 # duchy created
@@ -35,7 +49,8 @@ vassal = {
 }
 
 # Orleanais, a French duchy (1392-1489)
-alliance = {
+dependency = {
+	subject_type = "french_ducal_vassal"
 	first = FRA
 	second = ORL
 	start_date = 1392.1.1 # duchy restaured
@@ -43,7 +58,8 @@ alliance = {
 }
 
 # Orleanais, a French duchy vassal (1519-1545)
-vassal = {
+dependency = {
+	subject_type = "french_ducal_vassal"
 	first = FRA
 	second = ORL
 	start_date = 1519.3.31 # duchy created
@@ -51,7 +67,8 @@ vassal = {
 }
 
 # Alençon, a French county/duchy (1346-1458)
-alliance  = {
+dependency  = {
+	subject_type = "french_ducal_vassal"
 	first = FRA
 	second = ALE
 	start_date = 1346.8.26
@@ -59,7 +76,8 @@ alliance  = {
 }
 
 # Alençon, a French duchy vassal 1st phase (1461-1474)
-vassal = {
+dependency = {
+	subject_type = "french_ducal_vassal"
 	first = FRA
 	second = ALE
 	start_date = 1461.1.1 # duchy returned
@@ -67,7 +85,8 @@ vassal = {
 }
 
 # Alençon, a French duchy vassal 2nd phase (1478-1497)
-vassal = {
+dependency = {
+	subject_type = "french_ducal_vassal"
 	first = FRA
 	second = ALE
 	start_date = 1478.1.1 # duchy returned
@@ -75,7 +94,8 @@ vassal = {
 }
 
 # Armagnac, a French duchy (1369-1549)
-alliance = {
+dependency = {
+	subject_type = "french_ducal_vassal"
 	first = FRA
 	second = AMG
 	start_date = 1369.5.1 # French reqonquer Gascogne
@@ -83,7 +103,8 @@ alliance = {
 }
 
 # Foix, a French county
-alliance = {
+dependency = {
+	subject_type = "french_ducal_vassal"
 	first = FRA
 	second = FOI
 	start_date = 1380.5.1 # becomes Lieutenant-général of Languedoc
@@ -91,7 +112,8 @@ alliance = {
 }
 
 # Forez, a French county
-alliance = {
+dependency = {
+	subject_type = "french_ducal_vassal"
 	first = FRA
 	second = FOZ
 	start_date = 1349.8.1 # The Britisch attacking France
@@ -99,7 +121,8 @@ alliance = {
 }
 
 # Burgundy, a French duchy vassal
-vassal = {
+dependency = {
+	subject_type = "french_ducal_vassal"
 	first = FRA
 	second = BUR
 	start_date = 1363.9.6 # duchy handed to Philippe I, son of king of france
@@ -107,7 +130,8 @@ vassal = {
 }
 
 # Auvergne, a French county
-alliance = {
+dependency = {
+	subject_type = "french_ducal_vassal"
 	first = FRA
 	second = AUV
 	start_date = 1350.2.9 # Countess becomes Queen Consort 
@@ -122,7 +146,8 @@ royal_marriage = {
 }
 
 # Auvergne, a French county
-alliance = {
+dependency = {
+	subject_type = "french_ducal_vassal"
 	first = FRA
 	second = AUV
 	start_date = 1361.11.21 # county again freed
@@ -130,7 +155,8 @@ alliance = {
 }
 
 # Auvergne, a French vassal
-vassal = {
+dependency = {
+	subject_type = "french_ducal_vassal"
 	first = FRA
 	second = AUV
 	start_date = 1533.10.28 # county to dauphiné of France
@@ -145,7 +171,8 @@ royal_marriage = {
 }
 
 # Brittany, a French duchy vassal
-vassal = {
+dependency = {
+	subject_type = "french_ducal_vassal"
 	first = FRA
 	second = BRI
 	start_date = 1365.4.12 # Treaty of Guerande
@@ -153,7 +180,8 @@ vassal = {
 }
 
 # Brittany, a French duchy vassal
-vassal = {
+dependency = {
+	subject_type = "french_ducal_vassal"
 	first = FRA
 	second = BRI
 	start_date = 1381.4.4 # homage to france again with assurance neutrality in wars fra x eng
@@ -161,7 +189,8 @@ vassal = {
 }
 
 # Anjou, a French county/duchy
-alliance = {
+dependency = {
+	subject_type = "french_ducal_vassal"subject_type = "french_ducal_vassal"
 	first = FRA
 	second = ANJ
 	start_date = 1351.1.1 # county created
