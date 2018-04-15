@@ -63,6 +63,14 @@ dependency = {
 	end_date = 1380.9.8
 }
 
+dependency = {
+	subject_type = "tributary_state"
+	first = GOL
+	second = NOV
+	start_date = 1355.1.1
+	end_date = 1380.9.8
+}
+
 # Lithuania-Tver Connection
 alliance = {
 	first = LIT
