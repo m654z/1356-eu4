@@ -1,14 +1,14 @@
 government = despotic_monarchy
 technology_group = chinese
 religion = confucianism
-primary_culture = wu
-historical_rival = MNG
-capital = 684	#Hangzhou
+primary_culture = xiang
+capital = 682	#Wuchang
 
 historical_rival = YUA
 historical_rival = KHA
 historical_rival = CZH
 historical_rival = CXI
+historical_rival = WUU
 historical_rival = CGS
 historical_rival = MNG
 historical_rival = HUA
@@ -18,7 +18,6 @@ historical_rival = JIN
 historical_rival = YAN
 historical_rival = QIC
 historical_rival = TNG
-historical_rival = CHC
 historical_rival = NNG
 historical_rival = SHU
 historical_rival = YUE
@@ -26,14 +25,3 @@ historical_rival = MIN
 historical_rival = CMI
 historical_rival = YUE
 historical_rival = QNG
-
-1354.1.1 = {
-	monarch = {
-		name = "Shicheng"
-		dynasty = "Zhang"
-		birth_date = 1321.1.1
-		adm = 2
-		dip = 2
-		mil = 2
-	}
-}

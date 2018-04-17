@@ -26,16 +26,6 @@ inland_center_of_trade_modifier = {
 	picture = "province_trade_power_value"
 }
 
-bosphorous_sound_toll = {
-	province_trade_power_value = 20
-	province_trade_power_modifier = 0.25
-	naval_forcelimit = 2
-	land_forcelimit = 2
-	local_sailors_modifier = 0.25
-	local_manpower_modifier = 0.25
-	picture = "province_trade_power_value"
-}
-
 sound_toll = {
 	province_trade_power_value = 20
 	province_trade_power_modifier = 0.25
@@ -52,10 +42,28 @@ golden_gate = {
 	local_hostile_attrition = 2
 }
 
+#Balkans/Anatolia
+
+bosphorous_sound_toll = {
+	province_trade_power_value = 20
+	province_trade_power_modifier = 0.25
+	naval_forcelimit = 2
+	land_forcelimit = 2
+	local_sailors_modifier = 0.25
+	local_manpower_modifier = 0.25
+	picture = "province_trade_power_value"
+}
+
 turkish_settlement = {
 	local_tax_modifier = -0.25
 	local_production_efficiency = -0.25
 	local_manpower_modifier = -0.25
+}
+
+constantinopole_fort_1356_modifier = {
+	local_defensiveness = 0.2
+	garrison_growth = 0.1
+	local_hostile_attrition = 1
 }
 
 #French Region

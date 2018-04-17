@@ -27,29 +27,14 @@ cb_romuva_conformance = {
 cb_chinese_civil_war = {
 
 		prerequisites = {
-			is_neighbor_of = FROM
 			OR = {
-				primary_culture = cantonese
-				primary_culture = chihan				
-				primary_culture = jin
-				primary_culture = wu
-				primary_culture = chimin
-				primary_culture = hakka
-				primary_culture = gan
-				primary_culture = xiang
-				primary_culture = sichuanese
+				culture_group = east_asian
+				tag = YUA
 			}
 			FROM = { 
 				OR = {
-					primary_culture = cantonese
-					primary_culture = chihan
-					primary_culture = jin
-					primary_culture = wu
-					primary_culture = chimin
-					primary_culture = hakka
-					primary_culture = gan
-					primary_culture = xiang
-					primary_culture = sichuanese
+				culture_group = east_asian
+				tag = YUA
 				}
 			}
 		}
