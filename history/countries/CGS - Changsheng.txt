@@ -1,15 +1,14 @@
 government = despotic_monarchy
 technology_group = chinese
 religion = confucianism
-primary_culture = chimin
-capital = 1829	#Quanzhou
+primary_culture = zhuang
+capital = 664 # Lingyun
 
 historical_rival = YUA
 historical_rival = KHA
 historical_rival = CZH
 historical_rival = CXI
 historical_rival = WUU
-historical_rival = CGS
 historical_rival = MNG
 historical_rival = HUA
 historical_rival = QIN
@@ -22,16 +21,7 @@ historical_rival = CHC
 historical_rival = NNG
 historical_rival = SHU
 historical_rival = YUE
+historical_rival = MIN
 historical_rival = CMI
 historical_rival = YUE
 historical_rival = QNG
-
-1350.1.1 = {
-	monarch = {
-		name = "Fang Guozhen"
-		dynasty = "Zhejiang"
-		adm = 2
-		dip = 3
-		mil = 2
-	}
-}

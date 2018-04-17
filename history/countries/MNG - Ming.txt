@@ -4,11 +4,29 @@ technology_group = chinese
 religion = confucianism
 add_harmonized_religion = mahayana
 primary_culture = jianghuai
+
 historical_rival = YUA
 historical_rival = KHA
 historical_rival = CZH
 historical_rival = CXI
 historical_rival = WUU
+historical_rival = CGS
+historical_rival = HUA
+historical_rival = QIN
+historical_rival = LNG
+historical_rival = JIN
+historical_rival = YAN
+historical_rival = QIC
+historical_rival = TNG
+historical_rival = CHC
+historical_rival = NNG
+historical_rival = SHU
+historical_rival = YUE
+historical_rival = MIN
+historical_rival = CMI
+historical_rival = YUE
+historical_rival = QNG
+
 capital = 1821	# Nanjing
 
 1352.1.1 = {
