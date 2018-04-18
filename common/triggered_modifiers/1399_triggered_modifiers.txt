@@ -105,7 +105,7 @@ mongol_debuff = {
 		}
 	}
 	
-	global_unrest = 5
+	global_unrest = 8
 	war_exhaustion = 0.1
 }
 
