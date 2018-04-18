@@ -14,13 +14,12 @@ base_production = 3
 base_manpower = 2
 is_city = yes
 add_core = YUA
-add_core = MNG
 add_core = YAN
 
 discovered_by = chinese
 discovered_by = nomad_group
 
-1368.9.14 = { owner = MNG controller = MNG remove_core = YUA }
+1368.9.14 = { owner = MNG controller = MNG add_core = MNG remove_core = YUA }
 1402.7.13 = { revolt = {} controller = MNG }
 1519.1.1  = { discovered_by = POR } # Tome Pires
 1542.1.1  = { unrest = 5 } # Assassination attemp on Shizong Emperor
