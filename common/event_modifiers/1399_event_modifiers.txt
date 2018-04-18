@@ -121,3 +121,21 @@ disunited_tribes = {
 	land_morale = -0.10
 	land_forcelimit = -15
 }
+
+#Far East Region
+
+fall_of_yuan_mandate = {
+	years_of_nationalism = 5
+	global_unrest = 5
+	culture_conversion_cost = 0.25
+	stability_cost_modifier = 0.25
+	core_creation = 0.15
+	interest = 1
+	mil_tech_cost_modifier = 0.2
+	enemy_core_creation = -0.25
+	discipline = -0.05
+	manpower_recovery_speed = -0.15
+	defensiveness = -0.1
+	land_morale = -0.1
+	recover_army_morale_speed = -0.05	
+}
