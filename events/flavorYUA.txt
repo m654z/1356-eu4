@@ -1,0 +1,55 @@
+namespace = yua
+
+#Yuan event explaining everything
+country_event = {
+	id = yua.0
+	title = yua.0.t
+	desc = yua.0.d
+	picture = horde_on_horseback_eventPicture
+	fire_only_once = yes
+
+	trigger = {
+		tag = YUA
+		start_date = 1356.12.25
+		ai = no
+		has_switched_nation = no
+	}
+	option = {
+		name = yua.0.a #Got it
+	}
+
+
+}
+
+#Yuan event to change from Chinese tech to nomadic tech after loss of Mandate
+
+country_event = {
+	id = yua.1
+	title = yua.1.t
+	desc = yua.1.d
+	picture = HORDE_ON_HORSEBACK_eventPicture
+	fire_only_once = yes
+
+	trigger = {
+		tag = YUA
+		NOT = { has_country_flag = no_longer_chinese_yua }
+		OR = {
+			is_emperor_of_china = no
+			NOT = { capital_scope = { 1816 } } #This might need tweaked for fairness for non chinese dlc owners
+		}
+		
+	}
+
+	mean_time_to_happen = {
+		months = 12
+	}
+
+	option = { #Lose Chinese Tech, remove Manchu as accepted, become Kingdom rank, become steppe horde
+		name = yua.1.a
+		set_country_flag = no_longer_chinese_yua
+		change_technology_group = nomad_group
+		remove_accepted_culture = manchu
+		set_government_rank = 2		
+		change_government = steppe_horde
+	}
+}
