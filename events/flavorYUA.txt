@@ -12,13 +12,16 @@ country_event = {
 		tag = YUA
 		start_date = 1356.12.25
 		ai = no
-		has_switched_nation = no
+		#has_switched_nation = no
 	}
+
 	option = {
 		name = yua.0.a #Got it
+		add_country_modifier = {
+				name = "fall_of_yuan_mandate"
+				duration = 5475
+			}
 	}
-
-
 }
 
 #Yuan event to change from Chinese tech to nomadic tech after loss of Mandate
