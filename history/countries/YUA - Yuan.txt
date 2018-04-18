@@ -1,10 +1,9 @@
 government = celestial_empire
 government_rank = 3
-technology_group = nomad_group
+technology_group = chinese
 religion = vajrayana
 primary_culture = mongol
 add_accepted_culture = manchu
-historical_rival = MNG
 capital = 1816	# Beijing
 
 historical_rival = KHA
@@ -167,6 +166,7 @@ historical_rival = QNG
 }
 
 1368.9.14 = {
+	technology_group = nomad_group
 	government = steppe_horde
 	religion = tengri_pagan_reformed
 	capital = 2190
