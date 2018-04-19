@@ -2,7 +2,9 @@ french_hundred_years_war_missions = {
 	slot = 1
 	generic = no
 	ai = yes
-	potential = { tag = FRA }
+	potential = { 
+		tag = FRA 
+	}
 	has_country_shield = yes
 	
 	hyw_swing_war_in_our_favor = { #Get the war in our favor
@@ -42,7 +44,300 @@ french_hundred_years_war_missions = {
 
 }
 
+french_missions_integrate_vassals = { #Would like to add a time window somewhat seperating these so they cant be done in quick unison
+	slot = 5
+	generic = no
+	ai = yes
+	porential = { 
+		tag = FRA
+		#has_switched_nation = no #Should prevent tag swapping to integrate people for free. Marked out for now due to unanexable vassal bug if your not france
+	}
+	has_country_shield = yes
+	
+	fra_feud_vassal_integrate_mission_1 = { #Integrate Orleans
+		icon = mission_have_two_subjects
+		required_missions = { }
+		completed_by = 1360.1.1
+		
+		trigger = {
+			ORL = {
+				vassal_of = FRA
+				ai = yes
+			}
+			years_in_vassalage_under = {
+				who = ORL
+				years = 5
+			}
+		}
+		effect = {
+			inherit = ORL
+			add_prestige = 5
+			167 = {	add_claim = FRA }
+			168 = { add_claim = FRA }
+			4385 = { add_claim = FRA }
+		}
+	}
 
+	fra_feud_vassal_integrate_mission_2 = { #Annex Normandy. King Charles II of Navarra has been a thorn in our side long enough! It is time to confiscate his northern duchy and put an end to his tampering in French Politics!
+		icon = mission_conquer_50_development
+		required_missions = { fra_feud_vassal_integrate_mission_1 }
+		completed_by = 1404.1.1
+		
+		trigger = {
+			NRM = {	exists = no	}
+			owns = 167
+			owns = 168
+			owns = 4385
+		}
+		effect = {
+			add_territorial_core = 167
+			add_territorial_core = 168
+			add_territorial_core = 4385
+			add_legitimacy = 5
+			add_treasury = 60
+			add_war_exhaustion = -2
+			NAV = {
+				add_core = 167 #Caux
+				add_core = 168 #Caen
+				add_core = 4385 #Cotentin
+			
+			}
+		}
+	}
+
+	fra_feud_vassal_integrate_mission_3 = { #Inherit Dauphine
+		icon = mission_have_two_subjects
+		required_missions = { fra_feud_vassal_integrate_mission_2 }
+		completed_by = 1408.1.1 #Not Historical at all I'm sure
+		
+		trigger = {
+			OR = {
+				AND = {
+					DAU = {	ai = yes }
+					senior_union_with = DAU
+				}
+				NOT = { exists = DAU }
+			}			
+		}
+		effect = {
+			country_event = { id = 1356fra.1 tooltip = 1356fra.tooltip.1 } #Handle Dauphine Event
+		}
+	}	
+	
+	fra_feud_vassal_integrate_mission_4 = { #Integrate Forez
+		icon = mission_have_two_subjects
+		required_missions = { fra_feud_vassal_integrate_mission_3 }
+		completed_by = 1430.1.1
+		#Historical completed_by = 1531.1.1
+		
+		trigger = {
+			OR = {
+				FOZ = {
+					vassal_of = FRA
+					ai = yes
+				}
+				NOT = { exists = { tag = FOZ } }
+			}
+			stability = 1
+		}
+		effect = {
+			inherit = FOZ
+			add_years_of_income = 0.50
+			add_legitimacy = 5
+		}
+	}
+	
+	fra_feud_vassal_integrate_mission_5 = { #Integrate Bourbonnais
+		icon = mission_have_two_subjects
+		required_missions = { fra_feud_vassal_integrate_mission_4 }
+		completed_by = 1450.1.1
+		#Historicalcompleted_by = 1532.1.1
+		
+		trigger = {
+			OR = {
+				BOU = {
+					vassal_of = FRA
+					ai = yes
+				}
+				NOT = { exists = { tag = BOU } }
+			}
+			treasury = 200
+		}
+		effect = {
+			inherit = BOU
+			183 = { #Paris
+				add_base_tax = 1
+				add_base_manpower = 1
+			}
+			198 = {	add_claim = FRA	} #Rouergue
+			175 = { add_claim = FRA } #Armagnac
+			
+		}
+	}
+	
+	fra_feud_vassal_integrate_mission_6 = { #Annex Armagnac
+		icon = mission_cannons_firing
+		required_missions = { fra_feud_vassal_integrate_mission_5 }
+		completed_by = 1480.1.1
+		#completed_by = 1589.8.2 #Historical
+		
+		trigger = {
+			NOT = { exists = { tag = AMG } }
+			owns = 198
+			owns = 175
+		}
+		effect = {
+			add_territorial_core = 198
+			add_territorial_core = 175
+			create_general = 25
+			add_manpower = 5
+		}
+	}
+	
+	fra_feud_vassal_integrate_mission_7 = { #Integrate Alencon
+		icon = mission_have_two_subjects
+		required_missions = { fra_feud_vassal_integrate_mission_6 }
+		completed_by = 1500.1.1
+		#Historical completed_by = 1549.12.21
+		
+		trigger = {
+			OR = {
+				ALE = {
+					vassal_of = FRA
+					ai = yes
+				}
+				NOT = { exists = { tag = ALE } }
+			}
+			had_recent_war = 10
+		}
+		effect = {
+			inherit = ALE
+			184 = {
+				add_cardinal = yes			
+			}
+		}
+	}
+
+	fra_feud_vassal_integrate_mission_8 = { #Integrate Anjou
+		icon = mission_have_two_subjects
+		required_missions = { fra_feud_vassal_integrate_mission_7 }
+		completed_by = 1520.1.1
+		#Historical completed_by = 1481.1.1
+		
+		trigger = {
+			OR = {
+				ANJ = {
+					vassal_of = FRA
+					ai = yes
+				}
+				NOT = { exists = { tag = ANJ } }
+			}
+			prestige = 25
+		}
+		effect = {
+			inherit = ANJ
+			204 = {
+				add_scaled_local_dip_power = 0.5
+			}
+		}
+	}
+	
+	fra_feud_vassal_integrate_mission_9 = { #Integrate Auvergne
+		icon = mission_have_two_subjects
+		required_missions = { fra_feud_vassal_integrate_mission_8 }
+		completed_by = 1540.1.1
+		#Historical completed_by = 1589.1.1
+		
+		trigger = {
+			OR = {
+				AUV = {
+					vassal_of = FRA
+					ai = yes
+				}
+				NOT = { exists = { tag = AUV } }
+			}
+			prestige = 35
+		}
+		effect = {
+			inherit = AUV
+			create_general = 30
+		}
+	}
+	
+	fra_feud_vassal_integrate_mission_10 = { #Annex Foix
+		icon = mission_cannons_firing
+		required_missions = { fra_feud_vassal_integrate_mission_9 }
+		completed_by = 1600.1.1
+		#completed_by = 1589.8.2 #Historical
+		
+		trigger = {
+			NOT = { exists = { tag = FOI } }
+			owns = 176 #Bearn
+		}
+		effect = {
+			add_territorial_core = 176
+			add_claim = 173 #Laubourd
+			add_claim = 174 #Aquitaine
+			NAV = {	
+				add_core = 176 #Bearn
+				add_opinion = { who = FRA modifier = -50 }	#Subject to Removal for Balance sake			
+			}			
+		}
+	}
+
+	fra_feud_vassal_integrate_mission_10 = { #Annex Gascony
+		icon = mission_sea_battles
+		required_missions = { fra_feud_vassal_integrate_mission_10 }
+		completed_by = 1610.1.1
+		#completed_by = 1453.7.18 #Historical
+		
+		trigger = {
+			NOT = { exists = { tag = GUY } }
+			owns = 174 #Aquitaine
+			owns = 173 #Labourd
+		}
+		effect = {
+			change_dip = 1
+			change_heir_dip = 1
+			ENG = {	
+				add_claim = 174 #Aquitaine
+				add_claim = 173 #Labourd
+				add_opinion = { who = FRA modifier = -50 }	#Subject to Removal for Balance sake			
+			}			
+		}
+	}
+	
+	fra_end_the_long_rivalry = {
+		icon = mission_monarch_in_throne_room
+		required_missions = { fra_feud_vassal_integrate_mission_10 }
+		completed_by = 1650.1.1
+		#Historical completed_by 1815.1.1
+		trigger = {
+			has_global_flag = end_of_HYW_war
+			AND = { #Neither ENG, GBR, or FRA can be the revolution target
+				ENG = {	is_revolution_target = no }
+				GBR = { is_revolution_target = no }
+				FRA = { is_revolution_target = no }
+			}
+			OR = {
+				DIP = 5
+				heir_dip = 5
+			}
+			
+		}
+		effect = {
+			remove_historical_rival = ENG
+			remove_historical_rival = GBR
+			add_historical_friend = ENG
+			add_historical_friend = GBR
+			ENG = { remove_historical_rival = FRA add_historical_friend =FRA }
+			GBR = { remove_historical_rival = FRA add_historical_friend =FRA }
+		}
+	
+	}
+	
+	#Something after this that removes historical Rivalry with ENG
+}
 
 french_missions_north = { #Take the North
 	slot = 1

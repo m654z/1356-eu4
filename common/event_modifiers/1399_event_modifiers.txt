@@ -101,6 +101,12 @@ claim_to_kingdom_aquitaine = {
 	stability_cost_modifier = -0.05
 	advisor_cost = -0.1
 }
+
+fra_dauphin_modifier = {
+	advisor_cost = -0.05
+	legitimacy = 0.5
+	prestige = 0.25
+}
  
 # Near East region
 	

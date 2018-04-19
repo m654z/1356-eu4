@@ -1,0 +1,42 @@
+namespace = 1356FRA
+
+#French Event on how to deal with Dauphine
+country_event = {
+	id = 1356fra.1
+	title = 1356fra.1.t
+	desc = 1356fra.1.d
+	picture = HORDE_ON_HORSEBACK_eventPicture #GET A PROPER PICTURE DAMNIT
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = { #Accept and Integrate. All future heirs will be called Dauphin's and Autonomy is granted to Dauphine for many years.
+		name = 1356fra.1.a
+		add_country_modifier = {
+			name = fra_dauphin_modifier
+			duration = 0 #Is this forever?
+		}
+		inherit = DAU
+		204 = { #Dauphine
+			add_local_autonomy = 100
+			set_in_empire = no
+			add_base_tax = 2
+		}
+		add_prestige = -10
+		add_dip_power = -10
+	}
+	option = { #Decline and Integrate
+		name = 1356fra.1.b
+		inherit = DAU
+		add_prestige = -10
+		add_stability = -1
+	}
+	option = { #Decline and set free
+		name = 1356fra.1.c
+		break_union = DAU
+		
+		add_historical_friend = DAU
+		create_marriage = DAU
+		create_alliance = DAU
+	}
+}
