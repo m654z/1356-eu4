@@ -330,8 +330,8 @@ french_missions_integrate_vassals = { #Would like to add a time window somewhat 
 			remove_historical_rival = GBR
 			add_historical_friend = ENG
 			add_historical_friend = GBR
-			ENG = { remove_historical_rival = FRA add_historical_friend =FRA }
-			GBR = { remove_historical_rival = FRA add_historical_friend =FRA }
+			ENG = { remove_historical_rival = FRA add_historical_friend = FRA }
+			GBR = { remove_historical_rival = FRA add_historical_friend = FRA }
 		}
 	
 	}
