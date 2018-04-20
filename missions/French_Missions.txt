@@ -1,113 +1,40 @@
-french_hundred_years_war_missions = {
+french_missions_integrate_vassals = { #Would like to add a time window somewhat seperating these so they cant be done in quick unison.
 	slot = 1
 	generic = no
 	ai = yes
-	potential = { 
-		tag = FRA 
-	}
-	has_country_shield = yes
 	
-	hyw_swing_war_in_our_favor = { #Get the war in our favor
-		icon = mission_conquer_50_development
-		required_missions = { }
-		#completed_by = 1440.1.1
-		trigger = {
-			war_score_against = {
-				who = ENG
-				value = 10
-			}
-		
-		}
-		effect = {
-			army_tradition = 10
-			add_prestige = 5
-			add_war_exhaustion = -5
-			add_manpower = 2
-		}	
-	}
-	hyw_end_phase_1_fra_war = { #End the war
-		icon = mission_conquer_50_development
-		required_missions = { hyw_swing_war_in_our_favor }
-		#completed_by = 1440.1.1
-		trigger = {
-			NOT = { war_with = ENG }
-		}
-		effect = {
-			add_war_exhaustion = -5
-			add_prestige = 5
-			
-		
-		}
-	}
-
-
-
-}
-
-french_missions_integrate_vassals = { #Would like to add a time window somewhat seperating these so they cant be done in quick unison
-	slot = 5
-	generic = no
-	ai = yes
-	porential = { 
+	potential = { 
 		tag = FRA
 		#has_switched_nation = no #Should prevent tag swapping to integrate people for free. Marked out for now due to unanexable vassal bug if your not france
 	}
 	has_country_shield = yes
-	
+	#Need to tweak requirements so its not possible to integrate all vassals in quick unison.
 	fra_feud_vassal_integrate_mission_1 = { #Integrate Orleans
 		icon = mission_have_two_subjects
 		required_missions = { }
+		position = 1
 		completed_by = 1360.1.1
 		
 		trigger = {
-			ORL = {
-				vassal_of = FRA
-				ai = yes
-			}
-			years_in_vassalage_under = {
-				who = ORL
-				years = 5
+			OR = {
+				AND = {
+					ORL = { is_subject_of = FRA }
+					ADM = 3
+					NOT = { war_with = ENG }
+				}
+				NOT = { exists = ORL }
 			}
 		}
 		effect = {
 			inherit = ORL
 			add_prestige = 5
-			167 = {	add_claim = FRA }
-			168 = { add_claim = FRA }
-			4385 = { add_claim = FRA }
 		}
 	}
 
-	fra_feud_vassal_integrate_mission_2 = { #Annex Normandy. King Charles II of Navarra has been a thorn in our side long enough! It is time to confiscate his northern duchy and put an end to his tampering in French Politics!
-		icon = mission_conquer_50_development
-		required_missions = { fra_feud_vassal_integrate_mission_1 }
-		completed_by = 1404.1.1
-		
-		trigger = {
-			NRM = {	exists = no	}
-			owns = 167
-			owns = 168
-			owns = 4385
-		}
-		effect = {
-			add_territorial_core = 167
-			add_territorial_core = 168
-			add_territorial_core = 4385
-			add_legitimacy = 5
-			add_treasury = 60
-			add_war_exhaustion = -2
-			NAV = {
-				add_core = 167 #Caux
-				add_core = 168 #Caen
-				add_core = 4385 #Cotentin
-			
-			}
-		}
-	}
-
-	fra_feud_vassal_integrate_mission_3 = { #Inherit Dauphine
+	fra_feud_vassal_integrate_mission_2 = { #Inherit Dauphine
 		icon = mission_have_two_subjects
-		required_missions = { fra_feud_vassal_integrate_mission_2 }
+		required_missions = { fra_feud_vassal_integrate_mission_1 }
+		position = 2
 		completed_by = 1408.1.1 #Not Historical at all I'm sure
 		
 		trigger = {
@@ -120,23 +47,23 @@ french_missions_integrate_vassals = { #Would like to add a time window somewhat 
 			}			
 		}
 		effect = {
-			country_event = { id = 1356fra.1 tooltip = 1356fra.tooltip.1 } #Handle Dauphine Event
+			country_event = { id = 1356fra.1 tooltip = 1356fra.tooltip } #Handle Dauphine Event
 		}
 	}	
 	
-	fra_feud_vassal_integrate_mission_4 = { #Integrate Forez
+	fra_feud_vassal_integrate_mission_3 = { #Integrate Forez
 		icon = mission_have_two_subjects
-		required_missions = { fra_feud_vassal_integrate_mission_3 }
-		completed_by = 1430.1.1
-		#Historical completed_by = 1531.1.1
+		required_missions = { fra_feud_vassal_integrate_mission_2 }
+		position = 3
+		completed_by = 1430.1.1 #Historical completed_by = 1531.1.1
 		
 		trigger = {
 			OR = {
 				FOZ = {
-					vassal_of = FRA
+					is_subject_of = FRA
 					ai = yes
 				}
-				NOT = { exists = { tag = FOZ } }
+				NOT = { exists = FOZ }
 			}
 			stability = 1
 		}
@@ -147,19 +74,19 @@ french_missions_integrate_vassals = { #Would like to add a time window somewhat 
 		}
 	}
 	
-	fra_feud_vassal_integrate_mission_5 = { #Integrate Bourbonnais
+	fra_feud_vassal_integrate_mission_4 = { #Integrate Bourbonnais
 		icon = mission_have_two_subjects
-		required_missions = { fra_feud_vassal_integrate_mission_4 }
-		completed_by = 1450.1.1
-		#Historicalcompleted_by = 1532.1.1
+		required_missions = { fra_feud_vassal_integrate_mission_3 }
+		position = 5
+		completed_by = 1450.1.1 #Historical completed_by = 1532.1.1
 		
 		trigger = {
 			OR = {
 				BOU = {
-					vassal_of = FRA
+					is_subject_of = FRA
 					ai = yes
 				}
-				NOT = { exists = { tag = BOU } }
+				NOT = { exists = BOU }
 			}
 			treasury = 200
 		}
@@ -169,44 +96,23 @@ french_missions_integrate_vassals = { #Would like to add a time window somewhat 
 				add_base_tax = 1
 				add_base_manpower = 1
 			}
-			198 = {	add_claim = FRA	} #Rouergue
-			175 = { add_claim = FRA } #Armagnac
 			
 		}
 	}
-	
-	fra_feud_vassal_integrate_mission_6 = { #Annex Armagnac
-		icon = mission_cannons_firing
-		required_missions = { fra_feud_vassal_integrate_mission_5 }
-		completed_by = 1480.1.1
-		#completed_by = 1589.8.2 #Historical
 		
-		trigger = {
-			NOT = { exists = { tag = AMG } }
-			owns = 198
-			owns = 175
-		}
-		effect = {
-			add_territorial_core = 198
-			add_territorial_core = 175
-			create_general = 25
-			add_manpower = 5
-		}
-	}
-	
-	fra_feud_vassal_integrate_mission_7 = { #Integrate Alencon
+	fra_feud_vassal_integrate_mission_5 = { #Integrate Alencon
 		icon = mission_have_two_subjects
-		required_missions = { fra_feud_vassal_integrate_mission_6 }
-		completed_by = 1500.1.1
-		#Historical completed_by = 1549.12.21
+		required_missions = { fra_feud_vassal_integrate_mission_4 }
+		position = 6
+		completed_by = 1500.1.1	#Historical completed_by = 1549.12.21
 		
 		trigger = {
 			OR = {
 				ALE = {
-					vassal_of = FRA
+					is_subject_of = FRA
 					ai = yes
 				}
-				NOT = { exists = { tag = ALE } }
+				NOT = { exists = ALE }
 			}
 			had_recent_war = 10
 		}
@@ -218,43 +124,43 @@ french_missions_integrate_vassals = { #Would like to add a time window somewhat 
 		}
 	}
 
-	fra_feud_vassal_integrate_mission_8 = { #Integrate Anjou
+	fra_feud_vassal_integrate_mission_6 = { #Integrate Anjou
 		icon = mission_have_two_subjects
-		required_missions = { fra_feud_vassal_integrate_mission_7 }
-		completed_by = 1520.1.1
-		#Historical completed_by = 1481.1.1
+		required_missions = { fra_feud_vassal_integrate_mission_5 }
+		position = 7
+		completed_by = 1520.1.1	#Historical completed_by = 1481.1.1
 		
 		trigger = {
 			OR = {
 				ANJ = {
-					vassal_of = FRA
+					is_subject_of = FRA
 					ai = yes
 				}
-				NOT = { exists = { tag = ANJ } }
+				NOT = { exists = ANJ }
 			}
 			prestige = 25
 		}
 		effect = {
 			inherit = ANJ
 			204 = {
-				add_scaled_local_dip_power = 0.5
+				add_scaled_local_dip_power = 1
 			}
 		}
 	}
 	
-	fra_feud_vassal_integrate_mission_9 = { #Integrate Auvergne
+	fra_feud_vassal_integrate_mission_7 = { #Integrate Auvergne
 		icon = mission_have_two_subjects
-		required_missions = { fra_feud_vassal_integrate_mission_8 }
-		completed_by = 1540.1.1
-		#Historical completed_by = 1589.1.1
+		required_missions = { fra_feud_vassal_integrate_mission_6 }
+		position = 10
+		completed_by = 1540.1.1	#Historical completed_by = 1589.1.1
 		
 		trigger = {
 			OR = {
 				AUV = {
-					vassal_of = FRA
+					is_subject_of = FRA
 					ai = yes
 				}
-				NOT = { exists = { tag = AUV } }
+				NOT = { exists = AUV }
 			}
 			prestige = 35
 		}
@@ -263,84 +169,11 @@ french_missions_integrate_vassals = { #Would like to add a time window somewhat 
 			create_general = 30
 		}
 	}
-	
-	fra_feud_vassal_integrate_mission_10 = { #Annex Foix
-		icon = mission_cannons_firing
-		required_missions = { fra_feud_vassal_integrate_mission_9 }
-		completed_by = 1600.1.1
-		#completed_by = 1589.8.2 #Historical
 		
-		trigger = {
-			NOT = { exists = { tag = FOI } }
-			owns = 176 #Bearn
-		}
-		effect = {
-			add_territorial_core = 176
-			add_claim = 173 #Laubourd
-			add_claim = 174 #Aquitaine
-			NAV = {	
-				add_core = 176 #Bearn
-				add_opinion = { who = FRA modifier = -50 }	#Subject to Removal for Balance sake			
-			}			
-		}
-	}
-
-	fra_feud_vassal_integrate_mission_10 = { #Annex Gascony
-		icon = mission_sea_battles
-		required_missions = { fra_feud_vassal_integrate_mission_10 }
-		completed_by = 1610.1.1
-		#completed_by = 1453.7.18 #Historical
-		
-		trigger = {
-			NOT = { exists = { tag = GUY } }
-			owns = 174 #Aquitaine
-			owns = 173 #Labourd
-		}
-		effect = {
-			change_dip = 1
-			change_heir_dip = 1
-			ENG = {	
-				add_claim = 174 #Aquitaine
-				add_claim = 173 #Labourd
-				add_opinion = { who = FRA modifier = -50 }	#Subject to Removal for Balance sake			
-			}			
-		}
-	}
-	
-	fra_end_the_long_rivalry = {
-		icon = mission_monarch_in_throne_room
-		required_missions = { fra_feud_vassal_integrate_mission_10 }
-		completed_by = 1650.1.1
-		#Historical completed_by 1815.1.1
-		trigger = {
-			has_global_flag = end_of_HYW_war
-			AND = { #Neither ENG, GBR, or FRA can be the revolution target
-				ENG = {	is_revolution_target = no }
-				GBR = { is_revolution_target = no }
-				FRA = { is_revolution_target = no }
-			}
-			OR = {
-				DIP = 5
-				heir_dip = 5
-			}
-			
-		}
-		effect = {
-			remove_historical_rival = ENG
-			remove_historical_rival = GBR
-			add_historical_friend = ENG
-			add_historical_friend = GBR
-			ENG = { remove_historical_rival = FRA add_historical_friend = FRA }
-			GBR = { remove_historical_rival = FRA add_historical_friend = FRA }
-		}
-	
-	}
-	
-	#Something after this that removes historical Rivalry with ENG
 }
 
-french_missions_north = { #Take the North
-	slot = 1
+french_expand_external_europe_not_hre = { #Take stuff not in the HRE!
+	slot = 2
 	generic = no
 	ai = yes
 	potential = {
@@ -348,36 +181,10 @@ french_missions_north = { #Take the North
 	}
 	has_country_shield = yes
 
-	reconquer_normandy = { #Normandy
-		icon = mission_conquer_50_development
-		required_missions = { }
-		completed_by = 1450.1.1
-		provinces_to_highlight = {
-			area = normandy_area
-			NOT = {
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-		}
-		trigger = {
-			normandy_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-		}
-		effect = {
-			brittany_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { owned_by = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-		}
-	}
 	subjugate_brittany = { #Brittany
 		icon = mission_have_two_subjects
-		required_missions = { reconquer_normandy }
-		position = 3
+		required_missions = { hyw_punish_charles_ii_normandy }
+		position = 6
 		completed_by = 1491.12.6
 		provinces_to_highlight = {
 			area = brittany_area
@@ -435,10 +242,11 @@ french_missions_north = { #Take the North
 			}
 		}
 	}
+	
 	conquer_picardy_fra = { #Take Picarde
 		icon = mission_assemble_an_army
 		required_missions = { subjugate_brittany }
-		position = 5
+		position = 7
 		completed_by = 1477.1.5
 		provinces_to_highlight = {
 			OR = {
@@ -494,45 +302,11 @@ french_missions_north = { #Take the North
 			}
 		}
 	}
-	recover_calais = { #Take Calais
-		icon = mission_galleys_in_port
-		required_missions = { conquer_picardy_fra }
-		completed_by = 1558.1.7
-		provinces_to_highlight = {
-			province_id = 87
-			NOT = {
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-		}
-		trigger = {
-			87 = {
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-		}
-		effect = {
-			87 = {
-				add_province_modifier = {
-					name = "french_callais"
-					duration = 7300
-				}
-			}
-		}
-	}
-}
 
-french_mission_slot_2 = { #More from North
-	slot = 2
-	generic = no
-	ai = yes
-	potential = {
-		tag = FRA
-	}
-	has_country_shield = yes
-	
 	conquer_flanders_wallonia = { #Take Flanders
 		icon = mission_cannons_firing
 		required_missions = { conquer_picardy_fra }
-		position = 6
+		position = 8
 		provinces_to_highlight = {
 			OR = {
 				area = wallonia_area
@@ -567,10 +341,418 @@ french_mission_slot_2 = { #More from North
 			}
 		}
 	}
+	
+	recover_calais = { #Take Calais
+		icon = mission_galleys_in_port
+		required_missions = { conquer_flanders_wallonia  }
+		position = 9
+		completed_by = 1558.1.7
+		provinces_to_highlight = {
+			province_id = 87
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			87 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			87 = {
+				add_province_modifier = {
+					name = "french_callais"
+					duration = 7300
+				}
+			}
+		}
+	}
+
+	fra_end_the_long_rivalry = { #Befriend England. Add checks later for if Eng exists or GBR exists.
+		icon = mission_monarch_in_throne_room
+		required_missions = { fra_feud_vassal_integrate_mission_7 hyw_revoke_gascony_from_english recover_calais }
+		position = 11
+		completed_by = 1650.1.1	#Historical completed_by 1815.1.1
+		trigger = {
+			ENG = {	is_revolution_target = no } #Neither ENG, GBR, or FRA can be the revolution target
+			GBR = { is_revolution_target = no }
+			FRA = { is_revolution_target = no }
+			OR = {
+				DIP = 5
+				heir_dip = 5
+			}
+			
+		}
+		effect = {
+			remove_historical_rival = ENG
+			remove_historical_rival = GBR
+			create_alliance = ENG
+			create_alliance = GBR
+			add_historical_friend = ENG
+			add_historical_friend = GBR
+			ENG = { remove_historical_rival = FRA add_historical_friend = FRA }
+			GBR = { remove_historical_rival = FRA add_historical_friend = FRA }
+		}
+	
+	}
+	
+}
+
+
+french_hundred_years_war_missions = { #AKA Consolidate dejure france #Add the preview of what you need here please
+	slot = 3
+	generic = no
+	ai = yes
+	potential = { 
+		tag = FRA 
+	}
+	has_country_shield = yes
+	
+	hyw_swing_war_in_our_favor = { #Get the war in our favor
+		icon = mission_conquer_50_development
+		required_missions = { }
+		position = 1
+		#completed_by = 1440.1.1
+		trigger = {
+			OR = {
+				war_score_against = {
+					who = ENG
+					value = 10
+				}
+				truce_with = ENG
+			}
+		}
+		effect = {
+			add_army_tradition = 10
+			add_prestige = 5
+			add_war_exhaustion = -5
+			add_manpower = 2
+		}	
+	}
+	hyw_end_phase_1_fra_war = { #End the war
+		icon = mission_conquer_50_development
+		required_missions = { hyw_swing_war_in_our_favor }
+		position = 2
+		#completed_by = 1440.1.1
+		trigger = {
+			NOT = { war_with = ENG }
+		}
+		effect = {
+			add_war_exhaustion = -5
+			add_prestige = 5
+			167 = {	add_claim = FRA }
+			168 = { add_claim = FRA }
+			4385 = { add_claim = FRA }
+			
+		
+		}
+	}
+	hyw_end_breton_civil_war = { #End Breton Civil War
+		icon = mission_unite_home_region
+		required_missions = { hyw_end_phase_1_fra_war }
+		position = 3
+		completed_by = 1365.4.12
+		
+		trigger = {
+			NOT = { exists = BLS }
+			NOT = { exists = MNF }
+			exists = BRI
+		}
+		effect = {
+			add_stability = 1
+			add_prestige = 5
+		}
+	
+	}
+	hyw_end_war_of_two_peters = { #End Castilian Civil War
+		icon = mission_build_up_to_force_limit
+		required_missions = { hyw_end_breton_civil_war }
+		position = 4
+		completed_by = 1369.3.23
+		
+		trigger = {
+			NOT = { exists = CTR }	
+		}	
+		effect = {
+			add_dip_power = 50
+			add_prestige = 5
+		}
+	
+	}
+	hyw_punish_charles_ii_normandy = { #Annex Normandy
+		icon =  mission_build_up_to_force_limit
+		required_missions = {hyw_end_war_of_two_peters }
+		position = 5
+		completed_by = 1404.1.1
+		
+		trigger = {
+			NRM = {	exists = no	}
+			167 = { country_or_non_sovereign_subject_holds = ROOT }
+			168 = { country_or_non_sovereign_subject_holds = ROOT }
+			4385 = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		effect = {
+			add_territorial_core = 167
+			add_territorial_core = 168
+			add_territorial_core = 4385
+			add_legitimacy = 5
+			add_treasury = 60
+			add_war_exhaustion = -2
+			NAV = {
+				add_core = 167 #Caux
+				add_core = 168 #Caen
+				add_core = 4385 #Cotentin
+			
+			}
+			198 = {	add_claim = FRA	} #Rouergue
+			175 = { add_claim = FRA } #Armagnac
+		}
+	
+	
+	}
+	hyw_reconquer_armagnac = { #Annex Armagnac 
+		icon = mission_cannons_firing
+		required_missions = { hyw_punish_charles_ii_normandy }
+		position = 6
+		completed_by = 1589.8.2
+	
+		trigger = {
+			NOT = { exists = AMG }
+			198 = { country_or_non_sovereign_subject_holds = ROOT }
+			175 = { country_or_non_sovereign_subject_holds = ROOT }
+		
+		}
+		effect = {
+			add_territorial_core = 198 #Rouergue
+			add_territorial_core = 175 #Armagnac
+			add_manpower = 5
+		}
+	}
+	hyw_take_direct_control_foix = { #Annex Foix
+		icon = mission_conquer_50_development
+		required_missions = { hyw_reconquer_armagnac }
+		position = 8
+		completed_by = 1589.8.2
+	
+		trigger = {
+			NOT = { exists = FOI }
+			176 = { country_or_non_sovereign_subject_holds = ROOT } #Bearn
+		
+		}
+		
+		effect = {
+			add_territorial_core = 176 #Bearn
+			add_claim = 173 #Laubourd
+			add_claim = 174 #Aquitaine
+			NAV = {	
+				add_core = 176 #Bearn		
+			}			
+		}
+	}
+	hyw_revoke_gascony_from_english = { #Annex Gascony
+		icon = mission_sea_battles
+		required_missions = { hyw_take_direct_control_foix }
+		position = 10
+		completed_by = 1589.8.2	#completed_by = 1453.7.18 #Historical
+		
+		trigger = {
+			NOT = { exists = GUY }
+			174 = { country_or_non_sovereign_subject_holds = ROOT }#Aquitaine
+			173 = { country_or_non_sovereign_subject_holds = ROOT } #Labourd
+		}
+		effect = {
+			change_dip = 1
+			change_heir_dip = 1
+			ENG = {	
+				add_core = 174 #Aquitaine
+				add_core = 173 #Labourd		
+			}			
+		}
+	}
+}
+
+france_expand_europe_hre = { #Take HRE land, eventully script HRE being dismantled here
+	slot = 3
+	generic = no
+	ai = yes
+	potential = {
+		tag = FRA
+	}
+	has_country_shield = yes
+	conquer_provence = { #Take Provence
+		icon = mission_cannons_firing
+		required_missions = { hyw_revoke_gascony_from_english }
+		position = 11
+		completed_by = 1481.1.1
+		provinces_to_highlight = {
+			OR = {
+				area = provence_area
+				area = loire_area
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			provence_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			loire_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			bourgogne_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	conquer_burgundy_area = { #Take Burgundy
+		icon = mission_unite_home_region
+		required_missions = { conquer_provence }
+		position = 12
+		provinces_to_highlight = {
+			area = bourgogne_area
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			bourgogne_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			lorraine_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			savoy_dauphine_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			piedmont_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	subjugate_lorraine = { #Take Lorraine
+		icon = mission_build_up_to_force_limit
+		required_missions = { conquer_burgundy_area }
+		position = 13
+		provinces_to_highlight = {
+			area = lorraine_area
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			lorraine_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			upper_rhineland_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	annex_alsace = { #Take Alsace
+		icon = mission_assemble_an_army
+		required_missions = { subjugate_lorraine }
+		position = 14
+		provinces_to_highlight = {
+			area = upper_rhineland_area
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			upper_rhineland_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = "fra_into_germany"
+				duration = 7300
+			}
+		}
+	}
+	fra_subjugate_walloons_mission = { #Add provinces to highlight
+		icon =  mission_build_up_to_force_limit
+		required_missions = { annex_alsace }
+		position = 15
+		
+		trigger = {
+		
+		
+		}
+		
+		effect = {
+		
+		
+		}
+	}
+	
+	fra_subjugate_flems_mission = { #Add provinces to highlight
+		icon =  mission_build_up_to_force_limit
+		required_missions = { fra_subjugate_walloons_mission }
+		position = 16
+		
+		trigger = {
+		
+		
+		}
+		
+		effect = {
+		
+		
+		}
+	}
+	
+	fra_stabilize_lowlands = { #Add provinces to highlight
+		icon =  mission_build_up_to_force_limit
+		required_missions = { fra_subjugate_flems_mission }
+		position = 17
+		
+		trigger = {
+		
+		
+		}
+		
+		effect = {
+		
+		
+		}
+	}
 }
 
 french_missions_colonial = { #Colonize and Expand south
-	slot = 3
+	slot = 4
 	generic = no
 	ai = yes
 	potential = {
@@ -581,6 +763,7 @@ french_missions_colonial = { #Colonize and Expand south
 	build_french_fleet = { #Make a Navy
 		icon = mission_galleys_in_port
 		required_missions = { }
+		position = 1
 		trigger = { num_of_heavy_ship = 20 }
 		effect = {
 			add_country_modifier = {
@@ -592,6 +775,7 @@ french_missions_colonial = { #Colonize and Expand south
 	france_discovers_north_america = { #Explore!
 		icon = mission_establish_high_seas_navy
 		required_missions = { build_french_fleet }
+		position = 2
 		completed_by = 1535.1.1
 		trigger = {
 			has_idea_group = exploration_ideas
@@ -625,6 +809,7 @@ french_missions_colonial = { #Colonize and Expand south
 	french_colony_in_north_america = { #Colonize it!
 		icon = mission_colonial
 		required_missions = { france_discovers_north_america }
+		position = 3
 		completed_by = 1608.7.3
 		provinces_to_highlight = {
 			OR = {
@@ -671,6 +856,7 @@ french_missions_colonial = { #Colonize and Expand south
 	france_discovers_the_carribean = { #Discover Carribean!
 		icon = mission_sea_battles
 		required_missions = { french_colony_in_north_america }
+		position = 4
 		trigger = {
 			custom_trigger_tooltip = {
 				tooltip = fra_bengal_discovery.tooltip
@@ -713,58 +899,86 @@ french_missions_colonial = { #Colonize and Expand south
 			}
 		}
 	}
-	fra_india_expansion = { #Take parts of India!
-		icon = mission_trade_company_region_abroad
-		required_missions = { france_discovers_the_carribean }
+
+
+}
+
+
+france_expand_italy = { #Eventully script Napoleons conquest here
+	slot = 4
+	generic = no
+	ai = yes
+	potential = {
+		tag = FRA
+	}
+	has_country_shield = yes
+	annex_savoy = { #Annex Savoy
+		icon = mission_unite_home_region
+		required_missions = { conquer_burgundy_area }
+		position = 13
 		provinces_to_highlight = {
 			OR = {
-				area = andhra_area
-				area = orissa_area
-				area = coromandel_area
+				area = savoy_dauphine_area
+				area = piedmont_area
 			}
 			NOT = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
 		trigger = {
-			andhra_area = {
+			savoy_dauphine_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
-			orissa_area = {
+			piedmont_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
-			coromandel_area = {
+		}
+		effect = {
+			liguria_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			lombardy_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	annex_genoa = { #Annex Genoa
+		icon = mission_galleys_in_port
+		required_missions = { annex_savoy }
+		position = 14
+		provinces_to_highlight = {
+			area = liguria_area
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			liguria_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
 		effect = {
 			add_country_modifier = {
-				name = "east_india_trade_rush"
-				duration = 9125 #25 years
-			}
-			telingana_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { owned_by = ROOT }
-				}
-				add_claim = ROOT
-			}
-			garjat_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { owned_by = ROOT }
-				}
-				add_claim = ROOT
+				name = "italian_ambition_modifier"
+				duration = 7300
 			}
 		}
 	}
-	conquer_milan = { #Take Milan! -From Expand South/East-
+	conquer_milan = { #Take Milan! 
 		icon = mission_cannons_firing
-		required_missions = { annex_savoy }
-		position = 7
+		required_missions = { annex_genoa }
+		position = 15
 		provinces_to_highlight = {
 			area = lombardy_area
 			NOT = {
@@ -843,9 +1057,10 @@ french_missions_colonial = { #Colonize and Expand south
 			}
 		}
 	}
-	french_claim_to_naples = { #Take Naples! - From Expand South/East-
+	french_claim_to_naples = { #Take Naples! 
 		icon = mission_monarch_in_throne_room
 		required_missions = { conquer_milan }
+		position = 16
 		provinces_to_highlight = {
 			OR = {
 				area = calabria_area
@@ -894,240 +1109,66 @@ french_missions_colonial = { #Colonize and Expand south
 			}
 		}
 	}	
+
 }
 
-france_expand_south = { #Expand South!
+fra_expand_asia_missions = { #Make Missions for France discovering Cape -> India ->SE Asia
 	slot = 5
 	generic = no
 	ai = yes
-	potential = {
-		tag = FRA
-	}
+	potential = { tag = FRA }
 	has_country_shield = yes
-	reconquer_gascony = { #Take Gascony
-		icon = mission_conquer_50_development
-		required_missions = { }
-		completed_by = 1453.7.18
-		provinces_to_highlight = {
-			OR = {
-				province_id = 174
-				province_id = 173
-			}
-			NOT = {
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-		}
-		trigger = {
-			owns_core_province = 174
-			owns_core_province = 173
-		}
-		effect = {
-			provence_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { owned_by = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			loire_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { owned_by = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-		}
-	}
-	conquer_provence = { #Take Provence
-		icon = mission_cannons_firing
-		required_missions = { reconquer_gascony }
-		position = 3
-		completed_by = 1481.1.1
-		provinces_to_highlight = {
-			OR = {
-				area = provence_area
-				area = loire_area
-			}
-			NOT = {
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-		}
-		trigger = {
-			provence_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			loire_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-		}
-		effect = {
-			bourgogne_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { owned_by = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-		}
-	}
-	conquer_burgundy_area = { #Take Burgundy
-		icon = mission_unite_home_region
-		required_missions = { conquer_provence }
+	
+	fra_india_expansion = { #Take parts of India!
+		icon = mission_trade_company_region_abroad
+		required_missions = { france_discovers_the_carribean }
 		position = 5
 		provinces_to_highlight = {
-			area = bourgogne_area
-			NOT = {
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-		}
-		trigger = {
-			bourgogne_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-		}
-		effect = {
-			lorraine_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { owned_by = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			savoy_dauphine_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { owned_by = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			piedmont_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { owned_by = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-		}
-	}
-	subjugate_lorraine = { #Take Lorraine
-		icon = mission_build_up_to_force_limit
-		required_missions = { conquer_burgundy_area }
-		provinces_to_highlight = {
-			area = lorraine_area
-			NOT = {
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-		}
-		trigger = {
-			lorraine_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-		}
-		effect = {
-			upper_rhineland_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { owned_by = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-		}
-	}
-	annex_alsace = { #Take Alsace
-		icon = mission_assemble_an_army
-		required_missions = { subjugate_lorraine }
-		provinces_to_highlight = {
-			area = upper_rhineland_area
-			NOT = {
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-		}
-		trigger = {
-			upper_rhineland_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-		}
-		effect = {
-			add_country_modifier = {
-				name = "fra_into_germany"
-				duration = 7300
-			}
-		}
-	}
-}
-france_expand_south_2 = { #Expand South More!
-	slot = 4
-	generic = no
-	ai = yes
-	potential = {
-		tag = FRA
-	}
-	has_country_shield = yes
-	annex_savoy = { #Annex Savoy
-		icon = mission_unite_home_region
-		required_missions = { conquer_burgundy_area }
-		position = 6
-		provinces_to_highlight = {
 			OR = {
-				area = savoy_dauphine_area
-				area = piedmont_area
+				area = andhra_area
+				area = orissa_area
+				area = coromandel_area
 			}
 			NOT = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
 		trigger = {
-			savoy_dauphine_area = {
+			andhra_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
-			piedmont_area = {
+			orissa_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
-		}
-		effect = {
-			liguria_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { owned_by = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			lombardy_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { owned_by = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-		}
-	}
-	annex_genoa = { #Annex Genoa
-		icon = mission_galleys_in_port
-		required_missions = { annex_savoy }
-		provinces_to_highlight = {
-			area = liguria_area
-			NOT = {
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-		}
-		trigger = {
-			liguria_area = {
+			coromandel_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
 		effect = {
 			add_country_modifier = {
-				name = "italian_ambition_modifier"
-				duration = 7300
+				name = "east_india_trade_rush"
+				duration = 9125 #25 years
+			}
+			telingana_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_claim = ROOT
+			}
+			garjat_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_claim = ROOT
 			}
 		}
 	}
+	
+
+
 }

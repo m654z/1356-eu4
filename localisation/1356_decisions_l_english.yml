@@ -31,6 +31,6 @@
  tur_resettle_gallipoli_title: "Our Beachhead Gallipoli"
  tur_resettle_gallipoli_desc: "Now when we have conquered the whole Province of Edirne, it shows how important our Beachhead Gallipoli was to cross the Bosporus Sea." 
  castilian_nation_title: "Form a new Castile"
- castilian_nation_desc: "After years of fighting between the houses of Trastámara and Ivrea, [Root.Monarch.GetName] is victorious, and now stands as [Root.Monarch.GetTitle] of all Castile.
+ castilian_nation_desc: "After years of fighting between the houses of Trastámara and Ivrea, [Root.Monarch.GetName] is victorious, and now stands as [Root.Monarch.GetTitle] of all Castile."
  castilian_unification_effect.tooltip:0 "§YCastile§! will get a permanent claim on the entire §YCastilian§! region."
  yua_fix_government_tooltip: "Will remove the §YYuan Decline§! triggered modifier"

@@ -122,7 +122,7 @@ dependency = {
 
 # Burgundy, a French duchy vassal
 dependency = {
-	subject_type = "french_ducal_vassal"
+	subject_type = "vassal"
 	first = FRA
 	second = BUR
 	start_date = 1363.9.6 # duchy handed to Philippe I, son of king of france

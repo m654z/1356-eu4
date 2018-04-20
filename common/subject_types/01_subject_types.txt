@@ -38,7 +38,6 @@ french_ducal_vassal = {
 	
 	#properties
 	pays_overlord = 0.0
-	
 	gives_daimyo_bonuses = no
 	gets_help_with_rebels = yes
 	separatists_become_subjects = yes
@@ -47,6 +46,7 @@ french_ducal_vassal = {
 	has_power_projection = yes
 	can_have_subjects_of_other_types = yes
 	can_be_integrated = no
+	can_be_annexed = no
 	overlord_can_be_subject = yes
 	can_release_in_peace = no #May need changed for balance
 	
@@ -93,8 +93,6 @@ french_ducal_vassal = {
 	send_additional_troops = yes #Maybe
 	fortify_march = yes #Maybe
 	subsidize_armies = yes #Maybe
-	send_officers = yes #Maybe
-	support_loyalists = yes #Maybe
 	grant_core_claim = yes
 	grant_province = yes
 	enforce_religion = yes

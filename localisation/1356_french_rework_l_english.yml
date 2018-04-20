@@ -1,5 +1,63 @@
 ﻿l_english:
+ #Features
  french_ducal_vassal: "French Feudal Vassal"
  french_ducal_vassal_title: "French Feudal Vassal"
+ french_ducal_vassal_is_our: ""
+ french_ducal_vassal_long_desc: ""
+ french_ducal_vassal_title_plural: ""
  
  
+ #Tags
+ AQT: "Aquitaine"
+ AQT_ADJ: "Aquitaite"
+ 
+ #FRA Missions
+ fra_feud_vassal_integrate_mission_1_title: "Integrate Orleans"
+ fra_feud_vassal_integrate_mission_1_desc: "We need to start centralizing our Kingdom. We're too fragmented by the soon to be outdated feudal system. We need to reign in the independence of our Dukes. Historically, Orleans was frequently changing hands in France. It finally ended up in Frances Royal Domain in 1545, when Charles II of Orleans died. "
+ fra_feud_vassal_integrate_mission_2_title: "Integrate Dauphine"
+ fra_feud_vassal_integrate_mission_2_desc: "Historically Dauphine was sold to the French crown by Humbert II, who sold it for a sum of gold, and a treaty called that we ended up calling 'The Treaty of the Romans.' This treaty added a major condition to the sale, that stated the Heir to the throne of France would henceforth be known as 'le Dauphin' or The Dolphin. Furthermore Dauphine was to be exempt from many of the taxes, and Dauphine itself was given considerable autonomy within the Kingdom itself. Dauphine itself was never fully integrated into France until Louis XI integrated it into the Royal Domain of France. "
+ fra_feud_vassal_integrate_mission_3_title: "Integrate Forez"
+ fra_feud_vassal_integrate_mission_3_desc: "Integrate Forez into the Royal Domain."
+ fra_feud_vassal_integrate_mission_4_title: "Integrate Bourbonnais"
+ fra_feud_vassal_integrate_mission_4_desc: "Bourbonnais, or more commonly known as the area which gave the French Kingdom the House of Bourbon, wasn't integrated into the Royal Domain until the Bourbons rose to power circa 1548."
+ fra_feud_vassal_integrate_mission_5_title: "Integrate Alencon"
+ fra_feud_vassal_integrate_mission_5_desc: "We must reign in the Autonomy of the Count of Alencon! This important province would be a great opportunity to let our sons get experience ruling their own domain before they inherit the crown! Historically, Alencon was given to the sons of the King of France up until the French revolution."
+ fra_feud_vassal_integrate_mission_6_title: "Integrate Anjou"
+ fra_feud_vassal_integrate_mission_6_desc: "We must integrate Anjou into the Royal Domain, it is a rich region that is ripe for a prosperous court to be placed in it! Historically, Anjou was given to the first son of the King of France. Philip gave it to John, who in turn gave it to Louis I. After Louis however, the Dukes of Provence ruled it for around a century. Ruling it from Anjou Provence, and Naples depending."
+ fra_feud_vassal_integrate_mission_7_title: "Integrate Auvergne"
+ fra_feud_vassal_integrate_mission_7_desc: "Auvergne is a strategic location for our militairy, we must not let it fall into foreign hands so we must integrate it into the Royal Domain! Historically, Auvergne was ruled by its own brance of the Capet line, up until the Bourbons inherited it. However in 1527 it was confiscated by Francois I where it passed into the Royal Domain."
+ 1356fra.tooltip: "The Fate of Dauphine"
+ fra_end_the_long_rivalry_title: "End the Channel Rivalry"
+ fra_end_the_long_rivalry_desc: "Now that the English have been driven from Mainland Europe we should look to end this long rivalry between our two Kingdoms. We could be potentially really useful allies. Historically it wasn't until after Napoleon was put down that England and France started to set aside their differences."
+ 
+ hyw_swing_war_in_our_favor_title: "Swing the War in our favor"
+ hyw_swing_war_in_our_favor_desc: ""
+ hyw_end_phase_1_fra_war_title: "End the first war"
+ hyw_end_phase_1_fra_war_desc: ""
+ hyw_end_breton_civil_war_title: "End the Breton Civil War"
+ hyw_end_breton_civil_war_desc: ""
+ hyw_end_war_of_two_peters_title: "End the War of Two Peters"
+ hyw_end_war_of_two_peters_desc: ""
+ hyw_punish_charles_ii_normandy_title: "Reconquer Normandy"
+ hyw_punish_charles_ii_normandy_desc: "Historically during the Hundreds years war King Charles II of Navarra, who controlled the Duchy of Normandy, played both sides of the war for what he wanted, switching sides when it was convenient for him. In reality, he had his eyes set on the French throne and would stop at nothing to get what he wanted. This lead to France and England punishing Charles II by taking all his land outside of Navarra away from him. France regained its dejure duchy of Normandy for the most part, and the thorn was dealt with."
+ hyw_reconquer_armagnac_title: "Reconquer Armagnac"
+ hyw_reconquer_armagnac_desc: "Currently, Armagnac is controlled by the English dogs! We must reclaim our dejure borders and end English Rule in France!"
+ hyw_take_direct_control_foix_title: "Annex Foix"
+ hyw_take_direct_control_foix_desc: "Foix is one of the first provinces that would fall in the event of an Iberian invasion! It has a strategicly places castle that would serve well to help control the region in the event of war!"
+ hyw_revoke_gascony_from_english_title: "Revoke Gascony"
+ hyw_revoke_gascony_from_english_desc: "Gascony is controlled by the vile English! We must revoke the English King's duchy and bring it back into the rightful hands of loyal French vassals! Historically, Gascony was the source of much debate during the Hundred Years War. Switching between English and French hands frequently it was not until 1453 that the French finally managed to keep it from English hands."
+ 
+ fra_subjugate_walloons_mission_title: "Subjugate the Walloons"
+ fra_subjugate_walloons_mission_desc: ""
+ fra_subjugate_flems_mission_title: "Subjugate the Flemish"
+ fra_subjugate_flems_mission_desc: ""'
+ fra_stabilize_lowlands_title: "Stabilize the Lowlands"
+ fra_stabilize_lowlands_desc: ""
+ 
+ #Events
+ 1356fra.1.t: ""
+ 1356fra.1.d: ""
+ 1356fra.1.a: ""
+ 1356fra.1.b: ""
+ 1356fra.1.c: ""
+ fra_dauphin_modifier: ""
