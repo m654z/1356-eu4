@@ -31,5 +31,5 @@
  tur_resettle_gallipoli_title: "Unser Brückenkopf Gallipoli"
  tur_resettle_gallipoli_desc: "Nun wo wir die komplette Provinz Edirne gesichert haben, zeigt sich wie wichtig unser früher Brückenkopf Gallipoli für den Übertritt des Bosporus war."
  castilian_nation_title: "Erschaffe ein neues Kastilien"
- castilian_nation_desc: "After years of fighting between the houses of Trastámara and Ivrea, [Root.Monarch.GetName] is victorious, and now stands as [Root.Monarch.GetTitle] of all Castile.
+ castilian_nation_desc: "After years of fighting between the houses of Trastámara and Ivrea, [Root.Monarch.GetName] is victorious, and now stands as [Root.Monarch.GetTitle] of all Castile."
  castilian_unification_effect.tooltip:0 "§YCastile§! will get a permanent claim on the entire §YCastilian§! region."
