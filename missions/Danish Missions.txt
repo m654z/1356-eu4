@@ -49,6 +49,9 @@ danish_missions = {
 		}
 		effect = {
 			add_prestige = 25
+			SWE = {
+				add_liberty_desire = -25
+			}
 		}
 	}
 }
