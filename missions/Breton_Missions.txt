@@ -1,0 +1,105 @@
+bri_end_the_succession = {
+
+	slot = 1
+	generic = no
+	ai = yes
+	
+	potential = {
+		OR = {
+			tag = MNF
+			tag = BLS
+			tag = BRI
+		}
+	}
+	has_country_shield = yes
+	
+	bri_minor_end_succession_crisis = {
+		icon = mission_conquer_50_development
+		required_missions = { }
+		position = 1
+		
+		provinces_to_highlight = {
+			area = brittany_area
+			NOT = { owned_by = ROOT }
+		}
+		
+		trigger = {
+			brittany_area = {
+				type = all
+				owned_by = ROOT
+			}
+		}
+		
+		effect = {
+			brittany_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			set_government_rank = 2
+			add_prestige = 5
+		
+		}
+	}
+
+
+}
+
+bri_secure_borders = {
+	slot = 1
+	generic = no
+	ai = yes
+	
+	potential = {
+		tag = MNF
+		tag = BLS
+		tag = BRI	
+	}
+	has_country_shield = yes
+	
+}
+
+bri_make_friends = {
+	slot = 2
+	generic = no
+	ai = yes
+	
+	potential = {
+		tag = MNF
+		tag = BLS
+		tag = BRI	
+	}
+	has_country_shield = yes
+	
+}
+
+bri_celtic_reconquest = {
+	slot = 3
+	generic = no
+	ai = yes
+	
+	potential = {
+		tag = MNF
+		tag = BLS
+		tag = BRI	
+	}
+	has_country_shield = yes
+	
+}
+
+
+bri_colonial_chain = {
+	slot = 5
+	generic = no
+	ai = yes
+	
+	potential = {
+		tag = MNF
+		tag = BLS
+		tag = BRI	
+	}
+	has_country_shield = yes
+	
+}

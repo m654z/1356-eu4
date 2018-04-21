@@ -1,0 +1,51 @@
+nrm_secure_northern_france = {
+
+	slot = 1
+	generic = no
+	ai = yes
+	
+	potential = { tag = NRM }
+	has_country_shield = yes
+	
+}
+
+nrm_freedom_from_french_english_basque_rule = {
+	slot = 2
+	generic = no
+	ai = yes
+	
+	potential = { tag = NRM }
+	has_country_shield = yes
+	
+}
+
+nrm_norman_legacy = {
+	slot = 3
+	generic = no
+	ai = yes
+	
+	potential = { tag = NRM }
+	has_country_shield = yes
+	
+}
+
+nrm_build_up_homeland = {
+	slot = 4
+	generic = no
+	ai = yes
+	
+	potential = { tag = NRM }
+	has_country_shield = yes
+	
+}
+
+
+nrm_beyond_europe = {
+	slot = 5
+	generic = no
+	ai = yes
+	
+	potential = { tag = NRM }
+	has_country_shield = yes
+	
+}

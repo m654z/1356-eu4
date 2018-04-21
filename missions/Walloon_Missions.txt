@@ -1,0 +1,91 @@
+wal_french_buffer_state = {
+
+	slot = 1
+	generic = no
+	ai = yes
+	
+	potential = { 
+		OR = {
+			tag = RET
+			tag = HAI
+			tag = LUX #Make their own!
+			tag = LIE #Make Bishopric tree?
+			tag = ARS
+		}
+	}
+	has_country_shield = yes
+	
+}
+
+wal_unite_the_walloons = {
+	slot = 2
+	generic = no
+	ai = yes
+	
+	potential = { 
+		OR = {
+			tag = RET
+			tag = HAI
+			tag = LUX #Make their own!
+			tag = LIE #Make Bishopric tree?
+			tag = ARS
+		}
+	}
+	has_country_shield = yes
+	
+}
+
+wal_unite_the_lowlands = {
+	slot = 3
+	generic = no
+	ai = yes
+	
+	potential = { 
+		OR = {
+			tag = RET
+			tag = HAI
+			tag = LUX #Make their own!
+			tag = LIE #Make Bishopric tree?
+			tag = ARS
+		}
+	}
+	has_country_shield = yes
+	
+}
+
+wal_secure_homeland = {
+	slot = 4
+	generic = no
+	ai = yes
+	
+	potential = { 
+		OR = {
+			tag = RET
+			tag = HAI
+			tag = LUX #Make their own!
+			tag = LIE #Make Bishopric tree?
+			tag = ARS
+		}
+	}
+	has_country_shield = yes
+	
+}
+
+
+wal_beyond_europe = {
+	slot = 5
+	generic = no
+	ai = yes
+	
+	potential = { 
+		OR = {
+			tag = RET
+			tag = HAI
+			tag = LUX #Make their own!
+			tag = LIE #Make Bishopric tree?
+			tag = ARS
+		}
+	}
+	has_country_shield = yes
+	
+}

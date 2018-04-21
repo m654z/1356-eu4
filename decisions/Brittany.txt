@@ -1,25 +1,35 @@
 country_decisions = {
 
-	mnf_brittany = {
+	mnf_brittany = { #Unify Brittany for MNF
 		major = yes
 		potential = {
 			NOT = { exists = BRI }
 			tag = MNF
-			BLS = {
-				exists = yes
-				ai = yes
+		}
+		provinces_to_highlight = {
+			area = brittany_area
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
 		allow = {
 			is_subject = no
 			stability = 1
 			is_at_war = no
-			owns = 170				# Finistére
-			owns = 171				# Morbihan
-			is_core = 170			# Finistére
-			is_core = 171			# Morbihan
-			senior_union_with = BLS
-			NOT = { personal_union = 2 }
+			OR = {
+				AND = {
+					170 = { country_or_non_sovereign_subject_holds = ROOT }	#Finistére
+					171 = { country_or_non_sovereign_subject_holds = ROOT } #Morbihan
+					169 = { country_or_non_sovereign_subject_holds = ROOT } #Armor
+					172 = { country_or_non_sovereign_subject_holds = ROOT } #Nantais
+					4384 = { country_or_non_sovereign_subject_holds = ROOT } #Rennais
+				}
+				NOT = { exists = BLS }
+			}
+			OR = { 
+				senior_union_with = BLS
+				NOT = { exists = BLS }
+			}
 		}
 		effect = {
 			change_tag = BRI
@@ -38,26 +48,36 @@ country_decisions = {
 		ai_importance = 400
 	}
 
-	blo_brittany = {
+	blo_brittany = { #Unify Brittany for BLS
 		major = yes
 		potential = {
 			NOT = { exists = BRI }
 			tag = BLS
-			MNF = {
-				exists = yes
-				ai = yes
+		}
+		provinces_to_highlight = {
+			area = brittany_area
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
 		allow = {
 			is_subject = no
 			stability = 1
 			is_at_war = no
-			owns = 169				# Armor
-			owns = 172				# Vendeé
-			is_core = 169			# Armor
-			is_core = 172			# Vendeé
-			senior_union_with = MNF
-			NOT = { personal_union = 2 }
+			OR = {
+				AND = {
+					170 = { country_or_non_sovereign_subject_holds = ROOT }	#Finistére
+					171 = { country_or_non_sovereign_subject_holds = ROOT } #Morbihan
+					169 = { country_or_non_sovereign_subject_holds = ROOT } #Armor
+					172 = { country_or_non_sovereign_subject_holds = ROOT } #Nantais
+					4384 = { country_or_non_sovereign_subject_holds = ROOT } #Rennais
+				}
+				NOT = { exists = MNF }
+			}
+			OR = {
+				senior_union_with = MNF
+				NOT = { exists = MNF }
+			}
 		}
 		effect = {
 			change_tag = BRI
@@ -75,19 +95,27 @@ country_decisions = {
 		ai_importance = 200
 	}
 	
-	brittany_nation = {
+	brittany_nation = { #Form Brittany, not for Breton Minors MNF and BLS
 		major = yes
 		potential = {
 	
 		primary_culture = breton
 		NOT = { exists = BRI }
 		NOT = { tag = FRA }
+		NOT = { tag = BLS }
+		NOT = { tag = MNF }
 			OR = {
 				ai = no
 				AND = {
 					ai = yes
 					num_of_cities = 2
 				}
+			}
+		}
+		provinces_to_highlight = {
+			area = brittany_area
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
 		allow = {
@@ -97,6 +125,7 @@ country_decisions = {
 			owns = 170	# Finistere
 			owns = 171	# Morbihan
 			owns = 172	# Vendee
+			owns = 4384 # Rennais
 			is_core = 169	# Armor
 			is_core = 170	# Finistere
 			is_core = 171	# Morbihan

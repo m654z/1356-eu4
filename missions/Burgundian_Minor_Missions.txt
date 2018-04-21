@@ -1,0 +1,102 @@
+bur_minor_rightful_kings = {
+
+	slot = 1
+	generic = no
+	ai = yes
+	
+	potential = { 
+		OR = {
+			tag = NEV
+			tag = BAR 
+			tag = LOR 
+			tag = PBG
+		}
+	}
+	has_country_shield = yes
+	
+}
+
+bur_minor_out_from_burgundian_shadow = {
+	slot = 2
+	generic = no
+	ai = yes
+	
+	potential = { 
+		OR = {
+			tag = NEV
+			tag = BAR 
+			tag = LOR 
+			tag = PBG
+		}
+	}
+	has_country_shield = yes
+	
+}
+
+bur_minor_imperial_ambitions = {
+	slot = 3
+	generic = no
+	ai = yes
+	
+	potential = { 
+		OR = {
+			tag = NEV
+			tag = BAR 
+			tag = LOR 
+			tag = PBG
+		}
+	}
+	has_country_shield = yes
+	
+}
+
+bur_minor_secure_homeland = {
+	slot = 4
+	generic = no
+	ai = yes
+	
+	potential = { 
+		OR = {
+			tag = NEV
+			tag = BAR 
+			tag = LOR
+			tag = PBG
+		}
+	}
+	has_country_shield = yes
+	
+}
+
+bur_lowland_ambitions = {
+	slot = 5
+	generic = no
+	ai = yes
+	
+	potential = { 
+		OR = {
+			tag = NEV
+			tag = BAR 
+			tag = LOR 
+			tag = PBG
+		}
+	}
+	has_country_shield = yes
+	
+}
+
+bur_minor_colonial_ambitions = {
+	slot = 5
+	generic = no
+	ai = yes
+	
+	potential = { 
+		OR = {
+			tag = NEV
+			tag = BAR 
+			tag = LOR 
+			tag = PBG
+		}
+	}
+	has_country_shield = yes
+	
+}

@@ -1,0 +1,106 @@
+fre_minor_rightful_french_kings = {
+
+	slot = 1
+	generic = no
+	ai = yes
+	
+	potential = { 
+		OR = {
+			tag = POU
+			tag = BER
+			tag = ORL
+			tag = ANJ
+			tag = ALE
+			tag = CHP
+			tag = BOU
+			tag = PIC #Lump into Flemish?
+		}
+	}
+	has_country_shield = yes
+	
+}
+
+fre_minor_secure_french_independence = {
+	slot = 2
+	generic = no
+	ai = yes
+	
+	potential = { 
+		OR = {
+			tag = POU
+			tag = BER
+			tag = ORL
+			tag = ANJ
+			tag = ALE
+			tag = CHP
+			tag = BOU
+			tag = PIC #Lump into Flemish?
+		}
+	}
+	has_country_shield = yes
+	
+}
+
+fre_minor_unite_the_duchies = {
+	slot = 3
+	generic = no
+	ai = yes
+	
+	potential = { 
+		OR = {
+			tag = POU
+			tag = BER
+			tag = ORL
+			tag = ANJ
+			tag = ALE
+			tag = CHP
+			tag = BOU
+			tag = PIC #Lump into Flemish?
+		}
+	}
+	has_country_shield = yes
+	
+}
+
+fre_minor_rebuild_the_homeland = {
+	slot = 4
+	generic = no
+	ai = yes
+	
+	potential = { 
+		OR = {
+			tag = POU
+			tag = BER
+			tag = ORL
+			tag = ANJ
+			tag = ALE
+			tag = CHP
+			tag = BOU
+			tag = PIC #Lump into Flemish?
+		}
+	}
+	has_country_shield = yes
+	
+}
+
+
+fre_minor_colonial_ambitions = {
+	slot = 5
+	generic = no
+	ai = yes
+	
+	potential = { 
+		OR = {
+			tag = POU
+			tag = BER
+			tag = ORL
+			tag = ANJ
+			tag = ALE
+			tag = CHP
+			tag = BOU
+			tag = PIC #Lump into Flemish?
+		}
+	}
+	has_country_shield = yes
+	
+}

@@ -54,6 +54,10 @@
  fra_stabilize_lowlands_title: "Stabilize the Lowlands"
  fra_stabilize_lowlands_desc: ""
  
+ #Breton Missions
+ bri_minor_end_succession_crisis_title: "End the Civil War"
+ bri_minor_end_succession_crisis_desc: ""
+ 
  #Events
  1356fra.1.t: ""
  1356fra.1.d: ""
