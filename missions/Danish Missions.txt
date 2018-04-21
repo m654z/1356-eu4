@@ -1,6 +1,7 @@
 danish_missions = {
 	slot = 1
 	generic = no
+	ai = yes
 	potential = {
 		tag = DAN
 	}
@@ -50,38 +51,20 @@ danish_missions = {
 			add_prestige = 25
 		}
 	}
-	
-	colonize_greenland = {
-		icon = mission_establish_high_seas_navy
-		position = 4
-		required_missions = { sweden_subject }
-		provinces_to_highlight = {
-			OR = {
-				province_id = 1105
-				province_id = 1104
-			}
-			NOT = {
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-		}
-		trigger = {
-			greenland_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-		}
-		effect = {
-			add_prestige = 15
-			add_country_modifier = {
-				name = "the_unknown_frontier"
-				duration = 1200
-			}
-		}
+}
+
+danish_missions_2 = {
+	slot = 2
+	generic = no
+	ai = yes
+	potential = {
+		tag = DAN
 	}
-	
+	has_country_shield = yes
+
 	dan_baltic_fleet = {
 		icon = mission_galleys_in_port
-		position = 5
+		required_missions = { annex_holstein }
 		trigger = {
 			navy_size_percentage = 0.9
 		}
@@ -95,7 +78,6 @@ danish_missions = {
 
 	reclaim_estonia = {
 		icon = mission_conquer_5_states
-		position = 6
 		required_missions = { dan_baltic_fleet }
 		provinces_to_highlight = {
 			OR = {
@@ -138,7 +120,6 @@ danish_missions = {
 	
 	conquer_baltics = {
 		icon = mission_conquer_5_states
-		position = 7
 		required_missions = { reclaim_estonia }
 		provinces_to_highlight = {
 			OR = {
@@ -160,14 +141,188 @@ danish_missions = {
 			}
 		}
 		effect = {
-			add_prestige = 20
-			add_adm_power = 100
+			add_prestige = 10
+			vorpommern_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			hinter_pommern_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
 		}
 	}
 	
+	expand_into_pomerania = {
+		icon = mission_conquer_5_states
+		required_missions = { conquer_baltics }
+		provinces_to_highlight = {
+			area = vorpommern_area
+			area = hinter_pommern_area
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			vorpommern_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			hinter_pommern_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			add_prestige = 10
+			add_adm_power = 100
+		}
+	}
+}
+
+danish_missions_3 = {
+	slot = 3
+	generic = no
+	ai = yes
+	potential = {
+		tag = DAN
+	}
+	has_country_shield = yes
+	
+	colonize_greenland = {
+		icon = mission_establish_high_seas_navy
+		provinces_to_highlight = {
+			OR = {
+				province_id = 1105
+				province_id = 1104
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			greenland_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			add_prestige = 15
+			add_country_modifier = {
+				name = "the_unknown_frontier"
+				duration = 7300
+			}
+		}
+	}
+	
+	danish_west_indies = {
+		icon = mission_establish_high_seas_navy
+		provinces_to_highlight = {
+			province_id = 493
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			493 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			add_prestige = 15
+			add_country_modifier = {
+				name = "the_unknown_frontier"
+				duration = 7300
+			}
+		}
+	}
+	
+	danish_gold_coast = {
+		icon = mission_dominate_home_trade_node
+		provinces_to_highlight = {
+			OR = {
+				province_id = 2258
+				province_id = 1126
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			2258 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			1126 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			add_prestige = 15
+			west_africa_coast_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			guinea_coast_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	
+	indian_colonies = {
+		icon = mission_dominate_home_trade_node
+		required_missions = { danish_gold_coast }
+		provinces_to_highlight = {
+			OR = {
+				province_id = 561
+				province_id = 2026
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			561 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			2026 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			add_prestige = 15
+			add_country_modifier = {
+				name = "east_india_trade_rush"
+				duration = 9125
+			}
+		}
+	}
+}
+
+danish_missions_5 = {
+	slot = 5
+	generic = no
+	ai = yes
+	potential = {
+		tag = DAN
+	}
+	has_country_shield = yes
+	
 	reconquer_danelaw = {
 		icon = mission_conquer_5_states
-		position = 8
+		position = 3
 		provinces_to_highlight = {
 			area = scottish_marches_area
 			NOT = {
@@ -175,14 +330,14 @@ danish_missions = {
 			}
 		}
 		trigger = {
-			scottish_marches_area = {
+			yorkshire_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
 		effect = {
 			add_prestige = 25
-			yorkshire_area = {
+			scottish_marches_area = {
 				limit = {
 					NOT = { owned_by = ROOT }
 					NOT = { is_core = ROOT }
