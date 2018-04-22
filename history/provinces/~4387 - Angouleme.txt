@@ -1,18 +1,17 @@
-# 4111 - Vendée
+# 4387 Angoulême
 
 owner = FRA
 controller = FRA
-capital = "Luçon"
+capital = "Angoulême"
 is_city = yes
 culture = cosmopolitan_french
 religion = catholic 
 hre = no
 base_tax = 3
 base_production = 3
-trade_goods = salt
-base_manpower = 3
+trade_goods = livestock
+base_manpower = 2
 add_core = FRA
-add_core = POU
 estate = estate_burghers
 discovered_by = eastern
 discovered_by = western
@@ -46,5 +45,4 @@ discovered_by = ottoman
 1685.10.18 = { unrest = 8 } # Edict of Nantes revoked by Louis XIV
 1686.1.17 = { religion = catholic } # Dragonnard campaign succesful: region reverts back to catholicism
 1689.1.1 = { unrest = 0 } # War of the Grand Alliance erupts: Louis XIV can't persue his religious policy anymore
-1715.1.1 = { fort_17th = no fort_18th = yes }
 1749.1.1 = { base_tax = 6 base_production = 6 } # Machault and the 5% tax

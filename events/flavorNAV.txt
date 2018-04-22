@@ -1,0 +1,315 @@
+namespace = 1356NAV
+
+
+#Charles attempt on John II's life. 1355, a year before the start
+country_event = {
+	id = 1356nav.1
+	title = 1356nav.1.t
+	desc = 1356nav.1.d
+	picture = HORDE_ON_HORSEBACK_eventPicture #GET A PROPER PICTURE DAMNIT
+	fire_only_once = yes
+
+	trigger = {
+		start_date = 1356.12.25
+		tag = NAV
+		is_at_war = yes
+	}
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = { #Option A: I Made an attempt and succeeded
+		name = 1356nav.1.a
+		add_trust = {
+			who = FRA
+			value = -5
+			mutual = yes
+		}
+		FRA = {	kill_ruler = yes }
+		add_legitimacy = 5
+		add_stability = 1
+		country_event = { id = 1356nav.2 }
+		
+
+	}
+	option = { #Option B: I made an attempt and failed -historical-
+		name = 1356nav.1.b
+		add_trust = {
+			who = FRA
+			value = -5
+			mutual = yes
+		}
+		add_country_modifier = {
+			name = nav_ruler_in_prison
+			duration = 5600 
+		}
+		
+		add_manpower = 6
+		country_event = { id = 1356nav.2 }
+
+	}
+	option = { #We got the Dauphin instead
+		name = 1356nav.1.c
+		add_trust = {
+			who = FRA
+			value = -5
+			mutual = yes
+		}
+		FRA = {	kill_heir = yes	}
+		add_prestige = 10
+		add_stability = 1
+		country_event = { id = 1356nav.2 }
+	}
+}
+
+#Phillip of Navarra rides in battle with the english while Charles is in Prison
+country_event = {
+	id = 1356nav.2
+	title = 1356nav.2.t
+	desc = 1356nav.2.d
+	picture = HORDE_ON_HORSEBACK_eventPicture #GET A PROPER PICTURE DAMNIT
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	mean_time_to_happen = {
+		months = 12
+	}
+	
+	option = { #Gain Phillip as general while Charles is away
+		name = 1356nav.2.a
+		define_general = {
+			name = "Phillip d'Évreux"
+			fire = 0
+			shock = 3
+			manuever = 2
+			siege = 1
+		}
+		FRA = { country_event = { id = 1356fra.2 } }
+		country_event = { id = 1356nav.3 days = 35 }
+	}
+}
+
+#Charles Prison break
+country_event = {
+	id = 1356nav.3
+	title = 1356nav.3.t
+	desc = 1356nav.3.d
+	picture = HORDE_ON_HORSEBACK_eventPicture #GET A PROPER PICTURE DAMNIT
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	mean_time_to_happen = {
+		months = 12
+	}
+	
+	option = { #Option A: I Made an attempt and succeeded
+		name = 1356nav.3.a
+		remove_country_modifier = {	name = nav_ruler_in_prison }
+		country_event = { id = 1356nav.4 days = 30 }
+		add_prestige = 10
+	}
+}
+
+#Charles is welcomed into Paris like a King
+country_event = {
+	id = 1356nav.4
+	title = 1356nav.4.t
+	desc = 1356nav.4.d
+	picture = HORDE_ON_HORSEBACK_eventPicture #GET A PROPER PICTURE DAMNIT
+	fire_only_once = yes
+
+	is_triggered_only = yes
+		
+	option = { #They love me!
+		name = 1356nav.4.a
+		add_country_modifier = {	
+			name = nav_charles_in_paris
+			duration = 600
+		}
+		add_prestige = 10
+		country_event = { id = 1356nav.5 days = 90 }
+		#add_narcisicm = 100
+		#dream_almost_achieved = yes
+	}
+}
+
+#The Powerless Dauphin
+country_event = {
+	id = 1356nav.5
+	title = 1356nav.5.t
+	desc = 1356nav.5.d
+	picture = HORDE_ON_HORSEBACK_eventPicture #GET A PROPER PICTURE DAMNIT
+	fire_only_once = yes
+
+	is_triggered_only = yes
+		
+	option = { #They love me!
+		name = 1356nav.5.a
+		FRA = {
+			country_event = { id = 1356fra.5 days = 20 }
+		}
+		add_army_tradition = 10 
+		country_event = { id = 1356nav.6 days = 90 }
+	}
+}
+
+#Charles distraction Prison Break
+country_event = {
+	id = 1356nav.6
+	title = 1356nav.6.t
+	desc = 1356nav.6.d
+	picture = HORDE_ON_HORSEBACK_eventPicture #GET A PROPER PICTURE DAMNIT
+	fire_only_once = yes
+
+	is_triggered_only = yes
+		
+	option = { #Let Paris be in Anarchy to buy us time!
+		name = 1356nav.6.a
+		FRA = {
+			183 = {	create_revolt = 1 }
+		}
+		change_dip = 1
+		country_event = { id = 1356nav.7 days = 30 }
+		FRA = { country_event = { id = 1356fra.4 days = 30 } }
+	}
+}
+
+#The Paris Nobility ask Charles for help
+country_event = {
+	id = 1356nav.7
+	title = 1356nav.7.t
+	desc = 1356nav.7.d
+	picture = HORDE_ON_HORSEBACK_eventPicture #GET A PROPER PICTURE DAMNIT
+	fire_only_once = yes
+
+	is_triggered_only = yes
+		
+	option = { #Yes!
+		name = 1356nav.7.a
+		add_war_exhaustion = -2
+		add_prestige = 2
+		fra = {	add_war_exhaustion = -2	}
+		country_event = { id = 1356nav.8 days = 250 }
+	}
+	option = { #Never!
+		name = 1356nav.7.b
+		add_manpower = -1
+		fra = {	add_war_exhaustion = 1	}
+		
+		country_event = { id = 1356nav.8 days = 250 }
+	}
+}
+
+#A fire burns itself out
+country_event = {
+	id = 1356nav.8
+	title = 1356nav.8.t
+	desc = 1356nav.8.d
+	picture = HORDE_ON_HORSEBACK_eventPicture #GET A PROPER PICTURE DAMNIT
+	fire_only_once = yes
+
+	is_triggered_only = yes
+		
+	option = { #The anarchy comes to an end!
+		name = 1356nav.8.a
+		add_war_exhaustion = -5
+		add_prestige = 2
+		add_stability = 1
+		FRA = { add_war_exhaustion = -5 }
+		183 = { disband_rebels = anti_tax }
+		
+	}
+}
+
+#The death of a close cousin -Phillip of Burgundy-
+
+#A deal with the English?
+
+#Threat of the English-French anti Charles coalition
+
+#A Royal Pardon, and a peace treaty
+
+#Charles asks the Pope for help taking his burgundian claim
+
+#Peace in france. For now.
+
+#A deal with both Iberian sides?
+
+#The Deal goes sour!
+
+#Threat of invasion from the Black Prince and the Losing Castilian Monarch!
+
+#The "Capture" of Charles II of Navarra
+
+#A deal with the Bretons. AKA an alliance vs france
+country_event = {
+	id = 1356nav.24
+	title = 1356.24.t
+	desc = 1356nav.24.d
+	picture = HORDE_ON_HORSEBACK_event_Picture
+	fire_only_once = yes
+	
+	trigger = {
+		tag = NAV
+		exists = BRI
+		exists = FRA
+		
+		
+	
+	}
+	mean_time_to_happen = {
+		months = 24
+	
+	}
+	
+	option = {
+		name = 1356nav.24.a
+	
+	
+	}
+	
+	option = {
+		name = 1356nav.24.b
+	
+	
+	}
+
+
+}
+
+#A deal with both the French and the English
+
+#The Castilians are mad, a royal marriage could calm them down?
+
+#The Castilians get their way. A perpetual alliance against the English...
+
+#The horrific death of Charles II
+country_event = {
+	id = 1356nav.25
+	title = 1356nav.25.t
+	desc = 1356nav.25.d
+	picture = HORDE_ON_HORSEBACK_eventPicture #GET A PROPER PICTURE DAMNIT
+	fire_only_once = yes
+
+	trigger = {
+		tag = NAV
+		start_date = 1356.12.25
+		NOT = { has_ruler = "Charles II" }
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = { #Charles is dead, and Navarras part in the war is over. Charles will be forever Remembered as an embarassment to Europan Nobility.
+		name = 1356nav.25.a
+		add_prestige = -2
+		add_legitimacy = -5
+		add_treasury = 50
+		add_dip_power = 10
+	}
+}
+
+

@@ -14,7 +14,7 @@ country_event = {
 		name = 1356fra.1.a
 		add_country_modifier = {
 			name = fra_dauphin_modifier
-			duration = 0 #Is this forever?
+			duration = -1
 		}
 		inherit = DAU
 		204 = { #Dauphine
@@ -40,3 +40,90 @@ country_event = {
 		create_alliance = DAU
 	}
 }
+
+#The Capture of John II at at Poitiers
+country_event = {
+	id = 1356fra.2
+	title = 1356fra.2.t
+	desc = 1356fra.2.d
+	picture = HORDE_ON_HORSEBACK_eventPicture #GET A PROPER PICTURE DAMNIT
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	mean_time_to_happen = {	months = 4 }
+	
+	option = { #John gets captured
+		name = 1356fra.2.a
+		
+
+	}
+}
+
+#Powerless in his own Castle. Dauphin
+country_event = {
+	id = 1356fra.3
+	title = 1356fra.3.t
+	desc = 1356fra.3.d
+	picture = HORDE_ON_HORSEBACK_eventPicture #GET A PROPER PICTURE DAMNIT
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	mean_time_to_happen = {	months = 4 }
+	
+	option = { #The Dauphin cant get into Paris!
+		name = 1356fra.3.a
+		add_country_modifier = { #Powerless ruler
+			name = 1356_ruler_is_powerless
+			duration = 356
+		}
+		
+	}
+}
+
+#Charles II of Navarra released all my prisoners!
+country_event = {
+	id = 1356fra.4
+	title = 1356fra.4.t
+	desc = 1356fra.4.d
+	picture = HORDE_ON_HORSEBACK_eventPicture #GET A PROPER PICTURE DAMNIT
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	mean_time_to_happen = {	months = 4 }
+	
+	option = { #Paris!
+		name = 1356fra.4.a
+		183 = {
+			remove_loot = {
+				who = enemy
+				amount = 23
+			}
+		}
+	}
+}
+
+#Charles outrageous demands
+
+#Charles is away, the mice will play.
+
+#State of civil war
+
+#In the throes of revolution. Cheif officers die.
+
+#The plunder of Paris by both sides
+
+#Ask Charles for help against the rebellion
+
+#A fire burns itself out
+
+#Charles attempts to strike a deal with the English
+
+#The Ransom of John
+
+#The death of Phillip of Burgundy
+
+#Peace in france. For now.
+

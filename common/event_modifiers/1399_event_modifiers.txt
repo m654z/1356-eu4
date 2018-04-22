@@ -68,11 +68,38 @@ constantinopole_fort_1356_modifier = {
 
 #French Region
 
+#France 
+
+fra_dauphin_modifier = {
+	advisor_cost = -0.05
+	legitimacy = 0.5
+	prestige = 0.25
+}
+ 
+fra_ruler_in_prison = {
+
+
+
+}
+
 HYW_france_beat_back_occupation = {
 	
 
 
 }
+
+paris_prison_break = {
+
+
+}
+
+1356_ruler_is_powerless = {
+
+
+
+}
+
+
 
 
 french_ducal_paris_conquest = {
@@ -102,11 +129,25 @@ claim_to_kingdom_aquitaine = {
 	advisor_cost = -0.1
 }
 
-fra_dauphin_modifier = {
-	advisor_cost = -0.05
-	legitimacy = 0.5
-	prestige = 0.25
+#Iberian Region
+
+#Navarra
+
+nav_ruler_in_prison = {
+
 }
+
+nav_ruler_prison_break = {
+
+
+}
+
+nav_charles_in_paris = {
+
+
+}
+
+
  
 # Near East region
 	

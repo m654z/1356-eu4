@@ -1,0 +1,71 @@
+bur_lowland_ambitions = {
+
+	slot = 1
+	generic = no
+	ai = yes
+	
+	#potential = { tag = BUR	}
+	has_country_shield = yes
+	
+}
+
+bur_secure_home_region = {
+	slot = 2
+	generic = no
+	ai = yes
+	
+	#potential = { tag = BUR }
+	has_country_shield = yes
+	
+}
+
+bur_the_french_problem = {
+	slot = 3
+	generic = no
+	ai = yes
+	
+	#potential = { tag = BUR }
+	has_country_shield = yes
+	
+}
+
+bur_imperial_ambitions = {
+	slot = 4
+	generic = no
+	ai = yes
+	
+	#potential = { tag = BUR }
+	has_country_shield = yes
+	
+}
+
+bur_kings_of_arles = {
+	slot = 4
+	generic = no
+	ai = yes
+	
+	#potential = { tag = BUR }
+	has_country_shield = yes
+	
+}
+
+
+bur_look_for_allies = {
+	slot = 5
+	generic = no
+	ai = yes
+	
+	#potential = { tag = BUR }
+	has_country_shield = yes
+	
+}
+
+bur_colonial_ambitions = {
+	slot = 5
+	generic = no
+	ai = yes
+	
+	#potential = { tag = BUR }
+	has_country_shield = yes
+	
+}

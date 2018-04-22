@@ -25,6 +25,8 @@ BLS = "countries/Blois.txt"
 FOZ = "countries/Forez.txt"
 POU = "countries/Poitou.txt"
 AQT = "countries/Aquitaine.txt"
+ARE = "countries/Arles.txt"
+LOT = "countries/Lotharingia.txt"
 	
 #HRE
 GOR = "countries/Gorizia.txt"

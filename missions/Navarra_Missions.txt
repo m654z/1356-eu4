@@ -1,0 +1,110 @@
+nav_charles_ii_ambition = { #Integrate Normandy, and protect it better
+
+	slot = 1
+	generic = no
+	ai = yes
+	
+	potential = { tag = NAV }
+	has_country_shield = yes
+	
+}
+
+nav_charles_ii_family_french_claims = { #Take lands Charles and his Family have claims to.
+	slot = 2
+	generic = no
+	ai = yes
+	
+	potential = { tag = NAV }
+	has_country_shield = yes
+	
+}
+
+nav_charles_ii_participation_in_hyw = { #AKA Main tree until HYW ends
+	slot = 3
+	generic = no
+	ai = yes
+	
+	potential = { tag = NAV }
+	has_country_shield = yes
+	
+	conquer_picardy_fra = { #
+		icon = mission_assemble_an_army
+		required_missions = { subjugate_brittany }
+		position = 7
+		completed_by = 1477.1.5
+		provinces_to_highlight = {
+			OR = {
+				area = champagne_area
+				province_id = 89
+				province_id = 88
+				province_id = 1743
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			champagne_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			89 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			88 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			1743 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			wallonia_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			flanders_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			87 = {
+				if = {
+					limit = {
+						NOT = {
+							owned_by = ROOT
+							is_core = ROOT
+						}
+					}
+					add_permanent_claim = ROOT
+				}
+			}
+		}
+	}
+	
+}
+
+nav_build_up_homeland = {
+	slot = 4
+	generic = no
+	ai = yes
+	
+	potential = { tag = NAV }
+	has_country_shield = yes
+	
+}
+
+nav_beyond_europe = {
+	slot = 5
+	generic = no
+	ai = yes
+	
+	potential = { tag = NAV }
+	has_country_shield = yes
+	
+}
