@@ -277,3 +277,139 @@ sapmi_frontiers = {
 	colonists = 1
 	
 }
+
+1356_early_government_replacement_1 = {
+	potential = {
+		NOT = { date = 1440.1.1 }
+		NOT = { technology_group = north_american }
+		NOT = { technology_group = mesoamerican }
+		NOT = { technology_group = south_american }
+		NOT = { technology_group = andean }
+		is_primitive = no
+	
+	}
+	
+	trigger = {
+		OR = {
+			adm_tech = 1
+			dip_tech = 1
+			mil_tech = 1
+		}
+	
+	
+	}
+	core_creation = 1
+	diplomats = -1	
+	diplomatic_upkeep = 3
+
+
+}
+
+1356_early_government_replacement_2 = {
+	potential = {
+		NOT = { date = 1440.1.1 }
+		NOT = { technology_group = north_american }
+		NOT = { technology_group = mesoamerican }
+		NOT = { technology_group = south_american }
+		NOT = { technology_group = andean }
+		is_primitive = no
+	
+	}
+	
+	trigger = {
+		OR = {
+			adm_tech = 3
+			dip_tech = 3
+			mil_tech = 3
+		}
+	
+	
+	}
+	core_creation = 0.77
+	diplomats = -1	
+	diplomatic_upkeep = 2
+
+
+}
+
+1356_early_government_replacement_3 = {
+	potential = {
+		NOT = { date = 1440.1.1 }
+		NOT = { technology_group = north_american }
+		NOT = { technology_group = mesoamerican }
+		NOT = { technology_group = south_american }
+		NOT = { technology_group = andean }
+		is_primitive = no
+	
+	}
+	
+	trigger = {
+		OR = {
+			adm_tech = 5
+			dip_tech = 5
+			mil_tech = 5
+		}
+	
+	
+	}
+	core_creation = 0.5
+	diplomats = -1	
+	diplomatic_upkeep = 1
+
+
+
+}
+
+1356_early_government_replacement_4 = {
+	potential = {
+		NOT = { date = 1440.1.1 }
+		NOT = { technology_group = north_american }
+		NOT = { technology_group = mesoamerican }
+		NOT = { technology_group = south_american }
+		NOT = { technology_group = andean }
+		is_primitive = no
+	
+	}
+	
+	trigger = {
+		OR = {
+			adm_tech = 7
+			dip_tech = 7
+			mil_tech = 7
+		}
+	
+	
+	}
+
+	core_creation = 0.33
+	diplomats = -1	
+	#diplomatic_upkeep = 1
+
+
+}
+
+1356_early_government_replacement_4 = {
+	potential = {
+		always = no
+		NOT = { technology_group = north_american }
+		NOT = { technology_group = mesoamerican }
+		NOT = { technology_group = south_american }
+		NOT = { technology_group = andean }
+		is_primitive = no
+	
+	}
+	
+	trigger = {
+		OR = {
+			adm_tech = 9
+			dip_tech = 9
+			mil_tech = 9
+		}
+	
+	
+	}
+
+
+
+
+}
