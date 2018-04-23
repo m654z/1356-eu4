@@ -5,7 +5,7 @@
 #
 ####################################
 
-early_feudal_monarchy = {
+early_feudal_monarchy = { #To be removed in Government update, leaving it here for compatibility for now.
 	monarchy = yes
 	
 	valid_for_new_country = yes

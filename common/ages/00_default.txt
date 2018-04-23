@@ -10,10 +10,10 @@ age_of_feudalism = {
 
 	objectives = {
 		obj_high_prestige = {
-			prestige = 70
+			prestige = 75
 		}
 			
-		obj_2_centers_of_trade = {
+		obj_2_centers_of_trade = { #Change
 			calc_true_if = {
 				all_owned_province = {
 					OR = {
@@ -27,7 +27,7 @@ age_of_feudalism = {
 			}
 		}
 		
-		obj_20_development_city = {
+		obj_20_development_city = { #Change
 			custom_trigger_tooltip = {
 				tooltip = obj_20_development_city_tooltip
 				any_owned_province = {
@@ -38,7 +38,7 @@ age_of_feudalism = {
 			}
 		}
 		
-		obj_papal_controller = {
+		obj_papal_controller = { #This is fine
 			allow = {
 				religion = catholic
 			}
@@ -63,14 +63,14 @@ age_of_feudalism = {
 			vassal = 3
 		}		
 	
-		obj_two_continents_f = {
+		obj_two_continents_f = {  #Change
 			allow = {
 				NOT = { religion_group = christian }
 			}
 			num_of_continents = 2
 		}
 	
-		obj_introduce_cannon = {
+		obj_introduce_cannon = { #Change
 			artillery_fraction = 40
 			army_size_percentage = 0.8
 		}
@@ -81,7 +81,7 @@ age_of_feudalism = {
 	
 	
 	abilities = {
-		ab_allow_feudal_de_jure_law_f = {
+		ab_allow_feudal_de_jure_law_f = { #Changed Age 2's bonus instead
 			effect = {
 				custom_tooltip = feudal_de_jure_law
 				set_country_flag = feudal_de_jure_law
@@ -91,9 +91,10 @@ age_of_feudalism = {
 			}
 		}
 		
-		ab_justified_wars_f = {
+		ab_feudalism_vassals = { #Changed from less AE
 			modifier = {
-				ae_impact = -0.1
+				vassal_income = 0.25
+				envoy_travel_time = -0.15
 			}
 			ai_will_do = {
 				factor = 10
@@ -101,20 +102,21 @@ age_of_feudalism = {
 		}
 		
 
-		ab_transfer_vassal_wargoal_f = 
-		{
+		ab_transfer_vassal_wargoal_f = { #Removed chain claim in Age 1, removed Vassal Wargoal in Age 2.
 			rule = {
 				can_transfer_vassal_wargoal = yes
-				can_chain_claim = yes
+				same_culture_advisor_cost = -0.15
+				#can_chain_claim = yes
 			}
 			ai_will_do = {
 				factor = 10
 			}
 		}
 		
-		ab_free_war_taxes_f = {
+		ab_feudalism_spy = { #Changed from free war taxes
 			modifier = {
-				war_taxes_cost_modifier = -1.0
+				spy_offence = 0.15
+				rebel_support_efficiency = 0.25
 			}
 			ai_will_do = {
 				factor = 10
@@ -122,7 +124,7 @@ age_of_feudalism = {
 		}
 		
 
-		ab_cavalry_armies_f = {
+		ab_cavalry_armies_f = { #Changed Age 2's bonus instead
 			modifier = {
 				cav_to_inf_ratio = 0.2
 			}
@@ -130,9 +132,9 @@ age_of_feudalism = {
 				factor = 10
 			}
 		}
-		ab_chevauchee = {
+		ab_chevauchee = { #Lowered for balance sake. 5%
 			modifier = {
-				shock_damage = 0.2
+				shock_damage = 0.15
 				leader_land_shock = 1
 			}
 			ai_will_do = {
@@ -140,31 +142,43 @@ age_of_feudalism = {
 			}
 		}
 		
-		ab_attack_bonus_in_capital_terrain_f = {
-			rule = {
-				attack_bonus_in_capital_terrain = yes
+		ab_feudalism_merc_discipline = { #Changed from terrain bonus of capital
+			modifier = {
+				mercenary_discipline = 0.05
 			}
 			ai_will_do = {
 				factor = 10
 			}
 		}
 		
-		ab_ottoman_siege_ability_f = {
+		ab_nomad_age_bonus = { #Removed Guns of Urban 
 			allow = {
-				tag = TUR
+				OR = {
+					technology_group = nomad_group
+					tag = JLR
+					tag = CHB
+					tag = YUA
+				}
 			}
 			modifier = {
-				siege_ability = 0.33
+				cavalry_cost = -0.15
+				cavalry_power = 0.10
+				#cavalry_flanking = 0.1
 			}
 			ai_will_do = {
 				factor = 100
 			}
 		}
 		
-		ab_england_longbowmen = {
+		ab_england_longbowmen = { #Needs tweaks
 		
 			allow = {
-				tag = ENG
+				OR = {
+					tag = ENG
+					tag = YOR
+					tag = LNC
+					tag = NOL	
+				}
 			}
 			modifier = {
 				leader_land_fire = 1
@@ -189,15 +203,15 @@ age_of_feudalism = {
 				factor = 100
 			}
 		}
-		ab_bohemian_empire = {
+		ab_bohemian_empire = { #Most values were lowered for balance sake
 		
 			allow = {
 				tag = BOH
 			}
 			modifier = {
-				imperial_authority = 0.05
-				improve_relation_modifier = 0.25
-				diplomatic_reputation = 2
+				imperial_authority = 0.025
+				improve_relation_modifier = 0.20
+				diplomatic_reputation = 1
 			}
 			ai_will_do = {
 				factor = 100
@@ -314,10 +328,11 @@ age_of_discovery = {
 	
 	
 	abilities = {
-		ab_allow_feudal_de_jure_law = {
-			effect = {
-				custom_tooltip = feudal_de_jure_law
-				set_country_flag = feudal_de_jure_law
+		ab_disc_colonial_range = { #MOVED TO AGE OF FEUDALISM. WAS FEUDAL DEJURE LAW 
+			modifier = {
+				range = 0.25
+				trade_range_modifier = 0.1
+			
 			}
 			ai_will_do = {
 				factor = 10
@@ -334,10 +349,10 @@ age_of_discovery = {
 		}
 		
 
-		ab_transfer_vassal_wargoal = 
-		{
+		ab_disc_claims = { #Removed chain claim in Age 1, removed Vassal Wargoal in Age 2. WAS TRANSFTER VASSAL WARGOAL.	
 			rule = {
-				can_transfer_vassal_wargoal = yes
+				#can_transfer_vassal_wargoal = yes
+				claim_duration = 0.25
 				can_chain_claim = yes
 			}
 			ai_will_do = {
@@ -355,9 +370,10 @@ age_of_discovery = {
 		}
 		
 
-		ab_cavalry_armies = {
+		ab_disc_general_cost_leader_pool = { #EDITED FROM VANILLA'S VALUES. CHANGED COMPLETLY. WAS CAV TO INF RATIO
 			modifier = {
-				cav_to_inf_ratio = 0.2
+				general_cost = -0.15
+				free_leader_pool = 1
 			}
 			ai_will_do = {
 				factor = 10
@@ -381,9 +397,12 @@ age_of_discovery = {
 			}
 		}
 		
-		ab_ottoman_siege_ability = {
+		ab_ottoman_siege_ability = { #EDITED FROM VANILLA'S VALUES. ADDED RUM.
 			allow = {
-				tag = TUR
+				OR = {
+					tag = TUR
+					tag = RUM
+				}
 			}
 			modifier = {
 				siege_ability = 0.33
