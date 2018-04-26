@@ -66,3 +66,43 @@ goal_chinese_civil_war = {
 	
 	war_name = NATION_WAR_NAME	
 }
+
+goal_feudalism_border_war = {
+	type = 
+
+	attacker = {
+	
+	
+	
+	}
+	
+	defender = {
+	
+	
+	
+	}
+	
+	allow_leader_change = yes
+
+	war_name = CB_FEUDALISM_BORDER_WAR
+}
+
+goal_feudalism_pu_war = {
+	type = 
+
+	attacker = {
+	
+	
+	
+	}
+	
+	defender = {
+	
+	
+	
+	
+	}
+	allow_leader_change = no
+	
+	war_name = CB_FEUDALISM_PU_WAR
+}

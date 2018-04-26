@@ -10,6 +10,11 @@
  #Tags
  AQT: "Aquitaine"
  AQT_ADJ: "Aquitaite"
+ ARE: "Arles"
+ ARE_ADJ: "Arles"
+ LOT: "Lotharingia"
+ LOT_ADJ: "Lotharingian"
+ 
  
  #FRA Missions
  fra_feud_vassal_integrate_mission_1_title: "Integrate Orleans"

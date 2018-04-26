@@ -60,3 +60,37 @@ cb_medieval_crusade = {
 	
 	war_goal = superiority_crusade
 }
+
+cb_pu_feudalism = {
+
+	prerequisites = {
+		current_age = age_of_feudalism
+		
+	
+	
+	}
+
+	war_goal = 
+}
+
+cb_border_war_feudalism = {
+
+	prerequisites = {
+		current_age = age_of_feudalism
+		is_neighbor_of = FROM
+		FROM = {
+			OR = {
+				NOT = { technology_group = north_american }
+				NOT = { technology_group = south_american }
+				NOT = { technology_group = andean }
+				NOT = { technology_group = mesoamerican }
+				NOT = { technology_group = nomad_group}
+			}
+		}
+		NOT = { is_emperor= yes } #Trying to avoid blobhemia here.
+	
+	}
+
+	war_goal = 
+
+}
