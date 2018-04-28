@@ -42,10 +42,8 @@ country_event = {
 			
 			modifier = {
 				factor = 2
-				AND = {
-					NOT = { alliance_with = SWE }
-					alliance_with = DAN
-				}
+				NOT = { alliance_with = SWE }
+				alliance_with = DAN
 			}
 			modifier = {
 				factor = 2
@@ -78,10 +76,8 @@ country_event = {
 			
 			modifier = {
 				factor = 2
-				AND = {
-					NOT = { alliance_with = DAN }
-					alliance_with = SWE
-				}
+				NOT = { alliance_with = DAN }
+				alliance_with = SWE
 			}
 			
 			modifier = {
@@ -108,10 +104,8 @@ country_event = {
 			
 			modifier = {
 				factor = 2
-				AND = {
-					alliance_with = DAN
-					alliance_with = SWE
-				}
+				alliance_with = DAN
+				alliance_with = SWE
 			}
 			
 		}

@@ -45,14 +45,14 @@ country_event = {
 		2414 = { cede_province = CRI }
 		287 = { cede_province = CRI }
         define_ruler = {
-        name = "Shahin"
-		dynasty = "Giray"
-		birth_date = 1340.4.8
-		claim = 100
-		adm = 2
-		dip = 2
-		mil = 2
-		leader = { name = "Shahin Giray"	type = general	fire = 4	shock = 4	manuever = 4	siege = 1 }
+			name = "Shahin"
+			dynasty = "Giray"
+			birth_date = 1340.4.8
+			claim = 100
+			adm = 2
+			dip = 2
+			mil = 2
+			leader = { name = "Shahin Giray" type = general	fire = 4	shock = 4	manuever = 4	siege = 1 }
         }		
 	}
 }

@@ -32,8 +32,8 @@ discovered_by = ottoman
 1598.5.2 = { unrest = 0 } # Peace of Vervins, formal end to the Wars of Religion
 1631.1.1 = { unrest = 3 }
 1633.1.1 = { unrest = 0 }
-1648.5.1 = { unrest = 5 } # New tax levied by the Parliament of Paris, first Fronde coming up
 1648.1.1 = { fort_16th = no fort_17th = yes }
+1648.5.1 = { unrest = 5 } # New tax levied by the Parliament of Paris, first Fronde coming up
 1648.8.1 = { unrest = 10 } # Cardinal Mazarin arrests the leaders of the Parliament, Paris rises up and barricades the streets
 1648.10.21 = { unrest = 0 revolt = { type = revolutionary_rebels size = 0 } controller = REB } # The First Fronde hits Paris, officials flee from the city
 1649.3.1 = { revolt = {} controller = FRA } # Maréchal Condé besieges and takes back the city, little to no bloodshed - Peace of Rueil signed, peace returns, although Paris remains anti-cardinalist

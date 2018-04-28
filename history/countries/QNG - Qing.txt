@@ -25,7 +25,6 @@ historical_rival = SHU
 historical_rival = YUE
 historical_rival = MIN
 historical_rival = CMI
-historical_rival = YUE
 
 1399.1.1 = {
 	monarch = {

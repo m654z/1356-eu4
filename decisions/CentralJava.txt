@@ -27,7 +27,6 @@ country_decisions = {
 					}
 				}
 				15 = {
-					add_base_manpower = -2
 					2689 = {
 						change_native_size = -50
 						add_core = ROOT
@@ -36,13 +35,11 @@ country_decisions = {
 					}
 				}
 				25 = {
-					add_base_manpower = -5
 					2689 = {
 						change_native_size = -25
 					}
 				}
 				55 = {
-					add_base_manpower = -8
 					2689 = {
 						change_native_size = -5
 					}
@@ -80,7 +77,6 @@ country_decisions = {
 					}
 				}
 				15 = {
-					add_base_manpower = -2
 					626 = {
 						change_native_size = -50
 						add_core = ROOT
@@ -89,13 +85,11 @@ country_decisions = {
 					}
 				}
 				25 = {
-					add_base_manpower = -5
 					626 = {
 						change_native_size = -25
 					}
 				}
 				55 = {
-					add_base_manpower = -8
 					626 = {
 						change_native_size = -5
 					}

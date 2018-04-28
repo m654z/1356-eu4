@@ -16,8 +16,10 @@ historical_friend = BOS
 		mil = 0
 	}
 }
+
+1360.1.1  = { capital = 1766 } # Pristina
 	
-1360.7.1. = {
+1360.7.1 = {
 	queen = {
 		country_of_origin = WAL
 		name = "Anka"
@@ -30,8 +32,6 @@ historical_friend = BOS
 		mil = 2
 	}
 }
-
-1360.1.1  = { capital = 1766 } # Pristina
 
 1371.12.3 = {
 	government_rank = 1

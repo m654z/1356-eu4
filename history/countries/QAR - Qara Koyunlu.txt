@@ -57,6 +57,8 @@ religious_school = ismaili_school
 	}
 }
 
+1387.1.1 = { capital = 416 } # Tabriz
+
 1388.1.1 = {
 	monarch = {
 		name = "Quara Yusuf Nuyan"
@@ -81,7 +83,6 @@ religious_school = ismaili_school
 	}
 }
 
-1387.1.1 = { capital = 416 } # Tabriz
 1392.1.1 = { capital = 411 } # Mosul
 1400.1.1 = { capital = 416 } # Tabriz
 

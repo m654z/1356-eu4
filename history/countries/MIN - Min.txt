@@ -23,7 +23,6 @@ historical_rival = NNG
 historical_rival = SHU
 historical_rival = YUE
 historical_rival = CMI
-historical_rival = YUE
 historical_rival = QNG
 
 1350.1.1 = {

@@ -259,11 +259,10 @@ country_event = {
 			factor = 100 
 			modifier = {
 				factor = 0
-				AND = {
-					is_at_war = yes
-					NOT = { war_score = 0 }
-					war_exhaustion = 10
-				}
+				
+				is_at_war = yes
+				NOT = { war_score = 0 }
+				war_exhaustion = 10
 			}
 		}
 		
@@ -292,11 +291,10 @@ country_event = {
 			factor = 0 
 			modifier = {
 				factor = 100
-				AND = {
-					is_at_war = yes
-					NOT = { war_score = 0 }
-					war_exhaustion = 10
-				}
+				
+				is_at_war = yes
+				NOT = { war_score = 0 }
+				war_exhaustion = 10
 			}
 		}
 	

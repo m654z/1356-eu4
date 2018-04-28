@@ -190,7 +190,7 @@ dependency = {
 
 # Anjou, a French county/duchy
 dependency = {
-	subject_type = "french_ducal_vassal"subject_type = "french_ducal_vassal"
+	subject_type = "french_ducal_vassal"
 	first = FRA
 	second = ANJ
 	start_date = 1351.1.1 # county created

@@ -160,7 +160,6 @@ fixed_capital = 138 # Cannot move capital away from this province & no power cos
 		dynasty = "Lazarevic"
 		birth_date = 1377.1.1
 		death_date = 1427.7.20
-		claim = 100
 		adm = 5
 		dip = 3
 		mil = 4

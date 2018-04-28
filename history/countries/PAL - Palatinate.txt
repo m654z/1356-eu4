@@ -213,7 +213,7 @@ capital = 77	# Pfalz
 	}
 }
 
-1436.12.30 = {
+1456.12.30 = {
 	heir = {
 		name = "Friedrich"
 		monarch_name = "Friedrich I"

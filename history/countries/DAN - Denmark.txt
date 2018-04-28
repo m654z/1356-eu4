@@ -155,19 +155,7 @@ capital = 12 # Sjaelland
 	}
 }
 
-1448.9.1 = {
-	monarch = {
-		name = "Christian I"
-		dynasty = "von Oldenburg"
-		birth_date = 1426.2.1
-		adm = 4
-		dip = 3
-		mil = 2
-	}
-	set_country_flag = christian_elected
-}
-
-1445.9.26 = {
+1445.9.27 = {
 	queen = {
 		country_of_origin = BRA
 		name = "Dorothea"
@@ -180,6 +168,20 @@ capital = 12 # Sjaelland
 		mil = 2
 	}
 }
+
+1448.9.1 = {
+	monarch = {
+		name = "Christian I"
+		dynasty = "von Oldenburg"
+		birth_date = 1426.2.1
+		adm = 4
+		dip = 3
+		mil = 2
+	}
+	set_country_flag = christian_elected
+}
+
+
 
 1455.2.2 = {
 	heir = {

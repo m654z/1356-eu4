@@ -27,10 +27,12 @@ country_decisions = {
 			}
 		}
 		provinces_to_highlight = {
-			area = savoy_dauphine_area
-			area = romandie_area
-			area = provence_area
-			area = bourgogne_area
+			AND = {
+				area = savoy_dauphine_area
+				area = romandie_area
+				area = provence_area
+				area = bourgogne_area
+			}
 			OR = {
 				NOT = { owned_by = ROOT }
 				NOT = { is_core = ROOT }

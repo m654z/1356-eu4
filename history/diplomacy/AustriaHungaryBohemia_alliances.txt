@@ -289,14 +289,6 @@ alliance = {
 # The Grand alliance
 alliance = {
 	first = HAB
-	second = SPA
-	start_date = 1689.7.9
-	end_date = 1700.1.1
-}
-
-# The Grand alliance
-alliance = {
-	first = HAB
 	second = SWE
 	start_date = 1689.7.9
 	end_date = 1700.1.1
@@ -542,29 +534,29 @@ royal_marriage = {
 	end_date = 1506.9.25
 }
 
-# Karl V ~ Isabel (daughter of King Manuel I of Portugal)
-royal_marriage = {
-	first = SPA
-	second = POR
-	start_date = 1526.3.11
-	end_date = 1539.5.1
-}
+# Karl V ~ Isabel (daughter of King Manuel I of Portugal) #Duplicate
+#royal_marriage = {
+#	first = SPA
+#	second = POR
+#	start_date = 1526.3.11
+#	end_date = 1539.5.1
+#}
 
-# King Felipe II of Spain (son of Karl V) ~ Isabel (daughter of King Joäo III of Portugal)
-royal_marriage = {
-	first = SPA
-	second = POR
-	start_date = 1543.11.12
-	end_date = 1545.7.12
-}
+# King Felipe II of Spain (son of Karl V) ~ Isabel (daughter of King Joäo III of Portugal) #Duplicate
+#royal_marriage = {
+#	first = SPA
+#	second = POR
+#	start_date = 1543.11.12
+#	end_date = 1545.7.12
+#}
 
-# Maximilian II ~ Maria (daughter of Emperor Karl V)
-royal_marriage = {
-	first = HAB
-	second = SPA
-	start_date = 1548.1.1
-	end_date = 1576.10.12
-}
+# Maximilian II ~ Maria (daughter of Emperor Karl V) #Duplicate
+#royal_marriage = {
+#	first = HAB
+#	second = SPA
+#	start_date = 1548.1.1
+#	end_date = 1576.10.12
+#}
 
 # Ferdinand II ~ Maria-Anna (daughter of Duke Wilhelm V of Bavaria)
 royal_marriage = {

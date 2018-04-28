@@ -59,7 +59,6 @@ religious_school = hanafi_school
 		name = "Ulugh Beg"
 		dynasty = "Timurid"
 		birth_date = 1394.1.1
-		claim = 50
 		adm = 3
 		dip = 5
 		mil = 4

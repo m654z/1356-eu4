@@ -91,7 +91,7 @@ country_event = { #House Trastamara wins Civil War
 	option = {
 		name = cas_civil_war.4.a
                 white_peace = CAS
-                prestige = 25
+                add_prestige = 25
                 inherit = CAS
 		set_global_flag = "trastamara_wins_civil_war"
                 change_tag = CAS
@@ -130,7 +130,7 @@ country_event = { #Castile Inherits Trastamara, Adds Aragon as a Historical Riva
 	option = {
 		name = cas_civil_war.5.a
                 inherit = CTR
-                prestige = 25
+                add_prestige = 25
                 add_truce_with = ARA 
 		}	
 	}

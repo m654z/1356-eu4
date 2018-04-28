@@ -83,11 +83,9 @@ french_ducal_vassal = {
 	enforce_culture = no
 	seize_territory = no
 	force_seppuku = no
-	contribute_to_capital = no
 	force_isolation = no
 	return_land = no
 	embargo_rivals = no
-	scutage = no
 	divert_trade= no
 	#(enable)
 	send_additional_troops = yes #Maybe

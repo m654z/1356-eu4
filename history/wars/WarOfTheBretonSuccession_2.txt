@@ -18,11 +18,13 @@ war_goal = {
 		name = "Auray"
 		location = 171 # Morbihan
 		attacker = {
+			commander = "Auray"
 			infantry = 3500
 			losses = 5 # percent
 			country = MNF
 		}
 		defender = {
+			commander = "Auray"
 			infantry = 4000
 			losses = 30	# percent
 			country = BLS

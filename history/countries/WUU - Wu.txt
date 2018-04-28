@@ -2,7 +2,7 @@ government = despotic_monarchy
 technology_group = chinese
 religion = confucianism
 primary_culture = wu
-historical_rival = MNG
+
 capital = 684	#Hangzhou
 
 historical_rival = YUA
@@ -24,7 +24,6 @@ historical_rival = SHU
 historical_rival = YUE
 historical_rival = MIN
 historical_rival = CMI
-historical_rival = YUE
 historical_rival = QNG
 
 1354.1.1 = {

@@ -1,14 +1,11 @@
 # 2472 - Ouargla (1356)
 # Changes: (TGT)
-owner = TGT
-controller = TGT
-add_core = TGT
+
 culture = berber
 religion = ibadi
 capital = "Ouargla"
-trade_goods = slaves
+trade_goods = unknown
 hre = no
-is_city = yes
 base_tax = 1 
 
 base_production = 1
@@ -21,9 +18,9 @@ discovered_by = muslim
 discovered_by = ottoman
 discovered_by = western
 
-#1414.1.1 = {	owner = TGT 
-#		controller = TGT 
-#		add_core = TGT 
-#		is_city = yes 
-#		trade_goods = slaves
-#	   }
+1414.1.1 = {	owner = TGT 
+		controller = TGT 
+		add_core = TGT 
+		is_city = yes 
+		trade_goods = slaves
+	   }

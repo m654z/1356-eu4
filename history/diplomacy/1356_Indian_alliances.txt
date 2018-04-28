@@ -40,19 +40,19 @@ vassal = {
 	end_date = 1388.9.20
 }
 
-vassal = {
-	first = JNP
-	second = TRT
-	start_date = 1394.1.1
-	end_date = 1486.1.1
-}
+#vassal = { #Duplicate
+#	first = JNP
+#	second = TRT
+#	start_date = 1394.1.1
+#	end_date = 1486.1.1
+#}
 
-vassal = {
-	first = DLH
-	second = TRT
-	start_date = 1499.1.1
-	end_date = 1526.1.1
-}
+#vassal = { #Duplicate
+#	first = DLH
+#	second = TRT
+#	start_date = 1499.1.1
+#	end_date = 1526.1.1
+#}
 
 vassal = {
 	first = MLW

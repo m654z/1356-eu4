@@ -102,7 +102,6 @@ goal_feudalism_pu_war = {
 	
 	
 	}
-	allow_leader_change = no
 	
 	war_name = CB_FEUDALISM_PU_WAR
 }

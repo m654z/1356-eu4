@@ -3,7 +3,6 @@
 
 owner = TUN
 controller = TUN 
-add_core = TGT
 culture = berber
 religion = sunni
 capital = "Biskra"

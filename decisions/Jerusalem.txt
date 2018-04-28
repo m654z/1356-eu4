@@ -15,20 +15,22 @@ country_decisions = {
 			NOT = { government = celestial_empire }
 			OR = {
 				owns = 379
+				tag = KNI
+				tag = CYP
+				tag = PRO
+				tag = CIC
 				AND = {
-					ai = no
-					tag = KNI
+					tag = ATH
+					primary_culture = occitain
 				}
 				AND = {
-					ai = no
-					tag = CYP
+					tag = ACH
+					primary_culture = sicillian
 				}
-				AND = {
-					ai = no
-					tag = PRO
-				}
+		
 			}
 			OR = {
+				current_age = age_of_feudalism
 				current_age = age_of_discovery
 				current_age = age_of_reformation
 			}

@@ -142,6 +142,7 @@ historical_friend = SER
 		monarch_name = "Stjepan Ostojic"
 		dynasty = "Kotromanic"
 		birth_date = 1400.1.1
+		claim = 95
 		adm = 1
 		dip = 1
 		mil = 1
@@ -181,7 +182,7 @@ historical_friend = SER
 	}
 }
 
-1415.17.1 = {
+1415.1.1 = {
 	queen = {
 		country_of_origin = CRO
 		name = "Jelena"

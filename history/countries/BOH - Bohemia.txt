@@ -96,8 +96,6 @@ add_army_professionalism = 0.1
 	}
 }
 
-1440.1.1 = { government = feudal_monarchy }
-
 1400.8.20 = {
 	monarch = {
 		name = "Wenzel IV"
@@ -181,6 +179,8 @@ add_army_professionalism = 0.1
 		mil = 2
 	}
 }
+
+1440.1.1 = { government = feudal_monarchy }
 
 # 1453.10.28 - 1457.11.23 PU under Austria (Ladislaus Postumus von Habsburg)
 

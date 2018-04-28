@@ -2,8 +2,6 @@ government = despotic_monarchy
 technology_group = chinese
 religion = confucianism
 primary_culture = shandong_culture
-historical_rival = YUA
-historical_rival = MNG
 capital = 690	#Qingzhou
 
 historical_rival = YUA
@@ -25,7 +23,6 @@ historical_rival = SHU
 historical_rival = YUE
 historical_rival = MIN
 historical_rival = CMI
-historical_rival = YUE
 historical_rival = QNG
 
 1355.1.1 = {
