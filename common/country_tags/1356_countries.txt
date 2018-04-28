@@ -50,7 +50,7 @@ VRN = "countries/Verona.txt"
 ARS = "countries/Artois.txt"
 RET = "countries/Rethel.txt"
 LOO = "countries/Loon.txt"
-WOO = "countries/Wallonia"
+WOO = "countries/Wallonia.txt"
 
 #Russia 
 GLY = "countries/Galich.txt"
