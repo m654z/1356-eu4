@@ -91,7 +91,8 @@ war_goal = {
 	#rem_defender = FOZ
 }
 
-1357.9.23 = { # Truce of Bordeaux
+#Historical Date 1357.9.23 = { # Truce of Bordeaux
+1355.12.31 = { #Truce of Bordeaux
 	rem_attacker = ENG
 	rem_attacker = WLS
 	rem_attacker = LNC
