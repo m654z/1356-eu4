@@ -14,6 +14,11 @@
  ARE_ADJ: "Arles"
  LOT: "Lotharingia"
  LOT_ADJ: "Lotharingian"
+ WOO: "Wallonia"
+ WOO_ADJ: "Wallonian"
+ VAL: "Valois"
+ VAL_ADJ: "Valois"
+ 
  
  
  #FRA Missions

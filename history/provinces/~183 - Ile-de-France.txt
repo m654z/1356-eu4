@@ -14,8 +14,6 @@ base_production = 8
 trade_goods = paper
 base_manpower = 7
 add_core = FRA
-add_core = VAL
-
 fort_15th = yes
 
 discovered_by = eastern

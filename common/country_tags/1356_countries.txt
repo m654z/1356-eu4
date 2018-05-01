@@ -27,6 +27,7 @@ POU = "countries/Poitou.txt"
 AQT = "countries/Aquitaine.txt"
 ARE = "countries/Arles.txt"
 LOT = "countries/Lotharingia.txt"
+VAL = "countries/Valois.txt"
 	
 #HRE
 GOR = "countries/Gorizia.txt"
