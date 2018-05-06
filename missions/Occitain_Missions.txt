@@ -14,7 +14,184 @@ occ_unite_aquitaine = {
 		}
 	}
 	has_country_shield = yes
-	
+	OCC_secure_our_culture = { #Secure Occitan Culture
+		icon = mission_assemble_an_army
+		required_missions = {  }
+		position = 1
+		completed_by = 1821.1.1
+		provinces_to_highlight = {
+			OR = {
+				province_id = 196
+				province_id = 2753
+				province_id = 198
+				province_id = 200
+				province_id = 4391
+				province_id = 199
+				province_id = 203
+				province_id = 204
+				#province_id = 202
+				province_id = 2991
+				province_id = 201
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			196 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			2753 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			198 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			200 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			4391 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			199 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			203 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			204 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+#			202 = {
+#				country_or_non_sovereign_subject_holds = ROOT
+#			}
+			2991 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			201 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			
+		}
+		effect = {
+			173 = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			guyenne_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			pyrenees_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	OCC_secure_the_Gascons = { #Secure the Gascons
+		icon = mission_assemble_an_army
+		required_missions = { OCC_secure_our_culture }
+		position = 2
+		completed_by = 1821.1.1
+		provinces_to_highlight = {
+			OR = {
+				province_id = 194
+				province_id = 4112
+				province_id = 174
+				province_id = 175
+				province_id = 176
+				province_id = 173
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			194 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			4112 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			174 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			175 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			176 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			173 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+
+		}
+		effect = {
+			massif_central_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	OCC_secure_massif_central = { #Secure Massif Central Mountains
+		icon = mission_assemble_an_army
+		required_missions = { OCC_secure_the_Gascons }
+		position = 3
+		completed_by = 1821.1.1
+		provinces_to_highlight = {
+			OR = {
+				province_id = 190
+				province_id = 195
+				province_id = 199
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			190 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			195 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			199 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+
+		}
+		effect = {
+			add_accepted_culture = gascon
+		}
+	}
+	OCC_secure_massif_central_P2 = { #Secure Massif Central Mountains P2
+		icon = mission_assemble_an_army
+		required_missions = { OCC_secure_massif_central }
+		position = 4
+		completed_by = 1821.1.1
+		trigger = {
+			199 = {
+				has_building = fort_15th
+			}
+		}
+		effect = {
+			add_prestige = 25
+		}
+	}
+
 }
 
 occ_secure_french_independence = {
@@ -87,5 +264,134 @@ occ_african_ambitions = {
 		}
 	}
 	has_country_shield = yes
+	
+	OCC_take_sardinia = { #Take Sardinia
+		icon = mission_assemble_an_army
+		required_missions = {  }
+		position = 1
+		completed_by = 1821.1.1
+		provinces_to_highlight = {
+			OR = {
+				province_id = 2986
+				province_id = 127
+				province_id = 1247
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			2986 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			127 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			1247 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}		
+		}
+		effect = {
+			tunisia_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	OCC_take_tunis = { #Take Tunis
+		icon = mission_assemble_an_army
+		required_missions = { OCC_take_sardinia }
+		position = 2
+		completed_by = 1821.1.1
+		provinces_to_highlight = {
+			OR = {
+				province_id = 2455
+				province_id = 2454
+				province_id = 341
+				province_id = 2473
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			2455 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			2454 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			341 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}		
+			2473 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+
+		}
+		effect = {
+			kabylia_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			djerba_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			tripolitania_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	OCC_repel_the_tunisian_pirates = { #Take Tunis' coast.
+		icon = mission_assemble_an_army
+		required_missions = { OCC_take_tunis }
+		position = 3
+		completed_by = 1821.1.1
+		provinces_to_highlight = {
+			OR = {
+				area = tripolitania_area
+				area = djerba_area
+				area = kabylia_area
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			kabylia_area = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			djerba_area = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			tripolitania_area = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}		
+
+		}
+		effect = {
+			massif_central_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
 	
 }

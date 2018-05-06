@@ -13,7 +13,7 @@ fre_minor_rightful_french_kings = {
 			tag = ALE
 			tag = CHP
 			tag = BOU
-			tag = PIC #Lump into Flemish?
+			tag = VAL
 		}
 	}
 	has_country_shield = yes
@@ -34,7 +34,7 @@ fre_minor_secure_french_independence = {
 			tag = ALE
 			tag = CHP
 			tag = BOU
-			tag = PIC #Lump into Flemish?
+			tag = VAL
 		}
 	}
 	has_country_shield = yes
@@ -55,7 +55,7 @@ fre_minor_unite_the_duchies = {
 			tag = ALE
 			tag = CHP
 			tag = BOU
-			tag = PIC #Lump into Flemish?
+			tag = VAL
 		}
 	}
 	has_country_shield = yes
@@ -76,7 +76,7 @@ fre_minor_rebuild_the_homeland = {
 			tag = ALE
 			tag = CHP
 			tag = BOU
-			tag = PIC #Lump into Flemish?
+			tag = VAL
 		}
 	}
 	has_country_shield = yes
@@ -98,7 +98,7 @@ fre_minor_colonial_ambitions = {
 			tag = ALE
 			tag = CHP
 			tag = BOU
-			tag = PIC #Lump into Flemish?
+			tag = VAL
 		}
 	}
 	has_country_shield = yes

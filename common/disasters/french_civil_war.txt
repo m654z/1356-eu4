@@ -19,6 +19,7 @@ civil_war = {
 			ruler_age = 65
 		}
 		OR = {
+			has_new_dynasty = yes
 			heir_has_ruler_dynasty = no
 			has_foreign_heir = yes
 			has_heir = no

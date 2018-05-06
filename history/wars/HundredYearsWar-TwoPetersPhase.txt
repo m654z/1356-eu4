@@ -8,11 +8,11 @@ war_goal = {
 }
 
 1356.1.1 = { # Claim in kingdom of Valencia, more access to mediterrean sea
+	add_attacker = ENG
 	add_attacker = CAS
 	add_attacker = POR
 	add_attacker = GEN
 	add_attacker = GRA
-	add_attacker = ENG
 	add_attacker = GUY
 	add_attacker = AMG
 	add_attacker = FOI
@@ -33,11 +33,11 @@ war_goal = {
 
  #End of war
 1366.3.13 = { # Start of Castillian Civil War
+	rem_attacker = ENG
 	rem_attacker = CAS
 	rem_attacker = POR
 	rem_attacker = GEN
 	rem_attacker = GRA
-	rem_attacker = ENG
 	rem_attacker = GUY
 	rem_attacker = AMG
 	rem_attacker = FOI

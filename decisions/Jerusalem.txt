@@ -19,6 +19,7 @@ country_decisions = {
 				tag = CYP
 				tag = PRO
 				tag = CIC
+				tag = NRM
 				AND = {
 					tag = ATH
 					primary_culture = occitain
@@ -74,6 +75,10 @@ country_decisions = {
 					NOT = { tag = KNI }
 					NOT = { tag = CYP }
 					NOT = { tag = PRO }
+					NOT = { tag = CIC }
+					NOT = { tag = NRM }
+					NOT = { tag = ATH }
+					NOT = { tag = ACH }
 				}
 				release = KOJ
 				KOJ = { change_primary_culture = ROOT }
@@ -84,6 +89,10 @@ country_decisions = {
 						tag = KNI
 						tag = CYP
 						tag = PRO
+						tag = CIC
+						tag = ATH
+						tag = ACH
+						tag = NRM
 					}
 				}
 				change_tag = KOJ
@@ -115,7 +124,7 @@ country_decisions = {
 			}
 		}
 		ai_will_do = {
-			factor = 0
+			factor = 1
 		}
 	}
 

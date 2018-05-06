@@ -364,7 +364,7 @@ royal_marriage = {
 	end_date = 1416.6.15
 }
 
-# Anjou and Neaples
+# Anjou and Naples
 alliance = {
 	first = ANJ
 	second = NAP

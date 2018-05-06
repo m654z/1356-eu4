@@ -1,4 +1,4 @@
-#4364 - Inner Hebrides
+#253 - Western Isles
 
 owner = LOI
 controller = LOI
@@ -9,7 +9,7 @@ base_tax = 1
 base_production = 1
 trade_goods = grain
 base_manpower = 1
-capital = "Skye"
+capital = "Stornoway"
 is_city = yes
 add_core = LOI
 discovered_by = western
@@ -23,8 +23,7 @@ discovered_by = eastern
 	add_core = SCO
 }
 1560.8.1 = { religion = reformed }
-1707.5.12 = {
-	owner = GBR
+1707.5.12 = {	owner = GBR
 	controller = GBR
 	add_core = GBR
 }

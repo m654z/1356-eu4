@@ -15,7 +15,7 @@ base_manpower = 4
 add_local_autonomy = 25
 estate = estate_nobles
 add_core = BOU
-add_claim = BUR
+#add_claim = BUR
 
 discovered_by = eastern
 discovered_by = western
@@ -23,7 +23,7 @@ discovered_by = muslim
 discovered_by = ottoman
 
 1399.1.1   = { add_core = FRA }
-1435.9.21  = { remove_claim = BUR }
+#1435.9.21  = { remove_claim = BUR }
 1531.9.22  = { owner = FRA controller = FRA } # Louise de Savoie dies, Bourbon added to France
 1573.9.1   = { unrest = 5 } # Saint Barthelew's Day Massacre: the consequences in the land
 1574.5.1   = { unrest = 0 } # Charles IX dies, situation cools a bit	

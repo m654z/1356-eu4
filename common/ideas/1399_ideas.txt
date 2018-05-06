@@ -790,26 +790,26 @@ ARS_ideas = { #Artois ideas
 	}
 	free = yes
 	
-	PBG_tech_idea_cost = { 
+	ARS_tech_idea_cost = { 
 		technology_cost = -0.05
 		idea_cost = -0.05
 	}
-	PBG_tolerance = { 
+	ARS_tolerance = { 
 		tolerance_own = 2
 	}
-	PBG_forcelimit = { 
+	ARS_forcelimit = { 
 		land_forcelimit_modifier = -0.125
 	}
-	PBG_warscore_vs_religion = { 
+	ARS_warscore_vs_religion = { 
 		warscore_cost_vs_other_religion = -0.15
 	}
-	PBG_trade = { 
+	ARS_trade = { 
 		trade_efficiency = 0.1
 	}
-	PBG_inf_cost = {
+	ARS_inf_cost = {
 		infantry_cost = -0.25
 	}
-	PBG_production = {
+	ARS_production = {
 		production_efficiency = 0.1
 	}
 }
@@ -850,7 +850,7 @@ BLS_ideas = { #Blois ideas
 	BLS_states = {
 		state_maintenance_modifier = -0.25
 	}
-	BLS_ = {
+	BLS_heirs = {
 		heir_chance = 0.5
 		advisor_pool = 2
 	}
