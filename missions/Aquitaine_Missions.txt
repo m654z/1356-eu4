@@ -1,0 +1,1082 @@
+AQT_unite_our_home = {
+
+	slot = 1
+	generic = no
+	ai = yes
+	
+	potential = { tag = AQT	}
+	has_country_shield = yes
+	
+	
+	AQT_secure_our_culture = { #Secure Occitan Culture
+		icon = mission_assemble_an_army
+		required_missions = {  }
+		position = 1
+		completed_by = 1821.1.1
+		provinces_to_highlight = {
+			OR = {
+				province_id = 196 #Toulouse
+				province_id = 2753#Narbonne
+				province_id = 198 #Rouergue
+				province_id = 200 #Montpellier
+				province_id = 4391#Vivarais
+				province_id = 199 #Auvergne
+				province_id = 203 #Lyonnais
+				province_id = 204 #Dauphine
+				#province_id = 202 #Avignon
+				province_id = 2991 #Forcalquier
+				province_id = 201 #Provence
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			196 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			2753 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			198 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			200 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			4391 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			199 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			203 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			204 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+#			202 = {
+#				country_or_non_sovereign_subject_holds = ROOT
+#			}
+			2991 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			201 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			
+		}
+		effect = {
+			173 = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			195 = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			guyenne_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			pyrenees_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	AQT_secure_the_gascons = { #Secure the Gascons
+		icon = mission_assemble_an_army
+		required_missions = { AQT_secure_our_culture }
+		position = 2
+		completed_by = 1821.1.1
+		provinces_to_highlight = {
+			OR = {
+				province_id = 194 #Perigord
+				province_id = 4112 #Quercy
+				province_id = 174 #Aquitaine
+				province_id = 175 #Armagnac
+				province_id = 176 #Bearn
+				province_id = 173 #Labourd
+				province_id = 195 #Limousin
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			194 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			4112 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			174 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			175 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			176 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			173 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			195 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+
+		}
+		effect = {
+			massif_central_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	AQT_secure_massif_central = { #Secure Massif Central Mountains
+		icon = mission_assemble_an_army
+		required_missions = { AQT_secure_the_Gascons }
+		position = 3
+		completed_by = 1821.1.1
+		provinces_to_highlight = {
+			OR = {
+				province_id = 190
+				province_id = 195
+				province_id = 199
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			190 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			195 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			199 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+
+		}
+		effect = {
+			poitou_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	AQT_annex_poitou = { #Annex Poitou
+		icon = mission_assemble_an_army
+		required_missions = { AQT_secure_massif_central }
+		position = 4
+		completed_by = 1821.1.1
+		provinces_to_highlight = {
+			OR = {
+				province_id = 4386
+				province_id = 180
+				province_id = 4387
+				province_id = 4111
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			4386 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			180 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			4387 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}		
+			4111 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+
+		}
+		effect = {
+			add_accepted_culture = gascon
+		}
+	}
+	AQT_secure_massif_central_P2 = { #Secure Massif Central Mountains P2
+		icon = mission_assemble_an_army
+		required_missions = { AQT_annex_poitou }
+		position = 5
+		completed_by = 1821.1.1
+		trigger = {
+			199 = {
+				has_building = fort_15th
+			}
+		}
+		effect = {
+			205 = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}	
+			102 = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	AQT_annex_savoy_nice = { #Annex Savoy and Nice
+		icon = mission_assemble_an_army
+		required_missions = { AQT_secure_massif_central_P2 }
+		position = 6
+		completed_by = 1821.1.1
+		provinces_to_highlight = {
+			OR = {
+				province_id = 205
+				province_id = 102
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			205 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			102 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+
+		}
+		effect = {
+			add_army_tradition = 3
+		}
+	}
+	AQT_create_a_reliable_navy = { #Make a Navy
+		icon = mission_assemble_an_army
+		required_missions = { AQT_annex_savoy_nice }
+		position = 7
+		completed_by = 1821.1.1
+		trigger = {	navy_size_percentage = 0.80 }
+		effect = { add_navy_tradition = 15 }
+	}
+	
+}
+
+AQT_our_european_interests = { #Secondary tree
+	slot = 1
+	generic = no
+	ai = yes
+	
+	potential = { tag = AQT	}
+	has_country_shield = yes
+
+	AQT_annex_normandy = { #Navarra must not be allowed to keep control in this important region!
+		icon = mission_assemble_an_army
+		required_missions = { AQT_proclaim_aquitaine_official_aquitaine_capital }
+		position = 10
+		completed_by = 1821.1.1
+		provinces_to_highlight = {
+			OR = {
+				area = normandy_area
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			normandy_area = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}		
+		}
+		effect = {
+			define_admiral = {
+				name = "Charles IV 'The Black Sail' 'd Normandie"
+				shock = 4
+				fire = 4
+				manuever = 0
+				siege = 0
+			}
+		}
+	}
+	AQT_the_burgundian_question_befriend = { #Burgundy was harassed by France just as much as we were, we both fought for our independence and we are better off as friends because of such.
+		icon = mission_assemble_an_army
+		required_missions = { AQT_the_breton_question AQT_annex_normandy }
+		position = 11
+		completed_by = 1821.1.1
+		
+		trigger = {
+			alliance_with = BUR	
+		}
+		effect = {
+			set_country_flag = AQT_befriend_burgundy
+			add_historical_friend = BUR
+			BUR = {
+				add_historical_friend = AQT
+			}
+			add_trust = {
+				who = BUR
+				value = 25
+				mutual = yes
+			}
+			#create_alliance = BUR
+			create_marriage = BUR
+			add_truce_with = BUR
+		}
+	}
+}
+
+
+AQT_secure_our_independence = {
+	slot = 2
+	generic = no
+	ai = yes
+	
+	potential = { tag = AQT	}
+	has_country_shield = yes
+	
+	
+	AQT_get_cb_against_france = { #Get a CB!
+		icon = mission_assemble_an_army
+		required_missions = { 1356_generic_larger_army }
+		position = 3
+		completed_by = 1821.1.1
+		trigger = {	has_casus_belli_against = FRA }
+		effect = { 
+			add_army_tradition = 5 
+			add_historical_rival = FRA
+		}
+	}
+	AQT_declare_war_france = { #Fight France
+		icon = mission_assemble_an_army
+		required_missions = { AQT_get_cb_against_france }
+		position = 5
+		completed_by = 1821.1.1
+		trigger = {	offensive_war_with = FRA }
+		effect = {	add_war_exhaustion = -2	}
+	}
+	AQT_beat_back_french = { #Win the French War
+		icon = mission_assemble_an_army
+		required_missions = { AQT_declare_war_france }
+		position = 7
+		completed_by = 1821.1.1
+		trigger = {	has_truce = FRA	}
+		effect = {
+			183 = {
+				add_claim = AQT
+			}
+			4388 = {
+				add_claim = AQT
+			}
+			182 = {
+				add_claim = AQT
+			}
+		}
+	}
+}
+
+AQT_our_european_interests = {
+	slot = 2
+	generic = no
+	ai = yes
+	
+	potential = { tag = AQT	}
+	has_country_shield = yes
+
+	AQT_finish_off_the_french = { #Win the French War
+		icon = mission_assemble_an_army
+		required_missions = { AQT_beat_back_french AQT_create_a_reliable_navy }
+		position = 8
+		completed_by = 1821.1.1
+		trigger = {	
+			NOT = { exists = FRA }
+			owns = 183
+		}
+		effect = {
+			add_years_of_income = 0.5	
+		}
+	}
+	AQT_proclaim_aquitaine_official_aquitaine_capital = { #France is no more!
+		icon = mission_assemble_an_army
+		required_missions = {  AQT_finish_off_the_french }
+		position = 9
+		completed_by = 1821.1.1
+		trigger = {	
+			NOT = { exists = FRA }
+			owns = 183 #Paris
+			owns = 174 #Aquitaine
+
+
+		}
+		effect = {
+			183 = { #Paris
+				add_base_tax = -4	
+				add_base_production = -3
+				add_base_manpower = -3
+				add_local_autonomy = 30
+				add_devastation = 50
+				add_unrest = 5
+			}
+			174 = { #Aquitaine
+				add_base_tax = 5
+				add_base_production = 3
+				add_base_manpower = 2
+				add_devastation = -100
+				add_prosperity = 15	
+				move_capital_effect = yes
+			}
+			add_accepted_culture = gascon
+			add_prestige = 5
+			add_legitimacy = 5
+		}
+	}
+	AQT_the_breton_question = { #Subjugate_brittany
+		icon = mission_assemble_an_army
+		required_missions = { AQT_proclaim_aquitaine_official_aquitaine_capital }
+		position = 10
+		completed_by = 1821.1.1
+		provinces_to_highlight = {
+			OR = {
+				area = brittany_area
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			brittany_area = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}		
+		}
+		effect = {
+			define_general = {
+				name = "Phillip III 'The Skull Crusher' 'd Armor "
+				shock = 4
+				fire = 0
+				manuever = 2
+				siege = 2
+			}
+		}
+	}
+	AQT_the_burgundian_question_kill = { #Burgundy can not be allowed to exist!
+		icon = mission_assemble_an_army
+		required_missions = { AQT_the_breton_question AQT_annex_normandy }
+		position = 11
+		completed_by = 1821.1.1
+		provinces_to_highlight = {
+			OR = {
+				area = bourgogne_area
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			NOT = { exists = BUR }
+			bourgogne_area = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}		
+		}
+		effect = {
+			set_country_flag = AQT_kill_burgundy
+			add_manpower = 5
+		}
+	}
+	AQT_ = { #Whatever comes next
+		icon = mission_assemble_an_army
+		required_missions = {  }
+		position = 12
+		completed_by = 1821.1.1
+		provinces_to_highlight = {
+			OR = {
+				area = bourgogne_area
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			OR = {
+				had_country_flag = {
+					flag = AQT_kill_burgundy
+					days = 180
+				}
+				had_country_flag = {
+					flag = AQT_befriend_burgundy
+					days = 180
+				}
+			
+			}
+			bourgogne_area = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}		
+		}
+		effect = {
+
+		}
+	}
+
+
+
+}
+
+
+
+AQT_build_up = {
+	slot = 4
+	generic = no
+	ai = yes
+	
+	potential = { tag = AQT	}
+	has_country_shield = yes
+		
+	1356_generic_make_a_friend = { #Friendship!
+		icon = mission_assemble_an_army
+		required_missions = {  }
+		position = 1
+		completed_by = 1821.1.1
+		trigger = {	num_of_allies = 1 }
+		effect = {
+			add_country_modifier = {
+				name = "generic_make_ally"
+				duration = 7300
+			}
+		}
+	}
+	1356_generic_larger_army = { #Make an Army!
+		icon = mission_assemble_an_army
+		required_missions = { 1356_generic_make_a_friend }
+		position = 2
+		completed_by = 1821.1.1
+		trigger = {	army_size_percentage = 0.75 }
+		effect = { add_mil_power = 50 }
+	}
+	1356_generic_make_more_friends = { #Make more_friends
+		icon = mission_assemble_an_army
+		required_missions = { 1356_generic_larger_army }
+		position = 4
+		completed_by = 1821.1.1
+		trigger = {	num_of_allies = 3 }
+		effect = { add_dip_power = 50 }
+	}
+	1356_generic_buildin_buildings_here = { #Build them buildings!
+		icon = mission_assemble_an_army
+		required_missions = { 1356_generic_make_more_friends }
+		position = 5
+		completed_by = 1821.1.1
+		trigger = {	temple = 3 }
+		effect = { add_years_of_income = 0.5 }
+	}
+	1356_generic_develop_our_home = { #Develop_our_land!
+		icon = mission_assemble_an_army
+		required_missions = { 1356_generic_buildin_buildings_here }
+		position = 6
+		completed_by = 1821.1.1
+		trigger = {	total_development = 100 }
+		effect = { add_adm_power = 50 }
+	}
+	1356_generic_even_larger_army = { #Make an Army! Larger!
+		icon = mission_assemble_an_army
+		required_missions = { 1356_generic_develop_our_home }
+		position = 7
+		completed_by = 1821.1.1
+		trigger = {	army_size_percentage = 0.75 }
+		effect = { add_mil_power = 50 }
+	}	
+	1356_generic_lower_total_auto = { #Lower that autonomy!
+		icon = mission_assemble_an_army
+		required_missions = { 1356_generic_even_larger_army }
+		position = 8
+		completed_by = 1821.1.1
+		trigger = {	average_home_autonomy = 3 }
+		effect = { 	add_stability = 1 }
+	}
+	1356_generic_gain_manpower = { #Let them babies come home!
+		icon = mission_assemble_an_army
+		required_missions = { 1356_generic_lower_total_auto }
+		position = 9
+		completed_by = 1821.1.1
+		trigger = {	manpower_percentage = 0.60 }
+		effect = { 	add_yearly_manpower = 0.5 }
+	}
+	1356_generic_make_more_buildings = { #Make More buildings!
+		icon = mission_assemble_an_army
+		required_missions = { 1356_generic_gain_manpower }
+		position = 10
+		completed_by = 1821.1.1
+		trigger = {	temple = 7 }
+		effect = { add_legitimacy = 15 }
+	}
+	
+}
+
+AQT_african_ambitions = {
+	slot = 5
+	generic = no
+	ai = yes
+	
+	potential = { tag = AQT	}
+	has_country_shield = yes
+	
+	AQT_take_sardinia = { #Take Sardinia
+		icon = mission_assemble_an_army
+		required_missions = {  }
+		position = 1
+		completed_by = 1821.1.1
+		provinces_to_highlight = {
+			OR = {
+				province_id = 2986
+				province_id = 127
+				province_id = 1247
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			2986 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			127 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			1247 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}		
+		}
+		effect = {
+			tunisia_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	AQT_take_tunis = { #Take Tunis
+		icon = mission_assemble_an_army
+		required_missions = { AQT_take_sardinia }
+		position = 2
+		completed_by = 1821.1.1
+		provinces_to_highlight = {
+			OR = {
+				province_id = 2455
+				province_id = 2454
+				province_id = 341
+				province_id = 2473
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			2455 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			2454 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			341 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}		
+			2473 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+
+		}
+		effect = {
+			kabylia_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			djerba_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			tripolitania_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	AQT_repel_the_tunisian_pirates = { #Take Tunis' coast.
+		icon = mission_assemble_an_army
+		required_missions = { AQT_take_tunis }
+		position = 3
+		completed_by = 1821.1.1
+		provinces_to_highlight = {
+			OR = {
+				area = tripolitania_area
+				area = djerba_area
+				area = kabylia_area
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			kabylia_area = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			djerba_area = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			tripolitania_area = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}		
+
+		}
+		effect = {
+			algiers_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		
+		}
+	}
+	AQT_repel_the_algerian_pirates = { #Take the Algerian Coast
+		icon = mission_assemble_an_army
+		required_missions = { AQT_repel_the_tunisian_pirates }
+		position = 4
+		completed_by = 1821.1.1
+		provinces_to_highlight = {
+			OR = {
+				area = algiers_area
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			algiers_area = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}	
+
+		}
+		effect = {
+			northern_morocco_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			southern_morocco_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			western_morocco_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	AQT_repel_the_moroccan_pirates = { #Take Morocco's Coast
+		icon = mission_assemble_an_army
+		required_missions = { AQT_repel_the_algerian_pirates }
+		position = 5
+		completed_by = 1821.1.1
+		provinces_to_highlight = {
+			OR = {
+				area = northern_morocco_area
+				area = southern_morocco_area
+				area = western_morocco_area
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			northern_morocco_area = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			southern_morocco_area = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			western_morocco_area = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}		
+
+		}
+		effect = {
+			add_yearly_sailors = 40
+		}
+	}
+	AQT_gain_a_west_african_port = { #Take a West African port
+		icon = mission_assemble_an_army
+		required_missions = { AQT_repel_the_moroccan_pirates }
+		position = 6
+		completed_by = 1821.1.1
+		provinces_to_highlight = {
+			OR = {
+				area = sao_tome_area
+				area = jolof_area
+				area = west_africa_coast_area
+				area = futa_jallon_area
+				area = gulf_of_guinea_area
+				area = benin_area
+				area = guinea_coast_area
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			OR = {
+				sao_tome_area = {
+					country_or_non_sovereign_subject_holds = ROOT
+				}	
+				jolof_area = {
+					country_or_non_sovereign_subject_holds = ROOT
+				}	
+				west_africa_coast_area = {
+					country_or_non_sovereign_subject_holds = ROOT
+				}	
+				futa_jallon_area = {
+					country_or_non_sovereign_subject_holds = ROOT
+				}	
+				gulf_of_guinea_area = {
+					country_or_non_sovereign_subject_holds = ROOT
+				}	
+				benin_area = {
+					country_or_non_sovereign_subject_holds = ROOT
+				}	
+				guinea_coast_area = {
+					country_or_non_sovereign_subject_holds = ROOT
+				}	
+			
+			
+			}
+
+		}
+		effect = {
+			add_dip_power = 30
+		}
+	}
+	AQT_control_part_slave_trade = { #Time to take part of this lucrative Slave Trade for ourselves
+		icon = mission_assemble_an_army
+		required_missions = { AQT_gain_a_west_african_port }
+		position = 7
+		completed_by = 1821.1.1
+		trigger = {	
+			trading_part = {
+				trade_goods = slaves
+				value = 0.05
+			}	
+		}
+		effect = {
+			coastal_kongo = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			kongo_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			angola_namibia_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	AQT_conquer_the_kongo = { #Time to take over those savages
+		icon = mission_assemble_an_army
+		required_missions = { AQT_control_part_slave_trade }
+		position = 8
+		completed_by = 1821.1.1
+		provinces_to_highlight = {
+			OR = {
+				area = coastal_kongo
+				area = kongo_area
+				area = angola_namibia_area
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			OR = {
+				coastal_kongo = {
+					country_or_non_sovereign_subject_holds = ROOT
+				}	
+				kongo_area = {
+					country_or_non_sovereign_subject_holds = ROOT
+				}	
+				angola_namibia_area = {
+					country_or_non_sovereign_subject_holds = ROOT
+				}	
+			
+			
+			}
+
+		}
+		effect = {
+			833 = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			1179 = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			1177 = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	AQT_colonize_the_cape = { #In order to get to the greater riches of India we need to plant our feet in the strategic region of South Africa.
+		icon = mission_assemble_an_army
+		required_missions = { AQT_conquer_the_kongo }
+		position = 9
+		completed_by = 1821.1.1
+		provinces_to_highlight = {
+			OR = {
+				province_id = 833
+				province_id = 1179
+				province_id = 1177
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			OR = {
+				833 = {
+					country_or_non_sovereign_subject_holds = ROOT
+				}	
+				1179 = {
+					country_or_non_sovereign_subject_holds = ROOT
+				}	
+				1177 = {
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+				
+			
+			
+			}
+
+		}
+		effect = {
+			1201 = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			} 
+		}
+	}
+	AQT_secure_zanzibar = { #In order to get to the greater riches of India we need to plant our feet in the strategic region of South Africa.
+		icon = mission_assemble_an_army
+		required_missions = { AQT_colonize_the_cape }
+		position = 10
+		completed_by = 1821.1.1
+		provinces_to_highlight = {
+			OR = {
+				province_id = 1201
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+				1201 = {
+					country_or_non_sovereign_subject_holds = ROOT
+				}	
+		}
+		effect = {
+			1099 = { #Socotra!
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	AQT_secure_an_indian_route = { #Take Socotra for its stragetic port!
+		icon = mission_assemble_an_army
+		required_missions = { AQT_secure_zanzibar }
+		position = 11
+		completed_by = 1821.1.1
+		provinces_to_highlight = {
+			OR = {
+				province_id = 1099
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+				1099 = {
+					country_or_non_sovereign_subject_holds = ROOT
+				}	
+		}
+		effect = {
+			add_dip_power = 30
+		}
+	}	
+}

@@ -42,6 +42,13 @@ golden_gate = {
 	local_hostile_attrition = 2
 }
 
+#Generic Missions
+
+generic_make_ally = {
+	diplomatic_reputation = 1
+	improve_relation_modifier = 0.1
+}
+
 #Balkans/Anatolia
 
 bosphorous_sound_toll = {
@@ -118,8 +125,8 @@ paris_prison_break = {
 french_ducal_paris_conquest = {
 	diplomatic_reputation = 1
 	improve_relation_modifier = 0.1
-	legitimacy = 0.5
-	prestige = 0.5
+	legitimacy = 0.25
+	prestige = 0.25
 }
 
 claim_to_kingdom_france = {

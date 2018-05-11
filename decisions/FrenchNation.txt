@@ -17,6 +17,7 @@ country_decisions = {
 			NOT = { tag = MNF }
 			NOT = { tag = ARE }
 			NOT = { tag = LOT }
+			NOT = { tag = AQT }
 			OR = {
 				ai = no
 				NOT = { exists = FRA }

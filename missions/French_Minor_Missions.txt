@@ -1,5 +1,4 @@
-fre_minor_rightful_french_kings = {
-
+fre_minor_secure_french_independence = {
 	slot = 1
 	generic = no
 	ai = yes
@@ -17,10 +16,26 @@ fre_minor_rightful_french_kings = {
 		}
 	}
 	has_country_shield = yes
-	
+
+	fre_minor_secure_our_independence = { #FREEDOM
+		icon = mission_assemble_an_army
+		required_missions = {  }
+		position = 1
+		completed_by = 1821.1.1
+		trigger = {
+			is_vassal = no
+		}
+		effect = {
+			create_general = 35
+		}
+	}
+
+
 }
 
-fre_minor_secure_french_independence = {
+
+fre_minor_rightful_french_kings = {
+
 	slot = 2
 	generic = no
 	ai = yes
@@ -39,7 +54,76 @@ fre_minor_secure_french_independence = {
 	}
 	has_country_shield = yes
 	
+	FRE_minor_take_poitou = { #Take Poitou
+		icon = mission_assemble_an_army
+		required_missions = {  }
+		position = 1
+		completed_by = 1821.1.1
+		provinces_to_highlight = {
+			OR = {
+				province_id = 4387
+				province_id = 4111
+				province_id = 4386
+				province_id = 180
+				province_id = 195
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			4387 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			4111 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			4386 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			180 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			195 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			ile_de_france_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	FRE_minor_take_paris = { #Take most of the rest of France
+		icon = mission_assemble_an_army
+		required_missions = { FRE_minor_take_valois_picardie_champagne FRE_minor_take_poitou FRE_minor_take_loire FRE_minor_take_normandy }
+		position = 2
+		completed_by = 1821.1.1
+		provinces_to_highlight = {
+			province_id = 183
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			183 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = "french_ducal_paris_conquest"
+				duration = 7300
+			}
+		}
+	}
+	
 }
+
 
 fre_minor_unite_the_duchies = {
 	slot = 3
@@ -59,10 +143,55 @@ fre_minor_unite_the_duchies = {
 		}
 	}
 	has_country_shield = yes
+
+	FRE_minor_take_loire = { #Take Loire
+		icon = mission_assemble_an_army
+		required_missions = {  }
+		position = 1
+		completed_by = 1821.1.1
+		provinces_to_highlight = {
+			OR = {
+				province_id = 178
+				province_id = 177
+				province_id = 4389
+				province_id = 184
+				province_id = 179
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			178 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			177 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			4389 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			184 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			179 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			ile_de_france_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
 	
 }
 
-fre_minor_rebuild_the_homeland = {
+fre_minor_build_up = {
 	slot = 4
 	generic = no
 	ai = yes
@@ -80,16 +209,133 @@ fre_minor_rebuild_the_homeland = {
 		}
 	}
 	has_country_shield = yes
+		
+	FRE_minor_take_normandy = { #Take Normandy
+		icon = mission_assemble_an_army
+		required_missions = {  }
+		position = 1
+		completed_by = 1821.1.1
+		provinces_to_highlight = {
+			OR = {
+				province_id = 1879
+				province_id = 4385
+				province_id = 168
+				province_id = 167
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			1879 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			4385 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			168 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			167 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			ile_de_france_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
 	
+	1356_generic_make_a_friend = { #Friendship!
+		icon = mission_assemble_an_army
+		required_missions = {  }
+		position = 2
+		completed_by = 1821.1.1
+		trigger = {	num_of_allies = 1 }
+		effect = {
+			add_country_modifier = {
+				name = "generic_make_ally"
+				duration = 7300
+			}
+		}
+	}
+	1356_generic_larger_army = { #Make an Army!
+		icon = mission_assemble_an_army
+		required_missions = { 1356_generic_make_a_friend }
+		position = 3
+		completed_by = 1821.1.1
+		trigger = {	army_size_percentage = 0.75 }
+		effect = { add_mil_power = 50 }
+	}
+	1356_generic_make_more_friends = { #Make more_friends
+		icon = mission_assemble_an_army
+		required_missions = { 1356_generic_larger_army }
+		position = 4
+		completed_by = 1821.1.1
+		trigger = {	num_of_allies = 3 }
+		effect = { add_dip_power = 50 }
+	}
+	1356_generic_buildin_buildings_here = { #Build them buildings!
+		icon = mission_assemble_an_army
+		required_missions = { 1356_generic_make_more_friends }
+		position = 6
+		completed_by = 1821.1.1
+		trigger = {	temple = 3 }
+		effect = { add_years_of_income = 0.5 }
+	}
+	1356_generic_develop_our_home = { #Develop_our_land!
+		icon = mission_assemble_an_army
+		required_missions = { 1356_generic_buildin_buildings_here }
+		position = 7
+		completed_by = 1821.1.1
+		trigger = {	total_development = 100 }
+		effect = { add_adm_power = 50 }
+	}
+	1356_generic_even_larger_army = { #Make an Army! Larger!
+		icon = mission_assemble_an_army
+		required_missions = { 1356_generic_develop_our_home }
+		position = 8
+		completed_by = 1821.1.1
+		trigger = {	army_size_percentage = 0.75 }
+		effect = { add_mil_power = 50 }
+	}	
+	1356_generic_lower_total_auto = { #Lower that autonomy!
+		icon = mission_assemble_an_army
+		required_missions = { 1356_generic_even_larger_army }
+		position = 9
+		completed_by = 1821.1.1
+		trigger = {	average_home_autonomy = 3 }
+		effect = { 	add_stability = 1 }
+	}
+	1356_generic_gain_manpower = { #Let them babies come home!
+		icon = mission_assemble_an_army
+		required_missions = { 1356_genericT_lower_total_auto }
+		position = 1
+		completed_by = 1821.1.1
+		trigger = {	manpower_percentage = 0.60 }
+		effect = { 	add_yearly_manpower = 0.5 }
+	}
+	1356_generic_make_more_buildings = { #Make More buildings!
+		icon = mission_assemble_an_army
+		required_missions = { 1356_generic_gain_manpower }
+		position = 11
+		completed_by = 1821.1.1
+		trigger = {	temple = 7 }
+		effect = { add_legitimacy = 15 }
+	}	
 }
 
 
-fre_minor_colonial_ambitions = {
+NRM_missions_colonial = { #Colonize and such. Taken from Vanilla France.
 	slot = 5
 	generic = no
 	ai = yes
-	
-	potential = { 
+	potential = {
 		OR = {
 			tag = POU
 			tag = BER
@@ -99,8 +345,203 @@ fre_minor_colonial_ambitions = {
 			tag = CHP
 			tag = BOU
 			tag = VAL
-		}
+		}	
+		is_random_new_world = no
 	}
 	has_country_shield = yes
 	
+	FRE_minor_take_valois_picardie_champagne = { #Take most of the rest of France
+		icon = mission_assemble_an_army
+		required_missions = {   }
+		position = 1
+		completed_by = 1821.1.1
+		provinces_to_highlight = {
+			OR = {
+				province_id = 89
+				province_id = 186
+				province_id = 4390
+				province_id = 182
+				province_id = 4388
+				province_id = 183
+				province_id = 185
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			89 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			186 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			4390 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			182 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			4388 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			183 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			185 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			ile_de_france_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	
+	FRE_Minor_build_fleet = { #Make a Navy
+		icon = mission_galleys_in_port
+		required_missions = { }
+		position = 2
+		trigger = { num_of_heavy_ship = 20 }
+		effect = {
+			add_country_modifier = {
+				name = "naval_enthusiasm_mission"
+				duration = 9125 #25 years
+			}
+		}
+	}
+	FRE_Minor_discovers_north_america = { #Explore!
+		icon = mission_establish_high_seas_navy
+		required_missions = { FRE_Minor_build_fleet }
+		position = 3
+		completed_by = 1535.1.1
+		trigger = {
+			has_idea_group = exploration_ideas
+			has_idea = quest_for_the_new_world
+			custom_trigger_tooltip = {
+				tooltip = fra_canada_discovery.tooltip
+				colonial_canada = {
+					has_discovered = ROOT
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = fra_carib_discovery.tooltip
+				colonial_the_carribean = {
+					has_discovered = ROOT
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = fra_louis_discovery.tooltip
+				colonial_louisiana = {
+					has_discovered = ROOT
+				}
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = "colonial_enthusiasm"
+				duration = 7300
+			}
+		}
+	}
+	FRE_Minor_colony_in_north_america = { #Colonize it!
+		icon = mission_colonial
+		required_missions = { FRE_Minor_discovers_north_america }
+		position = 4
+		completed_by = 1608.7.3
+		provinces_to_highlight = {
+			OR = {
+				colonial_region = colonial_canada
+				colonial_region = colonial_louisiana
+				colonial_region = colonial_the_carribean
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			custom_trigger_tooltip = {
+				tooltip = fra_carib_colony.tooltip
+				num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+					value = 5
+					colonial_region = colonial_the_carribean
+				}
+			}
+			OR = {
+				custom_trigger_tooltip = {
+					tooltip = fra_canada_colony.tooltip
+					num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+						value = 5
+						colonial_region = colonial_canada
+					}
+				}
+				custom_trigger_tooltip = {
+					tooltip = fra_louisiana_colony.tooltip
+					num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+						value = 5
+						colonial_region = colonial_louisiana
+					}
+				}
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = "french_tariffs"
+				duration = 7300
+			}
+		}
+	}
+	FRE_Minor_discovers_the_carribean = { #Discover Carribean!
+		icon = mission_sea_battles
+		required_missions = { FRE_Minor_colony_in_north_america }
+		position = 5
+		trigger = {
+			custom_trigger_tooltip = {
+				tooltip = fra_bengal_discovery.tooltip
+				bengal_region = {
+					has_discovered = ROOT
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = fra_coromandel_discovery.tooltip
+				coromandel_region = {
+					has_discovered = ROOT
+				}
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = "fra_to_india"
+				duration = 7300
+			}
+			andhra_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			orissa_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			coromandel_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+
+
 }
