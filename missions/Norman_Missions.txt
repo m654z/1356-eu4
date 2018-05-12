@@ -53,7 +53,7 @@ nrm_secure_northern_france = {
 		position = 2
 		completed_by = 1821.1.1
 		provinces_to_highlight = {
-			brittany_area
+			area = brittany_area
 			NOT = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -257,9 +257,9 @@ nrm_secure_northern_france = {
 			OR = {
 				province_id = 236
 				province_id = 237
-				east_anglia_area
-				east_midlands_area
-				west_midlands_area
+				area = east_anglia_area
+				area = east_midlands_area
+				area = west_midlands_area
 			}
 			NOT = {
 				country_or_non_sovereign_subject_holds = ROOT
@@ -630,71 +630,6 @@ nrm_norman_legacy = {
 	}
 	
 }
-
-nrm_build_up_homeland = {
-	slot = 4
-	generic = no
-	ai = yes
-	
-	potential = { tag = NRM }
-	has_country_shield = yes
-	
-	
-	nrm_develop_homeland = { #Develop the Home Duchy
-		icon = mission_assemble_an_army
-		required_missions = {  }
-		position = 1
-		completed_by = 1821.1.1
-		trigger = {
-			168 = {	development = 25 }
-			4385 = { development = 20 }
-			167 = { development = 20 }
-		}
-		effect = {
-			add_years_of_income = 0.75
-		}
-	}
-	
-	nrm_build_temples = { #Build Churches
-		icon = mission_assemble_an_army
-		required_missions = { nrm_develop_homeland }
-		position = 2
-		completed_by = 1821.1.1
-		trigger = {
-			temple = 3
-		}
-		effect = {
-			add_treasury = 50
-		}
-	}
-	
-	nrm_let_the_population_rest = { #Build up manpower
-		icon = mission_assemble_an_army
-		required_missions = { nrm_build_temples }
-		position = 3
-		completed_by = 1821.1.1
-		trigger = {
-			manpower_percentage = 0.75
-		}
-		effect = {
-			add_legitimacy = 10
-		}
-	}
-	
-	nrm_let_the_population_rest = { #Build up manpower
-		icon = mission_assemble_an_army
-		required_missions = { nrm_build_temples }
-		position = 4
-		completed_by = 1821.1.1
-		trigger = {
-			manpower_percentage = 0.75
-		}
-		effect = {
-			add_legitimacy = 10
-		}
-	}
-}
-
 
 NRM_missions_colonial = { #Colonize and such. Taken from Vanilla France.
 	slot = 5

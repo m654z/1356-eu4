@@ -191,7 +191,7 @@ ANJ_ideas = { #Anjou ideas
 		production_efficiency = 0.10
 	}
 	anj_hyw_troubles = { #Anjou was often the fighting ground for a lot of troubles during the HYW. From 1100AD-1300AD it frequently switched hands.
-		global_manpower_modifier = 0.12.5
+		global_manpower_modifier = 0.125
 	}
 	anj_royal_marriages = { 
 		diplomatic_reputation = 1

@@ -27,7 +27,7 @@ country_decisions = {
 			}
 		}
 		provinces_to_highlight = {
-			AND = {
+			OR = {
 				area = savoy_dauphine_area
 				area = romandie_area
 				area = provence_area

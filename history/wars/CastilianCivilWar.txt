@@ -17,7 +17,7 @@
 }
 
 # End of war
-1369.3.23 = { # Death of Pedro II
+#1369.3.23 = { # Death of Pedro II
 #	rem_attacker = CTR
 #	rem_attacker = ARA
 #	rem_defender = CAS

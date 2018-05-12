@@ -29,13 +29,15 @@ country_decisions = {
 			}
 		}
 		provinces_to_highlight = {
-			area = flanders_area
-			area = wallonia_area
-			area = lorraine_area
-			area = bourgogne_area
-			area = holland_area
-			area = netherlands_area
-			province_id = 1878 #Aachen
+			OR = {
+				area = flanders_area
+				area = wallonia_area
+				area = lorraine_area
+				area = bourgogne_area
+				area = holland_area
+				area = netherlands_area
+				province_id = 1878 #Aachen
+			}	
 			OR = {
 				NOT = { owned_by = ROOT }
 				NOT = { is_core = ROOT }

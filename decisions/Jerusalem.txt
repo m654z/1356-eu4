@@ -26,7 +26,7 @@ country_decisions = {
 				}
 				AND = {
 					tag = ACH
-					primary_culture = sicillian
+					primary_culture = sicilian
 				}
 		
 			}

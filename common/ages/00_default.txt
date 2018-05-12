@@ -105,7 +105,7 @@ age_of_feudalism = {
 		ab_transfer_vassal_wargoal_f = { #Removed chain claim in Age 1, removed Vassal Wargoal in Age 2.
 			rule = {
 				can_transfer_vassal_wargoal = yes
-				same_culture_advisor_cost = -0.15
+				advisor_cost = -0.1
 				#can_chain_claim = yes
 			}
 			ai_will_do = {
@@ -352,8 +352,8 @@ age_of_discovery = {
 		ab_disc_claims = { #Removed chain claim in Age 1, removed Vassal Wargoal in Age 2. WAS TRANSFTER VASSAL WARGOAL.	
 			rule = {
 				#can_transfer_vassal_wargoal = yes
-				claim_duration = 0.25
 				can_chain_claim = yes
+				fabricate_claims_cost= -0.15
 			}
 			ai_will_do = {
 				factor = 10

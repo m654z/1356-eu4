@@ -11,7 +11,7 @@ country_decisions = {
 			NOT = { exists = AVA }
 		}
 		provinces_to_highlight = {
-			AND = {
+			OR = {
 				province_id = 585
 				province_id = 581
 				province_id = 584

@@ -31,6 +31,28 @@ war_goal = {
 	add_defender = FOZ
 }
 
+1356.9.19 = {
+	battle = {
+		name = "Poitiers"
+		location = 180 # Poitou
+		attacker = {
+			commander = "Edward, the Black Prince"	# Edward, the Black Prince
+			infantry = 3000
+			cavalry = 3000
+			losses = 5	# percent
+			country = ENG
+		}
+		defender = {
+			commander = "Jean II"	# Jean II of France
+			infantry = 3000
+			cavalry = 8000
+			losses = 75	# percent
+			country = FRA
+		}
+		result = yes
+	}
+}
+
  #End of war
 1366.3.13 = { # Start of Castillian Civil War
 	rem_attacker = ENG

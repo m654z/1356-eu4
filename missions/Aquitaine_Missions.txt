@@ -153,7 +153,7 @@ AQT_unite_our_home = {
 	}
 	AQT_secure_massif_central = { #Secure Massif Central Mountains
 		icon = mission_assemble_an_army
-		required_missions = { AQT_secure_the_Gascons }
+		required_missions = { AQT_secure_the_gascons }
 		position = 3
 		completed_by = 1821.1.1
 		provinces_to_highlight = {
@@ -302,9 +302,7 @@ AQT_our_european_interests = { #Secondary tree
 		position = 10
 		completed_by = 1821.1.1
 		provinces_to_highlight = {
-			OR = {
-				area = normandy_area
-			}
+			area = normandy_area
 			NOT = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -351,7 +349,6 @@ AQT_our_european_interests = { #Secondary tree
 	}
 }
 
-
 AQT_secure_our_independence = {
 	slot = 2
 	generic = no
@@ -385,7 +382,9 @@ AQT_secure_our_independence = {
 		required_missions = { AQT_declare_war_france }
 		position = 7
 		completed_by = 1821.1.1
-		trigger = {	has_truce = FRA	}
+		trigger = {	
+			AQT = { has_truce = FRA	}
+		}
 		effect = {
 			183 = {
 				add_claim = AQT
@@ -400,7 +399,7 @@ AQT_secure_our_independence = {
 	}
 }
 
-AQT_our_european_interests = {
+AQT_our_european_interests_slot_2 = {
 	slot = 2
 	generic = no
 	ai = yes
@@ -461,9 +460,7 @@ AQT_our_european_interests = {
 		position = 10
 		completed_by = 1821.1.1
 		provinces_to_highlight = {
-			OR = {
-				area = brittany_area
-			}
+			area = brittany_area
 			NOT = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -489,9 +486,7 @@ AQT_our_european_interests = {
 		position = 11
 		completed_by = 1821.1.1
 		provinces_to_highlight = {
-			OR = {
-				area = bourgogne_area
-			}
+			area = bourgogne_area
 			NOT = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -507,133 +502,9 @@ AQT_our_european_interests = {
 			add_manpower = 5
 		}
 	}
-	AQT_ = { #Whatever comes next
-		icon = mission_assemble_an_army
-		required_missions = {  }
-		position = 12
-		completed_by = 1821.1.1
-		provinces_to_highlight = {
-			OR = {
-				area = bourgogne_area
-			}
-			NOT = {
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-		}
-		trigger = {
-			OR = {
-				had_country_flag = {
-					flag = AQT_kill_burgundy
-					days = 180
-				}
-				had_country_flag = {
-					flag = AQT_befriend_burgundy
-					days = 180
-				}
-			
-			}
-			bourgogne_area = {
-				country_or_non_sovereign_subject_holds = ROOT
-			}		
-		}
-		effect = {
-
-		}
-	}
-
-
 
 }
 
-
-
-AQT_build_up = {
-	slot = 4
-	generic = no
-	ai = yes
-	
-	potential = { tag = AQT	}
-	has_country_shield = yes
-		
-	1356_generic_make_a_friend = { #Friendship!
-		icon = mission_assemble_an_army
-		required_missions = {  }
-		position = 1
-		completed_by = 1821.1.1
-		trigger = {	num_of_allies = 1 }
-		effect = {
-			add_country_modifier = {
-				name = "generic_make_ally"
-				duration = 7300
-			}
-		}
-	}
-	1356_generic_larger_army = { #Make an Army!
-		icon = mission_assemble_an_army
-		required_missions = { 1356_generic_make_a_friend }
-		position = 2
-		completed_by = 1821.1.1
-		trigger = {	army_size_percentage = 0.75 }
-		effect = { add_mil_power = 50 }
-	}
-	1356_generic_make_more_friends = { #Make more_friends
-		icon = mission_assemble_an_army
-		required_missions = { 1356_generic_larger_army }
-		position = 4
-		completed_by = 1821.1.1
-		trigger = {	num_of_allies = 3 }
-		effect = { add_dip_power = 50 }
-	}
-	1356_generic_buildin_buildings_here = { #Build them buildings!
-		icon = mission_assemble_an_army
-		required_missions = { 1356_generic_make_more_friends }
-		position = 5
-		completed_by = 1821.1.1
-		trigger = {	temple = 3 }
-		effect = { add_years_of_income = 0.5 }
-	}
-	1356_generic_develop_our_home = { #Develop_our_land!
-		icon = mission_assemble_an_army
-		required_missions = { 1356_generic_buildin_buildings_here }
-		position = 6
-		completed_by = 1821.1.1
-		trigger = {	total_development = 100 }
-		effect = { add_adm_power = 50 }
-	}
-	1356_generic_even_larger_army = { #Make an Army! Larger!
-		icon = mission_assemble_an_army
-		required_missions = { 1356_generic_develop_our_home }
-		position = 7
-		completed_by = 1821.1.1
-		trigger = {	army_size_percentage = 0.75 }
-		effect = { add_mil_power = 50 }
-	}	
-	1356_generic_lower_total_auto = { #Lower that autonomy!
-		icon = mission_assemble_an_army
-		required_missions = { 1356_generic_even_larger_army }
-		position = 8
-		completed_by = 1821.1.1
-		trigger = {	average_home_autonomy = 3 }
-		effect = { 	add_stability = 1 }
-	}
-	1356_generic_gain_manpower = { #Let them babies come home!
-		icon = mission_assemble_an_army
-		required_missions = { 1356_generic_lower_total_auto }
-		position = 9
-		completed_by = 1821.1.1
-		trigger = {	manpower_percentage = 0.60 }
-		effect = { 	add_yearly_manpower = 0.5 }
-	}
-	1356_generic_make_more_buildings = { #Make More buildings!
-		icon = mission_assemble_an_army
-		required_missions = { 1356_generic_gain_manpower }
-		position = 10
-		completed_by = 1821.1.1
-		trigger = {	temple = 7 }
-		effect = { add_legitimacy = 15 }
-	}
-	
-}
 
 AQT_african_ambitions = {
 	slot = 5
@@ -778,9 +649,7 @@ AQT_african_ambitions = {
 		position = 4
 		completed_by = 1821.1.1
 		provinces_to_highlight = {
-			OR = {
-				area = algiers_area
-			}
+			area = algiers_area
 			NOT = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -1035,9 +904,7 @@ AQT_african_ambitions = {
 		position = 10
 		completed_by = 1821.1.1
 		provinces_to_highlight = {
-			OR = {
-				province_id = 1201
-			}
+			province_id = 1201
 			NOT = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -1063,9 +930,7 @@ AQT_african_ambitions = {
 		position = 11
 		completed_by = 1821.1.1
 		provinces_to_highlight = {
-			OR = {
-				province_id = 1099
-			}
+			province_id = 1099
 			NOT = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -1079,4 +944,24 @@ AQT_african_ambitions = {
 			add_dip_power = 30
 		}
 	}	
+	AQT_secure_indian_port = { #Take a port in India to begin our Indian Conquest!
+		icon = mission_assemble_an_army
+		required_missions = { AQT_secure_an_indian_route }
+		position = 11
+		completed_by = 1821.1.1
+		provinces_to_highlight = {
+			province_id = 516 #Baroda
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+				516 = { #Baroda
+					country_or_non_sovereign_subject_holds = ROOT
+				}	
+		}
+		effect = {
+			
+		}
+	}
 }

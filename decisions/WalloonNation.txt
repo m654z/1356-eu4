@@ -14,7 +14,7 @@ country_decisions = {
 			OR = {
 				tag = HAI
 				tag = RET
-				tag = ART
+				tag = ARS
 				tag = LIE
 				tag = LUX
 			}
@@ -28,13 +28,15 @@ country_decisions = {
 			}
 		}
 		provinces_to_highlight = {
-			province_id = 93 #Liege
-			province_id = 88 #Artois
-			province_id = 1743 #Cambray
-			province_id = 181 #Rethel
-			province_id = 94 #Luxemburg
-			province_id = 1866 #Namur
-			province_id = 91 #Hainaut
+			OR = {
+				province_id = 93 #Liege
+				province_id = 88 #Artois
+				province_id = 1743 #Cambray
+				province_id = 181 #Rethel
+				province_id = 94 #Luxemburg
+				province_id = 1866 #Namur
+				province_id = 91 #Hainaut
+			}
 			OR = {
 				NOT = { owned_by = ROOT }
 				NOT = { is_core = ROOT }

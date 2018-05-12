@@ -1,4 +1,4 @@
-﻿name = "War for the Scottish Throne"
+name = "War for the Scottish Throne"
 #casus_belli = cb_vassalize_mission
 war_goal = {
 	type = take_capital_vassalize

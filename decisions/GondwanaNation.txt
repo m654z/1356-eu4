@@ -15,9 +15,12 @@ country_decisions = {
 			primary_culture = gondi
 		}
 		provinces_to_highlight = {
-			province_id = 551
-			province_id = 2092
-			province_id = 2082
+			OR = {
+				province_id = 551
+				province_id = 2092
+				province_id = 2082
+			}
+			
 			NOT = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}

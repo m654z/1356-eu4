@@ -70,7 +70,7 @@ cb_pu_feudalism = {
 	
 	}
 
-	war_goal = {}
+	war_goal = { goal_feudalism_pu_war }
 }
 
 cb_border_war_feudalism = {
@@ -91,6 +91,6 @@ cb_border_war_feudalism = {
 	
 	}
 
-	war_goal = {}
+	war_goal = { goal_feudalism_border_war }
 
 }

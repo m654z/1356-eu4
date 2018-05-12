@@ -209,6 +209,8 @@ new_power = {
 #	army_tradition = -1
 #}
 
+
+
 time_of_peace = {
 	potential = {
 		has_country_flag = time_of_peace
@@ -235,57 +237,16 @@ shia_persia = {
 	
 }
 
-sapmi_frontiers = {
-	potential = {
-
-		OR = {
-			culture_group = scandinavian
-			culture_group = east_slavic
-		}
-	
-	}
-	trigger = {
-	
-
-			OR = {
-				AND = { 
-					karelia_area = { owned_by = ROOT }
-					OR = {	
-							karelia_area = { is_empty=yes }
-							karelia_area = { is_colony=yes }
-					}
-				}
-				AND = { 
-					bothnia_area = { owned_by = ROOT }
-					OR = {	
-							bothnia_area = { is_empty=yes }
-							bothnia_area = { is_colony=yes }
-					}
-				}
-				AND = { 
-					norrland_area = { owned_by = ROOT }
-					OR = {	
-							norrland_area = { is_empty=yes }
-							norrland_area = { is_colony=yes }
-					}
-				}
-			}
-
-	
-	}
-
-	colonists = 1
-	
-}
-
 1356_early_government_replacement_1 = {
 	potential = {
-		NOT = { date = 1440.1.1 }
+		#NOT = { date = 1440.1.1 }
 		NOT = { technology_group = north_american }
 		NOT = { technology_group = mesoamerican }
 		NOT = { technology_group = south_american }
 		NOT = { technology_group = andean }
-		is_primitive = no
+		NOT = { adm_tech = 9 }
+		NOT = { dip_tech = 9 }
+		NOT = { mil_tech = 9 }
 	
 	}
 	
@@ -318,12 +279,14 @@ sapmi_frontiers = {
 
 1356_early_government_replacement_2 = {
 	potential = {
-		NOT = { date = 1440.1.1 }
+		#NOT = { date = 1440.1.1 }
 		NOT = { technology_group = north_american }
 		NOT = { technology_group = mesoamerican }
 		NOT = { technology_group = south_american }
 		NOT = { technology_group = andean }
-		is_primitive = no
+		NOT = { adm_tech = 9 }
+		NOT = { dip_tech = 9 }
+		NOT = { mil_tech = 9 }
 	
 	}
 	
@@ -354,12 +317,14 @@ sapmi_frontiers = {
 
 1356_early_government_replacement_3 = {
 	potential = {
-		NOT = { date = 1440.1.1 }
+		#NOT = { date = 1440.1.1 }
 		NOT = { technology_group = north_american }
 		NOT = { technology_group = mesoamerican }
 		NOT = { technology_group = south_american }
 		NOT = { technology_group = andean }
-		is_primitive = no
+		NOT = { adm_tech = 9 }
+		NOT = { dip_tech = 9 }
+		NOT = { mil_tech = 9 }
 	
 	}
 	
@@ -391,12 +356,14 @@ sapmi_frontiers = {
 
 1356_early_government_replacement_4 = {
 	potential = {
-		NOT = { date = 1440.1.1 }
+		#NOT = { date = 1440.1.1 }
 		NOT = { technology_group = north_american }
 		NOT = { technology_group = mesoamerican }
 		NOT = { technology_group = south_american }
 		NOT = { technology_group = andean }
-		is_primitive = no
+		NOT = { adm_tech = 9 }
+		NOT = { dip_tech = 9 }
+		NOT = { mil_tech = 9 }
 	
 	}
 	
@@ -423,32 +390,6 @@ sapmi_frontiers = {
 	mercenary_cost = -0.05
 	possible_mercenaries = 0.25
 #	mercenary_discipline = 0.05
-
-
-}
-
-1356_early_government_replacement_4 = {
-	potential = {
-		always = no
-		NOT = { technology_group = north_american }
-		NOT = { technology_group = mesoamerican }
-		NOT = { technology_group = south_american }
-		NOT = { technology_group = andean }
-		is_primitive = no
-	
-	}
-	
-	trigger = {
-		OR = {
-			adm_tech = 9
-			dip_tech = 9
-			mil_tech = 9
-		}
-	
-	
-	}
-
-
 
 
 }

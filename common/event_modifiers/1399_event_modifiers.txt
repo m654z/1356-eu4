@@ -2,11 +2,7 @@ rush_of_colonists = {
 	colonists = 1
 }
 
-swedish_noble_support = {
-	land_maintenance_modifier = -0.15
-	manpower_recovery_speed = 0.25
-	land_morale = 0.1
-}
+#Center of Trade Modifiers
 
 center_of_trade_modifier = {
 	local_institution_spread = 0.10
@@ -32,10 +28,8 @@ sound_toll = {
 	picture = "province_trade_power_value"
 }
 
-jean_darc = {
-	manpower_recovery_speed = 2
-	global_regiment_cost = -0.50
-}
+
+
 
 golden_gate = {
 	local_defensiveness = 1.0
@@ -47,6 +41,15 @@ golden_gate = {
 generic_make_ally = {
 	diplomatic_reputation = 1
 	improve_relation_modifier = 0.1
+}
+
+#Scandanavia
+
+#Sweden
+swedish_noble_support = {
+	land_maintenance_modifier = -0.15
+	manpower_recovery_speed = 0.25
+	land_morale = 0.1
 }
 
 #Balkans/Anatolia
@@ -76,6 +79,10 @@ constantinopole_fort_1356_modifier = {
 #French Region
 
 #France 
+jean_darc = {
+	manpower_recovery_speed = 2
+	global_regiment_cost = -0.50
+}
 
 fra_dauphin_modifier = {
 	advisor_cost = -0.05
@@ -119,9 +126,7 @@ paris_prison_break = {
 
 }
 
-
-
-
+#French Ducal
 french_ducal_paris_conquest = {
 	diplomatic_reputation = 1
 	improve_relation_modifier = 0.1
@@ -147,6 +152,33 @@ claim_to_kingdom_aquitaine = {
 	legitimacy = 0.5
 	stability_cost_modifier = -0.05
 	advisor_cost = -0.1
+}
+
+#Burgundian/Lowland Region
+
+#Lotharingia
+
+lot_secured_the_north = {
+	stability_cost_modifier = -0.05
+	legitimacy = 0.05
+	prestige = 0.05
+
+
+}
+
+lot_secured_aachen = {
+
+
+}
+
+lot_secured_burgundian_kingdom = {
+
+
+}
+
+lot_secured_lowlands = {
+
+
 }
 
 #Iberian Region

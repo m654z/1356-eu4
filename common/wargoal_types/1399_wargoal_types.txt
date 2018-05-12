@@ -68,7 +68,7 @@ goal_chinese_civil_war = {
 }
 
 goal_feudalism_border_war = {
-	type = 
+	type = take_capital
 
 	attacker = {
 	
@@ -88,7 +88,7 @@ goal_feudalism_border_war = {
 }
 
 goal_feudalism_pu_war = {
-	type = 
+	type = take_capital
 
 	attacker = {
 	

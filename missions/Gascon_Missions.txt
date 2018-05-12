@@ -262,7 +262,7 @@ gas_secure_aquitaine = {
 
 		}
 		effect = {
-			add_accepted_culture = occitan
+			add_accepted_culture = occitain
 		}
 	}
 	GAS_secure_massif_central_p2 = { #Secure the Occitans P4
@@ -284,118 +284,7 @@ gas_secure_aquitaine = {
 	
 }
 
-gas_build_up_homeland = {
-	slot = 3
-	generic = no
-	ai = yes
-	
-	potential = { 
-		OR = {
-			tag = AMG
-			tag = FOI
-			tag = GUY
-		}
-	}
-	has_country_shield = yes
-	
-	GAS_take_brittany = { #Take Brittany
-		icon = mission_assemble_an_army
-		required_missions = { GAS_take_loire }
-		position = 3
-		completed_by = 1821.1.1
-		provinces_to_highlight = {
-			OR = {
-				province_id = 170
-				province_id = 171
-				province_id = 169
-				province_id = 4384
-				province_id = 172
-			}
-			NOT = {
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-		}
-		trigger = {
-			170 = {
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			171 = {
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			169 = {
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			4384 = {
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			172 = {
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-		}
-		effect = {
-			add_prestige = 10
-			add_adm = 75
-		}
-	}
-	
-	GAS_develop_homeland = { #Develop the Home Duchy
-		icon = mission_assemble_an_army
-		required_missions = {  }
-		position = 4
-		completed_by = 1821.1.1
-		trigger = {
-			168 = {	development = 25 }
-			4385 = { development = 20 }
-			167 = { development = 20 }
-		}
-		effect = {
-			add_years_of_income = 0.75
-		}
-	}
-	
-	GAS_build_temples = { #Build Churches
-		icon = mission_assemble_an_army
-		required_missions = { GAS_develop_homeland }
-		position = 5
-		completed_by = 1821.1.1
-		trigger = {
-			temple = 3
-		}
-		effect = {
-			add_treasury = 50
-		}
-	}
-	
-	GAS_let_the_population_rest = { #Build up manpower
-		icon = mission_assemble_an_army
-		required_missions = { GAS_build_temples }
-		position = 6
-		completed_by = 1821.1.1
-		trigger = {
-			manpower_percentage = 0.75
-		}
-		effect = {
-			add_legitimacy = 10
-		}
-	}
-	
-	GAS_let_the_population_rest = { #Build up manpower
-		icon = mission_assemble_an_army
-		required_missions = { GAS_build_temples }
-		position = 7
-		completed_by = 1821.1.1
-		trigger = {
-			manpower_percentage = 0.75
-		}
-		effect = {
-			add_legitimacy = 10
-		}
-	}
-
-	
-}
-
-GAS_build_up = {
+GAS_build_up = { #Modified Generic Missions due to placement
 	slot = 4
 	generic = no
 	ai = yes
@@ -445,11 +334,11 @@ GAS_build_up = {
 		}
 		effect = {
 			add_prestige = 10
-			add_adm = 75
+			add_adm_power = 75
 		}
 	}
 	
-	1356_generic_make_a_friend = { #Friendship!
+	GAS_generic_make_a_friend = { #Friendship!
 		icon = mission_assemble_an_army
 		required_missions = {  }
 		position = 4
@@ -462,65 +351,65 @@ GAS_build_up = {
 			}
 		}
 	}
-	1356_generic_larger_army = { #Make an Army!
+	GAS_generic_larger_army = { #Make an Army!
 		icon = mission_assemble_an_army
-		required_missions = { 1356_generic_make_a_friend }
+		required_missions = { GAS_generic_make_a_friend }
 		position = 5
 		completed_by = 1821.1.1
 		trigger = {	army_size_percentage = 0.75 }
 		effect = { add_mil_power = 50 }
 	}
-	1356_generic_make_more_friends = { #Make more_friends
+	GAS_generic_make_more_friends = { #Make more_friends
 		icon = mission_assemble_an_army
-		required_missions = { 1356_generic_larger_army }
+		required_missions = { GAS_generic_larger_army }
 		position = 6
 		completed_by = 1821.1.1
 		trigger = {	num_of_allies = 3 }
 		effect = { add_dip_power = 50 }
 	}
-	1356_generic_buildin_buildings_here = { #Build them buildings!
+	GAS_generic_buildin_buildings_here = { #Build them buildings!
 		icon = mission_assemble_an_army
-		required_missions = { 1356_generic_make_more_friends }
+		required_missions = { GAS_generic_make_more_friends }
 		position = 7
 		completed_by = 1821.1.1
 		trigger = {	temple = 3 }
 		effect = { add_years_of_income = 0.5 }
 	}
-	1356_generic_develop_our_home = { #Develop_our_land!
+	GAS_generic_develop_our_home = { #Develop_our_land!
 		icon = mission_assemble_an_army
-		required_missions = { 1356_generic_buildin_buildings_here }
+		required_missions = { GAS_generic_buildin_buildings_here }
 		position = 8
 		completed_by = 1821.1.1
 		trigger = {	total_development = 100 }
 		effect = { add_adm_power = 50 }
 	}
-	1356_generic_even_larger_army = { #Make an Army! Larger!
+	GAS_generic_even_larger_army = { #Make an Army! Larger!
 		icon = mission_assemble_an_army
-		required_missions = { 1356_generic_develop_our_home }
+		required_missions = { GAS_generic_develop_our_home }
 		position = 9
 		completed_by = 1821.1.1
 		trigger = {	army_size_percentage = 0.75 }
 		effect = { add_mil_power = 50 }
 	}	
-	1356_generic_lower_total_auto = { #Lower that autonomy!
+	GAS_generic_lower_total_auto = { #Lower that autonomy!
 		icon = mission_assemble_an_army
-		required_missions = { 1356_generic_even_larger_army }
+		required_missions = { GAS_generic_even_larger_army }
 		position = 10
 		completed_by = 1821.1.1
 		trigger = {	average_home_autonomy = 3 }
 		effect = { 	add_stability = 1 }
 	}
-	1356_generic_gain_manpower = { #Let them babies come home!
+	GAS_generic_gain_manpower = { #Let them babies come home!
 		icon = mission_assemble_an_army
-		required_missions = { 1356_genericT_lower_total_auto }
+		required_missions = { GAS_generic_lower_total_auto }
 		position = 11
 		completed_by = 1821.1.1
 		trigger = {	manpower_percentage = 0.60 }
 		effect = { 	add_yearly_manpower = 0.5 }
 	}
-	1356_generic_make_more_buildings = { #Make More buildings!
+	GAS_generic_make_more_buildings = { #Make More buildings!
 		icon = mission_assemble_an_army
-		required_missions = { 1356_generic_gain_manpower }
+		required_missions = { GAS_generic_gain_manpower }
 		position = 12
 		completed_by = 1821.1.1
 		trigger = {	temple = 7 }

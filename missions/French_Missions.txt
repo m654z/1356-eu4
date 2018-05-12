@@ -347,10 +347,12 @@ french_expand_external_europe_not_hre = { #Take stuff not in the HRE!
 		position = 13
 		completed_by = 1600.1.1
 		provinces_to_highlight = {
-			area = upper_rhineland_area
-			area = palatinate_area
-			area = lower_rhineland_area
-			area = north_rhine_area
+			OR = {
+				area = upper_rhineland_area
+				area = palatinate_area
+				area = lower_rhineland_area
+				area = north_rhine_area
+			}
 			NOT = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -401,19 +403,19 @@ french_expand_external_europe_not_hre = { #Take stuff not in the HRE!
 		}
 	}
 	
-	fra_dismantle_the_empire = { #Dismantle the Empire!
-		icon = mission_have_two_subjects
-		required_missions = { take_away_habsburg_gold fra_stabilize_italy fra_stabilize_lowlands }
-		position = 20
-		completed_by = 1821.1.1
-		trigger = {
-			hre_size = 0
-		}
-		effect = {
-			dismantle_hre = yes
-			add_prestige = 100
-		}
-	}
+#	fra_dismantle_the_empire = { #Dismantle the Empire!
+#		icon = mission_have_two_subjects
+#		required_missions = { take_away_habsburg_gold fra_stabilize_italy fra_stabilize_lowlands }
+#		position = 20
+#		completed_by = 1821.1.1
+#		trigger = {
+#			hre_size = 0
+#		}
+#		effect = {
+#			dismantle_hre = yes
+#			add_prestige = 100
+#		}
+#	}
 	
 }
 
@@ -514,9 +516,9 @@ french_hundred_years_war_missions = { #AKA Consolidate dejure france #Add the pr
 			4385 = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		effect = {
-			add_territorial_core = 167
-			add_territorial_core = 168
-			add_territorial_core = 4385
+			add_core = 167
+			add_core = 168
+			add_core = 4385
 			add_legitimacy = 5
 			add_treasury = 60
 			add_war_exhaustion = -2
@@ -538,8 +540,10 @@ french_hundred_years_war_missions = { #AKA Consolidate dejure france #Add the pr
 		position = 6
 		completed_by = 1589.8.2
 		provinces_to_highlight = {
-			province_id = 175
-			province_id = 198
+			OR = {
+				province_id = 175
+				province_id = 198
+			}
 			NOT = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -552,8 +556,8 @@ french_hundred_years_war_missions = { #AKA Consolidate dejure france #Add the pr
 		
 		}
 		effect = {
-			add_territorial_core = 198 #Rouergue
-			add_territorial_core = 175 #Armagnac
+			add_core = 198 #Rouergue
+			add_core = 175 #Armagnac
 			add_manpower = 5
 		}
 	}
@@ -576,7 +580,7 @@ french_hundred_years_war_missions = { #AKA Consolidate dejure france #Add the pr
 		}
 		
 		effect = {
-			add_territorial_core = 176 #Bearn
+			add_core = 176 #Bearn
 			add_claim = 173 #Laubourd
 			add_claim = 174 #Aquitaine
 			NAV = {	
@@ -590,8 +594,10 @@ french_hundred_years_war_missions = { #AKA Consolidate dejure france #Add the pr
 		position = 8
 		completed_by = 1589.8.2	#completed_by = 1453.7.18 #Historical
 		provinces_to_highlight = {
-			province_id = 174
-			province_id = 173
+			OR = {
+				province_id = 174
+				province_id = 173
+			}
 			NOT = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -753,7 +759,7 @@ france_expand_europe_hre = { #Take HRE land, eventully script HRE being dismantl
 		icon =  mission_cannons_firing
 		required_missions = { annex_alsace }
 		position = 13
-			provinces_to_highlight = {
+		provinces_to_highlight = {
 			area = wallonia_area
 			NOT = {
 				country_or_non_sovereign_subject_holds = ROOT
@@ -813,11 +819,13 @@ france_expand_europe_hre = { #Take HRE land, eventully script HRE being dismantl
 		required_missions = { fra_subjugate_flems_mission }
 		position = 19
 		provinces_to_highlight = {
-			area = 	netherlands_area
-			area = 	holland_area
-			area = 	frisia_area
-			area = 	wallonia_area
-			area = 	flanders_area
+			OR = {
+				area = 	netherlands_area
+				area = 	holland_area
+				area = 	frisia_area
+				area = 	wallonia_area
+				area = 	flanders_area
+			}
 			NOT = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -1125,8 +1133,10 @@ france_expand_italy = { #Eventully script Napoleons conquest here
 		required_missions = { annex_venetia }
 		position = 14
 		provinces_to_highlight = {
-			area = tuscany_area
-			area = emilia_romagna_area
+			OR = {
+				area = tuscany_area
+				area = emilia_romagna_area
+			}
 			NOT = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -1170,9 +1180,11 @@ france_expand_italy = { #Eventully script Napoleons conquest here
 		required_missions = { annex_tuscany_emilia_romgana }
 		position = 15
 		provinces_to_highlight = {
-			province_id = 2977 #Urbino
-			province_id = 119 #Ancona
-			province_id = 2976 #Umbria
+			OR = {
+				province_id = 2977 #Urbino
+				province_id = 119 #Ancona
+				province_id = 2976 #Umbria
+			}
 			NOT = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -1327,8 +1339,10 @@ france_expand_italy = { #Eventully script Napoleons conquest here
 		required_missions = { annex_rome_fra }
 		position = 19
 		provinces_to_highlight = {
-			region = italy_region
-			area = 	italy_region
+			OR = {
+				area = italy_region
+				area = 	italy_region
+			}
 			NOT = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}

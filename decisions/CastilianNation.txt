@@ -12,7 +12,7 @@ country_decisions = {
 			tag = CTR
 		}
 		provinces_to_highlight = {
-			AND = {
+			OR = {
 				province_id = 215
 				province_id = 216
 				province_id = 224
