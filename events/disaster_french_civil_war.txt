@@ -1,0 +1,174 @@
+namespace = french_civil_war
+
+#Event that releases everyone for Civil War
+country_event = {
+	id = fre_disaster_civil_war.1
+	title = fre_disaster_civil_war.1.t
+	desc = fre_disaster_civil_war.1.d
+	picture = DHIMMI_ESTATE_UPSET_eventPicture
+	
+	major = yes
+	is_triggered_only = yes
+
+	immediate = {
+		set_global_flag = 1356_french_civil_war
+	}	
+	
+	option = {
+		name = fre_disaster_civil_war.1.a
+		add_stability = -2
+		add_cash = -50
+		add_prestige = -20
+		break_union = DAU
+		release_all_subjects = yes
+		FRA = {
+			release = GUY
+			release = AMG
+			release = TOU
+			release = AUV
+			release = FOZ
+			release = DAU
+			release = PRO
+			release = AVI
+			release = POU
+			release = BER
+			release = ORL
+			release = ANJ
+			release = ALE
+			release = BRI
+			release = NRM
+			release = PIC
+			release = CHP
+			release = BOU
+			release = BAR
+			release = LOR
+			release = BUR
+			release = HAI
+			release = FLA
+			release = NAV
+			release = SAV
+		}
+		change_tag = VAL
+		set_government_rank = 2
+		remove_accepted_culture = occitian
+		remove_accepted_culture = gascon
+		remove_accepted_culture = breton
+		remove_accepted_culture = norman
+		remove_accepted_culture = burgundian
+		remove_accepted_culture = walloon
+		VAL = {
+			every_core_province = { 
+				remove_core = VAL
+			}
+			add_core = 4388
+			add_core = 182
+			add_core = 183
+		}
+		emperor = {
+			country_event = { 
+				id = fre_disaster_civil_war.4
+				days = 15
+			}
+		}
+	}
+		
+		
+}
+#Event that ends the Civil War
+country_event = {
+	id = fre_disaster_civil_war.2
+	title = fre_disaster_civil_war.2.t
+	desc = fre_disaster_civil_war.2.d
+	picture = DHIMMI_ESTATE_UPSET_eventPicture
+	
+	major = yes
+	is_triggered_only = yes
+	
+
+	immediate = {
+		set_global_flag = 1356_french_civil_war_popped
+	}
+	
+	option = {
+		name = fre_disaster_civil_war.2.a
+		end_disaster = french_civil_war
+		add_stability = 2	
+	}
+	
+}
+
+#Event that gives the nations the option of joining the HRE or getting a claim on all of France
+country_event = {
+	id = fre_disaster_civil_war.3
+	title = fre_disaster_civil_war.3.t
+	desc = fre_disaster_civil_war.3.d
+	picture = HRE_eventPicture
+	
+	major = yes
+	
+	trigger = {
+		has_global_flag = 1356_french_civil_war
+		NOT = { has_global_flag = emperor_declined_offer_to_french_dukes }
+		current_age = age_of_feudalism
+		is_subject = no
+		culture_group = french
+		NOT = { tag = FRA }
+		NOT = { tag = ENG }
+		NOT = { tag = SPA }
+		NOT = { tag = ARA }
+		NOT = { tag = NAV }
+		NOT = { tag = DAN }
+		technology_group = western
+		has_matching_religion = catholic
+
+	}
+	
+	mean_time_to_happen = {
+		months = 24
+	}
+	
+	option = { #We stay independent!
+		name = fre_disaster_civil_war.3.a
+		ai_chance = { factor = 65 }
+		france_region = {
+			add_permanent_claim = ROOT
+		}
+		add_prestige = 5
+		add_legitimacy = 5
+	}
+	
+	option = {
+		name = fre_disaster_civil_war.3.b
+		ai_chance = { factor = 35 }
+		ROOT = {
+			set_in_empire = yes
+		}
+		emperor = {
+			add_imperial_influence = 2
+		}
+	}
+	
+}
+
+
+#Emperors event for this.
+country_event = {
+	id = fre_disaster_civil_war.4
+	title = fre_disaster_civil_war.4.t
+	desc = fre_disaster_civil_war.4.d
+	picture = HRE_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = { #Offer it
+		name = fre_disaster_civil_war.4.a
+		ai_chance = { factor = 90 }
+		add_imperial_influence = 1
+	}
+	
+	option = { #Don't offer it.
+		name = fre_disaster_civil_war.4.b
+		ai_chance = { factor = 10 }
+		set_global_flag = emperor_declined_offer_to_french_dukes
+	}
+}

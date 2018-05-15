@@ -14,7 +14,7 @@
 #	add_defender = CAS
 #	add_defender = POR
 #	add_defender = GRA
-}
+#}
 
 # End of war
 #1369.3.23 = { # Death of Pedro II
