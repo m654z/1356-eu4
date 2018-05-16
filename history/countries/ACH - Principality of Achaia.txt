@@ -124,7 +124,6 @@ capital = 1773	# Mystras
 		name = "Pietro I"
 		dynasty = "de Saint-Superan"
 		birth_date = 1350.1.1
-		death_date = 1402.1.1
 		dip = 1
 		adm = 1
 		mil = 2

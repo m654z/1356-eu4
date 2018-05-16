@@ -16,25 +16,25 @@ gen_SWI_ideas = {
 	}
 	free = yes  #will be triggered at load
 	
-	the_swiss_confederation = {
+	generic_the_swiss_confederation = {
 		stability_cost_modifier = -0.1
 	}
-	swiss_mercenaries = {
+	generic_swiss_mercenaries = {
 		mercenary_cost = -0.2
 	}
-	alpine_defensiveness = {
+	generic_alpine_defensiveness = {
 		fort_maintenance_modifier = -0.2
 	}
-	oasis_of_peace_and_prosperity = {
+	generic_oasis_of_peace_and_prosperity = {
 		development_cost = -0.1
 	}
-	swiss_tolerance = {
+	generic_swiss_tolerance = {
 		tolerance_heretic = 2
 	}
-	haven_for_refugees = {
+	generic_haven_for_refugees = {
 		prestige = 1
 	}
-	clockwork = {
+	generic_clockwork = {
 		production_efficiency = 0.1
 	}
 }
@@ -55,25 +55,25 @@ gen_BUL_ideas = {
 	}
 	free = yes
 	
-	bul_idea_1 = {
+	generic_bul_idea_1 = {
 		stability_cost_modifier = -0.1
 	}
-	bul_idea_2 = {
+	generic_bul_idea_2 = {
 		global_heretic_missionary_strength = 0.02		
 	}
-	bul_idea_3 = {
+	generic_bul_idea_3 = {
  		global_unrest = -1
 	}
-	bul_idea_4 = {
+	generic_bul_idea_4 = {
 		infantry_cost = -0.1
 	}
-	bul_idea_5 = {
+	generic_bul_idea_5 = {
 		prestige = 1
 	}
-	bul_idea_6 = {
+	generic_bul_idea_6 = {
 		land_morale = 0.10
 	}
-	bul_idea_7 = {
+	generic_bul_idea_7 = {
 		legitimacy = 1
 	}
 }
@@ -94,26 +94,26 @@ gen_CYP_ideas = {
 	}
 	free = yes
 
-	king_of_jerusalem = {
+	generic_king_of_jerusalem = {
 		legitimacy = 0.5
 		fabricate_claims_cost = -0.25
 	}
-	frankish_crusaders = {
+	generic_frankish_crusaders = {
 		army_tradition = 1.0
 	}
-	commandaria_wine = {
+	generic_commandaria_wine = {
 		production_efficiency = 0.1
 	}
-	lusignan_diplomacy = {
+	generic_lusignan_diplomacy = {
 		diplomatic_reputation = 1
 	}
-	cypriot_fortifications = {
+	generic_cypriot_fortifications = {
 		defensiveness = 0.25
 	}
-	repel_the_corsairs = {
+	generic_repel_the_corsairs = {
 		galley_power = 0.2
 	}
-	raid_turkish_commerce = {
+	generic_raid_turkish_commerce = {
 		embargo_efficiency = 0.1
 		privateer_efficiency = 0.15
 	}
@@ -139,25 +139,25 @@ gen_anatolian_beyliks_ideas = {
 	}
 	free = yes
 	
-	travelling_ozan= {
+	generic_travelling_ozan= {
 		global_unrest = -1
 	}
-	seljuq_marches = {
+	generic_seljuq_marches = {
 		global_manpower_modifier = 0.10
 	}
-	akinci_cavalry = {
+	generic_akinci_cavalry = {
 		cavalry_power = 0.15
 	}
-	ghazi = {
+	generic_ghazi = {
 		#uses ottoman ideas
 	}
-	caravanserais = {
+	generic_caravanserais = {
 		trade_efficiency = 0.1
 	}
-	anatolian_architecture = {
+	generic_anatolian_architecture = {
 		build_cost = -0.10
 	}
-	legacy_seljuqs_empire = {
+	generic_legacy_seljuqs_empire = {
 		prestige = 1
 	}
 }
@@ -177,25 +177,25 @@ gen_ARM_ideas = {
 	}
 	free = yes		#will be added at load.
 	
-	apostolic_church = {
+	generic_apostolic_church = {
 		global_missionary_strength = 0.02
 	}
-	land_reclamation = {
+	generic_land_reclamation = {
 		build_cost = -0.1
 	}
-	border_nation = {
+	generic_border_nation = {
 		diplomatic_reputation = 1
 	}
-	melikdom_organization = {
+	generic_melikdom_organization = {
 		global_tax_modifier = 0.1
 	}
-	sygnakhs = {
+	generic_sygnakhs = {
 		global_regiment_cost = -0.1
 	}
-	nakharar_titles = {
+	generic_nakharar_titles = {
 		enemy_core_creation = 0.25
 	}
-	end_of_armenian_diaspora = {
+	generic_end_of_armenian_diaspora = {
 		production_efficiency = 0.1
 	}
 }

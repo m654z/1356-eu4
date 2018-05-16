@@ -92,9 +92,9 @@ royal_marriage = {
 #################################
 
 # Aragon and Sicily
-alliance = {
-	first = ARA
-	second = SIC
-	start_date = 1386.5.19
-	end_date = 1409.7.25
-}
+#alliance = { #Changed to be Vanilla Compatible
+#	first = ARA
+#	second = SIC
+#	start_date = 1386.5.19
+#	end_date = 1409.7.25
+#}

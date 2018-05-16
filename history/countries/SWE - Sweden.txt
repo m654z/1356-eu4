@@ -414,6 +414,10 @@ national_focus = MIL
 	}
 }
 
+1551.12.31 = { leader = {	name = "Klas Horn"             	type = admiral	fire = 5	shock = 5	manuever = 4	siege = 0	death_date = 1566.9.9 } }
+
+#1555.1.1 = { leader = {	name = "Clas E. Fleming"       	type = general	fire = 3	shock = 3	manuever = 3	siege = 1	death_date = 1597.4.13 } }
+
 1552.8.22 = {
 	queen = {
 		country_of_origin = SWE
@@ -428,10 +432,6 @@ national_focus = MIL
 	}
 }
 
-1551.1.1 = { leader = {	name = "Klas Horn"             	type = admiral	fire = 5	shock = 5	manuever = 4	siege = 0	death_date = 1566.9.9 } }
-
-#1555.1.1 = { leader = {	name = "Clas E. Fleming"       	type = general	fire = 3	shock = 3	manuever = 3	siege = 1	death_date = 1597.4.13 } }
-
 1560.1.1 = { leader = {	name = "Hans Boije af Gennäs"  	type = general	fire = 2	shock = 2	manuever = 3	siege = 0	death_date = 1573.1.1 } }
 
 1560.9.30 = {
@@ -445,9 +445,7 @@ national_focus = MIL
 	}
 	clear_scripted_personalities = yes
 	add_ruler_personality = scholar_personality
-}
-
-1560.9.30 = {
+	
 	heir = {
 		name = "Johan"
 		monarch_name = "Johan III"
@@ -461,15 +459,16 @@ national_focus = MIL
 	}
 }
 
-1561.1.1 = { leader = {	name = "Bo Grip"               	type = general	fire = 4	shock = 2	manuever = 3	siege = 0	death_date = 1569.1.1 } }
+1561.1.1 = { add_accepted_culture = estonian } 
+
+1561.1.2 = { leader = {	name = "Bo Grip"               	type = general	fire = 4	shock = 2	manuever = 3	siege = 0	death_date = 1569.1.1 } }
  
 1563.1.1 = { leader = {	name = "Charles de Mornay"	type = general	fire = 4	shock = 2	manuever = 3	siege = 0	death_date = 1574.9.4 } }
 
-1563.1.1 = { leader = {	name = "Henrik Horn"           	type = general	fire = 3	shock = 2	manuever = 3	siege = 1	death_date = 1693.1.1 } }
+1563.1.2 = { leader = {	name = "Henrik Horn"           	type = general	fire = 3	shock = 2	manuever = 3	siege = 1	death_date = 1693.1.1 } }
 
 1565.1.1 = { leader = {	name = "Pontus de la Gardie"	type = general	fire = 2	shock = 4	manuever = 4	siege = 1	death_date = 1585.11.5 } }
 
-1561.1.1 = { add_accepted_culture = estonian } 
 
 
 1568.7.4 = {
@@ -508,6 +507,17 @@ national_focus = MIL
 	}
 	clear_scripted_personalities = yes
 	add_ruler_personality = just_personality
+	heir = {
+		name = "Sigismund"
+		monarch_name = "Sigismund III"
+		dynasty = "Vasa"
+		birth_date = 1566.6.20
+		death_date = 1632.4.30
+		claim = 95
+		adm = 2
+		dip = 2
+		mil = 3
+	}
 }
 
 1569.7.10 = { #Official Coronation + Tag Switch POL -> PLC
@@ -521,20 +531,6 @@ national_focus = MIL
 		adm = 3
 		dip = 3
 		mil = 1
-	}
-}
-
-1568.9.30 = {
-	heir = {
-		name = "Sigismund"
-		monarch_name = "Sigismund III"
-		dynasty = "Vasa"
-		birth_date = 1566.6.20
-		death_date = 1632.4.30
-		claim = 95
-		adm = 2
-		dip = 2
-		mil = 3
 	}
 }
 
@@ -600,9 +596,6 @@ national_focus = MIL
 		dip = 4
 		mil = 1
 	}
-}
-
-1598.8.1 = {
 	heir = {
 		name = "Gustav Adolf"
 		monarch_name = "Gustav II Adolf"
@@ -677,7 +670,7 @@ national_focus = MIL
 }
 
 
-1630.1.1 = { leader = {	name = "Johan Banér"		type = general	fire = 4	shock = 5	manuever = 5	siege = 1	death_date = 1641.5.10 } }
+1629.12.31 = { leader = {	name = "Johan Banér"		type = general	fire = 4	shock = 5	manuever = 5	siege = 1	death_date = 1641.5.10 } }
 
 1630.1.1 = { leader = {	name = "Lennart Torstensson"	type = general	fire = 5	shock = 4	manuever = 5	siege = 2	death_date = 1651.5.7 } }
 
@@ -824,9 +817,6 @@ national_focus = MIL
 	clear_scripted_personalities = yes
 	add_ruler_personality = bold_fighter_personality
 	add_ruler_personality = strict_personality
-}
-
-1697.4.7 = {
 	heir = {
 		name = "Ulrika Eleonora"
 		monarch_name = "Ulrika Eleonora"
@@ -847,11 +837,11 @@ national_focus = MIL
 
 #1700.1.1 = { leader = {	name = "Magnus Stenbock"       	type = general	fire = 3	shock = 4	manuever = 3	siege = 0	death_date = 1713.5.6 } } # Removed /SWÖ
 
-1700.1.1 = { leader = {	name = "Wachtmeister"          	type = admiral	fire = 3	shock = 3	manuever = 4	siege = 0	death_date = 1717.1.1 } }
+1700.1.2 = { leader = {	name = "Wachtmeister"          	type = admiral	fire = 3	shock = 3	manuever = 4	siege = 0	death_date = 1717.1.1 } }
 
 1701.1.1 = { leader = {	name = "Adam Lewenhaupt"	type = general	fire = 4	shock = 4	manuever = 2	siege = 1	death_date = 1719.2.12 } }
 
-1707.1.1 = { leader = {	name = "Lars Gathenhielm"	type = admiral	fire = 0	shock = 4	manuever = 5	siege = 0	death_date = 1718.4.25 } }
+1707.1.2 = { leader = {	name = "Lars Gathenhielm"	type = admiral	fire = 0	shock = 4	manuever = 5	siege = 0	death_date = 1718.4.25 } }
 
 1710.1.1 = { leader = {	name = "H.M. von Buddenbrock"	type = general	fire = 3	shock = 3	manuever = 2	siege = 0	death_date = 1743.7.16 } }
 
@@ -927,9 +917,6 @@ national_focus = MIL
 		dip = 4
 		mil = 3
 	}
-}
-
-1751.3.27 = {
 	heir = {
 		name = "Gustav"
 		monarch_name = "Gustav III"
@@ -943,7 +930,6 @@ national_focus = MIL
 		leader = {	name = "Gustav III"	type = general	fire = 1	shock = 2	manuever = 2	siege = 0 		}
 	}
 }
-
 
 1755.1.1 = { leader = {	name = "Henrik af Trolle"	type = general	fire = 3	shock = 4	manuever = 4	siege = 0	death_date = 1784.3.11 } }
 
@@ -1000,9 +986,6 @@ national_focus = MIL
 		dip = 0
 		mil = 2
 	}
-}
-
-1792.4.3 = {
 	heir = {
 		name = "Karl"
 		monarch_name = "Karl XIII"
@@ -1032,7 +1015,7 @@ national_focus = MIL
 
 1801.1.1 = { leader = {	name = "Sandels"               	type = general	fire = 3	shock = 4	manuever = 6	siege = 0	death_date = 1827.1.1 } }
 
-1801.1.1 = { leader = {	name = "Toll"                  	type = general	fire = 3	shock = 3	manuever = 3	siege = 0	death_date = 1817.1.1 } }
+1801.1.2 = { leader = {	name = "Toll"                  	type = general	fire = 3	shock = 3	manuever = 3	siege = 0	death_date = 1817.1.1 } }
 
 1809.5.1 = {
 	monarch = {

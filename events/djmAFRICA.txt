@@ -1,7 +1,7 @@
 namespace = flavor_afr
 normal_or_historical_nations = yes
 
-# Spawn TGT
+# Spawn TGT #No longer needed
 #province_event = {
 #	id = flavor_afr.1
 #	title = flavor_afr.1.t
@@ -69,31 +69,31 @@ normal_or_historical_nations = yes
 #}
 
 # Event to send to other province owners of the area when Funj is formed.
-country_event = {
-	id = flavor_afr.3
-	title = flavor_afr.1.t
-	desc = flavor_afr.1.d
-	picture = RELIGIOUS_TURMOIL_eventPicture
-	
-	is_triggered_only = yes
-	
-	trigger = {
-		NOT = { owns = 351 }
-	}
-
-	option = {
-		name = flavor_afr.1.a
-		tooltip = {
-
-			351 = {
-				add_core = TGT
-			}
-			2456  = {
-				add_core = TGT
-			}
-			2472 = {
-				add_core = TGT
-			}
-		}
-	}
-}
+#country_event = {
+#	id = flavor_afr.3
+#	title = flavor_afr.1.t
+#	desc = flavor_afr.1.d
+#	picture = RELIGIOUS_TURMOIL_eventPicture
+#	
+#	is_triggered_only = yes
+#	
+#	trigger = {
+#		NOT = { owns = 351 }
+#	}
+#
+#	option = {
+#		name = flavor_afr.1.a
+#		tooltip = {
+#
+#			351 = {
+#				add_core = TGT
+#			}
+#			2456  = {
+#				add_core = TGT
+#			}
+#			2472 = {
+#				add_core = TGT
+#			}
+#		}
+#	}
+#}

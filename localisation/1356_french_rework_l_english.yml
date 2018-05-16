@@ -33,6 +33,19 @@
  walloon_nation_title: "Form the Kingdom of Wallonia"
  walloon_nation_desc: "We as Walloons have been under many dukes and kings for centuries. From Flems, to French, to Germans. However we have never been unified as a people. This is a rich and prosperous land and has the potential to stand on its own independently!"
  
+ #New CB's & Disasters
+ cb_border_war_feudalism: "Border War"
+ cb_border_war_feudalism_desc: ""
+ cb_pu_feudalism: ""
+ cb_pu_feudalism_desc: ""
+ goal_feudalism_pu_war: ""
+ goal_feudalism_pu_war_desc: ""
+ goal_feudalism_border_war: ""
+ goal_feudalism_border_war_desc: ""
+ disaster_french_civil_war: "French Feudal Civil War"
+ 
+ 
+ 
  #Governments
  french_feudal_monarchy: "French Feudal Monarchy"
  french_feudal_monarchy_desc: "While not much different from most Feudal Monarchies, France and its historical setup are vastly complicated in 1356, where the French King struggled to juggle the English problem on top of the powerful Dukes."
@@ -62,6 +75,7 @@
   fra_ruler_in_prison: "Our Ruler in Prison"
   constantinopole_fort_1356_modifier: "The Walls of Constantinopole"
   generic_make_ally: "Made a friend"
+  claim_to_kingdom_france: ""
   
  #FRA Missions
  fra_feud_vassal_integrate_mission_1_title: "Integrate Orleans"

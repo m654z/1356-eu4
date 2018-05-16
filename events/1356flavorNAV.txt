@@ -1,4 +1,4 @@
-namespace = 1356NAV
+namespace = 1356nav
 
 
 #Charles attempt on John II's life. 1355, a year before the start
@@ -190,13 +190,13 @@ country_event = {
 		name = 1356nav.7.a
 		add_war_exhaustion = -2
 		add_prestige = 2
-		fra = {	add_war_exhaustion = -2	}
+		FRA = {	add_war_exhaustion = -2	}
 		country_event = { id = 1356nav.8 days = 250 }
 	}
 	option = { #Never!
 		name = 1356nav.7.b
 		add_manpower = -1
-		fra = {	add_war_exhaustion = 1	}
+		FRA = {	add_war_exhaustion = 1	}
 		
 		country_event = { id = 1356nav.8 days = 250 }
 	}

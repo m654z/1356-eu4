@@ -33,7 +33,7 @@ country_event = {
 		}
 		OIR = {
 			disband_rebels = nationalist_rebels
-			disband_rebels = patriot_rebels
+			#disband_rebels = patriot_rebels
 		}
 	}
 }

@@ -69,10 +69,10 @@ alliance = {
 	end_date = 1357.9.23
 }
 
-vassal = {
+vassal = { #Changed to be Vanilla compatible
 	first = SCO
 	second = LOI
 	start_date = 1356.1.1
-	end_date = 1493.1.1
+	end_date = 1443.12.31
 
 }

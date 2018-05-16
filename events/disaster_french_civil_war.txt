@@ -1,5 +1,4 @@
-namespace = french_civil_war
-
+namespace = fre_disaster_civil_war
 #Event that releases everyone for Civil War
 country_event = {
 	id = fre_disaster_civil_war.1
@@ -17,7 +16,6 @@ country_event = {
 	option = {
 		name = fre_disaster_civil_war.1.a
 		add_stability = -2
-		add_cash = -50
 		add_prestige = -20
 		break_union = DAU
 		release_all_subjects = yes
@@ -50,12 +48,12 @@ country_event = {
 		}
 		change_tag = VAL
 		set_government_rank = 2
-		remove_accepted_culture = occitian
+		remove_accepted_culture = occitain
 		remove_accepted_culture = gascon
 		remove_accepted_culture = breton
-		remove_accepted_culture = norman
+		remove_accepted_culture = normand
 		remove_accepted_culture = burgundian
-		remove_accepted_culture = walloon
+		remove_accepted_culture = wallonian
 		VAL = {
 			every_core_province = { 
 				remove_core = VAL
@@ -91,8 +89,10 @@ country_event = {
 	
 	option = {
 		name = fre_disaster_civil_war.2.a
-		end_disaster = french_civil_war
-		add_stability = 2	
+		VAL = {
+			end_disaster = disaster_french_civil_war
+			add_stability = 2	
+		}
 	}
 	
 }
@@ -119,8 +119,6 @@ country_event = {
 		NOT = { tag = NAV }
 		NOT = { tag = DAN }
 		technology_group = western
-		has_matching_religion = catholic
-
 	}
 	
 	mean_time_to_happen = {
@@ -137,7 +135,7 @@ country_event = {
 		add_legitimacy = 5
 		emperor = {
 			country_event = { 
-			id = fre_disaster_civil_war.5
+			id = fre_disaster_civil_war.6
 			days = 15
 			}
 		}

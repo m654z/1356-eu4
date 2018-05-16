@@ -142,6 +142,7 @@ historical_friend = SER
 		monarch_name = "Stjepan Ostojic"
 		dynasty = "Kotromanic"
 		birth_date = 1400.1.1
+		death_date = 1403.1.1
 		claim = 95
 		adm = 1
 		dip = 1

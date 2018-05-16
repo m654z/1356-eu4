@@ -1,4 +1,5 @@
 casus_belli = {
+	# Audax Validator "." Ignore_NEXT
 	type = cb_restore_personal_union
 	first = ENG
 	second = FRA
@@ -151,11 +152,11 @@ union = {
 }
 
 # Burgundy and Nevers
-vassal = {
+vassal = { #Changed to be Vanilla compatible
 	first = BUR
 	second = NEV
 	start_date = 1405.3.16
-	end_date = 1465.1.1
+	end_date = 1443.12.31
 }
 
 # Burgundy and Rethel
@@ -191,21 +192,21 @@ union = {
 }
 
 # Dutch states
-union = {
+union = { #Changed to be Vanilla compatible
 	first = BUR
 	second = FLA
 	start_date = 1405.3.16
-	end_date = 1477.1.5
+	end_date = 1443.12.31
 }
-union = {
+union = {#Changed to be Vanilla compatible
 	first = BUR
 	second = BRB
 	start_date = 1430.8.4
-	end_date = 1477.1.5
+	end_date = 1443.12.31
 }
-union = {
+union = {#Changed to be Vanilla compatible
 	first = BUR
 	second = HOL
 	start_date = 1428.7.3
-	end_date = 1477.1.5
+	end_date = 1443.12.31
 }

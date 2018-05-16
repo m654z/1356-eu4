@@ -33,13 +33,13 @@ province_event = {
 			factor = 0.15
 			culture = moluccan
 		}
-		modifier = {
-			factor = -0.25
-			OR = {
-				tag = BLI
-				tag = BLM
-			}
-		}
+		#modifier = {
+		#	factor = -0.25
+		#	OR = {
+		#		tag = BLI
+		#		tag = BLM
+		#	}
+		#}
 	}
 	option = {
 		name = "indo_islam_port_opt1"

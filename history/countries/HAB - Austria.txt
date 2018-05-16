@@ -905,6 +905,17 @@ national_focus = ADM
 		}
 }
 
+1650.1.2 = {
+	set_global_flag = mocha_killed
+	change_price = {
+		trade_goods = coffee
+		key = JAVA_COFFEE
+		value = -0.4
+		duration = -1
+	}
+}
+
+
 1651.4.30 = {
 	queen = {
 		country_of_origin = MAN
@@ -931,15 +942,6 @@ national_focus = ADM
 	
 }
 
-1650.1.1 = {
-	set_global_flag = mocha_killed
-	change_price = {
-		trade_goods = coffee
-		key = JAVA_COFFEE
-		value = -0.4
-		duration = -1
-	}
-}
 
 #Trade Good Events
 1660.1.1 = {

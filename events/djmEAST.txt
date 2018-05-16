@@ -133,22 +133,22 @@ country_event = {
 }
 
 
-country_event = {
-	id = djm_east.4
-	title = "cleanup"
-	desc = "cleanup"
-	picture = COURT_eventPicture
-		
-	trigger = {
-		government = nogovernment
-	}
-	
-	mean_time_to_happen = {
-		days=1
-	}	
-	
-	option = {
-		name = "cleanup"
-		change_government = despotic_monarchy
-	}
-}
+#country_event = {
+#	id = djm_east.4
+#	title = "cleanup"
+#	desc = "cleanup"
+#	picture = COURT_eventPicture
+#		
+#	trigger = {
+#		government = nogovernment
+#	}
+#	
+#	mean_time_to_happen = {
+#		days=1
+#	}	
+#	
+#	option = {
+#		name = "cleanup"
+#		change_government = despotic_monarchy
+#	}
+#}

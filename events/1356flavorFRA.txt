@@ -1,4 +1,4 @@
-namespace = 1356FRA
+namespace = 1356fra
 
 #French Event on how to deal with Dauphine
 country_event = {
