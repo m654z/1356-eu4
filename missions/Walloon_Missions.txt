@@ -1,4 +1,4 @@
-wal_french_buffer_state = {
+wal_buffer_states_north = {
 
 	slot = 1
 	generic = no
@@ -8,16 +8,203 @@ wal_french_buffer_state = {
 		OR = {
 			tag = RET
 			tag = HAI
-			tag = LUX #Make their own!
 			tag = LIE #Make Bishopric tree?
 			tag = ARS
+			tag = WOO
 		}
 	}
 	has_country_shield = yes
 	
+	wal_take_flanders = { #Secure flanders
+		icon = mission_assemble_an_army
+		required_missions = { wal_form_wallonia }
+		position = 6
+		completed_by = 1821.1.1
+		provinces_to_highlight = {
+			OR = {
+				area = flanders_area
+				province_id = 92
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			flanders_area = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			92 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			
+		}
+		effect = {
+			2974 = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			1742 = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	wal_take_loon_upper_guelders = { #Secure two provinces
+		icon = mission_assemble_an_army
+		required_missions = { wal_take_flanders }
+		position = 7
+		completed_by = 1821.1.1
+		provinces_to_highlight = {
+			OR = {
+				province_id = 2974
+				province_id = 1742
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			2974 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			1742 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			
+		}
+		effect = {
+			95 = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			96 = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	wal_begin_annex_dutch = { #Secure part of the Dutch
+		icon = mission_assemble_an_army
+		required_missions = { wal_take_loon_upper_guelders }
+		position = 8
+		completed_by = 1821.1.1
+		provinces_to_highlight = {
+			OR = {
+				province_id = 95
+				province_id = 96
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			95 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			96 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			
+		}
+		effect = {
+			4383 = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			97 = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	wal_annex_holland = { #Secure part of the Dutch
+		icon = mission_assemble_an_army
+		required_missions = { wal_begin_annex_dutch }
+		position = 9
+		completed_by = 1821.1.1
+		provinces_to_highlight = {
+			OR = {
+				province_id = 4383
+				province_id = 97
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			4383 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			97 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			
+		}
+		effect = {
+			98 = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			99 = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	wal_annex_utrecht_gelre = { #Secure part of the Dutch
+		icon = mission_assemble_an_army
+		required_missions = { wal_annex_holland }
+		position = 10
+		completed_by = 1821.1.1
+		provinces_to_highlight = {
+			OR = {
+				province_id = 98
+				province_id = 99
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			98 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			99 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			
+		}
+		effect = {
+			add_prestige = 15
+		}
+	}
 }
 
-wal_unite_the_walloons = {
+wal_unite_the_walloons_start_tree = {
 	slot = 2
 	generic = no
 	ai = yes
@@ -26,16 +213,185 @@ wal_unite_the_walloons = {
 		OR = {
 			tag = RET
 			tag = HAI
-			tag = LUX #Make their own!
 			tag = LIE #Make Bishopric tree?
 			tag = ARS
+			tag = WOO
 		}
 	}
 	has_country_shield = yes
 	
+	wal_secure_our_independence = { #FREEDOM
+		icon = mission_assemble_an_army
+		required_missions = {  }
+		position = 1
+		completed_by = 1821.1.1
+		trigger = {
+			is_vassal = no
+		}
+		effect = {
+			create_general = 20
+		}
+	}
+	wal_take_hainaut_namur = { #Secure two provinces
+		icon = mission_assemble_an_army
+		required_missions = { wal_secure_our_independence  }
+		position = 2
+		completed_by = 1821.1.1
+		provinces_to_highlight = {
+			OR = {
+				province_id = 91
+				province_id = 1866
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			91 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			1866 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			
+		}
+		effect = {
+			93 = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			94 = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	wal_take_liege_luxemburg = { #Secure two provinces
+		icon = mission_assemble_an_army
+		required_missions = { wal_take_hainaut_namur  }
+		position = 3
+		completed_by = 1821.1.1
+		provinces_to_highlight = {
+			OR = {
+				province_id = 93
+				province_id = 94
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			93 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			94 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			
+		}
+		effect = {
+			181 = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			1743 = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			88 = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	wal_take_rethel_cambray_artois = { #Secure three provinces
+		icon = mission_assemble_an_army
+		required_missions = { wal_take_liege_luxemburg  }
+		position = 4
+		completed_by = 1821.1.1
+		provinces_to_highlight = {
+			OR = {
+				province_id = 181
+				province_id = 1743
+				province_id = 88
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			181 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			1743 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			88 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			
+		}
+		effect = {
+			add_prestige = 10
+			add_dip = 30
+		}
+	}
+	wal_form_wallonia = { #FREEDOM
+		icon = mission_assemble_an_army
+		required_missions = { wal_take_rethel_cambray_artois }
+		position = 5
+		completed_by = 1821.1.1
+		trigger = {
+			OR = {
+				NOT = { exists = WOO }
+				tag = WOO
+			}
+		}
+		effect = {
+			add_prestige = 10
+		}
+	}
+	wal_annex_lower_rhineland = { #Secure part of the Dutch
+		icon = mission_assemble_an_army
+		required_missions = { wal_form_wallonia }
+		position = 6
+		completed_by = 1821.1.1
+		provinces_to_highlight = {
+			OR = {
+				area = lower_rhineland_area
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			lower_rhineland_area = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			
+		}
+		effect = {
+			add_adm = 30
+		}
+	}
 }
 
-wal_unite_the_lowlands = {
+wal_secure_french_border = {
 	slot = 3
 	generic = no
 	ai = yes
@@ -44,34 +400,48 @@ wal_unite_the_lowlands = {
 		OR = {
 			tag = RET
 			tag = HAI
-			tag = LUX #Make their own!
 			tag = LIE #Make Bishopric tree?
 			tag = ARS
+			tag = WOO
 		}
 	}
 	has_country_shield = yes
 	
-}
-
-wal_secure_homeland = {
-	slot = 4
-	generic = no
-	ai = yes
-	
-	potential = { 
-		OR = {
-			tag = RET
-			tag = HAI
-			tag = LUX #Make their own!
-			tag = LIE #Make Bishopric tree?
-			tag = ARS
+	wal_annex_the_walloon_border = { #Secure three provinces
+		icon = mission_assemble_an_army
+		required_missions = { wal_form_wallonia }
+		position = 6
+		completed_by = 1821.1.1
+		provinces_to_highlight = {
+			OR = {
+				province_id = 89
+				province_id = 182
+				province_id = 186
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			186 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			182 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			89 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			
+		}
+		effect = {
+			add_prestige = 10
+			add_mil = 30
 		}
 	}
-	has_country_shield = yes
-	
 }
 
-
+#Lifted from the Dutch Colonial Tree
 wal_beyond_europe = {
 	slot = 5
 	generic = no
@@ -81,11 +451,322 @@ wal_beyond_europe = {
 		OR = {
 			tag = RET
 			tag = HAI
-			tag = LUX #Make their own!
 			tag = LIE #Make Bishopric tree?
 			tag = ARS
+			tag = WOO
 		}
 	}
 	has_country_shield = yes
+		
+	wal_caribbean_discovery = {
+		icon = mission_establish_high_seas_navy
+		required_missions = { }
+		position = 1
+		completed_by = 1550.1.1
+		
+		trigger = {
+			custom_trigger_tooltip = {
+				tooltip = miss_discover_caribbean
+				colonial_the_carribean = {
+					has_discovered = ROOT
+				}
+			}
+		}
+		
+		effect = {
+			add_prestige = 15
+			add_country_modifier = {
+				name = "the_unknown_frontier"
+				duration = 5475
+			}
+		}
+	}
+	wal_american_discovery = {
+		icon = mission_colonial
+		required_missions = { wal_caribbean_discovery }
+		position = 2
+		completed_by = 1640.1.1
+		
+		trigger = {
+			custom_trigger_tooltip = {
+				tooltip = miss_discover_eastern_america
+				colonial_eastern_america = {
+					has_discovered = ROOT
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = miss_colonize_eastern_america
+				num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+					value = 1
+					colonial_region = colonial_eastern_america
+					is_city = yes
+				}
+			}
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = "por_brazil_colonial"
+				duration = 5475
+			}
+		}
+	}
+	wal_brazil_colony = {
+		icon = mission_colonial
+		required_missions = { wal_american_discovery }
+		position = 3
+		completed_by = 1650.1.1
+		
+		provinces_to_highlight = {
+			colonial_region = colonial_brazil
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+			has_discovered = ROOT
+		}
+		
+		trigger = {
+			custom_trigger_tooltip = {
+			tooltip = miss_discover_brazil
+				colonial_brazil = {
+					has_discovered = ROOT
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = miss_colonize_brazil
+				num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+					value = 1
+					colonial_region = colonial_brazil
+					is_city = yes
+				}
+			}
+		}
+		
+		effect = {
+			colonial_brazil = {
+				limit = { 
+					OR = {
+						country_or_non_sovereign_subject_holds = CAS
+						country_or_non_sovereign_subject_holds = POR
+						country_or_non_sovereign_subject_holds = SPA
+					}
+				}
+				add_claim = ROOT
+			}
+			add_country_modifier = {
+				name = "ned_brazil_mod"
+				duration = 5475
+			}
+		}
+	}
+	wal_south_africa_colony = {
+		icon = mission_trade_company_region_abroad
+		required_missions = { wal_brazil_colony }
+		position = 4
+		completed_by = 1660.1.1
+		
+		provinces_to_highlight = {
+			OR = {
+				province_id = 833
+				province_id = 1177
+				province_id = 1179
+			}
+			NOT = { owned_by = ROOT }
+			has_discovered = ROOT
+		}
+				
+		trigger = {
+			custom_trigger_tooltip = {
+				tooltip = ned_south_africa_colony.tooltip
+				OR = {
+					833 = {
+						owned_by = ROOT
+						is_city = yes
+					}
+					1177 = {
+						owned_by = ROOT
+						is_city = yes
+					}
+					1179 = {
+						owned_by = ROOT
+						is_city = yes
+					}
+				}
+			}
+		}
+		
+		effect = {
+			add_treasury = 300
+			lanka_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	wal_india_ceylon = {
+		icon = mission_conquer_50_development
+		required_missions = { wal_south_africa_colony }
+		position = 5
+		completed_by = 1660.1.1
+		
+		provinces_to_highlight = {
+			area = lanka_area
+			NOT = { owned_by = ROOT }
+			has_discovered = ROOT
+		}
+		
+		trigger = {
+			lanka_area = {
+				type = all
+				owned_by = ROOT
+			}
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = "ned_ceylon_mod"
+				duration = "5475"
+			}
+		}
+	}
+	wal_spice_australia = {
+		icon = mission_sea_battles
+		required_missions = { wal_india_ceylon }
+		position = 6
+		completed_by = 1660.1.1
+		
+		trigger = {
+			custom_trigger_tooltip = {
+				tooltip = ned_spice_australia.tooltip
+				colonial_australia = {
+					has_discovered = ROOT
+				}
+				trade_company_indonesia = {
+					has_discovered = ROOT
+				}
+				trade_company_moluccas = {
+					has_discovered = ROOT
+				}
+			}
+		}
+		
+		effect = {
+			create_admiral = 80
+		}
+	}
+	wal_indonesia_cot = {
+		icon = mission_asian_trader
+		required_missions = { wal_spice_australia }
+		position = 7
+		
+		provinces_to_highlight = {
+			province_id = 1361
+			has_discovered = ROOT
+		}
+		
+		trigger = { 
+			1361 = {		# Straits of Johor
+				is_strongest_trade_power = NED
+			}
+		}
 	
+		effect = {
+			add_country_modifier = {
+				name = "por_johor_dominance"
+				duration = 7300
+			}
+			malacca_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			malaya_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	wal_malacca = {
+		icon = mission_unite_home_region
+		required_missions = { wal_indonesia_cot }
+		position = 8
+		
+		provinces_to_highlight = {
+			OR = {
+				area = malaya_area
+				area = malacca_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+			has_discovered = ROOT
+		}
+		
+		trigger = {
+			malaya_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			malacca_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		
+		effect = {
+			596 = {
+				add_trade_modifier = {
+					who = root
+					duration = 5475
+					power = 35
+					key = malacca_conquest
+				}
+			}
+			taiwan_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	wal_taiwan = {
+		icon = mission_rice_field
+		required_missions = { wal_malacca }
+		position = 9
+		
+		provinces_to_highlight = {
+			area = taiwan_area
+			NOT = { owned_by = ROOT }
+			has_discovered = ROOT
+		}
+		
+		trigger = {
+			custom_trigger_tooltip = {
+				tooltip = ned_taiwan.tooltip
+				taiwan_area = {
+					type = all
+					owned_by = ROOT
+					is_city = yes
+				}
+			}
+		}
+		
+		effect = {
+			taiwan_area = {
+				add_province_modifier = {
+					name = "ned_zeelandia_mod"
+					duration = "-1"
+				}
+				add_base_tax = 2
+				add_base_production = 2
+				add_base_manpower = 2
+			}
+		}
+	}
 }

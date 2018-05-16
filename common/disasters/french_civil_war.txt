@@ -1,30 +1,32 @@
-civil_war = {
+french_civil_war = {
 	potential = {
 		tag = FRA
 		is_ai = yes
 		current_age = age_of_feudalism
 		government = monarchy
 		is_free_or_tributary_trigger = yes
-		NOT = { has_country_flag = 1356_french_civil_war }
+		NOT = { has_global_flag = 1356_french_civil_war }
 	}
 
 	
 	
 	can_start = {
+		tag = FRA
 		is_ai = yes
-		has_any_disaster = no
-		has_regency = no
-		OR = {
-			NOT = { months_of_ruling = 24 }
-			ruler_age = 65
+		FRA = {
+			has_any_disaster = no
+			has_regency = no
+			OR = {
+				NOT = { months_of_ruling = 24 }
+				ruler_age = 65
+			}
+			OR = {
+				has_new_dynasty = yes
+				heir_has_ruler_dynasty = no
+				has_foreign_heir = yes
+				#has_heir = no
+			}
 		}
-		OR = {
-			has_new_dynasty = yes
-			heir_has_ruler_dynasty = no
-			has_foreign_heir = yes
-			#has_heir = no
-		}
-		
 	}
 	
 	
@@ -38,7 +40,7 @@ civil_war = {
 	
 	progress = {
 		modifier = {
-			factor = 1.5
+			factor = 1
 			ruler_age = 65
 		}
 		#modifier = {
@@ -46,15 +48,15 @@ civil_war = {
 		#	has_heir = no
 		#}
 		modifier = {
-			factor = 3
+			factor = 2
 			NOT = { months_of_ruling = 24 }
 		}
 		modifier = {
-			factor = 3
+			factor = 2
 			heir_has_ruler_dynasty = no
 		}		
 		modifier = {
-			factor = 3
+			factor = 2
 			has_foreign_heir = yes
 		}	
 	}

@@ -1,4 +1,4 @@
-nav_charles_ii_ambition = { #Integrate Normandy, and protect it better
+nav_family_claims_1 = { #Integrate Normandy, and protect it better
 
 	slot = 1
 	generic = no
@@ -7,9 +7,36 @@ nav_charles_ii_ambition = { #Integrate Normandy, and protect it better
 	potential = { tag = NAV }
 	has_country_shield = yes
 	
+	nav_royal_land_claims = { #Family Claims on Kingdom of France
+		icon = mission_assemble_an_army
+		required_missions = {  }
+		position = 2
+		completed_by = 1821.1.1
+		provinces_to_highlight = {
+			OR = {
+				province_id = 182
+				province_id = 4388
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			182 = {
+				#type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			4388 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			add_prestige = 5
+		}
+	}
 }
 
-nav_charles_ii_family_french_claims = { #Take lands Charles and his Family have claims to.
+nav_family_claims_2 = { #Take lands Charles and his Family have claims to.
 	slot = 2
 	generic = no
 	ai = yes
@@ -17,9 +44,141 @@ nav_charles_ii_family_french_claims = { #Take lands Charles and his Family have 
 	potential = { tag = NAV }
 	has_country_shield = yes
 	
+	nav_picard_claims = { #Family Claims on Artois
+		icon = mission_assemble_an_army
+		required_missions = {  }
+		position = 1
+		completed_by = 1821.1.1
+		provinces_to_highlight = {
+			OR = {
+				province_id = 89
+				province_id = 88
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			89 = {
+				#type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			88 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			1879 = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	nav_norman_claims = { #Family Claims on Artois
+		icon = mission_assemble_an_army
+		required_missions = { nav_picard_claims }
+		position = 2
+		completed_by = 1821.1.1
+		provinces_to_highlight = {
+			OR = {
+				province_id = 1879
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			1879 = {
+				#type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			183 = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	nav_royal_land_claims_bur = { #Family Claims on Duchy of Burgundy
+		icon = mission_assemble_an_army
+		required_missions = { nav_norman_claims nav_royal_land_claims nav_nemours }
+		position = 3
+		completed_by = 1821.1.1
+		provinces_to_highlight = {
+			OR = {
+				province_id = 4392
+				province_id = 192
+				province_id = 1877
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			4392 = {
+				#type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			192 = {
+				#type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			1877 = {
+				#type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+
+		}
+		effect = {
+			183 = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	nav_royal_land_claims = { #Family Claims on Kingdom of France
+		icon = mission_assemble_an_army
+		required_missions = { nav_royal_land_claims_bur }
+		position = 4
+		completed_by = 1821.1.1
+		provinces_to_highlight = {
+			OR = {
+				province_id = 183
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			183 = {
+				#type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			1879 = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	
 }
 
-nav_charles_ii_participation_in_hyw = { #AKA Main tree until HYW ends
+nav_family_claims_3 = { 
 	slot = 3
 	generic = no
 	ai = yes
@@ -27,76 +186,61 @@ nav_charles_ii_participation_in_hyw = { #AKA Main tree until HYW ends
 	potential = { tag = NAV }
 	has_country_shield = yes
 	
-	nav_conquer_picardy = { #
+	nav_champagne_claims = { #His Mothers Champagne Claims
 		icon = mission_assemble_an_army
 		required_missions = {  }
 		position = 1
-		completed_by = 1477.1.5
+		completed_by = 1821.1.1
 		provinces_to_highlight = {
 			OR = {
-				area = champagne_area
-				province_id = 89
-				province_id = 88
-				province_id = 1743
+				province_id = 186
+				province_id = 4390
 			}
 			NOT = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
 		trigger = {
-			champagne_area = {
-				type = all
+			186 = {
+				#type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
-			89 = {
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			88 = {
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			1743 = {
+			4390 = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
 		effect = {
-			wallonia_area = {
+			185 = {
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { owned_by = ROOT }
 				}
 				add_permanent_claim = ROOT
-			}
-			flanders_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { owned_by = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			87 = {
-				if = {
-					limit = {
-						NOT = {
-							owned_by = ROOT
-							is_core = ROOT
-						}
-					}
-					add_permanent_claim = ROOT
-				}
 			}
 		}
 	}
-	
-}
-
-
-
-nav_beyond_europe = {
-	slot = 5
-	generic = no
-	ai = yes
-	
-	potential = { tag = NAV }
-	has_country_shield = yes
+	nav_nemours = { #
+		icon = mission_assemble_an_army
+		required_missions = {  }
+		position = 2
+		completed_by = 1821.1.1
+		provinces_to_highlight = {
+			OR = {
+				province_id = 185
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			185 = {
+				#type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			add_prestige = 5
+		}
+	}
 	
 }

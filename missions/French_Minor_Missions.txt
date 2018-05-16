@@ -30,9 +30,7 @@ fre_minor_secure_french_independence = {
 		}
 	}
 
-
 }
-
 
 fre_minor_rightful_french_kings = {
 
@@ -121,7 +119,17 @@ fre_minor_rightful_french_kings = {
 			}
 		}
 	}
-	
+	FRE_minor_reform_france = { #Form the Kingdom of France
+		icon = mission_assemble_an_army
+		required_missions = { FRE_minor_take_paris }
+		position = 2
+		completed_by = 1821.1.1
+		trigger = {
+			NOT = { exists = FRA }
+		}
+		effect = {
+		}
+	}
 }
 
 
@@ -188,7 +196,6 @@ fre_minor_unite_the_duchies = {
 			}
 		}
 	}
-	
 }
 
 fre_minor_build_up = { #Modified Generic Missions due to placement
@@ -251,6 +258,7 @@ fre_minor_build_up = { #Modified Generic Missions due to placement
 		}
 	}
 	
+	#Minor Generic Versions of this chain so they dont disapear
 	fre_minor_generic_make_a_friend = { #Friendship!
 		icon = mission_assemble_an_army
 		required_missions = {  }
@@ -403,6 +411,7 @@ fre_minor_missions_colonial = { #Colonize and such. Taken from Vanilla France.
 		}
 	}
 	
+	#Copy-Paste French Colonial Chain
 	FRE_Minor_build_fleet = { #Make a Navy
 		icon = mission_galleys_in_port
 		required_missions = { }

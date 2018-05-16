@@ -129,22 +129,33 @@ country_event = {
 	
 	option = { #We stay independent!
 		name = fre_disaster_civil_war.3.a
-		ai_chance = { factor = 65 }
+		ai_chance = { factor = 95 }
 		france_region = {
 			add_permanent_claim = ROOT
 		}
 		add_prestige = 5
 		add_legitimacy = 5
+		emperor = {
+			country_event = { 
+			id = fre_disaster_civil_war.5
+			days = 15
+			}
+		}
 	}
 	
 	option = {
 		name = fre_disaster_civil_war.3.b
-		ai_chance = { factor = 35 }
+		ai_chance = { factor = 5 }
 		ROOT = {
 			set_in_empire = yes
 		}
 		emperor = {
 			add_imperial_influence = 2
+		
+			country_event = { 
+				id = fre_disaster_civil_war.5
+				days = 15
+			}
 		}
 	}
 	
@@ -163,7 +174,6 @@ country_event = {
 	option = { #Offer it
 		name = fre_disaster_civil_war.4.a
 		ai_chance = { factor = 90 }
-		add_imperial_influence = 1
 	}
 	
 	option = { #Don't offer it.
@@ -171,4 +181,35 @@ country_event = {
 		ai_chance = { factor = 10 }
 		set_global_flag = emperor_declined_offer_to_french_dukes
 	}
+}
+
+#Emperors event for acceptance
+country_event = {
+	id = fre_disaster_civil_war.5
+	title = fre_disaster_civil_war.5.t
+	desc = fre_disaster_civil_war.5.d
+	picture = HRE_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = { #Yes!
+		name = fre_disaster_civil_war.5.a
+		add_imperial_influence = 1
+	}
+	
+}
+
+#Emperors event for decline
+country_event = {
+	id = fre_disaster_civil_war.6
+	title = fre_disaster_civil_war.6.t
+	desc = fre_disaster_civil_war.6.d
+	picture = HRE_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = { #Yes!
+		name = fre_disaster_civil_war.6.a
+	}
+	
 }

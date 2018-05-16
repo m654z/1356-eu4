@@ -86,12 +86,12 @@ vassal = {
 }
 
 # Armenian States
-vassal = {
-	first = ARM
-	second = MLK
-	start_date = 1356.1.1
-	end_date = 1366.1.1
-}
+#vassal = {
+#	first = ARM
+#	second = MLK
+#	start_date = 1356.1.1
+#	end_date = 1366.1.1
+#}
 
 # Qara Qoyunlu under Jalayrids
 vassal = {

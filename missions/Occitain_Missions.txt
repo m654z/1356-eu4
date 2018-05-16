@@ -16,8 +16,8 @@ occ_unite_aquitaine = {
 	has_country_shield = yes
 	OCC_secure_our_culture = { #Secure Occitan Culture
 		icon = mission_assemble_an_army
-		required_missions = {  }
-		position = 1
+		required_missions = { OCC_secure_our_independence  }
+		position = 2
 		completed_by = 1821.1.1
 		provinces_to_highlight = {
 			OR = {
@@ -100,7 +100,7 @@ occ_unite_aquitaine = {
 	OCC_secure_the_Gascons = { #Secure the Gascons
 		icon = mission_assemble_an_army
 		required_missions = { OCC_secure_our_culture }
-		position = 2
+		position = 3
 		completed_by = 1821.1.1
 		provinces_to_highlight = {
 			OR = {
@@ -149,7 +149,7 @@ occ_unite_aquitaine = {
 	OCC_secure_massif_central = { #Secure Massif Central Mountains
 		icon = mission_assemble_an_army
 		required_missions = { OCC_secure_the_Gascons }
-		position = 3
+		position = 4
 		completed_by = 1821.1.1
 		provinces_to_highlight = {
 			OR = {
@@ -180,7 +180,7 @@ occ_unite_aquitaine = {
 	OCC_secure_massif_central_P2 = { #Secure Massif Central Mountains P2
 		icon = mission_assemble_an_army
 		required_missions = { OCC_secure_massif_central }
-		position = 4
+		position = 5
 		completed_by = 1821.1.1
 		trigger = {
 			199 = {
@@ -189,6 +189,18 @@ occ_unite_aquitaine = {
 		}
 		effect = {
 			add_prestige = 25
+		}
+	}
+	OCC_form_aquitaine = { #Empty Mission prompting Player the missions continue there.
+		icon = mission_assemble_an_army
+		required_missions = { OCC_secure_massif_central_p2 }
+		position = 6
+		completed_by = 1821.1.1
+		trigger = {
+			
+		}
+		effect = {
+			
 		}
 	}
 
@@ -222,24 +234,6 @@ occ_secure_french_independence = {
 			create_general = 35
 		}
 	}
-}
-
-occ_secure_the_borders = {
-	slot = 3
-	generic = no
-	ai = yes
-	
-	potential = { 
-		OR = {
-			tag = AUV 
-			tag = PRO
-			tag = FOZ
-			tag = DAU
-			tag = TOU
-		}
-	}
-	has_country_shield = yes
-	
 }
 
 occ_african_ambitions = {
@@ -377,6 +371,86 @@ occ_african_ambitions = {
 
 		}
 		effect = {
+			algiers_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		
+		}
+	}
+	OCC_repel_the_algerian_pirates = { #Take the Algerian Coast
+		icon = mission_assemble_an_army
+		required_missions = { OCC_repel_the_tunisian_pirates }
+		position = 4
+		completed_by = 1821.1.1
+		provinces_to_highlight = {
+			area = algiers_area
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			algiers_area = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}	
+
+		}
+		effect = {
+			northern_morocco_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			southern_morocco_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			western_morocco_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	OCC_repel_the_moroccan_pirates = { #Take Morocco's Coast
+		icon = mission_assemble_an_army
+		required_missions = { OCC_repel_the_algerian_pirates }
+		position = 5
+		completed_by = 1821.1.1
+		provinces_to_highlight = {
+			OR = {
+				area = northern_morocco_area
+				area = southern_morocco_area
+				area = western_morocco_area
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			northern_morocco_area = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			southern_morocco_area = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			western_morocco_area = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}		
+
+		}
+		effect = {
+			add_yearly_sailors = 40
 		}
 	}
 	

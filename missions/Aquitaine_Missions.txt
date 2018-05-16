@@ -288,7 +288,7 @@ AQT_unite_our_home = {
 	
 }
 
-AQT_our_european_interests = { #Secondary tree
+AQT_put_france_in_check_p2 = { #Secondary tree
 	slot = 1
 	generic = no
 	ai = yes
@@ -349,7 +349,7 @@ AQT_our_european_interests = { #Secondary tree
 	}
 }
 
-AQT_secure_our_independence = {
+AQT_put_france_in_check = {
 	slot = 2
 	generic = no
 	ai = yes
@@ -399,7 +399,7 @@ AQT_secure_our_independence = {
 	}
 }
 
-AQT_our_european_interests_slot_2 = {
+AQT_put_france_in_check_p3 = {
 	slot = 2
 	generic = no
 	ai = yes
@@ -785,13 +785,6 @@ AQT_african_ambitions = {
 				}
 				add_permanent_claim = ROOT
 			}
-			kongo_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { owned_by = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
 			angola_namibia_area = {
 				limit = {
 					NOT = { is_core = ROOT }
@@ -809,8 +802,8 @@ AQT_african_ambitions = {
 		provinces_to_highlight = {
 			OR = {
 				area = coastal_kongo
-				area = kongo_area
-				area = angola_namibia_area
+				area = 1167
+				area = 1172
 			}
 			NOT = {
 				country_or_non_sovereign_subject_holds = ROOT
@@ -820,11 +813,11 @@ AQT_african_ambitions = {
 			OR = {
 				coastal_kongo = {
 					country_or_non_sovereign_subject_holds = ROOT
-				}	
-				kongo_area = {
+				}		
+				1167 = {
 					country_or_non_sovereign_subject_holds = ROOT
 				}	
-				angola_namibia_area = {
+				1172 = {
 					country_or_non_sovereign_subject_holds = ROOT
 				}	
 			
@@ -947,7 +940,7 @@ AQT_african_ambitions = {
 	AQT_secure_indian_port = { #Take a port in India to begin our Indian Conquest!
 		icon = mission_assemble_an_army
 		required_missions = { AQT_secure_an_indian_route }
-		position = 11
+		position = 12
 		completed_by = 1821.1.1
 		provinces_to_highlight = {
 			province_id = 516 #Baroda
@@ -961,7 +954,7 @@ AQT_african_ambitions = {
 				}	
 		}
 		effect = {
-			
+			add_prestige = 10
 		}
 	}
 }

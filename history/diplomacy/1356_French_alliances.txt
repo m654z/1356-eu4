@@ -291,12 +291,13 @@ royal_marriage = {
 #################
 
 # Normandy (Évreux) under King of Navarra
-union = {
-	first = NAV
-	second = NRM
-	start_date = 1328.2.1
-	end_date = 1404.6.9
-}
+
+#union = {
+#	first = NAV
+#	second = NRM
+#	start_date = 1328.2.1
+#	end_date = 1404.6.9
+#}
 
 # Dauphiné under King of France
 union = {

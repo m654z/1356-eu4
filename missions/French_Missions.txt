@@ -403,19 +403,19 @@ french_expand_external_europe_not_hre = { #Take stuff not in the HRE!
 		}
 	}
 	
-#	fra_dismantle_the_empire = { #Dismantle the Empire!
-#		icon = mission_have_two_subjects
-#		required_missions = { take_away_habsburg_gold fra_stabilize_italy fra_stabilize_lowlands }
-#		position = 20
-#		completed_by = 1821.1.1
-#		trigger = {
-#			hre_size = 0
-#		}
-#		effect = {
-#			dismantle_hre = yes
-#			add_prestige = 100
-#		}
-#	}
+	fra_dismantle_the_empire = { #Dismantle the Empire!
+		icon = mission_have_two_subjects
+		required_missions = { take_away_habsburg_gold fra_stabilize_italy fra_stabilize_lowlands }
+		position = 20
+		completed_by = 1821.1.1
+		trigger = {
+			hre_size = 0
+		}
+		effect = {
+			dismantle_hre = yes
+			add_prestige = 100
+		}
+	}
 	
 }
 

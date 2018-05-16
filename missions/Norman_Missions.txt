@@ -1,4 +1,4 @@
-nrm_secure_northern_france = {
+nrm_secure_northern_france_england = {
 
 	slot = 1
 	generic = no
@@ -287,16 +287,6 @@ nrm_secure_northern_france = {
 		}
 	}
 	
-	
-}
-
-nrm_freedom_from_french_english_basque_rule = {
-	slot = 2
-	generic = no
-	ai = yes
-	
-	potential = { tag = NRM }
-	has_country_shield = yes
 	
 }
 
@@ -628,7 +618,16 @@ nrm_norman_legacy = {
 			add_prestige = 25
 		}
 	}
-	
+	nrm_form_jerusalem = { #Form the Kingdom of Jerusalem?
+		icon = mission_assemble_an_army
+		required_missions = { nrm_take_jerusalem }
+		position = 8
+		completed_by = 1821.1.1
+		trigger = {
+		}
+		effect = {
+		}
+	}
 }
 
 NRM_missions_colonial = { #Colonize and such. Taken from Vanilla France.
