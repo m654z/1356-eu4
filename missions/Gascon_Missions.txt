@@ -131,7 +131,7 @@ gas_own_the_pyrenees = { #Secure Aragon and Navarra
 	}
 	GAS_the_pyrenee_kingdom = { #You've secured the Pyrenee Kingdom!
 		icon = mission_assemble_an_army
-		required_missions = { GAS_annex_aragon_catalonia }
+		required_missions = { GAS_conquer_vizcaya_and_valencia }
 		position = 5
 		completed_by = 1821.1.1
 		trigger = {
@@ -769,7 +769,7 @@ gas_secure_france = { #Either Take France OR Take the Pyrenees
 	}
 	GAS_reform_france = { #Claim the title Kingdom of France
 		icon = mission_assemble_an_army
-		required_missions = { GAS_secure_our_independence }
+		required_missions = { GAS_take_valois_picardie_champagne }
 		position = 6
 		completed_by = 1821.1.1
 		trigger = {
