@@ -67,22 +67,33 @@ goal_chinese_civil_war = {
 	war_name = NATION_WAR_NAME	
 }
 
-goal_feudalism_border_war = {
-	type = take_capital
+goal_feudalism_border_war = { #Make sure you restrict use of normal CB and restrict conquest of secondaries. Figure out why if LIV integrates someone mid war its super cheap.
+	type = take_province
+	
+	badboy_factor = 4
+	prestige_factor = 1
+	peace_cost_factor = 5
 
-	attacker = {
-	
-	
-	
+	allowed_provinces = {	
+		OR = {
+			is_claim = ROOT
+			is_core = ROOT
+		}
+		any_neighbor_province = {
+			owned_by = FROM
+		}
 	}
 	
-	defender = {
-	
-	
-	
+	peace_options = {
+		po_demand_provinces
+		po_concede_defeat
+		po_gold
+		po_humiliate
+		po_release_annexed
+		po_annul_treaties
 	}
 	
-	allow_leader_change = yes
+	#allow_leader_change = yes
 
 	war_name = CB_FEUDALISM_BORDER_WAR
 }

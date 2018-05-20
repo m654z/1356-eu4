@@ -54,6 +54,7 @@ country_event = {
 		remove_accepted_culture = normand
 		remove_accepted_culture = burgundian
 		remove_accepted_culture = wallonian
+		
 		VAL = {
 			every_core_province = { 
 				remove_core = VAL

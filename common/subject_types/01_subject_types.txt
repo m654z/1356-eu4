@@ -57,6 +57,7 @@ french_ducal_vassal = {
 	base_liberty_desire = 10.0
 	
 	relative_power_class = 1
+	diplomacy_view_class = 1
 	
 
 	can_fight = {
@@ -82,24 +83,22 @@ french_ducal_vassal = {
 	place_relative_on_throne = no
 	enforce_culture = no
 	seize_territory = no
-	force_seppuku = no
-	force_isolation = no
 	return_land = no
 	embargo_rivals = no
 	divert_trade= no
 	#(enable)
-	send_additional_troops = yes #Maybe
-	fortify_march = yes #Maybe
-	subsidize_armies = yes #Maybe
+	subsidize_armies = yes
 	grant_core_claim = yes
 	grant_province = yes
 	enforce_religion = yes
 	conscript_general = yes
-	contribute_to_capital = yes
+	#contribute_to_capital = yes
 	#(special)
 	sword_hunt = no
 	sankin_kotai = no
 	expel_ronin = no
+	force_seppuku = no
+	force_isolation = no
 	
 		# Modifiers
 	modifier_overlord = clear #We don't want to duplicate the ones inherited from vassal

@@ -62,19 +62,18 @@ cb_medieval_crusade = {
 }
 
 cb_pu_feudalism = {
-
+	valid_for_subject = no
+	
 	prerequisites = {
 		current_age = age_of_feudalism
-		
-	
-	
+		always = no
 	}
 
-	war_goal = { goal_feudalism_pu_war }
+	war_goal = goal_feudalism_pu_war
 }
 
 cb_border_war_feudalism = {
-
+	valid_for_subject = yes
 	prerequisites = {
 		current_age = age_of_feudalism
 		is_neighbor_of = FROM
@@ -87,10 +86,10 @@ cb_border_war_feudalism = {
 				NOT = { technology_group = nomad_group}
 			}
 		}
-		NOT = { is_emperor= yes } #Trying to avoid blobhemia here.
+		NOT = { is_emperor = yes } #Trying to avoid blobhemia here.
 	
 	}
 
-	war_goal = { goal_feudalism_border_war }
+	war_goal = goal_feudalism_border_war
 
 }

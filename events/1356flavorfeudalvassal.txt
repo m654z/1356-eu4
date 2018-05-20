@@ -1,0 +1,41 @@
+namespace = 1356_subject_interactions
+
+#Overlord is at war. Join?
+country_event = {
+	id = 1356_subject_interaction.1
+	title = 1356_subject_interaction.1.t
+	desc = 1356_subject_interaction.1.d
+	picture = BATTLE_eventPicture
+
+	trigger = {
+		is_subject_of = FRA
+		
+		FRA = {
+			is_at_war = yes
+		
+		}
+	
+	}
+	
+	option = { #Join the war!
+		name = 1356_subject_interaction.1.a  
+		ai_chance = { factor = 99 }
+		
+	}
+		
+	option = { #We're too busy, offer some troops and money instead.
+		name = 1356_subject_interaction.1.b
+		ai_chance = { factor = 1 }
+		add_treasury = -50
+		add_manpower = -5
+		FRA = {
+			add_treasury = 50
+			add_manpower = 8
+		}
+		
+	}
+}
+
+
+#is_at_war = yes
+#every_subject_country = { }

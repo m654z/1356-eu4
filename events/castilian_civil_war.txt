@@ -105,7 +105,6 @@ country_event = { #House Trastamara wins Civil War
                   adm = 4
                   dip = 3
                   mil = 4
-                  fixed = yes
                 } 
 	}
 }

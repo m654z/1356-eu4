@@ -30,12 +30,12 @@ union = {
 	end_date = 1361.11.21
 }
 
-vassal = {
-	first = BUR
-	second = AUV
-	start_date = 1350.4.3
-	end_date = 1360.9.29
-}
+#vassal = { #Covered by Missions
+#	first = BUR
+#	second = AUV
+#	start_date = 1350.4.3
+#	end_date = 1360.9.29
+#}
 
 royal_marriage = {
 	first = BUR
