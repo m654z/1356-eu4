@@ -40,6 +40,7 @@ wal_buffer_states_north = {
 		}
 		effect = {
 			2974 = {
+			# Audax Validator "." Ignore_1007
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { owned_by = ROOT }
@@ -47,6 +48,7 @@ wal_buffer_states_north = {
 				add_permanent_claim = ROOT
 			}
 			1742 = {
+			# Audax Validator "." Ignore_1007
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { owned_by = ROOT }
@@ -80,6 +82,7 @@ wal_buffer_states_north = {
 		}
 		effect = {
 			95 = {
+			# Audax Validator "." Ignore_1007
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { owned_by = ROOT }
@@ -87,6 +90,7 @@ wal_buffer_states_north = {
 				add_permanent_claim = ROOT
 			}
 			96 = {
+			# Audax Validator "." Ignore_1007
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { owned_by = ROOT }
@@ -120,6 +124,7 @@ wal_buffer_states_north = {
 		}
 		effect = {
 			4383 = {
+			# Audax Validator "." Ignore_1007
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { owned_by = ROOT }
@@ -127,6 +132,7 @@ wal_buffer_states_north = {
 				add_permanent_claim = ROOT
 			}
 			97 = {
+			# Audax Validator "." Ignore_1007
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { owned_by = ROOT }
@@ -160,6 +166,7 @@ wal_buffer_states_north = {
 		}
 		effect = {
 			98 = {
+			# Audax Validator "." Ignore_1007
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { owned_by = ROOT }
@@ -167,6 +174,7 @@ wal_buffer_states_north = {
 				add_permanent_claim = ROOT
 			}
 			99 = {
+			# Audax Validator "." Ignore_1007
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { owned_by = ROOT }
@@ -257,6 +265,7 @@ wal_unite_the_walloons_start_tree = {
 		}
 		effect = {
 			93 = {
+			# Audax Validator "." Ignore_1007
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { owned_by = ROOT }
@@ -264,6 +273,7 @@ wal_unite_the_walloons_start_tree = {
 				add_permanent_claim = ROOT
 			}
 			94 = {
+			# Audax Validator "." Ignore_1007
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { owned_by = ROOT }
@@ -297,6 +307,7 @@ wal_unite_the_walloons_start_tree = {
 		}
 		effect = {
 			181 = {
+			# Audax Validator "." Ignore_1007
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { owned_by = ROOT }
@@ -304,6 +315,7 @@ wal_unite_the_walloons_start_tree = {
 				add_permanent_claim = ROOT
 			}
 			1743 = {
+			# Audax Validator "." Ignore_1007
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { owned_by = ROOT }
@@ -311,6 +323,7 @@ wal_unite_the_walloons_start_tree = {
 				add_permanent_claim = ROOT
 			}
 			88 = {
+			# Audax Validator "." Ignore_1007
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { owned_by = ROOT }
@@ -348,7 +361,7 @@ wal_unite_the_walloons_start_tree = {
 		}
 		effect = {
 			add_prestige = 10
-			add_dip = 30
+			add_dip_power = 30
 		}
 	}
 	wal_form_wallonia = { #FREEDOM
@@ -372,6 +385,7 @@ wal_unite_the_walloons_start_tree = {
 		position = 6
 		completed_by = 1821.1.1
 		provinces_to_highlight = {
+		# Audax Validator "." Ignore_1002
 			OR = {
 				area = lower_rhineland_area
 			}
@@ -386,7 +400,7 @@ wal_unite_the_walloons_start_tree = {
 			
 		}
 		effect = {
-			add_adm = 30
+			add_adm_power = 30
 		}
 	}
 }
@@ -436,7 +450,7 @@ wal_secure_french_border = {
 		}
 		effect = {
 			add_prestige = 10
-			add_mil = 30
+			add_mil_power = 30
 		}
 	}
 }
@@ -496,6 +510,7 @@ wal_beyond_europe = {
 			}
 			custom_trigger_tooltip = {
 				tooltip = miss_colonize_eastern_america
+				# Audax Validator "." Ignore_1007
 				num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 					value = 1
 					colonial_region = colonial_eastern_america
@@ -532,6 +547,7 @@ wal_beyond_europe = {
 			}
 			custom_trigger_tooltip = {
 				tooltip = miss_colonize_brazil
+				# Audax Validator "." Ignore_1007
 				num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 					value = 1
 					colonial_region = colonial_brazil
@@ -642,9 +658,11 @@ wal_beyond_europe = {
 				colonial_australia = {
 					has_discovered = ROOT
 				}
+				# Audax Validator "." Ignore_1007
 				trade_company_indonesia = {
 					has_discovered = ROOT
 				}
+				# Audax Validator "." Ignore_1007
 				trade_company_moluccas = {
 					has_discovered = ROOT
 				}

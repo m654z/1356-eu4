@@ -106,7 +106,7 @@ country_event = {
 	
 	option = { #Option A: I Made an attempt and succeeded
 		name = 1356nav.3.a
-		remove_country_modifier = {	name = nav_ruler_in_prison }
+		remove_country_modifier = nav_ruler_in_prison
 		country_event = { id = 1356nav.4 days = 30 }
 		add_prestige = 10
 	}
@@ -218,7 +218,7 @@ country_event = {
 		add_prestige = 2
 		add_stability = 1
 		FRA = { add_war_exhaustion = -5 }
-		183 = { disband_rebels = anti_tax }
+		#183 = { disband_rebels = anti_tax }
 		
 	}
 }
@@ -246,7 +246,7 @@ country_event = {
 #A deal with the Bretons. AKA an alliance vs france
 country_event = {
 	id = 1356nav.24
-	title = 1356.24.t
+	title = 1356nav.24.t
 	desc = 1356nav.24.d
 	picture = HORDE_ON_HORSEBACK_event_Picture
 	fire_only_once = yes

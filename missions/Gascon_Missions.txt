@@ -19,6 +19,7 @@ gas_own_the_pyrenees = { #Secure Aragon and Navarra
 		position = 2
 		completed_by = 1821.1.1
 		provinces_to_highlight = {
+		# Audax Validator "." Ignore_1002
 			OR = {
 				province_id = 210
 			}
@@ -75,6 +76,7 @@ gas_own_the_pyrenees = { #Secure Aragon and Navarra
 		}
 		effect = {
 			220 = {
+			# Audax Validator "." Ignore_1007
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { owned_by = ROOT }
@@ -82,6 +84,7 @@ gas_own_the_pyrenees = { #Secure Aragon and Navarra
 				add_permanent_claim = ROOT
 			}
 			2988 = {
+			# Audax Validator "." Ignore_1007
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { owned_by = ROOT }
@@ -89,6 +92,7 @@ gas_own_the_pyrenees = { #Secure Aragon and Navarra
 				add_permanent_claim = ROOT
 			}
 			209 = {
+			# Audax Validator "." Ignore_1007
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { owned_by = ROOT }
@@ -126,7 +130,7 @@ gas_own_the_pyrenees = { #Secure Aragon and Navarra
 
 		}
 		effect = {
-			add_dip = 30
+			add_dip_power = 30
 		}
 	}
 	GAS_the_pyrenee_kingdom = { #You've secured the Pyrenee Kingdom!
@@ -176,18 +180,13 @@ gas_secure_aquitaine = { #Secure Lower France
 			173 = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
-			174 = {
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			175 = {
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			176 = {
+			guyenne_area = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
 		effect = {
 			194 = {
+			# Audax Validator "." Ignore_1007
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { owned_by = ROOT }
@@ -195,6 +194,7 @@ gas_secure_aquitaine = { #Secure Lower France
 				add_permanent_claim = ROOT
 			}
 			195 = {
+			# Audax Validator "." Ignore_1007
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { owned_by = ROOT }
@@ -202,6 +202,7 @@ gas_secure_aquitaine = { #Secure Lower France
 				add_permanent_claim = ROOT
 			}
 			4112 = {
+			# Audax Validator "." Ignore_1007
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { owned_by = ROOT }
@@ -239,6 +240,7 @@ gas_secure_aquitaine = { #Secure Lower France
 		}
 		effect = {
 			198 = {
+			# Audax Validator "." Ignore_1007
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { owned_by = ROOT }
@@ -298,6 +300,7 @@ gas_secure_aquitaine = { #Secure Lower France
 				add_permanent_claim = ROOT
 			}
 			204 = {
+			# Audax Validator "." Ignore_1007
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { owned_by = ROOT }
@@ -339,6 +342,7 @@ gas_secure_aquitaine = { #Secure Lower France
 		}
 		effect = {
 			199 = {
+			# Audax Validator "." Ignore_1007
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { owned_by = ROOT }
@@ -346,6 +350,7 @@ gas_secure_aquitaine = { #Secure Lower France
 				add_permanent_claim = ROOT
 			}
 			203 = {
+			# Audax Validator "." Ignore_1007
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { owned_by = ROOT }
@@ -353,6 +358,7 @@ gas_secure_aquitaine = { #Secure Lower France
 				add_permanent_claim = ROOT
 			}
 			190 = {
+			# Audax Validator "." Ignore_1007
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { owned_by = ROOT }
@@ -801,6 +807,7 @@ gas_african_ambitions = { #Lifted from Aquitaine Missions
 		position = 2
 		completed_by = 1821.1.1
 		provinces_to_highlight = {
+			# Audax Validator "." Ignore_1002
 			OR = {
 				province_id = 333
 			}
@@ -1115,21 +1122,7 @@ gas_african_ambitions = { #Lifted from Aquitaine Missions
 
 		}
 		effect = {
-			833 = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { owned_by = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			1179 = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { owned_by = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			1177 = {
+			cape_of_good_hope_area = {
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { owned_by = ROOT }
@@ -1171,11 +1164,7 @@ gas_african_ambitions = { #Lifted from Aquitaine Missions
 
 		}
 		effect = {
-			1196 = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { owned_by = ROOT }
-				}
+			1196 = { #Kilwa
 				add_permanent_claim = ROOT
 			} 
 		}
@@ -1198,10 +1187,6 @@ gas_african_ambitions = { #Lifted from Aquitaine Missions
 		}
 		effect = {
 			2788 = { #Hafun
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { owned_by = ROOT }
-				}
 				add_permanent_claim = ROOT
 			}
 		}
@@ -1224,10 +1209,6 @@ gas_african_ambitions = { #Lifted from Aquitaine Missions
 		}
 		effect = {
 			517 = { #Surat
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { owned_by = ROOT }
-				}
 				add_permanent_claim = ROOT
 			}
 		}
@@ -1249,7 +1230,7 @@ gas_african_ambitions = { #Lifted from Aquitaine Missions
 				}	
 		}
 		effect = {
-			add_dip = 30
+			add_dip_power = 30
 		}
 	}
 }

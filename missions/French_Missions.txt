@@ -409,7 +409,7 @@ french_expand_external_europe_not_hre = { #Take stuff not in the HRE!
 		position = 20
 		completed_by = 1821.1.1
 		trigger = {
-			hre_size = 0
+			hre_size = 1
 		}
 		effect = {
 			dismantle_hre = yes
@@ -920,6 +920,7 @@ french_missions_colonial = { #Colonize and Expand south
 		trigger = {
 			custom_trigger_tooltip = {
 				tooltip = fra_carib_colony.tooltip
+				# Audax Validator "." Ignore_1007
 				num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 					value = 5
 					colonial_region = colonial_the_carribean
@@ -928,6 +929,7 @@ french_missions_colonial = { #Colonize and Expand south
 			OR = {
 				custom_trigger_tooltip = {
 					tooltip = fra_canada_colony.tooltip
+					# Audax Validator "." Ignore_1007
 					num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 						value = 5
 						colonial_region = colonial_canada
@@ -935,6 +937,7 @@ french_missions_colonial = { #Colonize and Expand south
 				}
 				custom_trigger_tooltip = {
 					tooltip = fra_louisiana_colony.tooltip
+					# Audax Validator "." Ignore_1007
 					num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 						value = 5
 						colonial_region = colonial_louisiana
@@ -1152,21 +1155,7 @@ france_expand_italy = { #Eventully script Napoleons conquest here
 			}
 		}
 		effect = {
-			2977 = { #Urbino
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { owned_by = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			2976 = { #Umbria
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { owned_by = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			119 = { #Ancona
+			central_italy_area = {
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { owned_by = ROOT }
@@ -1339,9 +1328,9 @@ france_expand_italy = { #Eventully script Napoleons conquest here
 		required_missions = { annex_rome_fra }
 		position = 19
 		provinces_to_highlight = {
+			# Audax Validator "." Ignore_1002
 			OR = {
-				area = italy_region
-				area = 	italy_region
+				region = italy_region
 			}
 			NOT = {
 				country_or_non_sovereign_subject_holds = ROOT
@@ -1349,7 +1338,51 @@ france_expand_italy = { #Eventully script Napoleons conquest here
 		}
 		
 		trigger = {
-			italy_region = {
+			venetia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			lombardy_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			piedmont_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			tuscany_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			liguria_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			corsica_sardinia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			sicily_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			naples_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			calabria_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			apulia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			emilia_romagna_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			central_italy_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}

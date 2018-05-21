@@ -1,6 +1,6 @@
 # War of the Two Peters
-
 name = "War of the Two Peters"
+# Audax Validator "." Ignore_1007
 casus_belli = cb_insult
 war_goal = {
 	type = superiority_insult_mutual

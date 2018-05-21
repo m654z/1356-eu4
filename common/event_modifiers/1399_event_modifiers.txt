@@ -4,6 +4,7 @@ rush_of_colonists = {
 
 #Center of Trade Modifiers
 
+# Audax Validator "." Ignore_ALL
 center_of_trade_modifier = {
 	local_institution_spread = 0.10
 	province_trade_power_value = 20
@@ -15,6 +16,7 @@ center_of_trade_modifier = {
 	picture = "province_trade_power_value"
 }
 
+# Audax Validator "." Ignore_ALL
 inland_center_of_trade_modifier = {
 	local_institution_spread = 0.10
 	province_trade_power_value = 20
@@ -22,6 +24,7 @@ inland_center_of_trade_modifier = {
 	picture = "province_trade_power_value"
 }
 
+# Audax Validator "." Ignore_ALL
 sound_toll = {
 	province_trade_power_value = 20
 	province_trade_power_modifier = 0.25
@@ -62,6 +65,7 @@ swedish_noble_support = {
 
 #Balkans/Anatolia
 
+# Audax Validator "." Ignore_ALL
 bosphorous_sound_toll = {
 	province_trade_power_value = 20
 	province_trade_power_modifier = 0.25

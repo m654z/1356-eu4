@@ -39,21 +39,7 @@ bri_secure_borders = {
 			}
 		}
 		effect = {
-			1879 = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { owned_by = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			177 = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { owned_by = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			178 = {
+			normandy_area = {
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { owned_by = ROOT }
@@ -195,6 +181,7 @@ bri_celtic_reconquest = { #We must reunite the celtic nations under one banner!
 		position = 3
 		completed_by = 1821.1.1
 		provinces_to_highlight = {
+			# Audax Validator "." Ignore_1002
 			OR = {
 				area = wales_area
 			}
@@ -362,6 +349,7 @@ bri_celtic_reconquest = { #We must reunite the celtic nations under one banner!
 		position = 7
 		completed_by = 1821.1.1
 		provinces_to_highlight = {
+			# Audax Validator "." Ignore_1002
 			OR = {
 				area = asturias_area
 			}
@@ -460,6 +448,7 @@ bri_colonial_chain = {
 		trigger = {
 			custom_trigger_tooltip = {
 				tooltip = fra_carib_colony.tooltip
+				# Audax Validator "." Ignore_1007
 				num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 					value = 5
 					colonial_region = colonial_the_carribean
@@ -468,6 +457,7 @@ bri_colonial_chain = {
 			OR = {
 				custom_trigger_tooltip = {
 					tooltip = fra_canada_colony.tooltip
+					# Audax Validator "." Ignore_1007
 					num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 						value = 5
 						colonial_region = colonial_canada
@@ -475,6 +465,7 @@ bri_colonial_chain = {
 				}
 				custom_trigger_tooltip = {
 					tooltip = fra_louisiana_colony.tooltip
+					# Audax Validator "." Ignore_1007
 					num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 						value = 5
 						colonial_region = colonial_louisiana

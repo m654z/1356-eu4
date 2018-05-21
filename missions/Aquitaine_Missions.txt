@@ -69,6 +69,7 @@ AQT_unite_our_home = {
 		}
 		effect = {
 			173 = {
+				# Audax Validator "." Ignore_1007
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { owned_by = ROOT }
@@ -76,6 +77,7 @@ AQT_unite_our_home = {
 				add_permanent_claim = ROOT
 			}
 			195 = {
+				# Audax Validator "." Ignore_1007
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { owned_by = ROOT }
@@ -235,6 +237,7 @@ AQT_unite_our_home = {
 		}
 		effect = {
 			205 = {
+				# Audax Validator "." Ignore_1007
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { owned_by = ROOT }
@@ -242,6 +245,7 @@ AQT_unite_our_home = {
 				add_permanent_claim = ROOT
 			}	
 			102 = {
+				# Audax Validator "." Ignore_1007
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { owned_by = ROOT }
@@ -383,7 +387,8 @@ AQT_put_france_in_check = {
 		position = 7
 		completed_by = 1821.1.1
 		trigger = {	
-			AQT = { has_truce = FRA	}
+		# Audax Validator "." Ignore_ALL
+			has_truce = FRA
 		}
 		effect = {
 			183 = {
@@ -802,8 +807,8 @@ AQT_african_ambitions = {
 		provinces_to_highlight = {
 			OR = {
 				area = coastal_kongo
-				area = 1167
-				area = 1172
+				province_id = 1167
+				province_id = 1172
 			}
 			NOT = {
 				country_or_non_sovereign_subject_holds = ROOT
@@ -826,21 +831,7 @@ AQT_african_ambitions = {
 
 		}
 		effect = {
-			833 = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { owned_by = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			1179 = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { owned_by = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			1177 = {
+			cape_of_good_hope_area = {
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { owned_by = ROOT }
@@ -883,10 +874,6 @@ AQT_african_ambitions = {
 		}
 		effect = {
 			1201 = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { owned_by = ROOT }
-				}
 				add_permanent_claim = ROOT
 			} 
 		}
@@ -909,10 +896,6 @@ AQT_african_ambitions = {
 		}
 		effect = {
 			1099 = { #Socotra!
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { owned_by = ROOT }
-				}
 				add_permanent_claim = ROOT
 			}
 		}

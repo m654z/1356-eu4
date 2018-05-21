@@ -10,6 +10,7 @@ country_event = {
 
 	trigger = {
 		tag = POR
+		# Audax Validator "." Ignore_1006
 		is_year = 1412.1.1
 	}
 	

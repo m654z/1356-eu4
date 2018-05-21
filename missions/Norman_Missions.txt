@@ -140,6 +140,7 @@ nrm_secure_northern_france_england = {
 		}
 		effect = {
 			4371 = {
+			# Audax Validator "." Ignore_1007
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { owned_by = ROOT }
@@ -147,6 +148,7 @@ nrm_secure_northern_france_england = {
 				add_permanent_claim = ROOT
 			}
 			235 = {
+			# Audax Validator "." Ignore_1007
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { owned_by = ROOT }
@@ -154,6 +156,7 @@ nrm_secure_northern_france_england = {
 				add_permanent_claim = ROOT
 			}
 			234 = {
+			# Audax Validator "." Ignore_1007
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { owned_by = ROOT }
@@ -161,6 +164,7 @@ nrm_secure_northern_france_england = {
 				add_permanent_claim = ROOT
 			}
 			4374 = {
+			# Audax Validator "." Ignore_1007
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { owned_by = ROOT }
@@ -168,6 +172,7 @@ nrm_secure_northern_france_england = {
 				add_permanent_claim = ROOT
 			}
 			4130 = {
+			# Audax Validator "." Ignore_1007
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { owned_by = ROOT }
@@ -219,6 +224,7 @@ nrm_secure_northern_france_england = {
 				add_permanent_claim = ROOT
 			}
 			237 = {
+			# Audax Validator "." Ignore_1007
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { owned_by = ROOT }
@@ -226,6 +232,7 @@ nrm_secure_northern_france_england = {
 				add_permanent_claim = ROOT
 			}
 			236 = {
+			# Audax Validator "." Ignore_1007
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { owned_by = ROOT }
@@ -337,6 +344,7 @@ nrm_norman_legacy = {
 				add_permanent_claim = ROOT
 			}
 			120 = {
+			# Audax Validator "." Ignore_1007
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { owned_by = ROOT }
@@ -344,6 +352,7 @@ nrm_norman_legacy = {
 				add_permanent_claim = ROOT
 			}
 			121 = {
+			# Audax Validator "." Ignore_1007
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { owned_by = ROOT }
@@ -351,6 +360,7 @@ nrm_norman_legacy = {
 				add_permanent_claim = ROOT
 			}
 			2983 = {
+			# Audax Validator "." Ignore_1007
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { owned_by = ROOT }
@@ -418,6 +428,7 @@ nrm_norman_legacy = {
 		}
 		effect = {
 			145 = {
+			# Audax Validator "." Ignore_1007
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { owned_by = ROOT }
@@ -425,6 +436,7 @@ nrm_norman_legacy = {
 				add_permanent_claim = ROOT
 			}
 			1773 = {
+			# Audax Validator "." Ignore_1007
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { owned_by = ROOT }
@@ -432,6 +444,7 @@ nrm_norman_legacy = {
 				add_permanent_claim = ROOT
 			}
 			163 = {
+			# Audax Validator "." Ignore_1007
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { owned_by = ROOT }
@@ -469,6 +482,7 @@ nrm_norman_legacy = {
 		}
 		effect = {
 			321 = {
+			# Audax Validator "." Ignore_1007
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { owned_by = ROOT }
@@ -703,6 +717,7 @@ NRM_missions_colonial = { #Colonize and such. Taken from Vanilla France.
 		trigger = {
 			custom_trigger_tooltip = {
 				tooltip = fra_carib_colony.tooltip
+				# Audax Validator "." Ignore_1007
 				num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 					value = 5
 					colonial_region = colonial_the_carribean
@@ -711,6 +726,7 @@ NRM_missions_colonial = { #Colonize and such. Taken from Vanilla France.
 			OR = {
 				custom_trigger_tooltip = {
 					tooltip = fra_canada_colony.tooltip
+					# Audax Validator "." Ignore_1007
 					num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 						value = 5
 						colonial_region = colonial_canada
@@ -718,6 +734,7 @@ NRM_missions_colonial = { #Colonize and such. Taken from Vanilla France.
 				}
 				custom_trigger_tooltip = {
 					tooltip = fra_louisiana_colony.tooltip
+					# Audax Validator "." Ignore_1007
 					num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 						value = 5
 						colonial_region = colonial_louisiana

@@ -1,8 +1,8 @@
-namespace = 1356_subject_interactions
+namespace = 1356subjectinteractions
 
 #Overlord is at war. Join?
 country_event = {
-	id = 1356_subject_interaction.1
+	id = 1356subjectinteractions.1
 	title = 1356_subject_interaction.1.t
 	desc = 1356_subject_interaction.1.d
 	picture = BATTLE_eventPicture

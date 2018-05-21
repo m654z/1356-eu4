@@ -75,6 +75,7 @@ occ_unite_aquitaine = {
 		}
 		effect = {
 			173 = {
+			# Audax Validator "." Ignore_1007
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { owned_by = ROOT }
@@ -193,7 +194,7 @@ occ_unite_aquitaine = {
 	}
 	OCC_form_aquitaine = { #Empty Mission prompting Player the missions continue there.
 		icon = mission_assemble_an_army
-		required_missions = { OCC_secure_massif_central_p2 }
+		required_missions = { OCC_secure_massif_central_P2 }
 		position = 6
 		completed_by = 1821.1.1
 		trigger = {
