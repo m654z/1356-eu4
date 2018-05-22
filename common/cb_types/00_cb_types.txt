@@ -224,13 +224,21 @@ cb_annex = {
 	war_goal = annex_country
 }
 
-cb_change_government = {
+cb_change_government = { #1356
 	valid_for_subject = no
 
 	is_triggered_only = yes
 	months = 120
 
 	war_goal = war_goal_change_government
+	
+	#1356 This section is new
+	attacker_disabled_po = {
+		po_demand_provinces
+		po_become_vassal
+		po_form_personal_union
+		po_transfer_vassals
+	}
 }
 
 # AUTOMATIC - Constantly in effect while 'prerequisites' is true
@@ -259,11 +267,12 @@ cb_humiliate = {
 
 
 # Temporary claim CB (mostly used by missions)
-cb_conquest = {
+cb_conquest = { #1356
 
 	prerequisites = {
 		claim = FROM
 		is_revolution_target = no
+		NOT = { current_age = age_of_feudalism } #1356
 	}
 
 	war_goal = take_claim

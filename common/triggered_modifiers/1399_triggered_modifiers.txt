@@ -393,3 +393,31 @@ shia_persia = {
 
 
 }
+
+1356_incompetent_ruler = { #For the new PU CB
+	potential = {
+		age = age_of_feudalism
+	}
+	
+	trigger = {
+		age = age_of_feudalism
+		OR = {
+			AND = {
+				NOT = { adm = 6 } #Should be 3
+				NOT = { dip = 6 } #Should be 3
+				NOT = { mil = 6 } #Should be 3
+			}
+			
+			AND = {
+				NOT = { heir_adm = 3}
+				NOT = { heir_dip = 3}
+				NOT = { heir_mil = 3}
+				ruler_age = 65
+			}
+		
+		}
+	}
+	legitimacy = -0.75
+	set_country_flag = 1356_ruler_incompetent_feudal #Its just not getting sent to the CB somehow
+	
+}

@@ -66,9 +66,10 @@ cb_pu_feudalism = {
 	
 	prerequisites = {
 		current_age = age_of_feudalism
-		always = no
+		dynasty = FROM
+		ROOT = { has_country_flag = 1356_ruler_incompetent_feudal }
 	}
-
+	
 	war_goal = goal_feudalism_pu_war
 }
 

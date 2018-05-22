@@ -24,10 +24,10 @@ french_missions_integrate_vassals = { #Would like to add a time window somewhat 
 				}
 				NOT = { exists = ORL }
 			}
+			is_year = 1363
 		}
 		effect = {
 			inherit = ORL
-			add_prestige = 5
 		}
 	}
 
@@ -45,6 +45,7 @@ french_missions_integrate_vassals = { #Would like to add a time window somewhat 
 				}
 				NOT = { exists = DAU }
 			}			
+			is_year = 1370
 		}
 		effect = {
 			country_event = { id = 1356fra.1 tooltip = 1356fra.tooltip } #Handle Dauphine Event
@@ -66,11 +67,10 @@ french_missions_integrate_vassals = { #Would like to add a time window somewhat 
 				NOT = { exists = FOZ }
 			}
 			stability = 1
+			is_year = 1373
 		}
 		effect = {
 			inherit = FOZ
-			add_years_of_income = 0.50
-			add_legitimacy = 5
 		}
 	}
 	
@@ -89,6 +89,7 @@ french_missions_integrate_vassals = { #Would like to add a time window somewhat 
 				NOT = { exists = BOU }
 			}
 			treasury = 200
+			is_year = 1378
 		}
 		effect = {
 			inherit = BOU
@@ -114,13 +115,10 @@ french_missions_integrate_vassals = { #Would like to add a time window somewhat 
 				}
 				NOT = { exists = ALE }
 			}
-			had_recent_war = 10
+			is_year = 1386
 		}
 		effect = {
 			inherit = ALE
-			184 = {
-				add_cardinal = yes			
-			}
 		}
 	}
 
@@ -139,12 +137,10 @@ french_missions_integrate_vassals = { #Would like to add a time window somewhat 
 				NOT = { exists = ANJ }
 			}
 			prestige = 25
+			is_year = 1390
 		}
 		effect = {
 			inherit = ANJ
-			204 = {
-				add_scaled_local_dip_power = 1
-			}
 		}
 	}
 	
@@ -162,7 +158,8 @@ french_missions_integrate_vassals = { #Would like to add a time window somewhat 
 				}
 				NOT = { exists = AUV }
 			}
-			prestige = 35
+			prestige = 15
+			is_year = 1400
 		}
 		effect = {
 			inherit = AUV

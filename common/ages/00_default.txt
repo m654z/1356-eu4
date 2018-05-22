@@ -94,7 +94,7 @@ age_of_feudalism = {
 		ab_feudalism_vassals = { #Changed from less AE
 			modifier = {
 				vassal_income = 0.25
-				envoy_travel_time = -0.15
+				vassal_forcelimit_bonus = 0.15
 			}
 			ai_will_do = {
 				factor = 10
@@ -108,7 +108,7 @@ age_of_feudalism = {
 				#can_chain_claim = yes
 			}
 			modifier = {
-				fabricate_claims_cost= -0.15
+				fabricate_claims_cost= -0.25
 			}
 			ai_will_do = {
 				factor = 10
@@ -165,6 +165,7 @@ age_of_feudalism = {
 			modifier = {
 				cavalry_cost = -0.15
 				cavalry_power = 0.10
+				horde_unity = 2
 				#cavalry_flanking = 0.1
 			}
 			ai_will_do = {

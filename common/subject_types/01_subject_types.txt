@@ -50,6 +50,9 @@ french_ducal_vassal = {
 	overlord_can_be_subject = yes
 	can_release_in_peace = no #May need changed for balance
 	
+	max_government_rank = 1
+	liberty_desire_same_dynasty = -10.0
+	base_liberty_desire = -5.0
 
 	
 	trust_on_start = 0
