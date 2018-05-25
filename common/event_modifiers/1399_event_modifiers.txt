@@ -135,6 +135,16 @@ paris_prison_break = {
 
 }
 
+1356_burgundy_kingdom_claim = {
+	legitimacy = 0.5
+	prestige = 0.25
+	improve_relation_modifier = 0.1
+	global_autonomy = -0.05
+	
+	
+
+}
+
 #French Ducal
 french_ducal_paris_conquest = {
 	diplomatic_reputation = 1
