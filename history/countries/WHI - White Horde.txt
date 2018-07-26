@@ -3,14 +3,16 @@ primary_culture = khazak
 religion = sunni
 technology_group = nomad_group
 capital = 2352	# Alty-Kuduk
+historical_friend = SIB
+religious_school = hanbali_school
 
 1344.1.1 = { 
 	monarch = { 
 		name = "Chimtay" 
 		dynasty = "Borjigin"
-		dip = 2 
-		adm = 2 
-		mil = 2
+		dip = 1 
+		adm = 4 
+		mil = 3
 	}	
 } 
 

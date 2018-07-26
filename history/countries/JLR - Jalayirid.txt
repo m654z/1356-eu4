@@ -3,9 +3,9 @@ technology_group = muslim
 primary_culture = al_iraqiya_arabic
 add_accepted_culture = kurdish
 religion = shiite
-historical_friend = MAM
 historical_rival = TIM
 historical_rival = PER
+historical_friend = QON
 capital = 410	# Baghdad
 religious_school = jafari_school
 
@@ -14,11 +14,13 @@ religious_school = jafari_school
 		name = "Awais I"
 		culture = mongol
 		dynasty = "Jalayirid"
-		adm = 2
-		dip = 1	
-		mil = 3
+		adm = 4
+		dip = 2	
+		mil = 5
 	}
 	add_piety = 0.2
+	add_treasury = 300
+	add_ruler_personality = conqueror_personality
 }
 
 1358.1.1 = { capital = 416 } # Tabriz

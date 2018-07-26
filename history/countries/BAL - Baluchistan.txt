@@ -1,4 +1,4 @@
-government = tribal_kingdom
+government = iqta
 government_rank = 1
 primary_culture = baluchi
 religion = sunni

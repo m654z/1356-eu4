@@ -6,18 +6,18 @@ capital = 3001	# Skopje
 historical_friend = BOS
 
 1355.12.20 = {
-	government_rank = 3
+	government_rank = 2
 	monarch = {
 		name = "Stefan Uroš V"
 		dynasty = "Nemanjic"
 		birth_date = 1336.1.1
-		adm = 0
-		dip = 0
-		mil = 0
+		adm = 2
+		dip = 1
+		mil = 3
 	}
 }
 	
-1360.7.1. = {
+1356.7.1. = {
 	queen = {
 		country_of_origin = WAL
 		name = "Anka"
@@ -25,9 +25,9 @@ historical_friend = BOS
 		birth_date = 1345.1.1
 		death_date = 1400.1.1
 		female = yes
-		adm = 2
-		dip = 2
-		mil = 2
+		adm = 3
+		dip = 5
+		mil = 1
 	}
 }
 

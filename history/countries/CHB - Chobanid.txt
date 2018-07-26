@@ -3,7 +3,7 @@ technology_group = muslim
 primary_culture = azerbaijani
 religion = shiite
 capital = 416	# Tabriz
-religious_school = jafari_school
+religious_school = zaidi_school
 
 1343.1.1 = {
 	monarch = {
