@@ -1,18 +1,18 @@
 # 449 - Ghor (1356)
 # Changes: AFG
 
-owner = AFG
-controller = AFG
+owner = KRT
+controller = KRT
 culture = afghani
 religion = sunni
 capital = "Ahangaran"
 trade_goods = wool
 hre = no
-base_tax = 3 
-base_production = 3
+base_tax = 4 
+base_production = 4
 base_manpower = 4
 is_city = yes
-add_core = AFG
+add_core = KRT
 
 discovered_by = KAS
 discovered_by = muslim

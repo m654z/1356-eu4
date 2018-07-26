@@ -1,8 +1,8 @@
 # 4340 - Astara (1356)
 # Changes: TIM
 
-owner = BPI
-controller = BPI
+owner = ARL
+controller = ARL
 culture = azerbaijani
 religion = shiite
 capital = "Astara"
@@ -13,7 +13,6 @@ base_tax = 1
 base_production = 1
 base_manpower = 1
 is_city = yes
-add_core = BPI
 add_core = ARL
 
 discovered_by = muslim

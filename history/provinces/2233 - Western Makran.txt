@@ -1,8 +1,8 @@
 # 2233 - Eastern Makran (1356)
 # Changes: PER/TIM
 
-owner = PER
-controller = PER
+owner = BAL
+controller = BAL
 culture = baluchi
 religion = sunni
 capital = "Chabahar"
@@ -14,8 +14,6 @@ base_production = 1
 base_manpower = 1
 is_city = yes
 add_core = BAL
-estate = estate_church
-add_local_autonomy = 50
 
 discovered_by = east_african
 discovered_by = indian

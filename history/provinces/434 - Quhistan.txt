@@ -1,8 +1,8 @@
 # 434 - Quhistan (1356)
 # Changes: PER/TIM
 
-owner = PER
-controller = PER
+owner = BAL
+controller = BAL
 culture = baluchi
 religion = sunni
 capital = "Bampur"
