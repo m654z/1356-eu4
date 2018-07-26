@@ -1,9 +1,9 @@
 # 2304 - Canik (1356)
 # Changes: CNI/TRE/BYZ/culture/religion
 
-owner = CNI
-controller = CNI
-add_core = CNI
+owner = ERE
+controller = ERE
+add_core = ERE
 culture = pontic_greek
 religion = orthodox
 capital = "Samsun"

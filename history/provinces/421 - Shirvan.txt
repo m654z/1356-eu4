@@ -2,7 +2,7 @@
 # Changes: GOL/TIM/religion
 
 owner = SRV
-controller = GOL
+controller = SRV
 culture = azerbaijani
 religion = orthodox
 capital = "Baku"

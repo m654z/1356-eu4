@@ -1,8 +1,8 @@
 # 425 - Dagestan (1356)
 # Changes: GOL/TIM/religion
 
-owner = SRV
-controller = GOL
+owner = GAZ
+controller = GAZ
 culture = dagestani
 religion = orthodox
 capital = "Derbent"
@@ -13,7 +13,7 @@ base_tax = 3
 base_production = 3
 base_manpower = 1
 is_city = yes
-add_core = SRV
+add_core = GAZ
 
 discovered_by = muslim
 discovered_by = ottoman

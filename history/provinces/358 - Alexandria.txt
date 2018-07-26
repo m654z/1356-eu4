@@ -1,19 +1,18 @@
 # 358 - Alexandria (1356)
 # Changes: religion
 
-owner = MAM
-controller = MAM
+owner = ALX
+controller = ALX
 culture = al_misr_arabic
 religion = coptic
 capital = "Al Iskandirya"
 trade_goods = spices
 hre = no
 base_tax = 5 
-base_production = 5
-base_manpower = 3
+base_production = 8
+base_manpower = 5
 is_city = yes
-estate = estate_burghers
-add_core = MAM
+add_core = ALX
 fort_15th = yes
 
 discovered_by = western
