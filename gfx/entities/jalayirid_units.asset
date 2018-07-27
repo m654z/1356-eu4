@@ -1,0 +1,158 @@
+entity = {    clone = "SHY_CAVALRY_1"                                                     name = "JLR_CAVALRY_1"   version = 10}
+entity = {    clone = "SHY_INFANTRY_1"                                                     name = "JLR_INFANTRY_1"     version = 10}
+entity = {    clone = "TIM_CAVALRY_2"                                                     name = "JLR_CAVALRY_2"   version = 10}
+entity = {    clone = "TIM_INFANTRY_2"                                                     name = "JLR_INFANTRY_2"     version = 10}
+entity = {    clone = "TIM_CAVALRY_3"                                                     name = "JLR_CAVALRY_3"   version = 10}
+entity = {    clone = "TIM_INFANTRY_3"                                                     name = "JLR_INFANTRY_3"     version = 10}
+entity = {    clone = "TIM_CAVALRY_4"                                                     name = "JLR_CAVALRY_4"   version = 10}
+entity = {    clone = "TIM_INFANTRY_4"                                                     name = "JLR_INFANTRY_4"     version = 10}
+
+entity = {
+    clone = "indiangfx_ARTILLERY_1"
+    name = "JLR_ARTILLERY_1" 
+    version = 10
+    attach = {
+        name = "gunman"
+        infantry_node = "JLR_INFANTRY_1" 
+        cannon_node = "indiangfx_ARTILLERY_1_cannon" 
+    }
+}
+
+entity = {
+    clone = "indiangfx_ARTILLERY_2_generic"
+    name = "JLR_ARTILLERY_2" 
+    version = 10
+    attach = {
+        name = "gunman"
+        infantry_node = "JLR_INFANTRY_2" 
+        cannon_node = "indiangfx_ARTILLERY_2_cannon" 
+    }
+}
+
+entity = {
+    clone = "indiangfx_ARTILLERY_3_generic"
+    name = "JLR_ARTILLERY_3" 
+    version = 10
+    attach = {
+        name = "gunman"
+        infantry_node = "JLR_INFANTRY_3" 
+        cannon_node = "indiangfx_ARTILLERY_3_cannon" 
+    }
+}
+
+entity = {
+    clone = "indiangfx_ARTILLERY_4_generic"
+    name = "JLR_ARTILLERY_4"
+    version = 10 
+    attach = {
+        name = "gunman"
+        infantry_node = "JLR_INFANTRY_4" 
+        cannon_node = "indiangfx_ARTILLERY_4_cannon" 
+    }
+}
+
+entity = {    clone = "SHY_CAVALRY_1"                                                     name = "CHB_CAVALRY_1"   version = 10}
+entity = {    clone = "SHY_INFANTRY_1"                                                     name = "CHB_INFANTRY_1"     version = 10}
+entity = {    clone = "TIM_CAVALRY_2"                                                     name = "CHB_CAVALRY_2"   version = 10}
+entity = {    clone = "TIM_INFANTRY_2"                                                     name = "CHB_INFANTRY_2"     version = 10}
+entity = {    clone = "TIM_CAVALRY_3"                                                     name = "CHB_CAVALRY_3"   version = 10}
+entity = {    clone = "TIM_INFANTRY_3"                                                     name = "CHB_INFANTRY_3"     version = 10}
+entity = {    clone = "TIM_CAVALRY_4"                                                     name = "CHB_CAVALRY_4"   version = 10}
+entity = {    clone = "TIM_INFANTRY_4"                                                     name = "CHB_INFANTRY_4"     version = 10}
+
+entity = {
+    clone = "indiangfx_ARTILLERY_1"
+    name = "CHB_ARTILLERY_1" 
+    version = 10
+    attach = {
+        name = "gunman"
+        infantry_node = "CHB_INFANTRY_1" 
+        cannon_node = "indiangfx_ARTILLERY_1_cannon" 
+    }
+}
+
+entity = {
+    clone = "indiangfx_ARTILLERY_2_generic"
+    name = "CHB_ARTILLERY_2" 
+    version = 10
+    attach = {
+        name = "gunman"
+        infantry_node = "CHB_INFANTRY_2" 
+        cannon_node = "indiangfx_ARTILLERY_2_cannon" 
+    }
+}
+
+entity = {
+    clone = "indiangfx_ARTILLERY_3_generic"
+    name = "CHB_ARTILLERY_3" 
+    version = 10
+    attach = {
+        name = "gunman"
+        infantry_node = "CHB_INFANTRY_3" 
+        cannon_node = "indiangfx_ARTILLERY_3_cannon" 
+    }
+}
+
+entity = {
+    clone = "indiangfx_ARTILLERY_4_generic"
+    name = "CHB_ARTILLERY_4"
+    version = 10 
+    attach = {
+        name = "gunman"
+        infantry_node = "CHB_INFANTRY_4" 
+        cannon_node = "indiangfx_ARTILLERY_4_cannon" 
+    }
+}
+
+entity = {    clone = "GOL_CAVALRY_1"                                                     name = "WHI_CAVALRY_1"   version = 10}
+entity = {    clone = "GOL_INFANTRY_1"                                                     name = "WHI_INFANTRY_1"     version = 10}
+entity = {    clone = "GOL_CAVALRY_2"                                                     name = "WHI_CAVALRY_2"   version = 10}
+entity = {    clone = "GOL_INFANTRY_2"                                                     name = "WHI_INFANTRY_2"     version = 10}
+entity = {    clone = "GOL_CAVALRY_3"                                                     name = "WHI_CAVALRY_3"   version = 10}
+entity = {    clone = "GOL_INFANTRY_3"                                                     name = "WHI_INFANTRY_3"     version = 10}
+entity = {    clone = "GOL_CAVALRY_4"                                                     name = "WHI_CAVALRY_4"   version = 10}
+entity = {    clone = "GOL_INFANTRY_4"                                                     name = "WHI_INFANTRY_4"     version = 10}
+
+entity = {
+    clone = "indiangfx_ARTILLERY_1"
+    name = "WHI_ARTILLERY_1" 
+    version = 10
+    attach = {
+        name = "gunman"
+        infantry_node = "WHI_INFANTRY_1" 
+        cannon_node = "indiangfx_ARTILLERY_1_cannon" 
+    }
+}
+
+entity = {
+    clone = "indiangfx_ARTILLERY_2_generic"
+    name = "WHI_ARTILLERY_2" 
+    version = 10
+    attach = {
+        name = "gunman"
+        infantry_node = "WHI_INFANTRY_2" 
+        cannon_node = "indiangfx_ARTILLERY_2_cannon" 
+    }
+}
+
+entity = {
+    clone = "indiangfx_ARTILLERY_3_generic"
+    name = "WHI_ARTILLERY_3" 
+    version = 10
+    attach = {
+        name = "gunman"
+        infantry_node = "WHI_INFANTRY_3" 
+        cannon_node = "indiangfx_ARTILLERY_3_cannon" 
+    }
+}
+
+entity = {
+    clone = "indiangfx_ARTILLERY_4_generic"
+    name = "WHI_ARTILLERY_4"
+    version = 10 
+    attach = {
+        name = "gunman"
+        infantry_node = "WHI_INFANTRY_4" 
+        cannon_node = "indiangfx_ARTILLERY_4_cannon" 
+    }
+}

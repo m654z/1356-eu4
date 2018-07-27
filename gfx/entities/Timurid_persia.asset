@@ -1,0 +1,52 @@
+entity = {    clone = "TIM_CAVALRY_1"                                                     name = "TPM_CAVALRY_1"   version = 10}
+entity = {    clone = "TIM_INFANTRY_1"                                                     name = "TPM_INFANTRY_1"     version = 10}
+entity = {    clone = "TIM_CAVALRY_2"                                                     name = "TPM_CAVALRY_2"   version = 10}
+entity = {    clone = "TIM_INFANTRY_2"                                                     name = "TPM_INFANTRY_2"     version = 10}
+entity = {    clone = "TIM_CAVALRY_3"                                                     name = "TPM_CAVALRY_3"   version = 10}
+entity = {    clone = "TIM_INFANTRY_3"                                                     name = "TPM_INFANTRY_3"     version = 10}
+entity = {    clone = "TIM_CAVALRY_4"                                                     name = "TPM_CAVALRY_4"   version = 10}
+entity = {    clone = "TIM_INFANTRY_4"                                                     name = "TPM_INFANTRY_4"     version = 10}
+
+entity = {
+    clone = "indiangfx_ARTILLERY_1"
+    name = "TPM_ARTILLERY_1" 
+    version = 10
+    attach = {
+        name = "gunman"
+        infantry_node = "TPM_INFANTRY_1" 
+        cannon_node = "indiangfx_ARTILLERY_1_cannon" 
+    }
+}
+
+entity = {
+    clone = "indiangfx_ARTILLERY_2_generic"
+    name = "TPM_ARTILLERY_2" 
+    version = 10
+    attach = {
+        name = "gunman"
+        infantry_node = "TPM_INFANTRY_2" 
+        cannon_node = "indiangfx_ARTILLERY_2_cannon" 
+    }
+}
+
+entity = {
+    clone = "indiangfx_ARTILLERY_3_generic"
+    name = "TPM_ARTILLERY_3" 
+    version = 10
+    attach = {
+        name = "gunman"
+        infantry_node = "TPM_INFANTRY_3" 
+        cannon_node = "indiangfx_ARTILLERY_3_cannon" 
+    }
+}
+
+entity = {
+    clone = "indiangfx_ARTILLERY_4_generic"
+    name = "TPM_ARTILLERY_4"
+    version = 10 
+    attach = {
+        name = "gunman"
+        infantry_node = "TPM_INFANTRY_4" 
+        cannon_node = "indiangfx_ARTILLERY_4_cannon" 
+    }
+}

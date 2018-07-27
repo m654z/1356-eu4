@@ -1,0 +1,12 @@
+entity = { clone = "SHM_INFANTRY_1"        name = "SYR_INFANTRY_1"	version="1"  }
+entity = { clone = "SHM_INFANTRY_2"        name = "SYR_INFANTRY_2"	version="1"  }
+entity = { clone = "SHM_INFANTRY_3"        name = "SYR_INFANTRY_3"	version="1"  }
+entity = { clone = "SHM_INFANTRY_4"        name = "SYR_INFANTRY_4"	version="1"  }
+entity = { clone = "SHM_CAVALRY_1"         name = "SYR_CAVALRY_1"	version="1"  }	
+entity = { clone = "SHM_CAVALRY_2"         name = "SYR_CAVALRY_2"	version="1"  }	
+entity = { clone = "SHM_CAVALRY_3"         name = "SYR_CAVALRY_3"	version="1"  }	
+entity = { clone = "SHM_CAVALRY_4"         name = "SYR_CAVALRY_4"	version="1"  }
+entity = { clone = "SHM_ARTILLERY_1"       name = "SYR_ARTILLERY_1"	version="1"  }	
+entity = { clone = "SHM_ARTILLERY_2"       name = "SYR_ARTILLERY_2"	version="1"  }	
+entity = { clone = "SHM_ARTILLERY_3"       name = "SYR_ARTILLERY_3"	version="1"  }	
+entity = { clone = "SHM_ARTILLERY_4"       name = "SYR_ARTILLERY_4"	version="1"  }
