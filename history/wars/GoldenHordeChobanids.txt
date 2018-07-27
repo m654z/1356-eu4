@@ -1,15 +1,16 @@
-name = "Golden Horde conqest of Azerbaijan"
-war_goal = {
-	type = take_province_tribal_feud
-	casus_belli = cb_tribal_feud
-}
-
-1355.1.1 = {
-	add_attacker = GOL
+#name = "Golden Horde conqest of Azerbaijan"
+#war_goal = {
+#	type = take_province_tribal_feud
+#	casus_belli = cb_tribal_feud
+#}
+#
+#1355.1.1 = {
+#	add_attacker = GOL
 	add_attacker = GAZ
 	add_defender = CHB
 	add_defender = SRV
 	add_defender = ARL
+	add_defender = PAD
 }
 
 # Peace
@@ -19,4 +20,5 @@ war_goal = {
 	rem_defender = CHB
 	rem_defender = SRV
 	rem_defender = ARL
+	rem_defender = PAD
 }
