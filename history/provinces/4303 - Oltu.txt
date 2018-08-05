@@ -3,7 +3,7 @@
 owner = ARM
 controller = ARM
 culture = georgian
-religion = orthodox
+religion = coptic
 capital = "Oltu"
 trade_goods = livestock
 hre = no

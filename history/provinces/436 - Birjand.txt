@@ -4,7 +4,7 @@
 owner = KRT
 controller = KRT
 culture = khorasani
-religion = sunni
+religion = zoroastrian
 capital = "Birjand"
 trade_goods = cotton
 hre = no
