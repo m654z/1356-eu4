@@ -4,7 +4,6 @@ country_decisions = {
 		major = yes
 		potential = {
 			tag = TIM
-			year = 1610
 			government_rank = 3
 			NOT = { has_country_flag = formed_persia_flag }
 		}
@@ -50,7 +49,7 @@ country_decisions = {
 			is_at_war = no
 			is_tribal = no
 			tag = TIM
-			year = 1610
+			is_year = 1610
 			government_rank = 3
 		}
 		effect = {

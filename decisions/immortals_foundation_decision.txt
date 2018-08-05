@@ -62,4 +62,27 @@ country_decisions = {
 			}
 		}
 	}
+	establish_religious_center = {
+		potential = {
+			religion = zoroastrian
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
+		}
+		allow = {
+			mil_power = 0
+		}
+		effect = {
+			add_mil_power = -100
+			country_event = { id = immortalszoroastrian.100 days = 1 }
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				NOT = { mil_power = 100 }
+			}
+		}
+	}
 }
