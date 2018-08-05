@@ -59,7 +59,7 @@ vassal = {
 	first = GUY
 	second = AMG
 	start_date = 1356.10.1
-	end_date = 1369.5.1
+	end_date = 1369.5.1.
 }
 
 alliance = {
