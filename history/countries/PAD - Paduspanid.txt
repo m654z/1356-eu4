@@ -1,4 +1,4 @@
-government = iqta
+government = feudal_theocracy
 primary_culture = mazandarani
 religion = zoroastrian
 technology_group = muslim

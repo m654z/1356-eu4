@@ -1,4 +1,4 @@
-government = iqta
+government = tribal_federation_ilkhan
 technology_group = muslim
 religion = sunni
 primary_culture = afghani
