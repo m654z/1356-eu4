@@ -1,8 +1,8 @@
 # 4334 - Tabas (1356)
 # Changes: PER
 
-owner = PER
-controller = PER
+owner = MUZ
+controller = MUZ
 culture = khorasani
 religion = sunni
 capital = "Tabas"
@@ -13,7 +13,7 @@ base_tax = 1
 base_production = 1
 base_manpower = 1
 is_city = yes
-add_core = PER
+add_core = MUZ
 add_core = KHO
 
 discovered_by = muslim

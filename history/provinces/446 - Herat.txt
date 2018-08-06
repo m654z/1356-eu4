@@ -1,20 +1,25 @@
 # 446 - Herat (1356)
 # Changes: AFG
 
-owner = AFG
-controller = AFG
+owner = KRT
+controller = KRT
 culture = khorasani
 religion = sunni
 capital = "Herat"
 trade_goods = paper
 hre = no
-base_tax = 5 
-base_production = 5
-base_manpower = 3
+base_tax = 8 
+base_production = 6
+base_manpower = 6
 is_city = yes
-add_core = AFG
-add_core = KHO
+add_core = KRT
+add_core = SAB
 fort_15th = yes
+
+add_permanent_province_modifier = {
+	name = inland_center_of_trade_modifier
+	duration = -1
+}
 
 discovered_by = muslim
 discovered_by = ottoman

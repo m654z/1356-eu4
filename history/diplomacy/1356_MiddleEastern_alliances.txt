@@ -1,7 +1,7 @@
-# Golden Horde Tributaries (not Russian)
+# GLHden Horde Tributaries (not Russian)
 dependency = {
 	subject_type = "tributary_state"
-	first = GOL
+	first = GLH
 	second = FEO
 	start_date = 1355.1.1
 	end_date = 1385.1.1
@@ -9,7 +9,7 @@ dependency = {
 
 dependency = {
 	subject_type = "tributary_state"
-	first = GOL
+	first = GLH
 	second = CIR
 	start_date = 1355.1.1
 	end_date = 1385.1.1
@@ -17,7 +17,7 @@ dependency = {
 
 dependency = {
 	subject_type = "tributary_state"
-	first = GOL
+	first = GLH
 	second = AVR
 	start_date = 1355.1.1
 	end_date = 1385.1.1
@@ -25,7 +25,7 @@ dependency = {
 
 dependency = {
 	subject_type = "tributary_state"
-	first = GOL
+	first = GLH
 	second = GAZ
 	start_date = 1355.1.1
 	end_date = 1385.1.1
@@ -62,6 +62,13 @@ vassal = {
 	end_date = 1396.1.1 
 }
 
+vassal = {
+	first = CHB
+	second = PAD
+	start_date = 1355.1.1 
+	end_date = 1396.1.1 
+}
+
 guarantee = {
 	first = GEO
 	second = SME
@@ -85,14 +92,6 @@ vassal = {
 	end_date = 1358.1.1
 }
 
-# Armenian States
-vassal = {
-	first = ARM
-	second = MLK
-	start_date = 1356.1.1
-	end_date = 1366.1.1
-}
-
 # Qara Qoyunlu under Jalayrids
 vassal = {
 	first = JLR
@@ -101,17 +100,10 @@ vassal = {
 	end_date = 1387.1.1
 }
 
-# Jalayrids and Mamlucks
-alliance = {
-	first = MAM
-	second = JLR
-	start_date = 1356.1.1
-	end_date = 1401.7.1
-}
 
-# Golden Horde and White Horde
+# GLHden Horde and White Horde
 alliance = {
-	first = GOL
+	first = GLH
 	second = WHI
 	start_date = 1356.1.1
 	end_date = 1372.1.1
@@ -125,21 +117,21 @@ vassal = {
 }
 
 union = {
-	first = GOL
+	first = GLH
 	second = WHI
 	start_date = 1372.1.1
 	end_date = 1374.1.1
 }
 
 vassal = {
-	first = GOL
+	first = GLH
 	second = KZH
 	start_date = 1372.1.1
 	end_date = 1374.1.1
 }
 
 alliance = {
-	first = GOL
+	first = GLH
 	second = WHI
 	start_date = 1374.1.1
 	end_date = 1378.1.1
@@ -153,20 +145,20 @@ vassal = {
 }
 
 union = {
-	first = GOL
+	first = GLH
 	second = WHI
 	start_date = 1378.1.1
 	end_date = 1427.1.1
 }
 
 vassal = {
-	first = GOL
+	first = GLH
 	second = KZH
 	start_date = 1378.1.1
 	end_date = 1396.1.1
 }
 
-guarantee = {
+vassal = {
 	first = WHI
 	second = SIB
 	start_date = 1355.1.1
@@ -293,7 +285,7 @@ alliance = {
 }
 
 alliance = {
-	first = GOL
+	first = GLH
 	second = NOG
 	start_date = 1397.1.1
 	end_date = 1419.1.1
@@ -316,6 +308,13 @@ vassal = {
 guarantee = {
 	first = MAM
 	second = HED
+	start_date = 1356.1.1
+	end_date = 1444.1.1
+}
+
+guarantee = {
+	first = JLR
+	second = ALH
 	start_date = 1356.1.1
 	end_date = 1444.1.1
 }

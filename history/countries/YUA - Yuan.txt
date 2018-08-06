@@ -1,32 +1,12 @@
 government = celestial_empire
 government_rank = 3
-technology_group = chinese
+technology_group = nomad_group
 religion = vajrayana
 primary_culture = mongol
 add_accepted_culture = manchu
-capital = 1816	# Beijing
-
-historical_rival = KHA
-historical_rival = CZH
-historical_rival = CXI
-historical_rival = WUU
-historical_rival = CGS
 historical_rival = MNG
-historical_rival = HUA
-historical_rival = QIN
-historical_rival = LNG
-historical_rival = JIN
-historical_rival = YAN
-historical_rival = QIC
-historical_rival = TNG
-historical_rival = CHC
-historical_rival = NNG
-historical_rival = SHU
-historical_rival = YUE
-historical_rival = MIN
-historical_rival = CMI
-historical_rival = YUE
-historical_rival = QNG
+historical_friend = CHG
+capital = 1816	# Beijing
 
 1260.5.5 = {
 	monarch = {
@@ -166,7 +146,6 @@ historical_rival = QNG
 }
 
 1368.9.14 = {
-	technology_group = nomad_group
 	government = steppe_horde
 	religion = tengri_pagan_reformed
 	capital = 2190

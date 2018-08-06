@@ -1,8 +1,8 @@
 # 338 - Al-Djazair (1356)
 # Changes: TLC
 
-owner = TLC
-controller = TLC 
+owner = KBA
+controller = KBA 
 culture = algerian
 religion = sunni
 capital = "Al-Djazair"
@@ -12,7 +12,7 @@ base_tax = 5
 base_production = 5
 base_manpower = 3
 is_city = yes
-add_core = TLC
+add_core = KBA
 add_core = ALG
 
 discovered_by = western

@@ -1,4 +1,4 @@
-government = iqta
+government = barbary_sultanate
 primary_culture = tunisian
 religion = sunni
 technology_group = muslim

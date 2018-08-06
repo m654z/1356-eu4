@@ -1,9 +1,9 @@
 # 2324 - Halaib (1356)
 # Changes: religion
 
-owner = MAM
-controller = MAM
-add_core = MAM
+owner = MAK
+controller = MAK
+add_core = MAK
 add_core = BEJ
 culture = beja
 religion = coptic

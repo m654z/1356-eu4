@@ -1,3 +1,4 @@
+
 ﻿l_english:
  mnf_brittany_title: "Unify Brittany"
  mnf_brittany_desc: "Replace the personal union between the House of Monfort and the House of Blois with a real union, welding the two houses together into one more powerful state, capable of withstanding our enemies and ending the feuding of the dynastic factions across our lands."
@@ -78,3 +79,5 @@
  6_cancel_reform_desc: "Cancel the reform"
  reform_info_title: "Hansa Reform Info"
  reform_info_desc: "Display information on the Hanseatic Reforms."
+ ilknanate_nation_title: "Reform the Ilkhanate"
+ ilknanate_nation_desc: "Since the collapse of the Ilkhanate the Tribes of Persia and Iraq have been locked in neverending conflict, however $MONARCH$ has gathered a sizeable support from the Tribes.While Genghis is long dead and the Borjigin dynasty in exile perhaps $MONARCH$ leadership and respect will be able to create a more strengthed Ilkhanate state."

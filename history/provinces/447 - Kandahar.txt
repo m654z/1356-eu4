@@ -1,20 +1,20 @@
 # 447 - Kandahar (1356)
 # Changes: SIS/TIM
 
-owner = SIS
-controller = SIS
+owner = MIH
+controller = MIH
 culture = afghani
 religion = sunni
 capital = "Kandahar"
 trade_goods = cotton
 hre = no
-base_tax = 2 
-base_production = 2
-base_manpower = 3
+base_tax = 2
+base_production = 6
+base_manpower = 2
 is_city = yes
-add_core = SIS
-add_core = AFG
-add_core = KHO
+add_core = MIH
+add_core = KRT
+add_core = SAB
 fort_15th = yes # Zorr Shaar - Qandahar is often described as the strongest fortress in Western Asia
 
 discovered_by = KAS
@@ -24,7 +24,7 @@ discovered_by = indian
 discovered_by = nomad_group
 
 1383.1.1  = { owner = TIM controller = TIM add_core = TIM }
-1424.1.1  = { owner = AFG controller = AFG }
+1424.1.1  = { owner = AFG controller = AFG add_core = AFG }
 1449.2.1  = { # Conquered by Babur bin Baysunkur
 		owner = KHO
 		controller = KHO

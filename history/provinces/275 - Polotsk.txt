@@ -1,8 +1,8 @@
 # 275 - Polotsk (1356)
 # Changes: PLT
 
-owner = PLT
-controller = PLT
+owner = LIT
+controller = LIT
 culture = byelorussian
 religion = orthodox 
 hre = no

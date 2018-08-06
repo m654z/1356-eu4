@@ -51,13 +51,6 @@ alliance = {
 	end_date = 1372.3.19
 }
 
-alliance = {
-	first = BYZ
-	second = SAV
-	start_date = 1326.10.1
-	end_date = 1376.8.12
-}
-
 #################
 # VASSALS	#
 #################
@@ -93,6 +86,13 @@ royal_marriage = {
 
 # Aragon and Sicily
 alliance = {
+	first = ARA
+	second = SIC
+	start_date = 1386.5.19
+	end_date = 1409.7.25
+}
+
+royal_marriage = {
 	first = ARA
 	second = SIC
 	start_date = 1386.5.19

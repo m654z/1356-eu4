@@ -1,8 +1,8 @@
 # 2954 - Djerba (1356)
 # Changes: SIC
 
-owner = TUN
-controller = TUN 
+owner = TRP
+controller = TRP 
 culture = tunisian
 religion = ibadi
 capital = "Djerba"
@@ -13,7 +13,6 @@ base_production = 1
 base_manpower = 1
 fort_15th = yes # Borj El K'bir
 is_city = yes
-add_core = TUN
 add_core = TRP
 add_claim = SIC
 

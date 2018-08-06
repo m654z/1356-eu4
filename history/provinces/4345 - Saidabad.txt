@@ -1,10 +1,10 @@
 # 4345 - Saidabad (1356)
 # Changes: PER/religion
 
-owner = PER
-controller = PER
+owner = MUZ
+controller = MUZ
 culture = persian
-religion = sunni
+religion = zoroastrian
 capital = "Saidabad"
 trade_goods = livestock
 hre = no
@@ -13,7 +13,7 @@ base_production = 1
 base_manpower = 1
 is_city = yes
 add_core = KRM
-add_core = PER
+add_core = MUZ
 
 discovered_by = east_african
 discovered_by = muslim

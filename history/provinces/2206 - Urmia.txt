@@ -2,7 +2,7 @@
 # Changes: CHB/JLR/QAR/TIM
 
 owner = CHB
-controller = JLR
+controller = CHB
 culture = kurdish
 religion = sunni
 capital = "Urmiyeh"

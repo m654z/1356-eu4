@@ -5,28 +5,6 @@ primary_culture = afghani
 capital = 451	# Kabul
 religious_school = hanafi_school
 
-# Kartidid Empire
-
-1332.1.1 = {
-	capital = 446
-	monarch = {
-		name = "Mu'izz-uddin Husayn"
-		dynasty = "Kurtid"
-		adm = 2
-		dip = 2
-		mil = 2
-	}
-}
-
-1370.1.1 = {
-	monarch = {
-		name = "Ghiyath-uddin Ali"
-		dynasty = "Kurtid"
-		adm = 2
-		dip = 2
-		mil = 2
-	}
-}
 
 # Timurid Governors of Kabul, Soyurghatmish
 1424.1.1 = {
@@ -36,8 +14,8 @@ religious_school = hanafi_school
 		culture = uzbehk
 		dynasty = "Timurid"
 		adm = 2
-		dip = 2
-		mil = 2
+		dip = 3
+		mil = 6
 	}
 }
 

@@ -3,7 +3,7 @@
 
 owner = ERE
 controller = ERE
-culture = turkish
+culture = coptic
 religion = shiite
 capital = "Divrigi"
 trade_goods = wool

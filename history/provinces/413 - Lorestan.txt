@@ -1,8 +1,8 @@
 # 413 - Lorestan (1356)
 # Changes: JLR/TIM/religion
 
-owner = LRI
-controller = LRI
+owner = JLR
+controller = JLR
 culture = luri
 religion = sunni
 capital = "Khorramabad"
@@ -14,7 +14,6 @@ base_manpower = 2
 is_city = yes
 add_core = MSY
 add_core = JLR
-add_core = LRI
 fort_15th = yes # Falak-ol-Aflak
 
 discovered_by = muslim

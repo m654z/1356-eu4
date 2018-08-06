@@ -1,4 +1,4 @@
-government = iqta 
+government = barbary_sultanate 
 technology_group = muslim
 religion = sunni
 primary_culture = berber

@@ -7,6 +7,18 @@ technology_group = western
 capital = 146	# Athens
 fixed_capital = 146 # Cannot move capital away from this province & no power cost to move to it
 
+
+1356.11.25 = {
+	monarch = {
+		name = "Raymond"
+		dynasty = "Bernardi"
+		birth_date = 1330.1.1
+		adm = 2
+		dip = 2
+		mil = 4
+	}
+}
+
 1388.5.2 = {
 	monarch = {
 		name = "Nerio I"

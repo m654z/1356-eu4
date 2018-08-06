@@ -1,8 +1,8 @@
 # 378 - Tripoli (1356)
 # Changes: CYP/religion
 
-owner = MAM
-controller = MAM
+owner = SYR
+controller = SYR
 culture = al_suryah_arabic
 religion = catholic
 capital = "Trablos" # Tripoli in the East.
@@ -15,7 +15,6 @@ base_manpower = 4
 is_city = yes
 add_core = LEB
 add_core = SYR
-add_core = MAM
 add_core = CYP
 
 discovered_by = muslim

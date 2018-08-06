@@ -3,13 +3,16 @@ primary_culture = kirgiz
 religion = tengri_pagan_reformed
 technology_group = nomad_group
 capital = 715
+historical_friend = YUA
 
 # Khans of Mughalistan
 
 1347.1.1 = {
+	religion = sunni
+	religious_school = hanafi_school
 	monarch = {
 		name = "Tugluk Timur"
-		dynasty = "Chagatayid"
+		dynasty = "Borjigin"
 		adm = 3
 		dip = 3
 		mil = 3
@@ -19,7 +22,7 @@ capital = 715
 1363.1.1 = {
 	monarch = {
 		name = "Ilyas Hoja"
-		dynasty = "Chagatayid"
+		dynasty = "Borjigin"
 		adm = 1
 		dip = 2
 		mil = 1
@@ -27,8 +30,6 @@ capital = 715
 }
 
 1369.1.1 = {
-	religion = sunni
-	religious_school = hanafi_school
 	monarch = {
 		name = "Qamar-ud-din Khan"
 		dynasty = "Dughlatid"
