@@ -1076,7 +1076,6 @@ karling_ideas = { #Francia Ideas
 		army_tradition = 1
 	}
 }
-<<<<<<< HEAD
 
 CTR_ideas = { #Just spains ideas, same localisation and all
 	start = {
@@ -1119,7 +1118,8 @@ CTR_ideas = { #Just spains ideas, same localisation and all
 
 	siglo_de_oro = {
 		prestige = 1
-=======
+	}
+}
 SAP_ideas = {
 	start = {
 		enemy_core_creation = 0.5
@@ -1147,6 +1147,5 @@ SAP_ideas = {
 	}
 	overland_trade = {
 		caravan_power = 0.25
->>>>>>> master
 	}
 }

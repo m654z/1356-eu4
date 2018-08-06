@@ -1,4 +1,3 @@
-
 ####################################
 #
 #Monarchies
@@ -137,7 +136,7 @@ kalmar_union = {
 	
 	color = { 89 163 0 }
 	
-	valid_for_new country = no
+	valid_for_new_country = no
 	
 	ai_will_do = {
 		factor = 0

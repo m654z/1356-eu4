@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 government = iqta
 primary_culture = al_suryah_arabic
 religion = sunni
@@ -32,39 +31,4 @@ historical_rival = MAM
 		dip = 5
 		mil = 6
 	}
-=======
-government = iqta
-primary_culture = al_suryah_arabic
-religion = sunni
-technology_group = muslim
-capital = 382	# Damascus
-religious_school = shafii_school
-historical_rival = MAM
-
-1356.11.6 = {	
-	monarch = {
-		name = "Sayf-ad-din"
-		monarch_name = "Sayf-ad-din II"
-		dynasty = "Nasiraid"
-		birth_date = 1280.1.1
-		death_date = 1357.12.25
-		claim = 100
-		adm = 4
-		dip = 3
-		mil = 4
-	}
-}
-1356.12.24 = {
-	heir = {
-		name = "Shihab-ad-din"
-		monarch_name = "Shihab-ad-din II"
-		dynasty = "Nasiraid"
-		birth_date = 1338.12.25
-		death_date = 1411.1.1
-		claim = 100
-		adm = 5
-		dip = 5
-		mil = 6
-	}
->>>>>>> master
 }

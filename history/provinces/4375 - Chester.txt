@@ -4,8 +4,8 @@ latent_trade_goods = {
 	coal
 }
 
-owner = ENG
-controller = ENG
+owner = LNC
+controller = LNC
 culture = english
 religion = catholic
 hre = no
@@ -15,12 +15,14 @@ trade_goods = salt
 base_manpower = 1
 capital = "Chester"
 is_city = yes
-add_core = ENG
+add_core = LNC
+
 discovered_by = western
 discovered_by = muslim
 discovered_by = ottoman
 discovered_by = eastern
 
+1399.2.3  = { owner = ENG controller = ENG add_core = ENG remove_core = LNC }
 1453.1.1 = { unrest = 5 } # Start of the War of the Roses
 1461.6.1 = { unrest = 2 } # Coronation of Edward IV
 1467.1.1 = { unrest = 5 } # Rivalry between Edward IV & Warwick

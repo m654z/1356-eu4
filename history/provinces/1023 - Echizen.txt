@@ -2,7 +2,7 @@
 # Changes: HTK
 
 owner = SBA
-controller = SBA
+controller = SCJ
 culture = japanese
 religion = shinto
 capital = "Takefu"
@@ -23,6 +23,7 @@ discovered_by = ANU
 
 1366.1.1   = { owner = HTK controller = HTK add_core = HTK }
 1380.1.1   = { owner = SBA controller = SBA remove_core = HTK }
+1385.1.1  = { controller = SBA }
 1460.1.1   = { add_core = ASA }
 1471.7.1   = { owner = ASA controller = ASA }
 1471.7.1   = { capital = "Ichijodani" }
@@ -31,5 +32,6 @@ discovered_by = ANU
 1568.1.1   = { add_core = ODA }
 1573.7.1   = { owner = ODA controller = ODA remove_core = ASA }
 1575.1.1   = { capital = "Kitanosho" }
-1601.1.1   = { capital = "Fukui" }
 1600.10.21 = { add_core = TKG owner = TKG controller = TKG remove_core = ODA }
+1601.1.1   = { capital = "Fukui" }
+

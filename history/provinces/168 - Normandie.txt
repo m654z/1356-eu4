@@ -1,8 +1,8 @@
 # 168 - Normandie (1356)
 # Changes: NRM
 
-owner = NRM
-controller = NRM
+owner = NAV
+controller = NAV
 capital = "Caen"
 is_city = yes
 culture = normand
@@ -14,7 +14,7 @@ base_production = 6
 trade_goods = naval_supplies
 base_manpower = 5
 add_core = NRM
-add_claim = FRA
+add_core = NAV
 fort_15th = yes
 
 discovered_by = eastern

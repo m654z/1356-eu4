@@ -4,11 +4,6 @@ technology_group = chinese
 religion = vajrayana
 primary_culture = mongol
 add_accepted_culture = manchu
-<<<<<<< HEAD
-=======
-historical_rival = MNG
-historical_friend = CHG
->>>>>>> master
 capital = 1816	# Beijing
 
 historical_rival = KHA
@@ -31,6 +26,7 @@ historical_rival = YUE
 historical_rival = MIN
 historical_rival = CMI
 historical_rival = QNG
+historical_friend = CHG
 
 1260.5.5 = {
 	monarch = {

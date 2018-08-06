@@ -14,7 +14,7 @@ base_manpower = 3
 is_city = yes
 add_core = CHB
 add_core = TBR
-add_core = JLR 
+#add_core = JLR 
 fort_15th = yes
 
 discovered_by = muslim
@@ -29,7 +29,7 @@ add_permanent_province_modifier = {
 	duration = -1
 }
 
-1358.1.1   = { owner = JLR controller = JLR }
+1358.1.1   = { owner = JLR controller = JLR add_core = JLR }
 1385.1.1   = { controller = GOL }
 1387.1.1   = { owner = QAR controller = QAR add_core = QAR }
 1392.1.1   = { owner = TIM controller = TIM add_core = TIM }
@@ -38,7 +38,7 @@ add_permanent_province_modifier = {
 1410.10.1  = { controller = QAR }
 1429.1.1   = { controller = TIM }
 1431.1.1   = { controller = QAR }
-1431.7.1   = { remove_core = TIM }
+1431.7.1   = { remove_core = TIM remove_core = JLR }
 1458.9.1   = { revolt = { type = pretender_rebels size = 0 name = "Hasan Ali's Faction" leader = "Hasan Ali" } controller = REB } # Civil war in Qara Quyunlu
 1458.12.1  = { revolt = {} controller = QAR }
 1468.1.1   = {	owner = AKK

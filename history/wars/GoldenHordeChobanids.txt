@@ -6,19 +6,19 @@
 #
 #1355.1.1 = {
 #	add_attacker = GOL
-	add_attacker = GAZ
-	add_defender = CHB
-	add_defender = SRV
-	add_defender = ARL
-	add_defender = PAD
-}
-
+#	add_attacker = GAZ
+#	add_defender = CHB
+#	add_defender = SRV
+#	add_defender = ARL
+#	add_defender = PAD
+#}
+#
 # Peace
-1358.1.1 = {
-	rem_attacker = GOL
-	rem_attacker = GAZ
-	rem_defender = CHB
-	rem_defender = SRV
-	rem_defender = ARL
-	rem_defender = PAD
-}
+#1358.1.1 = {
+#	rem_attacker = GOL
+#	rem_attacker = GAZ
+#	rem_defender = CHB
+#	rem_defender = SRV
+#	rem_defender = ARL
+#	rem_defender = PAD
+#}

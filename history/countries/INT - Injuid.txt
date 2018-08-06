@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-government = iqta
-=======
 government = tribal_federation_ilkhan
->>>>>>> master
 government_rank = 1
 primary_culture = persian
 religion = shiite

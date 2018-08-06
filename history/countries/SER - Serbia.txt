@@ -11,25 +11,15 @@ historical_friend = BOS
 		name = "Stefan Uroš V"
 		dynasty = "Nemanjic"
 		birth_date = 1336.1.1
-<<<<<<< HEAD
-		adm = 1
-		dip = 2
-		mil = 1
-=======
 		adm = 2
 		dip = 1
 		mil = 3
->>>>>>> master
 	}
 }
 
 1360.1.1  = { capital = 1766 } # Pristina
 	
-<<<<<<< HEAD
-1360.7.1 = {
-=======
-1356.7.1. = {
->>>>>>> master
+1356.7.1 = {
 	queen = {
 		country_of_origin = WAL
 		name = "Anka"

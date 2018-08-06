@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 government = despotic_monarchy
 technology_group = chinese
 religion = confucianism
@@ -34,44 +33,4 @@ historical_rival = QNG
 		dip = 3
 		mil = 3
 	}
-=======
-government = despotic_monarchy
-technology_group = chinese
-religion = confucianism
-primary_culture = shandong_culture
-historical_rival = YUA
-historical_rival = MNG
-capital = 690	#Qingzhou
-
-historical_rival = YUA
-historical_rival = KHA
-historical_rival = CZH
-historical_rival = CXI
-historical_rival = WUU
-historical_rival = CGS
-historical_rival = MNG
-historical_rival = HUA
-historical_rival = QIN
-historical_rival = LNG
-historical_rival = JIN
-historical_rival = YAN
-historical_rival = TNG
-historical_rival = CHC
-historical_rival = NNG
-historical_rival = SHU
-historical_rival = YUE
-historical_rival = MIN
-historical_rival = CMI
-historical_rival = YUE
-historical_rival = QNG
-
-1355.1.1 = {
-	monarch = {
-		name = "Han Lin'er"
-		dynasty = "Sung"
-		adm = 3
-		dip = 3
-		mil = 3
-	}
->>>>>>> master
 }

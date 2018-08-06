@@ -1,6 +1,7 @@
 #Scandinavia
 ORK = "countries/Orkney.txt"
 SKN = "countries/Skane.txt"
+SAP = "countries/Sapmi.txt"
 
 #Balkans
 DOB = "countries/Dobruja.txt"
@@ -44,7 +45,6 @@ RAE = "countries/Raetia.txt"
 CTR = "countries/Trastamara.txt"
 MJO = "countries/Majorca.txt"
 
-
 #Italy
 VRN = "countries/Verona.txt"
 
@@ -59,13 +59,6 @@ WOO = "countries/Wallonia.txt"
 GLY = "countries/Galich.txt"
 MRM = "countries/Murom.txt"
 
-#Scandinavia
-SAP = "countries/Sapmi.txt"
-
-<<<<<<< HEAD
-
-=======
->>>>>>> master
 #Arabia	
 JLR = "countries/Jalayirid.txt"
 ILK = "countries/Ilkhanate.txt"

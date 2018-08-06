@@ -2,7 +2,7 @@
 # Changes: AKM/STK
 
 owner = AKM
-controller = AKM
+controller = SCJ
 culture = japanese
 religion = shinto
 capital = "Naniwa"
@@ -23,6 +23,7 @@ discovered_by = QNG
 
 1360.1.1  = { owner = STK controller = STK add_core = STK }
 1362.1.1  = { owner = AKM controller = AKM remove_core = STK }
+1364.1.1  = { controller = AKM }
 1374.1.1  = { owner = HSK controller = HSK }
 1478.1.1  = { capital = "Sakai" }
 1542.1.1  = { discovered_by = POR }

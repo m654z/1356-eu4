@@ -43,3 +43,4 @@ discovered_by = indian
 		controller = QNG
 		add_core = QNG
 	     }
+		

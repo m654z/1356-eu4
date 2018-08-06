@@ -92,7 +92,7 @@ country_event = {
 			#ROOT = {
 			#	add_treasury = 40
 			#
-			}
+			#}
 			#THIS = {
 			#	add_treasury = -40
 			#}

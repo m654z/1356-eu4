@@ -16,7 +16,6 @@ add_local_autonomy = 25
 estate = estate_nobles
 add_core = GUY
 add_core = TOU
-add_claim = FRA
 
 discovered_by = eastern
 discovered_by = western

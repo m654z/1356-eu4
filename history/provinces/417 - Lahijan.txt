@@ -17,7 +17,8 @@ base_tax = 5
 base_production = 5
 base_manpower = 2
 is_city = yes
-add_core = CHB
+#add_core = CHB
+
 
 discovered_by = muslim
 discovered_by = ottoman

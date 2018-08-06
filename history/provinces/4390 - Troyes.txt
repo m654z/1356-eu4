@@ -19,7 +19,10 @@ discovered_by = western
 discovered_by = muslim
 discovered_by = ottoman
 
-
+1349.10.6  = { 
+add_core = NAV }
+1404.6.9   = { 
+remove_core = NAV }
 1588.12.1 = { unrest = 5 } # Henri de Guise assassinated at Blois, Ultra-Catholics into a frenzy
 1594.1.1 = { unrest = 0 } # 'Paris vaut bien une messe!', Henri converts to Catholicism
 1621.1.1 = { base_tax = 7 

@@ -15,13 +15,12 @@ discovered_by = eastern
 discovered_by = western
 discovered_by = muslim
 discovered_by = ottoman
-add_core = FRA
 add_core = NRM
 
-1354.1.1 = { owner = NRM controller = NRM }
+1354.1.1 = { owner = NAV controller = NAV add_core = NAV }
 1378.6.1 = { owner = ENG controller = ENG }
-1393.1.1 = { owner = NRM controller = NRM }
-1404.1.1 = { owner = FRA controller = FRA }
+1393.1.1 = { owner = NAV controller = NAV }
+1404.1.1 = { owner = FRA controller = FRA add_core = FRA }
 1415.10.25 = { controller = ENG } # The Battle of Agincourt
 1420.5.12 = { owner = ENG add_core = ENG } # Treaty of Troyes
 1450.1.1 = { owner = FRA controller = FRA } # Retaken by France

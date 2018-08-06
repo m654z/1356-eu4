@@ -2,8 +2,6 @@ avignon_pap_end = {
 	opinion = -100
 	yearly_decay = 2.5
 }
-<<<<<<< HEAD
-
 1356_fra_ended_rivalry = {
 	opinion = 100
 	yearly_decay = 0.5
@@ -34,8 +32,6 @@ avignon_pap_end = {
 	yearly_decay = 0.75
 }
 
-=======
->>>>>>> master
 member_of_hansa_op = {
 	opinion = 100
 }
