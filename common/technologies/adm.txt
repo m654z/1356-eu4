@@ -253,7 +253,8 @@ technology = { #Land Clearance
 	year = 1674
 	
 	#Land Clearance
-	production_efficiency 	=	0.05
+	production_efficiency =	0.02
+	furnace = yes
 }
 
 technology = { #The Constitution
@@ -288,7 +289,7 @@ technology = { #Improved Production
 	year = 1730
 	
 	#Improved Farm Animals
-	production_efficiency 	=	0.05
+	production_efficiency 	=	0.02
 }
 
 technology = { #Separation of Powers
@@ -312,7 +313,7 @@ technology = { #Rotherham Plough
 	year = 1775
 	
 	#Rotherham Plough
-	production_efficiency 	=	0.05
+	production_efficiency 	=	0.02
 }
 
 technology = { #Rights of Man
@@ -329,7 +330,7 @@ technology = { #Advanced Production
 	year = 1805
 	
 	#Improved Draft Animals
-	production_efficiency 	=	0.05
+	production_efficiency 	=	0.02
 }
 
 technology = { #Revolutionary Ideals
@@ -346,7 +347,7 @@ technology = { #Four Field Rotation
 	year = 1835
 	
 	#Four field rotation
-	production_efficiency 	=	0.05
+	production_efficiency 	=	0.02
 	allowed_idea_groups = 10
 	
 }

@@ -86,12 +86,12 @@ hussite_center_of_reformation = {
 			factor = 1.5
 			culture_group = FROM
 		}
-		modifier = {
-			factor = 2
-			culture_group = FROM
-			development = 10
-			NOT = { num_of_centers_of_reformation = { religion = hussite count = 2 } }
-		}
+		#modifier = {
+		#	factor = 2
+		#	culture_group = FROM
+		#	development = 10
+		#	NOT = { num_of_centers_of_reformation = { religion = hussite count = 2 } }
+		#}
 		modifier = {
 			factor = 0.01
 			religion = coptic

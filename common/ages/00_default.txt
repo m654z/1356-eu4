@@ -9,25 +9,16 @@ age_of_feudalism = {
 	
 
 	objectives = {
-		obj_high_prestige = {
-			prestige = 70
+		obj_higher_prestige = { #Would like to change, but to what?
+			prestige = 80
 		}
-			
-		obj_2_centers_of_trade = {
-			calc_true_if = {
-				all_owned_province = {
-					OR = {
-						has_province_modifier = center_of_trade_modifier
-						has_province_modifier = inland_center_of_trade_modifier
-					}
-					controlled_by = owner
-					is_core = ROOT
-				}
-				amount = 3
+		obj_trade_league = { #Suggested by Mexdus on the workshop suggestion thread
+			OR = {
+				is_in_trade_league = yes
+				has_country_flag = is_in_hansa_trade_league_flag
 			}
 		}
-		
-		obj_20_development_city = {
+		obj_20_development_city = { #Change in future?
 			custom_trigger_tooltip = {
 				tooltip = obj_20_development_city_tooltip
 				any_owned_province = {
@@ -37,48 +28,85 @@ age_of_feudalism = {
 				}
 			}
 		}
-		
-		obj_papal_controller = {
+		obj_papal_controller = { 
 			allow = {
 				religion = catholic
 			}
 			is_papal_controller = yes
 	 	}
-
-		obj_royal_marriages = {
+		obj_feudalism_muslim_piety = { 
+			allow = {
+				religion_group = muslim
+			}
+			OR = {
+				piety = -0.75
+				piety = 0.75
+			}
+	 	}
+		obj_non_christian_muslim_religious_unity = { 
 			allow = {
 				NOT = { religion = catholic }
+				NOT = { religion_group = muslim }
 			}
-			num_of_royal_marriages = 6
+			religious_unity = 0.99
 	 	}		
-		
-		obj_one_union = {
+		obj_deus_vult = { #Suggested by Mexdus on the workshop suggestion thread
 			allow = {
 				religion_group = christian
 			}
-			personal_union  = 1
+			OR = {
+				is_defender_of_faith = yes
+				owns_core_province = 379 #Jerusalem
+				owns_core_province = 2313 #Antioch
+				owns_core_province = 1855 #Sidon
+				owns_core_province = 378 #Tarabulus
+				owns_core_province = 1854 #Jaffa
+				owns_core_province = 382 #Damascus
+				owns_core_province = 327 #Cilicia
+				owns_core_province = 321 #Cyprus
+				owns_core_province = 320 #Rhodes
+				owns_core_province = 151 #Constantanopole
+				owns_core_province = 358 #Alexandria
+				owns_core_province = 118 #Rome
+			}
 		}
-		
+		obj_muslim_holy_war = { 
+			allow = {
+				religion_group = muslim
+			}
+			OR = {
+				is_defender_of_faith = yes
+				owns_core_province = 118 #Rome
+				owns_core_province = 379 #Jerusalem
+				owns_core_province = 382 #Damascus
+				owns_core_province = 151 #Constantanopole
+				owns_core_province = 385 #Mecca
+				owns_core_province = 384 #Medina
+				owns_core_province = 410 #Baghdad
+				owns_core_province = 358 #Alexandria
+				owns_core_province = 225 #Cordoba
+			}
+		}
+		obj_feudal_generic_non_abrahamic_holy_war = { 
+			allow = {
+				NOT = { religion_group = christian }
+				NOT = { religion_group = muslim }
+			}
+			OR = {
+				has_border_with_religious_enemy = yes
+				at_war_with_religious_enemy = yes
+			}
+		}
 		obj_many_vassals_f = {
 			vassal = 3
 		}		
-	
-		obj_two_continents_f = {
-			allow = {
-				NOT = { religion_group = christian }
-			}
-			num_of_continents = 2
-		}
-	
-		obj_introduce_cannon = {
-			artillery_fraction = 40
+		obj_cav_army = { #Suggested by Mexdus on the workshop suggestion thread
+			cavalry_fraction = 0.6 #Too high?
 			army_size_percentage = 0.8
 		}
 	}
 	
 
-	
-	
 	
 	abilities = {
 		ab_allow_feudal_de_jure_law_f = {
@@ -86,118 +114,148 @@ age_of_feudalism = {
 				custom_tooltip = feudal_de_jure_law
 				set_country_flag = feudal_de_jure_law
 			}
+			rule = {
+				can_transfer_vassal_wargoal = yes
+			}
 			ai_will_do = {
 				factor = 10
 			}
 		}
-		
-		ab_justified_wars_f = {
+		ab_feudalism_vassals = { #May need more tweaking
 			modifier = {
-				ae_impact = -0.1
+				vassal_income = 0.25
+				liberty_desire_from_subject_development = -0.25
 			}
 			ai_will_do = {
 				factor = 10
 			}			
 		}
-		
-
-		ab_transfer_vassal_wargoal_f = 
-		{
-			rule = {
-				can_transfer_vassal_wargoal = yes
-				can_chain_claim = yes
+		ab_gothic_architecture = { #Suggested by Mexdus on the workshop suggestion thread #For now no way to let you have early cathedrals. Sorry!
+			modifier = {
+				build_cost = -0.25
+				build_time = -0.35
+				
 			}
 			ai_will_do = {
-				factor = 10
+				factor = 9
 			}
 		}
-		
-		ab_free_war_taxes_f = {
+		ab_feudalism_court_life = { #Suggested by Mexdus on the workshop suggestion thread
 			modifier = {
-				war_taxes_cost_modifier = -1.0
+				diplomatic_upkeep = 2
+				improve_relation_modifier = 0.1
 			}
 			ai_will_do = {
 				factor = 10
 			}	
-		}
-		
-
-		ab_cavalry_armies_f = {
+		}	
+		ab_mercs_over_chevaliers = { #Suggested by Mexdus on the workshop suggestion thread
 			modifier = {
-				cav_to_inf_ratio = 0.2
+				possible_mercenaries = 0.1
+				mercenary_cost = -0.15
 			}
 			ai_will_do = {
 				factor = 10
 			}
 		}
-		ab_chevauchee = {
+		ab_chevauchee = { #Tweaked to focus more on just cav
 			modifier = {
-				shock_damage = 0.2
+				cavalry_power = 0.15
 				leader_land_shock = 1
 			}
 			ai_will_do = {
 				factor = 10
 			}
 		}
-		
-		ab_attack_bonus_in_capital_terrain_f = {
-			rule = {
-				attack_bonus_in_capital_terrain = yes
+		ab_feudalism_quality_trade_ships = { 
+			modifier = {
+				global_ship_trade_power = 0.15
+				light_ship_cost = -0.2
 			}
 			ai_will_do = {
 				factor = 10
 			}
 		}
 		
-		ab_ottoman_siege_ability_f = {
+		ab_nomad_age_bonus = {
 			allow = {
-				tag = TUR
+				OR = {
+					technology_group = nomad_group
+					tag = JLR
+					tag = CHB
+					tag = YUA
+				}
 			}
 			modifier = {
-				siege_ability = 0.33
+				cavalry_flanking = 0.1
+				cavalry_power = 0.1
+				horde_unity = 2
+			}
+			ai_will_do = {
+				factor = 100
+			}
+		}	
+		ab_england_longbowmen = { #Needs tweaks for balance
+		
+			allow = {
+				OR = {
+					tag = ENG
+					tag = YOR
+					tag = LNC
+					tag = NOL	
+				}
+			}
+			modifier = {
+				infantry_power = 0.15
+				prestige_from_land = 0.2
 			}
 			ai_will_do = {
 				factor = 100
 			}
 		}
-		
-		ab_england_longbowmen = {
-		
-			allow = {
-				tag = ENG
+		ab_asia_large_conquests = { #Partially suggested by Mexdus on the workshop suggestion thread
+				allow = {
+				capital_scope = {
+					continent = asia
+				}
+				NOT = { is_emperor_of_china = yes }
+				OR = {
+					government_rank = 3
+					NOT = { great_power_rank = 8 }
+					AND = {
+						NOT = { has_country_flag = chinese_red_turban_rebellion_over_flag }
+						culture_group = east_asian
+					}
+				}
 			}
 			modifier = {
-				leader_land_fire = 1
-				infantry_power = 0.1
+				administrative_efficiency = 0.1
+				ae_impact = -0.1
+				unjustified_demands = -0.1
 			}
 			ai_will_do = {
 				factor = 100
 			}
 		}
-		ab_viking_legacy = {
+		ab_feudalism_avignon_papacy = { #Suggested by Mexdus on the workshop suggestion thread
 		
 			allow = {
-				culture_group = scandinavian
+				OR = {
+					AND = {
+						tag = FRA
+						religion = catholic
+					}
+					AND = {
+						NOT = { exists = FRA }
+						culture_group = french
+						religion = catholic
+					}
+				}
+				
 			}
 			modifier = {
-				global_ship_cost = -0.25
-				global_sailors_modifier = 0.25
-				naval_forcelimit_modifier = 0.25
-				naval_maintenance_modifier = -0.25
-			}
-			ai_will_do = {
-				factor = 100
-			}
-		}
-		ab_bohemian_empire = {
-		
-			allow = {
-				tag = BOH
-			}
-			modifier = {
-				imperial_authority = 0.05
-				improve_relation_modifier = 0.25
-				diplomatic_reputation = 2
+				papal_influence = 0.5
+				missionaries = 1
 			}
 			ai_will_do = {
 				factor = 100
@@ -314,10 +372,11 @@ age_of_discovery = {
 	
 	
 	abilities = {
-		ab_allow_feudal_de_jure_law = {
-			effect = {
-				custom_tooltip = feudal_de_jure_law
-				set_country_flag = feudal_de_jure_law
+		ab_disc_colonial_range = { #MOVED TO AGE OF FEUDALISM. WAS FEUDAL DEJURE LAW 
+			modifier = {
+				range = 0.25
+				trade_range_modifier = 0.1
+			
 			}
 			ai_will_do = {
 				factor = 10
@@ -334,11 +393,13 @@ age_of_discovery = {
 		}
 		
 
-		ab_transfer_vassal_wargoal = 
-		{
+		ab_disc_claims = { #Removed chain claim in Age 1, removed Vassal Wargoal in Age 2. WAS TRANSFTER VASSAL WARGOAL.	
 			rule = {
-				can_transfer_vassal_wargoal = yes
+				#can_transfer_vassal_wargoal = yes
 				can_chain_claim = yes
+			}
+			modifier = {
+				fabricate_claims_cost= -0.15
 			}
 			ai_will_do = {
 				factor = 10
@@ -355,9 +416,10 @@ age_of_discovery = {
 		}
 		
 
-		ab_cavalry_armies = {
+		ab_disc_general_cost_leader_pool = { #EDITED FROM VANILLA'S VALUES. CHANGED COMPLETLY. WAS CAV TO INF RATIO
 			modifier = {
-				cav_to_inf_ratio = 0.2
+				general_cost = -0.15
+				free_leader_pool = 1
 			}
 			ai_will_do = {
 				factor = 10
@@ -381,9 +443,12 @@ age_of_discovery = {
 			}
 		}
 		
-		ab_ottoman_siege_ability = {
+		ab_ottoman_siege_ability = { #EDITED FROM VANILLA'S VALUES. ADDED RUM.
 			allow = {
-				tag = TUR
+				OR = {
+					tag = TUR
+					tag = RUM
+				}
 			}
 			modifier = {
 				siege_ability = 0.33

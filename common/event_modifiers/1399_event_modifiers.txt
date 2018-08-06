@@ -1,3 +1,488 @@
+<<<<<<< HEAD
+rush_of_colonists = {
+	colonists = 1
+}
+
+#Center of Trade Modifiers
+
+# Audax Validator "." Ignore_ALL
+center_of_trade_modifier = {
+	local_institution_spread = 0.10
+	province_trade_power_value = 20
+	naval_forcelimit = 2
+	land_forcelimit = 2
+	local_development_cost = -0.1
+	local_sailors_modifier = 0.25
+	local_manpower_modifier = 0.25
+	picture = "province_trade_power_value"
+}
+
+# Audax Validator "." Ignore_ALL
+inland_center_of_trade_modifier = {
+	local_institution_spread = 0.10
+	province_trade_power_value = 20
+	local_development_cost = -0.1
+	picture = "province_trade_power_value"
+}
+
+# Audax Validator "." Ignore_ALL
+sound_toll = {
+	province_trade_power_value = 20
+	province_trade_power_modifier = 0.25
+	picture = "province_trade_power_value"
+}
+
+golden_gate = {
+	local_defensiveness = 1.0
+	local_hostile_attrition = 2
+}
+
+#Generic
+
+generic_make_ally = {
+	diplomatic_reputation = 1
+	improve_relation_modifier = 0.1
+}
+
+generic_men_flock_to_banner = {
+	manpower_recovery_speed = 0.2
+	global_manpower_modifier = 0.15
+	global_regiment_cost = -0.1
+
+}
+
+# North Europe region
+member_of_hansa_ev = {
+	trade_steering = 0.2
+	trade_efficiency = 0.2
+	dip_tech_cost_modifier = -0.1
+	naval_morale = 0.1
+	interest = -0.5
+}
+
+leader_of_hansa = {
+	trade_efficiency = 0.1
+	production_efficiency = 0.05
+	prestige = 0.5
+}
+
+hansa_kontor = {
+	# Blank on purpose
+}
+
+hansa_sound_toll = {
+	trade_efficiency = -0.1
+	trade_steering = -0.15
+	naval_morale = -0.1
+}
+
+hansa_reform_1 = {
+	build_cost = -0.1
+}
+hansa_reform_2_member = {
+	global_regiment_cost = -0.25
+	manpower_recovery_speed = 0.1
+}
+hansa_reform_2_leader = {
+	global_regiment_cost = -0.25
+	manpower_recovery_speed = 0.1
+}
+hansa_reform_3_member = {
+	diplomatic_reputation = 1
+}
+hansa_reform_3_leader = {
+	diplomatic_reputation = 1
+	legitimacy = 1
+}
+recently_passed_reform = {
+}
+
+#Scandanavia
+
+#Iceland
+
+ice_norse_tradition = { #Gogo Iceland into Norse Empire?
+	land_morale = 0.1
+	naval_morale = 0.1
+	diplomatic_reputation = -1
+}
+
+#Sweden
+swedish_noble_support = {
+	land_maintenance_modifier = -0.15
+	manpower_recovery_speed = 0.25
+	land_morale = 0.1
+}
+
+#Balkans/Anatolia
+
+# Audax Validator "." Ignore_ALL
+bosphorous_sound_toll = {
+	picture = "province_trade_power_value"
+	province_trade_power_value = 20
+	province_trade_power_modifier = 0.25
+	naval_forcelimit = 2
+	land_forcelimit = 2
+	local_sailors_modifier = 0.25
+	local_manpower_modifier = 0.25
+}
+
+turkish_settlement = {
+	local_tax_modifier = -0.25
+	local_production_efficiency = -0.25
+	local_manpower_modifier = -0.25
+}
+
+constantinopole_fort_1356_modifier = {
+	local_defensiveness = 0.2
+	garrison_growth = 0.1
+	local_hostile_attrition = 1
+}
+
+#French Region
+
+#France 
+jean_darc = {
+	global_regiment_cost = -0.50
+}
+fra_dauphin_modifier = {
+	advisor_cost = -0.05
+	legitimacy = 0.05
+	prestige = 0.15
+}
+fra_ruler_in_prison = {
+	advisor_cost = 0.05
+	legitimacy = -0.25
+}
+HYW_france_beat_back_occupation = {
+	manpower_recovery_speed = 0.5
+}
+paris_prison_break = {
+	prestige = -0.5
+}
+1356_ruler_is_powerless = {
+	prestige = -0.5
+	legitimacy = -0.5
+	global_unrest = 1
+	stability_cost_modifier = 0.15
+}
+1356_fra_lowlands_modifier = {
+	global_autonomy = -0.05
+}
+1356_fra_italy_modifier = {
+	years_of_nationalism = -5
+}
+1356_fra_rhineland_modifier = {
+	defensiveness = 0.1
+}
+1356_fra_westphalia_modifier = {
+	infantry_cost = -0.1
+}
+1356_burgundy_kingdom_claim = {
+	legitimacy = 0.5
+	prestige = 0.25
+	improve_relation_modifier = 0.1
+	global_autonomy = -0.05
+}
+1356_claim_to_karling_throne = {
+	improve_relation_modifier = 0.05
+	diplomatic_reputation = 1
+	legitimacy = 0.25
+	prestige = 0.1
+}
+
+#French Ducal
+french_ducal_paris_conquest = {
+	diplomatic_reputation = 1
+	improve_relation_modifier = 0.1
+	legitimacy = 0.25
+	prestige = 0.25
+}
+claim_to_kingdom_france = {
+	diplomatic_reputation = 1
+	stability_cost_modifier = -0.15
+	global_autonomy = -0.05
+}
+french_ducal_aquitaine_conquest = {
+	diplomatic_reputation = 1
+	improve_relation_modifier = 0.1
+	global_autonomy = -0.05
+	stability_cost_modifier = -0.05
+}
+claim_to_kingdom_aquitaine = {
+	prestige = 0.5
+	legitimacy = 0.5
+	stability_cost_modifier = -0.05
+	advisor_cost = -0.1
+}
+dau_treaty_of_the_romans = {
+	local_unrest = -5
+	local_autonomy = 0.05
+	local_development_cost = -0.25
+	local_missionary_strength = -0.02
+	religious_conversion_resistance = 0.2
+	local_culture_conversion_cost = 0.25
+	local_state_maintenance_modifier = -1
+	province_trade_power_modifier = 0.1
+	local_manpower_modifier = -0.5
+}
+dau_treaty_of_romans_violeted = {
+	local_unrest = 4
+	local_autonomy = -50
+	local_years_of_nationalism = 5
+	local_culture_conversion_cost = 0.25
+	local_missionary_strength = -0.02
+}
+
+#Gascon
+gas_triumph_over_french = {
+	land_morale = 0.1
+	fort_maintenance_modifier = -0.1
+	infantry_cost = -0.05
+}
+
+#Burgundian/Lowland Region
+
+#Lotharingia
+
+lot_secured_the_north = {
+	stability_cost_modifier = -0.05
+	legitimacy = 0.05
+	prestige = 0.05
+}
+lot_secured_aachen = {
+	legitimacy = 0.5
+}
+lot_secured_burgundian_kingdom = {
+	improve_relation_modifier = 0.1
+	global_autonomy = -0.05
+}
+lot_secured_lowlands = {
+	interest = -1
+	stability_cost_modifier = 0.05
+}
+lot_annexed_swi = {
+	global_unrest = 1
+	harsh_treatment_cost = -0.075
+	idea_cost = -0.05
+}
+lot_annexed_hab = {
+	diplomatic_reputation = 2
+	envoy_travel_time = -0.25
+	improve_relation_modifier = 0.2
+}
+lot_two_burgundies_secure = {
+	manpower_recovery_speed = 0.1
+	reinforce_speed = 0.1
+	infantry_cost = -0.1
+}
+lot_trade_value_mod = {
+	global_ship_cost = -0.1
+	trade_efficiency = 0.15
+}
+lot_built_universities = {
+	technology_cost = -0.05	
+	idea_cost = -0.1	
+	global_institution_spread = 0.1
+}
+lot_built_manufacturies_mod = {
+	local_development_cost = -0.2
+	local_production_efficiency = 0.2
+}
+lot_restored_mod = {
+	prestige = 2
+	global_unrest = -2	
+	stability_cost_modifier = -0.2
+
+}
+
+#Arles
+are_trade_value_mod = {
+	global_ship_cost = -0.1
+	trade_efficiency = 0.15
+}
+are_secured_lower_france = {
+	stability_cost_modifier = -0.15
+	advisor_cost = -0.2
+	development_cost = -0.1
+}
+are_secured_italy = {
+	core_creation = -0.1	
+	ae_impact = -0.1
+}
+ARE_secured_the_north = { #Northern France
+	heavy_ship_cost = -0.1
+	galley_cost = -0.15
+}
+ARE_secured_aachen = {
+	prestige_from_land = 0.5
+	loot_amount = 0.15
+}
+ARE_secured_burgundian_kingdom = {
+	diplomatic_upkeep = 1
+	diplomatic_reputation = 1
+}
+ARE_secured_lowlands = {
+	global_tax_modifier = 0.1
+	global_trade_power = 0.1
+	trade_efficiency = 0.1
+}
+
+#Burgundy
+1356_bur_many_vassals = {
+	liberty_desire_from_subject_development = -0.5
+}
+1356_bur_imperial_relations = {
+	improve_relation_modifier = 0.15
+	diplomatic_reputation = 1
+}
+1356_bur_granted_imperial_title = {
+	prestige = 0.25
+	legitimacy = 0.25
+	global_unrest = -1
+	stability_cost_modifier = -0.05
+}
+bur_improved_imperial_relations = {
+	diplomatic_reputation = 1	
+	improve_relation_modifier = 0.15
+
+}
+1356_integrating_new_provinces_bur = {
+	global_autonomy = -0.075
+	autonomy_change_time = -0.1
+
+}
+bur_annexed_north_coast_mod = {
+	global_ship_cost = -0.1	
+	global_ship_recruit_speed = -0.1	
+	global_sailors_modifier = 0.2
+}
+bur_into_fra_mod = {
+	land_morale = 0.1	
+	army_tradition = 0.5
+	infantry_cost = -0.1
+}
+
+#Iberian Region
+
+#Navarra
+nav_ruler_in_prison = {
+	legitimacy = -1
+	stability_cost_modifier = 0.2
+}
+nav_ruler_prison_break = {
+	prestige = 0.25
+	legitimacy = 0.25
+}
+
+nav_charles_in_paris = {
+	prestige = 1
+}
+nav_france_kingdom_claimed = {
+	prestige = 0.5
+	legitimacy = 0.5
+	production_efficiency = 0.1
+}
+nav_aquitaine_kingdom_claimed = {
+	prestige = 0.5
+	legitimacy = 0.5
+	hostile_attrition = 1
+	land_attrition = -0.15
+}
+nav_gascon_kingdom_claimed = {
+	prestige = 0.5
+	legitimacy = 0.5
+	siege_ability = 0.1
+}
+nav_arles_kingdom_claimed = {
+	prestige = 0.5
+	legitimacy = 0.5
+	technology_cost = -0.1
+}
+nav_lotharingia_kingdom_claimed = {
+	prestige = 0.5
+	legitimacy = 0.5
+	state_maintenance_modifier = -0.2
+}
+nav_francia_kingdom_claimed = {
+	prestige = 1
+	legitimacy = 0.75
+	diplomats = 1
+	diplomatic_reputation = 1
+	envoy_travel_time = -0.2
+	manpower_recovery_speed = 0.2
+}
+
+#HRE
+
+#Emperor
+1356_emperor_be_prestigious = {
+	diplomatic_reputation = 1
+}
+1356_emperor_be_legitimate = {
+	diplomatic_reputation = 1
+}
+1356_emperor_get_elected = {
+	diplomats = 1
+	envoy_travel_time = -0.25
+}
+1356_emperor_imperial_authority = {
+	imperial_authority = 0.05
+}
+
+
+#Scandanavia
+#Sweden
+swe_supported_protestant = {
+	land_morale = 0.15
+	manpower_recovery_speed = 0.1
+}
+
+swedish_noble_support = {
+	land_maintenance_modifier = -0.15
+	manpower_recovery_speed = 0.25
+	land_morale = 0.1
+}
+
+ 
+# Near East region
+	
+Tamerlane = {
+	land_maintenance_modifier = -0.50
+	manpower_recovery_speed = 0.35
+	land_morale = 0.20
+	discipline = 0.10
+	land_forcelimit = 25
+    ae_impact = -0.50
+    province_warscore_cost = -0.50
+    core_creation = -0.50
+	years_of_nationalism = -5
+}
+
+disunited_tribes = {
+	horde_unity = -3
+	land_morale = -0.10
+	land_forcelimit = -15
+}
+
+#Far East Region
+
+fall_of_yuan_mandate = {
+	years_of_nationalism = 5
+	global_unrest = 5
+	culture_conversion_cost = 0.25
+	stability_cost_modifier = 0.25
+	core_creation = 0.15
+	interest = 1
+	mil_tech_cost_modifier = 0.2
+	enemy_core_creation = -0.25
+	discipline = -0.10
+	manpower_recovery_speed = -0.20
+	defensiveness = -0.15
+	land_morale = -0.2
+	recover_army_morale_speed = -0.1	
+	land_forcelimit = -15
+=======
 rush_of_colonists = {
 	colonists = 1
 }
@@ -216,4 +701,5 @@ hansa_sound_toll = {
 	trade_efficiency = -0.1
 	trade_steering = -0.15
 	naval_morale = -0.1
+>>>>>>> master
 }

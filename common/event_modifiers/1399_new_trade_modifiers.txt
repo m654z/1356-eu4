@@ -1,3 +1,8 @@
+<<<<<<< HEAD
 west_africa_ivory_trade = {
 	trade_goods_size = 2.0
+=======
+west_africa_ivory_trade = {
+	trade_goods_size = 2.0
+>>>>>>> master
 }

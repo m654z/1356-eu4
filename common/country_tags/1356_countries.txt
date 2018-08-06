@@ -24,6 +24,12 @@ MNF = "countries/Monfortreval.txt"
 BLS = "countries/Blois.txt"
 FOZ = "countries/Forez.txt"
 POU = "countries/Poitou.txt"
+AQT = "countries/Aquitaine.txt"
+ARE = "countries/Arles.txt"
+LOT = "countries/Lotharingia.txt"
+VAL = "countries/Valois.txt"
+NCH = "countries/CharlamagneEmpire.txt"
+
 	
 #HRE
 GOR = "countries/Gorizia.txt"
@@ -47,6 +53,7 @@ VRN = "countries/Verona.txt"
 ARS = "countries/Artois.txt"
 RET = "countries/Rethel.txt"
 LOO = "countries/Loon.txt"
+WOO = "countries/Wallonia.txt"
 
 #Russia 
 GLY = "countries/Galich.txt"
@@ -55,8 +62,18 @@ MRM = "countries/Murom.txt"
 #Scandinavia
 SAP = "countries/Sapmi.txt"
 
+<<<<<<< HEAD
+
+=======
+>>>>>>> master
 #Arabia	
 JLR = "countries/Jalayirid.txt"
+ILK = "countries/Ilkhanate.txt"
+QON = "countries/Qoyunlu.txt"
+
+#Middle East
+ALX = "countries/Alexandria.txt"
+
 		
 #Asia Minor		
 CIC = "countries/Cilicia.txt"
@@ -77,6 +94,14 @@ WHI = "countries/White Horde.txt"
 #Persia	
 CHB = "countries/Chobanids.txt"
 KHC = "countries/Khachen.txt"
+MUZ = "countries/Muzaffarids.txt"
+PAD = "countries/Paduspanid.txt"
+SAB = "countries/Sarbadarid.txt"
+KRT = "countries/Kurtid.txt"
+INT = "countries/Injuid.txt"
+MIH = "countries/Mihrabanid.txt"
+TPM = "countries/TimuridEmpireAbsolute.txt"
+
 
 #Americas
 SCN = "countries/Sican.txt"
