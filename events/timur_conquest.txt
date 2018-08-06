@@ -1,6 +1,36 @@
 namespace = timurlane
 
 country_event = {
+	id = timurlane.999	#Disable Timur?
+	title = timurlane.999.t
+	desc = timurlane.999.d
+	picture = HORDE_ON_HORSEBACK_eventPicture
+
+	fire_only_once = yes
+	major = yes
+	
+	trigger = {
+		ai = no
+		NOT = { has_global_flag = "timurid_decision" }		
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = timurlane.999.a
+		set_global_flag = "timurid_decision"
+	}
+	option = {
+		name = timurlane.999.b
+		set_global_flag = "disable_timur_conquest"
+		set_global_flag = "timurid_decision"
+	}	
+}
+
+				
+country_event = {
 	id = timurlane.1
 	title = timurlane.1.t
 	desc = timurlane.1.d
@@ -12,6 +42,7 @@ country_event = {
 	trigger = {
 		tag = TRS
         is_year = 1370
+		NOT = { has_global_flag = "disable_timur_conquest" }
 	}
 
 	mean_time_to_happen = {
@@ -24,11 +55,11 @@ country_event = {
         set_government_rank = 3
         change_technology_group = muslim
 		change_tag = TIM
-		inherit = KHI
+		swap_free_idea_group = yes	
 		define_ruler = {
         name = "Timur"
 		dynasty = "Timurid"
-		birth_date = 1346.4.8
+		age = 34
 		claim = 100
 		adm = 6
 		dip = 4
@@ -40,7 +71,6 @@ country_event = {
 		}
 		kill_heir = yes
 		add_ruler_personality = conqueror_personality
-		add_ruler_personality = immortal_personality
 		random_owned_province = {
 			build_to_forcelimit = {
 				infantry = 0.5
@@ -146,10 +176,15 @@ country_event = {
 				add_permanent_claim = TIM
 			}
         set_government_and_rank = {
-			government = iqta
+			government = timurid_government
 			rank = 3
 		}
-		
+		every_owned_province = {
+			add_institution_embracement = {
+				value = 100
+				which = "feudalism"
+			}
+		}	
 	}
 }
 country_event = {
@@ -178,7 +213,7 @@ country_event = {
 }
 
 country_event = {
-	id = timurlane.4444 #Death of Tamerlane
+	#id = timurlane.4444 #Death of Tamerlane
 	title = timurlane.41.t
 	desc = timurlane.41.d
 	picture = HORDE_ON_HORSEBACK_eventPicture
@@ -207,7 +242,7 @@ country_event = {
 
 
 country_event = {
-	id = timurlane.4445 #Death of Tamerlane
+	#id = timurlane.4445 #Death of Tamerlane
 	title = timurlane.42.t
 	desc = timurlane.42.d
 	picture = HORDE_ON_HORSEBACK_eventPicture
@@ -230,9 +265,10 @@ country_event = {
 		set_government_rank = 2
         }
 	}
+}
 
 country_event = {
-	id = timurlane.5 #Timur Demands North India
+	#id = timurlane.5 #Timur Demands North India
 	title = timurlane.5.t
 	desc = timurlane.5.d
 	picture = HORDE_ON_HORSEBACK_eventPicture
@@ -286,7 +322,7 @@ country_event = {
 }
 
 country_event = {
-	id = timurlane.14
+	#id = timurlane.14
 	title = timurlane.14.t
 	desc = timurlane.14.d
 	picture = NOT_DISCIPLINED_SOLDIERS_eventPicture
@@ -349,7 +385,7 @@ country_event = {
 }
 
 country_event = {
-	id = timurlane.15
+	#id = timurlane.15
 	title = timurlane.15.t
 	desc = timurlane.15.d
 	picture = NOT_DISCIPLINED_SOLDIERS_eventPicture
@@ -383,20 +419,20 @@ country_event = {
 
 	is_triggered_only = yes
 
-	option = {
-		name = timurlane.166.a #We must give in to the Timurids
-		white_peace = TIM 
-		TIM = {
-			create_march = SAB
-		}
-	}
 	#option = {
-	#	name = timurlane.166.b #We shall fight to the last man!
+	#	name = timurlane.166.a #We must give in to the Timurids
+	#	white_peace = TIM 
+	#	TIM = {
+	#		create_march = SAB
+	#	}
 	#}
+	option = {
+		name = timurlane.166.b #We shall fight to the last man!		
+	}
 }
 
 country_event = { 
-	id = timurlane.1666 #Timur offer Vassalization, must convert to Sunni and adopt a Timurid ruler
+	#id = timurlane.1666 #Timur offer Vassalization, must convert to Sunni and adopt a Timurid ruler
 	title = timurlane.1666.t
 	desc = timurlane.1666.d
 	picture = NOT_DISCIPLINED_SOLDIERS_eventPicture
@@ -420,16 +456,16 @@ country_event = {
 
 	is_triggered_only = yes
 
-	option = {
-		name = timurlane.167.a #We must give in to the Timurids
-		white_peace = TIM 
-		TIM = {
-			create_march = KRT
-		}
-	}
 	#option = {
-	#	name = timurlane.167.b #We shall fight to the last man!
+	#	name = timurlane.167.a #We must give in to the Timurids
+	#	white_peace = TIM 
+	#	TIM = {
+	#		create_march = KRT
+	#	}
 	#}
+	option = {
+		name = timurlane.167.b #We shall fight to the last man!
+	}
 }
 
 
@@ -473,9 +509,16 @@ country_event = {
 				casus_belli = cb_horde_vs_civ
 			}
 		}
-		#SAB = {
-		#	country_event = { id = timurlane.166 days = 1 }
-		#}
+		SAB = {
+			country_event = { id = timurlane.166 days = 1 }
+		    hidden_effect = {
+			    add_country_modifier = {
+				    name = timurid_death_mark
+				    duration = 1825
+				    hidden = yes
+			    }
+			}	
+		}			
 	}
 	option = {
 		name = "timurlane.78.b" #Invade the Kurtid
@@ -497,9 +540,16 @@ country_event = {
 				casus_belli = cb_horde_vs_civ
 			}
 		}
-		#KRT = {
-		#	country_event = { id = timurlane.167 days = 1 }
-		#}
+		KRT = {
+			country_event = { id = timurlane.167 days = 1 }
+		    hidden_effect = {
+			    add_country_modifier = {
+				    name = timurid_death_mark
+				    duration = 1825
+				    hidden = yes
+			    }
+			}				
+		}
 	}
 }
 
@@ -518,6 +568,7 @@ country_event = {
         has_ruler = "Timur"
         has_global_flag = "timur_conquest"
 		has_global_flag = "timur_conquest_KRT"
+		overextension_percentage = 0
 	}
 
 	mean_time_to_happen = {
@@ -525,7 +576,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "timurlane.78.a" #Invade the Sarbadarid
+		name = "timurlane.79.a" #Invade the Sarbadarid
 		ai_chance = {
 			factor = 100 #Shouldn't take this from them really.
 			modifier = {
@@ -538,15 +589,23 @@ country_event = {
 			}
 		}
 		set_global_flag = "timur_conquest_stage_1"
+		set_global_flag = "KRT_conquest_complete"
 		TIM = {
 			declare_war_with_cb = {
 				who = SAB
 				casus_belli = cb_horde_vs_civ
 			}
 		}
-		#SAB = {
-		#	country_event = { id = timurlane.166 days = 1 }
-		#}
+		SAB = {
+			country_event = { id = timurlane.166 days = 1 }
+		    hidden_effect = {
+			    add_country_modifier = {
+				    name = timurid_death_mark
+				    duration = 1825
+				    hidden = yes
+			    }
+			}			
+		}
 	}
 }
 # Invade Kurtid, if #78 went Sarbadarid.
@@ -564,6 +623,7 @@ country_event = {
         has_ruler = "Timur"
         has_global_flag = "timur_conquest"
 		has_global_flag = "timur_conquest_SAB"
+		overextension_percentage = 0
 	}
 
 	mean_time_to_happen = {
@@ -571,7 +631,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "timurlane.78.a" #Invade the Kurtid
+		name = "timurlane.80.a" #Invade the Kurtid
 		ai_chance = {
 			factor = 100 #Shouldn't take this from them really.
 			modifier = {
@@ -584,15 +644,23 @@ country_event = {
 			}
 		}
 		set_global_flag = "timur_conquest_stage_1"
+		set_global_flag = "SAB_conquest_complete"
 		TIM = {
 			declare_war_with_cb = {
 				who = KRT
 				casus_belli = cb_horde_vs_civ
 			}
 		}
-		#KRT = {
-		#	country_event = { id = timurlane.167 days = 1 }
-		#}
+		KRT = {
+			country_event = { id = timurlane.167 days = 1 }
+		    hidden_effect = {
+			    add_country_modifier = {
+				    name = timurid_death_mark
+				    duration = 1825
+				    hidden = yes
+			    }
+			}			
+		}
 	}
 }
 # Timur invasion of Central and lower Persia, War with Jalayirids
@@ -609,6 +677,7 @@ country_event = {
 		is_at_war = no
         has_ruler = "Timur"
 		has_global_flag = "timur_conquest_stage_1"
+		overextension_percentage = 0
 	}
 
 	mean_time_to_happen = {
@@ -629,15 +698,24 @@ country_event = {
 			}
 		}
 		set_global_flag = "timur_conquest_MUZ"
+		set_global_flag = "KRT_conquest_complete"
+		set_global_flag = "SAB_conquest_complete"
 		TIM = {
 			declare_war_with_cb = {
 				who = MUZ
 				casus_belli = cb_horde_vs_civ
 			}
 		}
-		#SAB = {
-		#	country_event = { id = timurlane.166 days = 1 }
-		#}
+		MUZ = {
+			country_event = { id = timurlane.166 days = 1 }
+		    hidden_effect = {
+			    add_country_modifier = {
+				    name = timurid_death_mark
+				    duration = 1825
+				    hidden = yes
+			    }
+			}				
+		}
 	}
 	option = {
 		name = "timurlane.81.b" #Invade the Mihrabanid
@@ -653,15 +731,24 @@ country_event = {
 			}
 		}
 		set_global_flag = "timur_conquest_MIH"
+		set_global_flag = "KRT_conquest_complete"
+		set_global_flag = "SAB_conquest_complete"
 		TIM = {
 			declare_war_with_cb = {
 				who = MIH
 				casus_belli = cb_horde_vs_civ
 			}
 		}
-		#KRT = {
-		#	country_event = { id = timurlane.167 days = 1 }
-		#}
+		MIH = {
+			country_event = { id = timurlane.167 days = 1 }
+		    hidden_effect = {
+			    add_country_modifier = {
+				    name = timurid_death_mark
+				    duration = 1825
+				    hidden = yes
+			    }
+			}			
+		}
 	}
 }
 
@@ -680,6 +767,8 @@ country_event = {
         has_ruler = "Timur"
 		has_global_flag = "timur_conquest_MIH"
 		has_global_flag = "timur_conquest_stage_1"
+		NOT = { has_global_flag = "timur_conquest_MUZ" }
+		overextension_percentage = 0
 	}
 
 	mean_time_to_happen = {
@@ -699,15 +788,24 @@ country_event = {
 				has_any_disaster = yes
 			}
 		}
+		set_global_flag = "timur_conquest_MUZ"
+		set_global_flag = "MIH_conquest_complete"
 		TIM = {
 			declare_war_with_cb = {
 				who = MUZ
 				casus_belli = cb_horde_vs_civ
 			}
 		}
-		#SAB = {
-		#	country_event = { id = timurlane.166 days = 1 }
-		#}
+		MUZ = {
+			country_event = { id = timurlane.166 days = 1 }
+		    hidden_effect = {
+			    add_country_modifier = {
+				    name = timurid_death_mark
+				    duration = 1825
+				    hidden = yes
+			    }
+			}			
+		}
 	}
 }
 # Invade Mihrabanid, if #78 went Muzaffarid.
@@ -725,6 +823,8 @@ country_event = {
         has_ruler = "Timur"
 		has_global_flag = "timur_conquest_MUZ"
 		has_global_flag = "timur_conquest_stage_1"
+		NOT = { has_global_flag = "timur_conquest_MIH" }
+		overextension_percentage = 0
 	}
 
 	mean_time_to_happen = {
@@ -744,31 +844,155 @@ country_event = {
 				has_any_disaster = yes
 			}
 		}
+		set_global_flag = "timur_conquest_MIH"
+		set_global_flag = "MUZ_conquest_complete"
 		TIM = {
 			declare_war_with_cb = {
 				who = MIH
 				casus_belli = cb_horde_vs_civ
 			}
 		}
-		#KRT = {
-		#	country_event = { id = timurlane.167 days = 1 }
-		#}
+		MIH = {
+			country_event = { id = timurlane.167 days = 1 }
+		    hidden_effect = {
+			    add_country_modifier = {
+				    name = timurid_death_mark
+				    duration = 1825
+				    hidden = yes
+			    }
+			}			
+		}
 	}
 }
 
+# Invade Injuid,
 country_event = {
-	id = timurlane.4445 #Timurid Persia
-	title = timurlane.42.t
-	desc = timurlane.42.d
+	id = timurlane.84
+	title = "timurlane.84.t"
+	desc = "timurlane.84.d"
+	picture = SIEGE_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = TIM
+		is_at_war = no
+        has_ruler = "Timur"
+		has_global_flag = "timur_conquest_MIH"
+		has_global_flag = "timur_conquest_MUZ"
+		has_global_flag = "timur_conquest_stage_1"
+		overextension_percentage = 0
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "timurlane.82.a" #Invade the Sarbadarid
+		ai_chance = {
+			factor = 100 #Shouldn't take this from them really.
+			modifier = {
+				factor = 0
+				is_at_war = yes
+			}
+			modifier = {
+				factor = 0
+				has_any_disaster = yes
+			}
+		}		
+		set_global_flag = "timur_conquest_INT"
+		set_global_flag = "MIH_conquest_complete"
+		set_global_flag = "MUZ_conquest_complete"
+		TIM = {
+			declare_war_with_cb = {
+				who = INT
+				casus_belli = cb_horde_vs_civ
+			}
+		}
+		INT = {
+			country_event = { id = timurlane.166 days = 1 }
+		    hidden_effect = {
+			    add_country_modifier = {
+				    name = timurid_death_mark
+				    duration = 1825
+				    hidden = yes
+			    }
+			}			
+		}
+	}
+}
+# Invade Jalayirids, if #78 went Muzaffarid.
+country_event = {
+	id = timurlane.85
+	title = "timurlane.85.t"
+	desc = "timurlane.85.d"
+	picture = SIEGE_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = TIM
+		is_at_war = no
+        has_ruler = "Timur"
+		has_global_flag = "timur_conquest_MUZ"
+		has_global_flag = "timur_conquest_MIH"
+		has_global_flag = "timur_conquest_INT"
+		has_global_flag = "timur_conquest_stage_1"
+		overextension_percentage = 0
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "timurlane.83.a" #Invade the Kurtid
+		ai_chance = {
+			factor = 100 #Shouldn't take this from them really.
+			modifier = {
+				factor = 0
+				is_at_war = yes
+			}
+			modifier = {
+				factor = 0
+				has_any_disaster = yes
+			}
+		}
+		set_global_flag = "timur_conquest_JLR"
+		set_global_flag = "INT_conquest_complete"
+		TIM = {
+			declare_war_with_cb = {
+				who = JLR
+				casus_belli = cb_horde_vs_civ
+			}
+		}
+		JLR = {
+			country_event = { id = timurlane.167 days = 1 }
+		    hidden_effect = {
+			    add_country_modifier = {
+				    name = timurid_death_mark
+				    duration = 1825
+				    hidden = yes
+			    }
+			}			
+		}
+	}
+}
+#End of Event chain
+country_event = {
+	id = timurlane.844	#End of Conquest
+	title = timurlane.844.t
+	desc = timurlane.844.d
 	picture = HORDE_ON_HORSEBACK_eventPicture
 
-	is_triggered_only = yes
 	fire_only_once = yes
 	major = yes
 	
 	trigger = {
 		tag = TIM
-		
+		has_global_flag = "timur_conquest_JLR"
+		is_at_war = no		
 	}
 
 	mean_time_to_happen = {
@@ -776,8 +1000,141 @@ country_event = {
 	}
 
 	option = {
-		name = timurlane.4445.a
-		set_global_flag = enable_stop_shadow_kingdom
-		is_year = 1600
+		name = timurlane.844.a
+		inherit = JLR
+		set_global_flag = "timur_conquest_complete"
+	}
+}
+#Extra Modifiers for Timur
+country_event = {
+	id = timurlane.777	#End of Conquest
+	title = timurlane.777.t
+	desc = timurlane.777.d
+	picture = HORDE_ON_HORSEBACK_eventPicture
+
+	fire_only_once = yes
+	major = yes
+	
+	trigger = {
+		tag = TIM
+		has_global_flag = "SAB_conquest_complete"	
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = timurlane.777.a
+		add_yearly_manpower = 2
+		add_ruler_modifier = {
+			name = "sabardarid_conquest"
+		}
+	}
+}
+
+country_event = {
+	id = timurlane.778	#End of Conquest
+	title = timurlane.778.t
+	desc = timurlane.778.d
+	picture = HORDE_ON_HORSEBACK_eventPicture
+
+	fire_only_once = yes
+	major = yes
+	
+	trigger = {
+		tag = TIM
+		has_global_flag = "KRT_conquest_complete"	
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = timurlane.777.a
+		add_yearly_manpower = 2
+		add_ruler_modifier = {
+			name = "kurtid_conquest"
+		}
+	}
+}
+
+country_event = {
+	id = timurlane.779	#End of Conquest
+	title = timurlane.779.t
+	desc = timurlane.779.d
+	picture = HORDE_ON_HORSEBACK_eventPicture
+
+	fire_only_once = yes
+	major = yes
+	
+	trigger = {
+		tag = TIM
+		has_global_flag = "MIH_conquest_complete"	
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = timurlane.777.a
+		add_yearly_manpower = 2
+		add_ruler_modifier = {
+			name = "mihrabanid_conquest"
+		}
+	}
+}
+country_event = {
+	id = timurlane.780	#End of Conquest
+	title = timurlane.780.t
+	desc = timurlane.780.d
+	picture = HORDE_ON_HORSEBACK_eventPicture
+
+	fire_only_once = yes
+	major = yes
+	
+	trigger = {
+		tag = TIM
+		has_global_flag = "muz_conquest_complete"	
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = timurlane.777.a
+		add_yearly_manpower = 2
+		add_ruler_modifier = {
+			name = "muzafarrid_conquest"
+		}
+	}
+}
+country_event = {
+	id = timurlane.781	#End of Conquest
+	title = timurlane.781.t
+	desc = timurlane.781.d
+	picture = HORDE_ON_HORSEBACK_eventPicture
+
+	fire_only_once = yes
+	major = yes
+	
+	trigger = {
+		tag = TIM
+		has_global_flag = "int_conquest_complete"		
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = timurlane.777.a
+		add_yearly_manpower = 2
+		add_ruler_modifier = {
+			name = "injuid_conquest"
+		}
 	}
 }
