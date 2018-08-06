@@ -44,6 +44,7 @@ country_decisions = {
 				duration = -1
 				desc = member_of_hansa_desc
 			}
+			add_treasury = -100
 		}
 		ai_will_do = {
 			factor = 1
@@ -55,6 +56,7 @@ country_decisions = {
 		major = yes
 		potential = {
 			has_country_modifier = member_of_hansa_ev
+			NOT = { has_country_modifier = leader_of_hansa }
 		}
 		allow = {
 			
@@ -94,7 +96,7 @@ country_decisions = {
 		allow = {
 			NOT = {
 				calc_true_if = {
-					all_country = {
+					every_country = {
 						has_country_modifier = member_of_hansa_ev
 					}
 					amount = 4
@@ -106,11 +108,12 @@ country_decisions = {
 				owns_or_non_sovereign_subject_of = 46
 				owns_or_non_sovereign_subject_of = 25
 			}
+			NOT = { has_country_modifier = member_of_hansa_ev }
 		}
 		effect = {
-			all_country = {
+			every_country = {
 				limit = { has_country_modifier = member_of_hansa_ev }
-				all_country = {
+				every_country = {
 					limit = { has_country_modifier = member_of_hansa_ev }
 					remove_opinion = {
 						who = PREV
@@ -165,19 +168,40 @@ country_decisions = {
 					monthly_income = 15
 				}
 			}
+			NOT = { has_global_flag = reform_4_done }
 		}
 		effect = {
 			add_treasury = -1000
-			all_country = {
+			every_country = {
 				limit = { has_country_modifier = leader_of_hansa }
 				remove_country_modifier = leader_of_hansa
+				if = {
+					limit = { has_global_flag = reform_2_done }
+					remove_country_modifier = hansa_reform_2_leader
+					add_country_modifier = hansa_reform_2_member
+				}
+				if = {
+					limit = { has_global_flag = reform_3_done }
+					remove_country_modifier = hansa_reform_3_leader
+					add_country_modifier = hansa_reform_3_member
+				}
 			}
 			add_country_modifier = {
 				name = leader_of_hansa
 				duration = -1
 			}
+			if = {
+				limit = { has_global_flag = reform_2_done }
+				remove_country_modifier = hansa_reform_2_member
+				add_country_modifier = hansa_reform_2_leader
+			}
+			if = {
+				limit = { has_global_flag = reform_3_done }
+				remove_country_modifier = hansa_reform_3_member
+				add_country_modifier = hansa_reform_3_leader
+			}
 			save_global_event_target_as = new_leader_of_hansa
-			all_country = {
+			every_country = {
 				limit = {
 					AND = {
 						has_country_modifier = member_of_hansa_ev
@@ -188,6 +212,20 @@ country_decisions = {
 					id = hansa.5
 					days = 1
 				}
+			}
+		}
+		ai_will_do = { factor = 1 }
+	}
+	reform_info = {
+		major = yes
+		potential = {
+			has_country_modifier = member_of_hansa_ev
+		}
+		allow = {
+		}
+		effect = {
+			country_event = {
+				id = hansa.9
 			}
 		}
 	}

@@ -108,7 +108,7 @@ finnish_missions = {
 	
 	access_arctic_sea = {
 		required_missions = { conquer_karelia }
-		mission = mission_establish_high_seas_navy
+		icon = mission_establish_high_seas_navy
 		provinces_to_highlight = {
 			OR = {
 				province_id = 315
@@ -138,7 +138,7 @@ finnish_missions = {
 	
 	advance_into_russia = {
 		required_missions = { access_arctic_sea }
-		mission = mission_conquer_5_states
+		icon = mission_conquer_5_states
 		provinces_to_highlight = {
 			area = novgorod_area
 			NOT = {

@@ -112,11 +112,11 @@ feudalism = {
 				owner = {
 					NOT = { government = siberian_native_council }
 					NOT = { government = steppe_horde }
-					#NOT = { government = tribal_despotism }
-					#NOT = { government = tribal_federation }
-					#NOT = { government = tribal_democracy }
-					#NOT = { government = native_council }
-					#NOT = { government = tribal_kingdom }
+					NOT = { government = tribal_despotism }
+					NOT = { government = tribal_federation }
+					NOT = { government = tribal_democracy }
+					NOT = { government = native_council }
+					NOT = { government = tribal_kingdom }
 				}
 			}
 			is_year = 1700

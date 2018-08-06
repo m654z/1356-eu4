@@ -1,5 +1,7 @@
 the_sound_toll = {
-	potential = { always = yes }
+	potential = {
+		NOT = { has_global_flag = dismantled_hansa }
+	}
 	trigger = {
 		if = {
 			limit = { province_id = 12 }
@@ -13,10 +15,4 @@ the_sound_toll = {
 	province_trade_power_value = -15
 	local_tax_modifier = -0.5
 	local_manpower_modifier = -0.5
-	12 = {
-		owner = {
-			trade_efficiency = -0.15
-			global_trade_power = -0.05
-		}
-	}
 }

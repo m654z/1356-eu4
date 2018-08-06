@@ -236,49 +236,6 @@ shia_persia = {
 	
 }
 
-sapmi_frontiers = {
-	potential = {
-
-		OR = {
-			culture_group = scandinavian
-			culture_group = east_slavic
-		}
-	
-	}
-	trigger = {
-	
-
-			OR = {
-				AND = { 
-					karelia_area = { owned_by = ROOT }
-					OR = {	
-							karelia_area = { is_empty=yes }
-							karelia_area = { is_colony=yes }
-					}
-				}
-				AND = { 
-					bothnia_area = { owned_by = ROOT }
-					OR = {	
-							bothnia_area = { is_empty=yes }
-							bothnia_area = { is_colony=yes }
-					}
-				}
-				AND = { 
-					norrland_area = { owned_by = ROOT }
-					OR = {	
-							norrland_area = { is_empty=yes }
-							norrland_area = { is_colony=yes }
-					}
-				}
-			}
-
-	
-	}
-
-	colonists = 1
-	
-}
-
 #sapmi_frontiers = {
 #	potential = {
 #
