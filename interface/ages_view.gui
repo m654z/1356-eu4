@@ -11,16 +11,14 @@ guiTypes = {
 		fullScreen = no
 		Orientation = "CENTER"
 
-		iconType =
-		{
+		iconType = {
 			name ="picture"
 			spriteType = "GFX_event_event_test"
 			position = { x = 58 y = -5 }
 			Orientation = "UPPER_LEFT"
 		}
-		
-		iconType =
-		{
+
+		iconType = {
 			name ="background"
 			spriteType = "GFX_age_base"
 			position = { x= -42 y = -43 }
@@ -30,45 +28,45 @@ guiTypes = {
 		WindowType = {
 			name = "age_of_feudalism"
 			position = { x= 35 y = -29}
-			#upsound = age_of_discovery
+			upsound = age_of_feudalism
 
 			iconType = {
 				name ="frame"
-				spriteType = "GFX_age_indicator_5"
+				spriteType = "GFX_age_indicator"
 				position = { x= 0 y = 7 }
-				}
+			}
 			iconType = {
 				name ="icon_age_of_feudalism"
-				spriteType = "GFX_icon_age_l"
-				position = { x= -30 y = 14 }
+				spriteType = "GFX_icon_age_s"
+				position = { x= -15 y = 13 }
 				frame = 1
-				}
+			}
 			iconType = {
 				name ="icon_age_of_discovery"
 				spriteType = "GFX_icon_age_s"
-				position = { x= -15 y = 56 }
+				position = { x= -15 y = 50 }
 				frame = 2
-				}
+			}
 			iconType = {
 				name ="icon_age_of_reformation"
 				spriteType = "GFX_icon_age_s"
-				position = { x= -15 y = 89 }
+				position = { x= -15 y = 87 }
 				frame = 3
-				}
+			}
 			iconType = {
 				name ="icon_age_of_absolutism"
 				spriteType = "GFX_icon_age_s"
-				position = { x= -15 y = 122 }
+				position = { x= -15 y = 124 }
 				frame = 4
-				}
+			}
 			iconType = {
 				name ="icon_age_of_revolutions"
 				spriteType = "GFX_icon_age_s"
-				position = { x= -15 y = 154 }
+				position = { x= -15 y = 161 }
 				frame = 5
-				}
+			}
 		}
-		
+
 		WindowType = {
 			name = "age_of_discovery"
 			position = { x= 35 y = -29}
@@ -76,40 +74,41 @@ guiTypes = {
 
 			iconType = {
 				name ="frame"
-				spriteType = "GFX_age_indicator_4"
+				spriteType = "GFX_age_indicator"
 				position = { x= 0 y = 7 }
-				}
+			}
 			iconType = {
 				name ="icon_age_of_feudalism"
-				spriteType = "GFX_icon_age_of_feudalism_g"
-				position = { x= -30 y = 18 }
-				}
+				spriteType = "GFX_icon_age_g"
+				position = { x= -15 y = 13 }
+				frame = 1
+			}
 			iconType = {
 				name ="icon_age_of_discovery"
-				spriteType = "GFX_icon_age_l"
-				position = { x= -30 y = 47 }
+				spriteType = "GFX_icon_age_s"
+				position = { x= -15 y = 50 }
 				frame = 2
-				}
+			}
 			iconType = {
 				name ="icon_age_of_reformation"
 				spriteType = "GFX_icon_age_s"
-				position = { x= -15 y = 89 }
+				position = { x= -15 y = 87 }
 				frame = 3
-				}
+			}
 			iconType = {
 				name ="icon_age_of_absolutism"
 				spriteType = "GFX_icon_age_s"
-				position = { x= -15 y = 122 }
+				position = { x= -15 y = 124 }
 				frame = 4
-				}
+			}
 			iconType = {
 				name ="icon_age_of_revolutions"
 				spriteType = "GFX_icon_age_s"
-				position = { x= -15 y = 154 }
+				position = { x= -15 y = 161 }
 				frame = 5
-				}
-		}			
-		
+			}
+		}
+
 		WindowType = {
 			name = "age_of_reformation"
 			position = { x= 35 y = -29}
@@ -117,40 +116,41 @@ guiTypes = {
 
 			iconType = {
 				name ="frame"
-				spriteType = "GFX_age_indicator_3"
+				spriteType = "GFX_age_indicator"
 				position = { x= 0 y = 7 }
-				}
+			}
 			iconType = {
 				name ="icon_age_of_feudalism"
-				spriteType = "GFX_icon_age_of_feudalism_g"
-				position = { x= -30 y = 18 }
-				}
+				spriteType = "GFX_icon_age_g"
+				position = { x= -15 y = 13 }
+				frame = 1
+			}
 			iconType = {
 				name ="icon_age_of_discovery"
-				spriteType = "GFX_icon_age_of_discovery_g"
+				spriteType = "GFX_icon_age_g"
 				position = { x= -15 y = 50 }
-				}
+				frame = 2
+			}
 			iconType = {
 				name ="icon_age_of_reformation"
-				spriteType = "GFX_icon_age_l"
-				position = { x= -30 y = 80 }
+				spriteType = "GFX_icon_age_s"
+				position = { x= -15 y = 87 }
 				frame = 3
-				}
+			}
 			iconType = {
 				name ="icon_age_of_absolutism"
 				spriteType = "GFX_icon_age_s"
-				position = { x= -15 y = 122 }
+				position = { x= -15 y = 124 }
 				frame = 4
-				}
+			}
 			iconType = {
 				name ="icon_age_of_revolutions"
 				spriteType = "GFX_icon_age_s"
-				position = { x= -15 y = 154 }
+				position = { x= -15 y = 161 }
 				frame = 5
-				}
+			}
+		}
 
-		}	
-		
 		WindowType = {
 			name = "age_of_absolutism"
 			position = { x= 35 y = -29}
@@ -158,38 +158,41 @@ guiTypes = {
 
 			iconType = {
 				name ="frame"
-				spriteType = "GFX_age_indicator_2"
+				spriteType = "GFX_age_indicator"
 				position = { x= 0 y = 7 }
-				}
+			}
 			iconType = {
 				name ="icon_age_of_feudalism"
-				spriteType = "GFX_icon_age_of_feudalism_g"
-				position = { x= -30 y = 18 }
-				}
+				spriteType = "GFX_icon_age_g"
+				position = { x= -15 y = 13 }
+				frame = 1
+			}
 			iconType = {
 				name ="icon_age_of_discovery"
-				spriteType = "GFX_icon_age_of_discovery_g"
+				spriteType = "GFX_icon_age_g"
 				position = { x= -15 y = 50 }
-				}
-			iconType = {
-				name ="icon_age_of_absolutism"
-				spriteType = "GFX_icon_age_l"
-				position = { x= -30 y = 113 }
-				frame = 4
-				}
+				frame = 2
+			}
 			iconType = {
 				name ="icon_age_of_reformation"
-				spriteType = "GFX_icon_age_of_reformation_g"
-				position = { x= -15 y = 83 }
-				}
+				spriteType = "GFX_icon_age_g"
+				position = { x= -15 y = 87 }
+				frame = 3
+			}
+			iconType = {
+				name ="icon_age_of_absolutism"
+				spriteType = "GFX_icon_age_s"
+				position = { x= -15 y = 124 }
+				frame = 4
+			}
 			iconType = {
 				name ="icon_age_of_revolutions"
 				spriteType = "GFX_icon_age_s"
-				position = { x= -15 y = 154 }
+				position = { x= -15 y = 161 }
 				frame = 5
-				}
-		}		
-		
+			}
+		}
+
 		WindowType = {
 			name = "age_of_revolutions"
 			position = { x= 35 y = -29}
@@ -197,37 +200,41 @@ guiTypes = {
 
 			iconType = {
 				name ="frame"
-				spriteType = "GFX_age_indicator_1"
+				spriteType = "GFX_age_indicator"
 				position = { x= 0 y = 7 }
-				}
+			}
 			iconType = {
 				name ="icon_age_of_feudalism"
-				spriteType = "GFX_icon_age_of_feudalism_g"
-				position = { x= -30 y = 18 }
-				}
+				spriteType = "GFX_icon_age_g"
+				position = { x= -15 y = 13 }
+				frame = 1
+			}
 			iconType = {
 				name ="icon_age_of_discovery"
-				spriteType = "GFX_icon_age_of_discovery_g"
+				spriteType = "GFX_icon_age_g"
 				position = { x= -15 y = 50 }
-				}
+				frame = 2
+			}
 			iconType = {
 				name ="icon_age_of_reformation"
-				spriteType = "GFX_icon_age_of_reformation_g"
-				position = { x= -15 y = 83 }
-				}				
+				spriteType = "GFX_icon_age_g"
+				position = { x= -15 y = 87 }
+				frame = 3
+			}
 			iconType = {
 				name ="icon_age_of_absolutism"
-				spriteType = "GFX_icon_age_of_absolutism_g"
-				position = { x= -15 y = 116 }
-				}
+				spriteType = "GFX_icon_age_g"
+				position = { x= -15 y = 124 }
+				frame = 4
+			}
 			iconType = {
 				name ="icon_age_of_revolutions"
-				spriteType = "GFX_icon_age_l"
-				position = { x= -30 y = 142 }
+				spriteType = "GFX_icon_age_s"
+				position = { x= -15 y = 161 }
 				frame = 5
-				}
-		}		
-		
+			}
+		}
+
 		instantTextBoxType = {
 			name = "title"
 			position = { x = 86 y =-27 }
@@ -243,22 +250,18 @@ guiTypes = {
 			name ="icon_absolutism"
 			spriteType = "GFX_icon_absolutism"
 			position = { x= 59 y = 204 }
-			}			
-		
+		}			
 		iconType = {
 			name ="icon_religious"
 			spriteType = "GFX_icon_religious"
 			position = { x= 22 y = 204 }
-			}		
-		
+		}		
 		iconType = {
 			name ="splendor_icon"
 			spriteType = "GFX_icon_splendor_tiny"
 			position = { x= 20 y = 174 }
-			}
+		}
 
-		
-		
 		instantTextBoxType = {
 			name = "splendor"
 			position = { x = 40 y =174 }
@@ -269,7 +272,7 @@ guiTypes = {
 			maxHeight = 32
 			format = right
 		}
-		
+
 		guiButtonType = {
 			name = "golden_age"
 			quadTextureSprite ="GFX_age_golden_age_button"
@@ -277,21 +280,19 @@ guiTypes = {
 			buttonText = "START_GOLDEN_AGE"
 			buttonFont = "vic_18"
 		}
-		
+
 		iconType = {
 			name = "in_golden_age_banner"
 			spriteType = "GFX_golden_age_banner"
 			position = { x = 74 y = 130 }
 			alwaystransparent = yes 
 		}
-
 		iconType = {
 			name = "after_golden_age_banner"
 			spriteType = "GFX_golden_age_banner_tattered"
 			position = { x = 74 y = 130 }
 			alwaystransparent = yes 
 		}
-
 		instantTextBoxType = {
 			name = "in_or_after_golden_age_text"
 			position = { x = 124 y =134 }
@@ -302,7 +303,7 @@ guiTypes = {
 			maxHeight = 30
 			format = center
 		}
-			
+
 		instantTextBoxType = {
 			name = "desc"
 			position = { x = 100 y =180 }
@@ -313,9 +314,7 @@ guiTypes = {
 			maxHeight = 50
 			format = left
 		}
-		
 
-		
 		guiButtonType = {
 			name ="close_button"
             if_resolution = {
@@ -333,9 +332,8 @@ guiTypes = {
 			buttonFont = "vic_18"
 			shortcut = "ESCAPE"
 		}
-		
-		listboxType = 
-		{
+
+		listboxType = {
 			name ="objectives"
 			position = { x = 10 y = 280 }
 			backGround=""
@@ -346,9 +344,7 @@ guiTypes = {
 			borderSize = {x = 0 y = 0}
 		}
 
-
-		listboxType = 
-		{
+		listboxType =  {
 			name ="abilities"
 			position = { x = 4 y = 244 }
 			backGround=""
@@ -360,15 +356,8 @@ guiTypes = {
 			horizontal = 1
 			alwaystransparent = yes
 		}
-
-
 	}
-	
-	
-	
-	
-	
-	
+
 	###### OBJECTIVES ENTRY
 	windowType = {
 		name = "age_objectives_entry"
@@ -382,16 +371,14 @@ guiTypes = {
 		fullScreen = no
 		
 		#remove
-#		iconType =
-#		{
+#		iconType = {
 #			name ="_entry_bg"
 #			spriteType = "GFX_achievement_entry_bg"
 #			position = { x=-2 y = -4 }
 #			Orientation = "UPPER_LEFT"
 #		}
 		
-		iconType =
-		{
+		iconType = {
 			name ="icon"
 			spriteType = "GFX_idea_unknown"
 			position = { x= 8ยง y = 4 }
@@ -409,7 +396,7 @@ guiTypes = {
 			fixedsize = yes
 			format = left			
 		}
-		
+
 		instantTextBoxType = {
 			name = "desc"
 			position = { x = 64 y = 20 }
@@ -421,26 +408,21 @@ guiTypes = {
 			format = left			
 		}
 		## stuff to the right
-		
-		iconType =
-		{
+
+		iconType = {
 			name ="progress"
 			spriteType = "achievement_progress"
 			position = { x= 469 y = 34 }
 			Orientation = "UPPER_LEFT"
-			
 		}
-		
-		iconType =
-		{
+		iconType = {
 			name ="progress_overlay"
 			spriteType = "GFX_achievement_progress_frame"
 			position = { x= 454 y = 29 }
 			Orientation = "UPPER_LEFT"
 			
 		}
-		
-		
+
 		instantTextBoxType = {
 			name = "progress_text"
 			position = { x = 470 y = 8 }
@@ -452,10 +434,7 @@ guiTypes = {
 			format = centre			
 		}
 	}
-	
-	
-	
-	
+
 	###### ABILITIES ENTRY
 	windowType = {
 		name = "age_ability_entry"
@@ -468,41 +447,30 @@ guiTypes = {
 		verticalBorder= ""
 		fullScreen = no
 		
-		
-		
-		iconType =
-		{
+		iconType = {
 			name ="icon"
 			spriteType = "GFX_idea_empty"
 			position = { x= 16 y = -7 }
 			Orientation = "UPPER_LEFT"
 		}
-		
-		iconType =
-		{
+		iconType = {
 			name ="can_unlock"
 			spriteType = "GFX_age_can_unlock"
 			position = { x= 16 y = -7 }
 			Orientation = "UPPER_LEFT"
 		}
-
-		iconType =
-		{
+		iconType = {
 			name ="cannot_unlock"
 			spriteType = "GFX_age_cannot_unlock"
 			position = { x= 16 y = -7 }
 			Orientation = "UPPER_LEFT"
 		}
-		
-		guiButtonType =
-		{
+
+		guiButtonType = {
 			name ="button"
 			quadTextureSprite= "GFX_idea_empty"
 			position = { x= 16 y = -7 }
 			Orientation = "UPPER_LEFT"
 		}
-		
-		
-
 	}
 }

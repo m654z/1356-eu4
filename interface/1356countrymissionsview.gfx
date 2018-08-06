@@ -1,0 +1,14 @@
+spriteTypes = {
+
+	##1356 Mission Stuff begins here##
+	spriteType = {
+		name = "mission_1356_trebuchet_firing.dds"
+		texturefile = "gfx//interface//missions//mission_1356_trebuchet_firing.dds"
+	}
+	spriteType = {
+		name = "mission_1356_trebuchet_firing.dds"
+		texturefile = "gfx//interface//missions//mission_1356_trebuchet_idle.dds"
+	}
+	
+	
+}

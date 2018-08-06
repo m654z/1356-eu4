@@ -15,7 +15,7 @@ spriteTypes = {
 		
 		effectFile = "gfx/FX/buttonstate.lua"
 	}		
-	
+
 	spriteType = {
 		name = "GFX_cb_romuva_conformance"
 		texturefile = "gfx/interface/casus_bellis/cb_heretic.tga"
@@ -30,13 +30,14 @@ spriteTypes = {
 		noOfFrames = 1
 
 		effectFile = "gfx/FX/buttonstate.lua"
-	}	
+	}
+
 	spriteType = {
 		name = "GFX_country_icon_religion"
 		texturefile = "gfx//interface//country_icon_religion.dds"
 		noOfFrames = 33		
 	}
-		
+
 	spriteType = {
 		name = "GFX_icon_religion"
 		texturefile = "gfx//interface//icon_religion.tga"
@@ -44,7 +45,7 @@ spriteTypes = {
 ###		loadType = "INGAME"
 		
 	}
-	
+
 	spriteType = {
 		name = "GFX_icon_religion_small"
 		texturefile = "gfx//interface//icon_religion_small.tga"
@@ -52,12 +53,12 @@ spriteTypes = {
 		loadType = "INGAME"
 	}
 
-		spriteType = {
+	spriteType = {
 		name = "GFX_idea_theocratic_ideas"
 		texturefile = "gfx//interface//ideas//idea_administrative_ideas.tga"
 		noOfFrames = 1
 		effectFile = "gfx/FX/buttonstate_linear.lua"
-	}	
+	}
 
 	spriteType = {
 		name = "GFX_religion_icon_strip"
@@ -97,7 +98,7 @@ spriteTypes = {
 		allwaystransparent = yes
 	}
 
-		spriteType = {
+	spriteType = {
 		name = "GFX_mod_icon"
 		texturefile = "gfx/interface/1356_icon.dds"
 		legacy_lazy_load = no
@@ -108,130 +109,149 @@ spriteTypes = {
 		texturefile = "gfx/interface/ages/age_of_feudalism.tga"
 		loadType = "INGAME"
 	}
+
 	spriteType = {
-		name = "GFX_age_indicator_5"
-		texturefile = "gfx/interface/ages/age_indicator_5.dds"
+		name = "GFX_age_indicator"
+		texturefile = "gfx/interface/ages/age_indicator.dds"
 	}
 
 	spriteType = {
 		name = "GFX_icon_age_s"
 		texturefile = "gfx/interface/ages/icon_age_s.dds"
 		noOfFrames = 5
-	}	
+	}
 
 	spriteType = {
-		name = "GFX_icon_age_l"
-		texturefile = "gfx/interface/ages/icon_age_l.dds"
+		name = "GFX_icon_age_g"
+		texturefile = "gfx/interface/ages/icon_age_g.dds"
 		noOfFrames = 5
-	}	
-	spriteType = {
-		name = "GFX_icon_age_of_feudalism_g"
-		texturefile = "gfx/interface/ages/icon_age_of_feudalism_g.dds"
 	}
 
 # Age of Feudalism Objectives
 	spriteType = {
-		name = "GFX_obj_high_prestige"
-		texturefile = "gfx/interface/ages/obj_high_prestige.dds"
+		name = "GFX_obj_higher_prestige"
+		texturefile = "gfx/interface/ages/obj_higher_prestige.dds"
 	}
-	
+
 	spriteType = {
-		name = "GFX_obj_2_centers_of_trade"
-		texturefile = "gfx/interface/ages/obj_2_centers_of_trade.dds"
+		name = "GFX_obj_trade_league"
+		texturefile = "gfx/interface/ages/obj_trade_league.dds"
 	}
-	
+
 	spriteType = {
 		name = "GFX_obj_20_development_city"
 		texturefile = "gfx/interface/ages/obj_20_development_city.dds"
 	}
-	
+
 	spriteType = {
 		name = "GFX_obj_papal_controller"
 		texturefile = "gfx/interface/ages/obj_papal_controller.dds"
 	}
-	
+
 	spriteType = {
-		name = "GFX_obj_one_union"
-		texturefile = "gfx/interface/ages/obj_one_union.dds"
-	}
-	
-	spriteType = {
-		name = "GFX_obj_two_continents_f"
-		texturefile = "gfx/interface/ages/obj_two_continents_f.dds"
-	}
-	
-	spriteType = {
-		name = "GFX_obj_introduce_cannon"
-		texturefile = "gfx/interface/ages/obj_introduce_cannon.dds"
+		name = "GFX_obj_feudalism_muslim_piety"
+		texturefile = "gfx/interface/ages/obj_feudalism_muslim_piety.dds"
 	}
 
 	spriteType = {
-		name = "GFX_obj_royal_marriages"
-		texturefile = "gfx/interface/ages/obj_royal_marriages.dds"
-	}	
+		name = "GFX_obj_non_christian_muslim_religious_unity"
+		texturefile = "gfx/interface/ages/obj_non_christian_muslim_religious_unity.dds"
+	}
+
+	spriteType = {
+		name = "GFX_obj_deus_vult"
+		texturefile = "gfx/interface/ages/obj_deus_vult.dds"
+	}
+
+	spriteType = {
+		name = "GFX_obj_muslim_holy_war"
+		texturefile = "gfx/interface/ages/obj_muslim_holy_war.dds"
+	}
+
+	spriteType = {
+		name = "GFX_obj_feudal_generic_non_abrahamic_holy_war"		
+		texturefile = "gfx/interface/ages/obj_feudal_generic_non_abrahamic_holy_war.dds"
+	}
 
 	spriteType = {
 		name = "GFX_obj_many_vassals_f"		
 		texturefile = "gfx/interface/ages/obj_many_vassals_f.dds"
 	}
 
+	spriteType = {
+		name = "GFX_obj_cav_army"		
+		texturefile = "gfx/interface/ages/obj_cav_army.dds"
+	}
 
-	
-	# Age of Feudalism Abilities
+# Age of Feudalism Abilities
 	spriteType = {
 		name = "GFX_ab_allow_feudal_de_jure_law_f"
 		texturefile = "gfx/interface/ages/ab_allow_feudal_de_jure_law_f.dds"
 	}
-	
-	spriteType = {
-		name = "GFX_ab_transfer_vassal_wargoal_f"
-		texturefile = "gfx/interface/ages/ab_transfer_vassal_wargoal_f.dds"
-	}
-
 
 	spriteType = {
-		name = "GFX_ab_attack_bonus_in_capital_terrain_f"
-		texturefile = "gfx/interface/ages/ab_attack_bonus_in_capital_terrain_f.dds"
-	}	
-	
-	spriteType = {
-		name = "GFX_ab_ottoman_siege_ability_f"
-		texturefile = "gfx/interface/ages/ab_ottoman_siege_ability_f.dds"
-	}	
-
-
-	spriteType = {
-		name = "GFX_ab_justified_wars_f"
-		texturefile = "gfx/interface/ages/ab_justified_wars_f.dds"
+		name = "GFX_ab_feudalism_vassals"
+		texturefile = "gfx/interface/ages/ab_feudalism_vassals.dds"
 	}
 
 	spriteType = {
-		name = "GFX_ab_cavalry_armies_f"
-		texturefile = "gfx/interface/ages/ab_cavalry_armies_f.dds"
+		name = "GFX_ab_gothic_architecture"
+		texturefile = "gfx/interface/ages/ab_gothic_architecture.dds"
 	}
-	
+
 	spriteType = {
-		name = "GFX_ab_free_war_taxes_f"
-		texturefile = "gfx/interface/ages/ab_free_war_taxes_f.dds"
-	}	
-	
+		name = "GFX_ab_feudalism_court_life"
+		texturefile = "gfx/interface/ages/ab_feudalism_court_life.dds"
+	}
+
 	spriteType = {
-		name = "GFX_ab_england_longbowmen"
-		texturefile = "gfx/interface/ages/ab_england_longbowmen.dds"
-	}	
-	
-	spriteType = {
-		name = "GFX_ab_bohemian_empire"
-		texturefile = "gfx/interface/ages/ab_bohemian_empire.dds"
-	}	
-	
+		name = "GFX_ab_mercs_over_chevaliers"
+		texturefile = "gfx/interface/ages/ab_mercs_over_chevaliers.dds"
+	}
+
 	spriteType = {
 		name = "GFX_ab_chevauchee"
 		texturefile = "gfx/interface/ages/ab_chevauchee.dds"
-	}		
+	}
+
 	spriteType = {
-		name = "GFX_ab_viking_legacy"
-		texturefile = "gfx/interface/ages/ab_viking_legacy.dds"
-	}	
-	
+		name = "GFX_ab_feudalism_quality_trade_ships"
+		texturefile = "gfx/interface/ages/ab_feudalism_quality_trade_ships.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ab_nomad_age_bonus"
+		texturefile = "gfx/interface/ages/ab_nomad_age_bonus.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ab_england_longbowmen"
+		texturefile = "gfx/interface/ages/ab_england_longbowmen.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ab_asia_large_conquests"
+		texturefile = "gfx/interface/ages/ab_asia_large_conquests.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ab_feudalism_avignon_papacy"
+		texturefile = "gfx/interface/ages/ab_feudalism_avignon_papacy.dds"
+	}
+
+# Age of Discovery Abilities
+	spriteType = {
+		name = "GFX_ab_disc_colonial_range"
+		texturefile = "gfx/interface/ages/ab_disc_colonial_range.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ab_disc_claims"
+		texturefile = "gfx/interface/ages/ab_disc_claims.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ab_disc_general_cost_leader_pool"
+		texturefile = "gfx/interface/ages/ab_disc_general_cost_leader_pool.dds"
+	}
 }
