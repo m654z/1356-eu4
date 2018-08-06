@@ -1594,7 +1594,6 @@ jewish_group = {
 		province = {
 			local_missionary_strength = -0.02
 		}
-		
 		heretic = { SAMARITAN KARAITE }
 	}
 	
@@ -1604,6 +1603,8 @@ jewish_group = {
 
 }
 
+<<<<<<< HEAD
+=======
 
 christian = {	
 	hussite = {
@@ -1854,6 +1855,7 @@ pagan = {
 }
 
 
+>>>>>>> master
 zoroastrian_group = {
 	flag_emblem_index_range = { 110 110 }
 	zoroastrian = {

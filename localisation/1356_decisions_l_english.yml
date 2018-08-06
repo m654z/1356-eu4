@@ -1,4 +1,3 @@
-
 ﻿l_english:
  mnf_brittany_title: "Unify Brittany"
  mnf_brittany_desc: "Replace the personal union between the House of Monfort and the House of Blois with a real union, welding the two houses together into one more powerful state, capable of withstanding our enemies and ending the feuding of the dynastic factions across our lands."
@@ -81,3 +80,15 @@
  reform_info_desc: "Display information on the Hanseatic Reforms."
  ilknanate_nation_title: "Reform the Ilkhanate"
  ilknanate_nation_desc: "Since the collapse of the Ilkhanate the Tribes of Persia and Iraq have been locked in neverending conflict, however $MONARCH$ has gathered a sizeable support from the Tribes.While Genghis is long dead and the Borjigin dynasty in exile perhaps $MONARCH$ leadership and respect will be able to create a more strengthed Ilkhanate state."
+ aquitaine_nation_title: "Claim the title Kingdom of Aquitaine"
+ aquitaine_nation_desc: "After Charlamagne died his land was split between many of his children, grandchildren, and great grandchildren many times over. Eventully Aquitaine became nothing more than a secondary Kingdom title to France. This should not be! We are just as worthy if not better then the vile French to our north! We must prove to the world that we are more than a bunch of French peasants! "
+ arles_nation_title: "Claim the title Kingdom of Arles"
+ arles_nation_desc: "While it didn't exist for a long period of time, the Kingdom of Arles was significant. Also occasionally called 'The Kingdom of Two Burgundies' Arles represented the French Burgundy, as well as the Holy Roman Burgundy. Even after Arles ceased to exist as an independent entity, it remained an Imperial title up until the disolusion of the Empire. "
+ burgundian_nation_title: "Form the Duchy of Burgundy"
+ burgundian_nation_desc: "The Duchy of Burgundy has ceased to exist! Such an important duchy shouldn't end up a short lesson in the history textbooks! It deserves to live on!"
+ gascony_nation_title: "Form the Duchy of Gascony"
+ gascony_nation_desc: "While Gascony didn't exist independent of France ever, it was a thorn in the French side for many decades during the HYW. It was constantly used by the English as a reason to claim much of Southern France. For no one to have a claim to the title is a tragedy! We must remedy this and prove Gascony is more than an English toy!"
+ lotharingia_nation_title: "Claim the title Kingdom of Lotharingia"
+ lotharingia_nation_desc: "The Kingdom of Lotharingia was for a while the home of the first Holy Roman Emperors, both having their capital in Aachen. Being named after King Lothar, it faded out of existance after it was split between France and the Holy Roman Emperor. However centuries later Duke Phillip of Burgundy would aspire to be crowned King of Lotharingia to hold a Kingdom of his own, and potentially join the Holy Roman Emperor."
+ walloon_nation_title: "Form the Kingdom of Wallonia"
+ walloon_nation_desc: "We as Walloons have been under many dukes and kings for centuries. From Flems, to French, to Germans. However we have never been unified as a people. This is a rich and prosperous land and has the potential to stand on its own independently!"
