@@ -496,13 +496,14 @@ economic_ideas = {
 exploration_ideas = {
 	category = DIP
 	important = yes
-
+	
+	
 	trigger = {
 		OR = {
 			adm_tech = 9
 			dip_tech = 9
 		}
-	}	
+	}
 	
 	bonus = {
 		cb_on_primitives = yes
@@ -778,13 +779,13 @@ quantity_ideas = {
 expansion_ideas = {
 	category = ADM
 	important = yes
-	
+		
 	trigger = {
 		OR = {
 			adm_tech = 9
 			dip_tech = 9
 		}
-	}		
+	}
 	
 	bonus = {
  		cb_on_overseas = yes
