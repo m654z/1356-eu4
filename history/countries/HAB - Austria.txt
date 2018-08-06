@@ -1,4 +1,4 @@
-government = early_feudal_monarchy
+government = feudal_monarchy
 government_rank = 1
 primary_culture = austrian
 religion = catholic
@@ -325,6 +325,16 @@ national_focus = ADM
 	}
 }
 
+1490.1.1 = {
+	set_global_flag = paper_in_bureaucracies
+	change_price = {
+		trade_goods = paper
+		key = PAPER_IN_BUREAUCRACY
+		value = 0.25
+		duration = -1
+	}
+}
+
 1493.8.21 = {
 	monarch = {
 		name = "Maximilian I"
@@ -333,16 +343,6 @@ national_focus = ADM
 		adm = 2
 		dip = 4
 		mil = 2
-	}
-}
-
-1490.1.1 = {
-	set_global_flag = paper_in_bureaucracies
-	change_price = {
-		trade_goods = paper
-		key = PAPER_IN_BUREAUCRACY
-		value = 0.25
-		duration = -1
 	}
 }
 
@@ -905,6 +905,17 @@ national_focus = ADM
 		}
 }
 
+1650.1.2 = {
+	set_global_flag = mocha_killed
+	change_price = {
+		trade_goods = coffee
+		key = JAVA_COFFEE
+		value = -0.4
+		duration = -1
+	}
+}
+
+
 1651.4.30 = {
 	queen = {
 		country_of_origin = MAN
@@ -931,15 +942,6 @@ national_focus = ADM
 	
 }
 
-1650.1.1 = {
-	set_global_flag = mocha_killed
-	change_price = {
-		trade_goods = coffee
-		key = JAVA_COFFEE
-		value = -0.4
-		duration = -1
-	}
-}
 
 #Trade Good Events
 1660.1.1 = {

@@ -1,5 +1,5 @@
+# Audax Validator "!" Ignore_ALL
 # War of the Two Peters
-# 2013.12.28 New entry (rickroll120)
 #
 #name = "War of the Two Peters"
 #casus_belli = cb_insult
@@ -23,8 +23,8 @@
 #	add_defender = DAU
 #	add_defender = ORL
 #}
-#
-# End of war
+
+ #End of war
 #1366.3.13 = { # Start of Castillian Civil War
 #	rem_attacker = CAS
 #	rem_attacker = CTR

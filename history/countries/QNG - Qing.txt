@@ -25,7 +25,10 @@ historical_rival = SHU
 historical_rival = YUE
 historical_rival = MIN
 historical_rival = CMI
+<<<<<<< HEAD
+=======
 historical_rival = YUE
+>>>>>>> master
 
 1399.1.1 = {
 	monarch = {

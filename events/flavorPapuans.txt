@@ -22,7 +22,6 @@ country_event = {
 		ai_chance = {
 			factor = 95
 		}
-		add_base_manpower = -5
 		648 = { change_native_size = -1 cede_province = ROOT add_core = ROOT change_controller = ROOT }
 	}
 	option = {
@@ -56,7 +55,6 @@ country_event = {
 		ai_chance = {
 			factor = 95
 		}
-		add_base_manpower = -5
 		1245 = { change_native_size = -1 cede_province = ROOT add_core = ROOT change_controller = ROOT }
 	}
 	option = {
@@ -90,7 +88,6 @@ country_event = {
 		ai_chance = {
 			factor = 95
 		}
-		add_base_manpower = -5
 		646 = {  change_native_size = -1 cede_province = ROOT add_core = ROOT change_controller = ROOT }
 	}
 	option = {
@@ -124,7 +121,7 @@ country_event = {
 		ai_chance = {
 			factor = 95
 		}
-		add_base_manpower = -5
+		
 		652 = { cede_province = ROOT change_native_size = -1 add_core = ROOT change_controller = ROOT }
 	}
 	option = {
@@ -158,7 +155,6 @@ country_event = {
 		ai_chance = {
 			factor = 95
 		}
-		add_base_manpower = -5
 		653 = { add_core = ROOT cede_province = ROOT change_native_size = -1 change_controller = SUL }
 	}
 	option = {
@@ -192,7 +188,6 @@ country_event = {
 		ai_chance = {
 			factor = 95
 		}
-		add_base_manpower = -5
 		2717 = { change_native_size = -50 cede_province = ROOT add_core = ROOT change_controller = ROOT }
 	}
 	option = {

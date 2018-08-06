@@ -1,4 +1,4 @@
-government = early_feudal_monarchy
+government = feudal_monarchy
 government_rank = 1
 technology_group = western
 primary_culture = hannoverian
@@ -132,6 +132,19 @@ fixed_capital = 53 # Cannot move capital away from this province & no power cost
 }
 
 # Substitution after death of brother Friedrich I von Welf (BRU)
+1400.6.4 = {
+	heir = {
+		name = "Otto"
+		monarch_name = "Otto I"
+		dynasty = "von Welf"
+		birth_date = 1400.1.1
+		death_date = 1446.1.1
+		claim = 95
+		adm = 3
+		dip = 1
+		mil = 2
+	}
+}
 
 1400.6.5 = {
 	monarch = {
@@ -231,19 +244,7 @@ fixed_capital = 53 # Cannot move capital away from this province & no power cost
 	}
 }
 
-1400.1.1 = {
-	heir = {
-		name = "Otto"
-		monarch_name = "Otto I"
-		dynasty = "von Welf"
-		birth_date = 1400.1.1
-		death_date = 1446.1.1
-		claim = 95
-		adm = 3
-		dip = 1
-		mil = 2
-	}
-}
+
 
 1434.6.11 = {
 	monarch = {

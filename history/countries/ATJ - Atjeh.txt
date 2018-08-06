@@ -3,9 +3,11 @@ government_rank = 1
 primary_culture = sumatran
 religion = hinduism
 technology_group = chinese
-capital = 617	# Banda Aceh
+#capital = 617	# Banda Aceh
+capital = 2674
 
 1356.1.1 = {
+	capital = 2674
 	monarch = {
 		name = "Malik"
 		dynasty = "Salih"

@@ -9,7 +9,7 @@ normal_or_historical_nations = yes
 
 # Death of Haji I Giray
 country_event = {
-	#id = flavor_cri.1
+	id = flavor_cri.1
 	title = "flavor_cri.1.t"
 	desc = "flavor_cri.1.d"
 	picture = RELIGION_eventPicture
@@ -209,7 +209,7 @@ country_event = {
 
 # Crimean Ruler asks for Ottoman Support
 country_event = {
-	#id = flavor_cri.2
+	id = flavor_cri.2
 	title = "flavor_cri.2.t"
 	desc = "flavor_cri.2.d"
 	picture = RELIGION_eventPicture
@@ -339,7 +339,7 @@ country_event = {
 
 #Crimean Pretender Asks for Ottoman Support
 country_event = {
-	#id = flavor_cri.3
+	id = flavor_cri.3
 	title = "flavor_cri.3.t"
 	desc = "flavor_cri.3.d"
 	picture = RELIGION_eventPicture
@@ -428,7 +428,7 @@ country_event = {
 
 #The Ottoman Sultan sends support
 country_event = {
-	#id = flavor_cri.4
+	id = flavor_cri.4
 	title = "flavor_cri.4.t"
 	desc = "flavor_cri.4.d"
 	picture = RELIGION_eventPicture
@@ -480,7 +480,7 @@ country_event = {
 
 #The Ottomans have installed Mengli Giray
 country_event = {
-	#id = flavor_cri.6
+	id = flavor_cri.6
 	title = "flavor_cri.6.t"
 	desc = "flavor_cri.6.d"
 	picture = RELIGION_eventPicture
@@ -576,7 +576,7 @@ country_event = {
 
 #Mengli Giray Installed in the Crimean Khanate
 country_event = {
-	#id = flavor_cri.7
+	id = flavor_cri.7
 	title = "flavor_cri.7.t"
 	desc = "flavor_cri.7.d"
 	picture = RELIGION_eventPicture

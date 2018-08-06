@@ -6,6 +6,7 @@ religion = orthodox
 capital = 3001 # Skopje
 
 1355.12.20 = {
+	capital = 148 #Macedonia
 	monarch = {
 		name = "Vukašin"
 		dynasty = "Mrnjavcevic"

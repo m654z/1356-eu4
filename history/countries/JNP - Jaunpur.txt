@@ -102,7 +102,6 @@ religious_school = hanafi_school
 		DIP = 2
 		MIL = 2
 	}
-	clear_scripted_personalities = yes
 	add_ruler_personality = craven_personality
 	heir = {
 		name = "Bhikhan"
@@ -126,7 +125,6 @@ religious_school = hanafi_school
 		DIP = 1
 		MIL = 2
 	}
-	clear_scripted_personalities = yes
 	add_ruler_personality = naive_personality
 }
 
@@ -144,7 +142,6 @@ religious_school = hanafi_school
 		DIP = 0
 		MIL = 3
 	}
-	clear_scripted_personalities = yes
 	add_heir_personality = strict_personality
 }
 
@@ -156,7 +153,6 @@ religious_school = hanafi_school
 		DIP = 0
 		MIL = 3
 	}
-	clear_scripted_personalities = yes
 	add_ruler_personality = strict_personality
 }
 

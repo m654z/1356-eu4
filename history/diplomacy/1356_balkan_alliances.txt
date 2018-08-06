@@ -1,3 +1,47 @@
+<<<<<<< HEAD
+#Balkan Region update
+vassal = {
+	first = BUL
+	second = VID
+	start_date = 1356.12.25
+	end_date = 1376.11.11
+}
+
+vassal = {
+	first = SER
+	second = EPI
+	start_date = 1356.12.25
+	end_date = 1376.11.11
+}
+
+vassal = {
+	first = SIC
+	second = ATH
+	start_date = 1356.12.25
+	end_date = 1376.11.11
+}
+
+#vassal = {
+#	first = BYZ
+#	second = ACH
+#	start_date = 1356.12.25
+#	end_date = 1376.11.11
+#}
+
+vassal = {
+	first = VOL
+	second = MOL
+	start_date = 1356.12.25
+	end_date = 1376.11.11
+}
+
+alliance = {
+	first = BUL
+	second = WAL
+	start_date = 1356.12.25
+	end_date = 1376.11.11
+}
+=======
 #Balkan Region update
 vassal = {
 	first = BUL
@@ -40,3 +84,4 @@ alliance = {
 	start_date = 1356.12.25
 	end_date = 1376.11.11
 }
+>>>>>>> master

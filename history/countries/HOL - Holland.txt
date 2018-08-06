@@ -1,9 +1,9 @@
-government = early_feudal_monarchy
+government = feudal_monarchy
 government_rank = 1
 technology_group = western
 religion = catholic
 primary_culture = dutch
-capital = 97	# Amsterdam
+capital = 4383	# Den Haag
 
 1356.6.23 = {
 	monarch = {

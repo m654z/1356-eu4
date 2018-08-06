@@ -1,15 +1,16 @@
-namespace = CRI_cleanup
+namespace = CRIcleanup
 
 country_event = {
-	id = CRI_cleanup.1
-	title = CRI_cleanup.1.t
-	desc = CRI_cleanup.1.d
+	id = CRIcleanup.1
+	title = CRIcleanup.1.t
+	desc = CRIcleanup.1.d
 	picture = HORDE_ON_HORSEBACK_eventPicture
 
 	fire_only_once = yes
 	
 	trigger = {
 		tag = CRI
+		NOT = { is_year = 1444 }
 	}
 
 	mean_time_to_happen = {
@@ -17,7 +18,7 @@ country_event = {
 	}
 
 	option = {
-		name = CRI_cleanup.1.a
+		name = CRIcleanup.1.a
 		284 = { add_unrest = -10 }
         284 = { add_nationalism = -10 }
 		284 = { cede_province = CRI }
@@ -44,15 +45,17 @@ country_event = {
 		2413 = { cede_province = CRI }
 		2414 = { cede_province = CRI }
 		287 = { cede_province = CRI }
-        define_ruler = {
-        name = "Shahin"
-		dynasty = "Giray"
-		birth_date = 1340.4.8
-		claim = 100
-		adm = 2
-		dip = 2
-		mil = 2
-		leader = { name = "Shahin Giray"	type = general	fire = 4	shock = 4	manuever = 4	siege = 1 }
-        }		
+        CRI = {
+			define_ruler = {
+				name = "Shahin"
+				dynasty = "Giray"
+				#birth_date = 1340.4.8 #It doesn't take this into account saddly
+				claim = 100
+				adm = 2
+				dip = 2
+				mil = 2
+				leader = { name = "Shahin Giray" type = general	fire = 4	shock = 4	manuever = 4	siege = 1 }
+			}	
+		}
 	}
 }

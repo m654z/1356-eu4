@@ -27,6 +27,7 @@ capital = 419	# Yerevan
 		monarch_name = "Shanshe IV"
 		dynasty = "Zakarid"
 		birth_date = 1320.10.20
+		death_date = 1370.1.1
 		claim = 95
 		adm = 2
 		dip = 2

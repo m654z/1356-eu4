@@ -1,4 +1,8 @@
+<<<<<<< HEAD
+government = iqta
+=======
 government = feudal_theocracy
+>>>>>>> master
 primary_culture = mazandarani
 religion = zoroastrian
 technology_group = muslim

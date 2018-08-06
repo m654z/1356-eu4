@@ -911,7 +911,12 @@ national_focus = DIP
 1650.1.1 = { leader = {	name = "George Ayscue"		type = admiral	fire = 3	shock = 3	manuever = 3	siege = 0	death_date = 1671.7.19 } }
 
 
-1651.12.30 = { mercantilism = 25 decision = establish_british_merchant_navy } # The Act of Navigation
+1651.12.30 = { 
+	mercantilism = 25 
+	#decision = establish_british_merchant_navy # The Act of Navigation
+} 
+
+#1651.12.30 = { decision = establish_british_merchant_navy } # The Act of Navigation
 
 1658.9.3 = {
 	monarch = {
@@ -965,6 +970,10 @@ national_focus = DIP
 	}
 }
 
+1660.5.30 = { leader = { name = "Prince Rupert"		type = admiral	fire = 4	shock = 4	manuever = 3	siege = 0	death_date = 1682.11.19 } }
+
+#1660.5.30 = { decision = tenures_abolition_act }
+
 1662.4.23 = {
 	queen = {
 		country_of_origin = POR
@@ -978,10 +987,6 @@ national_focus = DIP
 		mil = 1
 	}
 }
-
-1660.5.29 = { leader = { name = "Prince Rupert"		type = admiral	fire = 4	shock = 4	manuever = 3	siege = 0	death_date = 1682.11.19 } }
-
-#1660.5.29 = { decision = tenures_abolition_act }
 
 1668.1.1 = { leader = {	name = "Pierre-Esprit Radisson"	type = conquistador	fire = 1	shock = 1	manuever = 5	siege = 0	death_date = 1710.4.1 } }
 

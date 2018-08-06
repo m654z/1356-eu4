@@ -1,0 +1,130 @@
+namespace = eastereggflandy
+
+#General
+#The Trebuchet
+
+
+#Flanders
+#The Rise of the van Vladderen family
+country_event = {
+	id = eastereggflandy.1
+	title = "eastereggflandy.1.t"
+	desc = "eastereggflandy.1.desc"
+	picture = COURT_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = FLA
+		OR = {
+			current_age = age_of_discovery
+			current_age = age_of_feudalism
+			current_age = age_of_reformation
+			NOT = { is_year = 1650 }
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 4000
+	}
+	
+	option = { #Anything is better than our current dynasty!
+		name = eastereggflandy.1.a
+		set_country_flag = van_vladderen_dynasty_flag
+		define_ruler = {
+			dynasty = "van Vladderen"
+			male = yes
+			culture = flemish
+			age = 30
+			adm = 5
+			dip = 5
+			mil = 5
+			claim = 60
+		}
+	}
+	option = { #The who? Throw them in the brig! Get this nonsense far away from me!
+		name = eastereggflandy.1.b
+		add_legitimacy = 25
+		add_prestige = 10
+	}
+}
+
+#Our son, Flandy. Mysteriously our first two sons have died, leaving only Flandy to inherit the throne. But he's a bit of a backstabbing weasel. What should we do?
+country_event = {
+	id = eastereggflandy.2
+	title = "eastereggflandy.2.t"
+	desc = "eastereggflandy.2.desc"
+	picture = COURT_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = FLA
+		has_country_flag = van_vladderen_dynasty_flag
+		OR = {
+			current_age = age_of_discovery
+			current_age = age_of_feudalism
+			current_age = age_of_reformation
+			NOT = { is_year = 1650 }
+		}
+		government = monarchy
+		has_heir = yes
+	}
+
+	mean_time_to_happen = {
+		months = 1600
+	}
+	
+	option = { #Name Flandy heir
+		name = eastereggflandy.2.a
+		kill_heir = yes
+		define_heir = {
+			name = "Flandy"
+			dynasty = "van Vladderen"
+			male = yes
+			culture = flemish
+			age = 19
+			claim = 80
+			adm = 2
+			dip = 5
+			mil = 4
+		}	
+	}
+	option = { #Name him advisor instead
+		name = eastereggflandy.2.b
+		define_advisor = {
+			type = spymaster
+			name = "Flandy van Vladderen"
+			location = 90
+			skill = 3
+			discount = yes
+			culture = flemish
+			religion = catholic
+		}
+	}
+	option = { #It was him! Kill him!
+		name = eastereggflandy.2.c
+		capital_scope = {
+			spawn_rebels = {
+				type = pretender_rebels
+				culture = flemish
+				size = 2
+				leader = "Flandy van Vladderen"
+			}
+		}
+	}
+	option = { #Well, onto the 4th son!
+		name = eastereggflandy.2.d
+		kill_heir = yes
+		define_heir = {
+			dynasty = "van Vladderen"
+			male = yes
+			culture = flemish
+			age = 12
+			claim = 100	
+			adm = 4
+			dip = 2
+			mil = 3
+		}
+	}
+}

@@ -260,12 +260,12 @@ alliance = {
 	end_date = 1386.3.4
 }
 
-union = {
-	first = POL
-	second = LIT
-	start_date = 1386.3.4
-	end_date = 1444.11.10
-}
+#union = { #Changed end date to be Vanilla Compatible.
+#	first = POL
+#	second = LIT
+#	start_date = 1386.3.4
+#	end_date = 1444.11.10
+#}
 
 vassal = {
 	first = LIT
@@ -296,18 +296,18 @@ union = {
 	end_date = 1370.11.5
 }
 
-vassal = {
+vassal = { #Changed dates to be vanilla compatible. 
 	first = POL
 	second = MAZ
 	start_date = 1356.1.1
-	end_date = 1526.3.9
+	end_date = 1443.12.31
 }
 
-march = {
+march = { #Changed Dates to be Vanilla Compatible
 	first = POL
 	second = MOL
 	start_date = 1387.9.26
-	end_date = 1497.12.31
+	end_date = 1443.12.31
 }
 
 # Louis I of Hungary/Poland

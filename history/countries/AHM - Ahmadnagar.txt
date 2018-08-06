@@ -26,7 +26,6 @@ capital = 2034	# Pune
 }
 
 1490.1.1 = { 
-	government = iqta 
 	capital = 544	# Ahmadnagar
 	government = iqta 
 	religion = sunni religious_school = hanafi_school

@@ -1,3 +1,20 @@
+<<<<<<< HEAD
+government = iqta
+primary_culture = al_misr_arabic
+religion = sunni
+technology_group = muslim
+capital = 358 # Cairo
+religious_school = hanbali_school
+
+1356.11.6 = {	
+	monarch = {
+		name = "Ahmad"
+		dynasty = "Bahri"
+		adm = 3
+		dip = 2
+		mil = 5
+	}
+=======
 government = iqta
 primary_culture = al_misr_arabic
 religion = sunni
@@ -15,4 +32,5 @@ religious_school = hanbali_school
 		dip = 2
 		mil = 5
 	}
+>>>>>>> master
 }

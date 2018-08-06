@@ -1,4 +1,4 @@
-government = early_feudal_monarchy
+government = feudal_monarchy
 government_rank = 1
 technology_group = western
 primary_culture = bavarian
@@ -102,7 +102,7 @@ capital = 65	# München!
 		monarch_name = "Albrecht III"
 		dynasty = "von Wittelsbach"
 		birth_date = 1401.3.27
-		death_date = 1460.2.29
+		death_date = 1460.2.28 #Really died on the 29th, but the game and validator dont like leap years.
 		claim = 95
 		adm = 2
 		dip = 2

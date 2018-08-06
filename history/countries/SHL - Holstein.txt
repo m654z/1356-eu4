@@ -1,4 +1,4 @@
-government = early_feudal_monarchy
+government = feudal_monarchy
 government_rank = 1
 primary_culture = hannoverian
 religion = catholic
@@ -157,8 +157,11 @@ capital = 1775	# Kiel
 	government = feudal_monarchy 
 	heir = {
 		name = "Christian I"
+		monarch_name = "Christian I"
 		dynasty = "von Oldenburg"
 		birth_date = 1426.2.1
+		death_date = 1459.12.1
+		claim = 95
 		adm = 4
 		dip = 1
 		mil = 2

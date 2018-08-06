@@ -1,4 +1,4 @@
-government = early_feudal_monarchy
+government = feudal_monarchy
 primary_culture = polish
 religion = catholic
 technology_group = eastern
@@ -448,7 +448,7 @@ national_focus = ADM
 	add_ruler_personality = industrious_personality
 }
 
-1543.5.6 = {
+1549.5.6 = {
 	queen = {
 		country_of_origin = HAB
 		name = "Elzbieta"

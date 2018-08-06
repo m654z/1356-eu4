@@ -1,4 +1,4 @@
-government = early_feudal_monarchy
+government = feudal_monarchy
 government_rank = 1
 technology_group = western
 primary_culture = english
@@ -7,6 +7,7 @@ capital = 244	# Chester
 fixed_capital = 244 # Cannot move capital away from this province & no power cost to move to it
 
 1345.9.22 = { 
+	capital = 244
 	monarch = {
 		name = "Henry I"
 		dynasty = "Lancaster"
@@ -62,8 +63,4 @@ fixed_capital = 244 # Cannot move capital away from this province & no power cos
 		dip = 1
 		mil = 1
 	}
-}
-
-1440.1.1 = {
-	government = feudal_monarchy
 }

@@ -1,3 +1,42 @@
+<<<<<<< HEAD
+government = despotic_monarchy
+technology_group = chinese
+religion = confucianism
+primary_culture = wu
+
+capital = 684	#Hangzhou
+
+historical_rival = YUA
+historical_rival = KHA
+historical_rival = CZH
+historical_rival = CXI
+historical_rival = CGS
+historical_rival = MNG
+historical_rival = HUA
+historical_rival = QIN
+historical_rival = LNG
+historical_rival = JIN
+historical_rival = YAN
+historical_rival = QIC
+historical_rival = TNG
+historical_rival = CHC
+historical_rival = NNG
+historical_rival = SHU
+historical_rival = YUE
+historical_rival = MIN
+historical_rival = CMI
+historical_rival = QNG
+
+1354.1.1 = {
+	monarch = {
+		name = "Shicheng"
+		dynasty = "Zhang"
+		birth_date = 1321.1.1
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+=======
 government = despotic_monarchy
 technology_group = chinese
 religion = confucianism
@@ -36,4 +75,5 @@ historical_rival = QNG
 		dip = 2
 		mil = 2
 	}
+>>>>>>> master
 }

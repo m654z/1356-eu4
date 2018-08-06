@@ -1,4 +1,4 @@
-government = early_feudal_monarchy
+government = feudal_monarchy
 primary_culture = portugese
 religion = catholic
 technology_group = western
@@ -206,6 +206,8 @@ national_focus = DIP
 
 1432.1.1 = { leader = {	name = "Gonçalo Velho Cabral"	type = explorer	fire = 1	shock = 1	manuever = 2	siege = 0	death_date = 1432.12.31 } }
 
+1433.1.1 = { leader = {	name = "Gonçalo Velho Cabral"	type = explorer	fire = 1	shock = 1	manuever = 3	siege = 0	death_date = 1434.12.31 } }
+
 1433.8.14 = {
 	monarch = {
 		name = "Duarte"
@@ -238,8 +240,6 @@ national_focus = DIP
 		mil = 2
 	}
 }
-
-1433.1.1 = { leader = {	name = "Gonçalo Velho Cabral"	type = explorer	fire = 1	shock = 1	manuever = 3	siege = 0	death_date = 1434.12.31 } }
 
 1434.1.1 = { leader = {	name = "Afonso Gonçalves Baldaia" type = explorer	fire = 2	shock = 2	manuever = 2	siege = 0	death_date = 1437.12.31 } }
 

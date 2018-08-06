@@ -1,0 +1,11 @@
+government = feudal_monarchy
+government_rank = 2
+primary_culture = burgundian
+add_accepted_culture = occitain
+religion = catholic
+technology_group = western
+
+capital = 201	#Provence
+
+
+

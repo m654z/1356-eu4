@@ -1,5 +1,5 @@
 government = feudal_monarchy
 primary_culture = cosmopolitan_french
 religion = catholic
-technology_group = eastern
+technology_group = western
 capital = 377	# Aleppo

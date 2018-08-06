@@ -1,4 +1,4 @@
-government = early_feudal_monarchy
+government = feudal_monarchy
 government_rank = 1
 technology_group = western
 primary_culture = irish
@@ -6,6 +6,16 @@ religion = catholic
 capital = 376	# Galway
 
 #House Burke / De Burgh
+
+1324.1.1 = {
+	monarch = {
+		name = "William"
+		dynasty = "Burke"
+		adm = 3
+		dip = 1
+		mil = 4
+	}
+}
 
 1353.1.1 = {
 	monarch = {
@@ -24,16 +34,6 @@ capital = 376	# Galway
 		adm = 0
 		dip = 5
 		mil = 0
-	}
-}
-
-1324.1.1 = {
-	monarch = {
-		name = "William"
-		dynasty = "Burke"
-		adm = 3
-		dip = 1
-		mil = 4
 	}
 }
 

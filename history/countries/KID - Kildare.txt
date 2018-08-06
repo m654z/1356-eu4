@@ -1,4 +1,4 @@
-government = early_feudal_monarchy
+government = feudal_monarchy
 government_rank = 1
 technology_group = western
 primary_culture = normand
@@ -105,15 +105,7 @@ capital = 4120	# Kildare
 	}
 }
 
-1478.1.1 = {
-	monarch = {
-		name = "Thomas" #Silken Thomas
-		dynasty = "FitzGerald"
-		adm = 3
-		dip = 3
-		mil = 4
-	}
-}
+
 
 1525.1.1 = {
 	heir = {

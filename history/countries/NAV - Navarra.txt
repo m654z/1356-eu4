@@ -1,5 +1,7 @@
-government = early_feudal_monarchy
+government = feudal_monarchy
 primary_culture = basque
+add_accepted_culture = normand
+add_accepted_culture = cosmopolitan_french
 religion = catholic
 technology_group = western
 historical_friend = NRM
@@ -7,8 +9,9 @@ capital = 210	# Pamplona
 
 1349.10.6 = {
 	monarch = {
-		name = "Carlos II"
+		name = "Charles II"
 		dynasty = "d'Évreux"
+		culture = cosmopolitan_french
 		birth_date = 1332.10.10
 		adm = 1
 		dip = 2
@@ -33,7 +36,7 @@ capital = 210	# Pamplona
 1361.7.22 = {
 	heir = {
 		name = "Carlos"
-		monarch_name = "Carlos III"
+		monarch_name = "Charles III"
 		dynasty = "d'Évreux"
 		birth_date = 1361.7.22
 		death_date = 1425.9.8
@@ -46,7 +49,7 @@ capital = 210	# Pamplona
 
 1387.1.1 = {
 	monarch = {
-		name = "Carlos III"
+		name = "Charles III"
 		dynasty = "d'Évreux"
 		birth_date = 1361.7.22
 		adm = 1

@@ -85,6 +85,14 @@ royal_marriage = {
 #################################
 
 # Aragon and Sicily
+<<<<<<< HEAD
+#alliance = { #Changed to be Vanilla Compatible
+#	first = ARA
+#	second = SIC
+#	start_date = 1386.5.19
+#	end_date = 1409.7.25
+#}
+=======
 alliance = {
 	first = ARA
 	second = SIC
@@ -98,3 +106,4 @@ royal_marriage = {
 	start_date = 1386.5.19
 	end_date = 1409.7.25
 }
+>>>>>>> master
