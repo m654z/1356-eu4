@@ -1,4 +1,4 @@
-government = tribal_federation
+government = tribal_federation_ilkhan
 technology_group = muslim
 primary_culture = persian
 religion = sunni

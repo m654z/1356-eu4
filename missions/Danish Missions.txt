@@ -24,10 +24,30 @@ danish_missions = {
 		}
 	}
 	
-	norway_subject = {
-		icon = mission_have_two_subjects
+	conquer_dithmarschen = {
+		icon = mission_conquer_5_states
 		required_missions = { annex_holstein }
 		position = 2
+		provinces_to_highlight = {
+			province_id = 4141
+		}
+		trigger = {
+			4141 = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		effect = {
+			mecklenburg_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	
+	norway_subject = {
+		icon = mission_have_two_subjects
+		position = 3
 		trigger = {
 			NOR = {
 				is_subject_of = DAN
@@ -41,7 +61,7 @@ danish_missions = {
 	sweden_subject = {
 		icon = mission_have_two_subjects
 		required_missions = { norway_subject }
-		position = 3
+		position = 4
 		trigger = {
 			SWE = {
 				is_subject_of = DAN
@@ -49,9 +69,6 @@ danish_missions = {
 		}
 		effect = {
 			add_prestige = 25
-			SWE = {
-				add_liberty_desire = -25
-			}
 		}
 	}
 }
@@ -78,10 +95,32 @@ danish_missions_2 = {
 			}
 		}
 	}
+	
+	conquer_skaneland = {
+		icon = mission_unite_home_region
+		required_missions = { dan_baltic_fleet }
+		provinces_to_highlight = {
+			area = skaneland_area
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			skaneland_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			add_mil_power = 100
+			add_dip_power = 100
+			add_adm_power = 100
+		}
+	}
 
 	reclaim_estonia = {
 		icon = mission_conquer_5_states
-		required_missions = { dan_baltic_fleet }
+		required_missions = { conquer_skaneland }
 		provinces_to_highlight = {
 			OR = {
 				province_id = 35
@@ -166,8 +205,10 @@ danish_missions_2 = {
 		icon = mission_conquer_5_states
 		required_missions = { conquer_baltics }
 		provinces_to_highlight = {
-			area = vorpommern_area
-			area = hinter_pommern_area
+			OR = {
+				area = vorpommern_area
+				area = hinter_pommern_area
+			}
 			NOT = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -185,6 +226,52 @@ danish_missions_2 = {
 		effect = {
 			add_prestige = 10
 			add_adm_power = 100
+		}
+	}
+	
+	weaken_the_hansa = {
+		icon = mission_galleys_in_port
+		required_missions = { expand_into_pomerania }
+		trigger = {
+			lubeck = {
+				is_strongest_trade_power = DAN
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = "dominant_trade_hub"
+				duration = 7300
+			}
+		}
+	}
+	
+	end_the_hansa = {
+		icon = mission_galleys_in_port
+		required_missions = { weaken_the_hansa }
+		provinces_to_highlight = {
+			OR = {
+				province_id = 45
+				province_id = 2996
+				province_id = 46
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			45 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			2996 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			46 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			add_prestige = 25
+			add_dip_power = 200
 		}
 	}
 }
@@ -309,6 +396,27 @@ danish_missions_3 = {
 			add_country_modifier = {
 				name = "east_india_trade_rush"
 				duration = 9125
+			}
+		}
+	}
+	
+	conquer_gotland = {
+		icon = mission_conquer_5_states
+		required_missions = { weaken_the_hansa }
+		position = 7
+		provinces_to_highlight = {
+			province_id = 25
+		}
+		trigger = {
+			25 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			25 = {
+				add_base_tax = 2
+				add_base_production = 2
+				add_base_manpower = 2
 			}
 		}
 	}

@@ -26,11 +26,11 @@ inland_center_of_trade_modifier = {
 	picture = "province_trade_power_value"
 }
 
-sound_toll = {
-	province_trade_power_value = 20
-	province_trade_power_modifier = 0.25
-	picture = "province_trade_power_value"
-}
+#sound_toll = {
+#	province_trade_power_value = 20
+#	province_trade_power_modifier = 0.25
+#	picture = "province_trade_power_value"
+#}
 
 jean_darc = {
 	manpower_recovery_speed = 2
@@ -40,6 +40,52 @@ jean_darc = {
 golden_gate = {
 	local_defensiveness = 1.0
 	local_hostile_attrition = 2
+}
+
+# North Europe region
+member_of_hansa_ev = {
+	trade_steering = 0.2
+	trade_efficiency = 0.2
+	dip_tech_cost_modifier = -0.1
+	naval_morale = 0.1
+	interest = -0.5
+}
+
+leader_of_hansa = {
+	trade_efficiency = 0.1
+	production_efficiency = 0.05
+	prestige = 0.5
+}
+
+hansa_kontor = {
+	# Blank on purpose
+}
+
+hansa_sound_toll = {
+	trade_efficiency = -0.1
+	trade_steering = -0.15
+	naval_morale = -0.1
+}
+
+hansa_reform_1 = {
+	build_cost = -0.1
+}
+hansa_reform_2_member = {
+	global_regiment_cost = -0.25
+	manpower_recovery_speed = 0.1
+}
+hansa_reform_2_leader = {
+	global_regiment_cost = -0.25
+	manpower_recovery_speed = 0.1
+}
+hansa_reform_3_member = {
+	diplomatic_reputation = 1
+}
+hansa_reform_3_leader = {
+	diplomatic_reputation = 1
+	legitimacy = 1
+}
+recently_passed_reform = {
 }
 
 #Balkans/Anatolia
@@ -145,4 +191,29 @@ fall_of_yuan_mandate = {
 	land_morale = -0.2
 	recover_army_morale_speed = -0.1	
 	land_forcelimit = -15
+}
+
+# North Europe region
+member_of_hansa_ev = {
+	trade_steering = 0.2
+	trade_efficiency = 0.2
+	dip_tech_cost_modifier = -0.1
+	naval_morale = 0.1
+	interest = -0.5
+}
+
+leader_of_hansa = {
+	trade_efficiency = 0.1
+	production_efficiency = 0.05
+	prestige = 0.5
+}
+
+hansa_kontor = {
+	# Blank on purpose
+}
+
+hansa_sound_toll = {
+	trade_efficiency = -0.1
+	trade_steering = -0.15
+	naval_morale = -0.1
 }

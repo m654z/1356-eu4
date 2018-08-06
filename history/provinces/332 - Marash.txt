@@ -4,7 +4,7 @@
 owner = DUL
 controller = DUL
 culture = turkish
-religion = sunni
+religion = coptic
 capital = "Maras"
 trade_goods = wool
 hre = no

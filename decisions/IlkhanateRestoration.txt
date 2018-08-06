@@ -72,6 +72,10 @@ country_decisions = {
 		effect = {
 			set_country_flag = formed_ilknanate_flag 
 			change_tag = ILK
+			set_government_and_rank = {
+				government = tribal_federation_ilkhan
+				rank = 3
+			}
 			if = {
 				limit = {
 					is_part_of_hre = yes
@@ -84,12 +88,6 @@ country_decisions = {
 					}
 					set_in_empire = no
 				}
-			}
-			if = {
-				limit = {
-					NOT = { government_rank = 3 }
-				}
-				set_government_rank = 3
 			}
 			add_prestige = 50
 			if = {

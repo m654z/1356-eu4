@@ -4,7 +4,7 @@
 owner = MUZ
 controller = MUZ
 culture = persian
-religion = sunni
+religion = zoroastrian
 capital = "Saidabad"
 trade_goods = livestock
 hre = no

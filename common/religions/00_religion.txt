@@ -1796,7 +1796,7 @@ pagan = {
 			remove_country_modifier = de_heretico_comburendo			
 		}
 		
-		
+		personal_deity = yes
 		heretic = { OLD_SUOMENUSKO }	
 	}
 	slavic_pagan_reformed = {

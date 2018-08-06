@@ -1,4 +1,4 @@
-government = iqta
+government = tribal_federation_ilkhan
 primary_culture = khorasani
 add_accepted_culture = persian
 religion = shiite

@@ -1,4 +1,4 @@
-government = tribal_federation
+government = tribal_federation_ilkhan
 technology_group = muslim
 primary_culture = al_iraqiya_arabic
 add_accepted_culture = kurdish
@@ -14,13 +14,27 @@ religious_school = jafari_school
 		name = "Awais I"
 		culture = mongol
 		dynasty = "Jalayirid"
-		adm = 4
-		dip = 2	
+		birth_date = 1336.1.1
+		adm = 5
+		dip = 4	
 		mil = 5
 	}
 	add_piety = 0.2
 	add_treasury = 300
 	add_ruler_personality = conqueror_personality
+}
+
+1356.1.1 = {
+	heir = {
+		name = "Hasan"
+		dynasty = "Jalayirid"
+		birth_date = 1356.1.1
+		death_date = 1411.1.1
+		claim = 95
+		adm = 3
+		dip = 4
+		mil = 5
+	}
 }
 
 1358.1.1 = { capital = 416 } # Tabriz
