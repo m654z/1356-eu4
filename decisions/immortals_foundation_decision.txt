@@ -1,6 +1,6 @@
 country_decisions = {
 
-	reform_the_immortals = {
+#	reform_the_immortals = {
 		potential = {
 			religion = zoroastrian
 			NOT = { has_disaster = janissary_decadence }
@@ -28,7 +28,7 @@ country_decisions = {
 		}
 	}	
 
-	recruit_the_immortals = {
+#	recruit_the_immortals = {
 		potential = {
 			religion = zoroastrian
 			has_country_modifier = the_immortals
@@ -49,10 +49,9 @@ country_decisions = {
 			    duration = 7300
 		    }			
            random_owned_province = {
-				build_to_forcelimit = {
-					infantry = 0.55
-					cavalry = 0.15
-				}
+			build_to_forcelimit = {
+				infantry = 0.55
+				cavalry = 0.15
 			}
 		}
 		ai_will_do = {
@@ -63,7 +62,7 @@ country_decisions = {
 			}
 		}
 	}
-	establish_religious_center = {
+#	establish_religious_center = {
 		potential = {
 			religion = zoroastrian
 			OR = {
