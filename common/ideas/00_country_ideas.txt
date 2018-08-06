@@ -1143,7 +1143,7 @@ TIM_ideas = {
 		prestige = 1
 	}
 	the_mantle_of_the_great_khan = {
-		land_morale = 0.1
+		land_morale = 0.20
 	}
 	unleash_the_tiger = {
 		shock_damage = 0.1
@@ -3390,7 +3390,11 @@ CYP_ideas = {
 		naval_forcelimit_modifier = 0.33
 	}
 	trigger = {
-		tag = CYP
+		OR = {
+			tag = CIC
+			tag = ANT
+			tag = CYP
+		}
 	}
 	free = yes
 
