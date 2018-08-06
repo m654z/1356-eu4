@@ -14,6 +14,8 @@ country_decisions = {
 			OR = {
 				tag = SAV
 				tag = SAR
+				primary_culture = piedmontese
+				primary_culture = sardinian
 			}
 			is_colonial_nation = no
 			OR = {
@@ -50,6 +52,16 @@ country_decisions = {
 				AND = {
 					tag = SAV
 					NOT = { exists = SAR }
+				}
+				AND = {
+					primary_culture = sardinian
+					NOT = { exists = SAR }
+					NOT = { exists = SAV }
+				}
+				AND = {
+					primary_culture = piedmontese
+					NOT = { exists = SAR }
+					NOT = { exists = SAV }
 				}
 			}
 			owns_core_province = 102		# Nice

@@ -11,6 +11,17 @@ country_decisions = {
 			}
 			tag = CTR
 		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 215
+				province_id = 216
+				province_id = 224
+				province_id = 219
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
 		allow = {
 			NOT = { exists = CAS }
 			is_free_or_tributary_trigger = yes

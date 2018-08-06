@@ -1,0 +1,269 @@
+country_decisions = {
+
+	burgundian_nation = {
+		major = yes
+		potential = {
+			normal_or_historical_nations = yes
+			NOT = { has_country_flag = formed_burgundy_flag }
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
+			NOT = { tag = HLR }
+			NOT = { tag = FRA }
+			NOT = { tag = PAP }
+			NOT = { tag = SPA }	
+			NOT = { tag = BLS }
+			NOT = { tag = MNF }
+			NOT = { tag = BUR }
+			NOT = { tag = HAB }
+			NOT = { tag = LOT }
+			NOT = { tag = ARE }
+			NOT = { exists = BUR }
+			primary_culture = burgundian
+			is_colonial_nation = no
+			OR = {
+				is_former_colonial_nation = no
+				AND = {
+					is_former_colonial_nation = yes
+					ai = no
+				}
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 4392	# Auxerrois
+				province_id = 191	# Nevers
+				province_id = 1877	# Charolais
+				province_id = 192	# Dijonnais
+				province_id = 193	# Franche-Comte
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+			}
+		}
+		allow = {
+			is_at_war = no
+			is_free_or_tributary_trigger = yes
+			is_nomad = no			
+			owns_core_province = 4392	# Auxerrois
+			owns_core_province = 191	# Nevers
+			owns_core_province = 1877	# Charolais
+			owns_core_province = 192	# Dijonnais
+			owns_core_province = 193	# Franche-Comte
+		}
+		effect = {
+			192 = { 
+				move_capital_effect = yes
+			}
+			change_tag = BUR
+			swap_non_generic_missions = yes
+			remove_non_electors_emperors_from_empire_effect = yes
+			if = {
+				limit = {
+					NOT = { government_rank = 2 }
+				}
+				set_government_rank = 2
+			}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_prestige = 25
+			if = {
+				limit = {
+					has_custom_ideas = no
+					OR = {
+						ai = no
+						AND = {
+							ai = yes
+							has_idea_group = default_ideas
+						}
+					}
+				}
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+			set_country_flag = formed_burgundy_flag
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	lotharingia_nation = { #Make it pop an event to make deal with emperor and whatnot
+		major = yes
+		potential = {
+			normal_or_historical_nations = yes
+			NOT = { has_country_flag = formed_lotharingia_flag }
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
+			NOT = { tag = LOT }
+			NOT = { exists = LOT }
+			OR = {
+				tag = BUR
+				tag = BAR
+				tag = LOR
+				tag = LUX
+				#tag = AAC
+				
+			}
+			is_colonial_nation = no
+		}
+		provinces_to_highlight = {
+			OR = {
+				area = flanders_area
+				area = wallonia_area
+				area = lorraine_area
+				area = bourgogne_area
+				area = holland_area
+				area = netherlands_area
+				province_id = 1878 #Aachen
+			}	
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+			}
+		}
+		allow = {
+			is_at_war = no
+			is_free_or_tributary_trigger = yes
+			is_nomad = no
+			OR = {
+				AND = {
+					has_country_flag = "bur_granted_imperial_title_flag"
+					tag = BUR
+				}
+				NOT = { tag = BUR }
+			}
+			bourgogne_area = { owned_by = ROOT }
+			holland_area = { owned_by = ROOT }
+			netherlands_area = { owned_by = ROOT }
+			lorraine_area = { owned_by = ROOT }	
+			wallonia_area = { owned_by = ROOT }
+			flanders_area = { owned_by = ROOT }
+			owns = 1878 #Aachen
+		}
+		effect = {
+			1878 = { #Aachen
+				move_capital_effect = yes
+			}
+			change_tag = LOT
+			swap_non_generic_missions = yes
+			#remove_non_electors_emperors_from_empire_effect = yes #No because by this point to get the imperial title you've been granted the exclusive rights to be a Kingdom in the Empire ala Bohemia.
+			if = {
+				limit = {
+					NOT = { government_rank = 2 }
+				}
+				set_government_rank = 2
+			}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_prestige = 25
+			if = {
+				limit = {
+					has_custom_ideas = no
+					OR = {
+						ai = no
+						AND = {
+							ai = yes
+							has_idea_group = default_ideas
+						}
+					}
+				}
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+			set_country_flag = formed_lotharingia_flag
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	arles_nation = {
+		major = yes
+		potential = {
+			normal_or_historical_nations = yes
+			NOT = { has_country_flag = formed_arles_flag }
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
+			NOT = { tag = ARE }
+			NOT = { exists = ARE }
+			OR = {
+				tag = PRO
+				tag = BUR
+				tag = SAV
+				tag = DAU
+			}
+			is_nomad = no
+			is_colonial_nation = no
+		}
+		provinces_to_highlight = {
+			OR = {
+				area = savoy_dauphine_area
+				area = romandie_area
+				area = provence_area
+				area = bourgogne_area
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+			}
+		}
+		allow = {
+			is_at_war = no
+			is_free_or_tributary_trigger = yes
+			OR = {
+				AND = {
+					has_country_flag = "bur_granted_imperial_title_flag"
+					tag = BUR
+				}
+				NOT = { tag = BUR }
+			}
+			bourgogne_area = { owned_by = ROOT }
+			provence_area = { owned_by = ROOT }
+			savoy_dauphine_area = { owned_by = ROOT }
+			romandie_area = { owned_by = ROOT }	
+		}
+		effect = {
+			201 = { #Provence
+				move_capital_effect = yes
+			}
+			change_tag = ARE
+			swap_non_generic_missions = yes
+			#remove_non_electors_emperors_from_empire_effect = yes #You've been given this title, so it'd make no sense to do this.
+			if = {
+				limit = {
+					NOT = { government_rank = 2 }
+				}
+				set_government_rank = 2
+			}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_prestige = 25
+			if = {
+				limit = {
+					has_custom_ideas = no
+					OR = {
+						ai = no
+						AND = {
+							ai = yes
+							has_idea_group = default_ideas
+						}
+					}
+				}
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+			set_country_flag = formed_arles_flag
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

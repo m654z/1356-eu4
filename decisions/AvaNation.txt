@@ -10,6 +10,17 @@ country_decisions = {
 			}
 			NOT = { exists = AVA }
 		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 585
+				province_id = 581
+				province_id = 584
+				province_id = 2399
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
 		allow = {
 			is_at_war = no
 			is_subject = no
@@ -21,7 +32,7 @@ country_decisions = {
 		effect = {
 			change_tag = AVA
 			add_prestige = 10
-			swap_free_idea_group = yes		#keep progress
+			#swap_free_idea_group = yes		#keep progress
 			add_country_modifier = {
 				name = "centralization_modifier"
 				duration = 3650
