@@ -3,3 +3,25 @@ avignon_pap_end = {
 	opinion = -100
 	yearly_decay = 2.5
 }
+member_of_hansa_op = {
+	opinion = 100
+}
+
+dismantled_hansa = {
+	opinion = -100
+	yearly_decay = 2.5
+}
+
+left_hansa = {
+	opinion = -50
+	yearly_decay = 2.5
+}
+passed_reform_opposed = {
+	opinion = -100
+	yearly_decay = 3
+}
+
+left_hansa_reform = {
+	opinion = -100
+	yearly_decay = 2.5
+}

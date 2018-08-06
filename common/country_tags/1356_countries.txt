@@ -52,6 +52,9 @@ LOO = "countries/Loon.txt"
 GLY = "countries/Galich.txt"
 MRM = "countries/Murom.txt"
 
+#Scandinavia
+SAP = "countries/Sapmi.txt"
+
 #Arabia	
 JLR = "countries/Jalayirid.txt"
 		

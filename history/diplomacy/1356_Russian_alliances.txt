@@ -1,4 +1,4 @@
-# Golden Horde Tributaries (not Caucasus)
+# GLHden Horde Tributaries (not Caucasus)
 dependency = {
 	subject_type = "tributary_state"
 	first = GLH

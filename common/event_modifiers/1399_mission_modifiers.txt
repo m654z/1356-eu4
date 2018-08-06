@@ -2,3 +2,25 @@ swe_supported_protestant = {
 	land_morale = 0.15
 	manpower_recovery_speed = 0.1
 }
+sap_united_tribes = {
+	land_morale = 0.15
+	local_missionary_strength = 0.02
+}
+sap_expand = {
+	core_creation = -0.2
+	global_unrest = -2
+}
+sap_modernize = {
+	technology_cost = -0.05
+	idea_cost = -0.05
+}
+sap_change_religion = {
+	global_unrest = 5
+}
+sap_old_ways = {
+	global_missionary_strength = 0.02
+}
+sap_converted = {
+	legitimacy = 1
+	tolerance_own = 1
+}
