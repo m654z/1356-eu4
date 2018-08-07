@@ -15,7 +15,8 @@ age_of_feudalism = {
 		obj_trade_league = { #Suggested by Mexdus on the workshop suggestion thread
 			OR = {
 				is_in_trade_league = yes
-				has_country_flag = is_in_hansa_trade_league_flag
+				#has_country_flag = is_in_hansa_trade_league_flag
+				has_country_modifier = member_of_hansa_ev
 			}
 		}
 		obj_20_development_city = { #Change in future?
