@@ -599,3 +599,5 @@
  fix_zoro_religion_desc: "Turns all noreligion provinces into Zoroastrian provinces, same with state religion. PAUSE WHEN CLICKING THIS. COULD CAUSE LAG."
  ilknanate_nation_title: "Reform the Ilkhanate"
  ilknanate_nation_desc: "Since the collapse of the Ilkhanate the Tribes of Persia and Iraq have been locked in neverending conflict, however $MONARCH$ has gathered a sizeable support from the Tribes.While Genghis is long dead and the Borjigin dynasty in exile perhaps $MONARCH$ leadership and respect will be able to create a more strengthed Ilkhanate state."
+ reform_4_passed: "Reform 4 passed"
+ reform_passed_opposed: "Passed an opposed reform"
