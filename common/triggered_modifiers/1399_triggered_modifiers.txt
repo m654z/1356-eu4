@@ -234,3 +234,208 @@ shia_persia = {
 	global_unrest = -3
 	
 }
+1356_early_government_replacement_1 = {
+	potential = {
+		#NOT = { date = 1440.1.1 }
+		NOT = { technology_group = north_american }
+		NOT = { technology_group = mesoamerican }
+		NOT = { technology_group = south_american }
+		NOT = { technology_group = andean }
+		NOT = { adm_tech = 9 }
+		NOT = { dip_tech = 9 }
+		NOT = { mil_tech = 9 }
+	
+	}
+	
+	trigger = {
+		OR = {
+			adm_tech = 1
+			dip_tech = 1
+			mil_tech = 1
+		}
+		NOT = { adm_tech = 3 }
+		NOT = { dip_tech = 3 }
+		NOT = { mil_tech = 3 }
+	
+	
+	}
+	core_creation = 1
+	core_decay_on_your_own = -0.25
+	development_cost = 0.4
+	build_time = 0.25
+	diplomats = -1	
+	diplomatic_upkeep = 3
+	yearly_army_professionalism = -0.25
+	drill_decay_modifier = 0.25
+	global_manpower_modifier = -0.25
+	merc_maintenance_modifier = -0.25
+	mercenary_cost = -0.30
+	possible_mercenaries = 1
+	loot_amount = 0.25
+#	mercenary_discipline = 0.05
+	
+
+
+}
+
+1356_early_government_replacement_2 = {
+	potential = {
+		#NOT = { date = 1440.1.1 }
+		NOT = { technology_group = north_american }
+		NOT = { technology_group = mesoamerican }
+		NOT = { technology_group = south_american }
+		NOT = { technology_group = andean }
+		NOT = { adm_tech = 9 }
+		NOT = { dip_tech = 9 }
+		NOT = { mil_tech = 9 }
+	
+	}
+	
+	trigger = {
+		OR = {
+			adm_tech = 3
+			dip_tech = 3
+			mil_tech = 3
+		}
+		NOT = { adm_tech = 5 }
+		NOT = { dip_tech = 5 }
+		NOT = { mil_tech = 5 }
+	
+	}
+	core_creation = 0.77
+	core_decay_on_your_own = -0.2
+	development_cost = 0.3
+	build_time = 0.20
+	diplomats = -1	
+	diplomatic_upkeep = 2
+	yearly_army_professionalism = -0.2
+	drill_decay_modifier = 0.15
+	global_manpower_modifier = -0.20
+	merc_maintenance_modifier = -0.20
+	mercenary_cost = -0.25
+	possible_mercenaries = 0.75
+	loot_amount = 0.20
+#	mercenary_discipline = 0.05
+
+
+}
+
+1356_early_government_replacement_3 = {
+	potential = {
+		#NOT = { date = 1440.1.1 }
+		NOT = { technology_group = north_american }
+		NOT = { technology_group = mesoamerican }
+		NOT = { technology_group = south_american }
+		NOT = { technology_group = andean }
+		NOT = { adm_tech = 9 }
+		NOT = { dip_tech = 9 }
+		NOT = { mil_tech = 9 }
+	
+	}
+	
+	trigger = {
+		OR = {
+			adm_tech = 5
+			dip_tech = 5
+			mil_tech = 5
+		}
+		NOT = { adm_tech = 7 }
+		NOT = { dip_tech = 7 }
+		NOT = { mil_tech = 7 }
+	
+	}
+	core_creation = 0.5
+	core_decay_on_your_own = -0.15
+	development_cost = 0.2
+	build_time = 0.15
+	diplomats = -1	
+	diplomatic_upkeep = 1
+	yearly_army_professionalism = -0.15
+	drill_decay_modifier = 0.10
+	global_manpower_modifier = -0.10
+	merc_maintenance_modifier = -0.10
+	mercenary_cost = -0.15
+	possible_mercenaries = 0.50
+#	mercenary_discipline = 0.05
+	loot_amount = 0.15
+
+
+
+}
+
+1356_early_government_replacement_4 = {
+	potential = {
+		#NOT = { date = 1440.1.1 }
+		NOT = { technology_group = north_american }
+		NOT = { technology_group = mesoamerican }
+		NOT = { technology_group = south_american }
+		NOT = { technology_group = andean }
+		NOT = { adm_tech = 9 }
+		NOT = { dip_tech = 9 }
+		NOT = { mil_tech = 9 }
+	
+	}
+	
+	trigger = {
+		OR = {
+			adm_tech = 7
+			dip_tech = 7
+			mil_tech = 7
+		}
+		NOT = { adm_tech = 9 }
+		NOT = { dip_tech = 9 }
+		NOT = { mil_tech = 9 }	
+	}
+
+	core_creation = 0.33
+	core_decay_on_your_own = -0.1
+	development_cost = 0.1
+	build_time = 0.1
+	diplomats = -1	
+#	diplomatic_upkeep = 1
+	yearly_army_professionalism = -0.10
+#	drill_decay_modifier = 0.10
+#	global_manpower_modifier = -0.10
+#	merc_maintenance_modifier = -0.10
+	mercenary_cost = -0.1
+	possible_mercenaries = 0.25
+#	mercenary_discipline = 0.05
+	loot_amount = 0.10
+
+
+}
+
+1356_feudal_age_modifier = { #Could be removed at some later point
+	potential = {
+		#NOT = { date = 1440.1.1 }
+		always = no #Remove this when playtesting and balance is being done, these modifiers are here because this is what I suspect may need tweaked and would be a good bandaid before next patch until we can solve the problems at the root.
+		NOT = { technology_group = north_american }
+		NOT = { technology_group = mesoamerican }
+		NOT = { technology_group = south_american }
+		NOT = { technology_group = andean }
+		NOT = { adm_tech = 9 }
+		NOT = { dip_tech = 9 }
+		NOT = { mil_tech = 9 }
+	}
+	trigger = {
+		NOT = { adm_tech = 9 }
+		NOT = { dip_tech = 9 }
+		NOT = { mil_tech = 9 }	
+	}
+	
+	envoy_travel_time = 0.2
+	#Everything below is removed for now until we do playtesting and balance testing.
+	#unjustified_demands = 0.25 
+	#province_warscore_cost = 0.25 
+	#diplomatic_annexation_cost = -0.2 
+	#rival_change_cost = -0.5 
+	#embracement_cost = 0.15 
+	#global_institution_spread = -0.15
+	#global_unrest = -2  #This is here because I would like a way to make peasants less likely to revolt in the Feudal Age...
+	#years_of_nationalism = -10  #Would like to replace nationalism with something else early on.
+	#war_exhaustion = 0.2  #To encourage quicker wars and less super long wars. Not too sure how well this would work with AI however.
+	#war_exhaustion_cost = 0.25 #To encourage quicker wars and less super long wars. Not too sure how well this would work with AI however.
+	#fort_maintenance_modifier = -0.15 #More feudal age castles of course. Not sure how well game balance would work with this however.
+	#raze_power_gain = 0.15 #Would be a good way to make hordes more powerful in this era. Balanced? Not so sure. 
+	
+}
