@@ -81,4 +81,27 @@
 #			factor = 1
 #		}
 #	}
+
+#	fix_zoro_religion = {
+#		major = yes
+#		potential = {
+#			ai = no
+#			NOT = { has_global_flag = 1356_zoroastrian_fix_used_flag }
+#		}
+#		
+#		allow = {
+#			OR = {
+#				any_every_country = { has_matching_religion = noreligion }
+#				persia_region = { has_matching_religion = noreligion }
+#				khorasan_region = { has_matching_religion = noreligion }
+#			}
+#		}
+#		
+#		effect = {
+#			set_global_flag = 1356_zoroastrian_fix_used_flag
+#			change_religion = zoroastrian
+#		}
+#		
+#	
+#	}
 #}

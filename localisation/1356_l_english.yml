@@ -595,5 +595,7 @@
  timurlane.844.t: "Timur Conquers Persia and the Mashriq"
  timurlane.844.d: "Timur armies have conquered Persia and Mashriq. The States of the old Ilkhanate have etheir submitted or been vassalized by Tamerlane"
  timurlane.844.a: "A glorious day for the Timurid Empire"
+ fix_zoro_religion_title: "DEBUG - Fix for noreligion Zoroastrians"
+ fix_zoro_religion_desc: "Turns all noreligion provinces into Zoroastrian provinces, same with state religion. PAUSE WHEN CLICKING THIS. COULD CAUSE LAG."
  ilknanate_nation_title: "Reform the Ilkhanate"
  ilknanate_nation_desc: "Since the collapse of the Ilkhanate the Tribes of Persia and Iraq have been locked in neverending conflict, however $MONARCH$ has gathered a sizeable support from the Tribes.While Genghis is long dead and the Borjigin dynasty in exile perhaps $MONARCH$ leadership and respect will be able to create a more strengthed Ilkhanate state."
