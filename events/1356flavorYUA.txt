@@ -36,6 +36,16 @@ country_event = {
 	trigger = {
 		tag = YUA
 		NOT = { has_country_flag = no_longer_chinese_yua }
+		NOT = { num_of_cities = 35 }
+		NOT = {
+			OR = {
+				owns = 665
+				owns = 670
+				owns = 674
+				owns = 682
+				owns = 691
+			}
+		}
 		OR = {
 			is_emperor_of_china = no
 			NOT = { capital_scope = { 1816 } } #This might need tweaked for fairness for non chinese dlc owners

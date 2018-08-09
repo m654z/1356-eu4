@@ -1,9 +1,10 @@
-namespace = lith_djm
+namespace = flaflavorlith
 
+#Written by DanJonMin
 country_event = {
-	id = lith_djm.1
-	title = lith_djm.1.t
-	desc = lith_djm.1.d
+	id = flaflavorlith.1
+	title = flaflavorlith.1.t
+	desc = flaflavorlith.1.d
 	picture = ORTHODOX_eventPicture
 	
 	fire_only_once = yes
@@ -58,7 +59,7 @@ country_event = {
 					}
 			}			
 		}
-		name = lith_djm.1.a
+		name = flaflavorlith.1.a
 		change_religion = orthodox
 		capital_scope = {
 			change_religion = orthodox
@@ -69,7 +70,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = lith_djm.1.b
+		name = flaflavorlith.1.b
 		ai_chance = { 
 			factor = 70 
 			modifier = {
@@ -114,11 +115,11 @@ country_event = {
 		}
 	}
 }
-
+#Written by DanJonMin
 province_event = {
-	id = lith_djm.2
-	title = lith_djm.2.t
-	desc = lith_djm.2.d
+	id = flaflavorlith.2
+	title = flaflavorlith.2.t
+	desc = flaflavorlith.2.d
 	picture = RELIGION_eventPicture
 
 	trigger = {
@@ -148,7 +149,7 @@ province_event = {
 	}
 	
 	option = {
-	name = lith_djm.2.a
+	name = flaflavorlith.2.a
 	change_religion = catholic
 	add_province_modifier = {
 		name = "religious_zeal_at_conv"
@@ -157,11 +158,11 @@ province_event = {
 	
 	}
 }
-
+#Written by DanJonMin
 country_event = {
-	id = lith_djm.3
-	title = lith_djm.3.t
-	desc = lith_djm.3.d
+	id = flaflavorlith.3
+	title = flaflavorlith.3.t
+	desc = flaflavorlith.3.d
 	picture = RELIGIOUS_CONVERSION_eventPicture
 	
 	fire_only_once = yes
@@ -211,7 +212,7 @@ country_event = {
 					alliance_with = POL
 			}
 		}
-		name = lith_djm.3.a
+		name = flaflavorlith.3.a
 		change_religion = catholic
 		POL = {
 			create_union = LIT
@@ -225,7 +226,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = lith_djm.1.b
+		name = flaflavorlith.1.b
 		ai_chance = { 
 			factor = 30
 		}
