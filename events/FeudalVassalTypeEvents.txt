@@ -90,3 +90,46 @@ country_event = {
 		
 	}
 }
+
+#Removes French Feudal Vassaal Government Type
+country_event = {
+	id = feudalvassalevents.4
+	title = "feudalvassalevents.4.t"
+	desc = "feudalvassalevents.4.desc"
+	picture = CONQUEST_eventPicture
+	
+	#fire_only_once = yes
+	
+	trigger = {
+		OR = {
+			tag = FOZ
+			tag = ANJ
+			tag = ALE
+			tag = ORL
+			tag = BOU
+			tag = AUV
+			tag = FOI
+		}
+		NOT = { has_country_flag = fra_feudal_vassal_government_change }
+		OR = {
+			NOT = { is_subject_of_type = french_ducal_vassal }
+			NOT = { exists = FRA }
+		}
+		OR = {
+			NOT = { is_subject_of = FRA }
+			NOT = { exists = FRA }
+		}
+		is_at_war = no
+	}
+	
+	mean_time_to_happen = {
+		months = 2
+	}
+	
+	option = {
+		name = "feudalvassalevents.4.a"
+		set_country_flag = fra_feudal_vassal_government_change
+		#change_government = french_vassal_feudal_monarchy
+		change_government = feudal_monarchy
+	}		
+}

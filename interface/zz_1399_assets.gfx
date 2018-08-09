@@ -126,6 +126,12 @@ spriteTypes = {
 		texturefile = "gfx/interface/ages/icon_age_g.dds"
 		noOfFrames = 5
 	}
+	
+	spriteType = {
+		name = "GFX_feudal_french_ducal_vassal"
+		texturefile = "gfx/interface/icon_feudal_vassal_subject.dds"
+	
+	}
 
 # Age of Feudalism Objectives
 	spriteType = {

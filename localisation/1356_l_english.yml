@@ -601,3 +601,5 @@
  ilknanate_nation_desc: "Since the collapse of the Ilkhanate the Tribes of Persia and Iraq have been locked in neverending conflict, however $MONARCH$ has gathered a sizeable support from the Tribes.While Genghis is long dead and the Borjigin dynasty in exile perhaps $MONARCH$ leadership and respect will be able to create a more strengthed Ilkhanate state."
  reform_4_passed: "Reform 4 passed"
  reform_passed_opposed: "Passed an opposed reform"
+ french_vassal_feudal_monarchy: "Feudal Ducal Monarchy"
+ french_vassal_feudal_monarchy_desc: "The Subjects under a King typically had a different way of diplomacy then their overlord. It was much harder to make alliances, or even royal marriages."

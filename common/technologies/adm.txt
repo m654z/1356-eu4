@@ -12,6 +12,7 @@ technology = {
 	
 	tribal_despotism = yes 	
 	tribal_federation = yes 
+	feudal_monarchy = yes
 	
 	native_earthwork = yes
 	native_palisade = yes
@@ -45,7 +46,6 @@ technology = {
 	#tech3
 	year = 1372
 	
-	early_feudal_monarchy = yes
 	elective_feudal_monarchy = yes
 	
 }
@@ -86,11 +86,11 @@ technology = {
 
 # The 30 big techs from here on - Add 6 to number
 
-technology = {
+technology = { #MOVED VANILLA feudal_monarchy
 	# Tech 3
 	year = 1431
 
-	feudal_monarchy = yes
+	#feudal_monarchy = yes #vanilla location 
 	oligarchic_republic = yes
 }
 
