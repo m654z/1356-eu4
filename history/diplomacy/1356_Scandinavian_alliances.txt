@@ -76,9 +76,9 @@ union = {
 }
 
 # Danish vassal, Holstein
-vassal = {
+vassal = { 
 	first = DAN
 	second = SHL
 	start_date = 1386.9.15
-	end_date = 1460.3.6
+	end_date = 1443.12.30 #So it won't overlap with vanilla
 }

@@ -73,7 +73,7 @@ guarantee = {
 	first = GEO
 	second = SME
 	start_date = 1396.1.1 
-	end_date = 1444.12.1
+	end_date = 1443.12.30 #So it won't overlap with vanilla
 }
 
 # Shirvan under Chobanids
@@ -302,7 +302,8 @@ vassal = {
 	first = CHG
 	second = KAS
 	start_date = 1389.1.1
-	end_date = 1514.1.1
+	end_date = 1443.12.30 #So we don't overlap with vanilla
+	#end_date = 1514.1.1
 }
 
 guarantee = {

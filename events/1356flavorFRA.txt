@@ -125,6 +125,7 @@ country_event = {
 			owns = 203
 		}
 		203 = {
+# Audax Validator "!" Ignore_1007
 			local_unrest = -5
 			add_province_modifier = {
 				name = dau_treaty_of_the_romans
@@ -132,6 +133,7 @@ country_event = {
 			}
 		}
 		205 = {
+# Audax Validator "!" Ignore_1007
 			local_unrest = -5
 			add_province_modifier = {
 				name = dau_treaty_of_the_romans
@@ -1203,6 +1205,7 @@ country_event = {
 		add_casus_belli = {
 			target = ENG
 			type = cb_insult
+# Audax Validator "!" Ignore_1007
 			duration = 365
 		}
 	}

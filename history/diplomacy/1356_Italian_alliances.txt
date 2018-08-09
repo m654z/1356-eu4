@@ -95,12 +95,14 @@ alliance = {
 	first = ARA
 	second = SIC
 	start_date = 1386.5.19
-	end_date = 1409.7.25
+	end_date = 1392.1.1
+	#end_date = 1409.7.25 #To prevent vanilla overlap
 }
 
 royal_marriage = {
 	first = ARA
 	second = SIC
 	start_date = 1386.5.19
-	end_date = 1409.7.25
+	end_date = 1392.1.1
+	#end_date = 1409.7.25 #So theres no vanilla overlap
 }
