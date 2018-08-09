@@ -44,6 +44,7 @@ RAE = "countries/Raetia.txt"
 #Spain
 CTR = "countries/Trastamara.txt"
 MJO = "countries/Majorca.txt"
+SEV = "countries/Sevilla.txt"
 
 #Italy
 VRN = "countries/Verona.txt"

@@ -1,6 +1,6 @@
 namespace = power
 
-country_event = {
+country_event = { #Burgundian Power
 	id = power.1
 	title = power.1.t
 	desc = power.1.d
@@ -10,13 +10,13 @@ country_event = {
 
 	trigger = {
 		tag = BUR
-		owns_core_province = 97
-		owns_core_province = 90
-		owns_core_province = 95
-		owns_core_province = 91
+		owns_core_province = 97 #Amsterdam
+		owns_core_province = 90 #Vladderen
+		owns_core_province = 95 #Breda
+		owns_core_province = 91 #Hainaut
 		OR = {
-			owns_core_province = 87
-			owns_core_province = 89
+			owns_core_province = 87 #Calais
+			owns_core_province = 89 #Picardie
 		}
 	}
 	
@@ -31,7 +31,7 @@ country_event = {
 	}
 }
 
-country_event = {
+country_event = { #Aztec Power
 	id = power.2
 	title = power.2.t
 	desc = power.2.d
@@ -63,7 +63,7 @@ country_event = {
 	}
 }
 
-country_event = {
+country_event = { #Denmark Power
 	id = power.3
 	title = power.3.t
 	desc = power.3.d
@@ -90,7 +90,7 @@ country_event = {
 	}
 }
 
-country_event = {
+country_event = { #Turk Power -Non Ottoman-
 	id = power.4
 	title = power.4.t
 	desc = power.4.d

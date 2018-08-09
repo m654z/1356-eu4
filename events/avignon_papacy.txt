@@ -1,4 +1,4 @@
-namespace=avignon
+namespace = avignon
 
 country_event = {
 	id = avignon.1
