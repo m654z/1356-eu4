@@ -1,6 +1,6 @@
 namespace = scan_djm
-
-country_event = {
+#Written by DanJonMin, fixed by CountFlandy to work for 1.25
+country_event = { #Perhaps we should tweak this to take into account queens and the new ruler triggers we have?
 	id = scan_djm.1
 	title = scan_djm.1.t
 	desc = scan_djm.1.d
