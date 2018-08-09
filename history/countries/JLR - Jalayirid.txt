@@ -27,6 +27,7 @@ religious_school = jafari_school
 1356.1.1 = {
 	heir = {
 		name = "Hasan"
+		monarch_name = "Hasan I"
 		dynasty = "Jalayirid"
 		birth_date = 1356.1.1
 		death_date = 1411.1.1

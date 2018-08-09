@@ -10,7 +10,6 @@ religious_school = maliki_school
 1356.12.25 = {
 	monarch = {
 		name = "Faris"
-	    monarch_name = "Faris I"
 		dynasty = "Marinid"
 		adm = 2
 		dip = 4
