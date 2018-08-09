@@ -1,9 +1,9 @@
-namespace = cas_civil_war
+namespace = WarTwoPetersFlavor
 
 country_event = { #Castile
-	id = cas_civil_war.1
-	title = cas_civil_war.1.t
-	desc = cas_civil_war.1.d
+	id = WarTwoPetersFlavor.1
+	title = WarTwoPetersFlavor.1.t
+	desc = WarTwoPetersFlavor.1.d
 	picture = CIVIL_WAR_eventPicture
 
 	fire_only_once = yes
@@ -18,15 +18,15 @@ country_event = { #Castile
 	}
 
 	option = {
-		name = cas_civil_war.1.a
-		set_global_flag = "cas_civil_war"
-        custom_tooltip = cas_civil_war.1.a.tt	
+		name = WarTwoPetersFlavor.1.a
+		set_global_flag = "WarTwoPetersFlavor"
+        custom_tooltip = WarTwoPetersFlavor.1.a.tt	
 	}
 }
 country_event = { #Trastamara
-	id = cas_civil_war.2
-	title = cas_civil_war.2.t
-	desc = cas_civil_war.2.d
+	id = WarTwoPetersFlavor.2
+	title = WarTwoPetersFlavor.2.t
+	desc = WarTwoPetersFlavor.2.d
 	picture = CIVIL_WAR_eventPicture
 
 	fire_only_once = yes
@@ -40,15 +40,15 @@ country_event = { #Trastamara
 	}
 
 	option = {
-		name = cas_civil_war.2.a
-		set_global_flag = "cas_civil_war"
-        custom_tooltip = cas_civil_war.2.a.tt	
+		name = WarTwoPetersFlavor.2.a
+		set_global_flag = "WarTwoPetersFlavor"
+        custom_tooltip = WarTwoPetersFlavor.2.a.tt	
 	}
 }
 country_event = { #Castile Wins Civil War
-	id = cas_civil_war.3
-	title = cas_civil_war.3.t
-	desc = cas_civil_war.3.d
+	id = WarTwoPetersFlavor.3
+	title = WarTwoPetersFlavor.3.t
+	desc = WarTwoPetersFlavor.3.d
 	picture = CIVIL_WAR_eventPicture
 
 	fire_only_once = yes
@@ -65,15 +65,15 @@ country_event = { #Castile Wins Civil War
 	}
 
 	option = {
-		name = cas_civil_war.3.a
+		name = WarTwoPetersFlavor.3.a
 		set_global_flag = "castile_wins_civil_war"
 		white_peace = CTR
 	}
 }
 country_event = { #House Trastamara wins Civil War
-	id = cas_civil_war.4
-	title = cas_civil_war.4.t
-	desc = cas_civil_war.4.d
+	id = WarTwoPetersFlavor.4
+	title = WarTwoPetersFlavor.4.t
+	desc = WarTwoPetersFlavor.4.d
 	picture = CIVIL_WAR_eventPicture
 
 	fire_only_once = yes
@@ -89,7 +89,7 @@ country_event = { #House Trastamara wins Civil War
 	}
 
 	option = {
-		name = cas_civil_war.4.a
+		name = WarTwoPetersFlavor.4.a
                 white_peace = CAS
                 add_prestige = 25
                 inherit = CAS
@@ -109,9 +109,9 @@ country_event = { #House Trastamara wins Civil War
 	}
 }
 country_event = { #Castile Inherits Trastamara, Adds Aragon as a Historical Rival, Portugal as a Historical Friend
-	id = cas_civil_war.5
-	title = cas_civil_war.5.t
-	desc = cas_civil_war.5.d
+	id = WarTwoPetersFlavor.5
+	title = WarTwoPetersFlavor.5.t
+	desc = WarTwoPetersFlavor.5.d
 	picture = CIVIL_WAR_eventPicture
 
 	fire_only_once = yes
@@ -127,39 +127,36 @@ country_event = { #Castile Inherits Trastamara, Adds Aragon as a Historical Riva
 	}
 
 	option = {
-		name = cas_civil_war.5.a
+		name = WarTwoPetersFlavor.5.a
                 inherit = CTR
                 add_prestige = 25
                 add_truce_with = ARA 
 		}	
 }
 country_event = { #Castile
-	id = cas_civil_war.6
-	title = cas_civil_war.6.t
-	desc = cas_civil_war.6.d
+	id = WarTwoPetersFlavor.6
+	title = WarTwoPetersFlavor.6.t
+	desc = WarTwoPetersFlavor.6.d
 	picture = CIVIL_WAR_eventPicture
-
-	fire_only_once = yes
-	major = yes
 	
-	trigger = {
-		tag = CAS
-	}
+	major = yes
+	is_triggered_only = yes
+	
 
 	mean_time_to_happen = {
 		days = 1
 	}
 
 	option = {
-		name = cas_civil_war.6.a
-		set_global_flag = "cas_civil_war_white_peace"
-        custom_tooltip = cas_civil_war.6.a.tt	
+		name = WarTwoPetersFlavor.6.a
+		add_legitimacy = -15
+		add_prestige = -15
 	}
 }
 country_event = { #Trastamara
-	id = cas_civil_war.7
-	title = cas_civil_war.7.t
-	desc = cas_civil_war.7.d
+	id = WarTwoPetersFlavor.7
+	title = WarTwoPetersFlavor.7.t
+	desc = WarTwoPetersFlavor.7.d
 	picture = CIVIL_WAR_eventPicture
 
 	fire_only_once = yes
@@ -167,7 +164,9 @@ country_event = { #Trastamara
 	
 	trigger = {
 		tag = CTR
-		is_year = 1370
+		exists = CAS
+		is_year = 1360
+		is_at_war = no
 	}
 
 	mean_time_to_happen = {
@@ -175,10 +174,20 @@ country_event = { #Trastamara
 	}
 
 	option = {
-		name = cas_civil_war.7.a
-		set_global_flag = "ctr_civil_war_white_peace"
-        custom_tooltip = cas_civil_war.7.a.tt	
+		name = WarTwoPetersFlavor.7.a
 		change_tag = SEV
+		add_prestige = 25
+		add_legitimacy = 100
+		add_adm_power = 100
+		add_dip_power = 100
+		add_mil_power = 100
+		CAS = {
+			country_event = { 
+				id = WarTwoPetersFlavor.6
+				days = 15
+				random = 15
+			}
+		}
 	}
 }
 

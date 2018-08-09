@@ -1088,7 +1088,10 @@ CTR_ideas = { #Just spains ideas, same localisation and all
 	}
 	
 	trigger = {
-		tag = CTR
+		OR = {
+			tag = CTR
+			tag = SEV
+		}
 	}
 	free = yes		#will be added at load.
 
