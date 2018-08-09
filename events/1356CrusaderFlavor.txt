@@ -37,7 +37,7 @@ country_event = {
 		name = "crusader_states.1.b"
 		add_prestige = 10
 		add_dip_power = 50
-		327 = { change_province_name = Cilicia rename_capital = Sis cede_province = CIC change_religion = orthodox }
+		327 = { change_province_name = Cilicia rename_capital = Sis cede_province = CIC change_religion = ROOT }
 		vassalize = CIC	
 	}
 }

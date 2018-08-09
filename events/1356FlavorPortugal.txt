@@ -10,8 +10,7 @@ country_event = {
 
 	trigger = {
 		tag = POR
-		# Audax Validator "." Ignore_1006
-		is_year = 1412.1.1
+		is_year = 1412
 	}
 	
 	mean_time_to_happen = {
@@ -19,7 +18,6 @@ country_event = {
 	}
 	
 	option = {
-
 		name = por_djm.1.a
 		
 		define_advisor = {
