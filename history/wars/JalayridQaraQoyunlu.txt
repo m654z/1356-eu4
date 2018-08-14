@@ -10,7 +10,7 @@ war_goal = {
 	add_defender = QAR
 }
 
- Peace
+#Peace
 1411.7.1 = {
 	rem_attacker = JLR
 	rem_defender = QAR

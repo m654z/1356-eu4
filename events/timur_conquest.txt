@@ -213,7 +213,7 @@ country_event = {
 }
 
 country_event = {
-	#id = timurlane.4444 #Death of Tamerlane
+	id = timurlane.4444 #Death of Tamerlane
 	title = timurlane.41.t
 	desc = timurlane.41.d
 	picture = HORDE_ON_HORSEBACK_eventPicture
@@ -242,7 +242,7 @@ country_event = {
 
 
 country_event = {
-	#id = timurlane.4445 #Death of Tamerlane
+	id = timurlane.4445 #Death of Tamerlane
 	title = timurlane.42.t
 	desc = timurlane.42.d
 	picture = HORDE_ON_HORSEBACK_eventPicture
@@ -267,7 +267,7 @@ country_event = {
 }
 
 country_event = {
-	#id = timurlane.5 #Timur Demands North India
+	id = timurlane.5 #Timur Demands North India
 	title = timurlane.5.t
 	desc = timurlane.5.d
 	picture = HORDE_ON_HORSEBACK_eventPicture
@@ -321,7 +321,7 @@ country_event = {
 }
 
 country_event = {
-	#id = timurlane.14
+	id = timurlane.14
 	title = timurlane.14.t
 	desc = timurlane.14.d
 	picture = NOT_DISCIPLINED_SOLDIERS_eventPicture
@@ -384,7 +384,7 @@ country_event = {
 }
 
 country_event = {
-	#id = timurlane.15
+	id = timurlane.15
 	title = timurlane.15.t
 	desc = timurlane.15.d
 	picture = NOT_DISCIPLINED_SOLDIERS_eventPicture
@@ -431,20 +431,20 @@ country_event = {
 }
 
 country_event = { 
-	#id = timurlane.1666 #Timur offer Vassalization, must convert to Sunni and adopt a Timurid ruler
+	id = timurlane.1666 #Timur offer Vassalization, must convert to Sunni and adopt a Timurid ruler
 	title = timurlane.1666.t
 	desc = timurlane.1666.d
 	picture = NOT_DISCIPLINED_SOLDIERS_eventPicture
 
 	is_triggered_only = yes
 
-	option = {
-		name = timurlane.1666.a #We must give in to the Timurids
-	    create_march = SAB
-	}
 	#option = {
-	#	name = timurlane.1666.b #We shall fight to the last man!
+	#	name = timurlane.1666.a #We must give in to the Timurids
+	#   create_march = SAB
 	#}
+	option = {
+		name = timurlane.1666.b #We shall fight to the last man!
+	}
 }
 
 country_event = { 

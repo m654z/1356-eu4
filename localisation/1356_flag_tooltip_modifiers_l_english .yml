@@ -86,6 +86,7 @@
  hansa_kontor: "Kontor"
  left_hansa_reform: "Left the Hansa"
  passed_reform_opposed: "Passed a Reform I was Opposed to"
+ sap_converted: "Sapmi Converted"
  
  #Policies
  desc_the_inquisitor_act: "The Inquisitor Act"

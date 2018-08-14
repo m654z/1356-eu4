@@ -1,5 +1,5 @@
 name = "Golden Horde Invasion of Azerbaijan"
-casus_belli = cb_conquest
+#casus_belli = cb_conquest
 war_goal = {
 	type = take_province_tribal_feud
 	casus_belli = cb_tribal_feud

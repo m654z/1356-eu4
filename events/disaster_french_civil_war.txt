@@ -15,7 +15,6 @@ country_event = {
 	
 	option = {
 		name = fre_disaster_civil_war.1.a
-		add_stability = -2
 		add_prestige = -20
 		break_union = DAU
 		release_all_subjects = yes
@@ -80,7 +79,6 @@ country_event = {
 		add_core = 182
 		add_core = 183
 		end_disaster = disaster_french_civil_war
-		add_stability = 2
 		NAV = {
 			add_claim = 183
 			add_claim = 182
