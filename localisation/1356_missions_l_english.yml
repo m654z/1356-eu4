@@ -166,7 +166,7 @@
  conquer_dithmarschen_title: "Conquer Dithmarschen"
  weaken_the_hansa_title: "Weaken the Hansa"
  end_the_hansa_title: "End of the Hansa"
-  conquer_gotland_title: "Conquer Gotland"
+ conquer_gotland_title: "Conquer Gotland"
  conquer_gotland_desc: "Gotland would make a fine addition to our empire, as well as weakening the Hansa considerably."
  gain_independence_title: "Gain Independence"
  gain_independence_desc: "We must gain independence from Sweden!"
@@ -230,6 +230,16 @@
  build_merchant_fleet_desc: "We should build a merchant fleet to protect our trade."
  overseas_colonies_title: "Overseas Colonies"
  overseas_colonies_desc: "Overseas Colonies"
+ 
+ #Denmark/Norway/Sweden/Finland/Sapmi
+ conquer_skaneland_title: "Conquer Skaneland"
+ conquer_skaneland_desc: ""
+ end_the_hansa_desc: ""
+ weaken_the_hansa_desc: ""
+ conquer_dithmarschen_desc: ""
+ expand_into_russia_desc: ""
+ swe_expand_into_russia_title: "Expand Into Russia"
+ swe_expand_into_russia_desc: ""
  
  #Navarra
  nav_royal_land_claims_title: "Valois Duchy Claims"

@@ -21,7 +21,7 @@ end_sound_toll = {
 				remove_country_modifier = hansa_sound_toll
 			}
 		}
-		has_country_flag = ended_sound_toll
+		set_country_flag = ended_sound_toll
 	}
 	ai_weight = {
 		export_to_variable = {

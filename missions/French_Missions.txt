@@ -1828,19 +1828,23 @@ france_expand_italy = { #Eventully script Napoleons conquest here
 					}
 				}
 			}
-			sicily_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { owned_by = ROOT }
+			118 = {
+				if = {
+					limit = {
+						NOT = {
+							owned_by = ROOT
+							is_core = ROOT
+						}
+					}
+					add_permanent_claim = ROOT
 				}
-				add_permanent_claim = ROOT
 			}
 		}
 	}
 	french_claim_to_naples = { #Take Naples! 
 		icon = mission_have_two_subjects
 		required_missions = { annex_central_italy }
-		position = 16
+		position = 14
 		provinces_to_highlight = {
 			OR = {
 				area = calabria_area
@@ -1881,24 +1885,50 @@ france_expand_italy = { #Eventully script Napoleons conquest here
 		}
 		effect = {
 			add_prestige = 20
+			sicily_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
 			hidden_effect = {
 				remove_casus_belli = {
 					type = cb_restore_personal_union
 					target = NAP
 				}
 			}
+			
 		}
 	}	
 
+	fra_conquer_sicily_malta = { #Annex Sicily and Malta
+		icon = mission_cannons_firing
+		required_missions = {  french_claim_to_naples }
+		position = 15
+		provinces_to_highlight = {
+			area = sicily_area
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			sicily_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			add_adm_power = 100
+		}
+	}
+	
 	fra_stabilize_italy = { #Annex the Italians
 		icon = mission_monarch_in_throne_room
-		required_missions = { annex_rome_fra french_claim_to_naples }
+		required_missions = { fra_conquer_sicily_malta french_claim_to_naples }
 		position = 17
 		provinces_to_highlight = {
-			# Audax Validator "." Ignore_1002
-			OR = {
-				region = italy_region
-			}
+			region = italy_region
 			NOT = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -1933,10 +1963,6 @@ france_expand_italy = { #Eventully script Napoleons conquest here
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
-			naples_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
 			calabria_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -1953,6 +1979,8 @@ france_expand_italy = { #Eventully script Napoleons conquest here
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
+			owns = 121 #Naples
+			owns = 2983 #Salerno
 			NOT = { exists = ITA }
 		
 		}
@@ -2229,47 +2257,10 @@ fra_expand_italy_extra = { #Other Italian Expansion Stuff
 			}
 		}
 	}
-	fra_conquer_sicily_malta = { #Annex Sicily and Malta
-		icon = mission_cannons_firing
-		required_missions = {  annex_central_italy }
-		position = 13
-		provinces_to_highlight = {
-			OR = {
-				area = tuscany_area
-				area = emilia_romagna_area
-			}
-			NOT = {
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-		}
-		trigger = {
-			tuscany_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			emilia_romagna_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-		}
-		effect = {
-			118 = {
-				if = {
-					limit = {
-						NOT = {
-							owned_by = ROOT
-							is_core = ROOT
-						}
-					}
-					add_permanent_claim = ROOT
-				}
-			}
-		}
-	}
 	annex_rome_fra = { #Annex Rome
 		icon = mission_european_church
-		required_missions = { fra_conquer_sicily_malta }
-		position = 16
+		required_missions = { annex_central_italy }
+		position = 13
 		provinces_to_highlight = {
 			province_id = 118
 			NOT = {
@@ -2280,7 +2271,7 @@ fra_expand_italy_extra = { #Other Italian Expansion Stuff
 			FRA = {	owns = 118 }
 		}
 		effect = {
-			add_prestige = 15
+			add_dip_power = 100
 		}
 	}
 

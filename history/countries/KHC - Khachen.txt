@@ -1,0 +1,6 @@
+government = iqata
+government_rank = 1
+primary_culture = armenian
+religion = sunni
+technology_group = muslim
+capital = 2205 

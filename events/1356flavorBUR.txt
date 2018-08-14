@@ -392,8 +392,7 @@ country_event = { #Hainaut Event telling them Burgundy backed out
 		add_casus_belli = {
 			target = BUR
 			type = cb_insult
-# Audax Validator "!" Ignore_1007
-			duration = 365
+			#duration = 365
 		}
 	}
 }
@@ -502,8 +501,7 @@ country_event = { #Burgundy being told Brabant said no
 			add_casus_belli = {
 				target = BRB
 				type = cb_claim_throne
-# Audax Validator "!" Ignore_1007
-				duration = 5475
+				#duration = 5475
 			}
 		}
 		BRB = {

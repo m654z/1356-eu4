@@ -162,8 +162,7 @@ country_event = {
 			add_casus_belli = {
 				target = SWE
 				type = cb_restore_personal_union
-#	Audax Validator "." Ignore_1007
-				duration = 120
+				#duration = 120 #Was giving an error
 			}
 			add_opinion = {
 				who = SWE

@@ -29,12 +29,10 @@ country_event = {
 	mean_time_to_happen = {
 		months = 14000
 		
-modifier = {
+		modifier = {
 			factor = 0.6
 			NOT = { monthly_income = 20 }
-
 		}
-
 		modifier = {
 			factor = 0.5
 			culture_group = west_slavic

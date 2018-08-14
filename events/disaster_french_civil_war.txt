@@ -60,17 +60,12 @@ country_event = {
 			release = ENG
 			release = SCO
 		}
-		change_tag = VAL
-		VAL = {
-			france_region = {
-				remove_core = VAL
-			}
-		}
 		FRA = {
 			france_region = {
 				remove_core = FRA
 			}
 		}
+		change_tag = VAL
 		set_government_rank = 1
 		remove_accepted_culture = occitain
 		remove_accepted_culture = gascon
@@ -78,14 +73,14 @@ country_event = {
 		remove_accepted_culture = normand
 		remove_accepted_culture = burgundian
 		remove_accepted_culture = wallonian
-		VAL = {
-			every_core_province = { 
-				remove_core = VAL
-			}
-			add_core = 4388
-			add_core = 182
-			add_core = 183
+		every_core_province = { 
+			remove_core = VAL
 		}
+		add_core = 4388
+		add_core = 182
+		add_core = 183
+		end_disaster = disaster_french_civil_war
+		add_stability = 2
 		NAV = {
 			add_claim = 183
 			add_claim = 182
@@ -121,10 +116,8 @@ country_event = {
 	
 	option = {
 		name = fre_disaster_civil_war.2.a
-		VAL = {
-			end_disaster = disaster_french_civil_war
-			add_stability = 2
-		}
+		end_disaster = disaster_french_civil_war
+		add_stability = 2
 	}
 	
 }
