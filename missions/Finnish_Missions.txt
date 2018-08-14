@@ -37,7 +37,7 @@ finnish_missions = {
 		}
 	}
 	
-	conquer_the_north = {
+	fin_conquer_the_north = {
 		icon = mission_unite_home_region
 		required_missions = { protect_finland }
 		provinces_to_highlight = {
@@ -69,7 +69,7 @@ finnish_missions = {
 				}
 				add_permanent_claim = ROOT
 			}
-			north_karelia_area = {
+			north_karelia = {
 				limit = {
 					NOT = { owned_by = ROOT }
 					NOT = { is_core = ROOT }
@@ -81,7 +81,7 @@ finnish_missions = {
 	
 	conquer_karelia = {
 		icon = mission_unite_home_region
-		required_missions = { conquer_the_north }
+		required_missions = { fin_conquer_the_north }
 		provinces_to_highlight = {
 			OR = {
 				area = karelia_area
@@ -169,7 +169,7 @@ finnish_missions_2 = {
 	}
 	has_country_shield = yes
 	
-	dan_baltic_fleet = {
+	fin_baltic_fleet = {
 		icon = mission_galleys_in_port
 		trigger = {
 			navy_size_percentage = 0.9
@@ -184,10 +184,7 @@ finnish_missions_2 = {
 	
 	annex_aland = {
 		icon = mission_unite_home_region
-		required_missions = {
-			dan_baltic_fleet
-			gain_independence
-		}
+		required_missions = { fin_baltic_fleet gain_independence }
 		provinces_to_highlight = {
 			province_id = 1930
 			NOT = {
@@ -210,9 +207,6 @@ finnish_missions_2 = {
 	conquer_estonia = {
 		icon = mission_unite_home_region
 		required_missions = { annex_aland }
-		required_missions = {
-			annex_aland
-		}
 		provinces_to_highlight = {
 			OR = {
 				province_id = 36

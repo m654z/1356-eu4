@@ -180,6 +180,7 @@ union = {
 	end_date = 1363.7.1
 }
 
+#	Audax Validator "." Ignore_1007
 casus_belli = {
 	type = cb_restore_personal_union
 	first = CHG

@@ -96,7 +96,7 @@ norwegian_missions = {
 		}
 	}
 	
-	conquer_scotland = {
+	nor_conquer_scotland = {
 		icon = mission_unite_home_region
 		position = 5
 		required_missions = { foothold_in_scotland }
@@ -147,7 +147,13 @@ norwegian_missions = {
 			}
 		}
 		effect = {
-			
+			leinster_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
 		}
 	}
 	
@@ -169,21 +175,30 @@ norwegian_missions = {
 		}
 		effect = {
 			munster_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
 			}
 			connacht_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
 			}
 			ulster_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
 			}
 		}
 	}
 	
-	conquer_ireland = {
+	nor_conquer_ireland = {
 		icon = mission_unite_home_region
 		position = 8
 		required_missions = { foothold_in_ireland }
@@ -256,7 +271,7 @@ norwegian_missions_2 = {
 			add_dip_power = 150
 		}
 	}
-	colonize_greenland = {
+	nor_colonize_greenland = {
 		icon = mission_establish_high_seas_navy
 		position = 2
 		provinces_to_highlight = {
@@ -278,7 +293,7 @@ norwegian_missions_2 = {
 	
 	discover_vinland = {
 		icon = mission_establish_high_seas_navy
-		required_missions = { colonize_greenland }
+		required_missions = { nor_colonize_greenland }
 		position = 3
 		provinces_to_highlight = {
 			area = newfoundland_area
@@ -299,7 +314,7 @@ norwegian_missions_2 = {
 	
 	colonize_markland = {
 		icon = mission_establish_high_seas_navy
-		required_missions = { colonize_vinland }
+		required_missions = { discover_vinland }
 		position = 4
 		provinces_to_highlight = {
 			area = labrador_area
@@ -347,7 +362,7 @@ norwegian_missions_2 = {
 	
 	rest_of_britain = {
 		icon = mission_unite_home_region
-		required_missions = { conquer_scotland }
+		required_missions = { nor_conquer_scotland }
 		position = 6
 		provinces_to_highlight = {
 			OR = {

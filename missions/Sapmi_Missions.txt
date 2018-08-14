@@ -63,7 +63,7 @@ sapmi_missions = {
 		provinces_to_highlight = {
 			OR = {
 				area = norrland_area
-				area = northern_norway_area
+				area = northern_norway
 			}
 			NOT = {
 				country_or_non_sovereign_subject_holds = ROOT
@@ -74,7 +74,7 @@ sapmi_missions = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
-			northern_norway_area = {
+			northern_norway = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -205,7 +205,7 @@ sapmi_missions_2 = {
 				religion = catholic
 				religion = orthodox
 			}
-			IF = {
+			if = {
 				limit = { religion = catholic }
 				has_opinion = {
 					who = PAP
@@ -342,9 +342,9 @@ sapmi_missions_3 = {
 			temple = 5
 		}
 		effect = {
-			add_adm_points = 100
-			add_dip_points = 100
-			add_mil_points = 100
+			add_adm_power = 100
+			add_dip_power = 100
+			add_mil_power = 100
 			add_prestige = 100
 		}
 	}
@@ -433,7 +433,7 @@ sapmi_missions_4 = {
 		icon = mission_galleys_in_port
 		required_missions = { sap_buildings }
 		trigger = {
-			white_sea = {
+			1652 = { #White Sea, let's see if this fixes it.
 				is_strongest_trade_power = SAP
 			}
 		}
@@ -540,7 +540,7 @@ sapmi_missions_5 = {
 		icon = mission_galleys_in_port
 		required_missions = { build_income }
 		trigger = {
-			num_of_light_ships = 15
+			num_of_light_ship = 15
 		}
 		effect = {
 			add_treasury = 200

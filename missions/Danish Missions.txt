@@ -233,7 +233,7 @@ danish_missions_2 = {
 		icon = mission_galleys_in_port
 		required_missions = { expand_into_pomerania }
 		trigger = {
-			lubeck = {
+			45 = { #Let's see if this fixes the mission
 				is_strongest_trade_power = DAN
 			}
 		}

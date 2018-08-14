@@ -501,6 +501,7 @@ gbr_rb_canada_group = {
 			}
 			custom_trigger_tooltip = {
 				tooltip = miss_colonize_canada
+# Audax Validator "." Ignore_1007
 				num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 					value = 1
 					colonial_region = colonial_canada
@@ -1044,10 +1045,12 @@ gbr_rb_spice_islands_group = {
 			custom_trigger_tooltip = {
 				tooltip = eng_rb_spice_islands.tooltip
 				OR = {
+# Audax Validator "." Ignore_1007
 					trade_company_moluccas = { 
 						owned_by = ROOT
 						is_city = yes
 					}
+# Audax Validator "." Ignore_1007
 					trade_company_indonesia = {
 						owned_by = ROOT
 						is_city = yes
@@ -1538,6 +1541,7 @@ eng_rb_thirteen_colonies_group = {
 		trigger = {
 			custom_trigger_tooltip = {
 				tooltip = eng_rb_own_thirteen_colonies.tooltip
+# Audax Validator "." Ignore_1007
 				num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 					value = 15
 					colonial_region = colonial_eastern_america

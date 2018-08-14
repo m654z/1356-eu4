@@ -310,6 +310,7 @@ por_brazilian_ambitions = {
 			}
 			custom_trigger_tooltip = {
 				tooltip = miss_colonize_brazil
+# Audax Validator "." Ignore_1007
 				num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 					value = 1
 					colonial_region = colonial_brazil
@@ -343,6 +344,7 @@ por_brazilian_ambitions = {
 		trigger = { 
 			custom_trigger_tooltip = {
 				tooltip = por_establishes_foothold_brazil.tooltip
+# Audax Validator "." Ignore_1007
 				num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 					value = 10
 					colonial_region = colonial_brazil

@@ -85,12 +85,14 @@ spa_colonial_group = {
 		provinces_to_highlight = {
 			colonial_region = colonial_the_carribean
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+# Audax Validator "." Ignore_1006
 			has_discovered = yes
 		}
 		
 		trigger = {
 			custom_trigger_tooltip = {
 				tooltip = miss_colonize_caribbean
+# Audax Validator "." Ignore_1007
 				num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 					value = 1
 					colonial_region = colonial_the_carribean
@@ -115,12 +117,14 @@ spa_colonial_group = {
 		provinces_to_highlight = {
 			colonial_region = colonial_la_plata
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+# Audax Validator "." Ignore_1006
 			has_discovered = yes
 		}
 		
 		trigger = {
 			custom_trigger_tooltip = {
 				tooltip = spa_rb_la_plata.tooltip
+# Audax Validator "." Ignore_1007
 				num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 					value = 5
 					colonial_region = colonial_la_plata
@@ -169,6 +173,7 @@ spa_colonial_group_rnw_off = {
 				province_id = 2837
 			}
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+# Audax Validator "." Ignore_1006
 			has_discovered = yes
 		}
 		
@@ -244,6 +249,7 @@ spa_colonial_group_rnw_off = {
 				province_id = 2822
 			}
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+# Audax Validator "." Ignore_1006
 			has_discovered = yes
 		}
 		
@@ -336,12 +342,14 @@ spa_colonial_group_two = {
 		provinces_to_highlight = {
 			colonial_region = colonial_colombia
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+# Audax Validator "." Ignore_1006
 			has_discovered = yes
 		}
 		
 		trigger = {
 			custom_trigger_tooltip = {
 				tooltip = spa_rb_spanish_main.tooltip
+# Audax Validator "." Ignore_1007
 				num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 					value = 5
 					colonial_region = colonial_colombia
@@ -520,6 +528,7 @@ spa_colonial_group_two_rnw_off = {
 				owned_by = AZT
 			}
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+# Audax Validator "." Ignore_1006
 			has_discovered = yes
 		}
 			
@@ -614,6 +623,7 @@ spa_colonial_group_three_rnw_off = {
 				owned_by = TAR
 			}
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+# Audax Validator "." Ignore_1006
 			has_discovered = yes
 		}
 		
@@ -866,6 +876,7 @@ spa_reconquista_por = {
 			126 = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
+# Audax Validator "." Ignore_1006
 			num_of_galley = TUR
 		}
 		

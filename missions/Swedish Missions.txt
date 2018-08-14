@@ -7,7 +7,7 @@ swedish_missions = {
 	}
 	has_country_shield = yes
 	
-	build_army_mission = {
+	swe_build_army_mission = {
 		icon = mission_build_up_to_force_limit
 		position = 1
 		trigger = {
@@ -24,7 +24,7 @@ swedish_missions = {
 	conquer_the_north = {
 		icon = mission_unite_home_region
 		position = 2
-		required_missions = { build_army_mission }
+		required_missions = { swe_build_army_mission }
 		provinces_to_highlight = {
 			OR = {
 				province_id = 18
@@ -79,7 +79,7 @@ swedish_missions = {
 				}
 				add_permanent_claim = ROOT
 			}
-			north_karelia_area = {
+			north_karelia = {
 				limit = {
 					NOT = { owned_by = ROOT }
 					NOT = { is_core = ROOT }
@@ -112,9 +112,12 @@ swedish_missions = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
+		effect = {
+			add_prestige = 5
+		}
 	}
 	
-	expand_into_pomerania = {
+	swe_expand_into_pomerania = {
 		icon = mission_conquer_5_states
 		position = 5
 		required_missions = { conquer_livonia }
@@ -138,7 +141,7 @@ swedish_missions = {
 	annex_bremen_verden = {
 		icon = mission_unite_home_region
 		position = 6
-		required_missions = { expand_into_pomerania }
+		required_missions = { swe_expand_into_pomerania }
 		provinces_to_highlight = {
 			OR = {
 				province_id = 54
@@ -171,7 +174,7 @@ swedish_missions_2 = {
 	}
 	has_country_shield = yes
 	
-	dan_baltic_fleet = {
+	swe_baltic_fleet = {
 		icon = mission_galleys_in_port
 		position = 1
 		trigger = {
@@ -188,7 +191,7 @@ swedish_missions_2 = {
 	annex_gotland = {
 		icon = mission_establish_high_seas_navy
 		position = 2
-		required_missions = { dan_baltic_fleet }
+		required_missions = { swe_baltic_fleet }
 		provinces_to_highlight = {
 			province_id = 25
 			NOT = {
@@ -272,27 +275,29 @@ swedish_missions_2 = {
 		}
 		effect = {
 			add_prestige = 10
-			IF = {
+			if = {
 				limit = { NOR = { is_subject = SWE } }
 				NOR = { add_liberty_desire = -20 }
 			}
-			IF = {
+			if = {
 				limit = { NOT = { exists = NOR } }
 				add_adm_power = 100
 			}
 		}
 	}
 	
-	expand_into_russia = {
+	swe_expand_into_russia = {
 		icon = mission_conquer_50_development
 		position = 5
 		required_missions = { rest_of_norway }
 		provinces_to_highlight = {
-			province_id = 1777
-			province_id = 1776
-			province_id = 313
-			province_id = 32
-			province_id = 309
+			OR = {
+				province_id = 1777
+				province_id = 1776
+				province_id = 313
+				province_id = 32
+				province_id = 309
+			}
 			NOT = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -335,7 +340,7 @@ swedish_missions_2 = {
 	varangian_legacy = {
 		icon = mission_assemble_an_army
 		position = 6
-		required_missions = { expand_into_russia }
+		required_missions = { swe_expand_into_russia }
 		provinces_to_highlight = {
 			OR = {
 				province_id = 1959
@@ -478,9 +483,9 @@ swedish_missions_5 = {
 	subjugate_denmark = {
 		icon = mission_have_two_subjects
 		position = 3
-		required_missions = { rest_of_denmark }
+		required_missions = {}
 		trigger = {
-			DAN = { is_subject = SWE }
+			DAN = { is_subject = yes }
 		}
 		effect = {
 			DAN = { add_liberty_desire = -20 }

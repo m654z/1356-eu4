@@ -84,6 +84,15 @@
  sap_old_ways: "Stayed with the Old Ways"
  1356_early_feudalism_nomad_1: "Feudal Age - Nomads"
  hansa_kontor: "Kontor"
+ left_hansa_reform: "Left the Hansa"
+ passed_reform_opposed: "Passed a Reform I was Opposed to"
+ 
+ #Policies
+ desc_the_inquisitor_act: "The Inquisitor Act"
+ desc_blessings_of_religious_leaders: "Blessings of Religious Leaders"
+ desc_call_to_crusade: "Call to Crusade"
+ desc_ruling_in_his_name: "Ruling in his Name"
+ desc_order_of_monastic_knights: "Order of Monastic Knights"
  
  #Flags
  nav_claimed_france: "Navarra Claimed France Flag"

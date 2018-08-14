@@ -263,7 +263,6 @@ country_event = {
 		name = timurlane.4445.a
 		inherit = CHB
 		set_government_rank = 2
-        }
 	}
 }
 
