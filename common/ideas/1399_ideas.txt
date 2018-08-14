@@ -403,7 +403,7 @@ GUY_ideas = { #Gascon ideas
 		global_manpower_modifier = 0.15
 	}
 	GUY_forcelimit = {
-			land_forcelimit_modifier = -0.15
+		land_forcelimit_modifier = 0.15
 	}
 }
 
