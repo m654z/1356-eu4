@@ -197,6 +197,28 @@ shia_persia = {
 	
 }
 
+baltic_crusader = {
+	potential = {
+
+		OR = {
+			tag = TEU
+			tag = LIV
+		}
+		NOT = {
+			is_year = 1420
+		}
+	}
+
+	trigger = {
+		NOT = { is_year = 1420 }
+	}
+	
+	land_forcelimit = 10
+	land_morale = 0.1
+	land_maintenance_modifier = -0.25
+	army_tradition = 1
+}
+
 1356_early_government_replacement_1 = {
 	potential = {
 		#NOT = { date = 1440.1.1 }

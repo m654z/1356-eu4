@@ -81,9 +81,9 @@ country_event = {
 }
 
 country_event = {
-	id = fladebugevent.1
-	title = fladebugevent.1.t
-	desc = fladebugevent.1.d
+	id = fladebugevent.3
+	title = fladebugevent.3.t
+	desc = fladebugevent.3.d
 	picture = HORDE_ON_HORSEBACK_eventPicture
 
 	fire_only_once = yes

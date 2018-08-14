@@ -149,7 +149,7 @@ gen_anatolian_beyliks_ideas = {
 		cavalry_power = 0.15
 	}
 	generic_ghazi = {
-		#uses ottoman ideas
+		manpower_recovery_speed = 0.2
 	}
 	generic_caravanserais = {
 		trade_efficiency = 0.1

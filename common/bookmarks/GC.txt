@@ -8,17 +8,18 @@ bookmark =
 	center = 112	
 	
 	country = CAS
-	country = DAN	
+	country = CTR
 	country = ENG
-	country = JLR
+	country = FRA
+	country = DAN
+	country = HAB
+	country = BYZ
+	country = TUR	
 	country = LIT
+	country = JLR
 	country = PAD
 	country = TRS
-	country = FRA
-	country = TUR
-	country = BYZ
-	country = HAB
-	country = POR
+	#country = POR
 
 	
 	easy_country = CAS
@@ -26,5 +27,5 @@ bookmark =
 	easy_country = ENG
 	easy_country = JLR
 	easy_country = LIT
-	easy_country = POL
+	#easy_country = POL
 }

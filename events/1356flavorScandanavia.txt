@@ -64,7 +64,7 @@ country_event = { #Perhaps we should tweak this to take into account queens and 
 		add_adm_power = 100
 		add_dip_power = 100
 		add_mil_power = 100
-		change_government = early_feudal_monarchy
+		change_government = feudal_monarchy
 		DAN = {
 			create_union = NOR
 		}
@@ -91,7 +91,7 @@ country_event = { #Perhaps we should tweak this to take into account queens and 
 		add_adm_power = 100
 		add_dip_power = 100
 		add_mil_power = 100
-		change_government = early_feudal_monarchy
+		change_government = feudal_monarchy
 		SWE = {
 			create_union = NOR
 		}
@@ -194,7 +194,7 @@ country_event = {
 	
 	option = {
 		name = scan_djm.3.a
-		change_government = early_feudal_monarchy
+		change_government = feudal_monarchy
 	}
 }
 
@@ -218,7 +218,7 @@ country_event = {
 	
 	option = {
 		name = scan_djm.4.a
-		change_government = early_feudal_monarchy		
+		change_government = feudal_monarchy		
 		kill_heir = yes
 		define_heir = {
 			name = "Erik"

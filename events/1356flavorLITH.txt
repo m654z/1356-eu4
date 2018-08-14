@@ -159,97 +159,97 @@ province_event = {
 	}
 }
 #Written by DanJonMin
-country_event = {
-	id = flaflavorlith.3
-	title = flaflavorlith.3.t
-	desc = flaflavorlith.3.d
-	picture = RELIGIOUS_CONVERSION_eventPicture
-	
-	fire_only_once = yes
-	major = yes
-
-	is_triggered_only = yes
-	
-	option = {
-		ai_chance = { 
-		factor = 70
-			modifier = {
-				factor = 0.5
-				NOT = { 				
-					has_opinion = {
-						who = POL
-						value = -100
-					}
-				}
-			}
-			modifier = {
-				factor = 0.75
-				NOT = { 				
-					has_opinion = {
-						who = POL
-						value = 0
-					}
-				}
-			}				
-
-			modifier = {
-				factor = 2.0
-					has_opinion = {
-						who = POL
-						value = 100
-					}
-			}
-
-			modifier = {
-				factor = 4.0
-					has_opinion = {
-						who = POL
-						value = 160
-					}
-			}	
-			modifier = {
-				factor = 4.0
-					alliance_with = POL
-			}
-		}
-		name = flaflavorlith.3.a
-		change_religion = catholic
-		POL = {
-			create_union = LIT
-		}
-		add_adm_power = 100
-		add_dip_power = 100
-		add_mil_power = 100
-		add_country_modifier = {
-			name = missionary_zeal
-			duration = 3650
-		}
-	}
-	option = {
-		name = flaflavorlith.1.b
-		ai_chance = { 
-			factor = 30
-		}
-		add_prestige = 5
-		add_opinion = {
-			who = POL
-			modifier = refused_religious_unity
-		}
-		POL = {
-			add_casus_belli = {
-				type = cb_restore_personal_union
-				months = 120
-				target = LIT
-			}
-		}
-	}
-}
+#country_event = {
+#	id = flaflavorlith.3
+#	title = flaflavorlith.3.t
+#	desc = flaflavorlith.3.d
+#	picture = RELIGIOUS_CONVERSION_eventPicture
+#	
+#	fire_only_once = yes
+#	major = yes
+#
+#	is_triggered_only = yes
+#	
+#	option = {
+#		ai_chance = { 
+#		factor = 70
+#			modifier = {
+#				factor = 0.5
+#				NOT = { 				
+#					has_opinion = {
+#						who = POL
+#						value = -100
+#					}
+#				}
+#			}
+#			modifier = {
+#				factor = 0.75
+#				NOT = { 				
+#					has_opinion = {
+#						who = POL
+#						value = 0
+#					}
+#				}
+#			}				
+#
+#			modifier = {
+#				factor = 2.0
+#					has_opinion = {
+#						who = POL
+#						value = 100
+#					}
+#			}
+#
+#			modifier = {
+#				factor = 4.0
+#					has_opinion = {
+#						who = POL
+#						value = 160
+#					}
+#			}	
+#			modifier = {
+#				factor = 4.0
+#					alliance_with = POL
+#			}
+#		}
+#		name = flaflavorlith.3.a
+#		change_religion = catholic
+#		POL = {
+#			create_union = LIT
+#		}
+#		add_adm_power = 100
+#		add_dip_power = 100
+#		add_mil_power = 100
+#		add_country_modifier = {
+#			name = missionary_zeal
+#			duration = 3650
+#		}
+#	}
+#	option = {
+#		name = flaflavorlith.1.b
+#		ai_chance = { 
+#			factor = 30
+#		}
+#		add_prestige = 5
+#		add_opinion = {
+#			who = POL
+#			modifier = refused_religious_unity
+#		}
+#		POL = {
+#			add_casus_belli = {
+#				type = cb_restore_personal_union
+#				months = 120
+#				target = LIT
+#			}
+#		}
+#	}
+#}
 #Written by Genomega
 #Election of Kasimir
 country_event = {
-	id = flaflavorlith.1
-	title = flaflavorlith.1.t
-	desc = flaflavorlith.1.d
+	id = flaflavorlith.4
+	title = flaflavorlith.4.t
+	desc = flaflavorlith.4.d
 
 	picture = LIBERUM_VETO_eventPicture
 	
@@ -288,7 +288,7 @@ country_event = {
 	}
 	
 	option = {
-		name = flaflavorlith.1.a #We must retain the Jagiellon Dynasty
+		name = flaflavorlith.4.a #We must retain the Jagiellon Dynasty
 		ai_chance = { 
 			factor = 100 
 		}
@@ -318,7 +318,7 @@ country_event = {
 	}
 	
 	option = {
-		name = flaflavorlith.1.b #Stay Romuva.
+		name = flaflavorlith.4.b #Stay Romuva.
 		ai_chance = { 
 			factor = 0
 		}
@@ -339,9 +339,9 @@ country_event = {
 }
 #Written by Genomega
 country_event = {
-	id = flaflavorlith.2
-	title = flaflavorlith.2.t
-	desc = flaflavorlith.2.d
+	id = flaflavorlith.5
+	title = flaflavorlith.5.t
+	desc = flaflavorlith.5.d
 	picture = LIBERUM_VETO_eventPicture
 	
 	fire_only_once = yes
@@ -358,7 +358,7 @@ country_event = {
 	}
 	
 	option = {
-		name = flaflavorlith.2.a
+		name = flaflavorlith.5.a
 		ai_chance = { 
 			factor = 100 
 		}		
@@ -381,7 +381,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = flaflavorlith.2.b
+		name = flaflavorlith.5.b
 		ai_chance = { 
 			factor = 0 
 		}

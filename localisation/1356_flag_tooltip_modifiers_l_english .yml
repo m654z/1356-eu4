@@ -76,6 +76,14 @@
  1356_fra_declined_last_minute_rivalry: "The Rivalry is over - France declined last minute!"
  1356_eng_befriend_hre_instead_rivalry: "The Rivalry is over - England Befriended the HRE instead!"
  cru_conquered_jerusalem: "Crusader Conquest of Jerusalem"
+ baltic_crusader: "Baltic Crusader"
+ sap_united_tribes: "United the Tribes"
+ sap_expand: "The Sami Tribes Expanded"
+ sap_modernize: "Modernized"
+ sap_change_religion: "Converted"
+ sap_old_ways: "Stayed with the Old Ways"
+ 1356_early_feudalism_nomad_1: "Feudal Age - Nomads"
+ hansa_kontor: "Kontor"
  
  #Flags
  nav_claimed_france: "Navarra Claimed France Flag"
