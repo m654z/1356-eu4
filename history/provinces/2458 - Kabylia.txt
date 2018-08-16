@@ -23,6 +23,7 @@ discovered_by = western
 	owner = KBA
 	controller = KBA
 }
+1444.1.1 = { owner = TUN controller = TUN add_core = TUN }
 1521.1.1 = {
 	owner = ALG
 	controller = ALG

@@ -23,9 +23,11 @@ discovered_by = nomad_group
 discovered_by = indian
 discovered_by = east_african
 
+1356.1.1 = { add_core = ALX controller = ALX add_core = ALX }
 1360.1.1   = { religion = sunni }
 1365.10.9  = { controller = CYP } # Crusade against Alexandria
 1365.10.12 = { controller = MAM }
+1444.1.1 = { add_core = MAM owner = MAM controller = MAM remove_core = ALX }
 1517.1.1   = {	owner = TUR
 		controller = TUR
 		add_core = TUR

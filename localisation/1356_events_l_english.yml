@@ -490,3 +490,8 @@
  feudalvassalevents.4.t: "A Subject no more!"
  feudalvassalevents.4.desc: "Now that we are no longer subject to the authority of the French Kingdom we are free to be our own independent Kingdom! Down with the old ways!"
  feudalvassalevents.4.a: "It's time for a change in government!"
+
+ flaeng.1.t: "The Rise of the House of York"
+ flaeng.1.desc: "My [ENG.Monarch.GetTitle]! The local Duchy of York has gained significant autonomy in recent years, we should be wary of them for whispers in our court claim that the House claims decendence from Edward III, the late King of England! We may want to do something about them sooner or later...\n\nThe House of York was founded in 1385 historically. The House would go on to claim the crown of England, and be one half of the 'War of the Roses'. "
+ flaeng.1.a: "Well, let the House of York Rise!"
+ flaeng.1.b: "Never! Those fithly Yorkists shall never be allowed to own land in MY England!"

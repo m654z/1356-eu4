@@ -28,6 +28,7 @@ discovered_by = ottoman
 	owner = KBA
 	controller = KBA
 }
+1444.1.1 = { owner = TUN controller = TUN add_core = TUN }
 1510.1.1 = {
 	owner = KBA
 	controller = KBA

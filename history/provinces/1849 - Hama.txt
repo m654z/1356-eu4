@@ -20,6 +20,8 @@ discovered_by = eastern
 discovered_by = nomad_group
 discovered_by = indian
 
+1356.1.1 = { add_core = SYR controller = SYR add_core = SYR }
+1444.1.1 = { add_core = MAM owner = MAM controller = MAM remove_core = SYR }
 1516.8.24 = {
 	owner = TUR
 	controller = TUR

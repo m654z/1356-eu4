@@ -1,0 +1,79 @@
+namespace = flaeng
+
+country_event = {
+	id = flaeng.1
+	title = "flaeng.1.t"
+	desc = "flaeng.1.desc"
+	picture = CITY_VIEW_eventPicture.dds
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = ENG
+		year = 1380
+		NOT = { year = 1420 }
+		owns_or_subject_of = 245
+		owns_or_subject_of = 4368
+		owns_or_subject_of = 4367
+	
+	}
+	
+	mean_time_to_happen = {
+		months = 12
+	}
+	
+	option = { #The House Rises!
+		name = "flaeng.1.a"
+		YOK = {
+			add_core = 245
+			add_core = 4368
+			add_core = 4367
+		}
+		ENG = {
+			release = YOK
+			vassalize = YOK
+			create_marriage = YOK
+		}
+		245 = {
+			add_base_tax = 3
+			add_base_manpower = 3
+		}
+		244 = {
+			add_base_tax = 3
+			add_base_manpower = 3
+		}
+		
+	}
+	
+	option = { #Never! Those fithly Yorkists shall never be allowed to own land in MY England!
+		name = "flaeng.1.b"
+		add_prestige = -15
+		
+		245 = {
+			spawn_rebels = {
+			type = nationalist_rebels
+			friend = YOK
+			win = yes
+			size = 1
+			}
+		}
+		4368 = {
+			spawn_rebels = {
+			type = nationalist_rebels
+			friend = YOK
+			win = yes
+			size = 1
+			}
+		}
+		4367 = {
+			spawn_rebels = {
+			type = nationalist_rebels
+			friend = YOK
+			win = yes
+			size = 1
+			}
+		}
+	}
+
+
+}
