@@ -10,8 +10,9 @@ country_event = {
 	
 	trigger = {
 		tag = ENG
-		year = 1380
-		NOT = { year = 1420 }
+		is_year = 1380
+		NOT = { is_year = 1420 }
+		NOT = { exists = YOK }
 		owns_or_subject_of = 245
 		owns_or_subject_of = 4368
 		owns_or_subject_of = 4367
@@ -33,6 +34,9 @@ country_event = {
 			release = YOK
 			vassalize = YOK
 			create_marriage = YOK
+			remove_core = 245
+			remove_core = 4368
+			remove_core = 4367
 		}
 		245 = {
 			add_base_tax = 3
@@ -48,7 +52,7 @@ country_event = {
 	option = { #Never! Those fithly Yorkists shall never be allowed to own land in MY England!
 		name = "flaeng.1.b"
 		add_prestige = -15
-		
+		add_legitimacy = -5
 		245 = {
 			spawn_rebels = {
 			type = nationalist_rebels
