@@ -105,53 +105,6 @@ country_event = { #Event giving 0 revolt risk to alatic provinces
 	}
 }
 
-country_event = { #Event rewarding Yuan after the rebellion is squashed
-	id = yua.3
-	title = "yua.3.t"
-	desc = "yua.3.desc"
-	picture = HORDE_ON_HORSEBACK_eventPicture
-	
-	fire_only_once = yes
-	
-	trigger = {
-		always = no
-		tag = YUA
-		NOT = { has_country_flag = yuan_quelled_chinese_rebellion_flag }
-		primary_culture = mongol
-		owns_core_province = south_china_region
-		owns_core_province = xinan_region
-		owns_core_province = north_china_region
-	}
-	
-	mean_time_to_happen = {
-		days = 30
-	}
-	option = {
-		name = "yua.3.a"
-		add_years_of_income = 2
-		add_meritocracy = 100
-		add_prestige = 50
-		add_adm_power = 100
-		add_dip_power = 100
-		add_mil_power = 100
-		remove_country_modifier = fall_of_yuan_mandate
-		all_owned_province = {
-			limit = {
-				culture = mongol
-			}
-			change_culture = yuan_culture
-		}
-		set_ruler_culture = yuan_culture
-		set_heir_culture = yuan_culture
-		change_primary_culture = yuan_culture
-		add_accepted_culture = khalkha
-		add_accepted_culture = oirats
-		add_accepted_culture = chahar
-		set_country_flag = yuan_quelled_chinese_rebellion_flag
-	}
-}
-
-
 
 country_event = { #Event removing the modifier for anyone not yuan
 	id = yua.4

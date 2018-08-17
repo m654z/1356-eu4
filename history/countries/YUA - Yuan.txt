@@ -4,6 +4,9 @@ technology_group = chinese
 religion = vajrayana
 primary_culture = mongol
 add_accepted_culture = manchu
+add_accepted_culture = khalkha
+add_accepted_culture = oirats
+add_accepted_culture = chahar
 capital = 1816	# Beijing
 
 historical_rival = KHA

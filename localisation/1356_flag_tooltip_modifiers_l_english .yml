@@ -117,6 +117,10 @@
  emperor_declined_offer_to_french_dukes: "Emperor offered former French Dukes Vassalization"
  yuan_quelled_chinese_rebellion_flag: "Yuan has Quelled the Red Turban Rebellion"
  
+ #Scripted Effects
+ yuan_culture_convert_decision_effect: "Our King, heir, and Mongolian provinces adopt a new culture. One more...Chinese?"
+ yuan_nomad_low_revolt_risk_decision_effect: "All provinces of an accepted culture, and primary culture gain -100 revolt risk until the end of the rebellion."
+ 
  #Tooltips
  flavor_fla_fra.tooltip: "The Fate of Dauphine"
  flavor_fla_fralowlands.tooltip: "We must decide who shall now rule the Lowlands. The King of France, or a servant of the King?"
@@ -162,5 +166,5 @@
  flavor_fla_fra.14_TT: "Within a few days we will receive an event regarding the ending of this rivalry."
  1356_wal_unite_netherlands_tt: "WARNING: We will receive Vanilla Netherlands missions by doing this."
  1356_HRE_emperor_offered_french_dukes_vassalization_tt: "Within the year the French Dukes will receive our offer."
- 
+ yuan_help_decision_consequences_tooltip: "While we can ask the nomads for help, if we fail to deliver on our promise they will surely revolt against us.."
  

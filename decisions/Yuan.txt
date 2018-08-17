@@ -1,0 +1,210 @@
+country_decisions = {
+	yua_fix_government = {
+		major = yes
+		potential = {
+			tag = YUA
+			government = celestial_empire
+			NOT = { has_country_flag = government_fixed }
+		}
+		allow = {
+			is_at_war = no
+			is_subject = no
+			num_of_cities = 75
+			core_percentage = 0.4
+			adm_power = 500
+			prestige = 0
+			NOT = { num_of_loans = 1 }
+			treasury = 250
+			OR = {
+				AND = {	
+					stability = 3
+					OR = {
+						ADM = 3
+						MIL = 3
+						DIP = 3
+					}
+				}
+				AND = {
+					stability = 2
+					ADM = 4
+				}
+				AND = {
+					stability = 1
+					ADM = 5
+				}
+			}
+			is_nomad = no
+			is_tribal = no
+			OR = {
+				prestige = 50
+				advisor = statesman
+			}
+			OR = {
+				has_idea_group = administrative_ideas
+				has_idea_group = innovativeness_ideas
+				ADM = 5
+				stability = 3
+				}
+				
+			OR = { 
+				legitimacy = 80
+				republican_tradition = 80
+				meritocracy = 80
+			}
+			
+		}
+		effect = {
+			set_country_flag = government_fixed
+			add_adm_power = -500
+			add_treasury = -250
+			add_prestige = 25
+			custom_tooltip = yua_fix_government_tooltip
+			
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	yua_quell_chinese_rebellion_decision = {
+		major = yes
+		
+		potential = {
+			tag = YUA
+			is_emperor_of_china = yes	
+			owns = 1816
+			NOT = { has_country_flag = yuan_quelled_chinese_rebellion_flag }
+		}
+		
+		provinces_to_highlight = {
+			OR = {
+				region = north_china_region
+				region = xinan_region
+				area = guangdong_area
+				area = west_guangdong_area
+				area = fujian_area
+				area = jiangxi_area
+				area = huguang_area
+				area = zhejiang_area
+				area = south_anhui_area
+				area = south_jiangsu_area
+				area = hunan_area
+				area = guangxi_area
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+			}
+		}
+	
+		allow = {
+			is_at_war = no
+			is_subject = no
+			primary_culture = mongol
+			num_of_cities = 75
+			stability = 1
+			prestige = 0
+			NOT = { num_of_loans = 1 }
+			NOT = { num_of_revolts = 3 }
+			north_china_region = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			xinan_region = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+
+			guangdong_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			west_guangdong_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			fujian_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			jiangxi_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			huguang_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			zhejiang_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			south_anhui_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			south_jiangsu_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			hunan_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			guangxi_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}		
+		}
+	
+		effect = {
+			add_years_of_income = 2
+			add_meritocracy = 100
+			add_prestige = 50
+			add_adm_power = 100
+			add_dip_power = 100
+			add_mil_power = 100
+			remove_country_modifier = fall_of_yuan_mandate
+			yuan_culture_convert_decision_effect = yes
+			remove_accepted_culture = khalkha
+			remove_accepted_culture = oirats
+			remove_accepted_culture = chahar
+			set_country_flag = yuan_quelled_chinese_rebellion_flag
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	yua_ask_nomadic_tribes_for_loyalty_decision = {
+		major = yes
+		potential = {
+			tag = YUA
+			is_year = 1356
+			NOT = { is_year = 1390 }		
+			is_emperor_of_china = yes	
+			owns = 1816
+			NOT = { has_country_flag = yuan_quelled_chinese_rebellion_flag }
+			NOT = { has_country_flag = yuan_asked_nomads_help_flag }
+		}
+		
+		allow = {
+			is_subject = no
+			has_country_modifier = fall_of_yuan_mandate
+			years_of_income = 1.0
+			
+		}
+		
+		effect = {
+			custom_tooltip = yuan_help_decision_consequences_tooltip
+			set_country_flag = yuan_asked_nomads_help_flag
+			yuan_nomad_low_revolt_risk_decision_effect = yes
+			add_years_of_income = -1
+			add_prestige = -10
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+	
+	
+	}
+}
