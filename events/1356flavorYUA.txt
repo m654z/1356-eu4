@@ -70,63 +70,79 @@ country_event = {
 	}
 }
 
-country_event = { #Event giving 0 revolt risk to alatic provinces
+country_event = { #Nomads want their dues now...
 	id = yua.2
-	title = "yua.2.t"
-	desc = "yua.2.desc"
+	title = yua.2.t
+	desc = yua.2.d
 	picture = HORDE_ON_HORSEBACK_eventPicture
 	
 	fire_only_once = yes
-	
+
 	trigger = {
-		always = no
 		tag = YUA
-		is_year = 1356
-		NOT = { is_year = 1400 }
-		culture_group = altaic
+		NOT = { is_year = 1500 }
+		is_emperor_of_china = yes
+		has_country_flag = yuan_asked_nomads_help_flag #From Decision
+		has_country_flag = red_turban_rebellion_over_flag #Doesn't exist yet
 	}
 	
 	mean_time_to_happen = {
 		days = 30
 	}
-	option = {
-		name = "yua.2.a"
-		all_core_province = { 
-			limit = {
-				culture_group = altaic
-			}
-			add_province_modifier = { 
-				name = 1356_yua_alatic_provinces
-				duration = -1  
-				desc = 1356_yua_alatic_provinces_tt
-				hidden = yes
-			}
-		}
+	
+	option = { #Alright alright! Don't hurt us!
+		name = yua.2.a
+		custom_tooltip = yuan_nomad_gave_nomads_reward_for_loyalty_tooltip
+		custom_tooltip = yuan_nomad_gave_nomads_reward_for_loyalty_2_tooltip
+		yuan_nomad_gave_nomads_what_they_want_effect = yes
+		add_years_of_income = -0.5
+		add_prestige = -20
+		add_meritocracy = -10
+		add_adm_power = -100
+		add_dip_power = -100
+		add_mil_power = -100
+			
+	}
+	option = { #Never! They're fools just like the Chinese!
+		name = yua.2.b
+		custom_tooltip = yuan_nomad_turned_back_on_deal_2_tooltip
+		custom_tooltip = yuan_nomad_turned_back_on_deal_tooltip
+		yuan_nomad_turned_back_on_deal_effect = yes
+		add_stability = -1
+		add_war_exhaustion = 4
+		add_yearly_manpower = -0.5
+		remove_accepted_culture = manchu
+		remove_accepted_culture = khalkha
+		remove_accepted_culture = oirats
+		remove_accepted_culture = chahar
+		remove_accepted_culture = buryat
 	}
 }
 
-
-country_event = { #Event removing the modifier for anyone not yuan
-	id = yua.4
-	title = "yua.4.t"
-	desc = "yua.4.desc"
+country_event = { 
+	id = yua.3
+	title = yua.3.t
+	desc = yua.3.d
 	picture = HORDE_ON_HORSEBACK_eventPicture
 	
 	fire_only_once = yes
-	
+
 	trigger = {
 		always = no
-		NOT = { tag = YUA }
-		is_year = 1356
-		NOT = { is_year = 1400 }
-		culture_group = altaic
+		tag = YUA
+		NOT = { is_year = 1500 }
+		is_emperor_of_china = yes
+		NOT = { has_country_flag = red_turban_rebellion_over_flag } #Doesn't exist yet
 	}
 	
 	mean_time_to_happen = {
 		days = 30
 	}
+	
 	option = {
-		name = "yua.4.a"
-		remove_province_modifier = 1356_yua_alatic_provinces
+		name = yua.3.a
+	}
+	option = {
+		name = yua.3.b
 	}
 }

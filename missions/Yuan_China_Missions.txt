@@ -1,0 +1,224 @@
+yuan_quell_red_turban_rebellion_internal_group = {
+	slot = 2
+	generic = no
+	ai = yes
+	
+	potential = { 
+		tag = YUA
+	}
+	has_country_shield = yes
+	
+	yua_quell_red_turban_rebellion_internal_mission_1 = { #Hire an Advisor
+		icon =  mission_alliances
+		required_missions = { yua_quell_red_turban_rebellion_mission_0 }
+		position = 2
+		trigger = {
+			has_advisor = yes
+		}
+		effect = {
+			add_years_of_income = 0.25
+			add_inflation = 0.25
+		}
+	}
+}
+yuan_quell_red_turban_rebellion_group = { 
+	slot = 3
+	generic = no
+	ai = yes
+	
+	potential = { 
+		tag = YUA
+	}
+	has_country_shield = yes
+
+	yua_quell_red_turban_rebellion_mission_0 = { #Get a Feel for the Situation
+		icon =  mission_chinese_general_riding
+		required_missions = {  }
+		position = 1
+		trigger = {
+			always = yes
+		}
+		effect = {
+			add_prestige = 1
+		}
+	}
+	yua_quell_red_turban_rebellion_mission_1 = { #Hire A General
+		icon =  mission_chinese_general_riding
+		required_missions = { yua_quell_red_turban_rebellion_mission_0 }
+		position = 2
+		trigger = {
+			num_of_generals = 1
+		}
+		effect = {
+			add_army_tradition = 5
+		}
+	}
+	yua_quell_red_turban_rebellion_mission_2 = { #Hire Mercs
+		icon =  mission_non-western_soldiers
+		required_missions = { yua_quell_red_turban_rebellion_mission_1 }
+		position = 3
+		trigger = {
+			num_of_mercenaries = 10
+		}
+		effect = {
+			
+		}
+	}
+	yua_quell_red_turban_rebellion_mission_3 = { 
+		icon =  mission_cannons_firing
+		required_missions = { yua_quell_red_turban_rebellion_mission_2 }
+		position = 4
+		provinces_to_highlight = {
+			area = holland_area
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			holland_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			holland_area = {
+				add_province_modifier = {
+					name = "faster_integration"
+					duration = 7300
+				}
+			}
+			netherlands_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	yua_quell_red_turban_rebellion_mission_4 = { 
+		icon =  mission_cannons_firing
+		required_missions = { yua_quell_red_turban_rebellion_mission_3 }
+		position = 5
+		provinces_to_highlight = {
+			area = netherlands_area
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			netherlands_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			netherlands_area = {
+				add_province_modifier = {
+					name = "faster_integration"
+					duration = 7300
+				}
+			}
+			frisia_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	yua_quell_red_turban_rebellion_mission_5 = { 
+		icon =  mission_build_up_to_force_limit
+		required_missions = { yua_quell_red_turban_rebellion_mission_4 }
+		position = 6
+		provinces_to_highlight = {
+			area = frisia_area
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			frisia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			frisia_area = {
+				add_province_modifier = {
+					name = "faster_integration"
+					duration = 7300
+				}
+			}
+		}
+	}
+
+	yua_quell_red_turban_rebellion_mission_6 = { 
+		icon =  mission_monarch_in_throne_room
+		required_missions = { yua_quell_red_turban_rebellion_mission_5 }
+		position = 7
+		provinces_to_highlight = {
+			OR = {
+				area = 	netherlands_area
+				area = 	holland_area
+				area = 	frisia_area
+				area = 	wallonia_area
+				area = 	flanders_area
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			low_countries_region = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			NOT = { exists = NED }
+		}
+		effect = {
+			country_event = { id = flavor_fla_fra.10 tooltip = flavor_fla_fralowlands.tooltip } #Handle Lowlands Event
+		
+		}
+	}
+}
+
+yuan_quell_red_turban_rebellion_naval_group = {
+	slot = 5
+	generic = no
+	ai = yes
+	
+	potential = { 
+		tag = YUA
+	}
+	has_country_shield = yes
+	
+	yua_quell_red_turban_rebellion_naval_mission_1 = { #Bigger Navy than all 4 Nations, Or they don't exist.
+		icon =  mission_establish_high_seas_navy
+		required_missions = { yua_quell_red_turban_rebellion_mission_0 }
+		position = 2
+		trigger = {
+			OR = {
+				AND = {
+					navy_size = MNG
+					navy_size = SHU
+					navy_size = CXI
+					navy_size = QIC
+				}
+				
+				AND = {
+					NOT = { exists = QIC }
+					NOT = { exists = CXI }
+					NOT = { exists = SHU }
+					NOT = { exists = MNG }
+				}
+			
+			}
+		}
+		effect = {
+			add_yearly_sailors = 10
+			create_admiral = 75
+		}
+	}
+}

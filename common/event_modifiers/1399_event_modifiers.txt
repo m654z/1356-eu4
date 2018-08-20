@@ -231,3 +231,8 @@ fall_of_yuan_mandate = {
 	recover_army_morale_speed = -0.1	
 	land_forcelimit = -15
 }
+
+yuan_starting_modifiers = {
+	num_accepted_cultures = 3
+	promote_culture_cost = 4
+}

@@ -195,10 +195,11 @@ country_decisions = {
 		
 		effect = {
 			custom_tooltip = yuan_help_decision_consequences_tooltip
+			custom_tooltip = yuan_help_decision_effects_tooltip
 			set_country_flag = yuan_asked_nomads_help_flag
 			yuan_nomad_low_revolt_risk_decision_effect = yes
 			add_years_of_income = -1
-			add_prestige = -10
+			add_prestige = -15
 		}
 		
 		ai_will_do = {

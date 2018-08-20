@@ -87,6 +87,11 @@
  left_hansa_reform: "Left the Hansa"
  passed_reform_opposed: "Passed a Reform I was Opposed to"
  sap_converted: "Sapmi Converted"
+ 1356_yua_alatic_provinces: "Asked Local Nomadic Tribes for Loyalty"
+ yuan_starting_modifiers: "Nomadic Brothers"
+ 1356_yua_alatic_provinces_angry_modifier: "Scorned our Nomadic Brothers"
+ 1356_yua_alatic_provinces_happy_modifier: "Rewarded our Nomadic Brothers"
+
  
  #Policies
  desc_the_inquisitor_act: "The Inquisitor Act"
@@ -115,7 +120,8 @@
  bur_inherited_flanders_flag: "Burgundy inherited Flanders"
  1356_french_civil_war: "French Feudal Civil War"
  emperor_declined_offer_to_french_dukes: "Emperor offered former French Dukes Vassalization"
- yuan_quelled_chinese_rebellion_flag: "Yuan has Quelled the Red Turban Rebellion"
+ yuan_quelled_chinese_rebellion_flag: "Yuan has Recovered from the Rebellions"
+ red_turban_rebellion_over_flag: "Red Turban Rebellion has been quelled"
  
  #Scripted Effects
  yuan_culture_convert_decision_effect: "Our King, heir, and Mongolian provinces adopt a new culture. One more...Chinese?"
@@ -166,5 +172,12 @@
  flavor_fla_fra.14_TT: "Within a few days we will receive an event regarding the ending of this rivalry."
  1356_wal_unite_netherlands_tt: "WARNING: We will receive Vanilla Netherlands missions by doing this."
  1356_HRE_emperor_offered_french_dukes_vassalization_tt: "Within the year the French Dukes will receive our offer."
- yuan_help_decision_consequences_tooltip: "While we can ask the nomads for help, if we fail to deliver on our promise they will surely revolt against us.."
- 
+ yuan_help_decision_consequences_tooltip: "While we can ask the nomads for help, if we fail to deliver on our promise they will surely revolt against us..."
+ yuan_help_decision_effects_tooltip: "All provinces of Accepted Cultures, and of our own culture get -100 revolt risk while the Red Turban Rebellion is active."
+ 1356_yua_alatic_provinces_angry_modifier_tooltip: "Our Alatic Brothers have been scorned, and they are seething with anger."
+ yuan_nomad_turned_back_on_deal_tooltip: "All Alatic Provinces will gain +20 Nationalism and +5 Revolt Risk."
+ yuan_nomad_turned_back_on_deal_2_tooltip: "We promised the Nomads a massive reward earlier, yet now we turn them down. They will be very upset to hear our response..."
+ yuan_nomad_gave_nomads_reward_for_loyalty_tooltip: "The Nomads will be very happy that we rewarded them for their loyalty during the Red Turban Rebellion."
+ yuan_nomad_gave_nomads_reward_for_loyalty_2_tooltip: "All Alatic Provinces gain Max Autonomy, and -2 Revolt Risk."
+ 1356_yua_alatic_provinces_happy_modifier_tooltip: "Rewarded our Nomadic Brothers"
+ 1356_yua_alatic_provinces_angry_modifier_tooltip: "Scorned our Nomadic Brothers"

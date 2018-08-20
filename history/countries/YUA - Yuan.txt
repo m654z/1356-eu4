@@ -7,6 +7,7 @@ add_accepted_culture = manchu
 add_accepted_culture = khalkha
 add_accepted_culture = oirats
 add_accepted_culture = chahar
+add_accepted_culture = buryat
 capital = 1816	# Beijing
 
 historical_rival = KHA
@@ -167,6 +168,16 @@ historical_friend = CHG
 		mil = 4
 	}
 }
+
+1356.1.1 = { 
+	add_country_modifier = { 
+		name = yuan_starting_modifiers
+		duration = 3650
+		desc = yuan_starting_modifiers_tooltip
+	}
+}
+
+1366.1.1 = { remove_country_modifier = yuan_starting_modifiers }
 
 1368.9.14 = {
 	technology_group = nomad_group
