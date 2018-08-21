@@ -1,8 +1,8 @@
 # 2705 - Kuching (1356)
 # Changes: religion
 
-owner = BEI
-controller = BEI
+owner = MEL
+controller = MEL
 culture = bornean
 religion = hinduism
 capital = "Kuching"
@@ -13,13 +13,14 @@ base_tax = 3
 base_production = 3
 base_manpower = 2
 is_city = yes
-add_core = BEI
+add_core = MEL
 
 discovered_by = chinese
 discovered_by = indian
 discovered_by = muslim
 discovered_by = ottoman
 
+1410.1.1 = { owner = BEI controller = BEI add_core = BEI }
 1475.1.1  = { religion = sunni }
 1521.1.1  = { discovered_by = SPA }
 1578.4.16 = { owner = SPA controller = SPA } # Captured by Spain

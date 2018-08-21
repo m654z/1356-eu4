@@ -808,6 +808,19 @@
  fra_conquer_sicily_malta_title: "Invade Sicily & Malta"
  fra_conquer_sicily_malta_desc: "Now that we control most of Italy let us launch an invasion of Sicily and Malta! After we take this then we can finally turn our heads to the Pope isolated in Rome!" 
   
+ #Yuan Missions
+ yua_quell_red_turban_rebellion_toqto_mission_title: "Side with Toqto'a"
+ yua_quell_red_turban_rebellion_korean_consort_mission_title: "Side with Empress Ki"
+ yua_quell_red_turban_rebellion_mission_0_title: "Understand the Yuan Situation"
+ yua_quell_red_turban_rebellion_mission_1_title: "Draft A New General"
+ yua_quell_red_turban_rebellion_mission_2_title: "Hire Mercenaries"
+ yua_quell_red_turban_rebellion_mission_3_title: "Crush the Rebellion"
+ yua_quell_red_turban_rebellion_mission_4_title: "Peace! Peace!"
+ yua_quell_red_turban_rebellion_mission_5_title: "Let Army Recover"
+ yua_quell_red_turban_rebellion_mission_6_title: "Hire More Generals"
+ yua_quell_red_turban_rebellion_internal_mission_1_title: "Hire an Advisor"
+ yua_quell_red_turban_rebellion_naval_mission_1_title: "Dwarf the Rebellion's Navy"
+  
  #Generic Missions
  1356_generic_make_a_friend_title: "Make an Ally"
  1356_generic_make_a_friend_desc: "In these unstable times of war we must have foreign allies or be doomed to be surrounded by those who wish our lands, with no one to help"

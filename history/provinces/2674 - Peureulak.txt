@@ -1,11 +1,11 @@
 # 2674 - Peureulak (1356)
 # Changes: ATJ/religion
 
-owner = ATJ
-controller = ATJ
+owner = HRU
+controller = HRU
 culture = sumatran
-religion = hinduism
-capital = "Peureulak"
+religion = animism
+capital = "Kota Rentang"
 trade_goods = spices
 hre = no
 base_tax = 4
@@ -13,7 +13,7 @@ base_tax = 4
 base_production = 4
 base_manpower = 3
 is_city = yes
-add_core = ATJ
+add_core = HRU
 add_core = PSA
 
 discovered_by = chinese
@@ -22,10 +22,11 @@ discovered_by = muslim
 discovered_by = ottoman
 
 1405.1.1 = { discovered_by = MNG }
-1410.1.1 = { owner = PSA controller = PSA }
+1410.1.1 = { owner = PSA controller = PSA capital = "Peureulak" }
 1425.1.1 = { religion = sunni }
 1509.1.1 = { discovered_by = POR }
 1521.1.1 = {	owner = ATJ
 		controller = ATJ
+		add_core = ATJ
 		remove_core = PSA
 	   }

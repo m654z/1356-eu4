@@ -146,3 +146,177 @@ country_event = {
 		name = yua.3.b
 	}
 }
+
+country_event = { #Toqto Returns!
+	id = yua.4
+	title = yua.4.t
+	desc = yua.4.d
+	picture = HORDE_ON_HORSEBACK_eventPicture
+	
+	fire_only_once = yes
+
+	trigger = {
+		tag = YUA
+		NOT = { is_year = 1400 }
+		is_emperor_of_china = yes
+		OR = {
+			is_at_war = yes
+			num_of_rebel_armies = 3
+		}
+	}
+	mean_time_to_happen = {
+		months = 50
+		modifier = {
+			factor = 0.5
+			war_score = -25
+		}
+		modifier = {
+			factor = 0.3
+			war_score = -50
+		}
+		modifier = {
+			factor = 0.5
+			num_of_rebel_armies = 5
+		}
+		modifier = {
+			factor = 0.1
+			num_of_rebel_armies = 10
+		}
+		modifier = {
+			factor = 2
+			NOT = { num_of_rebel_armies = 1 }
+		}
+		modifier = {
+			factor = 0.8
+			NOT = { prestige = 0 }
+		}
+		modifier = {
+			factor = 0.7
+			exists = MNG
+		}
+		modifier = {
+			factor = 0.9
+			exists = QIC
+		}
+		modifier = {
+			factor = 0.9
+			exists = CXI
+		}
+		modifier = {
+			factor = 0.9
+			exists = SHU
+		}
+	}
+	
+	option = { #Yes! He shall be our savior!
+		name = yua.4.a
+		ai_chance = { factor = 30 }
+		custom_tooltip = yua4a_toqto_returns_tooltip
+		set_country_flag = yuan_toqto_returns_flag
+		add_stability = -1
+		add_prestige = -50
+		add_meritocracy = -15
+		add_manpower = 15
+		define_advisor = {
+			type = army_reformer
+			name = "Toqto'a"
+			location = 720
+			discount = yes
+			skill = 3
+			culture = mongolian
+			religion = vajrayana
+		}
+		define_general = {
+			name = "Toqto'a"
+			trait = inspirational_leader_general_personality
+			shock = 5
+			fire = 3
+			manuever = 2
+			siege = 2
+		}
+		add_historical_rival = KOR
+		spawn_rebels = {
+			type = noble_rebels
+			size = 2
+		}
+	}
+	option = { #I thought we exiled you! Guards! Kill this man!
+		name = yua.4.b
+		ai_chance = { factor = 70 }
+		custom_tooltip = yua4b_killed_toqto_tooltip
+		set_country_flag = yuan_toqto_killed_flag
+		add_stability = 1
+		add_prestige = 10
+		add_meritocracy = 10
+		add_manpower = -5
+		define_consort = {
+			name = "Lady Ki"
+			country_of_origin = KOR
+			dynasty = "Goryeo"
+			culture = korean
+			religion = mahayana
+			adm = 5
+			dip = 6
+			mil = 3
+			female = yes
+		}
+	}
+}
+
+country_event = { #Chinese Minors Lose manpower from Toqto's Return
+	id = yua.5
+	title = yua.5.t
+	desc = yua.5.d
+	picture = HORDE_ON_HORSEBACK_eventPicture
+	
+	fire_only_once = yes
+
+	trigger = {
+		culture_group = east_asian
+		NOT = { is_year = 1400 }
+		NOT = { has_country_flag = yua_chinese_minor_toqto_returned_flag }
+		NOT = { has_country_flag = red_turban_rebellion_over_flag } #Doesn't exist yet
+		has_country_flag = yuan_toqto_returns_flag
+		is_emperor_of_china = no
+		NOT = { tag = YUA }
+		NOT = { tag = QNG }
+		NOT = { tag = MCH }
+		manpower = 5
+	}
+	
+	mean_time_to_happen = {
+		days = 30
+	}
+	
+	option = { #Curses! We need a plan and fast!
+		name = yua.5.a
+		set_country_flag = yua_chinese_minor_toqto_returned_flag
+		add_manpower = -5
+		add_prestige = -10
+		YUA = { 
+			country_event = { 
+				id = yua.6
+				days = 30
+				tooltip = yua.6_tooltip
+			}
+		}
+	}
+}
+
+country_event = { #Yuan receives manpower from Chinese Minors
+	id = yua.6
+	title = yua.6.t
+	desc = yua.6.d
+	picture = HORDE_ON_HORSEBACK_eventPicture
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	
+	option = { #Perfect!
+		name = yua.6.a
+		YUA = { 
+			add_manpower = 5
+		}
+	}
+}

@@ -1,6 +1,6 @@
 government = despotic_monarchy
 technology_group = chinese
-religion = animism
+religion = hinduism
 primary_culture = filipino
 capital = 2703	# Lehad Datu
 

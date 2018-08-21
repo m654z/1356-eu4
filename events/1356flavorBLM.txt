@@ -5,7 +5,7 @@ country_event = {
 	title = blm.1.t
 	desc = blm.1.d
 	picture = COUNTRY_COLLAPSE_eventPicture
-	fire_only_once = yes	
+	fire_only_once = yes
 
 	trigger = {
 		owns = 627
@@ -18,11 +18,11 @@ country_event = {
 		}
 		religion = hinduism
 	}
-	
+
 	mean_time_to_happen = {
-		months = 12
+		months = 120
 	}
-	
+
 	option = {
 		name = blm.1.a
 			remove_core = 627
@@ -39,7 +39,7 @@ country_event = {
 	title = blm.2.t
 	desc = blm.2.d
 	picture = COUNTRY_COLLAPSE_eventPicture
-	fire_only_once = yes	
+	fire_only_once = yes
 
 	trigger = {
 		owns = 627
@@ -47,11 +47,11 @@ country_event = {
 		627 = { religion = sunni }
 		NOT = { religion = sunni }
 	}
-	
+
 	mean_time_to_happen = {
 		months = 12
 	}
-	
+
 	option = {
 		name = blm.2.a
 			remove_core = 627

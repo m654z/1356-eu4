@@ -1,10 +1,10 @@
-#4349 - Laguna
+﻿#4349 - Laguna
 
 owner = TDO
 controller = TDO
 add_core = TDO
 culture = filipino
-religion = animism
+religion = mahayana
 capital = "Laguna"
 trade_goods = grain
 hre = no

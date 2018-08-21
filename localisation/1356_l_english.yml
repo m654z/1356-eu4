@@ -606,4 +606,11 @@
  french_vassal_feudal_monarchy_desc: "The Subjects under a King typically had a different way of diplomacy then their overlord. It was much harder to make alliances, or even royal marriages."
  yuan_culture: "Yuan"
  qing_culture: "Qing"
+ indo_islam_port_name: "Islam Gains Followers"
+ indo_islam_port_desc: "After centuries of contact with Muslim traders, the majority of the population of $PROVINCENAME$ has converted to the new faith."
+ indo_islam_port_opt1: "Worrying."
+ indo_islam_spreads_name: "$MONARCH$ Considers Conversion"
+ indo_islam_spreads_desc: "Through centuries of intermarriage with Islamic merchants, Islam has gained a powerful following in the royalty of $COUNTRY$. Is now the time to convert?"
+ indo_islam_spreads_opt1: "It is time for conversion."
+ indo_islam_spreads_opt2: "$COUNTRY$ will always be $COUNTRY_RELIGION$"
  

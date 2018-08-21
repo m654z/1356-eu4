@@ -28,6 +28,7 @@ yuan_quell_red_turban_rebellion_group = {
 	
 	potential = { 
 		tag = YUA
+
 	}
 	has_country_shield = yes
 
@@ -42,10 +43,73 @@ yuan_quell_red_turban_rebellion_group = {
 			add_prestige = 1
 		}
 	}
-	yua_quell_red_turban_rebellion_mission_1 = { #Hire A General
-		icon =  mission_chinese_general_riding
+}
+
+yuan_quell_red_turban_rebellion_toqto_group = { 
+	slot = 3
+	generic = no
+	ai = yes
+	
+	potential = { 
+		tag = YUA
+		NOT = { has_country_flag = yuan_toqto_killed_flag }
+	}
+	has_country_shield = yes	
+	yua_quell_red_turban_rebellion_toqto_mission = {
+	icon =  mission_chinese_general_riding
 		required_missions = { yua_quell_red_turban_rebellion_mission_0 }
 		position = 2
+		trigger = {
+			has_country_flag = yuan_toqto_returns_flag
+		}
+		effect = {
+			swap_non_generic_missions = yes
+		}
+	}
+	yua_quell_red_turban_rebellion_toqto_mission_1 = { #Hire A General
+		icon =  mission_chinese_general_riding
+		required_missions = { yua_quell_red_turban_rebellion_toqto_mission }
+		position = 3
+		trigger = {
+			num_of_generals = 3
+		}
+		effect = {
+			add_army_tradition = 10
+		}
+	}
+	yua_quell_red_turban_rebellion_toqto_mission_2 = { #Have lots of Manpower
+		icon =  mission_build_up_to_force_limit
+		required_missions = { yua_quell_red_turban_rebellion_toqto_mission_1 }
+		position = 4
+		trigger = {
+			manpower_percentage = 0.7
+		}
+		effect = {
+			add_war_exhaustion = -5
+		}
+	}
+	
+}
+
+yuan_quell_red_turban_rebellion_exiled_general_group = {
+	slot = 3
+	generic = no
+	ai = yes
+	
+	potential = { 
+		always = no
+		tag = YUA
+		OR = {
+			has_country_flag = yuan_toqto_returns_flag
+			has_country_flag = yuan_toqto_killed_flag
+		}
+	}
+	has_country_shield = yes
+
+	yua_quell_red_turban_rebellion_mission_1 = { #Hire A General
+		icon =  mission_chinese_general_riding
+		required_missions = {  }
+		position = 3
 		trigger = {
 			num_of_generals = 1
 		}
@@ -56,108 +120,103 @@ yuan_quell_red_turban_rebellion_group = {
 	yua_quell_red_turban_rebellion_mission_2 = { #Hire Mercs
 		icon =  mission_non-western_soldiers
 		required_missions = { yua_quell_red_turban_rebellion_mission_1 }
-		position = 3
+		position = 4
 		trigger = {
 			num_of_mercenaries = 10
 		}
 		effect = {
-			
+			add_country_modifier = {
+				name = "yuan_merc_mission_reward"
+				duration = 5475
+			}
 		}
 	}
-	yua_quell_red_turban_rebellion_mission_3 = { 
+	yua_quell_red_turban_rebellion_mission_3 = { #Ensure the Rebellion has no Army
 		icon =  mission_cannons_firing
 		required_missions = { yua_quell_red_turban_rebellion_mission_2 }
-		position = 4
+		position = 5
 		provinces_to_highlight = {
 			area = holland_area
 			NOT = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
-		trigger = {
-			holland_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
+		trigger = { 
+			OR = {
+				AND = { 
+					MNG = {	army_size = 0 }
+					QIC = { army_size = 0 }
+					CXI = { army_size = 0 } 
+					SHU = { army_size = 0 }					
+				} 
+				AND = {
+					NOT = { exists = MNG }
+					NOT = { exists = SHU }
+					NOT = { exists = CXI }
+					NOT = { exists = QIC }
+				}
 			}
 		}
 		effect = {
-			holland_area = {
-				add_province_modifier = {
-					name = "faster_integration"
-					duration = 7300
-				}
-			}
-			netherlands_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { owned_by = ROOT }
-				}
-				add_permanent_claim = ROOT
+			add_country_modifier = {
+				name = "yuan_mission_3_reward"
+				duration = 3650
 			}
 		}
 	}
-	yua_quell_red_turban_rebellion_mission_4 = { 
-		icon =  mission_cannons_firing
+	yua_quell_red_turban_rebellion_mission_4 = { #Peace! Peace!
+		icon =  mission_rice_field
 		required_missions = { yua_quell_red_turban_rebellion_mission_3 }
-		position = 5
-		provinces_to_highlight = {
-			area = netherlands_area
-			NOT = {
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-		}
+		position = 6
 		trigger = {
-			netherlands_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
+			OR = {
+				AND = {
+					YUA = { 
+						has_truce = MNG
+						has_truce = SHU
+						has_truce = CXI
+						has_truce = QIC
+					}
+				}
+				
+				AND = {
+					NOT = { exists = MNG }
+					NOT = { exists = SHU }
+					NOT = { exists = QIC }
+					NOT = { exists = CXI }
+				}
 			}
 		}
 		effect = {
-			netherlands_area = {
-				add_province_modifier = {
-					name = "faster_integration"
-					duration = 7300
-				}
-			}
-			frisia_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { owned_by = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
+			add_adm_power = 50
 		}
 	}
-	yua_quell_red_turban_rebellion_mission_5 = { 
+	yua_quell_red_turban_rebellion_mission_5 = { #Recover Our Manpower
 		icon =  mission_build_up_to_force_limit
 		required_missions = { yua_quell_red_turban_rebellion_mission_4 }
-		position = 6
-		provinces_to_highlight = {
-			area = frisia_area
-			NOT = {
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-		}
+		position = 7
 		trigger = {
-			frisia_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
+			manpower_percentage = 0.65
 		}
 		effect = {
-			frisia_area = {
-				add_province_modifier = {
-					name = "faster_integration"
-					duration = 7300
-				}
-			}
+			add_manpower = 7.5
 		}
 	}
-
-	yua_quell_red_turban_rebellion_mission_6 = { 
+	yua_quell_red_turban_rebellion_mission_6 = { #Hire More Generals
 		icon =  mission_monarch_in_throne_room
 		required_missions = { yua_quell_red_turban_rebellion_mission_5 }
-		position = 7
+		position = 8
+		trigger = {
+			num_of_generals = 2
+		}
+		effect = {
+			add_army_tradition = 10		
+		}
+	}
+	yua_quell_red_turban_rebellion_mission_7 = { #Begin Annexing Rebels
+		icon =  mission_monarch_in_throne_room
+		required_missions = { yua_quell_red_turban_rebellion_mission_6 }
+		position = 9
 		provinces_to_highlight = {
 			OR = {
 				area = 	netherlands_area
@@ -184,6 +243,46 @@ yuan_quell_red_turban_rebellion_group = {
 	}
 }
 
+yuan_quell_red_turban_rebellion_korean_consort_group = {
+	slot = 4
+	generic = no
+	ai = yes
+	
+	potential = { 
+		tag = YUA
+		NOT = { has_country_flag = yuan_toqto_returns_flag }
+	}
+	has_country_shield = yes
+	
+	yua_quell_red_turban_rebellion_korean_consort_mission = {
+		icon =  mission_chinese_general_riding
+		required_missions = { yua_quell_red_turban_rebellion_mission_0 }
+		position = 2
+		trigger = {
+			has_country_flag = yuan_toqto_killed_flag
+		}
+		effect = {
+			swap_non_generic_missions = yes
+		}
+	
+	}
+}
+
+yuan_quell_red_turban_rebellion_went_with_korean_consort_group = {
+	slot = 4
+	generic = no
+	ai = yes
+	
+	potential = { 
+		tag = YUA
+		has_country_flag = yuan_toqto_killed_flag
+	}
+	has_country_shield = yes
+	
+	
+}
+
+
 yuan_quell_red_turban_rebellion_naval_group = {
 	slot = 5
 	generic = no
@@ -191,6 +290,10 @@ yuan_quell_red_turban_rebellion_naval_group = {
 	
 	potential = { 
 		tag = YUA
+		OR = {
+			has_country_flag = yuan_toqto_returns_flag
+			has_country_flag = yuan_toqto_killed_flag
+		}
 	}
 	has_country_shield = yes
 	

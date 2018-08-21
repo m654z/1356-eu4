@@ -10,16 +10,16 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-	
+
 		tag = MAJ
-	
+
 		OR = {
 			has_heir = no
 			MTR = { exists = yes }
 			DMK = { exists = yes }
 			stability = -3
 			NOT = { legitimacy = 30 }
-			prestige = -25	
+			prestige = -25
 			is_year = 1406
 		}
 	}
@@ -42,36 +42,13 @@ country_event = {
 
 	option = {
 		name = maj.1.a
-		free_vassal = SDN
-		free_vassal = KUT
-		free_vassal = ATJ
-		free_vassal = MLC
-		free_vassal = MKS
-		free_vassal = SUL
-		free_vassal = LAM
-		free_vassal = SRI
-		free_vassal = PAT
-		free_vassal = TOL
-		free_vassal = TER
-		free_vassal = TID
-		free_vassal = MHA
-		free_vassal = LIG
-		free_vassal = KED
-		free_vassal = BTN
-		free_vassal = LUW
-		free_vassal = SAK
-		free_vassal = PSA
-		free_vassal = PGR
-		free_vassal = PLB
-		free_vassal = SED
-		free_vassal = SAM
-		free_vassal = BNJ
+		every_subject_country = { grant_independence = yes }
 		add_prestige = -25
 		add_legitimacy = -25
 		add_stability = -3
 	}
 }
-		
+
 country_event = {
 	id = maj.2
 	title = maj.2.t
@@ -81,7 +58,7 @@ country_event = {
 
 	trigger = {
 		tag = MAJ
-		2689 = { 
+		2689 = {
 			is_empty = yes
 			native_size = 0
 		}
@@ -100,7 +77,7 @@ country_event = {
 		}
 	}
 }
-	
+
 country_event = {
 	id = maj.3
 	title = maj.3.t
@@ -110,7 +87,7 @@ country_event = {
 
 	trigger = {
 		tag = MAJ
-		626 = { 
+		626 = {
 			is_empty = yes
 			native_size = 0
 		}

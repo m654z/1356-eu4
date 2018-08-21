@@ -1,8 +1,9 @@
 # 623 - Tulangbewang (1356)
 # Changes: LAM/religion
 
-owner = LAM
-controller = LAM
+owner = PLB
+controller = PLB
+add_core = PLB
 add_core = LAM
 culture = sumatran
 religion = hinduism

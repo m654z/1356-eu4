@@ -268,3 +268,12 @@ nav_francia_kingdom_claimed = {
 1356_emperor_imperial_authority = {
 	imperial_authority = 0.05
 }
+
+#Yuan
+yuan_merc_mission_reward = {
+	merc_maintenance_modifier = -0.15
+}
+
+yuan_mission_3_reward = {
+	manpower_recovery_speed = 0.15
+}
