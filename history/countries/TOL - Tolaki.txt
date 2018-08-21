@@ -1,4 +1,4 @@
-government = despotic_monarchy
+government = tribal_federation
 technology_group = chinese
 religion = animism
 primary_culture = sulawesi

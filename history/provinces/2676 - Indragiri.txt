@@ -1,8 +1,8 @@
 # 2676 - Indragiri (1356)
 # Changes: SRI/religion
 
-owner = SRI
-controller = SRI
+owner = IND
+controller = IND
 culture = sumatran
 religion = hinduism
 capital = "Indragiri"
@@ -13,7 +13,7 @@ base_tax = 2
 base_production = 2
 base_manpower = 3
 is_city = yes
-add_core = SRI
+add_core = IND
 
 discovered_by = chinese
 discovered_by = indian

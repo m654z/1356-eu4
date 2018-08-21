@@ -8,7 +8,7 @@ VID = "countries/Vidin.txt"
 TES = "countries/Thessaly.txt"
 MAC = "countries/Macedonia.txt"
 
-#British Isles 
+#British Isles
 YOK = "countries/York.txt"
 LNC = "countries/Lancaster.txt"
 
@@ -17,14 +17,14 @@ LNC = "countries/Lancaster.txt"
 
 #Eastern Europe
 
-#France 
+#France
 PBG = "countries/Palatinate of Burgundy.txt"
 ANJ = "countries/Anjou.txt"
 MNF = "countries/Monfortreval.txt"
 BLS = "countries/Blois.txt"
 FOZ = "countries/Forez.txt"
 POU = "countries/Poitou.txt"
-	
+
 #HRE
 GOR = "countries/Gorizia.txt"
 BRG = "countries/Berg.txt"
@@ -33,7 +33,7 @@ FRB = "countries/Freiburg.txt"
 THG = "countries/Thurgau.txt"
 WLI = "countries/Wallis.txt"
 RAE = "countries/Raetia.txt"
-	
+
 #Spain
 CTR = "countries/Trastamara.txt"
 MJO = "countries/Majorca.txt"
@@ -48,14 +48,14 @@ ARS = "countries/Artois.txt"
 RET = "countries/Rethel.txt"
 LOO = "countries/Loon.txt"
 
-#Russia 
+#Russia
 GLY = "countries/Galich.txt"
 MRM = "countries/Murom.txt"
 
-#Arabia	
+#Arabia
 JLR = "countries/Jalayirid.txt"
-		
-#Asia Minor		
+
+#Asia Minor
 CIC = "countries/Cilicia.txt"
 CNI = "countries/Canik.txt"
 HMD = "countries/Hamid.txt"
@@ -64,14 +64,14 @@ TEK = "countries/Teke.txt"
 
 #Levant
 ATO = "countries/Antioch.txt"
-	
+
 #Maghreb
 
 
 #Central Asia
 WHI = "countries/White Horde.txt"
 
-#Persia	
+#Persia
 CHB = "countries/Chobanids.txt"
 KHC = "countries/Khachen.txt"
 
@@ -97,6 +97,16 @@ SAG = "countries/Sagaing.txt"
 KAL = "countries/Kale.txt"
 KEN = "countries/Kengtung.txt"
 HKA = "countries/Hkamti Long.txt"
+SIN = "countries/Singapura.txt"
+LMR = "countries/Lamuri.txt"
+HRU = "Countries/Haru.txt"
+HTR = "Countries/Hatorusan.txt"
+ROK = "Countries/Rokan.txt"
+IND = "Countries/Indragiri.txt"
+PAH = "Countries/Pahang.txt"
+TDG = "Countries/Tidung.txt"
+MEL = "Countries/Melanau.txt"
+BEU = "Countries/Berau.txt"
 
 #Japan
 SCJ = "countries/SouthCourt.txt"
@@ -105,4 +115,3 @@ SCJ = "countries/SouthCourt.txt"
 MND = "countries/Mandla.txt"
 DEO = "countries/Deogarh.txt"
 SIR = "countries/Sirpur.txt"
-

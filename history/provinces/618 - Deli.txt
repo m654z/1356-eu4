@@ -1,10 +1,10 @@
 # 618 - Deli (1356)
 # Changes: ATJ/religion
 
-owner = ATJ
-controller = ATJ
+owner = HRU
+controller = HRU
 culture = sumatran
-religion = hinduism
+religion = animism
 capital = "Deli"
 trade_goods = spices
 hre = no
@@ -13,7 +13,7 @@ base_tax = 3
 base_production = 3
 base_manpower = 2
 is_city = yes
-add_core = ATJ
+add_core = HRU
 add_core = PSA
 
 discovered_by = chinese
@@ -28,4 +28,5 @@ discovered_by = ottoman
 1521.1.1 = {	owner = ATJ
 		controller = ATJ
 		remove_core = PSA
+		add_core = ATJ
 	   }

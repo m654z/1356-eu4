@@ -5,7 +5,7 @@ country_event = {
 	title = ban.1.t
 	desc = ban.1.d
 	picture = COUNTRY_COLLAPSE_eventPicture
-	fire_only_once = yes	
+	fire_only_once = yes
 
 	trigger = {
 		owns = 623
@@ -15,18 +15,18 @@ country_event = {
 		}
 		NOT = { religion = sunni }
 	}
-	
+
 	mean_time_to_happen = {
-		months = 1
+		months = 12
 	}
-	
+
 	option = {
 		name = ban.1.a
-			remove_core = 623
+		remove_core = 623
 		623 = {
 			add_core = BAN
-			cede_province = BAN
-			change_controller = BAN
+			add_unrest = 15
+			add_local_autonomy = 50
 		      }
 	        }
 }
@@ -36,32 +36,28 @@ country_event = {
 	title = ban.2.t
 	desc = ban.2.d
 	picture = COUNTRY_COLLAPSE_eventPicture
-	fire_only_once = yes	
+	fire_only_once = yes
 
 	trigger = {
 		owns = 624
-		OR = {
-			tag = MAJ
-			tag = SUN
-			tag = LAM
-			}
+		technology_group = chinese
 		624 = {
 			religion = sunni
 		}
 		NOT = { religion = sunni }
 	}
-	
+
 	mean_time_to_happen = {
 		months = 12
 	}
-	
+
 	option = {
 		name = ban.2.a
-			remove_core = 624
+		remove_core = 624
 		624 = {
 			add_core = BAN
-			cede_province = BAN
-			change_controller = BAN
+			add_unrest = 15
+			add_local_autonomy = 50
 		      }
 	        }
 }
@@ -71,27 +67,28 @@ country_event = {
 	title = ban.3.t
 	desc = ban.3.d
 	picture = COUNTRY_COLLAPSE_eventPicture
-	fire_only_once = yes	
+	fire_only_once = yes
 
 	trigger = {
 		owns = 630
 		technology_group = chinese
-		630 = { religion = sunni }
+		630 = {
+			religion = sunni
+		}
 		NOT = { religion = sunni }
 	}
-	
+
 	mean_time_to_happen = {
 		months = 12
 	}
-	
+
 	option = {
 		name = ban.3.a
 		remove_core = 630
 		630 = {
 			add_core = BAN
-			cede_province = BAN
-			change_controller = BAN
-
+			add_unrest = 15
+			add_local_autonomy = 50
 		      }
 	        }
 }
@@ -101,55 +98,59 @@ country_event = {
 	title = ban.4.t
 	desc = ban.4.d
 	picture = COUNTRY_COLLAPSE_eventPicture
-	fire_only_once = yes	
+	fire_only_once = yes
 
 	trigger = {
 		owns = 2687
 		technology_group = chinese
-		2687 = { religion = sunni }
+		2687 = {
+			religion = sunni
+		}
 		NOT = { religion = sunni }
 	}
-	
+
 	mean_time_to_happen = {
 		months = 12
 	}
-	
+
 	option = {
 		name = ban.4.a
 		remove_core = 2687
 		2687 = {
 			add_core = BAN
-			cede_province = BAN
-			change_controller = BAN
+			add_unrest = 15
+			add_local_autonomy = 50
 		      }
 	        }
 }
 
 country_event = {
 	id = ban.5
-	title = ban.4.t
-	desc = ban.4.d
+	title = ban.5.t
+	desc = ban.5.d
 	picture = COUNTRY_COLLAPSE_eventPicture
-	fire_only_once = yes	
+	fire_only_once = yes
 
 	trigger = {
 		owns = 621
 		technology_group = chinese
-		621 = { religion = sunni }
+		621 = {
+			religion = sunni
+		}
 		NOT = { religion = sunni }
 	}
-	
+
 	mean_time_to_happen = {
 		months = 12
 	}
-	
+
 	option = {
-		name = ban.4.a
+		name = ban.5.a
 		remove_core = 621
 		621 = {
 			add_core = BAN
-			cede_province = BAN
-			change_controller = BAN
+			add_unrest = 15
+			add_local_autonomy = 50
 		      }
 	        }
 }

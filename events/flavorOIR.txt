@@ -27,7 +27,7 @@ country_event = {
 			}
 			cede_province = OIR
 			change_controller = OIR
-			remove_core = KHA
+			remove_core = YUA
 			disband_rebels = nationalist_rebels
 			disband_rebels = patriot_rebels
 		}

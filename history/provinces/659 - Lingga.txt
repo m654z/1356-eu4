@@ -1,8 +1,8 @@
 # 659 - Lingga (1356)
 # Changes: SRI/religion
 
-owner = SRI
-controller = SRI
+owner = MAJ
+controller = MAJ
 culture = sumatran
 religion = hinduism
 capital = "Lingga"
@@ -13,6 +13,7 @@ base_tax = 1
 base_production = 1
 base_manpower = 1
 is_city = yes
+add_core = MAJ
 add_core = SRI
 
 discovered_by = chinese
@@ -20,7 +21,7 @@ discovered_by = indian
 discovered_by = muslim
 discovered_by = ottoman
 
-1408.1.1 = { owner = SAK add_core = SAK controller = SAK remove_core = SRI }
+1408.1.1 = { owner = SAK add_core = SAK controller = SAK remove_core = SRI remove_core = MAJ }
 1405.1.1 = { discovered_by = MNG }
 1500.1.1 = { religion = sunni }
 1509.1.1 = { discovered_by = POR }

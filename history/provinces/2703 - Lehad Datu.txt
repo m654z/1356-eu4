@@ -1,9 +1,9 @@
 # 2703 - Lehad Datu (1356)
 # Changes: SUL/religion
 
-owner = SUL
-controller = SUL
-add_core = SUL
+owner = TDG
+controller = TDG
+add_core = TDG
 culture = bornean
 religion = animism
 capital = "Lehad Datu"

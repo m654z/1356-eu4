@@ -5,7 +5,7 @@ country_event = {
 	title = bli.1.t
 	desc = bli.1.d
 	picture = COUNTRY_COLLAPSE_eventPicture
-	fire_only_once = yes	
+	fire_only_once = yes
 
 	trigger = {
 		technology_group = chinese
@@ -17,21 +17,27 @@ country_event = {
 		religion = hinduism
 		631 = { religion = hinduism }
 	}
-	
+
 	mean_time_to_happen = {
-		months = 12
+		months = 120
 	}
-	
+
 	option = {
 		name = bli.1.a
-		remove_core = 631
 		631 = {
 			add_core = BLI
 			cede_province = BLI
 			change_controller = BLI
 
 		      }
+		2693 = {
+			add_core = BLI
+			cede_province = BLI
+			change_controller = BLI
+
+					}
 	        }
+
 }
 
 country_event = {
@@ -39,7 +45,7 @@ country_event = {
 	title = bli.2.t
 	desc = bli.2.d
 	picture = COUNTRY_COLLAPSE_eventPicture
-	fire_only_once = yes	
+	fire_only_once = yes
 
 	trigger = {
 		owns = 631
@@ -47,18 +53,23 @@ country_event = {
 		631 = { religion = sunni }
 		NOT = { religion = sunni }
 	}
-	
+
 	mean_time_to_happen = {
-		months = 12
+		months = 120
 	}
-	
+
 	option = {
 		name = bli.2.a
-		remove_core = 631
 		631 = {
 			add_core = BLI
 			cede_province = BLI
 			change_controller = BLI
+		      }
+		2693 = {
+			add_core = BLI
+			cede_province = BLI
+			change_controller = BLI
+
 		      }
 	        }
 }
@@ -68,23 +79,23 @@ country_event = {
 	title = bli.3.t
 	desc = bli.3.d
 	picture = CITY_DEVELOPMENT_eventPicture
-	fire_only_once = yes	
+	fire_only_once = yes
 
 	trigger = {
 		tag = BLI
 		religion = hinduism
 		MAJ = { exists = no }
 	}
-	
+
 	mean_time_to_happen = {
-		months = 12
+		months = 120
 	}
-	
+
 	option = {
 		name = bli.3.a
 		add_prestige = 5
 		631 = {
-			add_base_manpower = 30
+			add_base_manpower = 3
 			add_base_tax = 2
 
 		}
