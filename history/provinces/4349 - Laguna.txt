@@ -1,4 +1,4 @@
-﻿#4349 - Laguna
+#4349 - Laguna
 
 owner = TDO
 controller = TDO
