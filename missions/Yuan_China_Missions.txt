@@ -191,7 +191,7 @@ yuan_quell_red_turban_rebellion_toqto_crush_rebels_2_group = { #Toqto's Return -
 		}
 	}
 	yua_quell_red_turban_rebellion_toqto_far_southern_china_mission = { #Begin to Crush the Rebellion - Far Southern China
-		icon =  mission_conquer_5_states
+		icon = mission_non-western_calvary_raid
 		required_missions = { yua_quell_red_turban_rebellion_toqto_secured_current_areas_china_mission }
 		position = 10
 		provinces_to_highlight = {
@@ -568,7 +568,7 @@ yuan_quell_red_turban_rebellion_toqto_crush_rebels_group = { #Toqto's Return - C
 			add_inflation = 1
 		}
 	}
-	yua_quell_red_turban_rebellion_toqto_end = { #Secured China from the rebellion, the Empire is saved...Or is it? -Turns into Noble Rebellion Path-
+	yua_quell_red_turban_rebellion_toqto_end = { #Secured China from the rebellion, the Empire is saved...Or is it? -Turns into Noble Rebellion Path- #SCRIPT THAT PART STILL
 		icon =  mission_chinese_general_riding
 		required_missions = { yua_quell_red_turban_rebellion_toqto_secured_all_south_china_mission }
 		position = 12
@@ -797,7 +797,7 @@ yuan_quell_red_turban_rebellion_toqto_crush_rebels_3_group = { #Toqto's Return -
 		}
 	}
 	yua_quell_red_turban_rebellion_toqto_southern_china_coast_mission = { #Begin to Crush the Rebellion - Southern China Coast
-		icon =  mission_conquer_5_states
+		icon = mission_non-western_calvary_raid
 		required_missions = { yua_quell_red_turban_rebellion_toqto_secured_current_areas_china_mission }
 		position = 10
 		provinces_to_highlight = {

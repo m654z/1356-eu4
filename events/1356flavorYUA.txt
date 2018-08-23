@@ -343,7 +343,7 @@ country_event = { #Begining of Noble Rebellion Plot
 	}
 }
 
-country_event = { #Loyal Nobles and Spies hear more.
+country_event = { #Loyal Nobles and Spies hear more. #My work on Toqto ends here, still need to script this and the rest of the path to Noble elected Emperor Government/Noble Rebellion
 	id = yua.7
 	title = yua.7.t
 	desc = yua.7.d
@@ -354,15 +354,18 @@ country_event = { #Loyal Nobles and Spies hear more.
 
 	option = { #Nobility Suspected #trigger event to cause noblity uprising
 		name = yua.7.a
+		ai_chance = { factor = 80 }
 		
 	}
 	option = { #Toqto suspected #Toqto may be removed from power soon
 		name = yua.7.b
+		ai_chance = { factor = 10 }
 		
 		
 	}
 	option = { #Trait response #Cause only bad things!
 		name = yua.7.c
+		ai_chance = { factor = 10 }
 		trigger = {
 			OR = {
 				ruler_has_personality = drunkard_personality
