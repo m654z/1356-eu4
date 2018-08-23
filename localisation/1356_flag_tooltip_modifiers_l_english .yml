@@ -87,10 +87,13 @@
  left_hansa_reform: "Left the Hansa"
  passed_reform_opposed: "Passed a Reform I was Opposed to"
  sap_converted: "Sapmi Converted"
- 1356_yua_alatic_provinces: "Asked Local Nomadic Tribes for Loyalty"
+ 1356_yua_alatic_provinces: " Nomadic Tribe Loyalty"
  yuan_starting_modifiers: "Nomadic Brothers"
  1356_yua_alatic_provinces_angry_modifier: "Scorned our Nomadic Brothers"
  1356_yua_alatic_provinces_happy_modifier: "Rewarded our Nomadic Brothers"
+ fall_of_yuan_mandate_toqto: "Fall of the Yuan Empire - Toqto'as Return"
+ yuan_toqo_mission_reconquer_china_reward: "Subdued The Red Turbans"
+ yua_ruler_distrusts_spies: "Distrust in Spies"
 
  
  #Policies
@@ -125,6 +128,8 @@
  yuan_toqto_returns_flag: "The former General Toqto'a returns!"
  yuan_toqto_killed_flag: "Hung former General Toqto'a!"
  yua_chinese_minor_toqto_returned_flag: "General Toqto'a Returned!"
+ yua_took_in_peasants_toqto_flag: "Peasants Joined The Yuan Army!"
+ toqto_noble_rebellion_plot_fired_flag: "Nobles Rebellion"
  
  #Scripted Effects
  yuan_culture_convert_decision_effect: "Our King, heir, and Mongolian provinces adopt a new culture. One more...Chinese?"
@@ -187,3 +192,8 @@
  yua4a_toqto_returns_tooltip: "By siding with Toqto'a we choose to go down the Toqto's return Mission tree."
  yua4b_killed_toqto_tooltip: "By killing Toqto'a we choose to go down the Lady Ki path of our Mission tree."
  yua.6_tooltip: "Yuan Receives 5,000 deserters as recruits"
+ yua4a_toqto_returns_nobles_displeased_tooltip: "The Nobles are displeased with going against their previous actions and decisions. Only bad things can come from this..."
+ yuan_toqo_mission_reconquer_china_reward_tooltip: "By Subduing the Red Turbans in this area we are guaranteed that no other rebels will spawn here"
+ mongol_debuff_tooltip: "By the early 14th Century, the mighty Mongol Empire, now led by the Yuan Dynasty, had fallen into rapid decline. The introduction of excessive taxation alienated the Han peoples, causing open rebellion. Those armies that were left were poorly trained, disillusioned to their cause, and led by increasingly corrupt warlords."
+ yua6nobleplot_tooltip: "Our spies and loyal Nobles will update us as they hear more."
+ 

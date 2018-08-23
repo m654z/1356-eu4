@@ -218,12 +218,12 @@ disunited_tribes = {
 fall_of_yuan_mandate = {
 	years_of_nationalism = 5
 	global_unrest = 5
-	culture_conversion_cost = 0.25
-	stability_cost_modifier = 0.25
-	core_creation = 0.15
+	culture_conversion_cost = 0.35
+	stability_cost_modifier = 0.35
+	core_creation = 0.25
 	interest = 1
 	mil_tech_cost_modifier = 0.2
-	enemy_core_creation = -0.25
+	enemy_core_creation = -0.35
 	discipline = -0.10
 	manpower_recovery_speed = -0.20
 	defensiveness = -0.15
@@ -234,5 +234,29 @@ fall_of_yuan_mandate = {
 
 yuan_starting_modifiers = {
 	num_accepted_cultures = 3
-	promote_culture_cost = 4
+	promote_culture_cost = 5
+}
+
+fall_of_yuan_mandate_toqto = {
+	years_of_nationalism = 5
+	culture_conversion_cost = 0.35
+	stability_cost_modifier = 0.35
+	core_creation = 0.25
+	interest = 1
+	mil_tech_cost_modifier = 0.1
+	enemy_core_creation = -0.30
+	manpower_recovery_speed = 0.15
+	defensiveness = -0.05
+	recover_army_morale_speed = 0.05
+}
+
+mongol_debuff = {
+	discipline = -0.1
+	land_morale = -0.1
+	war_exhaustion = 0.05
+}
+
+yua_ruler_distrusts_spies = {
+	spy_offence = -0.15
+	global_spy_defence = -0.15
 }

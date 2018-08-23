@@ -172,8 +172,13 @@ historical_friend = CHG
 1356.1.1 = { 
 	add_country_modifier = { 
 		name = yuan_starting_modifiers
-		duration = 3650
+		duration = -1
 		desc = yuan_starting_modifiers_tooltip
+	}
+	add_country_modifier = { 
+		name = mongol_debuff
+		duration = -1
+		desc = mongol_debuff_tooltip
 	}
 }
 
@@ -219,3 +224,5 @@ historical_friend = CHG
 		mil = 6
 	}
 }
+
+1400.1.1 = { remove_country_modifier = mongol_debuff }

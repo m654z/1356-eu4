@@ -83,7 +83,7 @@ country_event = { #Nomads want their dues now...
 		NOT = { is_year = 1500 }
 		is_emperor_of_china = yes
 		has_country_flag = yuan_asked_nomads_help_flag #From Decision
-		has_country_flag = red_turban_rebellion_over_flag #Doesn't exist yet
+		has_country_flag = red_turban_rebellion_over_flag 
 	}
 	
 	mean_time_to_happen = {
@@ -163,9 +163,10 @@ country_event = { #Toqto Returns!
 			is_at_war = yes
 			num_of_rebel_armies = 3
 		}
+		NOT = { has_country_flag = yuan_toqto_returns_flag }
 	}
 	mean_time_to_happen = {
-		months = 50
+		months = 100
 		modifier = {
 			factor = 0.5
 			war_score = -25
@@ -212,11 +213,17 @@ country_event = { #Toqto Returns!
 		name = yua.4.a
 		ai_chance = { factor = 30 }
 		custom_tooltip = yua4a_toqto_returns_tooltip
+		custom_tooltip = yua4a_toqto_returns_nobles_displeased_tooltip
 		set_country_flag = yuan_toqto_returns_flag
 		add_stability = -1
 		add_prestige = -50
 		add_meritocracy = -15
 		add_manpower = 15
+		remove_country_modifier = fall_of_yuan_mandate
+		add_country_modifier = {
+			name = "fall_of_yuan_mandate_toqto"
+			duration = -1
+		}
 		define_advisor = {
 			type = army_reformer
 			name = "Toqto'a"
@@ -235,10 +242,7 @@ country_event = { #Toqto Returns!
 			siege = 2
 		}
 		add_historical_rival = KOR
-		spawn_rebels = {
-			type = noble_rebels
-			size = 2
-		}
+		KOR = { add_historical_rival = YUA }
 	}
 	option = { #I thought we exiled you! Guards! Kill this man!
 		name = yua.4.b
@@ -263,60 +267,114 @@ country_event = { #Toqto Returns!
 	}
 }
 
-country_event = { #Chinese Minors Lose manpower from Toqto's Return
+country_event = { #Peasants flock to Toqto'as Side!
 	id = yua.5
 	title = yua.5.t
 	desc = yua.5.d
 	picture = HORDE_ON_HORSEBACK_eventPicture
 	
-	fire_only_once = yes
 
 	trigger = {
-		culture_group = east_asian
-		NOT = { is_year = 1400 }
-		NOT = { has_country_flag = yua_chinese_minor_toqto_returned_flag }
-		NOT = { has_country_flag = red_turban_rebellion_over_flag } #Doesn't exist yet
+		tag = YUA
 		has_country_flag = yuan_toqto_returns_flag
-		is_emperor_of_china = no
-		NOT = { tag = YUA }
-		NOT = { tag = QNG }
-		NOT = { tag = MCH }
-		manpower = 5
+		NOT = { is_year = 1400 }
+		NOT = { has_country_flag = red_turban_rebellion_over_flag } 
+		is_emperor_of_china = yes
+		NOT = { manpower = 10 }
 	}
 	
 	mean_time_to_happen = {
-		days = 30
+		months = 100
+		modifier = {
+			factor = 0.1
+			num_of_rebel_armies = 20
+		}
+		modifier = {
+			factor = 0.5
+			manpower_percentage = 0.1
+		}
+		modifier = {
+			factor = 2
+			has_country_flag = yua_took_in_peasants_toqto_flag
+		}
+		modifier = {
+			factor = 1000
+			manpower_percentage = 1
+		}
 	}
 	
-	option = { #Curses! We need a plan and fast!
+	option = { #Peasants flock to your side!
 		name = yua.5.a
-		set_country_flag = yua_chinese_minor_toqto_returned_flag
-		add_manpower = -5
+		set_country_flag = yua_took_in_peasants_toqto_flag
+		add_manpower = 10
 		add_prestige = -10
-		YUA = { 
-			country_event = { 
-				id = yua.6
-				days = 30
-				tooltip = yua.6_tooltip
-			}
+	}
+}
+
+country_event = { #Begining of Noble Rebellion Plot
+	id = yua.6
+	title = yua.6.t
+	desc = yua.6.d
+	picture = SPY_eventPicture
+	
+	fire_only_once = yes
+
+	trigger = {
+		tag = YUA
+		is_emperor_of_china = yes
+		has_country_flag = yuan_toqto_returns_flag
+		has_country_flag = red_turban_rebellion_over_flag
+		NOT = { has_country_flag = toqto_noble_rebellion_plot_fired_flag }#Doesn't exist yet
+	}
+	
+	mean_time_to_happen = {
+		months = 50
+	}
+	
+	option = { #This can not be good...
+		name = yua.6.a
+		add_meritocracy = -10
+		country_event = { 
+			id = yua.7
+			days = 180
+			random = 180
+			tooltip = yua6nobleplot_tooltip
 		}
 	}
 }
 
-country_event = { #Yuan receives manpower from Chinese Minors
-	id = yua.6
-	title = yua.6.t
-	desc = yua.6.d
-	picture = HORDE_ON_HORSEBACK_eventPicture
+country_event = { #Loyal Nobles and Spies hear more.
+	id = yua.7
+	title = yua.7.t
+	desc = yua.7.d
+	picture = ACCUSATION_eventPicture
 	
 	fire_only_once = yes
 	is_triggered_only = yes
 
-	
-	option = { #Perfect!
-		name = yua.6.a
-		YUA = { 
-			add_manpower = 5
+	option = { #Nobility Suspected #trigger event to cause noblity uprising
+		name = yua.7.a
+		
+	}
+	option = { #Toqto suspected #Toqto may be removed from power soon
+		name = yua.7.b
+		
+		
+	}
+	option = { #Trait response #Cause only bad things!
+		name = yua.7.c
+		trigger = {
+			OR = {
+				ruler_has_personality = drunkard_personality
+				ruler_has_personality = babbling_buffoon_personality
+			}
 		}
+		add_country_modifier = { #He's going Crazy
+			name = yua_ruler_distrusts_spies
+			duration = 1825
+		}
+		add_prestige = -10
+		#Next Event from distrusting Nobility here
+		
 	}
 }

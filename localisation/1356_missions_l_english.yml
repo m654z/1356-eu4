@@ -820,7 +820,22 @@
  yua_quell_red_turban_rebellion_mission_6_title: "Hire More Generals"
  yua_quell_red_turban_rebellion_internal_mission_1_title: "Hire an Advisor"
  yua_quell_red_turban_rebellion_naval_mission_1_title: "Dwarf the Rebellion's Navy"
+ yua_quell_red_turban_rebellion_toqto_mission_1_title: "Hire a General"
+ yua_quell_red_turban_rebellion_toqto_mission_2_title: "A Sizeable Reserve"
+ yua_quell_red_turban_rebellion_toqto_mission_3_title: "Propose a Truce"
+ yua_quell_red_turban_rebellion_toqto_mission_4_title: "Crush our Rebels"
+ yua_quell_red_turban_rebellion_toqto_north_eastern_central_china_mission_title: "Central Northern China"
+ yua_quell_red_turban_rebellion_toqto_north_eastern_china_mission_title: "North Eastern China"
+ yua_quell_red_turban_rebellion_toqto_far_west_china_mission_title: "Xinan Region"
+ yua_quell_red_turban_rebellion_toqto_far_central_china_mission_title: "Central China"
+ yua_quell_red_turban_rebellion_toqto_north_western_china_mission_title: "North Western China"
+ yua_quell_red_turban_rebellion_toqto_secured_current_areas_china_mission_title: "Secured North & Western China"
+ yua_quell_red_turban_rebellion_toqto_southern_china_coast_mission_title: "Southern China"
+ yua_quell_red_turban_rebellion_toqto_far_southern_china_mission_title: "Far Southern China"
+ yua_quell_red_turban_rebellion_toqto_secured_all_south_china_mission_title: "Secured Southern China"
+ yua_quell_red_turban_rebellion_toqto_end_title: "Ending the Red Turban Rebellion"
   
+ 
  #Generic Missions
  1356_generic_make_a_friend_title: "Make an Ally"
  1356_generic_make_a_friend_desc: "In these unstable times of war we must have foreign allies or be doomed to be surrounded by those who wish our lands, with no one to help"

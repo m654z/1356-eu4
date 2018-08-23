@@ -59,6 +59,7 @@ country_decisions = {
 			add_treasury = -250
 			add_prestige = 25
 			custom_tooltip = yua_fix_government_tooltip
+			remove_country_modifier = mongol_debuff
 			
 		}
 		ai_will_do = {

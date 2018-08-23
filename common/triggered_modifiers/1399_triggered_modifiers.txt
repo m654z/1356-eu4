@@ -91,24 +91,24 @@ hundred_years_war = {
 #	religious_unity = -0.25
 #}
 
-mongol_debuff = {
-
-	potential = {
-		tag = YUA
-	}
-	
-	trigger = {
-		government = celestial_empire
-		custom_trigger_tooltip = { 
-			tooltip = not_government_fixed_flag
-			NOT = { has_country_flag = government_fixed }
-		}
-	}
-	
-	discipline = -0.1
-	land_morale = -0.1
-	war_exhaustion = 0.05
-}
+#mongol_debuff = {
+#
+#	potential = {
+#		tag = YUA
+#	}
+#	
+#	trigger = {
+#		government = celestial_empire
+#		custom_trigger_tooltip = { 
+#			tooltip = not_government_fixed_flag
+#			NOT = { has_country_flag = government_fixed }
+#		}
+#	}
+#	
+#	discipline = -0.1
+#	land_morale = -0.1
+#	war_exhaustion = 0.05
+#}
 
 highland_charge = {
 	potential = {
