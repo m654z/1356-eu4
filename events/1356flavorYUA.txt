@@ -25,6 +25,22 @@ country_event = {
 				name = "fall_of_yuan_mandate"
 				duration = 5475
 		}
+		central_asia_region = {
+			discover_country = YUA
+		}
+		khorasan_region = {
+			discover_country = YUA
+		}
+		persia_region = {
+			discover_country = YUA
+		}
+		crimea_region = {
+			discover_country = YUA
+		}
+		caucasia_region = {
+			discover_country = YUA
+		}
+		
 	}
 }
 
@@ -70,7 +86,7 @@ country_event = {
 	}
 }
 
-country_event = { #Nomads want their dues now...
+country_event = { #Nomads want their dues now... -Succeeded, still emperor-
 	id = yua.2
 	title = yua.2.t
 	desc = yua.2.d
@@ -116,34 +132,6 @@ country_event = { #Nomads want their dues now...
 		remove_accepted_culture = oirats
 		remove_accepted_culture = chahar
 		remove_accepted_culture = buryat
-	}
-}
-
-country_event = { 
-	id = yua.3
-	title = yua.3.t
-	desc = yua.3.d
-	picture = HORDE_ON_HORSEBACK_eventPicture
-	
-	fire_only_once = yes
-
-	trigger = {
-		always = no
-		tag = YUA
-		NOT = { is_year = 1500 }
-		is_emperor_of_china = yes
-		NOT = { has_country_flag = red_turban_rebellion_over_flag } #Doesn't exist yet
-	}
-	
-	mean_time_to_happen = {
-		days = 30
-	}
-	
-	option = {
-		name = yua.3.a
-	}
-	option = {
-		name = yua.3.b
 	}
 }
 
@@ -381,3 +369,300 @@ country_event = { #Loyal Nobles and Spies hear more. #My work on Toqto ends here
 		
 	}
 }
+
+country_event = { #Nomads Rebel from the loss of mandate 
+	id = yua.8
+	title = yua.8.t
+	desc = yua.8.d
+	picture = HORDE_ON_HORSEBACK_eventPicture
+	
+	fire_only_once = yes
+
+	trigger = {
+		tag = YUA
+		OR = {
+			NOT = { exists = KHA }
+			AND = {
+				exists = KHA
+				NOT = { num_of_cities = 7 }
+			}
+		}
+		NOT = { is_year = 1444 }
+		is_emperor_of_china = no
+		has_country_flag = yuan_asked_nomads_help_flag
+		NOT = { owns = 1816 }
+		technology_group = nomad_group
+		
+	}
+	
+	mean_time_to_happen = {
+		months = 30
+	}
+	
+	option = { #We shall fight!
+		name = yua.8.a
+		ai_chance = { factor = 100 }
+		YUA = { #Remove stats, remove culture acceptance
+			add_stability = -2
+			add_prestige = -25
+			add_horde_unity = -15	
+			remove_accepted_culture = oirats
+			remove_accepted_culture = chahar
+			remove_accepted_culture = manchu
+			remove_accepted_culture = buryat
+		}
+		OIR = { #Remove Oirat Cores
+			remove_core = 717
+			remove_core = 720
+			remove_core = 4221
+			remove_core = 709
+			remove_core = 708
+		}
+		YUA = { #Remove Yuan Cores on China, they're dead anyways.
+			south_china_region = { remove_core = YUA }
+			north_china_region = { remove_core = YUA }
+			xinan_region = { remove_core = YUA }
+		
+		}
+		if = { #Jianzhou revolts
+			limit = {
+				OR = {
+					AND = {
+						NOT = { exists = MJZ }
+					}
+					AND = {
+						exists = MJZ
+						MJZ = { NOT = { num_of_cities = 10 } }
+					}
+				}
+			}
+			release = MJZ
+		}
+		if = { #Haixi revolts
+			limit = {
+				OR = {
+					AND = {
+						NOT = { exists = MHX }
+					}
+					AND = {
+						exists = MHX
+						MHX = { NOT = { num_of_cities = 6 } }
+					}
+				}
+			}
+			release = MHX
+		}
+		if = { #Yeren revolts
+			limit = {
+				OR = {
+					AND = {
+						NOT = { exists = MYR }
+					}
+					AND = {
+						exists = MYR
+						MYR = { NOT = { num_of_cities = 11 } }
+					}
+				}
+			}
+			release = MYR
+		}
+		if = { #Buryatia revolts
+			limit = {
+				OR = {
+					AND = {
+						NOT = { exists = BRT }
+					}
+					AND = {
+						exists = BRT
+						BRT = { NOT = { num_of_cities = 3 } }
+					}
+				}
+			}
+			release = BRT
+		}
+		if = { #Korchin revolts
+			limit = {
+				OR = {
+					AND = {
+						NOT = { exists = KRC }
+					}
+					AND = {
+						exists = KRC
+						KRC = { NOT = { num_of_cities = 10 } }
+					}
+				}
+			}
+			release = KRC
+		}
+		if = { #Oirat revolts
+			limit = {
+				OR = {
+					AND = {
+						NOT = { exists = OIR }
+					}
+					AND = {
+						exists = OIR
+						OIR = { NOT = { num_of_cities = 14 } }
+					}
+				}
+			}
+			release = OIR
+		}
+		YUA = { #tag swap
+			change_tag = KHA
+		}
+		KHA = {
+			set_country_flag = final_fall_of_yuan_flag
+		}
+	}
+	option = { #We shall fight! -Switch Sides-
+		name = yua.8.b
+		ai_chance = { factor = 0 }
+		YUA = { #Remove stats, remove culture acceptance
+			add_stability = -2
+			add_prestige = -25
+			add_horde_unity = -15	
+			remove_accepted_culture = oirats
+			remove_accepted_culture = chahar
+			remove_accepted_culture = manchu
+			remove_accepted_culture = buryat
+		}
+		OIR = { #Remove Oirat Cores
+			remove_core = 717
+			remove_core = 720
+			remove_core = 4221
+			remove_core = 709
+			remove_core = 708
+		}
+		south_china_region = { remove_core = YUA }
+		north_china_region = { remove_core = YUA }
+		xinan_region = { remove_core = YUA }
+		if = { #Jianzhou revolts
+			limit = {
+				OR = {
+					AND = {
+						NOT = { exists = MJZ }
+					}
+					AND = {
+						exists = MJZ
+						MJZ = { NOT = { num_of_cities = 10 } }
+					}
+				}
+			}
+			release = MJZ
+		}
+		if = { #Haixi revolts
+			limit = {
+				OR = {
+					AND = {
+						NOT = { exists = MHX }
+					}
+					AND = {
+						exists = MHX
+						MHX = { NOT = { num_of_cities = 6 } }
+					}
+				}
+			}
+			release = MHX
+		}
+		if = { #Yeren revolts
+			limit = {
+				OR = {
+					AND = {
+						NOT = { exists = MYR }
+					}
+					AND = {
+						exists = MYR
+						MYR = { NOT = { num_of_cities = 11 } }
+					}
+				}
+			}
+			release = MYR
+		}
+		if = { #Buryatia revolts
+			limit = {
+				OR = {
+					AND = {
+						NOT = { exists = BRT }
+					}
+					AND = {
+						exists = BRT
+						BRT = { NOT = { num_of_cities = 3 } }
+					}
+				}
+			}
+			release = BRT
+		}
+		if = { #Korchin revolts
+			limit = {
+				OR = {
+					AND = {
+						NOT = { exists = KRC }
+					}
+					AND = {
+						exists = KRC
+						KRC = { NOT = { num_of_cities = 10 } }
+					}
+				}
+			}
+			release = KRC
+		}
+		if = { #Oirat revolts
+			limit = {
+				OR = {
+					AND = {
+						NOT = { exists = OIR }
+					}
+					AND = {
+						exists = OIR
+						OIR = { NOT = { num_of_cities = 14 } }
+					}
+				}
+			}
+			release = OIR
+		}
+		switch_tag = OIR
+		YUA = { #tag swap
+			change_tag = KHA
+		}
+		KHA = {
+			set_country_flag = final_fall_of_yuan_flag
+		}
+		
+	}
+}
+
+country_event = { #Event to turn remains of Yuan Tengrist if desired
+	id = yua.9
+	title = yua.9.t
+	desc = yua.9.d
+	picture = HORDE_ON_HORSEBACK_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = KHA
+		has_country_flag = final_fall_of_yuan_flag
+		NOT = { is_year = 1444 }
+		religion = confucianism
+		NOT = { religion = tengri_pagan_reformed }
+	}
+	
+	mean_time_to_happen = {
+		months = 30
+	}
+	
+	option = { #We stay Confucist!
+		name = yua.9.a
+		add_prestige = 5
+	}
+	option = { #Tengrism it is! 
+		yua.9.b
+		change_religion = tengri_pagan_reformed
+		add_stability = -2
+		add_prestige = -10
+		add_horde_unity = -20
+		
+	}
+}
+

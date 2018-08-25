@@ -190,7 +190,7 @@ country_decisions = {
 		allow = {
 			is_subject = no
 			has_country_modifier = fall_of_yuan_mandate
-			years_of_income = 1.0
+			years_of_income = 0.25
 			
 		}
 		
@@ -204,7 +204,7 @@ country_decisions = {
 		}
 		
 		ai_will_do = {
-			factor = 10
+			factor = 1000
 		}
 	
 	

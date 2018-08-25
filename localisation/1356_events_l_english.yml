@@ -533,7 +533,7 @@
  yua.6.a: "Interesting. Update me as more is discovered."
  yua.7.t: "Whispers in the Court - More Information Discovered."
  yua.7.d: "In the early morning [YUA.Monarch.GetName] is awoken by his spies with more information on the whispers in the Imperial Court. It is urgent! \n\nYour spies have confirmed that the whispering in the court has indeed been done by the nobility! They are upset that a man who could be corrupting their Emperor and usurping his throne is back in the court! They fear for the safety of you my [Yua.Monarch.GetTitle]! \n\nHowever it is to be kept in mind we've seen Toqto'a do absolutly nothing to show us he could be plotting against you my [YUA.Monarch.GetTitle]! He has not only saved your Empire from fadding into the Halls of History, but he has restored it to its former glory! We should be thanking him not calling him out!"
- yua.7.a: "Cursed NobilitY! Those Blasted traitors!"
+ yua.7.a: "Cursed Nobility! Those Blasted traitors!"
  yua.7.b: "Toqto'a is the Tratior!"
  yua.7.c: "Trust no one! Not even my spies..."
  
