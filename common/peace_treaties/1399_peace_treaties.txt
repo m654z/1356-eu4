@@ -69,7 +69,7 @@ end_sound_toll = {
 	requires_demand_independence = no
 	is_make_subject = no
 	requires_is_allowed = no
-	
+
 	is_visible = {
 		NOT = { has_global_flag = has_dismantled_hansa }
 		FROM = { tag = HSA }
