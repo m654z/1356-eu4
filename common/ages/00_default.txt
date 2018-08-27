@@ -224,7 +224,7 @@ age_of_feudalism = {
 					government_rank = 3
 					NOT = { great_power_rank = 8 }
 					AND = {
-						NOT = { has_country_flag = chinese_red_turban_rebellion_over_flag }
+						NOT = { has_country_flag = red_turban_rebellion_over_flag }
 						culture_group = east_asian
 					}
 				}
