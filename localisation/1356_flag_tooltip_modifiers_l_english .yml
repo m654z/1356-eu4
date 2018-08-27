@@ -94,6 +94,7 @@
  fall_of_yuan_mandate_toqto: "Fall of the Yuan Empire - Toqto'as Return"
  yuan_toqo_mission_reconquer_china_reward: "Subdued The Red Turbans"
  yua_ruler_distrusts_spies: "Distrust in Spies"
+ yua_nobles_succeed_plot_modifier: "Yuan Noble Plot Success!"
 
  
  #Policies
@@ -131,6 +132,11 @@
  yua_took_in_peasants_toqto_flag: "Peasants Joined The Yuan Army!"
  toqto_noble_rebellion_plot_fired_flag: "Nobles Rebellion"
  final_fall_of_yuan_flag: "Final Fall of Yuan"
+ yuan_bribed_noble_rebellion_away_flag: "Bribed the Noble Rebellion Away"
+ yuan_noble_revolt_imminent_flag: "The Nobles Rebel!"
+ yuan_nobles_succeed_plot_flag: "Nobles are Victorious!"
+ yua_noble_plot_success_modifier_desc: "The Nobles rose up in response to Toqto'a returning to save Yuan from destruction! They firmly believed and still believe that Toqto has a plot to become the next Emperor and overthrow the existing dynasty! As a result, they now have the power to choose which Heir to support."
+ yuan_noble_plot_over_flag: "Noble Takeover ended!"
  
  #Scripted Effects
  yuan_culture_convert_decision_effect: "Our King, heir, and Mongolian provinces adopt a new culture. One more...Chinese?"
@@ -197,4 +203,4 @@
  yuan_toqo_mission_reconquer_china_reward_tooltip: "By Subduing the Red Turbans in this area we are guaranteed that no other rebels will spawn here"
  mongol_debuff_tooltip: "By the early 14th Century, the mighty Mongol Empire, now led by the Yuan Dynasty, had fallen into rapid decline. The introduction of excessive taxation alienated the Han peoples, causing open rebellion. Those armies that were left were poorly trained, disillusioned to their cause, and led by increasingly corrupt warlords."
  yua6nobleplot_tooltip: "Our spies and loyal Nobles will update us as they hear more."
- 
+ yua_event_12_bribe_tooltip: "We send bribes to all the suspected tratiors, this will surely solve all our problems and not make things way worse!"

@@ -260,3 +260,7 @@ yua_ruler_distrusts_spies = {
 	spy_offence = -0.15
 	global_spy_defence = -0.15
 }
+
+yua_nobles_succeed_plot_modifier = {
+
+}
