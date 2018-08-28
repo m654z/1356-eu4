@@ -678,7 +678,7 @@ country_event = { #Event to turn remains of Yuan Tengrist if desired
 	}
 }
 
-#Finished
+#Unfinished
 country_event = { #The Nobles are pressing demands! They demand they receive more power due to how uncontrolable the Emperor could become! However we can make a counter offer, the offer of death! But this may be bad, as all we'd lose is our heir has to be elected by the Nobles, but we elect the nobles...
 	id = yua.11
 	title = yua.11.t
@@ -689,7 +689,7 @@ country_event = { #The Nobles are pressing demands! They demand they receive mor
 	major = yes
 	
 	trigger = {
-	
+		always = no
 	
 	}
 	
@@ -1141,7 +1141,7 @@ country_event = { #Celestial Empire Noble Republic Election Event
 	
 	
 	trigger = {
-	
+		always = no
 	
 	}
 	
