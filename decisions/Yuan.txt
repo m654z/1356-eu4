@@ -1,5 +1,5 @@
 country_decisions = {
-	yua_fix_government = {
+	yua_fix_government = { #Restore our Power
 		major = yes
 		potential = {
 			tag = YUA
@@ -10,7 +10,7 @@ country_decisions = {
 			is_at_war = no
 			is_subject = no
 			num_of_cities = 75
-			core_percentage = 0.4
+#			core_percentage = 0.4
 			adm_power = 500
 			prestige = 0
 			NOT = { num_of_loans = 1 }
@@ -71,7 +71,8 @@ country_decisions = {
 		
 		potential = {
 			tag = YUA
-			is_emperor_of_china = yes	
+			is_emperor_of_china = yes
+			has_country_flag = { red_turban_rebellion_over_flag }
 			owns = 1816
 			NOT = { has_country_flag = yuan_quelled_chinese_rebellion_flag }
 		}
@@ -114,7 +115,6 @@ country_decisions = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
-
 			guangdong_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -169,13 +169,14 @@ country_decisions = {
 			remove_accepted_culture = khalkha
 			remove_accepted_culture = oirats
 			remove_accepted_culture = chahar
-			set_country_flag = yuan_quelled_chinese_rebellion_flag
+			remove_accepted_culture = buryat
+			set_country_flag = yuan_quelled_chinese_rebellion_flag #Prevents this being taken again, and can cause OIR.1 to trigger if at war with CHG.
 		}
 		ai_will_do = {
 			factor = 100
 		}
 	}
-	yua_ask_nomadic_tribes_for_loyalty_decision = {
+	yua_ask_nomadic_tribes_for_loyalty_decision = { #Ask the Nomadic Tribes for Support
 		major = yes
 		potential = {
 			tag = YUA

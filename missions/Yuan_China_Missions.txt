@@ -191,7 +191,7 @@ yuan_quell_red_turban_rebellion_toqto_crush_rebels_2_group = { #Toqto's Return -
 		}
 	}
 	yua_quell_red_turban_rebellion_toqto_far_southern_china_mission = { #Begin to Crush the Rebellion - Far Southern China
-		icon = mission_non-western_calvary_raid
+		icon = mission_non-western_cavalry_raid
 		required_missions = { yua_quell_red_turban_rebellion_toqto_secured_current_areas_china_mission }
 		position = 10
 		provinces_to_highlight = {
@@ -271,7 +271,6 @@ yuan_quell_red_turban_rebellion_group = { #Starting Mission - Get a Feel for the
 	
 	potential = { 
 		tag = YUA
-
 	}
 	has_country_shield = yes
 
@@ -797,7 +796,7 @@ yuan_quell_red_turban_rebellion_toqto_crush_rebels_3_group = { #Toqto's Return -
 		}
 	}
 	yua_quell_red_turban_rebellion_toqto_southern_china_coast_mission = { #Begin to Crush the Rebellion - Southern China Coast
-		icon = mission_non-western_calvary_raid
+		icon = mission_non-western_cavalry_raid
 		required_missions = { yua_quell_red_turban_rebellion_toqto_secured_current_areas_china_mission }
 		position = 10
 		provinces_to_highlight = {
@@ -905,6 +904,7 @@ yuan_quell_red_turban_rebellion_toqto_crush_rebels_4_group = { #Toqto's Return -
 	ai = yes
 	
 	potential = { 
+		always = no
 		tag = YUA
 		has_country_flag = yuan_toqto_returns_flag
 		NOT = { has_country_flag = yuan_toqto_killed_flag }

@@ -110,3 +110,5 @@ yuan_noble_rebels = {
 		add_meritocracy = -10
 	}
 }
+
+

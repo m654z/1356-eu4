@@ -1,5 +1,9 @@
 namespace = yua
 
+###############################################################################
+######yua.0 written by Genomega, everything else written by Count Flandy#######
+###############################################################################
+
 #Yuan event explaining everything
 country_event = {
 	id = yua.0
