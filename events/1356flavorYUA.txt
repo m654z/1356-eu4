@@ -221,7 +221,7 @@ country_event = { #Toqto Returns!
 		add_prestige = -50
 		add_meritocracy = -15
 		add_manpower = 15
-		remove_country_modifier = fall_of_yuan_mandate
+		remove_country_modifie`r = fall_of_yuan_mandate
 		add_country_modifier = {
 			name = "fall_of_yuan_mandate_toqto"
 			duration = -1
@@ -1345,6 +1345,207 @@ country_event = { #Heir rose to power/died
 		name = yua.24.a
 		hidden = {
 			clr_country_flag = heir_elected_yua_flag
+		}
+	}
+}
+
+
+#Red Turban Rebellion Events
+
+#Rebel Events
+
+#UNFINISHED
+province_event = { #Was a WIP, unsure of if it works
+	id = yua.25
+	title = "yua.25.t"
+	desc = "yua.25.d"
+	picture = ANGRY_MOB_eventPicture
+	
+	trigger = {
+		owner = { tag = YUA }
+		owner = { NOT = { has_country_flag = red_turban_rebellion_over_flag }
+		owner = {
+			OR = {
+				exists = MNG
+				exists = SHU
+				exists = QIC
+				exists = CXI
+				AND = {
+					NOT = {
+						north_china_region = {
+							type = all
+							country_or_non_sovereign_subject_holds = ROOT
+						}
+						xinan_region = {
+							type = all
+							country_or_non_sovereign_subject_holds = ROOT
+						}
+						guangdong_area = {
+							type = all
+							country_or_non_sovereign_subject_holds = ROOT
+						}
+						fujian_area = {
+							type = all
+							country_or_non_sovereign_subject_holds = ROOT
+						}
+						jiangxi_area = {
+							type = all
+							country_or_non_sovereign_subject_holds = ROOT
+						}
+						zhejiang_area = {
+							type = all
+							country_or_non_sovereign_subject_holds = ROOT
+						}
+						south_anhui_area = {
+							type = all
+							country_or_non_sovereign_subject_holds = ROOT
+						}
+						south_jiangsu_area = {
+							type = all
+							country_or_non_sovereign_subject_holds = ROOT
+						}
+						
+					}
+				
+				}
+			
+			}
+		
+		}
+		owner = { NOT = { num_of_rebel_controlled_provinces = 30 } }
+		owner = { NOT = { stability = 3 }  }
+		NOT = { controlled_by = REB }
+		culture = east_asian
+	}
+
+	mean_time_to_happen = {
+		months = 360
+		modifier = { #10 War Exhaustion
+			factor = 0.85
+			owner = { war_exhaustion = 10 }
+		}
+		modifier = { #15 War Exhaustion
+			factor = 0.85
+			owner = { war_exhaustion = 15 }
+		}
+		modifier = { #Less than 0 stability
+			factor = 0.85
+			owner = { NOT = { stability = 0 } }
+		}
+		modifier = { #Less than -2 Stability
+			factor = 0.85
+			owner = { NOT = { stability = -2 } }
+		}
+		modifier = {
+			factor = 0.95
+			exists = MNG
+		}
+		modifier = {
+			factor = 0.95
+			exists = SHU
+		}
+		modifier = {
+			factor = 0.95
+			exists = QIC
+		}
+		modifier = {
+			factor = 0.95
+			exists = CXI
+		}
+		modifier = {
+			factor = 0.95
+			exists = WUU
+		}
+		modifier = {
+			factor = 0.95
+			exists = YAN
+		}	
+		modifier = {
+			factor = 0.95
+			exists = JIN
+		}		
+		modifier = {
+			factor = 0.95
+			exists = CSH
+		}		
+		modifier = {
+			factor = 0.95
+			exists = CHC
+		}		
+		modifier = {
+			factor = 0.95
+			exists = CYI
+		}		
+		modifier = {
+			factor = 0.95
+			exists = NNG
+		}				
+		modifier = {
+			factor = 0.95
+			exists = QIN
+		}		
+		modifier = {
+			factor = 0.95
+			exists = LNG
+		}		
+		modifier = {
+			factor = 0.95
+			exists = CMI
+		}	
+		modifier = {
+			factor = 0.95
+			exists = CGS
+		}		
+		modifier = {
+			factor = 0.95
+			exists = CZH
+		}		
+		modifier = {
+			factor = 0.95
+			exists = HUA
+		}		
+		modifier = {
+			factor = 0.95
+			exists = YUE
+		}		
+		modifier = {
+			factor = 0.95
+			exists = MIN
+		}
+		modifier = {
+			factor = 0.5
+			exists = KHA
+			exists = YUA
+		}				
+	}
+
+	option = {
+		name = "yua.25.a"
+		random_list = {
+			30 = {
+				spawn_rebels = {
+					type = yuan_red_turban_rebels
+					size = 2
+				}
+			}
+			20 = {
+				spawn_rebels = {
+					type = yuan_red_turban_rebels
+					size = 3
+				}
+			}
+			30 = {
+				spawn_rebels = {
+					type = yuan_red_turban_rebels
+					size = 2
+				}
+			}
+			20 = {
+				spawn_rebels = {
+					type = yuan_red_turban_rebels
+					size = 3
+				}
+			}
 		}
 	}
 }

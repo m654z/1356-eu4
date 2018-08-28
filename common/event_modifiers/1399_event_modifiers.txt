@@ -216,8 +216,8 @@ disunited_tribes = {
 #Far East Region
 
 fall_of_yuan_mandate = {
-	years_of_nationalism = 5
-	global_unrest = 5
+	#years_of_nationalism = 5 #Commented out while I work on a way around the rebellion stuff.
+	#global_unrest = 5
 	culture_conversion_cost = 0.35
 	stability_cost_modifier = 0.35
 	core_creation = 0.25

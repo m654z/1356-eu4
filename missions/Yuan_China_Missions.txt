@@ -612,8 +612,6 @@ yuan_quell_red_turban_rebellion_toqto_crush_rebels_group = { #Toqto's Return - C
 			fujian_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
-				NOT = { num_of_rebel_armies = 1 }
-				NOT = { num_of_rebel_controlled_provinces = 1 }
 			}
 			jiangxi_area = {
 				type = all
@@ -679,7 +677,7 @@ yuan_quell_red_turban_rebellion_korean_consort_group = {
 		}
 		effect = {
 			swap_non_generic_missions = yes
-		}
+		}```
 	
 	}
 }
