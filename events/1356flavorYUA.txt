@@ -52,6 +52,7 @@ country_event = {
 	picture = HORDE_ON_HORSEBACK_eventPicture
 	
 	fire_only_once = yes
+	major = yes
 
 	trigger = {
 		tag = YUA
@@ -83,6 +84,14 @@ country_event = {
 		remove_accepted_culture = manchu
 		set_government_rank = 2		
 		change_government = steppe_horde
+		hidden = {
+			clr_country_flag = heir_elected_yua_flag
+			clr_country_flag = yuan_bribed_noble_rebellion_away_flag
+			clr_country_flag = yuan_noble_revolt_imminent_flag
+			clr_country_flag = yuan_nobles_succeed_plot_flag
+			clr_country_flag = yuan_noble_plot_over_flag
+			clr_country_flag = yua_noble_rebellion_popped_flag
+		}
 	}
 }
 
@@ -150,11 +159,12 @@ country_event = { #Toqto Returns!
 		OR = {
 			is_at_war = yes
 			num_of_rebel_armies = 3
+			has_country_flag = red_turban_rebellion_over_flag
 		}
 		NOT = { has_country_flag = yuan_toqto_returns_flag }
 	}
 	mean_time_to_happen = {
-		months = 100
+		months = 500
 		modifier = {
 			factor = 0.5
 			war_score = -25
@@ -360,6 +370,9 @@ country_event = { #Loyal Nobles and Spies hear more.
 	option = { #Toqto suspected, spy on him more. #Unfinished
 		name = yua.7.b
 		ai_chance = { factor = 10 }
+		trigger = {
+			always = no
+		}
 		
 		
 	}
@@ -678,24 +691,19 @@ country_event = { #Event to turn remains of Yuan Tengrist if desired
 	}
 }
 
-#Unfinished
+#Noble Rebellion Events
+
 country_event = { #The Nobles are pressing demands! They demand they receive more power due to how uncontrolable the Emperor could become! However we can make a counter offer, the offer of death! But this may be bad, as all we'd lose is our heir has to be elected by the Nobles, but we elect the nobles...
 	id = yua.11
 	title = yua.11.t
 	desc = yua.11.d
 	picture = DEBATE_REPUBLICAN_eventPicture
 	
+	is_triggered_only = yes
 	fire_only_once = yes
 	major = yes
 	
-	trigger = {
-		always = no
-	
-	}
-	
-	mean_time_to_happen = {
-		months = 30
-	}
+
 	
 	option = { #Never! Fight!
 		name = yua.11.a
@@ -718,7 +726,7 @@ country_event = { #The Nobles are pressing demands! They demand they receive mor
 		add_meritocracy = 10
 	}
 }
-#Finished
+
 country_event = { #We've discovered the Nobles plot! What to do? 
 	id = yua.12
 	title = yua.12.t
@@ -788,7 +796,7 @@ country_event = { #We've discovered the Nobles plot! What to do?
 		}
 	}
 }
-#UNFINISHED BUT NOT IMPORTANT
+
 country_event = { #The Nobles discovered our spies! They're revolting and enforcing their demands early! 
 	id = yua.13
 	title = yua.13.t
@@ -817,15 +825,9 @@ country_event = { #The Nobles discovered our spies! They're revolting and enforc
 			desc = yua_noble_plot_success_modifier_desc
 		}	
 	}
-	
-	option = { #I'd rather be dead than elected! -Turmoil? #UNFINISHED OPTION. COULD BE INTERESTING.
-		name = yua.13.e
-		trigger = {
-			always = no
-		}
-	}
+
 }
-#Finished
+
 country_event = { #Nobles revoted, and you just threw money at them. Way to go, genius.
 	id = yua.14
 	title = yua.14.t
@@ -881,12 +883,12 @@ country_event = { #Nobles revoted, and you just threw money at them. Way to go, 
 		add_mercantilism = -100
 	}
 }
-#UNFINISHED
+
 country_event = { #The Nobles Revolt! -Event wrapping up whats happened/forcing revolts-
 	id = yua.15
 	title = yua.15.t
 	desc = yua.15.d
-	picture = HORDE_ON_HORSEBACK_eventPicture
+	picture = CIVIL_WAR_eventPicture
 	
 	fire_only_once = yes
 	major = yes
@@ -897,23 +899,57 @@ country_event = { #The Nobles Revolt! -Event wrapping up whats happened/forcing 
 			has_country_flag = yuan_bribed_noble_rebellion_away_flag
 			has_country_flag = yuan_noble_revolt_imminent_flag
 		}
-	
+		NOT = { has_country_flag = yua_noble_rebellion_popped_flag }
 	}
 	
 	mean_time_to_happen = {
-		months = 30
+		months = 100
 	}
 	
 	
 	
 	option = { #Too late to take it back now. Fight the rebels!
 		name = yua.15.a
-		
-		
+		set_country_flag = yua_noble_rebellion_popped_flag
+		add_stability = -1
+		add_war_exhaustion = 4
+		hebei_area = {
+			limit = {
+				owner = { tag = YUA }
+			}
+			spawn_rebels = {
+				type = yuan_noble_rebels
+				size = 3
+				win = yes
+				unrest = 8
+			}
+		}
+		south_hebei_area = {
+			limit = {
+				owner = { tag = YUA }
+			}
+			spawn_rebels = {
+				type = yuan_noble_rebels
+				size = 1
+				win = yes
+				unrest = 8
+			}
+		}
+#		shanxi_area = { #Commented out because the rebellion was *too* strong
+#			limit = {
+#				owner = { tag = YUA }
+#			}
+#			spawn_rebels = {
+#				type = yuan_noble_rebels
+#				size = 1
+#				win = yes
+#				unrest = 8
+#			}
+#		}
 	}
 }
-#FINISHED
-country_event = { #Do Nothing response from YUA.12. #Sit still with this knowledge, and pretent the problem doesn't exist.
+
+country_event = { #Do Nothing response from YUA.12. #Sit still with this knowledge, and pretent the problem doesn't exist. -Leads to YUA.11 OR YUA.15-
 	id = yua.16
 	title = yua.16.t
 	desc = yua.16.d
@@ -939,7 +975,7 @@ country_event = { #Do Nothing response from YUA.12. #Sit still with this knowled
 		ai_chance = { factor = 20 }
 		country_event = { #Leads to Nobles pressing their demands event, YUA.11
 			id = yua.11
-			days = 80
+			days = 180
 		}
 	}
 	
@@ -962,7 +998,7 @@ country_event = { #Do Nothing response from YUA.12. #Sit still with this knowled
 
 	}
 }
-#Finished
+
 country_event = { #We've infiltraited them! What do?
 	id = yua.17
 	title = yua.17.t
@@ -993,7 +1029,7 @@ country_event = { #We've infiltraited them! What do?
 		}
 	}
 }
-#Finished
+
 country_event = { #We've been caught! On no! -Leads to YUA.15-
 	id = yua.18
 	title = yua.18.t
@@ -1011,7 +1047,7 @@ country_event = { #We've been caught! On no! -Leads to YUA.15-
 		}
 	}
 }
-#Finished
+
 country_event = { #Successful! We've managed to talk them down from the plot! -Ends Noble Rebellion chain-
 	id = yua.19
 	title = yua.19.t
@@ -1031,7 +1067,7 @@ country_event = { #Successful! We've managed to talk them down from the plot! -E
 		set_country_flag = yuan_noble_plot_over_flag
 	}
 }
-#Finished
+
 country_event = { #We've managed to infiltrait them and we will bribe them! What shall we do?
 	id = yua.20
 	title = yua.20.t
@@ -1073,7 +1109,7 @@ country_event = { #We've managed to infiltrait them and we will bribe them! What
 		}
 	}
 }
-#Finished
+
 country_event = { #Successful! We've bribed them into submission -Ends Noble Rebellion chain-
 	id = yua.21
 	title = yua.21.t
@@ -1093,7 +1129,7 @@ country_event = { #Successful! We've bribed them into submission -Ends Noble Reb
 		kill_advisor = random
 	}
 }
-#Finished
+
 country_event = { #We've sent them a bribe: Rejected! -Leads to YUA.15-
 	id = yua.22
 	title = yua.22.t
@@ -1112,8 +1148,8 @@ country_event = { #We've sent them a bribe: Rejected! -Leads to YUA.15-
 	}
 	
 }
-#Finished
-country_event = { #We've sent them a bribe: Accepted! -Ends Noble Rebellion chain
+
+country_event = { #We've sent them a bribe: Accepted! -Ends Noble Rebellion chain-
 	id = yua.22
 	title = yua.22.t
 	desc = yua.22.d
@@ -1132,8 +1168,9 @@ country_event = { #We've sent them a bribe: Accepted! -Ends Noble Rebellion chai
 
 }
 
-#UNFINISHED
-country_event = { #Celestial Empire Noble Republic Election Event 
+#Celestial Empire Noble Republic Election Events 
+
+country_event = { #Pick an heir
 	id = yua.23
 	title = yua.23.t
 	desc = yua.23.d
@@ -1141,31 +1178,174 @@ country_event = { #Celestial Empire Noble Republic Election Event
 	
 	
 	trigger = {
-		always = no
-	
+		tag = YUA
+		is_emperor_of_china = yes
+		has_country_flag = yuan_nobles_succeed_plot_flag
+		NOT = { has_country_flag = heir_elected_yua_flag }
+		OR = {
+			has_heir = no
+			AND = {
+				has_heir = yes
+				NOT = { heir_age = 6 }
+			}
+		}
 	}
 	
 	mean_time_to_happen = {
-		months = 30
+		months = 200
 	}
 	
 	option = { #Adm
 		name = yua.23.a
+		hidden = {
+			set_country_flag = heir_elected_yua_flag
+		}
+		add_stability = -1
+		add_estate_loyalty_modifier = {
+			estate = estate_nobles
+			desc = yua_noble_election_negative_loyalty_modifier_desc
+			loyalty = -20
+			duration = 7300
+		}
+		add_estate_influence_modifier = {
+			estate = estate_nobles
+			desc = yua_noble_election_negative_influence_modifier_desc
+			influence = -20
+			duration = 7300
+		}
+		define_heir = {
+			male = yes
+			dynasty = ROOT
+			age = 15
+			claim = 100
+			adm = 6
+			dip = 2
+			mil = 2
+			#max_random_adm = 5
+			max_random_dip = 5
+			max_random_mil = 5
+		}
 	}
 	
 	option = { #Dip
 		name = yua.23.b
+		hidden = {
+			set_country_flag = heir_elected_yua_flag
+		}
+		add_stability = -1
+		add_estate_loyalty_modifier = {
+			estate = estate_nobles
+			desc = yua_noble_election_negative_loyalty_modifier_desc
+			loyalty = -20
+			duration = 7300
+		}
+		add_estate_influence_modifier = {
+			estate = estate_nobles
+			desc = yua_noble_election_negative_influence_modifier_desc
+			influence = -20
+			duration = 7300
+		}
+		define_heir = {
+			male = yes
+			dynasty = ROOT
+			age = 15
+			claim = 100
+			adm = 2
+			dip = 6
+			mil = 2
+			max_random_adm = 5
+			max_random_mil = 5
+		}
 	}
 	
 	option = { #Mil
 		name = yua.23.c
+		hidden = {
+			set_country_flag = heir_elected_yua_flag
+		}
+		add_stability = -1
+		add_estate_loyalty_modifier = {
+			estate = estate_nobles
+			desc = yua_noble_election_negative_loyalty_modifier_desc
+			loyalty = -20
+			duration = 7300
+		}
+		add_estate_influence_modifier = {
+			estate = estate_nobles
+			desc = yua_noble_election_negative_influence_modifier_desc
+			influence = -20
+			duration = 7300
+		}
+		define_heir = {
+			male = yes
+			dynasty = ROOT
+			age = 15
+			claim = 100
+			adm = 2
+			dip = 2
+			mil = 6
+			max_random_adm = 5
+			max_random_dip = 5
+		}
 	}
 	
-	option = { #Any
+	option = { #The Nobles Pick
 		name = yua.23.e
+		hidden = {
+			set_country_flag = heir_elected_yua_flag
+		}
+		add_stability = 1
+		add_estate_loyalty_modifier = {
+			estate = estate_nobles
+			desc = yua_noble_election_positive_loyalty_modifier_desc
+			loyalty = 15
+			duration = 7300
+		}
+		add_estate_influence_modifier = {
+			estate = estate_nobles
+			desc = yua_noble_election_positive_influence_modifier_desc
+			influence = 10
+			duration = 7300
+		}
+		define_heir = {
+			male = yes
+			dynasty = ROOT
+			age = 15
+			claim = 100
+			adm = 3
+			dip = 3
+			mil = 3
+		}
 	}
 }
 
-#Need to finish the actual noble revolt event, the nobles discover our spies ruler personality option, and the Toqto suspected revolt path.
-#Events relating to the elections here. Needs at least 4.
+country_event = { #Heir rose to power/died
+	id = yua.24
+	title = yua.24.t
+	desc = yua.24.d
+	picture = DEBATE_REPUBLICAN_eventPicture
+	
+	trigger = {
+		tag = YUA
+		is_emperor_of_china = yes
+		has_country_flag = yuan_nobles_succeed_plot_flag
+		has_country_flag = heir_elected_yua_flag
+		has_heir = no
+	}
+	
+	mean_time_to_happen = {
+		months =  30
+	}
+	
+	option = { #Those choices better start training!
+		name = yua.24.a
+		hidden = {
+			clr_country_flag = heir_elected_yua_flag
+		}
+	}
+}
+
+
+
+#Need to finish the Toqto suspected revolt path.
 

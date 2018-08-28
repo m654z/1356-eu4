@@ -1,0 +1,112 @@
+######################################################################
+# Disgruntled nobles.
+######################################################################
+yuan_noble_rebels = {
+
+	color = { 185 90 90 }
+
+	area = nation 					# Stays within the nation
+	government = monarchy			# Likes monarchy #celestial_empire
+	defection = none				# Does not defect
+	independence = none				# Does not strive for independence
+	unit_transfer = no
+	gfx_type = culture_owner	
+	will_relocate = yes	
+	
+	resilient = yes
+	reinforcing = yes
+	general = yes
+	smart = yes
+	
+	artillery = 0.0
+	infantry = 0.6
+	cavalry = 0.4
+	
+	morale = 1.2
+	
+	# Possible handle actions
+	handle_action_negotiate = yes
+	handle_action_stability = yes
+	
+	# The rebel type with the highest modifier for this province gets picked
+	spawn_chance = {
+		factor = 0
+		modifier = { #Has to be Yuan
+			factor = 0
+			owner = { NOT = { tag = YUA } }
+		}
+		modifier = { #Make it faster if below 0 stability
+			factor = 15
+			owner = { 
+				has_country_flag = yua_noble_rebellion_popped_flag
+				NOT = { stability = 0 }
+			}
+		}
+		modifier = { #Be Yuan, who's the emperor, who's not a nomad
+			factor = 5
+			owner = { 
+				tag = YUA
+				has_country_flag = yua_noble_rebellion_popped_flag
+				OR = {
+					is_emperor_of_china = yes
+					owns = 1816
+				}
+				NOT = { technology_group = nomad_group}
+			}
+		}
+	}
+ 
+ 	# This is checked for EACH province in the Area of Operations
+	movement_evaluation = {
+		factor = 1
+		modifier = {
+			factor = 0.1
+			units_in_province = 1
+		}
+		modifier = {
+			factor = 0.001
+			controlled_by = REB
+		}
+		modifier = {
+			factor = 1.5
+			unrest = 2
+		}
+		modifier = {
+			factor = 1.5
+			unrest = 4
+		}
+		modifier = {
+			factor = 1.5
+			unrest = 6
+		}
+	}
+ 
+ 	# Province Scope
+ 	siege_won_trigger = {
+		NOT = { local_autonomy = 50 }
+	}
+	siege_won_effect = {
+		add_local_autonomy = 10
+	}
+	
+	# Country scope
+	can_negotiate_trigger = {
+		always = yes
+	}
+	
+	# Country scope
+	can_enforce_trigger = { #Would be nice to have them be forced to occupy the capital for X years, or something of the sort.
+		always = yes
+		
+	}
+	
+	# Localisation for their demands
+	demands_description = "yuan_noble_rebels_demand"
+	
+	# Country Scope	
+	demands_enforced_effect = {
+		set_country_flag = yuan_nobles_succeed_plot_flag
+		add_prestige = -25
+		add_meritocracy = -10
+	}
+}
