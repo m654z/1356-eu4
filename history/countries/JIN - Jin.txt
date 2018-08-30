@@ -1,9 +1,10 @@
-government = despotic_monarchy
+government = chinese_kingdom_government
 technology_group = chinese
 religion = confucianism
 primary_culture = jin
 capital = 693	#Taiyuan
 
+historical_rival = YUA
 historical_rival = YUA
 historical_rival = KHA
 historical_rival = CZH
@@ -15,7 +16,6 @@ historical_rival = HUA
 historical_rival = QIN
 historical_rival = LNG
 historical_rival = YAN
-historical_rival = QIC
 historical_rival = TNG
 historical_rival = CHC
 historical_rival = NNG
@@ -23,3 +23,6 @@ historical_rival = SHU
 historical_rival = YUE
 historical_rival = MIN
 historical_rival = CMI
+historical_rival = QNG
+historical_rival = CSH
+historical_rival = QIC

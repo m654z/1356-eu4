@@ -1,4 +1,4 @@
-government = despotic_monarchy
+government = chinese_kingdom_government
 primary_culture = miao
 religion = animism
 technology_group = chinese
@@ -24,3 +24,4 @@ historical_rival = SHU
 historical_rival = YUE
 historical_rival = MIN
 historical_rival = QNG
+historical_rival = CSH

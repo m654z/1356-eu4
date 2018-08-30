@@ -19,7 +19,7 @@ aristocracy_ideas = {
 			government = monarchy
 			government = noble_republic
 			government = elective_monarchy
-			government = theocracy
+			#government = theocracy
 		}
 	}
 	
@@ -102,12 +102,17 @@ theocratic_ideas = {
 	}
 }
 
-
 plutocracy_ideas = {
 	category = MIL
 
 	bonus = {
 		global_institution_spread = 0.10
+	}
+	
+	trigger = {
+		NOT = { government = monarchy }
+		NOT = { government = noble_republic }
+		NOT = { government = theocracy }
 	}
 
 	tradition_of_payment = {

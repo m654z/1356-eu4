@@ -1,4 +1,4 @@
-government = despotic_monarchy
+government = chinese_kingdom_government
 technology_group = chinese
 religion = confucianism
 primary_culture = chihan
@@ -20,7 +20,9 @@ historical_rival = TNG
 historical_rival = CHC
 historical_rival = NNG
 historical_rival = SHU
-historical_rival = YUE
 historical_rival = MIN
-historical_rival = CMI
 historical_rival = QNG
+historical_rival = CMI
+historical_rival = YUE
+historical_rival = CSH
+historical_rival = YAN

@@ -1,4 +1,4 @@
-government = despotic_monarchy
+government = chinese_kingdom_government
 government_rank = 2
 technology_group = chinese
 religion = confucianism
@@ -25,6 +25,7 @@ historical_rival = YUE
 historical_rival = MIN
 historical_rival = CMI
 historical_rival = QNG
+historical_rival = CSH
 
 capital = 1821	# Nanjing
 

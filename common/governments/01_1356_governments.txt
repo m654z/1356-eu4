@@ -374,3 +374,32 @@ tribal_federation_ilkhan = { #Ilkhan Tribes
 		}
 	}
 }
+#Chinese Minor Government Type
+chinese_kingdom_government = {
+	monarchy = yes
+	maintain_dynasty = yes
+	has_meritocracy = yes
+	
+	valid_for_new_country = no
+	valid_for_nation_designer = no
+	nation_designer_cost = 0
+	
+	color = { 210 20 50 }
+		
+	ai_will_do = {
+		factor = 0
+	}
+	ai_importance = 0
+
+	max_states = 2
+	
+	fixed_rank = 2
+
+	rank = {
+		2 = {
+			province_warscore_cost = -0.2
+			ae_impact = -0.15
+			diplomatic_upkeep = -1	
+		}
+	}
+}

@@ -30,6 +30,7 @@ historical_rival = YUE
 historical_rival = MIN
 historical_rival = CMI
 historical_rival = QNG
+historical_rival = CSH
 historical_friend = CHG
 
 1260.5.5 = {
