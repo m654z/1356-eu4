@@ -677,7 +677,7 @@ yuan_quell_red_turban_rebellion_korean_consort_group = {
 		}
 		effect = {
 			swap_non_generic_missions = yes
-		}```
+		}
 	
 	}
 }
@@ -902,7 +902,6 @@ yuan_quell_red_turban_rebellion_toqto_crush_rebels_4_group = { #Toqto's Return -
 	ai = yes
 	
 	potential = { 
-		always = no
 		tag = YUA
 		has_country_flag = yuan_toqto_returns_flag
 		NOT = { has_country_flag = yuan_toqto_killed_flag }

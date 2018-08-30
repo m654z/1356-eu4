@@ -374,8 +374,8 @@ tribal_federation_ilkhan = { #Ilkhan Tribes
 		}
 	}
 }
-#Chinese Minor Government Type
-chinese_kingdom_government = {
+
+chinese_kingdom_government = { #Chinese Minor Government Type
 	monarchy = yes
 	maintain_dynasty = yes
 	has_meritocracy = yes
