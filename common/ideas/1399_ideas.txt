@@ -1481,3 +1481,45 @@ PAD_ideas = {
 		diplomatic_reputation = 2
 	}
 }
+
+GYO_ideas = { #Needs Tweaks
+	start = {
+		spy_offence = 0.15
+		diplomats = 1
+	}
+	
+	bonus = {
+		siege_ability = 0.1
+	}
+	
+	trigger = {
+		tag = GYO
+	}
+	free = yes
+	
+	gyo_yuan_advisors = {
+		advisor_cost = -0.10
+		advisor_pool = 1
+	}
+	gyo_intertwined_with_yuan = {
+		diplomatic_reputation = 2
+	}
+	gyo_years_under_yuan = {
+			global_autonomy = -0.05
+	}
+	gyo_enemies_on_all_sides = {
+		defensiveness = 0.1
+		garrison_size = 0.1
+	}
+	gyo_legitimate_monarch = {
+		legitimacy = 1
+		meritocracy = 1
+	}
+	gyo_war_exhaustion = {
+		war_exhaustion = -0.05
+	}
+	gyo_economy_reform = {
+		global_tax_modifier = 0.10
+	}
+	
+}

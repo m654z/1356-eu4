@@ -1,8 +1,8 @@
 # 4229 - Chungju (1356)
 # Changes: religion
 
-owner = KOR
-controller = KOR
+owner = GYO
+controller = GYO
 culture = korean
 religion = mahayana
 capital = "Chungju"
@@ -12,10 +12,11 @@ base_tax = 3
 base_production = 2
 base_manpower = 1
 is_city = yes
-add_core = KOR
+add_core = GYO
 discovered_by = chinese
 discovered_by = nomad_group
 
+1392.8.5 = { owner = KOR controller = KOR remove_core = GYO }
 1393.1.1  = { religion = confucianism }
 1519.1.1  = { discovered_by = POR } # Tome Pires
 1592.6.6  = { controller = ODA unrest = 5 } # Japanese invasion - Battle of Cheongju

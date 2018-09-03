@@ -40,8 +40,14 @@ age_of_feudalism = {
 				religion_group = muslim
 			}
 			OR = {
-				piety = -0.75
-				piety = 0.75
+				AND = {
+					piety = -0.75
+					NOT = { piety = 0.75}
+				}
+				AND = { 
+					piety = 0.75
+					NOT = { piety = -0.75}
+				}
 			}
 	 	}
 		obj_non_christian_muslim_religious_unity = { 
@@ -513,6 +519,8 @@ age_of_reformation = {
 			OR = {
 				religion = protestant
 				religion = reformed
+				religion = anglican
+				religion = hussite
 			}
 		}
 		

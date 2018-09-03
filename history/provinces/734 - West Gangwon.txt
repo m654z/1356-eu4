@@ -1,8 +1,8 @@
 # 734 - Wonju (1356)
 # Changes: religion
 
-owner = KOR
-controller = KOR
+owner = GYO
+controller = GYO
 culture = korean
 religion = mahayana
 capital = "Wonju"
@@ -13,11 +13,12 @@ base_tax = 1
 base_production = 1
 base_manpower = 2
 is_city = yes
-add_core = KOR
+add_core = GYO
 
 discovered_by = chinese
 discovered_by = nomad_group
 
+1392.8.5 = { owner = KOR controller = KOR remove_core = GYO }
 1393.1.1 = { religion = confucianism }
 1542.1.1 = { discovered_by = POR }
 1637.1.1 = { add_core = MNG } # Tributary of Qing China

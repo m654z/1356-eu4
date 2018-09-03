@@ -1,0 +1,21 @@
+# Golden Horde
+GLH = {
+	is_core = GLH
+}
+
+# Yuan
+YUA = {
+	is_core = yes
+	OR = {
+		culture = mongol
+		culture = yuan
+	}
+}
+
+GYO = {
+	is_core = GYO
+}
+
+KOR = {
+	NOT = { is_core = GYO}
+}
