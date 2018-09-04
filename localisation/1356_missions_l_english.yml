@@ -809,7 +809,7 @@
  fra_conquer_sicily_malta_desc: "Now that we control most of Italy let us launch an invasion of Sicily and Malta! After we take this then we can finally turn our heads to the Pope isolated in Rome!" 
   
  #Yuan Missions
- yua_quell_red_turban_rebellion_toqto_mission_title: "Side with Toqto'a"
+ yua_quell_red_turban_rebellion_toqto_mission_title: "The Return of Toqto'a"
  yua_quell_red_turban_rebellion_korean_consort_mission_title: "Side with Empress Ki"
  yua_quell_red_turban_rebellion_mission_0_title: "Understand the Yuan Situation"
  yua_quell_red_turban_rebellion_mission_1_title: "Draft A New General"
@@ -834,7 +834,13 @@
  yua_quell_red_turban_rebellion_toqto_far_southern_china_mission_title: "Far Southern China"
  yua_quell_red_turban_rebellion_toqto_secured_all_south_china_mission_title: "Secured Southern China"
  yua_quell_red_turban_rebellion_toqto_end_title: "Ending the Red Turban Rebellion"
-  
+ yua_side_with_one_side_title: "Difficult Times"
+ yua_side_with_one_side_desc: "A difficult decision will soon arise that will help decide on the fate of your nation, will Yuan stay together? Will Yuan crumble under the weight of the rebellion? Will a mysterious stranger return? Will Yuan get backstabbed? So many possibilities, so many options... What could happen?"
+ yua_ki_drastic_reforms_title: "Drastic Reforms"
+ yua_ki_drastic_reforms_2_title: "Drastic Reforms"
+ yua_ki_drastic_reforms_3_title: "Drastic Reforms"
+ yua_ki_drastic_reforms_4_title: "Drastic Reforms"
+ yua_ki_drastic_reforms_end_mil_title: "Finalize our Drastic Reforms"
  
  #Generic Missions
  1356_generic_make_a_friend_title: "Make an Ally"

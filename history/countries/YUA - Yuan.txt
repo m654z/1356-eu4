@@ -181,9 +181,17 @@ historical_friend = CHG
 		duration = -1
 		desc = mongol_debuff_tooltip
 	}
+	add_country_modifier = { 
+		name = mongol_debuff_dip
+		duration = -1
+		desc = mongol_debuff_dip_tooltip
+	}
+	add_country_modifier = { 
+		name = mongol_debuff_adm
+		duration = -1
+		desc = mongol_debuff_adm_tooltip
+	}
 }
-
-1366.1.1 = { remove_country_modifier = yuan_starting_modifiers }
 
 1368.9.14 = {
 	technology_group = nomad_group
@@ -226,4 +234,9 @@ historical_friend = CHG
 	}
 }
 
-1400.1.1 = { remove_country_modifier = mongol_debuff }
+1400.1.1 = { 
+	remove_country_modifier = mongol_debuff
+	remove_country_modifier = yuan_starting_modifiers
+	remove_country_modifier = mongol_debuff_dip
+	remove_country_modifier = mongol_debuff_adm
+}

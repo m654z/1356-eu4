@@ -1,3 +1,27 @@
+yuan_quell_red_turban_rebellion_internal_group = {
+	slot = 1
+	generic = no
+	ai = yes
+	
+	potential = { 
+		tag = YUA
+	}
+	has_country_shield = yes
+	
+	yua_quell_red_turban_rebellion_internal_mission_1 = { #Hire an Advisor
+		icon =  mission_alliances
+		required_missions = { yua_quell_red_turban_rebellion_mission_0 }
+		position = 2
+		trigger = {
+			has_advisor = yes
+		}
+		effect = {
+			add_years_of_income = 0.25
+			add_inflation = 0.25
+		}
+	}
+}
+
 yuan_quell_red_turban_rebellion_toqto_crush_rebels_1_group = { #Toqto's Return - Crush Part of the Rebels
 	slot = 1
 	generic = no
@@ -83,30 +107,171 @@ yuan_quell_red_turban_rebellion_toqto_crush_rebels_1_group = { #Toqto's Return -
 	}
 }
 
-yuan_quell_red_turban_rebellion_internal_group = {
+yuan_toqtoa_start_group = { #Toqto'a Starting Mission
 	slot = 2
 	generic = no
 	ai = yes
 	
 	potential = { 
 		tag = YUA
+		NOT = { has_country_flag = yuan_toqto_killed_flag }
 	}
 	has_country_shield = yes
 	
-	yua_quell_red_turban_rebellion_internal_mission_1 = { #Hire an Advisor
-		icon =  mission_alliances
+	yua_quell_red_turban_rebellion_toqto_mission = {
+		icon =  mission_chinese_general_riding
 		required_missions = { yua_quell_red_turban_rebellion_mission_0 }
 		position = 2
 		trigger = {
-			has_advisor = yes
+			has_country_flag = yuan_toqto_returns_flag
 		}
 		effect = {
-			add_years_of_income = 0.25
-			add_inflation = 0.25
+			swap_non_generic_missions = yes
 		}
 	}
+	
 }
 
+yuan_ki_adm_group = { #Ki
+	slot = 2
+	generic = no
+	ai = yes
+	
+	potential = { 
+		tag = YUA
+		has_country_flag = yuan_toqto_killed_flag
+		NOT = { has_country_flag = yuan_toqto_returns_flag }
+	}
+	has_country_shield = yes
+	
+	yua_ki_adm_reforms = {
+		icon =  mission_early_game_buildings
+		required_missions = { yua_quell_red_turban_rebellion_korean_consort_mission }
+		position = 3
+		trigger = {
+			stability = 1
+			meritocracy = 85
+		}
+		effect = {
+			1816 = {
+				add_building = temple
+			}
+			add_war_exhaustion = -2
+			add_manpower = 1
+		}
+	}
+	yua_ki_adm_reforms_2 = {
+		icon =  mission_rice_field
+		required_missions = { yua_ki_adm_reforms }
+		position = 4
+		trigger = {
+			is_at_war = yes
+			prestige = 0
+			has_wartaxes = yes
+			grain = 20
+		}
+		effect = {
+			add_meritocracy = 10
+			add_adm_power = 50
+		}
+	}
+	yua_ki_adm_reforms_3 = {
+		icon =  mission_high_income
+		required_missions = { yua_ki_adm_reforms_2 }
+		position = 5
+		trigger = {
+			OR = {
+				chinaware = 4
+				gems = 2
+			}
+			OR = {
+				philosopher = 1
+				natural_scientist = 1
+				artist = 1
+				treasurer = 1
+				theologian = 1
+				master_of_mint = 1
+				inquisitor = 1
+			}
+		}
+		effect = {
+			add_years_of_income = 1
+			add_inflation = -0.25
+		}
+	}
+	yua_ki_adm_reforms_4 = {
+		icon =  mission_arabian_fort
+		required_missions = { yua_ki_adm_reforms_3 }
+		position = 5
+		trigger = {
+			NOT = { overextension_percentage = 0.1 }
+			ruler_age = 42
+			adm = 3
+		}
+		effect = {
+			define_advisor = {
+				type = artist
+				skill = 2
+				discount = yes
+				female = yes
+			}
+			add_adm_power = 50
+		}
+	}
+	yua_ki_adm_reforms_5 = {
+		icon =  mission_market_place_with_asian_traders
+		required_missions = { yua_ki_adm_reforms_4 }
+		position = 5
+		trigger = {
+			karma = 0
+			prestige = 0
+		}
+		effect = {
+			add_country_modifier = { 
+				name = yua_ki_reward_adm_mission_modifier
+				duration = 3650  
+				desc = yua_ki_reward_adm_mission_modifier_tooltip
+			}
+		}
+	}
+	yua_ki_adm_reforms_end = {
+		icon =  mission_monarch_in_throne_room
+		required_missions = { yua_ki_adm_reforms_5 }
+		position = 7
+		trigger = {
+			karma = 0
+			prestige = 0
+			NOT = { overextension_percentage = 0.1 }
+			ruler_age = 45
+			adm = 3
+			stability = 1
+			meritocracy = 85
+			grain = 20
+			OR = {
+				chinaware = 4
+				gems = 2
+			}
+			OR = {
+				philosopher = 1
+				natural_scientist = 1
+				artist = 1
+				treasurer = 1
+				theologian = 1
+				master_of_mint = 1
+				inquisitor = 1
+			}
+		}
+		effect = {
+			set_country_flag = government_fixed
+			remove_country_modifier = mongol_debuff_adm
+			add_stability = 1
+			add_war_exhaustion = -7.5
+			add_manpower = 5
+		}
+	}
+	
+}
+	
 yuan_quell_red_turban_rebellion_toqto_crush_rebels_2_group = { #Toqto's Return - Crush Part of the Rebels
 	slot = 2
 	generic = no
@@ -264,7 +429,7 @@ yuan_quell_red_turban_rebellion_toqto_crush_rebels_2_group = { #Toqto's Return -
 	}
 }
 
-yuan_quell_red_turban_rebellion_group = { #Starting Mission - Get a Feel for the Tree
+yuan_starter_group = { #Starting Mission - Get a Feel for the Tree
 	slot = 3
 	generic = no
 	ai = yes
@@ -287,6 +452,166 @@ yuan_quell_red_turban_rebellion_group = { #Starting Mission - Get a Feel for the
 	}
 }
 
+yuan_starter_group_2 = { #Starting Mission - Get a Feel for the Tree
+	slot = 3
+	generic = no
+	ai = yes
+	
+	potential = { #Disapear after a side is chosen
+		tag = YUA
+		AND = {
+			NOT = { has_country_flag = yuan_toqto_killed_flag }
+			NOT = { has_country_flag = yuan_toqto_returns_flag }
+		}
+	}
+	has_country_shield = yes
+
+	yua_side_with_one_side = { #Explain to Players it continues when they pick a side of the event
+		icon =  mission_buddhist_monk_praying
+		required_missions = { yua_quell_red_turban_rebellion_mission_0 yua_quell_red_turban_rebellion_toqto_mission yua_quell_red_turban_rebellion_korean_consort_mission }
+		position = 3
+		trigger = {
+			always = yes
+		}
+		effect = {
+			add_prestige = 1
+		}
+	}
+
+}
+
+yuan_ki_dip_group = { #Ki
+	slot = 2
+	generic = no
+	ai = yes
+	
+	potential = { 
+		tag = YUA
+		has_country_flag = yuan_toqto_killed_flag
+		NOT = { has_country_flag = yuan_toqto_returns_flag }
+	}
+	has_country_shield = yes
+	
+	yua_ki_dip_reforms = {
+		icon =  mission_alliances
+		required_missions = { yua_quell_red_turban_rebellion_korean_consort_mission }
+		position = 3
+		trigger = {
+			num_of_allies = 2
+			num_of_diplomatic_relations = 3
+			NOT = { num_of_loans = 1 }
+		}
+		effect = {
+			create_admiral = 50
+		}
+	}
+	yua_ki_dip_reforms_2 = {
+		icon = mission_chinese_general_riding
+		required_missions = { yua_ki_dip_reforms }
+		position = 4
+		trigger = {
+			has_any_disaster = yes
+			dip_power = 350
+		}
+		effect = {
+			add_country_modifier = { 
+				name = yua_ki_dip_reward_2_mission_modifier
+				duration = 1825  
+			}
+		}
+	}
+	yua_ki_dip_reforms_3 = {
+		icon =  mission_rice_field
+		required_missions = { yua_ki_dip_reforms_2 }
+		position = 5
+		trigger = {
+			NOT = { num_of_loans = 3 }
+			treasury = 350
+			OR = {
+				statesman = 1
+				naval_reformer = 1
+				trader = 1
+				spymaster = 1
+				colonial_governor = 1
+				diplomat = 1
+				navigator = 1
+			}
+		}
+		effect = {
+			define_advisor = {
+				type = statesman
+				skill = 2
+				discount = yes
+				female = yes
+			}
+			add_country_modifier = { 
+				name = yua_ki_dip_reward_3_mission_modifier
+				duration = 1825  
+			}
+
+		}
+	}
+	yua_ki_dip_reforms_4 = {
+		icon =  mission_war_chest
+		required_missions = { yua_ki_dip_reforms_3 }
+		position = 5
+		trigger = {
+			num_of_allies = 4
+			num_of_diplomatic_relations = 5
+			num_of_trade_embargos = 3
+			prestige = 50
+		}
+		effect = {
+
+			add_country_modifier = { 
+				name = yua_ki_dip_reward_4_mission_modifier
+				duration = 1825  
+			}
+			
+		}
+	}
+	yua_ki_dip_reforms_5 = {
+		icon = mission_asian_trader
+		required_missions = { yua_ki_dip_reforms_4 }
+		position = 5
+		trigger = {
+			num_of_ports = 25
+			navy_tradition = 15
+		}
+		effect = {
+			add_country_modifier = { 
+				name = yua_ki_dip_reward_5_mission_modifier
+				duration = 2555  
+			}
+		}
+	}
+	yua_ki_dip_reforms_end = {
+		icon =  mission_market_place_with_asian_traders
+		required_missions = { yua_ki_dip_reforms_5 }
+		position = 7
+		trigger = {
+			num_of_allies = 4
+			num_of_diplomatic_relations = 5
+			NOT = { num_of_loans = 5 }
+			num_of_ports = 25
+			dip_power = 350
+			num_of_trade_embargos = 3
+			prestige = 50
+		}
+		effect = {
+			set_country_flag = government_fixed
+			remove_country_modifier = mongol_debuff_dip
+			add_country_modifier = { 
+				name = yua_ki_reward_dip_mission_modifier
+				duration = 3650  
+				desc = yua_ki_reward_dip_mission_modifier_tooltip
+			}
+
+		}
+	}
+	
+}
+
 yuan_quell_red_turban_rebellion_toqto_group = { #Toqto's Return - Starting Tree
 	slot = 3
 	generic = no
@@ -294,20 +619,10 @@ yuan_quell_red_turban_rebellion_toqto_group = { #Toqto's Return - Starting Tree
 	
 	potential = { 
 		tag = YUA
+		has_country_flag = yuan_toqto_returns_flag
 		NOT = { has_country_flag = yuan_toqto_killed_flag }
 	}
 	has_country_shield = yes	
-	yua_quell_red_turban_rebellion_toqto_mission = {
-	icon =  mission_chinese_general_riding
-		required_missions = { yua_quell_red_turban_rebellion_mission_0 }
-		position = 2
-		trigger = {
-			has_country_flag = yuan_toqto_returns_flag
-		}
-		effect = {
-			swap_non_generic_missions = yes
-		}
-	}
 	yua_quell_red_turban_rebellion_toqto_mission_1 = { #Hire A General
 		icon =  mission_chinese_general_riding
 		required_missions = { yua_quell_red_turban_rebellion_toqto_mission }
@@ -657,7 +972,7 @@ yuan_quell_red_turban_rebellion_toqto_crush_rebels_group = { #Toqto's Return - C
 	}
 }
 
-yuan_quell_red_turban_rebellion_korean_consort_group = {
+yuan_ki_start_group = { #Starter Ki Mission
 	slot = 4
 	generic = no
 	ai = yes
@@ -682,7 +997,7 @@ yuan_quell_red_turban_rebellion_korean_consort_group = {
 	}
 }
 
-yuan_quell_red_turban_rebellion_went_with_korean_consort_group = {
+yuan_ki_mil_reforms_group = { #Ki - Enables Yuan to actually be able to Fight their rebels
 	slot = 4
 	generic = no
 	ai = yes
@@ -690,9 +1005,134 @@ yuan_quell_red_turban_rebellion_went_with_korean_consort_group = {
 	potential = { 
 		tag = YUA
 		has_country_flag = yuan_toqto_killed_flag
+		NOT = { has_country_flag = yuan_toqto_returns_flag }
 	}
 	has_country_shield = yes
 	
+	yua_ki_drastic_reforms = {
+		icon =  mission_build_up_to_force_limit
+		required_missions = { yua_quell_red_turban_rebellion_korean_consort_mission }
+		position = 3
+		trigger = {
+			OR = {
+				fortification_expert = 1
+				recruitmaster = 1
+				quartermaster = 1
+				commandant = 1
+				army_organiser = 1
+				army_reformer = 1
+			}
+			army_tradition = 20
+		}
+		effect = {
+			create_general = 50
+			add_manpower = 7.5
+			add_army_tradition = 2.5
+		}
+	}
+	yua_ki_drastic_reforms_2 = {
+		icon =  mission_alliances
+		required_missions = { yua_ki_drastic_reforms }
+		position = 4
+		trigger = {
+			is_at_war = yes
+			mil_power = 300
+			army_tradition = 25
+		}
+		effect = {
+			change_mil = 1
+			add_manpower = 10
+			add_army_tradition = 2.5
+		}
+	}
+	yua_ki_drastic_reforms_3 = {
+		icon =  mission_assemble_an_army
+		required_missions = { yua_ki_drastic_reforms_2 }
+		position = 5
+		trigger = {
+			is_at_war = yes
+			num_of_generals = 3
+			num_of_cavalry = 20
+			army_tradition = 30
+		}
+		effect = {
+			change_mil = 1
+			add_manpower = 10
+			add_army_tradition = 2.5
+		}
+	}
+	yua_ki_drastic_reforms_4 = {
+		icon =  mission_arabian_fort
+		required_missions = { yua_ki_drastic_reforms_3 }
+		position = 5
+		trigger = {
+			is_at_war = yes
+			num_of_generals = 3
+			NOT = { num_of_mercenaries = 1 }
+			army_tradition = 30
+		}
+		effect = {
+			add_country_modifier = { 
+				name = yua_ki_reward_merc_mission_modifier
+				duration = 3650  
+				desc = yua_ki_reward_merc_desc
+			}
+		}
+	}
+	yua_ki_drastic_reforms_5 = {
+		icon =  mission_assemble_an_army
+		required_missions = { yua_ki_drastic_reforms_4 }
+		position = 6
+		trigger = {
+		is_at_war = yes
+		army_size = 40
+			OR = {
+				fortification_expert = 1
+				recruitmaster = 1
+				quartermaster = 1
+				commandant = 1
+				army_organiser = 1
+				army_reformer = 1
+			}
+		}
+		effect = {
+			change_mil = 1
+			1816 = {
+				add_base_manpower = 2
+			}
+			4194 = {
+				add_base_manpower = 1
+			}
+			695 = {
+				add_base_manpower = 1
+			}
+		}
+	}
+	yua_ki_drastic_reforms_end_mil = {
+		icon =  mission_build_up_to_force_limit
+		required_missions = { yua_ki_drastic_reforms_5 }
+		position = 8
+		trigger = {
+			num_of_generals = 3
+			num_of_cavalry = 20
+			mil_power = 400
+			army_tradition = 35
+			OR = {
+				fortification_expert = 1
+				recruitmaster = 1
+				quartermaster = 1
+				commandant = 1
+				army_organiser = 1
+				army_reformer = 1
+			}
+		}
+		effect = {
+			set_country_flag = government_fixed
+			remove_country_modifier = mongol_debuff #Removes Mil Debuff
+			create_general = 80
+			add_manpower = 10
+		}
+	}
 	
 }
 
@@ -860,10 +1300,10 @@ yuan_quell_red_turban_rebellion_naval_group = {
 	
 	potential = { 
 		tag = YUA
-		OR = {
-			has_country_flag = yuan_toqto_returns_flag
-			has_country_flag = yuan_toqto_killed_flag
-		}
+		#OR = {
+		#	has_country_flag = yuan_toqto_returns_flag
+		#	has_country_flag = yuan_toqto_killed_flag
+		#}
 	}
 	has_country_shield = yes
 	

@@ -1,4 +1,6 @@
 namespace = yua
+#GO THROUGH ALL EVENTS AND MAKE SURE THEY WORK WITH THE NEW SYSTEM OF DEBUFFS
+
 
 ###############################################################################
 ######yua.0 written by Genomega, everything else written by Count Flandy#######
@@ -25,10 +27,6 @@ country_event = {
 
 	option = {
 		name = yua.0.a #Got it
-		add_country_modifier = {
-				name = "fall_of_yuan_mandate"
-				duration = 5475
-		}
 		central_asia_region = {
 			discover_country = YUA
 		}
@@ -243,8 +241,9 @@ country_event = { #Toqto Returns!
 			manuever = 2
 			siege = 2
 		}
+		add_historical_rival = GYO
 		add_historical_rival = KOR
-		KOR = { add_historical_rival = YUA }
+		GYO = { add_historical_rival = YUA }
 	}
 	option = { #I thought we exiled you! Guards! Kill this man!
 		name = yua.4.b
@@ -257,7 +256,7 @@ country_event = { #Toqto Returns!
 		}
 		define_consort = {
 			name = "Lady Ki"
-			country_of_origin = KOR
+			country_of_origin = GYO
 			dynasty = "Goryeo"
 			culture = korean
 			religion = mahayana
@@ -1569,7 +1568,7 @@ country_event = {
 			id = yua.32
 			days = 180
 		}
-		KOR = {
+		GYO = {
 			country_event = { #Korea Receives word Toqto'a was found and executed.
 				id = yua.31
 				days = 30
@@ -1578,7 +1577,7 @@ country_event = {
 	}
 }
 
-#Korea
+#Korea/Goryeo
 
 #Korea receives word that Toqto'a was ordered to be executed.
 country_event = {
