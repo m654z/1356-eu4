@@ -961,7 +961,6 @@ guiTypes = {
 			delayedTooltipText = ""
 			buttonText = "CONTINUE"
 			buttonFont = "vic_18"
-			shortcut = "ESCAPE"
 		}
 	}
 }

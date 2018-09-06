@@ -1035,7 +1035,7 @@ guiTypes = {
 					Orientation = "UPPER_LEFT"
 				}
 
-				
+
 				#MOD ENTRY
 				iconType =
 				{
@@ -1046,7 +1046,6 @@ guiTypes = {
 					tooltip = "mod_icon_desc"
 					tooltipText = "mod_icon_desc"
 				}
-
 
 				
 
@@ -1606,18 +1605,31 @@ guiTypes = {
 
 					guiButtonType = {
 						name = "create_team_button"
-						position = { x = -20 y = 20 }
+						position = { x = 18 y = 500 }
 						quadTextureSprite = "GFX_frontend_create_team"
 						Orientation = "UPPER_LEFT"
+						buttonText = "CREATE_TEAM"
+						buttonFont = "vic_18"
 						clicksound = click
-					}		
+					}
+
+
+					guiButtonType = {
+						name = "leave_team_button"
+						position = { x = 18 y = 500 }
+						quadTextureSprite = "GFX_frontend_create_team"
+						Orientation = "UPPER_LEFT"
+						buttonText = "LEAVE_TEAM"
+						buttonFont = "vic_18"
+						clicksound = click
+					}	
 					
 					listboxType = 
 					{
 						name ="multiplayer_list"
 						position = { x=0 y = 72}
 						backGround=""
-						size = { x=205 y =420}
+						size = { x=205 y =429}
 						horizontal = 0
 						spacing = 0
 						scrollbartype = "standardlistbox_slider"
@@ -2306,7 +2318,7 @@ guiTypes = {
 		name = "multiplayer_entry"
 		backGround=""
 		position = { x=0 y=0 }	
-		size = { x=150 y= 38 }
+		size = { x=150 y= 39 }
 		moveable = 0
 		dontRender = ""
 		horizontalBorder= ""
@@ -2374,7 +2386,7 @@ guiTypes = {
 		name = "team_entry"
 		backGround=""
 		position = { x=0 y=0 }	
-		size = { x=150 y= 38 }
+		size = { x=150 y= 39 }
 		moveable = 0
 		dontRender = ""
 		horizontalBorder= ""
@@ -2382,9 +2394,26 @@ guiTypes = {
 		fullScreen = no
 
 		guiButtonType = {
-			position = { x= -36 y = -24 }
+			position = { x= -18 y = -8 }
 			name = "join_button"	
-			quadTextureSprite ="GFX_frontend_create_team"
+			quadTextureSprite ="GFX_frontend_join_team"
+			tooltip = ""	
+			tooltipText =""
+			delayedTooltipText = ""
+		}
+
+		guiButtonType = {
+			position = { x= -20 y = 13 }
+			name = "edit_button"	
+			quadTextureSprite ="GFX_frontend_edit_team"
+			tooltip = ""	
+			tooltipText =""
+			delayedTooltipText = ""
+		}
+		guiButtonType = {
+			position = { x= -3 y = 13 }
+			name = "remove_button"	
+			quadTextureSprite ="GFX_frontend_delete_team"
 			tooltip = ""	
 			tooltipText =""
 			delayedTooltipText = ""
