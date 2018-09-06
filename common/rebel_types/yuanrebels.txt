@@ -144,7 +144,26 @@ yuan_red_turban_rebels = {
 	
 	# The rebel type with the highest modifier for this province gets picked
 	spawn_chance = {
-		factor = 0
+		factor = 1
+		modifier = { 
+			factor = 0
+			owner = { tag = YUA }
+			owner = { is_emperor_of_china = yes }
+			owner = { has_country_flag = red_turban_rebellion_over_flag }
+		}
+		modifier = { 
+			factor = 0
+			owner = { tag = YUA }
+			owner = { is_emperor_of_china = yes }
+			owner = { NOT = { has_country_flag = yuan_red_turban_rebellion_began_flag } }
+		}
+		modifier = { 
+			factor = 100
+			owner = { tag = YUA }
+			owner = { is_emperor_of_china = yes }
+			owner = { NOT = { has_country_flag = red_turban_rebellion_over_flag } }
+			owner = { has_country_flag = yuan_red_turban_rebellion_began_flag }
+		}
 	}
  
  	# This is checked for EACH province in the Area of Operations
@@ -182,7 +201,7 @@ yuan_red_turban_rebels = {
 			add_core = REB
 		}
 		add_nationalism = 10 # Add ten extra years of nationalism
-		add_unrest = 15
+		add_unrest = 5
 	}
 	
 	# Country scope

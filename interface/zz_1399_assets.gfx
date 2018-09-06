@@ -259,4 +259,13 @@ spriteTypes = {
 		name = "GFX_ab_disc_general_cost_leader_pool"
 		texturefile = "gfx/interface/ages/ab_disc_general_cost_leader_pool.dds"
 	}
+# Yuan Disaster sprite
+	spriteType = {
+		name = "GFX_red_turban_rebellion_disaster"
+		texturefile = "gfx/interface/disasters/yua_red_turban_rebellion_disaster.dds"
+		noOfFrames = 3
+		loadType = "INGAME"
+	}
+
+	
 }

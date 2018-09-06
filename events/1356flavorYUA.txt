@@ -685,7 +685,7 @@ country_event = { #Event to turn remains of Yuan Tengrist if desired
 		add_prestige = 5
 	}
 	option = { #Tengrism it is! 
-		yua.9.b
+		name = yua.9.b
 		change_religion = tengri_pagan_reformed
 		add_stability = -2
 		add_prestige = -10
@@ -1361,6 +1361,7 @@ province_event = { #Was a WIP, unsure of if it works
 	picture = ANGRY_MOB_eventPicture
 	
 	trigger = {
+		always = no
 		owner = { tag = YUA }
 		owner = { NOT = { has_country_flag = red_turban_rebellion_over_flag } }
 		owner = {
@@ -1613,5 +1614,158 @@ country_event = {
 	}
 }
 
+#Start of Red Turban Rebellion Disaster
+country_event = {
+	id = yua.33
+	title = "yua.33.t"
+	desc = "yua.33.d"
+	picture = ANGRY_MOB_eventPicture
+	
+	major = yes
+	
+	is_triggered_only = yes
+
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+		set_country_flag = yuan_red_turban_rebellion_began_flag
+		add_stability = -6
+		add_prestige = -10
+		random_list = { #Random Revolt in China
+			33 = {
+				north_china_region = {
+					random_owned_province = { 
+						spawn_rebels = {
+							type = yuan_red_turban_rebels
+							size = 2
+							win = yes
+							unrest = 15
+						}
+					}
+				}
+			}
+			
+			33 = {
+				xinan_region = {
+					random_owned_province = { 
+						spawn_rebels = {
+							type = yuan_red_turban_rebels
+							size = 2
+							win = yes
+							unrest = 15
+						}
+					}
+				}
+			}
+			
+			34 = {
+				south_china_region = {
+					random_owned_province = { 
+						spawn_rebels = {
+							type = yuan_red_turban_rebels
+							size = 2
+							win = yes
+							unrest = 15
+						}
+					}
+				}
+			}
+		}
+	}
+
+	option = {
+		name = "yua.33.a"			# Dire times are ahead of us	
+	}
+}
+
+#End of the Red Turban Rebellion Disaster
+country_event = {
+	id = yua.34
+	title = "yua.34.t"
+	desc = "yua.34.d"
+	picture = ANGRY_MOB_eventPicture
+	
+	
+	is_triggered_only = yes
+	
+	major = yes
+
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+
+	option = { #We still stand!
+		name = "yua.34.a"
+		add_adm_power = 100
+		add_dip_power = 100
+		add_mil_power = 100
+	}
+}
+
+#The Rebellion Event
+country_event = {
+	id = yua.35
+	title = "yua.35.t"
+	desc = "yua.35.d"
+	picture = ANGRY_MOB_eventPicture
+
+
+	is_triggered_only = yes
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+
+	option = { #Bring it on
+		name = "yua.35.a"			
+		random_list = { #Random Revolt in China
+			33 = {
+				north_china_region = {
+					random_owned_province = { 
+						spawn_rebels = {
+							type = yuan_red_turban_rebels
+							size = 2
+							win = yes
+							unrest = 15
+						}
+					}
+				}
+			}
+			
+			33 = {
+				xinan_region = {
+					random_owned_province = { 
+						spawn_rebels = {
+							type = yuan_red_turban_rebels
+							size = 2
+							win = yes
+							unrest = 15
+						}
+					}
+				}
+			}
+			
+			34 = {
+				south_china_region = {
+					random_owned_province = { 
+						spawn_rebels = {
+							type = yuan_red_turban_rebels
+							size = 2
+							win = yes
+							unrest = 15
+						}
+					}
+				}
+			}
+		}
+		capital_scope = { 
+			yuan_red_turban_rebels = 2
+		}
+	}
+}
 
 #Need to finish the Toqto suspected revolt path.

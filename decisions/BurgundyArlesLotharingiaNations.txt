@@ -135,14 +135,42 @@ country_decisions = {
 					has_country_flag = "bur_granted_imperial_title_flag"
 					tag = BUR
 				}
-				NOT = { tag = BUR }
+				AND = { 
+					NOT = { tag = BUR }
+					is_emperor = yes
+					NOT = { exists = BUR }
+					NOT = { exists = PBG }
+					NOT = { exists = ARE }
+					NOT = { exists = LOR }
+					NOT = { exists = BAR }
+					NOT = { exists = ALS }
+					owns_core_province = 1880
+				}
 			}
-			bourgogne_area = { owned_by = ROOT }
-			holland_area = { owned_by = ROOT }
-			netherlands_area = { owned_by = ROOT }
-			lorraine_area = { owned_by = ROOT }	
-			wallonia_area = { owned_by = ROOT }
-			flanders_area = { owned_by = ROOT }
+			bourgogne_area = { 
+				type = all
+				owned_by = ROOT
+			}
+			holland_area = { 
+				type = all
+				owned_by = ROOT
+			}
+			netherlands_area = {
+				type = all
+				owned_by = ROOT 
+			}
+			lorraine_area = {
+				type = all
+				owned_by = ROOT
+			}	
+			wallonia_area = { 
+				type = all
+				owned_by = ROOT 
+			}
+			flanders_area = { 
+				type = all
+				owned_by = ROOT
+			}
 			owns = 1878 #Aachen
 		}
 		effect = {

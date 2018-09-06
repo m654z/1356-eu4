@@ -132,8 +132,41 @@ yuan_toqtoa_start_group = { #Toqto'a Starting Mission
 	
 }
 
-yuan_ki_adm_group = { #Ki
+yuan_ki_red_turban_group = {
 	slot = 2
+	generic = no
+	ai = yes
+	
+	potential = { 
+		tag = YUA
+		has_country_flag = yuan_toqto_killed_flag
+		NOT = { has_country_flag = yuan_toqto_returns_flag }
+	}
+	has_country_shield = yes
+	
+
+	yua_ki_red_turban_rebellion_start_mission = { #Begin reforming our government so we can handle this rebellion properly
+		icon = mission_arabian_fort
+		required_missions = { yua_quell_red_turban_rebellion_korean_consort_mission }
+		position = 3
+		
+		trigger = {
+			num_of_rebel_controlled_provinces = 5
+			num_of_revolts = 5
+			has_spawned_rebels = yuan_red_turban_rebels
+			war_exhaustion = 10
+			NOT = { stability = 1 }
+			NOT = { prestige = 15 }
+		}
+		effect = {
+			
+		}	
+	}
+
+}
+
+yuan_ki_adm_group = { #Ki
+	slot = 3
 	generic = no
 	ai = yes
 	
@@ -146,8 +179,8 @@ yuan_ki_adm_group = { #Ki
 	
 	yua_ki_adm_reforms = {
 		icon =  mission_early_game_buildings
-		required_missions = { yua_quell_red_turban_rebellion_korean_consort_mission }
-		position = 3
+		required_missions = { yua_ki_government_reforms_mission_start }
+		position = 4
 		trigger = {
 			stability = 1
 			meritocracy = 85
@@ -163,7 +196,7 @@ yuan_ki_adm_group = { #Ki
 	yua_ki_adm_reforms_2 = {
 		icon =  mission_rice_field
 		required_missions = { yua_ki_adm_reforms }
-		position = 4
+		position = 5
 		trigger = {
 			is_at_war = yes
 			prestige = 0
@@ -178,7 +211,7 @@ yuan_ki_adm_group = { #Ki
 	yua_ki_adm_reforms_3 = {
 		icon =  mission_high_income
 		required_missions = { yua_ki_adm_reforms_2 }
-		position = 5
+		position = 6
 		trigger = {
 			OR = {
 				chinaware = 4
@@ -202,7 +235,7 @@ yuan_ki_adm_group = { #Ki
 	yua_ki_adm_reforms_4 = {
 		icon =  mission_arabian_fort
 		required_missions = { yua_ki_adm_reforms_3 }
-		position = 5
+		position = 7
 		trigger = {
 			NOT = { overextension_percentage = 0.1 }
 			ruler_age = 42
@@ -221,7 +254,7 @@ yuan_ki_adm_group = { #Ki
 	yua_ki_adm_reforms_5 = {
 		icon =  mission_market_place_with_asian_traders
 		required_missions = { yua_ki_adm_reforms_4 }
-		position = 5
+		position = 8
 		trigger = {
 			karma = 0
 			prestige = 0
@@ -237,7 +270,7 @@ yuan_ki_adm_group = { #Ki
 	yua_ki_adm_reforms_end = {
 		icon =  mission_monarch_in_throne_room
 		required_missions = { yua_ki_adm_reforms_5 }
-		position = 7
+		position = 9
 		trigger = {
 			karma = 0
 			prestige = 0
@@ -481,7 +514,7 @@ yuan_starter_group_2 = { #Starting Mission - Get a Feel for the Tree
 }
 
 yuan_ki_dip_group = { #Ki
-	slot = 2
+	slot = 4
 	generic = no
 	ai = yes
 	
@@ -492,10 +525,39 @@ yuan_ki_dip_group = { #Ki
 	}
 	has_country_shield = yes
 	
-	yua_ki_dip_reforms = {
-		icon =  mission_alliances
+	yua_ki_government_reforms_mission_start = { #Begin reforming our government so we can handle this rebellion properly
+		icon = mission_buddhist_monk_praying
 		required_missions = { yua_quell_red_turban_rebellion_korean_consort_mission }
 		position = 3
+	
+		provinces_to_highlight = {
+			OR = {
+				province_id = 1816
+				province_id = 726
+				province_id = 697
+			}
+			NOT = { controlled_by = YUA } #Is this right?
+		}
+		
+		trigger = {
+			1816 = { controlled_by = YUA }
+			697 = { controlled_by = YUA }
+			726 = { controlled_by = YUA }
+			num_of_rebel_controlled_provinces = 3
+			has_spawned_rebels = yuan_red_turban_rebels
+		}
+		effect = {
+			add_adm_power = 10
+			add_dip_power = 10
+			add_mil_power = 10
+			add_prestige = 5
+		}	
+	}
+	
+	yua_ki_dip_reforms = {
+		icon =  mission_alliances
+		required_missions = { yua_ki_government_reforms_mission_start }
+		position = 4
 		trigger = {
 			num_of_allies = 2
 			num_of_diplomatic_relations = 3
@@ -508,7 +570,7 @@ yuan_ki_dip_group = { #Ki
 	yua_ki_dip_reforms_2 = {
 		icon = mission_chinese_general_riding
 		required_missions = { yua_ki_dip_reforms }
-		position = 4
+		position = 5
 		trigger = {
 			has_any_disaster = yes
 			dip_power = 350
@@ -523,7 +585,7 @@ yuan_ki_dip_group = { #Ki
 	yua_ki_dip_reforms_3 = {
 		icon =  mission_rice_field
 		required_missions = { yua_ki_dip_reforms_2 }
-		position = 5
+		position = 6
 		trigger = {
 			NOT = { num_of_loans = 3 }
 			treasury = 350
@@ -554,7 +616,7 @@ yuan_ki_dip_group = { #Ki
 	yua_ki_dip_reforms_4 = {
 		icon =  mission_war_chest
 		required_missions = { yua_ki_dip_reforms_3 }
-		position = 5
+		position = 7
 		trigger = {
 			num_of_allies = 4
 			num_of_diplomatic_relations = 5
@@ -573,7 +635,7 @@ yuan_ki_dip_group = { #Ki
 	yua_ki_dip_reforms_5 = {
 		icon = mission_asian_trader
 		required_missions = { yua_ki_dip_reforms_4 }
-		position = 5
+		position = 8
 		trigger = {
 			num_of_ports = 25
 			navy_tradition = 15
@@ -588,7 +650,7 @@ yuan_ki_dip_group = { #Ki
 	yua_ki_dip_reforms_end = {
 		icon =  mission_market_place_with_asian_traders
 		required_missions = { yua_ki_dip_reforms_5 }
-		position = 7
+		position = 9
 		trigger = {
 			num_of_allies = 4
 			num_of_diplomatic_relations = 5
@@ -610,6 +672,39 @@ yuan_ki_dip_group = { #Ki
 		}
 	}
 	
+	yua_ki_government_reforms_mission_end = { #Begin reforming our government so we can handle this rebellion properly
+		icon = mission_alliances
+		required_missions = { yua_ki_dip_reforms_end yua_ki_adm_reforms_end yua_ki_drastic_reforms_end_mil }
+		position = 10
+	
+		provinces_to_highlight = {
+			OR = {
+				province_id = 1816
+				province_id = 726
+				province_id = 697
+			}
+			NOT = { controlled_by = YUA } #Is this right?
+		}
+		
+		trigger = {
+			1816 = { controlled_by = YUA }
+			697 = { controlled_by = YUA }
+			726 = { controlled_by = YUA }
+			num_of_rebel_controlled_provinces = 3
+			has_spawned_rebels = yuan_red_turban_rebels
+			has_country_flag = government_fixed
+			NOT = { has_country_modifier = mongol_debuff_adm }
+			NOT = { has_country_modifier = mongol_debuff_dip }
+			NOT = { has_country_modifier = mongol_debuff }
+		}
+		effect = {
+			set_country_flag = yuan_ki_reformed_government_flag
+			add_prestige = 10
+			add_adm_power = 10
+			add_dip_power = 10
+			add_mil_power = 10
+		}	
+	}
 }
 
 yuan_quell_red_turban_rebellion_toqto_group = { #Toqto's Return - Starting Tree
@@ -998,7 +1093,7 @@ yuan_ki_start_group = { #Starter Ki Mission
 }
 
 yuan_ki_mil_reforms_group = { #Ki - Enables Yuan to actually be able to Fight their rebels
-	slot = 4
+	slot = 5
 	generic = no
 	ai = yes
 	
@@ -1008,11 +1103,11 @@ yuan_ki_mil_reforms_group = { #Ki - Enables Yuan to actually be able to Fight th
 		NOT = { has_country_flag = yuan_toqto_returns_flag }
 	}
 	has_country_shield = yes
-	
+		
 	yua_ki_drastic_reforms = {
 		icon =  mission_build_up_to_force_limit
-		required_missions = { yua_quell_red_turban_rebellion_korean_consort_mission }
-		position = 3
+		required_missions = { yua_ki_government_reforms_mission_start }
+		position = 4
 		trigger = {
 			OR = {
 				fortification_expert = 1
@@ -1033,7 +1128,7 @@ yuan_ki_mil_reforms_group = { #Ki - Enables Yuan to actually be able to Fight th
 	yua_ki_drastic_reforms_2 = {
 		icon =  mission_alliances
 		required_missions = { yua_ki_drastic_reforms }
-		position = 4
+		position = 5
 		trigger = {
 			is_at_war = yes
 			mil_power = 300
@@ -1048,7 +1143,7 @@ yuan_ki_mil_reforms_group = { #Ki - Enables Yuan to actually be able to Fight th
 	yua_ki_drastic_reforms_3 = {
 		icon =  mission_assemble_an_army
 		required_missions = { yua_ki_drastic_reforms_2 }
-		position = 5
+		position = 6
 		trigger = {
 			is_at_war = yes
 			num_of_generals = 3
@@ -1064,7 +1159,7 @@ yuan_ki_mil_reforms_group = { #Ki - Enables Yuan to actually be able to Fight th
 	yua_ki_drastic_reforms_4 = {
 		icon =  mission_arabian_fort
 		required_missions = { yua_ki_drastic_reforms_3 }
-		position = 5
+		position = 7
 		trigger = {
 			is_at_war = yes
 			num_of_generals = 3
@@ -1082,7 +1177,7 @@ yuan_ki_mil_reforms_group = { #Ki - Enables Yuan to actually be able to Fight th
 	yua_ki_drastic_reforms_5 = {
 		icon =  mission_assemble_an_army
 		required_missions = { yua_ki_drastic_reforms_4 }
-		position = 6
+		position = 8
 		trigger = {
 		is_at_war = yes
 		army_size = 40
@@ -1111,7 +1206,7 @@ yuan_ki_mil_reforms_group = { #Ki - Enables Yuan to actually be able to Fight th
 	yua_ki_drastic_reforms_end_mil = {
 		icon =  mission_build_up_to_force_limit
 		required_missions = { yua_ki_drastic_reforms_5 }
-		position = 8
+		position = 9
 		trigger = {
 			num_of_generals = 3
 			num_of_cavalry = 20
@@ -1299,6 +1394,7 @@ yuan_quell_red_turban_rebellion_naval_group = {
 	ai = yes
 	
 	potential = { 
+		always = no
 		tag = YUA
 		#OR = {
 		#	has_country_flag = yuan_toqto_returns_flag

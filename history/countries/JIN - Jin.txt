@@ -5,7 +5,6 @@ primary_culture = jin
 capital = 693	#Taiyuan
 
 historical_rival = YUA
-historical_rival = YUA
 historical_rival = KHA
 historical_rival = CZH
 historical_rival = CXI

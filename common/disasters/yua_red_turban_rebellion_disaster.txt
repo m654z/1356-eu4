@@ -1,0 +1,61 @@
+red_turban_rebellion_disaster = {
+	potential = { #Yuan, is Emperor, before 1380, red turbans not over...
+		tag = YUA
+		is_emperor_of_china = yes
+		NOT = { is_year = 1380 }
+		NOT = { has_country_flag = red_turban_rebellion_over_flag }
+		NOT = { has_country_flag = yuan_red_turban_rebellion_began_flag }
+	}
+	
+	can_start = { #Always
+		tag = YUA
+	}
+	
+	can_stop = { #Not Emperor, is a Nomad, or Red Turban Rebellion is over.
+		OR = {
+			is_emperor_of_china = no
+			has_country_flag = red_turban_rebellion_over_flag
+			technology_group = nomad_group
+		}		
+	}
+	
+	progress = { #Instantly
+		modifier = {
+			factor = 50
+			tag = YUA
+			is_emperor_of_china = yes
+			NOT = { started_in = 1380.1.1 }
+		}
+	}
+	
+	can_end = { #Just have the flag, that's all. You've been through enough shit at this point. OR be a nomad AND not be emperor...
+		OR = {
+			has_country_flag = red_turban_rebellion_over_flag
+			AND = { 
+				technology_group = nomad_group
+				is_emperor_of_china = no
+			}
+		}
+	}
+	
+	modifier = {
+		global_unrest = 15
+	}	
+	
+	on_start = yua.33
+	on_end = yua.34
+	
+	on_monthly = {
+		events = {
+	
+		}
+		random_events = { 
+#			1000 = 0
+#			100 = yua.35
+#			100 = peasants_war.3
+#			100 = peasants_war.4
+#			100 = peasants_war.5
+		
+		}
+	}
+}

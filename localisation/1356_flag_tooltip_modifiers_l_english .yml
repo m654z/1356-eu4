@@ -139,6 +139,8 @@
  yuan_noble_plot_over_flag: "Noble Takeover ended!"
  yua_noble_rebellion_popped_flag: "Noble Rebellion in motion."
  heir_elected_yua_flag: "Nobles Elected an Heir"
+ yuan_ki_reformed_government_flag: "Successfully reformed the Yuan Government"
+ yuan_red_turban_rebellion_began_flag: "Red Turban Rebellion Begins..."
  
  #Scripted Effects
  yuan_culture_convert_decision_effect: "Our King, heir, and Mongolian provinces adopt a new culture. One more...Chinese?"

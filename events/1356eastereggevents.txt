@@ -128,3 +128,59 @@ country_event = {
 		}
 	}
 }
+
+#Poland
+
+#The Rise of the Mad King Mushill?
+country_event = {
+	id = eastereggflandy.3
+	title = "eastereggflandy.3.t"
+	desc = "eastereggflandy.3.desc"
+	picture = COURT_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = POL
+		OR = {
+			current_age = age_of_discovery
+			current_age = age_of_feudalism
+			current_age = age_of_reformation
+			NOT = { is_year = 1650 }
+		}
+	}
+
+	mean_time_to_happen = {
+		years = 1000
+	}
+	
+	option = { #All hail the Mad King Mushill!
+		name = eastereggflandy.3.a
+		ai_chance = { factor = 25 }
+		define_ruler = {
+			name = "Logan"
+			dynasty = "Mushill"
+			male = yes
+			culture = polish
+			religion = catholic
+			age = 25
+			adm = 3
+			dip = 2
+			mil = 6
+			claim = 80
+			fixed = yes
+		}
+		add_mil_power = 150
+		add_prestige = -10
+	}
+	option = { #The Mad King Mushill? What is this nonsense? Off with this Maniac's head!
+		name = eastereggflandy.3.b
+		ai_chance = { factor = 75 }
+		add_legitimacy = 25
+		add_prestige = 10
+		add_dip_power = 50
+	}
+}
+
+#Misc
+
