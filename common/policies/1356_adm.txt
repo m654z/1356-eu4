@@ -5,10 +5,6 @@ the_inquisitor_act = {
 	potential = {
 		has_idea_group = theocratic_ideas
 		has_idea_group = religious_ideas
-		OR = {
-			full_idea_group = theocratic_ideas
-			full_idea_group = religious_ideas
-		}	
 	}
 	allow = {
 		full_idea_group = theocratic_ideas
@@ -50,10 +46,6 @@ ruling_in_his_name = {
 	potential = {
 		has_idea_group = theocratic_ideas
 		has_idea_group = administrative_ideas
-		OR = {
-			full_idea_group = theocratic_ideas
-			full_idea_group = administrative_ideas
-		}		
 	}
 	allow = {
 		full_idea_group = theocratic_ideas

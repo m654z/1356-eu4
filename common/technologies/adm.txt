@@ -10,8 +10,8 @@ technology = {
 	#tech0
 	year = 1336
 	
-	tribal_despotism = yes 	
-	tribal_federation = yes 
+	tribal_despotism_legacy = yes 	
+	tribal_federation_legacy = yes 
 	feudal_monarchy = yes
 	
 	native_earthwork = yes
@@ -30,8 +30,8 @@ technology = {
 	#tech1
 	year = 1348
 
-	tribal_democracy = yes
-	tribal_kingdom = yes
+	tribal_democracy_legacy = yes
+	tribal_kingdom_legacy = yes
 }
 
 technology = {
@@ -54,7 +54,7 @@ technology = {
 	#tech4
 	year = 1384
 	
-	production_efficiency	=	0.05
+	production_efficiency =	0.05
 	allowed_idea_groups = 1
 	
 }
@@ -89,7 +89,8 @@ technology = {
 technology = { #MOVED VANILLA feudal_monarchy
 	# Tech 3
 	year = 1431
-
+	
+	#despotic_monarchy = yes #vanilla location
 	#feudal_monarchy = yes #vanilla location 
 	oligarchic_republic = yes
 }
@@ -104,7 +105,7 @@ technology = {
 technology = {
 
 	year = 1454
-	production_efficiency	 =	0.1
+	production_efficiency	 =	0.02
 	
 }
 
@@ -148,7 +149,7 @@ technology = { #The Scythe
 	year = 1518
 	
 	#The Scythe
-	production_efficiency 	=	0.05
+	production_efficiency 	=	0.02
 	
 
 }
@@ -184,7 +185,7 @@ technology = { #Improved Drainage
 	year = 1570
 	
 	#Improved Drainage
-	production_efficiency 	=	0.05
+	production_efficiency 	=	0.02
 }
 
 technology = { #Scientific Experimentation
@@ -208,7 +209,7 @@ technology = { #Metallurgy
 	year = 1609
 	
 	mills = yes
-	production_efficiency 	=	0.05
+	production_efficiency 	=	0.02
 
 
 }

@@ -5,10 +5,6 @@ order_of_monastic_knights = {
 	potential = {
 		has_idea_group = theocratic_ideas
 		has_idea_group = offensive_ideas
-		OR = {
-			full_idea_group = theocratic_ideas
-			full_idea_group = offensive_ideas
-		}
 	}
 	
 	allow = {
