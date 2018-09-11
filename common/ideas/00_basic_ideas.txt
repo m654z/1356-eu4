@@ -15,12 +15,7 @@ aristocracy_ideas = {
 	}
 
 	trigger = {
-		OR = {
-			government = monarchy
-			government = noble_republic
-			government = elective_monarchy
-			#government = theocracy
-		}
+		has_government_attribute = enables_aristocratic_idea_group
 	}
 	
 	noble_knights = {
@@ -61,14 +56,14 @@ aristocracy_ideas = {
 	}
 }
 
-theocratic_ideas = {
+theocratic_ideas = { #Will need testing to see if this still works
 	category = MIL
 
 	bonus = {
 		infantry_power = 0.1
 	}
 
-	trigger = {
+	trigger = { #Will need testing to see if this still works
 		OR = {
 			government = theocracy
 			government = monastic_order_government
@@ -110,9 +105,7 @@ plutocracy_ideas = {
 	}
 	
 	trigger = {
-		NOT = { government = monarchy }
-		NOT = { government = noble_republic }
-		NOT = { government = theocracy }
+		has_government_attribute = enables_plutocratic_idea_group
 	}
 
 	tradition_of_payment = {
@@ -178,7 +171,7 @@ innovativeness_ideas = {
 		factor = 0.3
 		modifier = {
 			factor = 2
-			government = steppe_horde
+			has_reform = steppe_horde
 		}
 		modifier = {
 			factor = 2
@@ -431,11 +424,11 @@ trade_ideas = {
 		modifier = {
 			factor = 0
 			NOT = { num_of_cities = 6 }
-			NOT = { government = merchant_republic }
+			NOT = { has_reform = merchants_reform }
 		}
 		modifier = {
 			factor = 3
-			government = merchant_republic
+			has_reform = merchants_reform
 		}
 	}
 }
@@ -484,7 +477,7 @@ economic_ideas = {
 		}
 		modifier = {
 			factor = 2
-			government = steppe_horde
+			has_reform = steppe_horde
 		}
 		modifier = {
 			factor = 1.3
@@ -560,9 +553,7 @@ exploration_ideas = {
 			NOT = { 
 				any_owned_province = { 
 					is_in_capital_area = yes
-					any_owned_province = {
-						has_empty_adjacent_province = yes
-					}
+					has_empty_adjacent_province = yes
 				} 
 			}
 		}
@@ -572,9 +563,7 @@ exploration_ideas = {
 			NOT = { 
 				any_owned_province = { 
 					is_in_capital_area = yes
-					any_owned_province = {
-						has_empty_adjacent_province = yes
-					}
+					has_empty_adjacent_province = yes
 				}
 			}
 		}
@@ -635,6 +624,7 @@ exploration_ideas = {
 				tag = POR
 				tag = CAS
 				tag = SPA
+				tag = SEV #1356
 			}
 		}
 		modifier = {
@@ -645,6 +635,13 @@ exploration_ideas = {
 				tag = ENG
 				tag = FRA
 				tag = KUR
+				tag = GUY #1356
+				tag = OCC #1356
+				tag = AQT #1356
+				tag = NOR #1356
+				tag = ICE #1356
+				tag = SCO #1356
+				tag = IRE #1356
 			}
 		}
 	}
@@ -884,7 +881,7 @@ administrative_ideas = {
 		merc_maintenance_modifier = -0.25
 	}
 	bookkeeping = {
-		interest = -1
+		interest = -0.5
 	}
 	organised_mercenary_recruitment = {
 		possible_mercenaries = 0.25
@@ -900,7 +897,7 @@ administrative_ideas = {
 		factor = 0.96
 		modifier = {
 			factor = 2
-			government = steppe_horde
+			has_reform = steppe_horde
 		}
 	}
 }

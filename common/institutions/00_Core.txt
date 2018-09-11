@@ -77,7 +77,7 @@ feudalism = {
 			}
 			AND = {
 				region = horn_of_africa_region
-				owner = { NOT = { government = tribal_federation } }
+				owner = { NOT = { has_reform = tribal_federation } }
 			}
 			AND = {
 				culture = al_misr_arabic
@@ -86,20 +86,16 @@ feudalism = {
 			}
 			AND = {
 				culture_group = hindusthani
-				NOT = { owner = { government = tribal_kingdom } } #Ladakh
+				NOT = { owner = { has_reform = tribal_kingdom } } #Ladakh
 			}
 			owner = { technology_group = high_american }
 			owner = {
 				NOT = {
-					government = siberian_native_council
-					government = steppe_horde
-					government = tribal_kingdom
-					government = tribal_despotism
-					government = tribal_federation
-					government = tribal_democracy
+					government = tribal
+					government = native
 					primary_culture = bedouin_arabic
 					primary_culture = uyghur
-					primary_culture = sapmi
+					primary_culture = sapmi #1356
 					technology_group = andean
 					technology_group = mesoamerican
 					technology_group = north_american
@@ -110,13 +106,8 @@ feudalism = {
 			AND = {
 				is_year = 1600
 				owner = {
-					NOT = { government = siberian_native_council }
-					NOT = { government = steppe_horde }
-					NOT = { government = tribal_despotism }
-					NOT = { government = tribal_federation }
-					NOT = { government = tribal_democracy }
-					NOT = { government = native_council }
-					NOT = { government = tribal_kingdom }
+					NOT = { has_reform = siberian_tribe }
+					NOT = { has_reform = steppe_horde }
 				}
 			}
 			is_year = 1700
@@ -166,7 +157,6 @@ feudalism = {
 			scale = yes
 			force_potential = yes	# Hide the this modifier when potential is false
 			potential = {
-				has_dlc = "The Cossacks"
 				owner = { has_estate = estate_nobles }
 			}
 			custom_trigger_tooltip = {
@@ -218,13 +208,8 @@ feudalism = {
 				NOT = { continent = south_america }
 				NOT = { continent = new_world }
 				owner = {
-					NOT = { government = tribal_democracy }
-					NOT = { government = tribal_kingdom }
-					NOT = { government = tribal_despotism }
-					NOT = { government = tribal_federation }
-					NOT = { government = siberian_native_council }
-					NOT = { government = native_council }
-					NOT = { government = steppe_horde }
+					NOT = { government = tribal }
+					NOT = { government = native }
 				}
 			}
 		}
@@ -961,7 +946,6 @@ printing_press = {
 			scale = yes
 			force_potential = yes	# Hide the this modifier when potential is false
 			potential = {
-				has_dlc = "The Cossacks"
 				owner = { has_estate = estate_church }
 			}
 			custom_trigger_tooltip = {
@@ -1009,24 +993,57 @@ printing_press = {
 					religion_group = christian
 				}
 			}
-			custom_trigger_tooltip = {
-				tooltip = tooltip_owner_protestant
-				is_owned_by_trade_company = no
-				owner = {
-					OR = {
-						religion = protestant
-						religion = reformed
+			if = {
+				limit = { has_dlc = "Rule Britannia" }
+				custom_trigger_tooltip = {
+					tooltip = tooltip_owner_protestant
+					is_owned_by_trade_company = no
+					owner = {
+						OR = {
+							religion = protestant
+							religion = reformed
+							religion = anglican
+						}
+					}
+				}
+			}
+			else = {
+				custom_trigger_tooltip = {
+					tooltip = tooltip_owner_protestant
+					is_owned_by_trade_company = no
+					owner = {
+						OR = {
+							religion = protestant
+							religion = reformed
+							religion = anglican
+						}
 					}
 				}
 			}
 		}
 		modifier = {
 			factor = 1
-			custom_trigger_tooltip = {
-				tooltip = tooltip_province_protestant
-				OR = {
-					religion = reformed
-					religion = protestant
+			if = {
+				limit = {
+					has_dlc = "Rule Britannia"
+				}
+				custom_trigger_tooltip = {
+					tooltip = tooltip_province_protestant_RB
+					OR = {
+						religion = reformed
+						religion = protestant
+						religion = anglican
+					}
+				}
+			}
+			else = {
+				custom_trigger_tooltip = {
+					tooltip = tooltip_province_protestant
+					OR = {
+						religion = reformed
+						religion = protestant
+						religion = anglican
+					}
 				}
 			}
 		}
@@ -1188,8 +1205,8 @@ global_trade = {
 		is_island = no
 		highest_value_trade_node = yes
 		OR = {
-			has_province_modifier = center_of_trade_modifier
-			has_province_modifier = inland_center_of_trade_modifier
+			province_has_center_of_trade_of_level = 3
+			province_has_center_of_trade_of_level = 2
 			is_capital = yes
 		}
 		owner = {
@@ -1248,17 +1265,11 @@ global_trade = {
 			factor = 0.5
 			scale = yes
 			potential = {
-				OR = {
-					has_province_modifier = inland_center_of_trade_modifier
-					has_province_modifier = center_of_trade_modifier
-				}
+				province_has_center_of_trade_of_level = 2
 			}
 			custom_trigger_tooltip = {
 				tooltip = tooltip_center_of_trade_spread
-				OR = {
-					has_province_modifier = inland_center_of_trade_modifier
-					has_province_modifier = center_of_trade_modifier
-				}
+				province_has_center_of_trade_of_level = 2
 			}
 		}
 		modifier = {
@@ -1266,7 +1277,6 @@ global_trade = {
 			scale = yes
 			force_potential = yes	# Hide the this modifier when potential is false
 			potential = {
-				has_dlc = "The Cossacks"
 				owner = { has_estate = estate_burghers }
 			}
 			custom_trigger_tooltip = {
