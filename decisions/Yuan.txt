@@ -123,7 +123,7 @@ country_decisions = {
 		
 		allow = {
 			is_subject = no
-			has_country_modifier = fall_of_yuan_mandate
+			#has_country_modifier = fall_of_yuan_mandate
 			years_of_income = 0.25
 			
 		}

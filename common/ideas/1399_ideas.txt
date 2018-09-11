@@ -1523,3 +1523,81 @@ GYO_ideas = { #Needs Tweaks
 	}
 	
 }
+
+bergian_ideas = {
+    start = {
+        global_tax_modifier = 0.1
+        legitimacy = 1
+    }
+ 
+    bonus = {
+        prestige_decay = -0.01
+    }
+   
+    trigger = {
+        tag = BRG
+    }
+    free = yes
+   
+    kaiserpfalz_keyserswerth = {
+        global_prov_trade_power_modifier = 0.10
+    }
+    julich_kleve_berg = {
+        diplomatic_upkeep = 1
+    }
+    alessandro_pasqualini = {
+        build_cost = -0.1
+        development_cost = -0.1
+    }
+    konrad_heresbach = {
+        tolerance_heretic = 3
+    }
+    jan_wellem = {
+        diplomatic_reputation = 1
+    }
+    gemaeldegalerie_düsseldorf = {
+        prestige = 1
+    }
+    koenigsallee = {
+        production_efficiency = 0.1
+    }
+}
+ 
+colognian_ideas = {
+    start = {
+        papal_influence = 2
+        stability_cost_modifier = -0.1
+    }
+ 
+    bonus = {
+        missionaries = 1
+    }
+   
+    trigger = {
+        tag = KOL
+    }
+    free = yes
+   
+    stadtmauer = {
+        defensiveness = 0.25
+    }
+    biblical_magi = {
+        global_tax_modifier = 0.2
+    }
+    koelner_dom = {
+        papal_influence = 2
+    }
+    stapelrecht = {
+        global_prov_trade_power_modifier = 0.10
+    }
+    catholic_bastion = {
+        tolerance_own = 2
+    }
+    free_city = {
+        enemy_core_creation = 0.25
+    }
+    carneval = {
+        prestige = 1
+    }
+}
+
