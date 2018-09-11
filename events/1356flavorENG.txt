@@ -12,7 +12,7 @@ country_event = {
 		tag = ENG
 		is_year = 1380
 		NOT = { is_year = 1420 }
-		NOT = { exists = YOK }
+		NOT = { exists = YRK }
 		owns_or_subject_of = 245
 		owns_or_subject_of = 4368
 		owns_or_subject_of = 4367
@@ -25,15 +25,15 @@ country_event = {
 	
 	option = { #The House Rises!
 		name = "flaeng.1.a"
-		YOK = {
+		YRK = {
 			add_core = 245
 			add_core = 4368
 			add_core = 4367
 		}
 		ENG = {
-			release = YOK
-			vassalize = YOK
-			create_marriage = YOK
+			release = YRK
+			vassalize = YRK
+			create_marriage = YRK
 			remove_core = 245
 			remove_core = 4368
 			remove_core = 4367
@@ -56,7 +56,7 @@ country_event = {
 		245 = {
 			spawn_rebels = {
 			type = nationalist_rebels
-			friend = YOK
+			friend = YRK
 			win = yes
 			size = 1
 			}
@@ -64,7 +64,7 @@ country_event = {
 		4368 = {
 			spawn_rebels = {
 			type = nationalist_rebels
-			friend = YOK
+			friend = YRK
 			win = yes
 			size = 1
 			}
@@ -72,7 +72,7 @@ country_event = {
 		4367 = {
 			spawn_rebels = {
 			type = nationalist_rebels
-			friend = YOK
+			friend = YRK
 			win = yes
 			size = 1
 			}

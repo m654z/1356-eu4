@@ -10,7 +10,7 @@ TES = "countries/Thessaly.txt"
 MAC = "countries/Macedonia.txt"
 
 #British Isles 
-YOK = "countries/York.txt"
+YRK = "countries/York.txt"
 LNC = "countries/Lancaster.txt"
 
 #Colonies

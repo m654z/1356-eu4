@@ -36,15 +36,17 @@ vassal = {
 
 vassal = {
 	first = ENG
-	second = YOK
-	start_date = 1300.1.1
+	second = YRK
+	start_date = 1356.1.1
+	#start_date = 1300.1.1 #Balance
 	end_date = 1415.10.25
 }
 
 vassal = {
 	first = ENG
 	second = LNC
-	start_date = 1300.1.1
+	start_date = 1356.1.1
+	#start_date = 1300.1.1 #Balance
 	end_date = 1399.2.3
 }
 
