@@ -1,9 +1,10 @@
 country_decisions = {
 
-	irish_nation = {
+	irish_nation = { #1356 - Changed Tech
 		major = yes
 		potential = {
 			normal_or_historical_nations = yes
+			was_never_end_game_tag_trigger = yes
 			NOT = { has_country_flag = formed_ireland_flag }
 			OR = {
 				ai = no
@@ -44,7 +45,7 @@ country_decisions = {
 			NOT = { owned_by = ROOT }
 		}
 		allow = {
-			adm_tech = 15
+			adm_tech = 16 #Orignally 10
 			is_free_or_tributary_trigger = yes
 			is_nomad = no
 			is_at_war = no

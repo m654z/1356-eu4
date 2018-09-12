@@ -1,9 +1,10 @@
 country_decisions = {
 
-	italian_nation = {
+	italian_nation = { #1356 - Changed Tech
 		major = yes
 		potential = {
 			normal_or_historical_nations = yes
+			was_never_end_game_tag_trigger = yes
 			NOT = { has_country_flag = formed_italy_flag }
 			OR = {
 				ai = no
@@ -47,7 +48,7 @@ country_decisions = {
 			}
 		}
 		allow = {
-			adm_tech = 15
+			adm_tech = 16 #Orignally 10
 			is_free_or_tributary_trigger = yes
 			is_at_war = no
 			owns_core_province = 101	# Genoa
@@ -84,12 +85,6 @@ country_decisions = {
 				}
 				set_government_rank = 2
 			}
-			#if = {
-			#	limit = {
-			#		government = republic
-			#	}
-			#	change_government = despotic_monarchy
-			#}
 			change_tag = ITA
 			italy_region = {
 				limit = {
@@ -109,10 +104,6 @@ country_decisions = {
 		}
 		ai_will_do = {
 			factor = 1
-			modifier = {
-				factor = 0
-				government = republic
-			}
 		}
 	}
 	

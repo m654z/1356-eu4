@@ -1,9 +1,10 @@
 country_decisions = {
 
-	german_nation = {
+	german_nation = { #1356 - Changed Tech
 		major = yes
 		potential = {
 			normal_or_historical_nations = yes
+			was_never_end_game_tag_trigger = yes
 			NOT = { has_country_flag = formed_germany_flag }
 			OR = {
 				ai = no
@@ -77,7 +78,7 @@ country_decisions = {
 			}
 		}
 		allow = {
-			adm_tech = 20
+			adm_tech = 26 #Orignally 20
 			is_free_or_tributary_trigger = yes
 			is_nomad = no
 			is_at_war = no

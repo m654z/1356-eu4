@@ -1,9 +1,10 @@
 country_decisions = {
 
-	spanish_nation = {
+	spanish_nation = { #1356 - Changed tech
 		major = yes
 		potential = {
 			normal_or_historical_nations = yes
+			was_never_end_game_tag_trigger = yes
 			NOT = { has_country_flag = formed_spain_flag }
 			OR = {
 				ai = no
@@ -77,7 +78,7 @@ country_decisions = {
 		}
 		allow = {
 			NOT = { exists = SPA }
-			adm_tech = 15
+			adm_tech = 16 #Orignally 10
 			is_free_or_tributary_trigger = yes
 			is_nomad = no
 			is_at_war = no
@@ -139,10 +140,11 @@ country_decisions = {
 		ai_importance = 400
 	}
 	
-	spanish_nation_diplomatically = {
+	spanish_nation_diplomatically = { #1356 - Changed tech
 		major = yes
 		potential = {
 			normal_or_historical_nations = yes
+			was_never_end_game_tag_trigger = yes
 			NOT = { has_country_flag = formed_spain_flag }
 			OR = {
 				ai = no
@@ -195,7 +197,7 @@ country_decisions = {
 			}
 		}
 		allow = {
-			adm_tech = 15
+			adm_tech = 16 #Orignally 10
 			is_free_or_tributary_trigger = yes
 			is_nomad = no
 			is_at_war = no
@@ -265,6 +267,7 @@ country_decisions = {
 				inherit = CAS
 			}
 			change_tag = SPA
+			swap_non_generic_missions = yes
 			if = {
 				limit = {
 					has_custom_ideas = no

@@ -4,6 +4,7 @@ country_decisions = {
 		major = yes
 		potential = {
 			normal_or_historical_nations = yes
+			was_never_end_game_tag_trigger = yes
 			NOT = { has_country_flag = formed_aquitaine_flag }
 			NOT = { tag = HLR }
 			NOT = { tag = FRA }
@@ -119,6 +120,7 @@ country_decisions = {
 			normal_or_historical_nations = yes
 			NOT = { has_country_flag = formed_gascony_flag }
 			primary_culture = gascon
+			was_never_end_game_tag_trigger = yes
 			NOT = { tag = HLR }
 			NOT = { tag = FRA } # France wouldn't downgrade itself
 			NOT = { tag = PAP }
@@ -220,6 +222,7 @@ country_decisions = {
 				tag = LIE
 				tag = LUX
 			}
+			was_never_end_game_tag_trigger = yes
 			is_colonial_nation = no
 			OR = {
 				is_former_colonial_nation = no
@@ -272,16 +275,7 @@ country_decisions = {
 			}
 			add_prestige = 25
 			if = {
-				limit = {
-					has_custom_ideas = no
-					OR = {
-						ai = no
-						AND = {
-							ai = yes
-							has_idea_group = default_ideas
-						}
-					}
-				}
+				limit = { has_custom_ideas = no }
 				country_event = { id = ideagroups.1 } #Swap Ideas
 			}
 			set_country_flag = formed_wallonia_flag
@@ -311,6 +305,7 @@ country_decisions = {
 			NOT = { tag = ARE }
 			NOT = { exists = BUR }
 			primary_culture = burgundian
+			was_never_end_game_tag_trigger = yes
 			is_colonial_nation = no
 			OR = {
 				is_former_colonial_nation = no
@@ -362,16 +357,7 @@ country_decisions = {
 			}
 			add_prestige = 25
 			if = {
-				limit = {
-					has_custom_ideas = no
-					OR = {
-						ai = no
-						AND = {
-							ai = yes
-							has_idea_group = default_ideas
-						}
-					}
-				}
+				limit = { has_custom_ideas = no }
 				country_event = { id = ideagroups.1 } #Swap Ideas
 			}
 			set_country_flag = formed_burgundy_flag
@@ -399,6 +385,7 @@ country_decisions = {
 				#tag = AAC
 				
 			}
+			was_never_end_game_tag_trigger = yes
 			is_colonial_nation = no
 		}
 		provinces_to_highlight = {
@@ -482,16 +469,7 @@ country_decisions = {
 			}
 			add_prestige = 25
 			if = {
-				limit = {
-					has_custom_ideas = no
-					OR = {
-						ai = no
-						AND = {
-							ai = yes
-							has_idea_group = default_ideas
-						}
-					}
-				}
+				limit = { has_custom_ideas = no }
 				country_event = { id = ideagroups.1 } #Swap Ideas
 			}
 			set_country_flag = formed_lotharingia_flag
@@ -517,6 +495,7 @@ country_decisions = {
 				tag = SAV
 				tag = DAU
 			}
+			was_never_end_game_tag_trigger = yes
 			is_nomad = no
 			is_colonial_nation = no
 		}
@@ -566,16 +545,7 @@ country_decisions = {
 			}
 			add_prestige = 25
 			if = {
-				limit = {
-					has_custom_ideas = no
-					OR = {
-						ai = no
-						AND = {
-							ai = yes
-							has_idea_group = default_ideas
-						}
-					}
-				}
+				limit = { has_custom_ideas = no }
 				country_event = { id = ideagroups.1 } #Swap Ideas
 			}
 			set_country_flag = formed_arles_flag

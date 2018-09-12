@@ -1,9 +1,10 @@
 country_decisions = {
 
-	netherlands_nation = {
+	netherlands_nation = { #1356 - Changed Tech
 		major = yes
 		potential = {
 			normal_or_historical_nations = yes
+			was_never_end_game_tag_trigger = yes
 			NOT = { has_country_flag = formed_netherlands_flag }
 			OR = {
 				ai = no
@@ -31,15 +32,15 @@ country_decisions = {
 		}
 		provinces_to_highlight = {
 			OR = {
-				province_id = 95
-				province_id = 96
-				province_id = 97
-				province_id = 98
-				province_id = 99
-				province_id = 100
-				province_id = 4383
-				province_id = 4381
-				province_id = 4382
+				province_id = 95 # Breda
+				province_id = 96 # Zeeland
+				province_id = 97 # Holland
+				province_id = 98 # Utrecht
+				province_id = 99 # Gelre
+				province_id = 100 # Friesland
+				province_id = 4383 # Den Haag
+				province_id = 4381 #Oversticht
+				province_id = 4382 #Groningen
 			}
 			OR = {
 				NOT = { owned_by = ROOT }
@@ -47,7 +48,7 @@ country_decisions = {
 			}
 		}
 		allow = {
-			adm_tech = 15
+			adm_tech = 16 #Orignally 10
 			is_free_or_tributary_trigger = yes
 			is_nomad = no
 			is_at_war = no
@@ -106,7 +107,8 @@ country_decisions = {
 					government = theocracy
 					religion = catholic
 				}
-				change_government = administrative_monarchy
+				change_government = monarchy
+				set_legacy_government = administrative_monarchy
 				PAP = {
 					add_opinion = {
 						who = ROOT
@@ -119,7 +121,8 @@ country_decisions = {
 					government = theocracy
 					NOT = { religion = catholic }
 				}
-				change_government = administrative_monarchy
+				change_government = monarchy
+				set_legacy_government = administrative_monarchy
 			}
 			if = {
 				limit = {

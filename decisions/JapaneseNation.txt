@@ -6,10 +6,11 @@ country_decisions = {
 		potential = {
 			NOT = { tag = JAP }
 			NOT = { has_country_flag = formed_japan_flag }
-			government = shogunate
+			was_never_end_game_tag_trigger = yes
+			has_reform = shogunate
 			any_country = {
 				vassal_of = ROOT
-				government = daimyo
+				has_reform = daimyo
 			}
 		}
 		provinces_to_highlight = {
@@ -29,18 +30,20 @@ country_decisions = {
 			owns = 1028
 		}
 		effect = {
-			change_government = feudal_monarchy
+			remove_government_reform = shogunate
+			set_legacy_government = despotic_monarchy
 			set_government_rank = 3
 			custom_tooltip = unite_japan_subject_tooltip
 			hidden_effect = {
 				every_subject_country = {
 					limit = {
-						government = daimyo
+						has_reform = daimyo
 					}
 					ROOT = {
 						free_vassal = PREV
 					}
-					change_government = feudal_monarchy
+					remove_government_reform = daimyo
+					set_legacy_government = despotic_monarchy
 					every_owned_province = {
 						remove_core = JAP
 					}
@@ -67,8 +70,9 @@ country_decisions = {
 	united_japan = {
 		major = yes
 		potential = {
-			government = shogunate
+			has_reform = shogunate
 			NOT = { has_country_flag = formed_japan_flag }
+			was_never_end_game_tag_trigger = yes
 			NOT = { exists = JAP }
 		}
 		allow = {
@@ -78,17 +82,19 @@ country_decisions = {
 			owns = 1028
 			all_country = {
 				NOT = {
-					government = daimyo
+					has_reform = daimyo
 				}
 				NOT = {
-					government = indep_daimyo
+					has_reform = indep_daimyo
 				}
 			}
 		}
 		effect = {
 			change_tag = JAP
+			remove_government_reform = shogunate
+			set_legacy_government = despotic_monarchy
 			set_country_flag = formed_japan_flag
-			change_government = feudal_monarchy
+			swap_non_generic_missions = yes
 			set_government_rank = 3
 			add_legitimacy = 100
 			add_adm_power = 100
@@ -110,8 +116,9 @@ country_decisions = {
 		potential = {
 			NOT = { tag = JAP }
 			NOT = { has_country_flag = formed_japan_flag }
-			NOT = { government = shogunate }
-			NOT = { government = celestial_empire }
+			was_never_end_game_tag_trigger = yes
+			NOT = { has_reform = shogunate }
+			NOT = { has_reform = celestial_empire }
 			culture_group = japanese_g
 		}
 		provinces_to_highlight = {
@@ -130,9 +137,9 @@ country_decisions = {
 				OR = {
 					tag = ROOT
 					AND = {
-						NOT = { government = daimyo }
-						NOT = { government = indep_daimyo }
-						NOT = { government = shogunate }
+						NOT = { has_reform = daimyo }
+						NOT = { has_reform = indep_daimyo }
+						NOT = { has_reform = shogunate }
 					}
 				}
 			}
@@ -141,7 +148,10 @@ country_decisions = {
 			change_tag = JAP
 			set_country_flag = formed_japan_flag
 			remove_non_electors_emperors_from_empire_effect = yes
-			change_government = feudal_monarchy
+			remove_government_reform = daimyo
+			remove_government_reform = indep_daimyo
+			set_legacy_government = despotic_monarchy
+			swap_non_generic_missions = yes
 			set_government_rank = 3
 			add_legitimacy = 100
 			add_adm_power = 100
@@ -157,53 +167,6 @@ country_decisions = {
 		}
 	}
 
-	# Sword Hunt
-#	sword_hunt_decision = {
-#		potential = {
-#			always = no
-#			government = daimyo
-#			NOT = {
-#				has_country_modifier = sword_hunter
-#				has_country_flag = sword_hunt
-#			}
-#		}
-#		allow = {
-#			stability = 3
-#			legitimacy = 50
-#			prestige = 50
-#		}
-#		effect = {
-#			add_country_modifier = {
-#				name = sword_hunter
-#				duration = 3650
-#			}
-#			set_country_flag = sword_hunt
-#			every_country = {
-#				limit = { 
-#					government = daimyo 
-#					NOT = {
-#						has_country_modifier = sword_hunter
-#					}
-#				}
-#				add_opinion = { who = ROOT modifier = opinion_sword_hunt }
-#			}
-#		}
-#		ai_will_do = {
-#			factor = 1
-#			modifier = {
-#				factor = 0
-#				NOT = {
-#					any_country = {
-#						government = daimyo
-#						OR = {
-#							NOT = { has_opinion = { who = ROOT value = 0 } }
-#							has_opinion = { who = ROOT value = 170 }
-#						}
-#					}
-#				}
-#			}
-#		}
-#	}
 	
 	# Sakoku
 	enforce_sakoku_law = {
@@ -265,7 +228,7 @@ country_decisions = {
 				has_global_flag = japan_is_closed
 				has_country_modifier = western_embassy_mission
 			}
-			government = daimyo
+			has_reform = daimyo
 			NOT = { has_institution = global_trade }
 			has_global_flag = japan_has_encountered_the_west
 			any_known_country = {
@@ -288,28 +251,7 @@ country_decisions = {
 			add_dip_power = -50
 		}
 	}
-	
-	hire_ninjas = {
-		potential = {
-			always = no
-			government = daimyo
-			NOT = { has_country_modifier = ninjas }
-			advisor = spymaster
-		}
-	
-		allow = {
-			treasury = 100
-		}
-	
-		effect = {
-			add_country_modifier = {
-				name = ninjas
-				duration = 1825
-			}
-			add_treasury = -100
-		}
-	}
-	
+		
 	restore_the_shrine_of_ise = {
 		potential = {
 			religion = shinto

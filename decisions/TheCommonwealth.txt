@@ -1,9 +1,10 @@
 country_decisions = {
 
-	pol_commonwealth = {
+	pol_commonwealth = { #1356 - Changed tech
 		major = yes
 		potential = {
 			normal_or_historical_nations = yes
+			was_never_end_game_tag_trigger = yes
 			NOT = { has_country_flag = formed_plc_flag }
 			OR = {
 				ai = no
@@ -44,7 +45,7 @@ country_decisions = {
 			LIT = {
 				NOT = { num_of_cities = 48 } #Keep this number the same as in potential. Original 38 +10
 			}
-			adm_tech = 15
+			adm_tech = 16 #Orignally 10
 			is_subject = no
 			is_nomad = no
 			stability = 1
@@ -131,10 +132,11 @@ country_decisions = {
 		do_not_integrate = LIT
 	}
 
-	lit_commonwealth = {
+	lit_commonwealth = { #1356 - Changed tech
 		major = yes
 		potential = {
 			normal_or_historical_nations = yes
+			was_never_end_game_tag_trigger = yes
 			NOT = { has_country_flag = formed_plc_flag }
 			OR = {
 				ai = no
@@ -172,7 +174,7 @@ country_decisions = {
 		}
 		allow = {
 			POL = { NOT = { num_of_cities = 24 } } #Keep this number the same as in potential. Original 14+10
-			adm_tech = 15
+			adm_tech = 16 #Orignally 10
 			is_subject = no
 			is_nomad = no
 			stability = 3
@@ -259,10 +261,11 @@ country_decisions = {
 		do_not_integrate = POL
 	}
 	
-	commonwealth_enforced = {
+	commonwealth_enforced = { #1356 - Changed tech
 		major = yes
 		potential = {
 			normal_or_historical_nations = yes
+			was_never_end_game_tag_trigger = yes
 			NOT = { has_country_flag = formed_plc_flag }
 			OR = {
 				ai = no
@@ -304,7 +307,7 @@ country_decisions = {
 			}
 		}
 		allow = {
-			adm_tech = 15
+			adm_tech = 16 #Orignally 10
 			is_free_or_tributary_trigger = yes
 			is_nomad = no
 			stability = 3

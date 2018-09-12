@@ -1,9 +1,10 @@
 country_decisions = {
 
-	hannoverian_nation = {
+	hannoverian_nation = { #1356 - Changed Tech
 		major = yes
 		potential = {
 			normal_or_historical_nations = yes
+			was_never_end_game_tag_trigger = yes
 			NOT = { has_country_flag = formed_hannover_flag }
 			OR = {
 				ai = no
@@ -47,7 +48,7 @@ country_decisions = {
 			}
 		}
 		allow = {
-			adm_tech = 15
+			adm_tech = 16 #Orignally 10
 			is_free_or_tributary_trigger = yes
 			is_nomad = no
 			is_at_war = no
@@ -114,10 +115,11 @@ country_decisions = {
 		}
 	}
 	
-	westfalian_nation = {
+	westfalian_nation = { #1356 - Changed Tech
 		major = yes
 		potential = {
 			normal_or_historical_nations = yes
+			was_never_end_game_tag_trigger = yes
 			NOT = { has_country_flag = formed_westphalia_flag }
 			OR = {
 				ai = no
@@ -130,7 +132,7 @@ country_decisions = {
 			NOT = { tag = PRU }
 			NOT = { tag = SWI }
 			NOT = { exists = WES }
-			NOT = { government = celestial_empire }
+			NOT = { has_reform = celestial_empire }
 			OR = {
 				primary_culture = hannoverian #Westphalian
 				primary_culture = hessian
@@ -172,7 +174,7 @@ country_decisions = {
 			}
 		}
 		allow = {
-			adm_tech = 15
+			adm_tech = 16 #Orignally 10
 			is_free_or_tributary_trigger = yes
 			is_nomad = no
 			is_at_war = no
@@ -233,7 +235,6 @@ country_decisions = {
 				add_permanent_claim = WES
 			}
 			add_prestige = 25
-			change_government = administrative_monarchy
 			set_country_flag = formed_westphalia
 		}
 		ai_will_do = {
@@ -246,10 +247,11 @@ country_decisions = {
 		}
 	}
 	
-	greek_nation = {
+	greek_nation = { #1356 - Changed Tech
 		major = yes
 		potential = {
 			normal_or_historical_nations = yes
+			was_never_end_game_tag_trigger = yes
 			NOT = { has_country_flag = formed_greece_flag }
 			OR = {
 				ai = no
@@ -292,7 +294,7 @@ country_decisions = {
 			}
 		}
 		allow = {
-			adm_tech = 15
+			adm_tech = 16 #Orignally 10
 			is_free_or_tributary_trigger = yes
 			is_nomad = no
 			is_at_war = no
@@ -376,6 +378,7 @@ country_decisions = {
 		major = yes
 		potential = {
 			normal_or_historical_nations = yes
+			was_never_end_game_tag_trigger = yes
 			owns = 370
 			owns = 371
 			NOT = { has_country_flag = formed_iceland } #Only once

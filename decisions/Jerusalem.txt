@@ -12,7 +12,7 @@ country_decisions = {
 			}
 			religion = catholic
 			NOT = { government = republic }
-			NOT = { government = celestial_empire }
+			NOT = { has_reform = celestial_empire }
 			OR = {
 				owns = 379
 				tag = KNI
@@ -72,13 +72,18 @@ country_decisions = {
 			}
 			if = {
 				limit = {
-					NOT = { tag = KNI }
-					NOT = { tag = CYP }
-					NOT = { tag = PRO }
-					NOT = { tag = CIC }
-					NOT = { tag = NRM }
-					NOT = { tag = ATH }
-					NOT = { tag = ACH }
+					OR = {
+						AND = {
+							NOT = { tag = KNI }
+							NOT = { tag = CYP }
+							NOT = { tag = PRO }
+							NOT = { tag = CIC }
+							NOT = { tag = NRM }
+							NOT = { tag = ATH }
+							NOT = { tag = ACH }
+						}
+						was_never_end_game_tag_trigger = no
+					}
 				}
 				release = KOJ
 				KOJ = { change_primary_culture = ROOT }
@@ -94,6 +99,7 @@ country_decisions = {
 						tag = ACH
 						tag = NRM
 					}
+					was_never_end_game_tag_trigger = yes
 				}
 				change_tag = KOJ
 				if = {
@@ -112,7 +118,8 @@ country_decisions = {
 					limit = {
 						NOT = { government = monarchy }
 					}
-					change_government = feudal_monarchy
+					change_government = monarchy
+					set_legacy_government = feudal_monarchy
 				}
 				if = {
 					limit = {

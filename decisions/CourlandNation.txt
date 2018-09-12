@@ -4,6 +4,7 @@ country_decisions = {
 		major = yes
 		potential = {
 			normal_or_historical_nations = yes
+			was_never_end_game_tag_trigger = yes
 			NOT = { has_country_flag = formed_courland_flag }
 			OR = {
 				ai = no
@@ -58,12 +59,10 @@ country_decisions = {
 			}
 			if = {
 				limit = {
-					OR = {
-						government = theocratic_government
-						government = monastic_order_government
-					}
+					government = theocracy
 				}
-				change_government = feudal_monarchy
+				change_government = monarchy
+				set_legacy_government = feudal_monarchy
 			}
 			every_neighbor_country = {
 				limit = { government = monarchy }

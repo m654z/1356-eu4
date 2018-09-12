@@ -78,6 +78,7 @@ country_decisions = {
 		potential = {
 			NOT = { TRS = { has_heir = "Tamerlan" } }
 			normal_or_historical_nations = yes
+			was_never_end_game_tag_trigger = yes
 			NOT = { has_country_flag = formed_timurids_flag }
 			OR = {
 				ai = no
@@ -105,6 +106,22 @@ country_decisions = {
 			}
 			religion_group = muslim
 			dynasty = "Timurid"
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 429
+				province_id = 2213
+				province_id = 2218
+				province_id = 454
+				province_id = 446
+				province_id = 451
+				province_id = 445
+				province_id = 428
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+			}
 		}
 		allow = {
 			NOT = { exists = TIM }
@@ -135,19 +152,8 @@ country_decisions = {
 				move_capital_effect = yes
 			}
 			change_tag = TIM
-			if = {
-				limit = {
-					is_part_of_hre = yes
-					is_elector = no
-					is_emperor = no
-				}
-				every_owned_province = {
-					limit = {
-						is_part_of_hre = yes
-					}
-					set_in_empire = no
-				}
-			}
+			swap_non_generic_missions = yes
+			remove_non_electors_emperors_from_empire_effect = yes
 			if = {
 				limit = {
 					NOT = { government_rank = 3 }
@@ -272,5 +278,6 @@ country_decisions = {
 		ai_will_do = {
 			factor = 400
 		}
+		ai_importance = 600
 	}
 }

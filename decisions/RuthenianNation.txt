@@ -1,9 +1,10 @@
 country_decisions = {
 
-	ruthenian_nation = {
+	ruthenian_nation = { #1356 - Changed Tech
 		major = yes
 		potential = {
 			normal_or_historical_nations = yes
+			was_never_end_game_tag_trigger = yes
 			NOT = { has_country_flag = formed_ruthenia_flag }
 			OR = {
 				ai = no
@@ -57,7 +58,7 @@ country_decisions = {
 			}
 		}
 		allow = {
-			adm_tech = 15 #1356 Change
+			adm_tech = 16 #Orignally 10
 			is_free_or_tributary_trigger = yes
 			is_nomad = no
 			is_at_war = no
@@ -98,26 +99,18 @@ country_decisions = {
 			}
 			add_prestige = 25
 			change_tag = UKR
+			swap_non_generic_missions = yes
 			remove_non_electors_emperors_from_empire_effect = yes
 			if = {
 				limit = {
 					OR = {
-						government = veche_republic
-						government = principality
+						has_reform = veche_republic
+						has_reform = principality
 					}
 				}
-				set_government_and_rank = {
-					government = tsardom
-					rank = 3
-				}
-			}
-			else_if = {
-				limit = {
-					NOT = {
-						government_rank = 3
-					}
-				}
+				change_government = monarchy
 				set_government_rank = 3
+				add_government_reform = tsardom
 			}
 			set_country_flag = formed_ruthenia_flag
 			if = {

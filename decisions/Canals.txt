@@ -1,6 +1,6 @@
 country_decisions = {
 
-	construct_kiel_canal = {
+	construct_kiel_canal = { #1356 - Changed Tech
 		major = yes
 		potential = {
 			OR = {
@@ -23,7 +23,7 @@ country_decisions = {
 				NOT = { has_great_project = kiel_canal }
 				NOT = { has_construction = canal }
 			}
-			adm_tech = 20
+			adm_tech = 26 #Orignal is 20
 		}
 		provinces_to_highlight = {
 			OR = {
@@ -39,7 +39,7 @@ country_decisions = {
 			owns_or_vassal_of = 1775
 			owns_or_vassal_of = 4141
 			is_subject = no			
-			adm_tech = 26
+			adm_tech = 32 #Orignal is 26
 			treasury = 10000
 		}
 		effect = {
@@ -53,7 +53,7 @@ country_decisions = {
 		}
 	}
 	
-	construct_suez_canal = {
+	construct_suez_canal = { #1356 - Changed Tech
 		major = yes
 		potential = {
 			OR = {
@@ -69,7 +69,7 @@ country_decisions = {
 				NOT = { has_great_project = suez_canal }
 				NOT = { has_construction = canal }
 			}
-			adm_tech = 20
+			adm_tech = 26 #Orignal is 20
 		}
 		provinces_to_highlight = {
 			OR = {
@@ -85,7 +85,7 @@ country_decisions = {
 			owns_or_vassal_of = 4316
 			owns_or_vassal_of = 2315
 			is_subject = no
-			adm_tech = 26
+			adm_tech = 32 #Orignal is 26
 			treasury = 20000
 		}
 		effect = {
@@ -99,7 +99,7 @@ country_decisions = {
 		}
 	}
 	
-	construct_panama_canal = {
+	construct_panama_canal = { #1356 - Changed Tech
 		major = yes
 		potential = {
 			is_random_new_world = no
@@ -116,7 +116,7 @@ country_decisions = {
 				NOT = { has_great_project = panama_canal }
 				NOT = { has_construction = canal }
 			}
-			adm_tech = 20
+			adm_tech = 26 #Orignal is 20
 		}
 		provinces_to_highlight = {
 			province_id = 835
@@ -128,7 +128,7 @@ country_decisions = {
 		allow = {
 			owns_or_vassal_of = 835
 			is_subject = no
-			adm_tech = 26
+			adm_tech = 32 #Orignal is 26
 			treasury = 30000
 		}
 		effect = {

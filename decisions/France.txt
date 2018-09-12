@@ -1,6 +1,6 @@
 country_decisions = {
 
-	move_the_court_to_versailles = {
+	move_the_court_to_versailles = { #1356 - Changed Tech
 	
 		potential = {
 			tag = FRA
@@ -15,7 +15,7 @@ country_decisions = {
 		}
 		allow = {
 			full_idea_group = economic_ideas
-			adm_tech = 16
+			adm_tech = 22 #Orignally 16
 		}
 		effect = {
 			set_country_flag = versailles_court
@@ -39,7 +39,7 @@ country_decisions = {
 			government = monarchy
 		}
 		allow = {
-			adm_tech = 13
+			current_age = age_of_absolutism
 			adm = 5
 			monthly_income = 100
 		}

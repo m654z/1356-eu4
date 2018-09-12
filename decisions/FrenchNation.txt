@@ -4,6 +4,7 @@ country_decisions = {
 		major = yes
 		potential = {
 			normal_or_historical_nations = yes
+			was_never_end_game_tag_trigger = yes
 			NOT = { has_country_flag = formed_france_flag }
 			OR = {
 				ai = no
@@ -42,7 +43,7 @@ country_decisions = {
 		provinces_to_highlight = {
 			OR = {
 				province_id = 177	# Maine
-				#province_id = 179	# Blois
+				province_id = 179	# Berry
 				province_id = 182	# Vermandois
 				province_id = 183	# Île-de-France
 				province_id = 184	# Orléannais
@@ -60,7 +61,7 @@ country_decisions = {
 			is_nomad = no			
 			NOT = { exists = FRA }
 			owns_core_province = 177	# Maine
-			#owns_core_province = 179	# Blois
+			owns_core_province = 179	# Berry
 			owns_core_province = 182	# Vermandois
 			owns_core_province = 183	# Île-de-France
 			owns_core_province = 184	# Orléannais
@@ -80,7 +81,7 @@ country_decisions = {
 				}
 				set_government_rank = 2
 			}
-			france_region = {
+			france_region = { #Remove this one day
 				limit = {
 					NOT = { owned_by = ROOT }
 				}

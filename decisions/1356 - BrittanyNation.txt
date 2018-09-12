@@ -5,6 +5,7 @@ country_decisions = {
 		potential = {
 			NOT = { exists = BRI }
 			tag = MNF
+			was_never_end_game_tag_trigger = yes
 		}
 		provinces_to_highlight = {
 			area = brittany_area
@@ -53,6 +54,7 @@ country_decisions = {
 		potential = {
 			NOT = { exists = BRI }
 			tag = BLS
+			was_never_end_game_tag_trigger = yes
 		}
 		provinces_to_highlight = {
 			area = brittany_area
@@ -99,12 +101,12 @@ country_decisions = {
 	brittany_nation = { #Form Brittany, not for Breton Minors MNF and BLS
 		major = yes
 		potential = {
-	
-		primary_culture = breton
-		NOT = { exists = BRI }
-		NOT = { tag = FRA }
-		NOT = { tag = BLS }
-		NOT = { tag = MNF }
+			primary_culture = breton
+			NOT = { exists = BRI }
+			NOT = { tag = FRA }
+			NOT = { tag = BLS }
+			NOT = { tag = MNF }
+			was_never_end_game_tag_trigger = yes
 			OR = {
 				ai = no
 				AND = {

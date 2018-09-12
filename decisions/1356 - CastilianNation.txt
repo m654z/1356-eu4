@@ -1,15 +1,16 @@
 country_decisions = {
 
-	castilian_nation = {
+	castilian_nation = { #Only for CTR
 		major = yes
 		potential = {
 			normal_or_historical_nations = yes
+			was_never_end_game_tag_trigger = yes
+			tag = CTR
 			NOT = { has_country_flag = formed_castile_flag }
 			OR = {
 				ai = no
 				is_playing_custom_nation = no
 			}
-			tag = CTR
 		}
 		provinces_to_highlight = {
 			OR = {
@@ -35,37 +36,20 @@ country_decisions = {
 		effect = {
 			change_tag = CAS
             swap_non_generic_missions = yes
-			every_owned_province = {
+			every_owned_province = { 
 				remove_core = CTR
 			}
-			if = {
-				limit = {
-					is_part_of_hre = yes
-					is_elector = no
-					is_emperor = no
-				}
-				every_owned_province = {
-					limit = {
-						is_part_of_hre = yes
-					}
-					set_in_empire = no
-				}
+			219 = { #Toledo
+				move_capital_effect = yes
 			}
+			swap_non_generic_missions = yes
+			remove_non_electors_emperors_from_empire_effect = yes
 			if = {
 				limit = { NOT = { government_rank = 2 } }
 				set_government_rank = 2
 			}
 			if = {
-				limit = {
-					has_custom_ideas = no
-					OR = {
-						ai = no
-						AND = {
-							ai = yes
-							has_idea_group = default_ideas
-						}
-					}
-				}
+				limit = { has_custom_ideas = no }
 				country_event = { id = ideagroups.1 } #Swap Ideas
 			}
 			custom_tooltip = castilian_unification_effect.tooltip

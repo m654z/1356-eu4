@@ -4,6 +4,7 @@ country_decisions = {
 		major = yes
 		potential = {
 			normal_or_historical_nations = yes
+			was_never_end_game_tag_trigger = yes
 			NOT = { has_country_flag = formed_persia_flag }
 			OR = {
 				ai = no
@@ -98,10 +99,16 @@ country_decisions = {
 			change_tag = PER
 			swap_non_generic_missions = yes
 			remove_non_electors_emperors_from_empire_effect = yes
-			set_government_and_rank = {
-				government = feudal_theocracy
-				rank = 3
+			if = {
+				limit = {
+					NOT = {
+						government = monarchy
+					}
+				}
+				change_government = monarchy
 			}
+			set_government_rank = 3
+			add_government_reform = feudal_theocracy
 			persia_region = {
 				limit = {
 					NOT = { owned_by = ROOT }
@@ -131,4 +138,5 @@ country_decisions = {
 		}
 		ai_importance = 400
 	}
+	
 }
