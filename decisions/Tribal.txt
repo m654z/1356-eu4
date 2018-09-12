@@ -1,11 +1,12 @@
 #Note: Game does not consider Native Councils Tribal, they require a separate check.
 
 country_decisions = {
-	
+
 	tribal_despotism_reform = {
 		major = yes
 		potential = {
-			government = tribal_despotism
+			has_reform = tribal_despotism
+			NOT = { has_dlc = "Dharma" }
 		}
 		allow = {
 			adm_power = 200
@@ -33,7 +34,8 @@ country_decisions = {
 			}
 		}
 		effect = {
-			change_government = despotic_monarchy
+			change_government = monarchy
+			set_legacy_government = despotic_monarchy
 			add_stability = -5
 			add_adm_power = -200
 			set_country_flag = recently_changed_government_flag
@@ -42,12 +44,13 @@ country_decisions = {
 			factor = 1
 		}
 	}
-	
-	
+
+
 	tribal_kingdom_reform = {
 		major = yes
 		potential = {
-			government = tribal_kingdom
+			has_reform = tribal_kingdom
+			NOT = { has_dlc = "Dharma" }
 		}
 		allow = {
 			adm_power = 200
@@ -75,7 +78,8 @@ country_decisions = {
 			}
 		}
 		effect = {
-			change_government = feudal_monarchy
+			change_government = monarchy
+			set_legacy_government = despotic_monarchy
 			add_stability = -5
 			add_adm_power = -200
 			set_country_flag = recently_changed_government_flag
@@ -84,27 +88,23 @@ country_decisions = {
 			factor = 1
 		}
 	}
-		
+
 	tribal_federation_reform = {
 		major = yes
 		potential = {
-			government = tribal_federation
+			has_reform = tribal_federation
+			NOT = { has_dlc = "Dharma" }
 		}
 		allow = {
 			adm_power = 200
 			legitimacy = 60
 			stability = 3
-			adm_tech = 8
+			adm_tech = 14 #Orignal is 8
 			has_institution = feudalism
 		}
 		effect = {
-			if = {
-				limit = { religion_group = muslim }
-				change_government = iqta
-			}
-			else = {
-				change_government = despotic_monarchy
-			}
+			change_government = monarchy
+			set_legacy_government = despotic_monarchy
 			add_stability = -5
 			add_adm_power = -200
 			set_country_flag = recently_changed_government_flag
@@ -113,11 +113,12 @@ country_decisions = {
 			factor = 1
 		}
 	}
-	
+
 	tribal_democracy_reform = {
 		major = yes
 		potential = {
-			government = tribal_democracy
+			has_reform = tribal_democracy_legacy
+			NOT = { has_dlc = "Dharma" }
 		}
 		allow = {
 			adm_power = 200
@@ -145,7 +146,8 @@ country_decisions = {
 			}
 		}
 		effect = {
-			change_government = oligarchic_republic
+			change_government = republic
+			set_legacy_government = oligarchic_republic
 			add_stability = -5
 			add_adm_power = -200
 			set_country_flag = recently_changed_government_flag
@@ -154,11 +156,12 @@ country_decisions = {
 			factor = 1
 		}
 	}
-	
+
 	steppe_horde_reform = {
 		major = yes
 		potential = {
-			government = steppe_horde
+			has_reform = steppe_horde
+			NOT = { has_dlc = "Dharma" }
 			OR = {
 				ai = no
 				full_idea_group = economic_ideas
@@ -183,6 +186,8 @@ country_decisions = {
 		effect = {
 			add_adm_power = -200
 			add_stability = -5
+			change_government = monarchy
+			set_legacy_government = despotic_monarchy
 			if = {
 				limit = {
 					technology_group = nomad_group
@@ -193,7 +198,6 @@ country_decisions = {
 						secondary_religion = ibadi
 					}
 				}
-				change_government = iqta
 				change_technology_group = muslim
 				change_unit_type = muslim
 			}
@@ -202,7 +206,6 @@ country_decisions = {
 					technology_group = nomad_group
 					religion_group = christian
 				}
-				change_government = feudal_monarchy
 				change_technology_group = eastern
 				change_unit_type = eastern
 			}
@@ -215,7 +218,6 @@ country_decisions = {
 					NOT = { secondary_religion = shiite }
 					NOT = { secondary_religion = ibadi }
 				}
-				change_government = despotic_monarchy
 				change_technology_group = chinese
 				change_unit_type = chinese
 			}
@@ -225,11 +227,12 @@ country_decisions = {
 			factor = 1
 		}
 	}
-	
+
 	siberian_reform = {
 		major = yes
 		potential = {
-			government = siberian_native_council
+			has_reform = siberian_tribe
+			NOT = { has_dlc = "Dharma" }
 		}
 		allow = {
 			adm_power = 200
@@ -242,7 +245,8 @@ country_decisions = {
 			}
 		}
 		effect = {
-			change_government = despotic_monarchy
+			change_government = monarchy
+			set_legacy_government = despotic_monarchy
 			set_country_flag = recently_changed_government_flag
 			add_stability = -5
 			add_adm_power = -200
@@ -251,11 +255,12 @@ country_decisions = {
 			factor = 1
 		}
 	}
-	
+
 	native_american_reform = { #Ie: How to stop being Primitive if you cannot use special mechanics.
 		major = yes
 		potential = {
 			primitives = yes #Has to be primitive to stop being primitive
+			NOT = { has_dlc = "Dharma" }
 			OR = {
 				#Native Councils that cannot reform due to lack of Conquest of Paradise:
 				AND = {
@@ -263,7 +268,7 @@ country_decisions = {
 					NOT = { religion = nahuatl }
 					NOT = { religion = mesoamerican_religion }
 					NOT = { religion = inti }
-					government = native_council
+					government = native
 				}
 				#Nahuatl who cannot reform due to lack of El Dorado:
 				AND = {
@@ -285,7 +290,7 @@ country_decisions = {
 					NOT = { religion = nahuatl } #No Nahuatl Religion Reform
 					NOT = { religion = mesoamerican_religion } #No Mayan Religion Reform
 					NOT = { religion = inti } #No Inti Religion Reform
-					NOT = { government = native_council } #No Native Council Reform
+					NOT = { government = native } #No Native Council Reform
 				}
 			}
 		}
@@ -296,11 +301,11 @@ country_decisions = {
 					NOT = { religion = nahuatl }
 					NOT = { religion = mesoamerican_religion }
 					NOT = { religion = inti }
-					government = native_council
+					government = native
 					primitives = yes
 				}
 				primitives = yes #Repeated to be displayed
-				government = native_council #Repeated to be displayed
+				government = native #Repeated to be displayed
 			}
 			if = {
 				limit = {
@@ -333,25 +338,25 @@ country_decisions = {
 					NOT = { religion = nahuatl } #No Nahuatl Religion Reform
 					NOT = { religion = mesoamerican_religion } #No Mayan Religion Reform
 					NOT = { religion = inti } #No Inti Religion Reform
-					NOT = { government = native_council } #No Native Council Reform
+					NOT = { government = native } #No Native Council Reform
 				}
 				primitives = yes #Repeated to be displayed
 				NOT = { government = tribal } #Has to reform government first.
 			}
 			#Always requires Feudal Neighbor and 1 Stability:
-			adm_tech = 8
+			adm_tech = 14			#Orignal is 8
 			any_neighbor_country = {
 				has_institution = feudalism
 			}
 			stability = 2
 		}
 		effect = {
-			set_primitive = no
 			add_stability = -1
 			if = { #Native Council out:
-				limit = { government = native_council }
-				change_government = oligarchic_republic
+				limit = { government = native }
+				change_government = republic
 				set_country_flag = recently_changed_government_flag
+				set_legacy_government = oligarchic_republic
 			}
 		}
 		ai_will_do = {

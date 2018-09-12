@@ -53,12 +53,12 @@ country_decisions = {
 					tag = SAV
 					NOT = { exists = SAR }
 				}
-				AND = {
+				AND = { #1356 change
 					primary_culture = sardinian
 					NOT = { exists = SAR }
 					NOT = { exists = SAV }
 				}
-				AND = {
+				AND = { #1356 change
 					primary_culture = piedmontese
 					NOT = { exists = SAR }
 					NOT = { exists = SAV }

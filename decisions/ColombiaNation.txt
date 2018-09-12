@@ -1,15 +1,17 @@
 country_decisions = {
 
-	australia_nation = { #1356 - Changed Tech
+	colombia_nation = { #1356 - Changed Tech
 		major = yes
 		potential = {
 			NOT = { has_country_flag = changed_from_colonial_nation }
 			was_never_end_game_tag_trigger = yes
+			is_nomad = no
+			is_random_new_world = no			
 			OR = {
 				is_former_colonial_nation = yes
 				is_colonial_nation = yes
 			}
-			colonial_australia = {
+			colonial_colombia = {
 				owned_by = ROOT
 			}
 			OR = {
@@ -26,13 +28,13 @@ country_decisions = {
 			is_free_or_tributary_trigger = yes
 			is_at_war = no
 			capital_scope = {
-				colonial_region = colonial_australia
+				colonial_region = colonial_colombia
 				is_core = ROOT
 			}
-			NOT = { exists = AUS }
+			NOT = { exists = COL }
 		}
 		effect = {
-			change_tag = AUS
+			change_tag = COL
 			remove_non_electors_emperors_from_empire_effect = yes
 			if = {
 				limit = {
@@ -40,11 +42,11 @@ country_decisions = {
 				}
 				set_government_rank = 2
 			}
-			colonial_australia = {
+			colonial_colombia = {
 				limit = {
 					NOT = { owned_by = ROOT }
 				}
-				add_permanent_claim = AUS
+				add_permanent_claim = COL
 			}
 			add_country_modifier = {
 				name = "centralization_modifier"

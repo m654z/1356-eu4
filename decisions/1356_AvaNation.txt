@@ -1,6 +1,6 @@
 country_decisions = {
 
-	ava_nation = {
+	ava_nation = { #Needs updating
 		major = yes
 		potential = {
 			OR = {
@@ -9,6 +9,7 @@ country_decisions = {
 				tag = TAU
 			}
 			NOT = { exists = AVA }
+			was_never_end_game_tag_trigger = yes
 		}
 		provinces_to_highlight = {
 			OR = {

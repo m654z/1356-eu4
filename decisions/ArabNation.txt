@@ -1,9 +1,10 @@
 country_decisions = {
 	
-	arab_nation = {
+	arab_nation = { #1356 - Added NOT = ILK, Changed Tech
 		major = yes
 		potential = {
 			normal_or_historical_nations = yes
+			was_never_end_game_tag_trigger = yes
 			NOT = { has_country_flag = formed_arabia_flag }
 			OR = {
 				ai = no
@@ -49,7 +50,7 @@ country_decisions = {
 		allow = {
 			is_free_or_tributary_trigger = yes
 			is_at_war = no
-			adm_tech = 15
+			adm_tech = 16 #Orignal is 10
 			owns_core_province = 358			#Alexandria
 			owns_core_province = 361			#Cairo
 			owns_core_province = 377			#Aleppo

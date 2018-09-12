@@ -1,7 +1,7 @@
 country_decisions = {
 
 	# Catholic ones, that affects reform desire.
-	institute_the_societas_jesu = {
+	institute_the_societas_jesu = { #1356 - Tweaked Tech's
 		potential = {
 			OR = {
 				tag = POR
@@ -12,7 +12,7 @@ country_decisions = {
 			NOT = { has_country_modifier = jesuits_expelled }
 		}
 		allow = {
-			adm_tech = 15
+			adm_tech = 16 #Orignal is 10
 		}
 		effect = {	
 			add_country_modifier = {
@@ -26,14 +26,14 @@ country_decisions = {
 		}	
 	}
 	
-	de_heretico_comburendo_act = {
+	de_heretico_comburendo_act = { #1356 - Tweaked Tech's
 		potential = {
 			NOT = { has_country_modifier = de_heretico_comburendo }
 			religion = catholic
 			reform_desire = 0.10
 		}
 		allow = {
-			adm_tech = 6
+			adm_tech = 12 #Orignal is 6
 		}
 		effect = {	
 			add_country_modifier = {
@@ -72,7 +72,7 @@ country_decisions = {
 		}
 	}
 	
-	blasphemy_act = {
+	blasphemy_act = { 
 		potential = {
 			NOT = { has_country_modifier = the_blasphemy_act }
 			religion_group = christian
@@ -83,7 +83,7 @@ country_decisions = {
 			}
 		}
 		allow = {
-			adm = 3
+			adm = 3 
 		}
 		effect = {	
 			add_country_modifier = {
@@ -96,14 +96,14 @@ country_decisions = {
 		}
 	}
 
-	declaration_of_indulgence = {
+	declaration_of_indulgence = { #1356 - Tweaked Tech's
 		potential = {
 			religion_group = christian
 			NOT = { has_country_modifier = the_declaration_of_indulgence }
 		}
 		allow = {
 			NOT = { has_country_modifier = the_test_act }
-			adm_tech = 15
+			adm_tech = 16 #Orignal is 10
 		}
 		effect = {	
 			add_country_modifier = {
@@ -124,13 +124,13 @@ country_decisions = {
 		}
 	}
 
-	act_of_uniformity = {
+	act_of_uniformity = { #1356 - Tweaked Tech's
 		potential = {
 			NOT = { has_country_modifier = the_act_of_uniformity }
 			religion_group = christian
 		}
 		allow = {
-			adm_tech = 1
+			adm_tech = 14 #Orignal is 8
 		}
 		effect = {	
 			add_country_modifier = {
@@ -148,13 +148,13 @@ country_decisions = {
 		}
 	}
 	
-#	suffragan_bishop_act = {
+#	suffragan_bishop_act = { #1356 - Tweaked Tech's
 #		potential = {
 #			NOT = { has_country_modifier = the_suffragan_bishop_act }
 #			religion_group = christian
 #		}
 #		allow = {
-#			adm_tech = 8
+#			adm_tech = 14 #Orignal is 8
 #		}
 #		effect = {	
 #			add_country_modifier = {
@@ -197,11 +197,11 @@ country_decisions = {
 #		}
 #	}
 	
-	sunday_school = {
+	sunday_school = { #1356 - Tweaked Tech's
 		potential = {
 			NOT = { has_country_modifier = sunday_schools }
 			religion_group = christian
-			adm_tech = 17
+			adm_tech = 23 #Orignal is 17
 		}
 		allow = {
 			adm = 2
@@ -219,7 +219,7 @@ country_decisions = {
 	}
 
 	# Protestant & Reformed
-	conventicle_act = {
+	conventicle_act = { #1356 - Tweaked Tech's
 		potential = {
 			NOT = { has_country_modifier = the_conventicle_act }
 			religion_group = christian
@@ -229,7 +229,7 @@ country_decisions = {
 			}
 		}
 		allow = {
-			adm_tech = 15
+			adm_tech = 16 #Orignal is 10
 		}
 		effect = {	
 			add_country_modifier = {
@@ -268,7 +268,7 @@ country_decisions = {
 #		}
 #	}
 	
-	test_act = {
+	test_act = { #1356 - Tweaked Tech's
 		potential = {
 			NOT = { has_country_modifier = the_test_act }
 			OR = {
@@ -277,7 +277,7 @@ country_decisions = {
 			}
 		}
 		allow = {
-			adm_tech = 10
+			adm_tech = 16 #Orignal is 10
 			NOT = { has_country_modifier = the_declaration_of_indulgence }
 		}
 		effect = {	
@@ -291,7 +291,7 @@ country_decisions = {
 		}
 	}
 	
-	dissolution_of_the_monasteries = {
+	dissolution_of_the_monasteries = { 
 		potential = {
 			NOT = { has_country_modifier = the_dissolution_of_the_monasteries }
 			OR = {
@@ -305,7 +305,7 @@ country_decisions = {
 		}
 		allow = {
 			# Raises the king to be the legal authority in all religious matters
-			adm = 4
+			adm = 4 
 		}
 		effect = {	
 			add_country_modifier = {
@@ -322,14 +322,14 @@ country_decisions = {
 		}
 	}
 	
-	popery_act = {
+	popery_act = { #1356 - Tweaked Tech's
 		potential = {
 			NOT = { has_country_modifier = the_popery_act }
 			OR = {
 				religion = protestant
 				religion = reformed
 			}
-			adm_tech = 14
+			adm_tech = 17 #Orignal is 11
 		}
 		allow = {
 			mil = 3
@@ -353,7 +353,7 @@ country_decisions = {
 			religion_group = muslim
 		}
 		allow = {
-			adm = 3
+			adm = 3 
 			has_regency = no
 		}
 		effect = {	
@@ -372,10 +372,12 @@ country_decisions = {
 			NOT = { has_ruler_modifier = khalifah }
 			religion = sunni
 			NOT = { tag = MAM } #Controls the Caliph already.
+			NOT = { government = republic }
 		}
 		allow = {
 			mil = 3
 			has_regency = no
+			is_female = no
 		}
 		effect = {	
 			add_ruler_modifier = {
@@ -418,11 +420,11 @@ country_decisions = {
 		}
 	}
 	
-	islamic_centre_of_scholarly = {
+	islamic_centre_of_scholarly = { #1356 - Tweaked Tech's
 		potential = {
 			NOT = { has_ruler_modifier = islamic_scholarly_centre }
 			religion_group = muslim
-			adm_tech = 8
+			adm_tech = 14 #Orignal is 8
 		}
 		allow = {
 			dip = 5
@@ -444,36 +446,36 @@ country_decisions = {
 		}
 	}
 	
-	jizya_tax = {
-		potential = {
-			NOT = { has_ruler_modifier = per_capita_tax }
-			religion_group = muslim
-			any_owned_province = {
-				has_owner_religion = no
-			}
-			NOT = { has_dlc = "The Cossacks" }
-		}
-		allow = {
-			adm = 3
-			has_regency = no
-		}
-		effect = {	
-			add_ruler_modifier = {
-				name = "per_capita_tax"
-				duration = -1
-			}
-			add_piety = 0.15
-		}
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				NOT = { piety = 0.01 }
-				factor = 0
-			}
-		}
-	}
+	#jizya_tax = {
+	#	potential = {
+	#		NOT = { has_ruler_modifier = per_capita_tax }
+	#		religion_group = muslim
+	#		any_owned_province = {
+	#			has_owner_religion = no
+	#		}
+	#		NOT = { has_dlc = "The Cossacks" }
+	#	}
+	#	allow = {
+	#		adm = 3
+	#		has_regency = no
+	#	}
+	#	effect = {	
+	#		add_ruler_modifier = {
+	#			name = "per_capita_tax"
+	#			duration = -1
+	#		}
+	#		add_piety = 0.15
+	#	}
+	#	ai_will_do = {
+	#		factor = 1
+	#		modifier = {
+	#			NOT = { piety = 0.01 }
+	#			factor = 0
+	#		}
+	#	}
+	#}
 	
-	monastic_education = {
+	monastic_education = { 
 		potential = {
 			NOT = { has_country_modifier = monastic_education_system }
 			OR = {
@@ -504,7 +506,7 @@ country_decisions = {
 		potential = {
 			has_dlc = "Cradle of Civilization"
 			religion = sunni
-			government = tribal_federation
+			has_reform = tribal_federation
 			has_global_flag = wahabism_founded
 			NOT = {
 				religious_school = {
@@ -553,7 +555,7 @@ country_decisions = {
 			}
 		}
 		effect = {
-			change_religion = sunni
+			change_religion = capital
 			add_stability = 1
 			add_legitimacy = 10
 			clr_country_flag = sultan_titles_for_non_muslims
@@ -570,10 +572,10 @@ country_decisions = {
 		}
 	}
 	
-	regulate_the_monastaries = {
+	regulate_the_monastaries = { #1356 - Tweaked Tech's
 		potential = {
 			NOT = { has_country_modifier = regulated_monasteries }
-			adm_tech = 15
+			adm_tech = 21 #Orignal is 15
 			religion = vajrayana
 		}
 		allow = {
@@ -737,6 +739,7 @@ country_decisions = {
 	din_i_illahi = {
 		potential = {
 			NOT = { has_country_modifier = divine_faith }
+			NOT = { has_dlc = "Dharma" }
 			OR = {
 				AND = {
 					tag = MUG
@@ -1287,7 +1290,7 @@ country_decisions = {
 		}
 	}
 	
-	animism_ritual_education = {
+	animism_ritual_education = { #1356 - Tweaked Tech's
 		potential = {
 			NOT = { has_country_modifier = ritual_education_modifier }
 			religion = animism
@@ -1296,7 +1299,7 @@ country_decisions = {
 			}
 		}
 		allow = {
-			adm_tech = 8
+			adm_tech = 14 #Orignal is 8
 			stability = 2
 			ADM = 3
 			adm_power = 50
@@ -1317,7 +1320,7 @@ country_decisions = {
 		}
 	}
 	
-	shamanism_wondering_shamans = {
+	shamanism_wondering_shamans = { #1356 - Tweaked Tech's
 		potential = {
 			NOT = { has_country_modifier = wandering_shamans_modifier }
 			religion = shamanism
@@ -1326,7 +1329,7 @@ country_decisions = {
 			}
 		}
 		allow = {
-			adm_tech = 8
+			adm_tech = 14 #Orignal is 8
 			stability = 2
 			ADM = 3
 			adm_power = 50
@@ -1739,7 +1742,14 @@ country_decisions = {
 	conversion_of_convenience = {
 		potential = {
 			NOT = { ruler_religion = ROOT }
-			is_lesser_in_union = no
+			OR = {
+				has_regency = no
+				AND = {
+					NOT = { ruler_religion = ROOT }
+					has_heir = yes
+					NOT = { heir_religion = ROOT }
+				}
+			}
 			OR = {
 				ai = no
 				has_idea_group = religious_ideas
@@ -1768,7 +1778,7 @@ country_decisions = {
 			modifier = {
 				factor = 0
 				OR = {
-					government = daimyo
+					has_reform = daimyo
 					has_ruler_modifier = christian_ruler
 					has_country_flag = a_kirishitan_realm
 				}
