@@ -175,10 +175,9 @@ country_event = {
 				}
 				add_permanent_claim = TIM
 			}
-        set_government_and_rank = {
-			government = timurid_government
-			rank = 3
-		}
+		add_government_reform = timurid_government_reform
+		set_legacy_government = timurid_government
+		set_government_rank = 3
 		every_owned_province = {
 			add_institution_embracement = {
 				value = 100
@@ -355,7 +354,7 @@ country_event = {
 			}
 			modifier = {
 				factor = 5
-				government = steppe_horde
+				has_reform = steppe_horde
 			}
 		}
 		add_prestige = 25

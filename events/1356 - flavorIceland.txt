@@ -36,7 +36,7 @@ country_event = {
 		}
 		modifier = {
 			factor = 2.0
-			ICE = { government = theocratic_government }
+			ICE = { government = theocracy }
 		}
 	}
 	

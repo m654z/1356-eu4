@@ -92,7 +92,7 @@ country_event = {
 }
 
 #Removes French Feudal Vassaal Government Type
-country_event = {
+country_event = { #TEST TO SEE IF THIS STILL WORKS
 	id = feudalvassalevents.4
 	title = "feudalvassalevents.4.t"
 	desc = "feudalvassalevents.4.desc"
@@ -110,16 +110,13 @@ country_event = {
 			tag = AUV
 			tag = FOI
 		}
-		NOT = { has_country_flag = fra_feudal_vassal_government_change }
-		OR = {
-			NOT = { is_subject_of_type = french_ducal_vassal }
-			NOT = { exists = FRA }
-		}
-		OR = {
-			NOT = { is_subject_of = FRA }
-			NOT = { exists = FRA }
-		}
+		has_reform = french_vassal_feudal_monarchy_reform
+		NOT = { is_subject_of = FRA }
 		is_at_war = no
+		#OR = {
+		#	NOT = { is_subject_of_type = french_ducal_vassal }
+		#	NOT = { exists = FRA }
+		#}
 	}
 	
 	mean_time_to_happen = {
@@ -128,8 +125,8 @@ country_event = {
 	
 	option = {
 		name = "feudalvassalevents.4.a"
-		set_country_flag = fra_feudal_vassal_government_change
-		#change_government = french_vassal_feudal_monarchy
-		change_government = feudal_monarchy
+		#change_government = feudal_monarchy
+		add_reform = feudalism_reform
+		set_legacy_government = feudal_monarchy
 	}		
 }

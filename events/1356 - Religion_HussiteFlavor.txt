@@ -1,7 +1,7 @@
 namespace=hussite_spr
 
 # The Hussite Reformation
-country_event = {
+country_event = { #I hope I updated the governments properly
 	id = hussite_spr.1
 	title = hussite_spr.1.t
 	desc = hussite_spr.1.d
@@ -14,7 +14,10 @@ country_event = {
 		NOT = { is_religion_enabled = hussite }
 		religion = catholic
 		is_defender_of_faith = no	
-		NOT = { government = papal_government }
+		OR = {
+			NOT = { has_reform = papacy_reform }
+			NOT = { set_legacy_government = papal_government }
+		}
 		reform_desire = 0.15
 		is_year = 1415
 		NOT = { is_year = 1500 }
@@ -124,7 +127,7 @@ country_event = {
 		}
 		modifier = {
 			factor = 2.0
-			government = theocratic_government
+			has_reform = theocracy
 		}
 		modifier = {
 			factor = 8.0

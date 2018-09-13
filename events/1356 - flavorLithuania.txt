@@ -259,7 +259,7 @@ country_event = {
 	trigger = {
 		tag = LIT
 		is_subject = no
-		NOT = { government = celestial_empire }
+		NOT = { has_reform = celestial_empire }
 		POL = {
 			ai = yes
 			exists = yes

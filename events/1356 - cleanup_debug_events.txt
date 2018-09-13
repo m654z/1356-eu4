@@ -140,24 +140,3 @@ country_event = {
 	}
 }
 
-#country_event = {
-#	id = fladebugevent.4
-#	title = "fladebugevent.4.t"
-#	desc = "fladebugevent.4.desc"
-#	picture = COURT_eventPicture
-#		
-#	trigger = {
-#		government = nogovernment
-#	}
-#	
-#	mean_time_to_happen = {
-#		days=1
-#	}	
-#	
-#	option = {
-#		name = "fladebugevent.4.a"
-#		change_government = despotic_monarchy
-#	}
-#}
-
-
