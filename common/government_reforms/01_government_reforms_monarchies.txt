@@ -939,28 +939,53 @@ elective_feudal_monarchy_reform = {
 	}
 }
 
-french_feudal_monarchy_reform = { #Unused
-	icon = "castle"
-	allow_normal_conversion = no
-	legacy_equivalent = french_feudal_monarchy
-	valid_for_nation_designer = no
-	lock_level_when_selected = yes
-	modifiers = {
-		global_manpower_modifier = 0.1	
-		vassal_income = 0.25
-	}
-	custom_attributes = {
-		locked_government_type = yes
-	}
-	ai = {
-		factor = 0 
-	}
-
-}
+#french_feudal_monarchy_reform = { #Unused
+#	icon = "castle"
+#	allow_normal_conversion = no
+#	potential = {
+#		OR = {
+#			AND = {
+#				tag = FRA
+#				#has_subject_type = french_feudal_vassal
+#				NOT = { is_year = 1444 }
+#				always = no
+#			}
+#			always = no
+#		}
+#	}
+#	legacy_equivalent = french_feudal_monarchy
+#	valid_for_nation_designer = no
+#	lock_level_when_selected = yes
+#	modifiers = {
+#		global_manpower_modifier = 0.1	
+#		vassal_income = 0.25
+#	}
+#	custom_attributes = {
+#		locked_government_type = yes
+#	}
+#	ai = {
+#		factor = 0 
+#	}
+#
+#}
 
 french_vassal_feudal_monarchy_reform = {
 	icon = "castle"
 	allow_normal_conversion = no
+	potential = {
+		culture_group = french
+		government_rank = 1
+		NOT = { tag = FRA }
+		OR = {
+			has_reform = french_vassal_feudal_monarchy_reform
+		#		is_subject_of_type = french_ducal_vassal #Crashes the game
+			AND = {
+				NOT = { has_reform = french_vassal_feudal_monarchy_reform }
+				is_subject_of = FRA
+		#		is_subject_of_type = french_ducal_vassal #Crashes the game
+			}
+		}
+	}
 	legacy_equivalent = french_vassal_feudal_monarchy
 	valid_for_nation_designer = no
 	lock_level_when_selected = yes
@@ -984,10 +1009,7 @@ kalmar_union_reform = {
 	potential = {
 		OR = {
 			has_reform = kalmar_union_reform
-			AND = {
-				is_playing_custom_nation = yes
-				have_had_reform = kalmar_union_reform
-			}
+			have_had_reform = kalmar_union_reform
 		}
 	}
 	legacy_equivalent = kalmar_union
@@ -1007,6 +1029,10 @@ barbary_sultanate_reform = {
 	icon = "muslim"
 	allow_normal_conversion = yes
 	potential = {
+		OR = {
+			has_reform = barbary_sultanate_reform
+			have_had_reform = barbary_sultanate_reform
+		}
 		religion_group = muslim
 		culture_group = maghrebi
 	}
@@ -1048,9 +1074,10 @@ timurid_government_reform = {
 	allow_normal_conversion = yes
 	potential = {
 		religion_group = muslim
+		tag = TIM
 		OR = {
+			has_reform = timurid_government_reform
 			have_had_reform = timurid_government_reform
-			tag = TIM
 		}
 	}
 	valid_for_nation_designer = no
@@ -1081,17 +1108,18 @@ chinese_kingdom_government_reform = {
 	potential = {
 		OR = {
 			AND = {
-				culture_group = east_asian
-				religion_group = eastern
-				government_rank = 2
-				#NOT = { has_reform = celestial_empire }
-			}
-			have_had_reform = chinese_kingdom_government_reform
-			AND = {
-				is_playing_custom_nation = yes
 				have_had_reform = chinese_kingdom_government_reform
+				NOT = { has_reform = celestial_empire }
 			}
+			AND = {
+				has_reform = chinese_kingdom_government_reform
+				NOT = { has_reform = celestial_empire }
+			}
+
 		}
+		government_rank = 2
+		culture_group = east_asian
+		religion_group = eastern
 	}
 	maintain_dynasty = yes
 	legacy_equivalent = chinese_kingdom_government

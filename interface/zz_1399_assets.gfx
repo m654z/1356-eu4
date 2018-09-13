@@ -259,6 +259,15 @@ spriteTypes = {
 		name = "GFX_ab_disc_general_cost_leader_pool"
 		texturefile = "gfx/interface/ages/ab_disc_general_cost_leader_pool.dds"
 	}
+	##1356 Mission Stuff begins here##
+	spriteType = {
+		name = "mission_1356_trebuchet_firing.dds"
+		texturefile = "gfx//interface//missions//mission_1356_trebuchet_firing.dds"
+	}
+	spriteType = {
+		name = "mission_1356_trebuchet_firing.dds"
+		texturefile = "gfx//interface//missions//mission_1356_trebuchet_idle.dds"
+	}
 # Yuan Disaster sprite
 	spriteType = {
 		name = "GFX_red_turban_rebellion_disaster"
