@@ -1,0 +1,17 @@
+country_decisions = {
+	update_missions_decision = {
+		potential = {
+			ai = no
+		}
+		allow = { 
+			always = yes
+		}
+		effect = { swap_non_generic_missions = yes }
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+
+}

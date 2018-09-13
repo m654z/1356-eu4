@@ -127,8 +127,9 @@ country_decisions = {
 			NOT = { tag = SPA }	# Basque is a valid culture for both FRA and SPA
 			NOT = { tag = AQT } # Aquitaine wouldn't downgrade itself
 			NOT = { tag = GUY }
-			NOT = { exists = GUY }
 			NOT = { tag = NCH }
+			NOT = { tag = FOI }
+			NOT = { tag = AMG }
 			NOT = { has_country_flag = GAS_pyrenne_kingdom }
 			is_colonial_nation = no
 			OR = {
