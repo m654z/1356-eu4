@@ -138,5 +138,5 @@ MND = "countries/Mandla.txt"
 DEO = "countries/Deogarh.txt"
 SIR = "countries/Sirpur.txt"
 
-#China, Korea, Nomads
+#China & Korea
 GYO = "countries/Goryeo.txt"
