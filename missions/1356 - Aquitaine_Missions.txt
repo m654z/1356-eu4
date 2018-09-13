@@ -585,7 +585,9 @@ AQT_independence = {
 			is_subject = no
 		}
 		effect = {
-			create_general = 35
+			create_general = {
+				tradition = 35
+			}
 		}
 	}
 	

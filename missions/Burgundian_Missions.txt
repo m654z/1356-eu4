@@ -313,7 +313,9 @@ bur_tree_5 = { #Burgundian Minor - Minor Tree to form Burgundy
 			is_subject = no
 		}
 		effect = {
-			create_general = 35
+			create_general = {
+				tradition = 35
+			}
 		}
 	}
 	bur_minor_take_burgundy = { #Take burgundy

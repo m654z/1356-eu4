@@ -1120,7 +1120,9 @@ yuan_ki_mil_reforms_group = { #Ki - Enables Yuan to actually be able to Fight th
 			army_tradition = 20
 		}
 		effect = {
-			create_general = 50
+			create_general = {
+				tradition = 50
+			}
 			add_manpower = 7.5
 			add_army_tradition = 2.5
 		}
@@ -1224,7 +1226,9 @@ yuan_ki_mil_reforms_group = { #Ki - Enables Yuan to actually be able to Fight th
 		effect = {
 			set_country_flag = government_fixed
 			remove_country_modifier = mongol_debuff #Removes Mil Debuff
-			create_general = 80
+			create_general = {
+				tradition = 80
+			}
 			add_manpower = 10
 		}
 	}

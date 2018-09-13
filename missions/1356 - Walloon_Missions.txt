@@ -400,7 +400,9 @@ wal_conquer_slot_3 = {
 				is_subject = no
 		}
 		effect = {
-			create_general = 35
+			create_general = {
+				tradition = 35
+			}
 			181 = {
 				add_permanent_claim = ROOT
 			}

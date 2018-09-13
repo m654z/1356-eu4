@@ -1,9 +1,7 @@
 gas_own_the_pyrenees = { #Secure Aragon and Navarra
-
 	slot = 1
 	generic = no
 	ai = yes
-	
 	potential = { 
 		tag = GUY
 		NOT = { has_country_flag = 1356_stay_gascony }
@@ -148,7 +146,6 @@ gas_secure_gascony = { #Secure Lower France
 	slot = 2
 	generic = no
 	ai = yes
-	
 	potential = { 
 		NOT = { has_country_flag = GAS_pyrenne_kingdom }
 		OR = {
@@ -241,7 +238,6 @@ gas_secure_aquitaine = { #Secure Lower France
 	slot = 2
 	generic = no
 	ai = yes
-	
 	potential = { 
 		NOT = { has_country_flag = GAS_pyrenne_kingdom }
 		tag = GUY
@@ -435,14 +431,12 @@ gas_secure_aquitaine = { #Secure Lower France
 			set_country_flag = formed_aquitaine_flag
 		}
 	}
-	
 }
 
 gas_freedom = { 
 	slot = 3
 	generic = no
 	ai = yes
-	
 	potential = { 
 		OR = {
 			tag = AMG
@@ -457,21 +451,22 @@ gas_freedom = {
 		required_missions = {  }
 		position = 6
 		completed_by = 1821.1.1
+		
 		trigger = {
-			is_vassal = no
 			is_subject = no
 		}
 		effect = {
-			create_general = 35
+			create_general = {
+				tradition = 35
+			}
 		}
 	}
 }
 
-gas_minor_form_gascony = { #Secure Lower France
+gas_minor_form_gascony_group = { #Secure Lower France
 	slot = 3
 	generic = no
 	ai = yes
-	
 	potential = { 
 		OR = {
 			tag = AMG

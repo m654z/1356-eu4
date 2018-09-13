@@ -145,7 +145,10 @@ french_missions_integrate_vassals = { #Integrate the Feudal Vassals Tree
 		effect = {
 			inherit = AUV
 			inherit = FOI
-			create_general = 30
+			create_general = {
+				tradition = 30
+			
+			}
 		}
 	}		
 }
@@ -160,7 +163,6 @@ french_missions_lowland_conquest = { #Leads to Stabalize the Lowlands
 		tag = FRA
 	}
 	has_country_shield = yes
-
 	fra_subjugate_walloons_mission = { #Annex the Walloons
 		icon =  mission_have_two_subjects
 		required_missions = { recover_calais }
@@ -947,7 +949,9 @@ french_minor_take_land_slot_3 = { #Hides default missions for FRA Minors
 			is_subject = no
 		}
 		effect = {
-			create_general = 35
+			create_general = {
+				tradition = 35
+			}
 			loire_area = {
 				limit = {
 					NOT = { is_core = ROOT }
