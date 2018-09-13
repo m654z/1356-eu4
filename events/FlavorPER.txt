@@ -176,6 +176,12 @@ country_event = {
 		name = "flavor_per.EVTOPTA1"
 		if = {
 			limit = {
+				NOT = { has_completed_all_reforms_trigger = yes }
+			}
+			add_reform_progress_small_effect = yes
+		}
+		if = {
+			limit = {
 				NOT = { government_rank = 3 }
 			}
 			set_government_rank = 3
@@ -245,6 +251,12 @@ country_event = {
 	
 	option = { #Reform
 		name = "flavor_per.EVTOPTA1"
+		if = {
+			limit = {
+				NOT = { has_completed_all_reforms_trigger = yes }
+			}
+			add_reform_progress_small_effect = yes
+		}
 		add_piety = 0.25
 		add_adm_power = 50
 		add_mil_power = 50
@@ -276,6 +288,12 @@ country_event = {
 	
 	option = { # Hire the English advisors
 		name = "flavor_per.EVTOPTA3"
+		if = {
+			limit = {
+				NOT = { has_completed_all_reforms_trigger = yes }
+			}
+			add_reform_progress_small_effect = yes
+		}
 		add_ruler_modifier = { name = per_abbas_advisors }
 		add_stability = -1
 	}
@@ -722,7 +740,7 @@ country_event = {
 
 #Persia and Shiism
 
-country_event = {
+country_event = { #1356 - Changed Trigger
 	id = flavor_per.13
 	title = flavor_per.13.t
 	desc = flavor_per.13.d
@@ -734,7 +752,7 @@ country_event = {
 		tag = PER
 		is_free_or_tributary_trigger = yes
 		NOT = { is_year = 1630 }
-		NOT = { religion = zoroastrian }
+		NOT = { religion = zoroastrian } #1356 
 	}
 
 	mean_time_to_happen = {
