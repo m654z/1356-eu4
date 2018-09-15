@@ -470,10 +470,20 @@
  GAS_secure_indian_port_desc: "Finally! We've made it to India! Owning an Indian Port is our first step to getting access to the vast wealth of India!"
  GAS_triumph_against_french_title: "Triumph Against the French"
  GAS_triumph_against_french_desc: "Now that France has been dealt with, what should we do. Stay proud Gascons, or take the more prestigious title of the Kingdom of France?"
- GAS_generic_develop_our_home_desc: "Our home area is under developed. If we want our capital to be as great as the capitals of other mighty nations then we should put some extra effort into it."
  gas_minor_form_gascony_title: "Form the Kingdom of Gascony"
  gas_minor_form_gascony_desc: "Now that we have driven the fithly English and French out of Gascony, it is time for us to be the masters of our own destiny! Gascony stands alone against our enemies but we shall not fail! For Gascony!"
-
+ GAS_unite_the_south_mission_title: "Unite Aquitaine"
+ GAS_unite_the_south_mission_desc: "Now that we are a newborn independent Duchy all on our own, we have a lot of work to do! Our first order of business should be to determine what direction we are to take our nation in. Shall we reclaim what is rightfully ours and retake the Kingdom of Gascony and Aquitaine? Or should we go with another idea our advisors have given us?..."
+ GAS_carve_out_a_new_kingdom_for_ourselves_title: "Carve out a new Kingdom?"
+ GAS_carve_out_a_new_kingdom_for_ourselves_desc: "Now that we are a newborn independent Duchy all on our own, we have a lot of work to do! Our first order of business should be to determine what direction we are to take our nation in. Shall we ignore our history and ancestory and head south to form a Pyrenne Kingdom all on its own, where no other King has power over us? Or does another idea our advisors have sound better?..."
+ GAS_annex_toulouse_title: "Annex Toulouse"
+ GAS_annex_toulouse_desc: "The County of Toulouse has always been contested between the Dukes of Aquitaine and Gascony. Previously the King of France awarded it to the Duke of Aquitaine, leaving nothing for us! Now that we are free it is only right if we take it back for ourselves!"
+ GAS_annex_rest_of_gascon_kingdom_title: "Conquer Lower Poitou"
+ GAS_annex_rest_of_gascon_kingdom_desc: "Historically, the provinces of Saintonge and Angoumois were both part of the Duchy of Gascony. However in recent history they were stripped away from us! Since we are near our goal of uniting the former Duchy of Gascony it is only right to take all of it!"
+ GAS_secure_gascon_area_title: "Secure our Homeland"
+ GAS_secure_gascon_area_desc: "Now that we've managed to Conquer both Gascony and Aquitaine, before we move forward with any plans or ideas we need to make sure our homeland is both secure, and happy. For if we choose to unite the two Kingdoms of Gascony and Aquitaine, there may be a very unhappy Gascon populace back home who will revolt..."
+ 
+ 
  #Aquitaine Missions
  AQT_secure_indian_port_title: "Secure an Indian Port"
  AQT_secure_indian_port_desc: "By controlling Baroda we should be able to have an important foothold in the flow of indian trade. Perhaps it will allow us to push further into the continent?"
