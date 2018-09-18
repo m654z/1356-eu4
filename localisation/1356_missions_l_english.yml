@@ -482,6 +482,28 @@
  GAS_annex_rest_of_gascon_kingdom_desc: "Historically, the provinces of Saintonge and Angoumois were both part of the Duchy of Gascony. However in recent history they were stripped away from us! Since we are near our goal of uniting the former Duchy of Gascony it is only right to take all of it!"
  GAS_secure_gascon_area_title: "Secure our Homeland"
  GAS_secure_gascon_area_desc: "Now that we've managed to Conquer both Gascony and Aquitaine, before we move forward with any plans or ideas we need to make sure our homeland is both secure, and happy. For if we choose to unite the two Kingdoms of Gascony and Aquitaine, there may be a very unhappy Gascon populace back home who will revolt..."
+ GAS_path_to_france_mission_title: "Usurp the French Kingdom"
+ GAS_path_to_france_mission_desc: "We have lived in the shadow of the King of France for far too long! The only true way to prevent the French from attempting to subjugate us once more is to subjugate them ourselves! Our advisors however whisper it may be easier to push south and proclaim a new Kingdom, or just unite the Gascons and Occitans..."
+ GAS_new_kingdom_conquer_valencia_alicante_baleares_title: "Conquer Valencia & Baleares"
+ GAS_new_kingdom_conquer_valencia_alicante_baleares_desc: "Valencia, Alicante, and the Baleares are the last bits of Aragonese Coast we require! Valencia is perfectly positioned to protect our Trade Capital from invasion, and together with Zaragoza shall protect Barcelona from any invasion!"
+ GAS_new_kingdom_fortify_key_provinces_title: "Fortify our Nation"
+ GAS_new_kingdom_fortify_key_provinces_desc: "We have conquered everything we need to convince the Pope to coronate us King of the Pyrennes!  However before we send word to the Pope of our request, it would do us well to secure our current position, as being crowned King may anger our neighbors..."
+ GAS_new_kingdom_conquer_teruel_barcelona_tarragona_title: "Conquer the Aragonese Coast"
+ GAS_new_kingdom_conquer_teruel_barcelona_tarragona_desc: "We require a well positioned Mediterranean Port if we wish to successfully form our own Kingdom! Barcelona is perfectly positioned to be our future Trade Capital! If we move fast enough perhaps we can rake in even more Duccats!"0
+ GAS_new_kingdom_take_soria_cantabria_burgos_title: "Take Cantabria & Burgos"
+ GAS_new_kingdom_take_soria_cantabria_burgos_desc: "The last of the land we need in the West is almost ours! All we need is Soria, Burgos, and Cantabria! After that then we shall control all the land we require to proclaim a New Kingdom! Where we shall be our own Kings, and no other King shall have power over us finally!"
+ GAS_new_kingdom_point_of_no_return_title: "The Point of No Return"
+ GAS_new_kingdom_point_of_no_return_desc: "We have managed to get this far somehow! Our advisors whisper that we have managed to do the impossible, yet we still stand! However now the people in Western Europe no longer view us as a subject to the French King. They...seem to view us as something else. An independent kingdom perhaps? Whatever the reason, if we push any further south we may forever lose our claim to the Kingdom of France!"
+ GAS_new_kingdom_urgell_girona_title: "Conquer The Southern Pyrennes"
+ GAS_new_kingdom_urgell_girona_desc: "Now that we are in possession of Roussillon we should march further onwards! Our next target is Urgell and Girona! After we take those then we shall be one step closer to controlling all the Pyrennes for ourselves! "
+ GAS_new_kingdom_take_fort_roussillon_title: "Occupy Roussillon"
+ GAS_new_kingdom_take_fort_roussillon_desc: "Regardless of what our ambition may be, owning Roussillon is a priority. If properly under our control we can at least slow down any incoming Iberian Invasions on the eastern side of the Pyrennes!"
+ GAS_new_kingdom_toulouse_title: "Annex Toulouse"
+ GAS_new_kingdom_toulouse_desc: "Back before it was taken from us, the city of Toulouse used to lay within Gascon hands. However the King of France eventually awarded the County of Toulouse to another Duke! Taking our rightful land right out from under us! We must correct this mistake, and retake what is rightfully ours!"
+ GAS_secure_vizcaya_title: "March on Vizcaya"
+ GAS_secure_vizcaya_desc: "We are already in posession of the County of Navarra, we should subjugate the rest of the Basque peoples under our banner. Perhaps then if we provide them an incentive to stay loyal we can bolster our armies with additional manpower curtosy of a few loyal Basque cities..."
+ GAS_take_rioja_zaragoza_pirineo_title: "Conquer Aragon"
+ GAS_take_rioja_zaragoza_pirineo_desc: "The Duchy of Aragon is a key location for us if we wish to establish our own Kingdom! Taking it allows us to secure not only the rest of the Pyrenees, but gives us access to some fertile farmland which shall feed our growning army!"
  
  
  #Aquitaine Missions

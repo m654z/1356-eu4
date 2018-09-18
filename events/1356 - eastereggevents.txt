@@ -184,3 +184,63 @@ country_event = {
 
 #Misc
 
+#The Souless Wind God Speaks
+country_event = {
+	id = eastereggflandy.4
+	title = "eastereggflandy.4.t"
+	desc = "eastereggflandy.4.desc"
+	picture = COURT_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		OR = {
+			current_age = age_of_discovery
+			current_age = age_of_feudalism
+		}
+		ai = no
+		NOT = { has_global_flag = the_souless_wind_god_has_risen }
+		OR = {
+			AND = {
+				technology_group = andean
+				religion = inti
+			}
+			AND = {
+				technology_group = mesoamerican
+				religion = nahuatl
+			}
+			AND = {
+				technology_group = mesoamerican
+				religion = mesoamerican_religion
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		years = 350
+	}
+	
+	option = { #We must obey the souless wind god! Prepare for war!
+		name = eastereggflandy.4.a
+		ai_chance = { factor = 50 }
+		set_global_flag = the_souless_wind_god_has_risen
+		define_general = {
+			name = "The Souless Wind God" 
+			trait = inspirational_leader_general_personality
+			shock = 6
+			fire = 4
+			manuever = 3
+			siege = 2
+		}
+		add_army_tradition = 15
+		add_manpower = 20
+		add_mil_power = -200
+	}
+	option = { #Haha! There is no way a strange people will land on our shores and kill us!
+		name = eastereggflandy.4.b
+		ai_chance = { factor = 50 }
+		set_global_flag = the_souless_wind_god_has_risen
+		add_prestige = 50
+		add_stability = 2
+	}
+}

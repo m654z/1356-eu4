@@ -96,3 +96,5 @@
  kendal_conquest_title: "Conquest of Kendal"
  yua_ask_nomadic_tribes_for_loyalty_decision_title: "Ask the Nomadic Tribes for Support"
  yua_ask_nomadic_tribes_for_loyalty_decision_desc: "We can ask the Nomadic Tribes in the north for support during the Red Turban Rebellion, however they will want paid, and rewarded. While we can convince them the reward will come after we win, they want the payment up front. We can only hope that this will save us some trouble in the future."
+ update_missions_decision_title: "Update Missions"
+ update_missions_decision_desc: "In the case that your missions become broken, or do not refresh on forming a new tag, this should fix it. The AI is told to not use this, so if they happen to be broken and you wish to fix them you'll have to do this for them."

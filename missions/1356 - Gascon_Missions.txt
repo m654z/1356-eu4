@@ -1,4 +1,4 @@
-gas_new_kingdom_group = { #Create a New Kingdom - 
+gas_new_kingdom_group = { #Create a New Kingdom - Left Side
 	slot = 1
 	generic = no
 	ai = yes
@@ -51,7 +51,6 @@ gas_new_kingdom_group = { #Create a New Kingdom -
 			2989 = { add_permanent_claim = ROOT }
 		}
 	}
-	#####Give me a special modifier effect
 	GAS_take_rioja_zaragoza_pirineo = { #Take part of Aragon and Rioja
 		icon = mission_cannons_firing
 		required_missions = { GAS_secure_vizcaya }
@@ -73,14 +72,65 @@ gas_new_kingdom_group = { #Create a New Kingdom -
 			2989 = { country_or_non_sovereign_subject_holds = ROOT } #Rioja
 		}
 		effect = {
-			add_accepted_culture = basque
-			add_dip_power = 50
+			1745 = {	add_permanent_claim = ROOT }
+			1746 = { add_permanent_claim = ROOT }
+			2755 = { add_permanent_claim = ROOT }
+		}
+	}
+
+	GAS_new_kingdom_take_soria_cantabria_burgos = { #Take the rest of the Iberian land you need.
+		icon = mission_assemble_an_army
+		required_missions = { GAS_new_kingdom_point_of_no_return }
+		position = 7
+		completed_by = 1821.1.1
+		provinces_to_highlight = {
+			OR = {
+				province_id = 1745
+				province_id = 1746
+				province_id = 2755
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			1745 = { country_or_non_sovereign_subject_holds = ROOT } #Zaragoza	
+			1746 = { country_or_non_sovereign_subject_holds = ROOT } #Pirineo
+			2755 = { country_or_non_sovereign_subject_holds = ROOT } #Rioja
+		}
+		effect = {
+			add_country_modifier = {
+				name = "gas_pyrenne_kingdom_mod_2_modifier"
+				duration = -1
+			}
+			add_accepted_culture = catalan
+		}
+	}
+	GAS_new_kingdom_fortify_key_provinces = { #Take the rest of the Iberian land you need.
+		icon = mission_arabian_fort
+		required_missions = { GAS_new_kingdom_take_soria_cantabria_burgos GAS_new_kingdom_conquer_teruel_barcelona_tarragona }
+		position = 8
+		completed_by = 1821.1.1
+		trigger = {
+			OR = {
+				fort_15th = 4
+				fort_16th = 4
+				fort_17th = 4
+				fort_18th = 4
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = "gas_pyrenne_kingdom_mod_4_modifier"
+				duration = -1
+			}
+			add_accepted_culture = aragonese
 		}
 	}
 
 	
 }
-gas_new_kingdom_group_2 = { #Create a New Kingdom - 
+gas_new_kingdom_group_2 = { #Create a New Kingdom - Special Missions
 	slot = 2
 	generic = no
 	ai = yes
@@ -121,7 +171,6 @@ gas_new_kingdom_group_2 = { #Create a New Kingdom -
 		}
 	}
 	
-	#Add a special event for this mission after taking it. + A special Modifier
 	GAS_new_kingdom_point_of_no_return = { #The Point of no Return for Gascony
 		icon = mission_monarch_in_throne_room
 		required_missions = { GAS_take_rioja_zaragoza_pirineo GAS_new_kingdom_urgell_girona }
@@ -150,18 +199,28 @@ gas_new_kingdom_group_2 = { #Create a New Kingdom -
 		}
 		effect = {
 			custom_tooltip = 1356_GAS_pyrenne_tt
-			set_country_flag = gas_pyrenee_kingdom
-			set_government_rank = 2
+			set_country_flag = GAS_pyrenee_kingdom
+			swap_non_generic_missions = yes #Technally gives nothing new.
+			add_country_modifier = {
+				name = "gas_pyrenne_kingdom_point_of_no_return_modifier"
+				duration = -1
+			}
+			country_event = { 
+				id = flagas.1
+				days = 30
+				random = 30
+			}
+			add_accepted_culture = basque
 			2988 = { add_permanent_claim = ROOT }
 			213 = { add_permanent_claim = ROOT }
 			2990 = { add_permanent_claim = ROOT }
 		}
 	}
-	
+		
 	GAS_the_pyrenee_kingdom = { #You've secured the Pyrenee Kingdom!
 		icon = mission_monarch_in_throne_room
-		required_missions = {  }
-		position = 10
+		required_missions = { GAS_new_kingdom_fortify_key_provinces GAS_new_kingdom_conquer_valencia_alicante_baleares }
+		position = 9
 		completed_by = 1821.1.1
 		trigger = {
 			is_at_war = no
@@ -169,29 +228,33 @@ gas_new_kingdom_group_2 = { #Create a New Kingdom -
 			legitimacy = 75
 		}
 		effect = {
-			set_country_flag = GAS_pyrenne_kingdom
-			swap_non_generic_missions = yes
+			custom_tooltip = 1356_GAS_pyrenne_tt
+			set_country_flag = gas_claimed_pyrenne_kingdom
+			swap_non_generic_missions = yes #Technally gives nothing new.
+			country_event = { 
+				id = flagas.2
+				days = 30
+				random = 30
+			}
+			add_country_modifier = {
+				name = "gas_pyrenne_kingdom_modifier"
+				duration = -1
+			}
 			add_adm_power = 200
-			add_dip_power = 100
-			add_prestige = 15
+			add_dip_power = 200
+			add_mil_power = 200
+			add_legitimacy = 10
 			if = {
 				limit = {
 					NOT = { government_rank = 2 }
 				}
 				set_government_rank = 2
 			}
-			add_country_modifier = {
-				name = "centralization_modifier"
-				duration = 7300
-			}
-			custom_tooltip = 1356_GAS_pyrenne_tt
-
 		}
 	}
 	
 }
-
-gas_new_kingdom_group_3 = { #Create a New Kingdom - 
+gas_new_kingdom_group_3 = { #Create a New Kingdom - Right Side
 	slot = 3
 	generic = no
 	ai = yes
@@ -249,7 +312,6 @@ gas_new_kingdom_group_3 = { #Create a New Kingdom -
 			2987 = { add_permanent_claim = ROOT }
 		}
 	}
-	#####Give a special modifier effect
 	GAS_new_kingdom_urgell_girona = { #Secure the rest of the pyrenees
 		icon = mission_unite_home_region
 		required_missions = { GAS_new_kingdom_take_fort_roussillon }
@@ -293,6 +355,10 @@ gas_new_kingdom_group_3 = { #Create a New Kingdom -
 			2990 = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		effect = {
+			add_country_modifier = {
+				name = "gas_pyrenne_kingdom_mod_1_modifier"
+				duration = -1
+			}
 			220 = {	add_permanent_claim = ROOT }
 			1750 = { add_permanent_claim = ROOT }
 			333 = { add_permanent_claim = ROOT }
@@ -319,7 +385,10 @@ gas_new_kingdom_group_3 = { #Create a New Kingdom -
 			333 = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		effect = {
-			
+			add_country_modifier = {
+				name = "gas_pyrenne_kingdom_mod_3_modifier"
+				duration = -1
+			}
 		}
 	}
 }
@@ -751,7 +820,6 @@ gas_secure_aquitaine = { #Secure The Kingdom of Aquitaine-
 	}
 	has_country_shield = yes
 	
-	####I NEED AN EFFECT
 	GAS_unite_the_south_mission = { #Path for uniting southern france
 		icon = mission_monarch_in_throne_room
 		required_missions = { GAS_secure_our_independence }
@@ -770,16 +838,36 @@ gas_secure_aquitaine = { #Secure The Kingdom of Aquitaine-
 				religion = reformed
 			}
 			is_subject = no
-			is_at_war = yes
+			is_at_war = no
 			is_bankrupt = no
 			NOT = { government_rank = 2 }
 			num_of_generals = 1
 			army_size = 6
 		}
 		effect = {
-		
+			add_prestige = 5
+			languedoc_area = { 
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			guyenne_area = { 
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			173 = { #Navarra
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
 		}
-	
 	}
 	
 	GAS_secure_toulouse = { #Secure the Occitans P1
@@ -933,12 +1021,7 @@ gas_secure_aquitaine = { #Secure The Kingdom of Aquitaine-
 			custom_tooltip = 1356_GAS_stay_gas_tt
 			set_country_flag = 1356_stay_gascony
 			swap_non_generic_missions = yes
-			if = {
-				limit = {
-					NOT = { government_rank = 2 }
-				}
-				set_government_rank = 2
-			}
+			set_government_rank = 3
 			france_region = {
 				limit = {
 					NOT = { owned_by = ROOT }
@@ -949,8 +1032,11 @@ gas_secure_aquitaine = { #Secure The Kingdom of Aquitaine-
 				name = "centralization_modifier"
 				duration = 7300
 			}	
+			add_adm_power = 200
+			add_dip_power = 200
+			add_mil_power = 200
 			add_prestige = 25
-			add_legitimacy = 15
+			add_legitimacy = 25
 		}
 	}	
 }
@@ -969,7 +1055,7 @@ gas_secure_brittany = {
 	GAS_take_brittany = { #Take Brittany
 		icon = mission_build_up_to_force_limit
 		required_missions = { GAS_take_loire }
-		position = 4
+		position = 5
 		completed_by = 1821.1.1
 		provinces_to_highlight = {
 			OR = {
@@ -1019,11 +1105,42 @@ gas_secure_france = { #Either Take France OR Take the Pyrenees
 	}
 	has_country_shield = yes
 	
+	GAS_path_to_france_mission = { #Path for uniting France
+		icon = mission_monarch_in_throne_room
+		required_missions = { GAS_secure_our_independence }
+		position = 2
+		completed_by = 1821.1.1
+		
+		trigger = {
+			culture_group = french
+			OR = {
+				religion = catholic
+				religion = hussite
+				religion = protestant
+				religion = reformed
+			}
+			is_subject = no
+			is_at_war = no
+			is_bankrupt = no
+			NOT = { government_rank = 2 }
+			num_of_generals = 1
+			army_size = 6
+		}
+		effect = {
+			poitou_area = { 
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
 	
 	GAS_take_poitou = { #Take Poitou
 		icon = mission_cannons_firing
-		required_missions = { GAS_secure_our_independence }
-		position = 2
+		required_missions = { GAS_path_to_france_mission }
+		position = 3
 		completed_by = 1821.1.1
 		provinces_to_highlight = {
 			OR = {
@@ -1069,7 +1186,7 @@ gas_secure_france = { #Either Take France OR Take the Pyrenees
 	GAS_take_loire = { #Take Loire
 		icon = mission_conquer_5_states
 		required_missions = { GAS_take_poitou }
-		position = 3
+		position = 4
 		completed_by = 1821.1.1
 		provinces_to_highlight = {
 			OR = {
@@ -1120,7 +1237,7 @@ gas_secure_france = { #Either Take France OR Take the Pyrenees
 	GAS_take_normandy = { #Take Normandy
 		icon = mission_sea_battles
 		required_missions = { GAS_take_loire }
-		position = 4
+		position = 5
 		completed_by = 1821.1.1
 		provinces_to_highlight = {
 			OR = {
@@ -1160,7 +1277,7 @@ gas_secure_france = { #Either Take France OR Take the Pyrenees
 	GAS_take_valois_picardie_champagne = { #Take the rest of France
 		icon = mission_monarch_in_throne_room
 		required_missions = { GAS_take_normandy GAS_take_brittany }
-		position = 5
+		position = 6
 		completed_by = 1821.1.1
 		provinces_to_highlight = {
 			OR = {
