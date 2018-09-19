@@ -1,9 +1,11 @@
-government = feudal_monarchy
+government = monarchy
+add_government_reform = feudalism_reform
 primary_culture = serbian
 religion = orthodox
 technology_group = eastern
 capital = 3001	# Skopje
 historical_friend = BOS
+historical_rival = TUR
 
 1355.12.20 = {
 	government_rank = 2
@@ -69,6 +71,10 @@ historical_friend = BOS
 		dip = 3
 		mil = 4
 	}
+}
+
+1389.1.1 = { #Vanilla, not us!
+	government_rank = 1
 }
 
 1389.6.15 = {

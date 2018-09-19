@@ -2,13 +2,11 @@ country_decisions = {
 	join_hansa = {
 		major = yes
 		potential = {
-			OR = {
-				capital_scope = {
-					OR = {
-						region = scandinavia_region
-						region = north_german_region
-						region = baltic_region
-					}
+			capital_scope = {
+				OR = {
+					region = scandinavia_region
+					region = north_german_region
+					region = baltic_region
 				}
 			}
 			NOT = {
@@ -83,13 +81,11 @@ country_decisions = {
 	dismantle_hansa = {
 		major = yes
 		potential = {
-			OR = {
-				capital_scope = {
-					OR = {
-						region = scandinavia_region
-						region = north_german_region
-						region = baltic_region
-					}
+			capital_scope = {
+				OR = {
+					region = scandinavia_region
+					region = north_german_region
+					region = baltic_region
 				}
 			}
 		}
@@ -102,12 +98,10 @@ country_decisions = {
 					amount = 4
 				}
 			}
-			AND = {
-				owns_or_non_sovereign_subject_of = 45
-				owns_or_non_sovereign_subject_of = 2996
-				owns_or_non_sovereign_subject_of = 46
-				owns_or_non_sovereign_subject_of = 25
-			}
+			owns_or_non_sovereign_subject_of = 45
+			owns_or_non_sovereign_subject_of = 2996
+			owns_or_non_sovereign_subject_of = 46
+			owns_or_non_sovereign_subject_of = 25
 			NOT = { has_country_modifier = member_of_hansa_ev }
 		}
 		effect = {
@@ -203,10 +197,8 @@ country_decisions = {
 			save_global_event_target_as = new_leader_of_hansa
 			every_country = {
 				limit = {
-					AND = {
-						has_country_modifier = member_of_hansa_ev
-						ai = no
-					}
+					has_country_modifier = member_of_hansa_ev
+					ai = no
 				}
 				country_event = {
 					id = hansa.5

@@ -1122,6 +1122,7 @@ chinese_kingdom_government_reform = {
 		religion_group = eastern
 	}
 	maintain_dynasty = yes
+	lock_level_when_selected = yes
 	legacy_equivalent = chinese_kingdom_government
 	fixed_rank = 2
 	valid_for_nation_designer = yes
@@ -1261,6 +1262,38 @@ deccani_society_reform = {
 		free_dip_policy = 1
 	}
 }
+
+#####1356 Changes Start 2######
+
+yuan_celestial_empire_elective_heirs_reform = { #Mostly to show that you have this
+	icon = "crown"
+	allow_normal_conversion = yes
+	lock_level_when_selected = yes
+	potential = {
+		allow = { has_dlc = "Dharma" }
+		tag = YUA
+		is_emperor_of_china = yes
+		OR = {
+			has_country_flag = yuan_nobles_succeed_plot_flag
+			has_country_flag = yuan_celestial_empire_noble_republic_flag
+		}
+		has_country_flag = yuan_noble_republic_disaster_over_flag #Exclusive to this reform
+		has_reform = yuan_celestial_empire_elective_heirs_reform
+	}
+	modifiers = {
+		global_manpower_modifier = 0.05
+		global_unrest = -1
+		stability_cost_modifier = -0.05
+	}
+	
+	effect = {
+		custom_tooltip = celestial_empire_noble_republic_reform_tt
+		set_country_flag = yuan_celestial_empire_noble_republic_flag
+	}
+
+}
+
+#####1356 Changes End 2########
 
 #Bureaucracy:
 

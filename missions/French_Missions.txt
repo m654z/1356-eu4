@@ -24,6 +24,12 @@ french_missions_integrate_vassals = { #Integrate the Feudal Vassals Tree
 				NOT = { exists = ORL }
 			}
 			is_year = 1363
+			ORL = {
+				has_opinion = {
+					who = FRA
+					value = 190
+				}
+			}
 		}
 		effect = {
 			inherit = ORL
@@ -46,6 +52,12 @@ french_missions_integrate_vassals = { #Integrate the Feudal Vassals Tree
 			}
 			stability = 1
 			is_year = 1373
+			FOZ = {
+				has_opinion = {
+					who = FRA
+					value = 190
+				}
+			}
 		}
 		effect = {
 			inherit = FOZ
@@ -67,6 +79,12 @@ french_missions_integrate_vassals = { #Integrate the Feudal Vassals Tree
 			}
 			treasury = 200
 			is_year = 1378
+			BOU = {
+				has_opinion = {
+					who = FRA
+					value = 190
+				}
+			}
 		}
 		effect = {
 			inherit = BOU
@@ -92,6 +110,12 @@ french_missions_integrate_vassals = { #Integrate the Feudal Vassals Tree
 				NOT = { exists = ALE }
 			}
 			is_year = 1386
+			ALE = {
+				has_opinion = {
+					who = FRA
+					value = 190
+				}
+			}
 		}
 		effect = {
 			inherit = ALE
@@ -113,12 +137,18 @@ french_missions_integrate_vassals = { #Integrate the Feudal Vassals Tree
 			}
 			prestige = 25
 			is_year = 1390
+			ANJ = {
+				has_opinion = {
+					who = FRA
+					value = 190
+				}
+			}
 		}
 		effect = {
 			inherit = ANJ
 		}
 	}
-	fra_feud_vassal_integrate_mission_7 = { #Integrate Auvergne
+	fra_feud_vassal_integrate_mission_7 = { #Integrate Auvergne & Foix
 		icon = mission_have_two_subjects
 		required_missions = { fra_feud_vassal_integrate_mission_6 }
 		position = 7
@@ -141,6 +171,18 @@ french_missions_integrate_vassals = { #Integrate the Feudal Vassals Tree
 			}
 			prestige = 15
 			is_year = 1400
+			AUV = {
+				has_opinion = {
+					who = FRA
+					value = 190
+				}
+			}
+			FOI = {
+				has_opinion = {
+					who = FRA
+					value = 190
+				}
+			}
 		}
 		effect = {
 			inherit = AUV
@@ -542,6 +584,12 @@ french_missions_integrate_dau = {
 				NOT = { exists = DAU }
 			}			
 			is_year = 1370
+			DAU = {
+				has_opinion = {
+					who = FRA
+					value = 150
+				}
+			}
 		}
 		effect = {
 			country_event = { id = flavor_fla_fra.1 tooltip = flavor_fla_fra.tooltip } #Handle Dauphine Event

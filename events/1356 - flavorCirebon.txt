@@ -72,10 +72,8 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		AND = {
-			owns = 625
-			owns = 2688
-		}
+		owns = 625
+		owns = 2688
 		OR = {
 			NOT = { legitimacy = 40 }
 			NOT = { stability = 0 }

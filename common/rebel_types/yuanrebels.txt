@@ -35,23 +35,59 @@ yuan_noble_rebels = {
 			factor = 0
 			owner = { NOT = { tag = YUA } }
 		}
-		modifier = { #Make it faster if below 0 stability
-			factor = 15
-			owner = { 
-				has_country_flag = yua_noble_rebellion_popped_flag
-				NOT = { stability = 0 }
-			}
-		}
 		modifier = { #Be Yuan, who's the emperor, who's not a nomad
-			factor = 5
+			factor = 100
 			owner = { 
 				tag = YUA
-				has_country_flag = yua_noble_rebellion_popped_flag
+				OR = {
+					has_disaster = yuan_noble_rebellion_disaster
+					has_country_flag = yuan_noble_disaster_rebel_flag
+				}
 				OR = {
 					is_emperor_of_china = yes
 					owns = 1816
 				}
-				NOT = { technology_group = nomad_group}
+				AND = {
+					NOT = { technology_group = nomad_group }
+					is_emperor_of_china = no
+				}
+			}
+		}
+		modifier = { #Make it faster if below 0 stability
+			factor = 150
+			owner = { 
+				tag = YUA
+				OR = {
+					is_emperor_of_china = yes
+					owns = 1816
+				}
+				AND = {
+					NOT = { technology_group = nomad_group }
+					is_emperor_of_china = no
+				}
+				OR = {
+					has_disaster = yuan_noble_rebellion_disaster
+					has_country_flag = yuan_noble_disaster_rebel_flag
+				}
+				NOT = { stability = 0 }
+			}
+		}
+		modifier = { 
+			factor = 100
+			owner = { 
+				tag = YUA
+				OR = {
+					has_disaster = yuan_noble_rebellion_disaster
+					has_country_flag = yuan_noble_disaster_rebel_flag
+				}
+				OR = {
+					is_emperor_of_china = yes
+					owns = 1816
+				}
+				AND = {
+					NOT = { technology_group = nomad_group }
+					is_emperor_of_china = no
+				}
 			}
 		}
 	}
@@ -106,6 +142,10 @@ yuan_noble_rebels = {
 	# Country Scope	
 	demands_enforced_effect = {
 		set_country_flag = yuan_nobles_succeed_plot_flag
+		country_event = { #Noble Republic Event Thing
+			id = yuandisaster.24
+			days = 30
+		}	
 		add_prestige = -25
 		add_meritocracy = -10
 	}

@@ -489,7 +489,7 @@
  GAS_new_kingdom_fortify_key_provinces_title: "Fortify our Nation"
  GAS_new_kingdom_fortify_key_provinces_desc: "We have conquered everything we need to convince the Pope to coronate us King of the Pyrennes!  However before we send word to the Pope of our request, it would do us well to secure our current position, as being crowned King may anger our neighbors..."
  GAS_new_kingdom_conquer_teruel_barcelona_tarragona_title: "Conquer the Aragonese Coast"
- GAS_new_kingdom_conquer_teruel_barcelona_tarragona_desc: "We require a well positioned Mediterranean Port if we wish to successfully form our own Kingdom! Barcelona is perfectly positioned to be our future Trade Capital! If we move fast enough perhaps we can rake in even more Duccats!"0
+ GAS_new_kingdom_conquer_teruel_barcelona_tarragona_desc: "We require a well positioned Mediterranean Port if we wish to successfully form our own Kingdom! Barcelona is perfectly positioned to be our future Trade Capital! If we move fast enough perhaps we can rake in even more Duccats!"
  GAS_new_kingdom_take_soria_cantabria_burgos_title: "Take Cantabria & Burgos"
  GAS_new_kingdom_take_soria_cantabria_burgos_desc: "The last of the land we need in the West is almost ours! All we need is Soria, Burgos, and Cantabria! After that then we shall control all the land we require to proclaim a New Kingdom! Where we shall be our own Kings, and no other King shall have power over us finally!"
  GAS_new_kingdom_point_of_no_return_title: "The Point of No Return"
@@ -504,7 +504,10 @@
  GAS_secure_vizcaya_desc: "We are already in posession of the County of Navarra, we should subjugate the rest of the Basque peoples under our banner. Perhaps then if we provide them an incentive to stay loyal we can bolster our armies with additional manpower curtosy of a few loyal Basque cities..."
  GAS_take_rioja_zaragoza_pirineo_title: "Conquer Aragon"
  GAS_take_rioja_zaragoza_pirineo_desc: "The Duchy of Aragon is a key location for us if we wish to establish our own Kingdom! Taking it allows us to secure not only the rest of the Pyrenees, but gives us access to some fertile farmland which shall feed our growning army!"
- 
+ GAS_minor_secure_our_duchy_title: "Secure the Duchy"
+ GAS_minor_secure_our_duchy_desc: "Now that we are free from English and French oppression our war is just begining! All Gascons must be united under Gascony! But first we should secure our Capital's Duchy..."
+ GAS_minor_secure_our_culture_title: "Unite the Gascons"
+ GAS_minor_secure_our_culture_desc: "Now that we control our own Duchy it would be a wise next move to aim to control all the lands that have our loyal Gascon subjects in them. The French and English will no longer oppress us!"
  
  #Aquitaine Missions
  AQT_secure_indian_port_title: "Secure an Indian Port"
@@ -1044,4 +1047,21 @@
  danish_missions_2: "Danish Missions"
  danish_missions_3: "Danish Missions"
  danish_missions_5: "Danish Missions"
+ gas_form_aquitaine_group: "Form Aquitaine"
+ gas_minor_form_gascony_group: "Form Gascony"
+ gas_secure_gascony_group: "Secure Gascony"
+ gas_new_kingdom_group_3: "New Kingdom"
+ gas_new_kingdom_group_2: "New Kingdom"
+ gas_new_kingdom_group: "New Kingdom"
+ yuan_quell_red_turban_rebellion_toqto_crush_rebels_1_group: "Crush Rebels"
+ yuan_quell_red_turban_rebellion_toqto_crush_rebels_4_group: "Crush the rebels!"
+ yuan_quell_red_turban_rebellion_toqto_crush_rebels_3_group: "Crush the rebels!"
+ yuan_quell_red_turban_rebellion_toqto_crush_rebels_group: "Crush the rebels!"
+ yuan_quell_red_turban_rebellion_toqto_group: "Rebellion"
+ yuan_quell_red_turban_rebellion_naval_group: "Navy!"
+ yuan_ki_dip_group: "Dip"
+ yuan_ki_adm_group: "Adm"
+ yuan_toqtoa_start_group: "Start"
+ yuan_starter_group_2: "Start"
+ yuan_ki_red_turban_group: "Red Turbans"
  

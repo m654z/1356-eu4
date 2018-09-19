@@ -1,0 +1,832 @@
+namespace = yuandisaster
+
+################################################################
+#######Start & End of Noble Disaster Events#####################
+###########yuandisaster.1-yuandisaster.2########################
+################################################################
+country_event = { #Start of Unique Disaster
+	id = yuandisaster.1
+	title = yuandisaster.1.t
+	desc = yuandisaster.1.d
+	picture = ACCUSATION_eventPicture
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #Sets Rebels to spawn
+		name = yuandisaster.1
+		set_country_flag = yuan_noble_disaster_rebel_flag
+	}
+	
+}
+
+country_event = { #Sets the Government Reform or flag/Ends the Rebels
+	id = yuandisaster.2
+	title = yuandisaster.2.t
+	desc = yuandisaster.2.desc
+	picture = DEBATE_REPUBLICAN_eventPicture
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	major = yes
+		
+	option = { #Dharma Owners
+		name = yuandisaster.2.a
+		trigger = {	has_dlc = "Dharma" }
+		add_government_reform = yuan_celestial_empire_elective_heirs_reform
+		set_country_flag = yuan_celestial_empire_noble_republic_flag #Tells future events/rebels the rebellion is over
+		set_country_flag = yuan_noble_republic_disaster_over_flag #Tells the Government Reform that it can appear/prevents first event from triggering
+		clr_country_flag = yuan_noble_disaster_rebel_flag #Prevents more rebels from spawning
+		country_event = { 
+			id = yuandisaster.25 #Heir selection event
+			days = 1
+			random = 365
+		}
+	}
+	option = { #Non Dharma Owners
+		name = yuandisaster.2.b
+		trigger = {	NOT = { has_dlc = "Dharma" } }
+		set_country_flag = yuan_celestial_empire_noble_republic_flag
+		set_country_flag = yuan_noble_republic_disaster_over_flag #Tells the Government Reform that it can appear/prevents first event from triggering
+		clr_country_flag = yuan_noble_disaster_rebel_flag
+		add_country_modifier = { #The Alternate way to tell players if this has been enforced.
+			name = yua_nobles_succeed_plot_modifier
+			duration = -1  
+			desc = yua_noble_plot_success_modifier_desc
+		}
+		country_event = { 
+			id = yuandisaster.25
+			days = 1
+			random = 365
+		}
+
+	}
+
+}
+
+###################################################################################################
+#######################Events that lead up to the rebellion########################################
+###################################yuandisaster6-30#################################################
+###################################################################################################
+
+####These need reworked to fit the disaster, as right now the main chain just ends it straight up bypassing the disaster mostly.
+
+#Begining of Noble Rebellion Plot via Toqto'a path
+country_event = { #Red Turabn Rebellion is over, and you chose the Toqto'a path.
+	id = yuandisaster.6
+	title = yuandisaster.6.t
+	desc = yuandisaster.6.d
+	picture = SPY_eventPicture
+	
+	fire_only_once = yes
+
+	trigger = {
+		tag = YUA
+		is_emperor_of_china = yes
+		has_country_flag = yuan_toqto_returns_flag
+		has_country_flag = red_turban_rebellion_over_flag
+		OR = {
+			NOT = { has_country_flag = yuan_noble_republic_disaster_over_flag }#Comes from yuandisaster.2
+			has_disaster = yuan_noble_rebellion_disaster
+		}
+		NOT = { has_country_flag = yuan_noble_plot_over_flag } 
+		NOT = { has_country_flag = yuan_nobles_succeed_plot_flag }
+	}
+	
+	mean_time_to_happen = {
+		months = 50
+	}
+	
+	option = { #This can not be good...
+		name = yuandisaster.6.a
+		add_meritocracy = -10
+		country_event = { 
+			id = yuandisaster.7
+			days = 180
+			random = 180
+			tooltip = yua6nobleplot_tooltip
+		}
+	}
+}
+
+#Unfinished
+country_event = { #Loyal Nobles and Spies hear more.
+	id = yuandisaster.7
+	title = yuandisaster.7.t
+	desc = yuandisaster.7.d
+	picture = ACCUSATION_eventPicture
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = { #Nobility Suspected, let's spy on them more. #Finished Path!
+		name = yuandisaster.7.a
+		ai_chance = { factor = 80 }
+		random_list = {
+			country_event = { #Discivered their plot!
+			id = yuandisaster.12
+			days = 180
+			random = 180
+			}
+			country_event = { #Discivered their plot!
+			id = yuandisaster.13
+			days = 180
+			random = 180
+			}
+		}		
+	}
+	option = { #Toqto suspected, spy on him more. #Unfinished
+		name = yuandisaster.7.b
+		ai_chance = { factor = 10 }
+		trigger = {
+			always = no
+		}
+		
+		
+	}
+	option = { #Trait response #Cause only bad things! #Unfinished, needs to still spawn rebels. #Turn me into my own event instead!
+		name = yuandisaster.7.c
+		ai_chance = { factor = 10 }
+		trigger = {
+			OR = {
+				ruler_has_personality = drunkard_personality
+				ruler_has_personality = babbling_buffoon_personality
+			}
+		}
+		add_country_modifier = { #He's going Crazy
+			name = yua_ruler_distrusts_spies
+			duration = 1825
+		}
+		add_prestige = -10
+		#Next Event from distrusting Nobility here
+		
+	}
+}
+
+#Something used to trigger me, find it and fix its reference to trigger the disaster instead.
+
+country_event = { #The Nobles are pressing demands! They demand they receive more power due to how uncontrolable the Emperor could become! However we can make a counter offer, the offer of death! But this may be bad, as all we'd lose is our heir has to be elected by the Nobles, but we elect the nobles...
+	id = yuandisaster.11
+	title = yuandisaster.11.t
+	desc = yuandisaster.11.d
+	picture = DEBATE_REPUBLICAN_eventPicture
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	major = yes
+	
+
+	
+	option = { #Never! Fight!
+		name = yuandisaster.11.a
+		set_country_flag = yuan_noble_revolt_imminent_flag
+		country_event = { #Leads to the Nobles Revolt event.
+			id = yuandisaster.15
+			days = 30
+		}
+	}
+	
+	option = { #Alright, you win. -Causes Nobles to be able to lean towards one Heir or another, if you pick the opposite of them then you lose legitimacy.-
+		name = yuandisaster.11.b
+		set_country_flag = yuan_nobles_succeed_plot_flag
+		add_country_modifier = { 
+			name = yua_nobles_succeed_plot_modifier
+			duration = -1  
+			desc = yua_noble_plot_success_modifier_desc
+		}
+		country_event = { #Noble Republic Event Thing
+			id = yuandisaster.2
+			days = 90
+			random = 30
+		}	
+		add_prestige = -15
+		add_meritocracy = 10
+	}
+}
+
+country_event = { #We've discovered the Nobles plot! What to do? 
+	id = yuandisaster.12
+	title = yuandisaster.12.t
+	desc = yuandisaster.12.d
+	picture = SPY_eventPicture
+	
+	is_triggered_only = yes
+		
+	option = { #March and Army to their houses and arrest them! -Fight-
+		name = yuandisaster.12.a
+		set_country_flag = yuan_noble_revolt_imminent_flag
+		country_event = { #Leads to the Nobles Revolt event.
+			id = yuandisaster.15
+			days = 30
+		}
+	}
+	
+	option = { #Do nothing, keep tabs on them. -Progress like Normal- 
+		name = yuandisaster.12.b
+		country_event = { 
+			id = yuandisaster.16
+			days = 80
+		}
+	}
+	
+	option = { #Send a spy to infiltrate them and attempt to throw them off 
+		name = yuandisaster.12.c
+		random_list = {
+			country_event = { #Failure, fight!
+				id = yuandisaster.15
+				days = 80
+			}
+			country_event = { #Success!
+				id = yuandisaster.16
+				days = 80
+			}
+		
+		}
+	}
+	
+	#Turn me into a flavor event for the disaster instead
+	option = { #Bribes have never failed before! Mint more currency and give it to the tratiors! #Cause currency collapse and other terrible things
+		name = yuandisaster.12.e
+		ai_chance = { factor = 100 }
+		trigger = {
+			has_dlc = "Rights of Man"
+			OR = {
+				ruler_has_personality = babbling_buffoon_personality
+				ruler_has_personality = naive_personality
+				ruler_has_personality = loose_lips_personality
+			}
+		}
+		set_country_flag = yuan_bribed_noble_rebellion_away_flag
+		custom_tooltip = yua_event_12_bribe_tooltip
+		add_years_of_income = -5
+		add_inflation = 15
+		add_mercantilism = -5
+		add_meritocracy = -20
+		
+		hidden = {
+			country_event = { #The "OH SHIT" event.
+				id = yuandisaster.14
+				days = 360
+				random = 1000
+			}
+		}
+	}
+}
+
+country_event = { #The Nobles discovered our spies! They're revolting and enforcing their demands early! 
+	id = yuandisaster.13
+	title = yuandisaster.13.t
+	desc = yuandisaster.13.d
+	picture = ACCUSATION_eventPicture
+	
+	is_triggered_only = yes
+		
+	option = { #Well, shit. -Fight-
+		name = yuandisaster.13.a
+		set_country_flag = yuan_noble_revolt_imminent_flag
+		country_event = { #Leads to the Nobles Revolt event.
+			id = yuandisaster.15
+			days = 30
+		}
+	}
+	
+	option = { #Alright, we'll accept your demands. -Just Give up-
+		name = yuandisaster.13.b
+		set_country_flag = yuan_nobles_succeed_plot_flag
+		add_country_modifier = { 
+			name = yua_nobles_succeed_plot_modifier
+			duration = -1  
+			desc = yua_noble_plot_success_modifier_desc
+		}
+		country_event = { #Noble Republic Event Thing
+			id = yuandisaster.2
+			days = 90
+			random = 30
+		}		
+	}
+
+}
+
+#Make me my own independent event that is triggered during the disaster only!
+country_event = { #Nobles revoted, and you just threw money at them. Way to go, genius.
+	id = yuandisaster.14
+	title = yuandisaster.14.t
+	desc = yuandisaster.14.d
+	picture = BANKRUPTCY_eventPicture
+	
+	is_triggered_only = yes
+	
+	major = yes
+	
+	
+	
+	option = { #Ah, shit. So throwing money at a problem DOES only make it worse!
+		name = yuandisaster.14.a
+		ai_chance = { factor = 80 }
+		add_inflation = 100
+		add_mercantilism = -50
+	}
+	option = { #MINT EVEN MORE MONEY.
+		name = yuandisaster.14.b
+		add_years_of_income = 5
+		add_inflation = 500
+		add_mercantilism = -100
+	}
+	option = { #ALL THE MONEY.
+		name = yuandisaster.14.c
+		add_years_of_income = 10
+		add_inflation = 2500
+		add_mercantilism = -100
+	}
+	option = { #GIVE ME MORE. MONEY.
+		name = yuandisaster.14.e
+		add_years_of_income = 25
+		add_inflation = 5000
+		add_mercantilism = -100
+	}
+	option = { #ALL THE MONEY IN THE WORLD. NOW.
+		name = yuandisaster.14.f
+		ai_chance = { factor = 20 }
+		add_years_of_income = 50
+		add_inflation = 10000
+		add_mercantilism = -100
+	}
+	option = { #I HAVE SO MUCH MONEY I HAVE TO CONQUER JAPAN TO STORE IT ALL. #Obviously you shouldn't pick any of this, but your ruler has gone completly insane so RP it I guess.
+		name = yuandisaster.14.g
+		ai_chance = { factor = 1000 }
+		trigger = {
+			has_dlc = "Rights of Man"
+			ruler_has_personality = greedy_personality
+		}
+		add_years_of_income = 200
+		add_inflation = 100000
+		add_mercantilism = -100
+	}
+}
+
+#Rework me to just be a regular event to force rebels to spawn occasionally
+country_event = { #The Nobles Revolt! -Event wrapping up whats happened/forcing revolts-
+	id = yuandisaster.15
+	title = yuandisaster.15.t
+	desc = yuandisaster.15.d
+	picture = CIVIL_WAR_eventPicture
+	
+	fire_only_once = yes
+	major = yes
+	
+	trigger = {
+		tag = YUA
+		OR = {
+			has_country_flag = yuan_bribed_noble_rebellion_away_flag
+			has_country_flag = yuan_noble_revolt_imminent_flag
+		}
+		NOT = { has_country_flag = yua_noble_rebellion_popped_flag }
+	}
+	
+	mean_time_to_happen = {
+		months = 100
+	}
+	
+	
+	
+	option = { #Too late to take it back now. Fight the rebels!
+		name = yuandisaster.15.a
+		set_country_flag = yua_noble_rebellion_popped_flag
+		add_stability = -1
+		add_war_exhaustion = 4
+		hebei_area = {
+			limit = {
+				owner = { tag = YUA }
+			}
+			spawn_rebels = {
+				type = yuan_noble_rebels
+				size = 3
+				win = yes
+				unrest = 8
+			}
+		}
+		south_hebei_area = {
+			limit = {
+				owner = { tag = YUA }
+			}
+			spawn_rebels = {
+				type = yuan_noble_rebels
+				size = 1
+				win = yes
+				unrest = 8
+			}
+		}
+#		shanxi_area = { #Commented out because the rebellion was *too* strong
+#			limit = {
+#				owner = { tag = YUA }
+#			}
+#			spawn_rebels = {
+#				type = yuan_noble_rebels
+#				size = 1
+#				win = yes
+#				unrest = 8
+#			}
+#		}
+	}
+}
+
+country_event = { #Do Nothing response from yuandisaster.12. #Sit still with this knowledge, and pretent the problem doesn't exist. -Leads to yuandisaster.11 OR yuandisaster.15-
+	id = yuandisaster.16
+	title = yuandisaster.16.t
+	desc = yuandisaster.16.d
+	picture = SPY_eventPicture
+	
+	is_triggered_only = yes
+	
+	
+	
+	option = { #We know for sure, arrest these tratiors! -Fight, get ambushed along the way-
+		name = yuandisaster.16.a
+		ai_chance = { factor = 20 }
+		set_country_flag = yuan_noble_revolt_imminent_flag
+		country_event = { #Leads to the Nobles Revolt event.
+			id = yuandisaster.15
+			days = 30
+		}
+	}
+	
+	option = { #Pass it off, ignore it. -They come to you with yuandisaster.11-
+		name = yuandisaster.16.b
+		ai_chance = { factor = 20 }
+		country_event = { #Leads to Nobles pressing their demands event, yuandisaster.11
+			id = yuandisaster.11
+			days = 180
+		}
+	}
+	
+	option = { #They can't take my power if I EXECUTE THEM ALL! -Cruel Personalities only- #I mean this ends the chain, but its terrible.
+		name = yuandisaster.16.c
+		trigger = {
+			has_dlc = "Rights of Man"
+			ruler_has_personality = cruel_personality
+		}
+		ai_chance = { factor = 100 }
+		set_country_flag = yuan_noble_plot_over_flag
+		add_years_of_income = -2
+		add_meritocracy = -100
+		add_stability = -3
+		add_prestige = -100
+		add_war_exhaustion = 20
+		add_adm_power = -500
+		add_dip_power = -500
+		add_mil_power = -500
+		kill_advisor = random
+		kill_advisor = random
+		kill_advisor = random
+
+	}
+}
+
+country_event = { #We've infiltraited them! What do?
+	id = yuandisaster.17
+	title = yuandisaster.17.t
+	desc = yuandisaster.17.d
+	picture = SPY_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = { #Take out their leaders slowly
+		name = yuandisaster.17.a
+		random_list = { #We get caught! Or we succeed!
+			country_event = { #Leads to the Nobles Revolt event.
+				id = yuandisaster.18
+				days = 90
+			}
+			country_event = { #Success! -Ends Chain-
+				id = yuandisaster.19
+				days = 90
+			}
+		}
+		
+	}
+	option = { #Use this to bribe top officials to stay quiet and loyal
+		name = yuandisaster.17.b
+		country_event = { #You can choose how much to bribe them with.
+			id = yuandisaster.20
+			days = 90
+		}
+	}
+}
+
+country_event = { #We've been caught! On no! -Leads to yuandisaster.15-
+	id = yuandisaster.18
+	title = yuandisaster.18.t
+	desc = yuandisaster.18.d
+	picture = DIPLOMACY_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = { #Curses, we must fight them!
+		name = yuandisaster.18.a
+		set_country_flag = yuan_noble_revolt_imminent_flag
+		country_event = { #Leads to the Nobles Revolt event.
+			id = yuandisaster.15
+			days = 30
+		}
+	}
+}
+
+country_event = { #Successful! We've managed to talk them down from the plot! -Ends Noble Rebellion chain-
+	id = yuandisaster.19
+	title = yuandisaster.19.t
+	desc = yuandisaster.19.d
+	picture = SPY_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = { #The Noble rebellion plot is over, and the Empire is safe! Hurrah!
+		name = yuandisaster.19.a
+		add_prestige = -25
+		add_adm_power = -100
+		add_meritocracy = -10
+		add_stability = -2
+		kill_advisor = random
+		kill_advisor = random
+		set_country_flag = yuan_noble_plot_over_flag
+	}
+}
+
+country_event = { #We've managed to infiltrait them and we will bribe them! What shall we do?
+	id = yuandisaster.20
+	title = yuandisaster.20.t
+	desc = yuandisaster.20.d
+	picture = SPY_eventPicture
+	
+	is_triggered_only = yes
+
+	option = { #Bribe them each with Small Bribe -Chance to succeed, chance to fail
+		name = yuandisaster.20.a
+		ai_chance = { factor = 20 }
+		random_list = {
+			country_event = { #Leads to the Nobles Revolt event.
+				id = yuandisaster.15
+				days = 90
+			}
+			country_event = { #Leads to the Nobles Revolt event.
+				id = yuandisaster.22
+				days = 90
+			}
+		
+		}
+	}
+	option = { #Bribe them with Large Bribe
+		name = yuandisaster.20.b
+		ai_chance = { factor = 50 }
+		country_event = { #Win right away! -Ends the Chain-
+			id = yuandisaster.22
+			days = 90
+		}
+	}
+	option = { #Why are we doing this with Diplomacy? FIGHT! -Leads to yuandisaster.15-
+		name = yuandisaster.20.c
+		ai_chance = { factor = 20 }
+		set_country_flag = yuan_noble_revolt_imminent_flag
+		country_event = { #Leads to the Nobles Revolt event.
+			id = yuandisaster.15
+			days = 30
+		}
+	}
+}
+
+country_event = { #Successful! We've bribed them into submission -Ends Noble Rebellion chain-
+	id = yuandisaster.21
+	title = yuandisaster.21.t
+	desc = yuandisaster.21.d
+	picture = SPY_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = { #The Noble rebellion plot is over, and the Empire is safe! Hurrah!
+		name = yuandisaster.21.a
+		set_country_flag = yuan_noble_plot_over_flag
+		add_prestige = -25
+		add_adm_power = -100
+		add_meritocracy = -10
+		add_stability = -2
+		kill_advisor = random
+		kill_advisor = random
+	}
+}
+
+country_event = { #We've sent them a bribe: Rejected! -Leads to yuandisaster.15-
+	id = yuandisaster.22
+	title = yuandisaster.22.t
+	desc = yuandisaster.22.d
+	picture = SPY_eventPicture
+	
+	is_triggered_only = yes
+
+	option = {
+		name = yuandisaster.22
+		set_country_flag = yuan_noble_revolt_imminent_flag
+		country_event = { #Leads to the Nobles Revolt event.
+			id = yuandisaster.15
+			days = 30
+		}
+	}
+	
+}
+
+country_event = { #We've sent them a bribe: Accepted! -Ends Noble Rebellion chain-
+	id = yuandisaster.23
+	title = yuandisaster.23.t
+	desc = yuandisaster.23.d
+	picture = SPY_eventPicture
+	
+	is_triggered_only = yes
+
+	option = { #We've promised each noble a sizeable amount of money, in return for their loyalty to us. If Toqto really wishes to seize power, than he will have a lot to fight.
+		name = yuandisaster.22
+		set_country_flag = yuan_noble_plot_over_flag
+		add_years_of_income = -1.5
+		add_prestige = -15
+		add_adm_power = -100
+		add_meritocracy = -20
+	}
+
+}
+
+#Celestial Empire Noble Republic Election Events 
+
+
+
+country_event = { #Pick an heir
+	id = yuandisaster.25
+	title = yuandisaster.25.t
+	desc = yuandisaster.25.d
+	picture = DEBATE_REPUBLICAN_eventPicture
+	
+	
+	trigger = {
+		tag = YUA
+		is_emperor_of_china = yes
+		has_country_flag = yuan_celestial_empire_noble_republic_flag
+		NOT = { has_country_flag = heir_elected_yua_flag }
+		OR = {
+			has_heir = no
+			AND = {
+				has_heir = yes
+				NOT = { heir_age = 6 }
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 200
+	}
+	
+	option = { #Adm
+		name = yuandisaster.25.a
+		hidden = {
+			set_country_flag = heir_elected_yua_flag
+		}
+		add_stability = -1
+		add_estate_loyalty_modifier = {
+			estate = estate_nobles
+			desc = yua_noble_election_negative_loyalty_modifier_desc
+			loyalty = -20
+			duration = 7300
+		}
+		add_estate_influence_modifier = {
+			estate = estate_nobles
+			desc = yua_noble_election_negative_influence_modifier_desc
+			influence = -20
+			duration = 7300
+		}
+		define_heir = {
+			male = yes
+			dynasty = ROOT
+			age = 15
+			claim = 100
+			adm = 6
+			dip = 2
+			mil = 2
+			#max_random_adm = 5
+			max_random_dip = 5
+			max_random_mil = 5
+		}
+	}
+	
+	option = { #Dip
+		name = yuandisaster.25.b
+		hidden = {
+			set_country_flag = heir_elected_yua_flag
+		}
+		add_stability = -1
+		add_estate_loyalty_modifier = {
+			estate = estate_nobles
+			desc = yua_noble_election_negative_loyalty_modifier_desc
+			loyalty = -20
+			duration = 7300
+		}
+		add_estate_influence_modifier = {
+			estate = estate_nobles
+			desc = yua_noble_election_negative_influence_modifier_desc
+			influence = -20
+			duration = 7300
+		}
+		define_heir = {
+			male = yes
+			dynasty = ROOT
+			age = 15
+			claim = 100
+			adm = 2
+			dip = 6
+			mil = 2
+			max_random_adm = 5
+			max_random_mil = 5
+		}
+	}
+	
+	option = { #Mil
+		name = yuandisaster.25.c
+		hidden = {
+			set_country_flag = heir_elected_yua_flag
+		}
+		add_stability = -1
+		add_estate_loyalty_modifier = {
+			estate = estate_nobles
+			desc = yua_noble_election_negative_loyalty_modifier_desc
+			loyalty = -20
+			duration = 7300
+		}
+		add_estate_influence_modifier = {
+			estate = estate_nobles
+			desc = yua_noble_election_negative_influence_modifier_desc
+			influence = -20
+			duration = 7300
+		}
+		define_heir = {
+			male = yes
+			dynasty = ROOT
+			age = 15
+			claim = 100
+			adm = 2
+			dip = 2
+			mil = 6
+			max_random_adm = 5
+			max_random_dip = 5
+		}
+	}
+	
+	option = { #The Nobles Pick
+		name = yuandisaster.25.e
+		hidden = {
+			set_country_flag = heir_elected_yua_flag
+		}
+		add_stability = 1
+		add_estate_loyalty_modifier = {
+			estate = estate_nobles
+			desc = yua_noble_election_positive_loyalty_modifier_desc
+			loyalty = 15
+			duration = 7300
+		}
+		add_estate_influence_modifier = {
+			estate = estate_nobles
+			desc = yua_noble_election_positive_influence_modifier_desc
+			influence = 10
+			duration = 7300
+		}
+		define_heir = {
+			male = yes
+			dynasty = ROOT
+			age = 15
+			claim = 100
+			adm = 3
+			dip = 3
+			mil = 3
+		}
+	}
+}
+
+country_event = { #Heir rose to power/died
+	id = yuandisaster.26
+	title = yuandisaster.26.t
+	desc = yuandisaster.26.d
+	picture = DEBATE_REPUBLICAN_eventPicture
+	
+	trigger = {
+		tag = YUA
+		is_emperor_of_china = yes
+		has_country_flag = yuan_celestial_empire_noble_republic_flag
+		has_country_flag = heir_elected_yua_flag
+		has_heir = no
+	}
+	
+	mean_time_to_happen = {
+		months =  12
+	}
+	
+	option = { #Those choices better start training!
+		name = yuandisaster.26.a
+		hidden = {
+			clr_country_flag = heir_elected_yua_flag
+		}
+	}
+}
+

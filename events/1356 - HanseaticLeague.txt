@@ -75,10 +75,8 @@ country_event = {
 	hidden = yes
 	
 	trigger = {
-		AND = {
-			has_country_modifier = member_of_hansa_ev
-			is_in_war = { defender_leader = ROOT }
-		}
+		has_country_modifier = member_of_hansa_ev
+		is_in_war = { defender_leader = ROOT }
 		NOT = { has_country_flag = hansa_attacked }
 	}
 	mean_time_to_happen = {
@@ -93,7 +91,7 @@ country_event = {
 			#ROOT = {
 			#	add_treasury = 40
 			#
-			}
+			#}
 			#THIS = {
 			#	add_treasury = -40
 			#}

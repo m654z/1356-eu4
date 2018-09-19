@@ -79,7 +79,7 @@ country_decisions = {
 			add_stability = -1
 			add_country_modifier = {
 				name = recently_passed_reform
-				days = 10950 # 30 years
+				duration = 10950 # 30 years
 			}
 			clr_country_flag = reform_1_pending
 			set_global_flag = reform_1_done
@@ -120,15 +120,15 @@ country_decisions = {
 		ai_will_do = {
 			factor = 0
 			modifier = {
-				factor = 1
+				factor = 1.1
 				is_at_war = yes
 			}
 			modifier = {
-				factor = 1
+				factor = 1.1
 				num_of_rebel_armies = 1
 			}
 			modifier = {
-				factor = 1
+				factor = 1.1
 				NOT = { legitimacy = 30 }
 			}
 		}
@@ -225,7 +225,7 @@ country_decisions = {
 			add_stability = -1
 			add_country_modifier = {
 				name = recently_passed_reform
-				days = 10950 # 30 years
+				duration = 10950 # 30 years
 			}
 			clr_country_flag = reform_2_pending
 			set_global_flag = reform_2_done
@@ -266,15 +266,15 @@ country_decisions = {
 		ai_will_do = {
 			factor = 0
 			modifier = {
-				factor = 1
+				factor = 1.1
 				is_at_war = yes
 			}
 			modifier = {
-				factor = 1
+				factor = 1.1
 				num_of_rebel_armies = 1
 			}
 			modifier = {
-				factor = 1
+				factor = 1.1
 				NOT = { legitimacy = 30 }
 			}
 		}
@@ -373,7 +373,7 @@ country_decisions = {
 			add_stability = -1
 			add_country_modifier = {
 				name = recently_passed_reform
-				days = 10950 # 30 years
+				duration = 10950 # 30 years
 			}
 			clr_country_flag = reform_3_pending
 			set_global_flag = reform_3_done
@@ -414,15 +414,15 @@ country_decisions = {
 		ai_will_do = {
 			factor = 0
 			modifier = {
-				factor = 1
+				factor = 1.1
 				is_at_war = yes
 			}
 			modifier = {
-				factor = 1
+				factor = 1.1
 				num_of_rebel_armies = 1
 			}
 			modifier = {
-				factor = 1
+				factor = 1.1
 				NOT = { legitimacy = 30 }
 			}
 		}
@@ -518,7 +518,7 @@ country_decisions = {
 			add_stability = -1
 			add_country_modifier = {
 				name = recently_passed_reform
-				days = 10950 # 30 years
+				duration = 10950 # 30 years #Changed as why leave it as days?/Validator was making a fuss about it.
 			}
 			clr_country_flag = reform_4_pending
 			set_global_flag = reform_4_done
@@ -559,15 +559,15 @@ country_decisions = {
 		ai_will_do = {
 			factor = 0
 			modifier = {
-				factor = 1
+				factor = 1.1
 				is_at_war = yes
 			}
 			modifier = {
-				factor = 1
+				factor = 1.1
 				num_of_rebel_armies = 1
 			}
 			modifier = {
-				factor = 1
+				factor = 1.1
 				NOT = { legitimacy = 30 }
 			}
 		}
@@ -664,7 +664,7 @@ country_decisions = {
 			add_stability = -1
 			add_country_modifier = {
 				name = recently_passed_reform
-				days = 10950 # 30 years
+				duration = 10950 # 30 years
 			}
 			clr_country_flag = reform_5_pending
 			set_global_flag = reform_5_done
@@ -705,15 +705,15 @@ country_decisions = {
 		ai_will_do = {
 			factor = 0
 			modifier = {
-				factor = 1
+				factor = 1.1
 				is_at_war = yes
 			}
 			modifier = {
-				factor = 1
+				factor = 1.1
 				num_of_rebel_armies = 1
 			}
 			modifier = {
-				factor = 1
+				factor = 1.1
 				NOT = { legitimacy = 30 }
 			}
 		}
@@ -802,7 +802,7 @@ country_decisions = {
 			add_stability = -1
 			add_country_modifier = {
 				name = recently_passed_reform
-				days = 10950 # 30 years
+				duration = 10950 # 30 years #I hope this is right, fixed this as it was giving an error
 			}
 			clr_country_flag = reform_6_pending
 			set_global_flag = reform_6_done
@@ -843,15 +843,15 @@ country_decisions = {
 		ai_will_do = {
 			factor = 0
 			modifier = {
-				factor = 1
+				factor = 1.1
 				is_at_war = yes
 			}
 			modifier = {
-				factor = 1
+				factor = 1.1
 				num_of_rebel_armies = 1
 			}
 			modifier = {
-				factor = 1
+				factor = 1.1
 				NOT = { legitimacy = 30 }
 			}
 		}

@@ -1,7 +1,9 @@
-government = despotic_monarchy
+government = monarchy
+add_government_reform = mandala_reform
 technology_group = chinese
 religion = buddhism
 primary_culture = shan
+add_accepted_culture = chin
 capital = 580
 
 1335.1.1 = {
@@ -11,5 +13,25 @@ capital = 580
 		ADM = 4
 		DIP = 3
 		MIL = 3
+	}
+}
+
+1420.1.1 = {
+	monarch = {
+		name = "Tarabya"
+		dynasty = "Kale"
+		ADM = 2
+		DIP = 2
+		MIL = 2
+	}
+}
+
+1465.1.1 = {
+	monarch = {
+		name = "Kyetaungnyo"
+		dynasty = "Kale"
+		ADM = 2
+		DIP = 2
+		MIL = 2
 	}
 }

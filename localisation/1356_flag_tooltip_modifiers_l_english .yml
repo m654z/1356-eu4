@@ -95,6 +95,11 @@
  yuan_toqo_mission_reconquer_china_reward: "Subdued The Red Turbans"
  yua_ruler_distrusts_spies: "Distrust in Spies"
  yua_nobles_succeed_plot_modifier: "Yuan Noble Plot Success!"
+ mongol_debuff_adm: "Declining Admistration"
+ mongol_debuff_dip: "Declining Diplomacy"
+ mongol_debuff: "Military in Chaos"
+ desc_mongol_debuff: "By the early 14th Century, the mighty Mongol Empire, now led by the Yuan Dynasty, had fallen into rapid decline. The introduction of excessive taxation alienated the Han peoples, causing open rebellion. Those armies that were left were poorly trained, disillusioned to their cause, and led by increasingly corrupt warlords."
+ 
 
  
  #Policies

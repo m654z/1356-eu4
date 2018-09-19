@@ -19,7 +19,7 @@ war_goal = {
 	add_defender = ENG
 	add_defender = WLS
 	add_defender = NOL
-	add_defender = YOK
+	add_defender = YRK
 	add_defender = LNC
 }
 
@@ -82,6 +82,6 @@ war_goal = {
 	rem_defender = ENG
 	rem_defender = WLS
 	rem_defender = NOL
-	rem_defender = YOK
+	rem_defender = YRK
 	rem_defender = LNC
 }
