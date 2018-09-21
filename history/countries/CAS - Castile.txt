@@ -1,4 +1,5 @@
-government = feudal_monarchy
+government = monarchy
+add_government_reform = feudalism_reform
 primary_culture = castillian
 add_accepted_culture = andalucian
 add_accepted_culture = leonese
