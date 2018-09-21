@@ -1,10 +1,11 @@
-government = chinese_kingdom_government
+government = monarchy
+add_government_reform = chinese_kingdom_government_reform
 technology_group = chinese
 religion = confucianism
 primary_culture = cantonese
 capital = 662	# Yunnan
 
-historical_rival = YUA
+#historical_rival = YUA #If they were a loyal rebel circa 1373 then no reason to keep this for them.
 historical_rival = KHA
 historical_rival = CXI
 historical_rival = WUU
