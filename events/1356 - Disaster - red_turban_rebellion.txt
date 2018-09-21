@@ -1,10 +1,10 @@
-namespace = yuandisasterredturban
+namespace = yuanredturban
 
 #SELF NOTES: #Completly re-do this disaster, give it and the noble rebellion a working icon. Make specific areas revolt at specific times during the rebellion.
 
 ################################################################
 #######Start & End of red turban Disaster Events################
-####yuandisasterredturban.1-yuandisasterredturban.5#############
+####yuanredturban.1-yuanredturban.5#############
 ################################################################
 
 country_event = { #Start of Unique Disaster
@@ -45,6 +45,23 @@ country_event = { #Sets the Government Reform or flag/Ends the Rebels
 			days = 1
 			random = 365
 		}
+		
+		clr_country_flag = yuan_red_turban_xibei_revolt_flag
+		clr_country_flag = yuan_red_turban_jin_revolt_flag
+		clr_country_flag = 
+		clr_country_flag = 
+		clr_country_flag = 
+		clr_country_flag = 
+		clr_country_flag = 
+		clr_country_flag = 
+		clr_country_flag = 
+		clr_country_flag = 
+		clr_country_flag = 
+		clr_country_flag = 
+		clr_country_flag = 
+		clr_country_flag = 
+		clr_country_flag = 
+		clr_country_flag = 
 		
 		clr_country_flag = yuan_noble_disaster_rebel_flag #Prevents more rebels from spawning
 		clr_country_flag = yuan_noble_disaster_advisors_rebel_flag #Clears flags from various events to prevent bloat
@@ -95,7 +112,7 @@ country_event = { #Sets the Government Reform or flag/Ends the Rebels
 
 ###################################################################################################
 ######################Events that lead up to the rebellion Disaster################################
-#################################yuandisasterredturban.6-19#########################################
+#################################yuanredturban.6-19#########################################
 ###################################################################################################
 
 
@@ -115,7 +132,7 @@ country_event = { #Red Turabn Rebellion is over, and you chose the Toqto'a path.
 		has_country_flag = red_turban_rebellion_over_flag
 		
 		NOT = { has_country_flag = yuan_noble_republic_disaster_over_flag }#Comes from yuandisaster.2
-		NOT = { has_disaster = yuan_noble_rebellion_disaster } #Literally, the disaster. My failsafe in the case it tries to trigger again.
+		NOT = { has_disaster = red_turban_rebellion_disaster } #Literally, the disaster. My failsafe in the case it tries to trigger again.
 		NOT = { has_country_flag = yuan_noble_plot_over_flag } 
 		NOT = { has_country_flag = yuan_nobles_succeed_plot_flag }
 		NOT = { has_country_flag = yuan_disaster_plot_against_ruler_flag } #Prevents this triggering right away, failsafe. Cleared after disaster is over.
@@ -202,7 +219,7 @@ country_event = {
 		has_global_flag = yua_noble_rebellion_popped_flag
 		NOT = { has_country_flag = yuan_nobles_succeed_plot_flag }
 		NOT = { has_country_flag = yuan_noble_plot_over_flag }
-		NOT = { has_disaster = yuan_noble_rebellion_disaster }
+		NOT = { has_disaster = red_turban_rebellion_disaster }
 	}
 	
 	mean_time_to_happen = {
@@ -264,7 +281,7 @@ country_event = {
 		has_global_flag = yua_noble_rebellion_popped_flag
 		NOT = { has_country_flag = yuan_nobles_succeed_plot_flag }
 		NOT = { has_country_flag = yuan_noble_plot_over_flag }
-		NOT = { has_disaster = yuan_noble_rebellion_disaster }
+		NOT = { has_disaster = red_turban_rebellion_disaster }
 	}
 	
 	mean_time_to_happen = {
@@ -344,7 +361,7 @@ country_event = {
 		has_global_flag = yua_noble_rebellion_popped_flag
 		NOT = { has_country_flag = yuan_nobles_succeed_plot_flag }
 		NOT = { has_country_flag = yuan_noble_plot_over_flag }
-		NOT = { has_disaster = yuan_noble_rebellion_disaster }
+		NOT = { has_disaster = red_turban_rebellion_disaster }
 	}
 	
 	mean_time_to_happen = {
@@ -405,7 +422,7 @@ country_event = {
 		has_global_flag = yua_noble_rebellion_popped_flag
 		NOT = { has_country_flag = yuan_nobles_succeed_plot_flag }
 		NOT = { has_country_flag = yuan_noble_plot_over_flag }
-		NOT = { has_disaster = yuan_noble_rebellion_disaster }
+		NOT = { has_disaster = red_turban_rebellion_disaster }
 	}
 	
 	mean_time_to_happen = {
@@ -436,13 +453,15 @@ country_event = {
 	}
 }
 
+#ALL EVENTS BELOW HERE NEED THEIR MTTH TWEAKED#
+
 ######################
 ###Rebellion Events###
-#yuandisaster.100-107#
+#yuandisaster.100-129#
 ######################
 
-#Rebel Event in Hebei/South Hebei
-country_event = { #The Nobles Revolt! -Capital Area-
+#Rebel Event for Xibei Culture Provinces
+country_event = { #The Xibei Culture Revolts! -Shun and Qin-
 	id = yuandisaster.100
 	title = yuandisaster.100.t
 	desc = yuandisaster.100.d
@@ -454,10 +473,9 @@ country_event = { #The Nobles Revolt! -Capital Area-
 	trigger = {
 		tag = YUA
 		is_emperor_of_china = yes
-		has_disaster = yuan_noble_rebellion_disaster
-		NOT = { has_country_flag = yuan_nobles_succeed_plot_flag }
-		NOT = { has_country_flag = yuan_noble_plot_over_flag }
-		NOT = { has_country_flag = yuan_noble_rebellion_capital_revolt_flag }
+		has_disaster = red_turban_rebellion_disaster
+		NOT = { has_country_flag = red_turban_rebellion_over_flag }
+		NOT = { has_country_flag = yuan_red_turban_xibei_revolt_flag }
 	}
 	
 	mean_time_to_happen = {
@@ -475,44 +493,120 @@ country_event = { #The Nobles Revolt! -Capital Area-
 		
 	option = { #Too late to take it back now. Fight the rebels!
 		name = yuandisaster.100.a
-		set_country_flag = yuan_noble_rebellion_capital_revolt_flag
-		hebei_area = {
+		set_country_flag = yuan_red_turban_xibei_revolt_flag
+		custom_tooltip = yuan_red_turban_xibei_revolt_tt #Tells the Player that these people will not rise up again. Maybe make an event instead?
+		708 = { #Zhangye
 			limit = {
 				owner = { tag = YUA }
+				
 			}
 			spawn_rebels = {
-				type = yuan_noble_rebels
-				size = 3
-				win = yes
-				unrest = 8
-			}
-		}
-		south_hebei_area = {
-			limit = {
-				owner = { tag = YUA }
-			}
-			spawn_rebels = {
-				type = yuan_noble_rebels
+				type = yuan_red_turban_rebels
 				size = 1
-				win = yes
-				unrest = 8
+				unrest = 5
 			}
 		}
-#		shanxi_area = { #Commented out because the rebellion was *too* strong
-#			limit = {
-#				owner = { tag = YUA }
-#			}
-#			spawn_rebels = {
-#				type = yuan_noble_rebels
-#				size = 1
-#				win = yes
-#				unrest = 8
-#			}
-#		}
+		2182 = { #Liangzhou
+			limit = {
+				owner = { tag = YUA }
+				
+			}
+			spawn_rebels = {
+				type = yuan_red_turban_rebels
+				size = 1
+				unrest = 5
+			}
+		}
+		2184 = { #Xining
+			limit = {
+				owner = { tag = YUA }
+				
+			}
+			spawn_rebels = {
+				type = yuan_red_turban_rebels
+				size = 1
+				unrest = 5
+			}
+		}
+		2183 = { #Taozhou
+			limit = {
+				owner = { tag = YUA }
+				
+			}
+			spawn_rebels = {
+				type = yuan_red_turban_rebels
+				size = 1
+				unrest = 5
+			}
+		}
+		699 = { #Lanzhou
+			limit = {
+				owner = { tag = YUA }
+				
+			}
+			spawn_rebels = {
+				type = yuan_red_turban_rebels
+				size = 1
+				unrest = 5
+			}
+		}
+		2181 = { #Pingliang
+			limit = {
+				owner = { tag = YUA }
+				
+			}
+			spawn_rebels = {
+				type = yuan_red_turban_rebels
+				size = 1
+				unrest = 5
+			}
+		}
+		2180 = { #Tianshui
+			limit = {
+				owner = { tag = YUA }
+				
+			}
+			spawn_rebels = {
+				type = yuan_red_turban_rebels
+				size = 1
+				unrest = 5
+			}
+		}
+		689 = { #Hanzhong
+			limit = {
+				owner = { tag = YUA }
+				
+			}
+			spawn_rebels = {
+				type = yuan_red_turban_rebels
+				size = 1
+				unrest = 5
+			}
+		}
+		4198 = { #Fengxiang
+			limit = {
+				owner = { tag = YUA }
+			}
+			spawn_rebels = {
+				type = yuan_red_turban_rebels
+				size = 1
+				unrest = 5
+			}
+		}
+		700 = { #Xi'an
+			limit = {
+				owner = { tag = YUA }
+			}
+			spawn_rebels = {
+				type = yuan_red_turban_rebels
+				size = 1
+				unrest = 5
+			}
+		}
 	}
 }
-#Rebel Event in North/South Anhui
-country_event = { #The Nobles Revolt! -Anhui-
+#Rebel Event for Jin Culture Provinces
+country_event = { #The Jin Culture Revolts! -Jin-
 	id = yuandisaster.101
 	title = yuandisaster.101.t
 	desc = yuandisaster.101.d
@@ -524,10 +618,9 @@ country_event = { #The Nobles Revolt! -Anhui-
 	trigger = {
 		tag = YUA
 		is_emperor_of_china = yes
-		has_disaster = yuan_noble_rebellion_disaster
-		NOT = { has_country_flag = yuan_nobles_succeed_plot_flag }
-		NOT = { has_country_flag = yuan_noble_plot_over_flag }
-		NOT = { has_country_flag = yuan_noble_rebellion_anhui_revolt_flag }
+		has_disaster = red_turban_rebellion_disaster
+		NOT = { has_country_flag = red_turban_rebellion_over_flag }
+		NOT = { has_country_flag = yuan_red_turban_jin_revolt_flag }
 	}
 	
 	mean_time_to_happen = {
@@ -545,31 +638,52 @@ country_event = { #The Nobles Revolt! -Anhui-
 		
 	option = { #Too late to take it back now. Fight the rebels!
 		name = yuandisaster.101.a
-		set_country_flag = yuan_noble_rebellion_anhui_revolt_flag
-		anhui_area = {
+		set_country_flag = yuan_red_turban_jin_revolt_flag
+		custom_tooltip = yuan_red_turban_jin_revolt_tt #Tells the Player that these people will not rise up again. Maybe make an event instead?
+		shanxi_area = {
 			limit = {
 				owner = { tag = YUA }
 			}
 			spawn_rebels = {
-				type = yuan_noble_rebels
+				type = yuan_red_turban_rebels
 				size = 1
-				unrest = 8
+				unrest = 5
 			}
 		}
-		south_anhui_area = {
+		2136 = { #Xuanhua
 			limit = {
 				owner = { tag = YUA }
 			}
 			spawn_rebels = {
-				type = yuan_noble_rebels
+				type = yuan_red_turban_rebels
 				size = 1
-				unrest = 8
+				unrest = 5
+			}
+		}
+		2179 = { #Yan'an
+			limit = {
+				owner = { tag = YUA }
+			}
+			spawn_rebels = {
+				type = yuan_red_turban_rebels
+				size = 1
+				unrest = 5
+			}
+		}
+		692 = { #Huaiqing
+			limit = {
+				owner = { tag = YUA }
+			}
+			spawn_rebels = {
+				type = yuan_red_turban_rebels
+				size = 1
+				unrest = 5
 			}
 		}
 	}
 }
-#Rebel Event in Shandong/Liaoning
-country_event = { #The Nobles Revolt! -Liaoning/Shandong-
+#Rebel Event for Zhili Culture Provinces
+country_event = { #The Zhili Culture Revolts! -Yan-
 	id = yuandisaster.102
 	title = yuandisaster.102.t
 	desc = yuandisaster.102.d
@@ -581,10 +695,9 @@ country_event = { #The Nobles Revolt! -Liaoning/Shandong-
 	trigger = {
 		tag = YUA
 		is_emperor_of_china = yes
-		has_disaster = yuan_noble_rebellion_disaster
-		NOT = { has_country_flag = yuan_nobles_succeed_plot_flag }
-		NOT = { has_country_flag = yuan_noble_plot_over_flag }
-		NOT = { has_country_flag = yuan_noble_rebellion_liaoning_revolt_flag }
+		has_disaster = red_turban_rebellion_disaster
+		NOT = { has_country_flag = red_turban_rebellion_over_flag }
+		NOT = { has_country_flag = yuan_red_turban_zhili_revolt_flag }
 	}
 	
 	mean_time_to_happen = {
@@ -602,33 +715,52 @@ country_event = { #The Nobles Revolt! -Liaoning/Shandong-
 		
 	option = { #Too late to take it back now. Fight the rebels!
 		name = yuandisaster.102.a
-		set_country_flag = yuan_noble_rebellion_liaoning_revolt_flag
-		shandong_area = {
+		set_country_flag = yuan_red_turban_zhili_revolt_flag
+		custom_tooltip = yuan_red_turban_zhili_revolt_tt #Tells the Player that these people will not rise up again. Maybe make an event instead?
+		south_hebei_area = {
 			limit = {
 				owner = { tag = YUA }
 			}
 			spawn_rebels = {
-				type = yuan_noble_rebels
+				type = yuan_red_turban_rebels
 				size = 1
-				win = yes
-				unrest = 8
+				unrest = 5
 			}
 		}
-		liaoning_area = {
+		1816 = { #Beijing
 			limit = {
 				owner = { tag = YUA }
 			}
 			spawn_rebels = {
-				type = yuan_noble_rebels
+				type = yuan_red_turban_rebels
 				size = 1
-				win = yes
-				unrest = 8
+				unrest = 5
+			}
+		}
+		4194 = { #Yongping
+			limit = {
+				owner = { tag = YUA }
+			}
+			spawn_rebels = {
+				type = yuan_red_turban_rebels
+				size = 1
+				unrest = 5
+			}
+		}
+		704 = { #Ningyuan
+			limit = {
+				owner = { tag = YUA }
+			}
+			spawn_rebels = {
+				type = yuan_red_turban_rebels
+				size = 1
+				unrest = 5
 			}
 		}
 	}
 }
-#Rebel Event in West/East Guangdong
-country_event = { #The Nobles Revolt! -Guangdong-
+#Rebel Event for Shandong Provinces
+country_event = { #The Shandong Culture Revolts! -Qi-
 	id = yuandisaster.103
 	title = yuandisaster.103.t
 	desc = yuandisaster.103.d
@@ -640,10 +772,9 @@ country_event = { #The Nobles Revolt! -Guangdong-
 	trigger = {
 		tag = YUA
 		is_emperor_of_china = yes
-		has_disaster = yuan_noble_rebellion_disaster
-		NOT = { has_country_flag = yuan_nobles_succeed_plot_flag }
-		NOT = { has_country_flag = yuan_noble_plot_over_flag }
-		NOT = { has_country_flag = yuan_noble_rebellion_guangdong_revolt_flag }
+		has_disaster = red_turban_rebellion_disaster
+		NOT = { has_country_flag = red_turban_rebellion_over_flag }
+		NOT = { has_country_flag = yuan_red_turban_shandong_revolt_flag }
 	}
 	
 	mean_time_to_happen = {
@@ -661,32 +792,66 @@ country_event = { #The Nobles Revolt! -Guangdong-
 		
 	option = { #Too late to take it back now. Fight the rebels!
 		name = yuandisaster.103.a
-		set_country_flag = yuan_noble_rebellion_guangdong_revolt_flag
-		west_guangdong_area = {
+		set_country_flag = yuan_red_turban_shandong_revolt_flag
+		custom_tooltip = yuan_red_turban_shandong_revolt_tt #Tells the Player that these people will not rise up again. Maybe make an event instead?
+		2138 = { #Wuding
 			limit = {
 				owner = { tag = YUA }
 			}
 			spawn_rebels = {
-				type = yuan_noble_rebels
+				type = yuan_red_turban_rebels
 				size = 1
-				unrest = 8
+				unrest = 5
 			}
 		}
-		guangdong_area = {
+		691 = { #Jinan
 			limit = {
 				owner = { tag = YUA }
 			}
 			spawn_rebels = {
-				type = yuan_noble_rebels
+				type = yuan_red_turban_rebels
 				size = 1
 				win = yes
-				unrest = 8
+				unrest = 5
+			}
+		}
+		2139 = { #Laizhou
+			limit = {
+				owner = { tag = YUA }
+			}
+			spawn_rebels = {
+				type = yuan_red_turban_rebels
+				size = 1
+				win = yes
+				unrest = 5
+			}
+		}
+		690 = { #Qingzhou
+			limit = {
+				owner = { tag = YUA }
+			}
+			spawn_rebels = {
+				type = yuan_red_turban_rebels
+				size = 1
+				win = yes
+				unrest = 5
+			}
+		}
+		2113 = { #Gaizhou
+			limit = {
+				owner = { tag = YUA }
+			}
+			spawn_rebels = {
+				type = yuan_red_turban_rebels
+				size = 1
+				win = yes
+				unrest = 5
 			}
 		}
 	}
 }
-#Rebel Event in North/South Jiangsu
-country_event = { #The Nobles Revolt! -Jiangsu-
+#Rebel Event for Zhongyuan Provinces
+country_event = { #The Zhongyuan Culture Revolts! -Liang/Tang-
 	id = yuandisaster.104
 	title = yuandisaster.104.t
 	desc = yuandisaster.104.d
@@ -698,9 +863,8 @@ country_event = { #The Nobles Revolt! -Jiangsu-
 	trigger = {
 		tag = YUA
 		is_emperor_of_china = yes
-		has_disaster = yuan_noble_rebellion_disaster
-		NOT = { has_country_flag = yuan_nobles_succeed_plot_flag }
-		NOT = { has_country_flag = yuan_noble_plot_over_flag }
+		has_disaster = red_turban_rebellion_disaster
+		NOT = { has_country_flag = red_turban_rebellion_over_flag }
 		NOT = { has_country_flag = yuan_noble_rebellion_jiangsu_revolt_flag }
 	}
 	
@@ -720,32 +884,81 @@ country_event = { #The Nobles Revolt! -Jiangsu-
 	option = { #Too late to take it back now. Fight the rebels!
 		name = yuandisaster.104.a
 		set_country_flag = yuan_noble_rebellion_jiangsu_revolt_flag
-		south_jiangsu_area = {
+		custom_tooltip = yuan_red_turban_zhongyuan_revolt_tt #Tells the Player that these people will not rise up again. Maybe make an event instead?
+		henan_area = { #South Henan
 			limit = {
 				owner = { tag = YUA }
 			}
 			spawn_rebels = {
-				type = yuan_noble_rebels
+				type = yuan_red_turban_rebels
 				size = 1
-				win = yes
-				unrest = 8
+				unrest = 5
 			}
 		}
-		jiangsu_area = {
+		1836 = { #Louyang
 			limit = {
 				owner = { tag = YUA }
 			}
 			spawn_rebels = {
-				type = yuan_noble_rebels
+				type = yuan_red_turban_rebels
 				size = 1
-				win = yes
-				unrest = 8
+				unrest = 5
+			}
+		}
+		688 = { #Kaifeng
+			limit = {
+				owner = { tag = YUA }
+			}
+			spawn_rebels = {
+				type = yuan_red_turban_rebels
+				size = 1
+				unrest = 5
+			}
+		}
+		2140 = { #Yanzhou
+			limit = {
+				owner = { tag = YUA }
+			}
+			spawn_rebels = {
+				type = yuan_red_turban_rebels
+				size = 1
+				unrest = 5
+			}
+		}
+		2141 = { #Xuzhou
+			limit = {
+				owner = { tag = YUA }
+			}
+			spawn_rebels = {
+				type = yuan_red_turban_rebels
+				size = 1
+				unrest = 5
+			}
+		}
+		2144 = { #Fuyang
+			limit = {
+				owner = { tag = YUA }
+			}
+			spawn_rebels = {
+				type = yuan_red_turban_rebels
+				size = 1
+				unrest = 5
+			}
+		}
+		2143 = { #Fengyang
+			limit = {
+				owner = { tag = YUA }
+			}
+			spawn_rebels = {
+				type = yuan_red_turban_rebels
+				size = 1
+				unrest = 5
 			}
 		}
 	}
 }
-#Rebel Event in Tibet -Amdo/Kham
-country_event = { #The Tibetians think it's time for independence! -Amdo/Kham-
+#Rebel Event for Jianghuai Culture Provinces
+country_event = { #The Jinghuai Culture Revolts! -Ming- 
 	id = yuandisaster.105
 	title = yuandisaster.105.t
 	desc = yuandisaster.105.d
@@ -757,56 +970,92 @@ country_event = { #The Tibetians think it's time for independence! -Amdo/Kham-
 	trigger = {
 		tag = YUA
 		is_emperor_of_china = yes
-		has_disaster = yuan_noble_rebellion_disaster
-		NOT = { has_country_flag = yuan_nobles_succeed_plot_flag }
-		NOT = { has_country_flag = yuan_noble_plot_over_flag }
-		NOT = { has_country_flag = yuan_noble_plot_tibet_revolt_flag }
+		has_disaster = red_turban_rebellion_disaster
+		NOT = { has_country_flag = red_turban_rebellion_over_flag }
+		NOT = { has_country_flag = yuan_red_turban_jianghuai_revolt_flag }
 	}
 	
 	mean_time_to_happen = {
-		months = 60
+		months = 40
+		modifier = {
+			factor = 0.5
+			num_of_rebel_armies = 1
+			NOT = { num_of_rebel_armies = 5 }
+		}
+		modifier = {
+			factor = 1.5
+			num_of_rebel_armies = 10
+		}
 	}
 		
 	option = { #Too late to take it back now. Fight the rebels!
 		name = yuandisaster.105.a
-		set_country_flag = yuan_noble_plot_tibet_revolt_flag
-		amdo_area = {
+		set_country_flag = yuan_red_turban_jianghuai_revolt_flag
+		custom_tooltip = yuan_red_turban_jianghuai_revolt_tt #Tells the Player that these people will not rise up again. Maybe make an event instead?
+		south_jiangsu_area = {
 			limit = {
 				owner = { tag = YUA }
 			}
 			spawn_rebels = {
-				type = nationalist_rebels
+				type = yuan_red_turban_rebels
 				size = 1
-				win = no
-				unrest = 8
+				unrest = 5
 			}
 		}
-		kham_area = {
+		1838 = { #Hefei
 			limit = {
 				owner = { tag = YUA }
 			}
 			spawn_rebels = {
-				type = nationalist_rebels
+				type = yuan_red_turban_rebels
 				size = 1
-				win = no
-				unrest = 8
+				unrest = 5
 			}
 		}
-		tsang_area = {
+		686 = { #Anqing
 			limit = {
 				owner = { tag = YUA }
 			}
 			spawn_rebels = {
-				type = nationalist_rebels
+				type = yuan_red_turban_rebels
 				size = 1
-				win = no
-				unrest = 8
+				unrest = 5
+			}
+		}
+		2146 = { #Ningguo
+			limit = {
+				owner = { tag = YUA }
+			}
+			spawn_rebels = {
+				type = yuan_red_turban_rebels
+				size = 1
+				unrest = 5
+			}
+		}
+		2142 = { #Huai'an
+			limit = {
+				owner = { tag = YUA }
+			}
+			spawn_rebels = {
+				type = yuan_red_turban_rebels
+				size = 1
+				unrest = 5
+			}
+		}
+		4196 = { #Haizhou
+			limit = {
+				owner = { tag = YUA }
+			}
+			spawn_rebels = {
+				type = yuan_red_turban_rebels
+				size = 1
+				unrest = 5
 			}
 		}
 	}
 }
-#Rebel Event in Korea -Amdo/Kham
-country_event = { #The Koreans think it's time for independence! -Pyongan/Hamgyeong-
+#Rebel Event for Wu Culture Provinces
+country_event = { #The Wu Culture Revolts! -Wu- 
 	id = yuandisaster.106
 	title = yuandisaster.106.t
 	desc = yuandisaster.106.d
@@ -818,43 +1067,72 @@ country_event = { #The Koreans think it's time for independence! -Pyongan/Hamgye
 	trigger = {
 		tag = YUA
 		is_emperor_of_china = yes
-		has_disaster = yuan_noble_rebellion_disaster
-		NOT = { has_country_flag = yuan_nobles_succeed_plot_flag }
-		NOT = { has_country_flag = yuan_noble_plot_over_flag }
-		NOT = { has_country_flag = yuan_noble_plot_korea_revolt_flag }
+		has_disaster = red_turban_rebellion_disaster
+		NOT = { has_country_flag = red_turban_rebellion_over_flag }
+		NOT = { has_country_flag = yuan_red_turban_wu_revolt_flag }
 	}
 	
 	mean_time_to_happen = {
-		months = 60
+		months = 40
+		modifier = {
+			factor = 0.5
+			num_of_rebel_armies = 1
+			NOT = { num_of_rebel_armies = 5 }
+		}
+		modifier = {
+			factor = 1.5
+			num_of_rebel_armies = 10
+		}
 	}
 		
 	option = { #Too late to take it back now. Fight the rebels!
 		name = yuandisaster.106.a
-		set_country_flag = yuan_noble_plot_korea_revolt_flag
-		pyongan_area = {
+		set_country_flag = yuan_red_turban_wu_revolt_flag
+		custom_tooltip = yuan_red_turban_wu_revolt_tt #Tells the Player that these people will not rise up again. Maybe make an event instead?
+		zhejiang_area = {
 			limit = {
 				owner = { tag = YUA }
 			}
 			spawn_rebels = {
-				type = nationalist_rebels
+				type = yuan_red_turban_rebels
 				size = 1
-				unrest = 8
+				unrest = 5
 			}
 		}
-		hamgyeong_area = {
+		1822 = { #Suzhou
 			limit = {
 				owner = { tag = YUA }
 			}
 			spawn_rebels = {
-				type = nationalist_rebels
+				type = yuan_red_turban_rebels
 				size = 1
-				unrest = 8
+				unrest = 5
+			}
+		}
+		2146 = { #Ningguo
+			limit = {
+				owner = { tag = YUA }
+			}
+			spawn_rebels = {
+				type = yuan_red_turban_rebels
+				size = 1
+				unrest = 5
+			}
+		}
+		2147 = { #Huizhou
+			limit = {
+				owner = { tag = YUA }
+			}
+			spawn_rebels = {
+				type = yuan_red_turban_rebels
+				size = 1
+				unrest = 5
 			}
 		}
 	}
 }
-#Rebel Event in Xinan -Dali/Yi-
-country_event = { #The Bai/Yi think it's time for independence! -Yun-Gui Hinterland/Yun-Gui Frontier-
+#Rebel Event for Min Culture Provinces
+country_event = { #The Min Culture Revolts! -Min- 
 	id = yuandisaster.107
 	title = yuandisaster.107.t
 	desc = yuandisaster.107.d
@@ -866,10 +1144,735 @@ country_event = { #The Bai/Yi think it's time for independence! -Yun-Gui Hinterl
 	trigger = {
 		tag = YUA
 		is_emperor_of_china = yes
-		has_disaster = yuan_noble_rebellion_disaster
-		NOT = { has_country_flag = yuan_nobles_succeed_plot_flag }
-		NOT = { has_country_flag = yuan_noble_plot_over_flag }
-		NOT = { has_country_flag = yuan_noble_plot_xinan_revolt_flag }
+		has_disaster = red_turban_rebellion_disaster
+		NOT = { has_country_flag = red_turban_rebellion_over_flag }
+		NOT = { has_country_flag = yuan_red_turban_min_revolt_flag }
+	}
+	
+	mean_time_to_happen = {
+		months = 40
+		modifier = {
+			factor = 0.5
+			num_of_rebel_armies = 1
+			NOT = { num_of_rebel_armies = 5 }
+		}
+		modifier = {
+			factor = 1.5
+			num_of_rebel_armies = 10
+		}
+	}
+		
+	option = { #Too late to take it back now. Fight the rebels!
+		name = yuandisaster.107.a
+		set_country_flag = yuan_red_turban_min_revolt_flag
+		custom_tooltip = yuan_red_turban_min_revolt_tt #Tells the Player that these people will not rise up again. Maybe make an event instead?
+		2152 = { #Jianning
+			limit = {
+				owner = { tag = YUA }
+			}
+			spawn_rebels = {
+				type = yuan_red_turban_rebels
+				size = 1
+				unrest = 5
+			}
+		}
+		669 = { #Fuzhou
+			limit = {
+				owner = { tag = YUA }
+			}
+			spawn_rebels = {
+				type = yuan_red_turban_rebels
+				size = 1
+				unrest = 5
+			}
+		}
+		1829 = { #Quanzhou
+			limit = {
+				owner = { tag = YUA }
+			}
+			spawn_rebels = {
+				type = yuan_red_turban_rebels
+				size = 1
+				unrest = 5
+			}
+		}
+		2156 = { #Chaochow
+			limit = {
+				owner = { tag = YUA }
+			}
+			spawn_rebels = {
+				type = yuan_red_turban_rebels
+				size = 1
+				unrest = 5
+			}
+		}
+		2159 = { #Leichow
+			limit = {
+				owner = { tag = YUA }
+			}
+			spawn_rebels = {
+				type = yuan_red_turban_rebels
+				size = 1
+				unrest = 5
+			}
+		}
+		666 = { #Kingchow
+			limit = {
+				owner = { tag = YUA }
+			}
+			spawn_rebels = {
+				type = yuan_red_turban_rebels
+				size = 1
+				unrest = 5
+			}
+		}
+		2160 = { #Ngaichow
+			limit = {
+				owner = { tag = YUA }
+			}
+			spawn_rebels = {
+				type = yuan_red_turban_rebels
+				size = 1
+				unrest = 5
+			}
+		}
+	}
+}
+#Rebel Event for Hakka Culture Provinces
+country_event = { #The Hakka Culture Revolts! -Huai- 
+	id = yuandisaster.108
+	title = yuandisaster.108.t
+	desc = yuandisaster.108.d
+	picture = CIVIL_WAR_eventPicture
+	
+	fire_only_once = yes
+	major = yes
+	
+	trigger = {
+		tag = YUA
+		is_emperor_of_china = yes
+		has_disaster = red_turban_rebellion_disaster
+		NOT = { has_country_flag = red_turban_rebellion_over_flag }
+		NOT = { has_country_flag = yuan_red_turban_hakka_revolt_flag }
+	}
+	
+	mean_time_to_happen = {
+		months = 40
+		modifier = {
+			factor = 0.5
+			num_of_rebel_armies = 1
+			NOT = { num_of_rebel_armies = 5 }
+		}
+		modifier = {
+			factor = 1.5
+			num_of_rebel_armies = 10
+		}
+	}
+		
+	option = { #Too late to take it back now. Fight the rebels!
+		name = yuandisaster.108.a
+		set_country_flag = yuan_red_turban_hakka_revolt_flag
+		custom_tooltip = yuan_red_turban_hakka_revolt_tt #Tells the Player that these people will not rise up again. Maybe make an event instead?
+		2158 = { #Shiukwan
+			limit = {
+				owner = { tag = YUA }
+			}
+			spawn_rebels = {
+				type = yuan_red_turban_rebels
+				size = 1
+				unrest = 5
+			}
+		}
+		670 = { #Ganzhou
+			limit = {
+				owner = { tag = YUA }
+			}
+			spawn_rebels = {
+				type = yuan_red_turban_rebels
+				size = 1
+				unrest = 5
+			}
+		}
+		2153 = { #Tingzhou
+			limit = {
+				owner = { tag = YUA }
+			}
+			spawn_rebels = {
+				type = yuan_red_turban_rebels
+				size = 1
+				unrest = 5
+			}
+		}
+		2157 = { #Waichow
+			limit = {
+				owner = { tag = YUA }
+			}
+			spawn_rebels = {
+				type = yuan_red_turban_rebels
+				size = 1
+				unrest = 5
+			}
+		}
+	}
+}
+#Rebel Event for Gan Culture Provinces
+country_event = { #The Gan Culture Revolts! -Ning- 
+	id = yuandisaster.109
+	title = yuandisaster.109.t
+	desc = yuandisaster.109.d
+	picture = CIVIL_WAR_eventPicture
+	
+	fire_only_once = yes
+	major = yes
+	
+	trigger = {
+		tag = YUA
+		is_emperor_of_china = yes
+		has_disaster = red_turban_rebellion_disaster
+		NOT = { has_country_flag = red_turban_rebellion_over_flag }
+		NOT = { has_country_flag = yuan_red_turban_gan_revolt_flag }
+	}
+	
+	mean_time_to_happen = {
+		months = 40
+		modifier = {
+			factor = 0.5
+			num_of_rebel_armies = 1
+			NOT = { num_of_rebel_armies = 5 }
+		}
+		modifier = {
+			factor = 1.5
+			num_of_rebel_armies = 10
+		}
+	}
+		
+	option = { #Too late to take it back now. Fight the rebels!
+		name = yuandisaster.109.a
+		set_country_flag = yuan_red_turban_gan_revolt_flag
+		custom_tooltip = yuan_red_turban_gan_revolt_tt #Tells the Player that these people will not rise up again. Maybe make an event instead?
+		2151 = { #Poyang
+			limit = {
+				owner = { tag = YUA }
+			}
+			spawn_rebels = {
+				type = yuan_red_turban_rebels
+				size = 1
+				unrest = 5
+			}
+		}
+		1833 = { #Ji'an
+			limit = {
+				owner = { tag = YUA }
+			}
+			spawn_rebels = {
+				type = yuan_red_turban_rebels
+				size = 1
+				unrest = 5
+			}
+		}
+		683 = { #Nanchang
+			limit = {
+				owner = { tag = YUA }
+			}
+			spawn_rebels = {
+				type = yuan_red_turban_rebels
+				size = 1
+				unrest = 5
+			}
+		}
+	}
+}
+#Rebel Event for Xiang Culture Provinces
+country_event = { #The Xiang Culture Revolts! -Chu- 
+	id = yuandisaster.110
+	title = yuandisaster.110.t
+	desc = yuandisaster.110.d
+	picture = CIVIL_WAR_eventPicture
+	
+	fire_only_once = yes
+	major = yes
+	
+	trigger = {
+		tag = YUA
+		is_emperor_of_china = yes
+		has_disaster = red_turban_rebellion_disaster
+		NOT = { has_country_flag = red_turban_rebellion_over_flag }
+		NOT = { has_country_flag = yuan_red_turban_xiang_revolt_flag }
+	}
+	
+	mean_time_to_happen = {
+		months = 40
+		modifier = {
+			factor = 0.5
+			num_of_rebel_armies = 1
+			NOT = { num_of_rebel_armies = 5 }
+		}
+		modifier = {
+			factor = 1.5
+			num_of_rebel_armies = 10
+		}
+	}
+		
+	option = { #Too late to take it back now. Fight the rebels!
+		name = yuandisaster.110.a
+		set_country_flag = yuan_red_turban_xiang_revolt_flag
+		custom_tooltip = yuan_red_turban_xiang_revolt_tt #Tells the Player that these people will not rise up again. Maybe make an event instead?
+		672 = { #Wuling
+			limit = {
+				owner = { tag = YUA }
+			}
+			spawn_rebels = {
+				type = yuan_red_turban_rebels
+				size = 1
+				unrest = 5
+			}
+		}
+		671 = { #Changsha
+			limit = {
+				owner = { tag = YUA }
+			}
+			spawn_rebels = {
+				type = yuan_red_turban_rebels
+				size = 1
+				unrest = 5
+			}
+		}
+		2174 = { #Hengyang
+			limit = {
+				owner = { tag = YUA }
+			}
+			spawn_rebels = {
+				type = yuan_red_turban_rebels
+				size = 1
+				unrest = 5
+			}
+		}
+	}
+}
+#Rebel Event for Miao Culture Provinces
+country_event = { #The Miao Culture Revolts! -Miao- 
+	id = yuandisaster.111
+	title = yuandisaster.111.t
+	desc = yuandisaster.111.d
+	picture = CIVIL_WAR_eventPicture
+	
+	fire_only_once = yes
+	major = yes
+	
+	trigger = {
+		tag = YUA
+		is_emperor_of_china = yes
+		has_disaster = red_turban_rebellion_disaster
+		NOT = { has_country_flag = red_turban_rebellion_over_flag }
+		NOT = { has_country_flag = yuan_red_turban_miao_revolt_flag }
+	}
+	
+	mean_time_to_happen = {
+		months = 40
+		modifier = {
+			factor = 0.5
+			num_of_rebel_armies = 1
+			NOT = { num_of_rebel_armies = 5 }
+		}
+		modifier = {
+			factor = 1.5
+			num_of_rebel_armies = 10
+		}
+	}
+		
+	option = { #Too late to take it back now. Fight the rebels!
+		name = yuandisaster.111.a
+		set_country_flag = yuan_red_turban_miao_revolt_flag
+		custom_tooltip = yuan_red_turban_miao_revolt_tt #Tells the Player that these people will not rise up again. Maybe make an event instead?
+		2173 = { #Yuanling
+			limit = {
+				owner = { tag = YUA }
+			}
+			spawn_rebels = {
+				type = yuan_red_turban_rebels
+				size = 1
+				unrest = 5
+			}
+		}
+		4199 = { #Tongren
+			limit = {
+				owner = { tag = YUA }
+			}
+			spawn_rebels = {
+				type = yuan_red_turban_rebels
+				size = 1
+				unrest = 5
+			}
+		}
+		673 = { #Zhenyuan
+			limit = {
+				owner = { tag = YUA }
+			}
+			spawn_rebels = {
+				type = yuan_red_turban_rebels
+				size = 1
+				unrest = 5
+			}
+		}
+	}
+}
+#Rebel Event for Hubei Culture Provinces
+country_event = { #The Hubei Culture Revolts! -Xi- 
+	id = yuandisaster.112
+	title = yuandisaster.112.t
+	desc = yuandisaster.112.d
+	picture = CIVIL_WAR_eventPicture
+	
+	fire_only_once = yes
+	major = yes
+	
+	trigger = {
+		tag = YUA
+		is_emperor_of_china = yes
+		has_disaster = red_turban_rebellion_disaster
+		NOT = { has_country_flag = red_turban_rebellion_over_flag }
+		NOT = { has_country_flag = yuan_red_turban_hubei_revolt_flag }
+	}
+	
+	mean_time_to_happen = {
+		months = 40
+		modifier = {
+			factor = 0.5
+			num_of_rebel_armies = 1
+			NOT = { num_of_rebel_armies = 5 }
+		}
+		modifier = {
+			factor = 1.5
+			num_of_rebel_armies = 10
+		}
+	}
+		
+	option = { #Too late to take it back now. Fight the rebels!
+		name = yuandisaster.112.a
+		set_country_flag = yuan_red_turban_hubei_revolt_flag
+		custom_tooltip = yuan_red_turban_hubei_revolt_tt #Tells the Player that these people will not rise up again. Maybe make an event instead?
+		4197 = { #Huangzhou
+			limit = {
+				owner = { tag = YUA }
+			}
+			spawn_rebels = {
+				type = yuan_red_turban_rebels
+				size = 1
+				unrest = 5
+			}
+		}
+		682 = { #Wuchang
+			limit = {
+				owner = { tag = YUA }
+			}
+			spawn_rebels = {
+				type = yuan_red_turban_rebels
+				size = 1
+				unrest = 5
+			}
+		}
+		2172 = { #Jingzhou
+			limit = {
+				owner = { tag = YUA }
+			}
+			spawn_rebels = {
+				type = yuan_red_turban_rebels
+				size = 1
+				unrest = 5
+			}
+		}
+		2171 = { #Xiangyang
+			limit = {
+				owner = { tag = YUA }
+			}
+			spawn_rebels = {
+				type = yuan_red_turban_rebels
+				size = 1
+				unrest = 5
+			}
+		}
+	}
+}
+#Rebel Event for Sichuanese Culture Provinces
+country_event = { #The Sichuanese Culture Revolts! -Shu- 
+	id = yuandisaster.113
+	title = yuandisaster.113.t
+	desc = yuandisaster.113.d
+	picture = CIVIL_WAR_eventPicture
+	
+	fire_only_once = yes
+	major = yes
+	
+	trigger = {
+		tag = YUA
+		is_emperor_of_china = yes
+		has_disaster = red_turban_rebellion_disaster
+		NOT = { has_country_flag = red_turban_rebellion_over_flag }
+		NOT = { has_country_flag = yuan_red_turban_sichuanese_revolt_flag }
+	}
+	
+	mean_time_to_happen = {
+		months = 40
+		modifier = {
+			factor = 0.5
+			num_of_rebel_armies = 1
+			NOT = { num_of_rebel_armies = 5 }
+		}
+		modifier = {
+			factor = 1.5
+			num_of_rebel_armies = 10
+		}
+	}
+		
+	option = { #Too late to take it back now. Fight the rebels!
+		name = yuandisaster.113.a
+		set_country_flag = yuan_red_turban_sichuanese_revolt_flag
+		custom_tooltip = yuan_red_turban_sichuanese_revolt_tt #Tells the Player that these people will not rise up again. Maybe make an event instead?
+		sichuan_area = {
+			limit = {
+				owner = { tag = YUA }
+			}
+			spawn_rebels = {
+				type = yuan_red_turban_rebels
+				size = 1
+				unrest = 5
+			}
+		}
+		4213 = { #Luzhou
+			limit = {
+				owner = { tag = YUA }
+			}
+			spawn_rebels = {
+				type = yuan_red_turban_rebels
+				size = 1
+				unrest = 5
+			}
+		}
+		681 = { #Yichang
+			limit = {
+				owner = { tag = YUA }
+			}
+			spawn_rebels = {
+				type = yuan_red_turban_rebels
+				size = 1
+				unrest = 5
+			}
+		}
+		4211 = { #Dazhou
+			limit = {
+				owner = { tag = YUA }
+			}
+			spawn_rebels = {
+				type = yuan_red_turban_rebels
+				size = 1
+				unrest = 5
+			}
+		}
+		2169 = { #Langzhong
+			limit = {
+				owner = { tag = YUA }
+			}
+			spawn_rebels = {
+				type = yuan_red_turban_rebels
+				size = 1
+				unrest = 5
+			}
+		}
+	}
+}
+#Rebel Event for Cantonese Culture Provinces
+country_event = { #The Cantonese Culture Revolts! -Yue- 
+	id = yuandisaster.114
+	title = yuandisaster.114.t
+	desc = yuandisaster.114.d
+	picture = CIVIL_WAR_eventPicture
+	
+	fire_only_once = yes
+	major = yes
+	
+	trigger = {
+		tag = YUA
+		is_emperor_of_china = yes
+		has_disaster = red_turban_rebellion_disaster
+		NOT = { has_country_flag = red_turban_rebellion_over_flag }
+		NOT = { has_country_flag = yuan_red_turban_cantonese_revolt_flag }
+	}
+	
+	mean_time_to_happen = {
+		months = 40
+		modifier = {
+			factor = 0.5
+			num_of_rebel_armies = 1
+			NOT = { num_of_rebel_armies = 5 }
+		}
+		modifier = {
+			factor = 1.5
+			num_of_rebel_armies = 10
+		}
+	}
+		
+	option = { #Too late to take it back now. Fight the rebels!
+		name = yuandisaster.114.a
+		set_country_flag = yuan_red_turban_cantonese_revolt_flag
+		custom_tooltip = yuan_red_turban_cantonese_revolt_tt #Tells the Player that these people will not rise up again. Maybe make an event instead?
+		668 = { #Macau
+			limit = {
+				owner = { tag = YUA }
+			}
+			spawn_rebels = {
+				type = yuan_red_turban_rebels
+				size = 1
+				unrest = 5
+			}
+		}
+		667 = { #Canton
+			limit = {
+				owner = { tag = YUA }
+			}
+			spawn_rebels = {
+				type = yuan_red_turban_rebels
+				size = 1
+				unrest = 5
+			}
+		}
+		665 = { #Shiuhing
+			limit = {
+				owner = { tag = YUA }
+			}
+			spawn_rebels = {
+				type = yuan_red_turban_rebels
+				size = 1
+				unrest = 5
+			}
+		}
+		2162 = { #Ngchow
+			limit = {
+				owner = { tag = YUA }
+			}
+			spawn_rebels = {
+				type = yuan_red_turban_rebels
+				size = 1
+				unrest = 5
+			}
+		}
+		2161 = { #Limchow
+			limit = {
+				owner = { tag = YUA }
+			}
+			spawn_rebels = {
+				type = yuan_red_turban_rebels
+				size = 1
+				unrest = 5
+			}
+		}
+	}
+}
+
+########################
+#Rebel Events Not China#
+########130-149#########
+########################
+#Rebel Event in Tibet 
+country_event = { #The Tibetians think it's time for independence! 
+	id = yuandisaster.130
+	title = yuandisaster.130.t
+	desc = yuandisaster.130.d
+	picture = CIVIL_WAR_eventPicture
+	
+	fire_only_once = yes
+	major = yes
+	
+	trigger = {
+		tag = YUA
+		is_emperor_of_china = yes
+		has_disaster = red_turban_rebellion_disaster
+		NOT = { has_country_flag = red_turban_rebellion_over_flag }
+		NOT = { has_country_flag = yuan_red_turban_tibet_revolt_flag }
+	}
+	
+	mean_time_to_happen = {
+		months = 120
+	}
+		
+	option = { #Too late to take it back now. Fight the rebels!
+		name = yuandisaster.105.a
+		set_country_flag = yuan_red_turban_tibet_revolt_flag
+		tibet_region = {
+			limit = {
+				owner = { tag = YUA }
+			}
+			spawn_rebels = {
+				type = nationalist_rebels
+				size = 1
+				win = no
+				unrest = 5
+			}
+		}
+	}
+}
+#Rebel Event in Korea
+country_event = { #The Koreans think it's time for independence! -Pyongan/Hamgyeong-
+	id = yuandisaster.131
+	title = yuandisaster.131.t
+	desc = yuandisaster.131.d
+	picture = CIVIL_WAR_eventPicture
+	
+	fire_only_once = yes
+	major = yes
+	
+	trigger = {
+		tag = YUA
+		is_emperor_of_china = yes
+		has_disaster = red_turban_rebellion_disaster
+		NOT = { has_country_flag = red_turban_rebellion_over_flag }
+		NOT = { has_country_flag = yuan_red_turban_korea_revolt_flag }
+	}
+	
+	mean_time_to_happen = {
+		months = 120
+	}
+		
+	option = { #Too late to take it back now. Fight the rebels!
+		name = yuandisaster.131.a
+		set_country_flag = yuan_red_turban_korea_revolt_flag
+		pyongan_area = {
+			limit = {
+				owner = { tag = YUA }
+			}
+			spawn_rebels = {
+				type = nationalist_rebels
+				size = 1
+				unrest = 5
+			}
+		}
+		hamgyeong_area = {
+			limit = {
+				owner = { tag = YUA }
+			}
+			spawn_rebels = {
+				type = nationalist_rebels
+				size = 1
+				unrest = 5
+			}
+		}
+	}
+}
+#Rebel Event in Xinan -Dali/Yi-
+country_event = { #The Bai/Yi think it's time for independence! -Yun-Gui Hinterland/Yun-Gui Frontier-
+	id = yuanredturban.132
+	title = yuanredturban.132.t
+	desc = yuanredturban.132.d
+	picture = CIVIL_WAR_eventPicture
+	
+	fire_only_once = yes
+	major = yes
+	
+	trigger = {
+		tag = YUA
+		is_emperor_of_china = yes
+		has_disaster = red_turban_rebellion_disaster
+		NOT = { has_country_flag = red_turban_rebellion_over_flag }
+		NOT = { has_country_flag = yuan_red_turban_xinan_revolt_flag } #CLEAR AFTER THE DISASTER
 	}
 	
 	mean_time_to_happen = {
@@ -877,8 +1880,8 @@ country_event = { #The Bai/Yi think it's time for independence! -Yun-Gui Hinterl
 	}
 		
 	option = { #Too late to take it back now. Fight the rebels!
-		name = yuandisaster.107.a
-		set_country_flag = yuan_noble_plot_xinan_revolt_flag
+		name = yuanredturban.132.a
+		set_country_flag = yuan_red_turban_xinan_revolt_flag
 		yun_gui_borderland_area = {
 			limit = {
 				owner = { tag = YUA }
@@ -886,7 +1889,7 @@ country_event = { #The Bai/Yi think it's time for independence! -Yun-Gui Hinterl
 			spawn_rebels = {
 				type = nationalist_rebels
 				size = 1
-				unrest = 8
+				unrest = 5
 			}
 		}
 		yun_gui_area = {
@@ -896,9 +1899,332 @@ country_event = { #The Bai/Yi think it's time for independence! -Yun-Gui Hinterl
 			spawn_rebels = {
 				type = nationalist_rebels
 				size = 1
-				unrest = 8
+				unrest = 5
 			}
 		}
 	}
 }
+#Rebel Event in Buryatia -DIDN'T TAKE THE DECISION-
+country_event = { #The Nomads think it's time for independence!
+	id = yuanredturban.133
+	title = yuanredturban.133.t
+	desc = yuanredturban.133.d
+	picture = CIVIL_WAR_eventPicture
+	
+	fire_only_once = yes
+	major = yes
+	
+	trigger = {
+		tag = YUA
+		is_emperor_of_china = yes
+		has_disaster = red_turban_rebellion_disaster
+		NOT = { has_country_flag = red_turban_rebellion_over_flag }
+		NOT = { has_country_flag = yuan_asked_nomads_help_flag }
+		NOT = { has_country_flag = yuan_red_turban_buryatia_revolt_flag } #CLEAR AFTER THE DISASTER
+	}
+	
+	mean_time_to_happen = {
+		months = 120
+	}
+		
+	option = { #Too late to take it back now. Fight the rebels!
+		name = yuanredturban.133.a
+		set_country_flag = yuan_red_turban_buryatia_revolt_flag
+		buryatia_area = {
+			limit = {
+				owner = { tag = YUA }
+			}
+			spawn_rebels = {
+				type = nationalist_rebels
+				size = 1
+				unrest = 5
+			}
+		}
+	}
+}
+#Rebel Event in Manchuria -DIDN'T TAKE THE DECISION-
+country_event = { #The Manchurians think it's time for independence! -Manchuria/Eastern Mongolia/Okhotsk/Chahar-
+	id = yuanredturban.134
+	title = yuanredturban.134.t
+	desc = yuanredturban.134.d
+	picture = CIVIL_WAR_eventPicture
+	
+	fire_only_once = yes
+	major = yes
+	
+	trigger = {
+		tag = YUA
+		is_emperor_of_china = yes
+		has_disaster = red_turban_rebellion_disaster
+		NOT = { has_country_flag = red_turban_rebellion_over_flag }
+		NOT = { has_country_flag = yuan_asked_nomads_help_flag }
+		NOT = { has_country_flag = yuan_red_turban_manchuria_revolt_flag } #CLEAR AFTER THE DISASTER
+	}
+	
+	mean_time_to_happen = {
+		months = 140
+	}
+		
+	option = { #Too late to take it back now. Fight the rebels!
+		name = yuanredturban.134.a
+		set_country_flag = yuan_red_turban_manchuria_revolt_flag
+		4203 = { remove_core = KHA }
+		722 = { remove_core = KHA }
+		east_heilongjiang_area = {
+			limit = {
+				owner = { tag = YUA }
+			}
+			spawn_rebels = {
+				type = nationalist_rebels
+				size = 1
+				unrest = 5
+			}
+		}
+		heilongjiang_area = {
+			limit = {
+				owner = { tag = YUA }
+			}
+			spawn_rebels = {
+				type = nationalist_rebels
+				size = 1
+				unrest = 5
+			}
+		}
+		jilin_area = {
+			limit = {
+				owner = { tag = YUA }
+			}
+			spawn_rebels = {
+				type = nationalist_rebels
+				size = 1
+				unrest = 5
+			}
+		}
+		central_jilin_area = {
+			limit = {
+				owner = { tag = YUA }
+			}
+			spawn_rebels = {
+				type = nationalist_rebels
+				size = 1
+				unrest = 5
+			}
+		}
+		ilan_hala_area = {
+			limit = {
+				owner = { tag = YUA }
+			}
+			spawn_rebels = {
+				type = nationalist_rebels
+				size = 1
+				unrest = 5
+			}
+		}
+		ningguta_area = {
+			limit = {
+				owner = { tag = YUA }
+			}
+			spawn_rebels = {
+				type = nationalist_rebels
+				size = 1
+				unrest = 5
+			}
+		}
+		central_heilongjiang_area = {
+			limit = {
+				owner = { tag = YUA }
+			}
+			spawn_rebels = {
+				type = nationalist_rebels
+				size = 1
+				unrest = 5
+			}
+		}
+		eastern_mongolia = {
+			limit = {
+				owner = { tag = YUA }
+			}
+			spawn_rebels = {
+				type = nationalist_rebels
+				size = 1
+				unrest = 5
+			}
+		}
+		okhotsk_area = {
+			limit = {
+				owner = { tag = YUA }
+			}
+			spawn_rebels = {
+				type = nationalist_rebels
+				size = 1
+				unrest = 5
+			}
+		}
+		726 = { #Shenyang
+			limit = {
+				owner = { tag = YUA }
+			}
+			spawn_rebels = {
+				type = nationalist_rebels
+				size = 1
+				unrest = 5
+			}
+		}
+		2112 = { #Andong
+			limit = {
+				owner = { tag = YUA }
+			}
+			spawn_rebels = {
+				type = nationalist_rebels
+				size = 1
+				unrest = 5
+			}
+		}
+		2111 = { #Hetu Ala
+			limit = {
+				owner = { tag = YUA }
+			}
+			spawn_rebels = {
+				type = nationalist_rebels
+				size = 1
+				unrest = 5
+			}
+		}
+		2115 = { #Chahar
+			limit = {
+				owner = { tag = YUA }
+			}
+			spawn_rebels = {
+				type = nationalist_rebels
+				size = 1
+				unrest = 5
+			}
+		}
+		703 = { #Chengde
+			limit = {
+				owner = { tag = YUA }
+			}
+			spawn_rebels = {
+				type = nationalist_rebels
+				size = 1
+				unrest = 5
+			}
+		}
+		4203 = { add_core = KHA }
+		722 = { add_core = KHA }
+	}
+}
+#Rebel Event in Indochina 
+country_event = { #Just in the case you somehow took land from Indochina
+	id = yuanredturban.135
+	title = yuanredturban.135.t
+	desc = yuanredturban.135.d
+	picture = CIVIL_WAR_eventPicture
+	
+	fire_only_once = yes
+	major = yes
+	
+	trigger = {
+		tag = YUA
+		is_emperor_of_china = yes
+		has_disaster = red_turban_rebellion_disaster
+		NOT = { has_country_flag = red_turban_rebellion_over_flag }
+		NOT = { has_country_flag = yuan_red_turban_indochina_revolt_flag } #CLEAR AFTER THE DISASTER
+	}
+	
+	mean_time_to_happen = {
+		months = 40
+	}
+		
+	option = { #Too late to take it back now. Fight the rebels!
+		name = yuanredturban.135.a
+		set_country_flag = yuan_red_turban_indochina_revolt_flag
+		indo_china_region = {
+			limit = {
+				owner = { tag = YUA }
+			}
+			spawn_rebels = {
+				type = nationalist_rebels
+				size = 1
+				unrest = 10
+			}
+		}
+	}
+}
+#Rebel Event in Burma
+country_event = { #Just in the case you somehow took land from Burma
+	id = yuanredturban.136
+	title = yuanredturban.136.t
+	desc = yuanredturban.136.d
+	picture = CIVIL_WAR_eventPicture
+	
+	fire_only_once = yes
+	major = yes
+	
+	trigger = {
+		tag = YUA
+		is_emperor_of_china = yes
+		has_disaster = red_turban_rebellion_disaster
+		NOT = { has_country_flag = red_turban_rebellion_over_flag }
+		NOT = { has_country_flag = yuan_red_turban_burma_revolt_flag } #CLEAR AFTER THE DISASTER
+	}
+	
+	mean_time_to_happen = {
+		months = 40
+	}
+		
+	option = { #Too late to take it back now. Fight the rebels!
+		name = yuanredturban.136.a
+		set_country_flag = yuan_red_turban_burma_revolt_flag
+		burma_region = {
+			limit = {
+				owner = { tag = YUA }
+			}
+			spawn_rebels = {
+				type = nationalist_rebels
+				size = 1
+				unrest = 5
+			}
+		}
+	}
+}
+#Rebel Event in Japan
+country_event = { #Just in the case you somehow took land from Japan
+	id = yuanredturban.137
+	title = yuanredturban.137.t
+	desc = yuanredturban.137.d
+	picture = CIVIL_WAR_eventPicture
+	
+	fire_only_once = yes
+	major = yes
+	
+	trigger = {
+		tag = YUA
+		is_emperor_of_china = yes
+		has_disaster = red_turban_rebellion_disaster
+		NOT = { has_country_flag = red_turban_rebellion_over_flag }
+		NOT = { has_country_flag = yuan_red_turban_japan_revolt_flag } #CLEAR AFTER THE DISASTER
+	}
+	
+	mean_time_to_happen = {
+		months = 40
+	}
+		
+	option = { #Too late to take it back now. Fight the rebels!
+		name = yuanredturban.137.a
+		set_country_flag = yuan_red_turban_japan_revolt_flag
+		japan_region = {
+			limit = {
+				owner = { tag = YUA }
+			}
+			spawn_rebels = {
+				type = nationalist_rebels
+				size = 1
+				unrest = 5
+			}
+		}
+	}
+}
+
+
 
