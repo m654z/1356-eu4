@@ -1,7 +1,8 @@
 #######################################
 # Timurid Empire
 #######################################
-government = steppe_horde
+government = tribal
+add_government_reform = steppe_horde
 technology_group = nomad_group
 primary_culture = uzbehk
 add_accepted_culture = afghani
@@ -59,7 +60,8 @@ religious_school = hanafi_school
 
 1409.5.13 = {
 	technology_group = muslim
-	government = iqta
+	government = monarchy
+	add_government_reform = iqta
 	capital = 446
 	monarch = {
 		name = "Shah Rukh"
@@ -258,7 +260,8 @@ religious_school = hanafi_school
 
 
 1507.7.1 = { # Fall of Herat and the end of the Khorasani Timurids, remaining Timurid lands comes under control of Babur
-	government = despotic_monarchy
+	government = monarchy
+	add_government_reform = iqta
 	primary_culture = afghani
 	capital = 451	# Kabul
 	technology_group = muslim # Timurid domains has by now become Persianized, Babur starts drilling musketmen and hires Ottoman officers

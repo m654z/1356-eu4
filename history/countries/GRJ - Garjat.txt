@@ -1,9 +1,10 @@
-government = tribal_kingdom
+government = tribal
+add_government_reform = tribal_kingdom
 government_rank = 1
 technology_group = indian
 religion = hinduism
 primary_culture = garjati
-capital = 553	# Sambalpur
+capital = 2049	# Khurda
 
 # The royal house of Kalahandi
 

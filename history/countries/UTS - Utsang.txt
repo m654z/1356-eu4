@@ -1,4 +1,5 @@
-government = tribal_kingdom
+government = tribal
+add_government_reform = tribal_kingdom
 primary_culture = tibetan
 religion = vajrayana
 technology_group = chinese
@@ -164,7 +165,10 @@ capital = 677 # Lhasa
 	}
 }
 
-1642.1.1 = { government = theocratic_government }
+1642.1.1 = {
+	government = theocracy
+	add_government_reform = leading_clergy_reform
+}
 
 1642.1.1 = {
 	monarch = {

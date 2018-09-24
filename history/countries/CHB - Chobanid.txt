@@ -1,4 +1,5 @@
-government = tribal_federation_ilkhan
+government = tribal
+add_government_reform = tribal_federation_ilkhan_reform
 technology_group = muslim
 primary_culture = azerbaijani
 religion = shiite

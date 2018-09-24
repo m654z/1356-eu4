@@ -1,4 +1,5 @@
-government = tribal_federation_ilkhan
+government = tribal
+add_government_reform = tribal_federation_ilkhan_reform
 primary_culture = khorasani
 add_accepted_culture = persian
 religion = shiite

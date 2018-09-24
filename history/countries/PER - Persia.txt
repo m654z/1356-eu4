@@ -1,4 +1,5 @@
-government = tribal_federation
+government = tribal
+add_government_reform = tribal_kingdom
 technology_group = muslim
 primary_culture = persian
 religion = sunni
@@ -9,7 +10,11 @@ add_army_professionalism = 0.05
 religious_school = hanafi_school
 
 
-1400.1.1 = { government = iqta technology_group = muslim }
+1400.1.1 = { 	
+	government = monarchy
+	add_government_reform = feudal_theocracy
+	technology_group = muslim 
+}
 
 1448.1.1 = {
 	capital = 416 # Tabriz

@@ -1,4 +1,6 @@
-government = tribal_despotism
+government = tribal
+add_government_reform = tribal_kingdom
+
 primary_culture = putun
 religion = mesoamerican_religion
 technology_group = mesoamerican

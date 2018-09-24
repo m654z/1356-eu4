@@ -27,7 +27,10 @@ capital = 2674
 	add_piety = -0.1
 }
 
-1425.1.1 = { 	government = iqta government_rank = 2 
+1425.1.1 = { 	
+		government = monarchy
+		add_government_reform = iqta 
+		government_rank = 2 
 		religion = sunni religious_school = shafii_school }
 1453.1.1 = {
 	monarch = {

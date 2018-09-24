@@ -1,4 +1,5 @@
-government = tribal_democracy
+government = tribal
+add_government_reform = tribal_kingdom
 government_rank = 1
 primary_culture = uralic
 religion = tengri_pagan_reformed
@@ -16,7 +17,8 @@ capital = 1963	# Cherdyn
 }
 
 1400.1.1 = {
-	government = feudal_monarchy
+	government = monarchy
+	add_government_reform = feudalism_reform
 	religion = orthodox
 }
 
