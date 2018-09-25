@@ -36,9 +36,9 @@ french_ducal_vassal = {
 	copy_from = daimyo_vassal
 	count = vassal
 	# Graphics:
-	sprite = GFX_icon_feudal_vassal_orignal.dds
-	diplomacy_overlord_sprite = GFX_icon_feudal_vassal_overlord.dds # The one that the overlord sees
-	diplomacy_subject_sprite = GFX_icon_feudal_vassal_subject.dds	# The one that the subject sees
+	sprite = GFX_icon_feudal_vassal_orignal
+	diplomacy_overlord_sprite = GFX_icon_feudal_vassal_overlord # The one that the overlord sees
+	diplomacy_subject_sprite = GFX_icon_feudal_vassal_subject	# The one that the subject sees
 	
 	#properties
 	pays_overlord = 0.0

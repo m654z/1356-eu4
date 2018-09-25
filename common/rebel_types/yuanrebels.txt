@@ -155,10 +155,10 @@ yuan_red_turban_rebels = {
 
 	color = { 25 180 25 }
 
-	area = nation_rebel_tag 			# Stays within provinces of their rebel tag
+	area = nation_rebel_tag #Or nation			# Stays within provinces of their rebel tag
 	government = any				# No special preference
-	defection = nation_rebel_tag			# If the country seeks independence, defection specifies what type of provinces it wants.
-	independence = nation_rebel_tag 		# Seeks independence for spawn province culture. Will not spawn at all if there is no suitable tag.
+	defection = culture_group			# If the country seeks independence, defection specifies what type of provinces it wants.
+	independence = culture_group 		# Seeks independence for spawn province culture. Will not spawn at all if there is no suitable tag.
 	defect_delay = 48				# Can spontaneously declare independence after 48 months (earliest)
 	unit_transfer = yes				# Units switch allegiance after enforcing demands.
 	gfx_type = culture_province	
@@ -247,7 +247,7 @@ yuan_red_turban_rebels = {
 	# Country scope
 	can_negotiate_trigger = {
 		is_at_war = no
-		stability = 0
+		#stability = 0
 	}
 	
 	# Country scope

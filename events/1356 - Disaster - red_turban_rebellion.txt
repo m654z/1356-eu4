@@ -7,27 +7,27 @@ namespace = yuanredturban
 ####yuanredturban.1-yuanredturban.5#############
 ################################################################
 
-country_event = { #Start of Unique Disaster
-	id = yuandisaster.1
-	title = yuandisaster.1.t
-	desc = yuandisaster.1.d
+country_event = { #Start of the Red Turban Rebellion Disaster
+	id = yuanredturban.1
+	title = yuanredturban.1.t
+	desc = yuanredturban.1.d
 	picture = ACCUSATION_eventPicture
 
 	is_triggered_only = yes
 	fire_only_once = yes
 	
 	option = { #Sets Rebels to spawn
-		name = yuandisaster.1
-		set_country_flag = yuan_noble_disaster_rebel_flag
+		name = yuanredturban.1
+		set_country_flag = yuan_red_turban_disaster_spawned_flag #The Backup Flag as a fallback incase the disaster breaks magicly or something.
 		add_stability = -2
+		add_prestige = -15	
 	}
-	
 }
 
-country_event = { #Sets the Government Reform or flag/Ends the Rebels
-	id = yuandisaster.2
-	title = yuandisaster.2.t
-	desc = yuandisaster.2.desc
+country_event = { #End of the Disaster
+	id = yuanredturban.2
+	title = yuanredturban.2.t
+	desc = yuanredturban.2.desc
 	picture = DEBATE_REPUBLICAN_eventPicture
 	
 	is_triggered_only = yes
@@ -35,13 +35,13 @@ country_event = { #Sets the Government Reform or flag/Ends the Rebels
 	major = yes
 		
 	option = { #Dharma Owners
-		name = yuandisaster.2.a
+		name = yuanredturban.2.a
 		trigger = {	has_dlc = "Dharma" }
 		add_government_reform = yuan_celestial_empire_elective_heirs_reform
 		set_country_flag = yuan_celestial_empire_noble_republic_flag #Tells future events/rebels the rebellion is over
 		set_country_flag = yuan_noble_republic_disaster_over_flag #Tells the Government Reform that it can appear/prevents first event from triggering
 		country_event = { 
-			id = yuandisaster.25 #Heir selection event
+			id = yuanredturban.25 #Heir selection event
 			days = 1
 			random = 365
 		}
@@ -78,7 +78,7 @@ country_event = { #Sets the Government Reform or flag/Ends the Rebels
 		clr_country_flag = yuan_noble_rebellion_jiangsu_revolt_flag
 	}
 	option = { #Non Dharma Owners
-		name = yuandisaster.2.b
+		name = yuanredturban.2.b
 		trigger = {	NOT = { has_dlc = "Dharma" } }
 		set_country_flag = yuan_celestial_empire_noble_republic_flag
 		set_country_flag = yuan_noble_republic_disaster_over_flag #Tells the Government Reform that it can appear/prevents first event from triggering
@@ -89,7 +89,7 @@ country_event = { #Sets the Government Reform or flag/Ends the Rebels
 			desc = yua_noble_plot_success_modifier_desc
 		}
 		country_event = { 
-			id = yuandisaster.25
+			id = yuanredturban.25
 			days = 1
 			random = 365
 		}
@@ -118,9 +118,9 @@ country_event = { #Sets the Government Reform or flag/Ends the Rebels
 
 #Begining of Noble Rebellion Plot via Toqto'a path
 country_event = { #Red Turabn Rebellion is over, and you chose the Toqto'a path.
-	id = yuandisaster.6
-	title = yuandisaster.6.t
-	desc = yuandisaster.6.d
+	id = yuanredturban.6
+	title = yuanredturban.6.t
+	desc = yuanredturban.6.d
 	picture = SPY_eventPicture
 	
 	fire_only_once = yes
@@ -131,7 +131,7 @@ country_event = { #Red Turabn Rebellion is over, and you chose the Toqto'a path.
 		has_country_flag = yuan_toqto_returns_flag
 		has_country_flag = red_turban_rebellion_over_flag
 		
-		NOT = { has_country_flag = yuan_noble_republic_disaster_over_flag }#Comes from yuandisaster.2
+		NOT = { has_country_flag = yuan_noble_republic_disaster_over_flag }#Comes from yuanredturban.2
 		NOT = { has_disaster = red_turban_rebellion_disaster } #Literally, the disaster. My failsafe in the case it tries to trigger again.
 		NOT = { has_country_flag = yuan_noble_plot_over_flag } 
 		NOT = { has_country_flag = yuan_nobles_succeed_plot_flag }
@@ -143,11 +143,11 @@ country_event = { #Red Turabn Rebellion is over, and you chose the Toqto'a path.
 	}
 	
 	option = { #This can not be good...
-		name = yuandisaster.6.a
+		name = yuanredturban.6.a
 		add_meritocracy = -10
 		set_country_flag = yuan_disaster_plot_against_ruler_flag #Prevents this triggering right away, failsafe.
 		country_event = { 
-			id = yuandisaster.7
+			id = yuanredturban.7
 			days = 180
 			random = 180
 			tooltip = yua6nobleplot_tooltip
@@ -157,24 +157,24 @@ country_event = { #Red Turabn Rebellion is over, and you chose the Toqto'a path.
 
 #Unfinished
 country_event = { #Loyal Nobles and Spies hear more. But still no idea of who...
-	id = yuandisaster.7
-	title = yuandisaster.7.t
-	desc = yuandisaster.7.d
+	id = yuanredturban.7
+	title = yuanredturban.7.t
+	desc = yuanredturban.7.d
 	picture = ACCUSATION_eventPicture
 	
 	fire_only_once = yes
 	is_triggered_only = yes
 
 	option = { #Send the spies out! Find me the rebellious tratior!
-		name = yuandisaster.7.a
-		random_list = { #Either Nobles or Toqto'a - yuandisaster.
+		name = yuanredturban.7.a
+		random_list = { #Either Nobles or Toqto'a - yuanredturban.
 			country_event = { #Nobles
-				id = yuandisaster.8
+				id = yuanredturban.8
 				days = 180
 				random = 180
 			}
 			country_event = { #Toqto'a #UNFINISHED
-				id = yuandisaster.200
+				id = yuanredturban.200
 				days = 180
 				random = 180
 			}
@@ -184,9 +184,9 @@ country_event = { #Loyal Nobles and Spies hear more. But still no idea of who...
 
 #Tells disaster it's time
 country_event = { #It was the Nobility!
-	id = yuandisaster.8
-	title = yuandisaster.8.t
-	desc = yuandisaster.8.d
+	id = yuanredturban.8
+	title = yuanredturban.8.t
+	desc = yuanredturban.8.d
 	picture = ACCUSATION_eventPicture
 	
 	is_triggered_only = yes
@@ -194,11 +194,11 @@ country_event = { #It was the Nobility!
 	major = yes
 	
 	option = { #Trigger the Disaster to start ticking
-		name = yuandisaster.8.a
+		name = yuanredturban.8.a
 		set_country_flag = yua_noble_rebellion_popped_flag #Tells the disaster to tick at a regular rate.
 	}
 	option = { #Trigger the disaster to tick faster
-		name = yuandisaster.8.b
+		name = yuanredturban.8.b
 		set_country_flag = yuan_noble_revolt_imminent_flag #Set to trigger disaster faster
 		add_prestige = -20
 	}
@@ -206,9 +206,9 @@ country_event = { #It was the Nobility!
 
 #Should we Spy on the nobles?
 country_event = {
-	id = yuandisaster.9
-	title = yuandisaster.9.t
-	desc = yuandisaster.9.d
+	id = yuanredturban.9
+	title = yuanredturban.9.t
+	desc = yuanredturban.9.d
 	picture = ACCUSATION_eventPicture
 	
 	fire_only_once = yes
@@ -227,18 +227,18 @@ country_event = {
 	}
 	
 	option = { #Spy on them
-		name = yuandisaster.9.a
-		custom_tooltip = yuandisaster9_tooltip_tt
+		name = yuanredturban.9.a
+		custom_tooltip = yuanredturban9_tooltip_tt
 		random_list = {
 			30 = {
 				country_event = { #Success!
-					id = yuandisaster.64
+					id = yuanredturban.64
 					days = 30
 				}
 			}
 			70 = {
 				country_event = { #Failure!
-					id = yuandisaster.81
+					id = yuanredturban.81
 					days = 30
 				}
 			}
@@ -246,12 +246,12 @@ country_event = {
 	}
 		
 	option = { #Don't Spy on them 
-		name = yuandisaster.9.c
+		name = yuanredturban.9.c
 		add_prestige = 5
 	}
 
-	option = { #Don't Trust the Spies! #yuandisaster.40 #AKA the crazy man spy event
-		name = yuandisaster.9.e
+	option = { #Don't Trust the Spies! #yuanredturban.40 #AKA the crazy man spy event
+		name = yuanredturban.9.e
 		trigger = {
 			has_dlc = "Rights of Man"
 			OR = {
@@ -261,16 +261,16 @@ country_event = {
 			NOT = { has_country_flag = yuan_noble_rebellion_ruler_thinks_spies_against_him_flag }
 		}
 		country_event = { #Ruler thinks the Spies are out to get him.
-			id = yuandisaster.40
+			id = yuanredturban.40
 			days = 30
 		}
 	}
 }
 #Perhaps we can bribe the nobles?
 country_event = {
-	id = yuandisaster.10
-	title = yuandisaster.10.t
-	desc = yuandisaster.10.d
+	id = yuanredturban.10
+	title = yuanredturban.10.t
+	desc = yuanredturban.10.d
 	picture = ACCUSATION_eventPicture
 	
 	fire_only_once = yes
@@ -289,17 +289,17 @@ country_event = {
 	}
 	
 	option = { #Yes! Large Bribe!
-		name = yuandisaster.10.a
+		name = yuanredturban.10.a
 		random_list = {
 			30 = {
 				country_event = { #Success!
-					id = yuandisaster.61
+					id = yuanredturban.61
 					days = 30
 				}
 			}
 			70 = {
 				country_event = { #Failure!
-					id = yuandisaster.84
+					id = yuanredturban.84
 					days = 30
 				}
 			}
@@ -307,17 +307,17 @@ country_event = {
 	}
 	
 	option = { #Yes! Small Bribe!
-		name = yuandisaster.10.b
+		name = yuanredturban.10.b
 		random_list = {
 			25 = {
 				country_event = { #Success!
-					id = yuandisaster.62
+					id = yuanredturban.62
 					days = 30
 				}
 			}
 			75 = {
 				country_event = { #Failure!
-					id = yuandisaster.84
+					id = yuanredturban.84
 					days = 30
 				}
 			}
@@ -325,12 +325,12 @@ country_event = {
 	}
 	
 	option = { #No, no bribes here
-		name = yuandisaster.10.c
+		name = yuanredturban.10.c
 		add_prestige = 10
 	}
 
 	option = { #Trait Response #HOW ABOUT WE MINT ALL THE MONEY IN THE WORLD!?
-		name = yuandisaster.10.e
+		name = yuanredturban.10.e
 		trigger = {
 			has_dlc = "Rights of Man"
 			OR = {
@@ -341,16 +341,16 @@ country_event = {
 			NOT = { has_country_flag = yuan_noble_rebellion_bribe_event_flag }
 		}
 		country_event = { #LET'S BRIBE THE WORLD!
-			id = yuandisaster.42
+			id = yuanredturban.42
 			days = 30
 		}
 	}
 }
 #We've discovered who the Nobles are, what shall we do with them?
 country_event = {
-	id = yuandisaster.11
-	title = yuandisaster.11.t
-	desc = yuandisaster.11.d
+	id = yuanredturban.11
+	title = yuanredturban.11.t
+	desc = yuanredturban.11.d
 	picture = ACCUSATION_eventPicture
 	
 	fire_only_once = yes
@@ -369,49 +369,49 @@ country_event = {
 	}
 	
 	option = { #Go to their homes and arest them of course!
-		name = yuandisaster.11.a
+		name = yuanredturban.11.a
 		random_list = {
 			25 = {
 				country_event = { #Success...Partially!
-					id = yuandisaster.65
+					id = yuanredturban.65
 					days = 30
 				}
 			}
 			75 = {
 				country_event = { #Failure!
-					id = yuandisaster.80
+					id = yuanredturban.80
 					days = 30
 				}
 			}
 		}
 	}
 	option = { #Talk them down, of course!
-		name = yuandisaster.11.b
+		name = yuanredturban.11.b
 		random_list = {
 			25 = {
 				country_event = { #Success!
-					id = yuandisaster.60
+					id = yuanredturban.60
 					days = 30
 				}
 			}
 			75 = {
 				country_event = { #Failure!
-					id = yuandisaster.85
+					id = yuanredturban.85
 					days = 30
 				}
 			}
 		}
 	}
 	option = { #Do nothing.
-		name = yuandisaster.11.c
+		name = yuanredturban.11.c
 		add_prestige = 10
 	}
 }
 #We have a favor we could use...
 country_event = {
-	id = yuandisaster.12
-	title = yuandisaster.12.t
-	desc = yuandisaster.12.d
+	id = yuanredturban.12
+	title = yuanredturban.12.t
+	desc = yuanredturban.12.d
 	picture = ACCUSATION_eventPicture
 	
 	fire_only_once = yes
@@ -430,17 +430,17 @@ country_event = {
 	}
 	
 	option = { #Yes! Favor! Please!
-		name = yuandisaster.12.a
+		name = yuanredturban.12.a
 		random_list = {
 			40 = {
 				country_event = { #Success!
-					id = yuandisaster.63
+					id = yuanredturban.63
 					days = 30
 				}
 			}
 			60 = {
 				country_event = { #Failure!
-					id = yuandisaster.86
+					id = yuanredturban.86
 					days = 30
 				}
 			}
@@ -448,7 +448,7 @@ country_event = {
 	}
 	
 	option = { #No, it's not worth risking it...
-		name = yuandisaster.12.b
+		name = yuanredturban.12.b
 		add_prestige = 20
 	}
 }
@@ -457,14 +457,14 @@ country_event = {
 
 ######################
 ###Rebellion Events###
-#yuandisaster.100-129#
+#yuanredturban.100-129#
 ######################
 
 #Rebel Event for Xibei Culture Provinces
 country_event = { #The Xibei Culture Revolts! -Shun and Qin-
-	id = yuandisaster.100
-	title = yuandisaster.100.t
-	desc = yuandisaster.100.d
+	id = yuanredturban.100
+	title = yuanredturban.100.t
+	desc = yuanredturban.100.d
 	picture = CIVIL_WAR_eventPicture
 	
 	fire_only_once = yes
@@ -492,7 +492,7 @@ country_event = { #The Xibei Culture Revolts! -Shun and Qin-
 	}
 		
 	option = { #Too late to take it back now. Fight the rebels!
-		name = yuandisaster.100.a
+		name = yuanredturban.100.a
 		set_country_flag = yuan_red_turban_xibei_revolt_flag
 		custom_tooltip = yuan_red_turban_xibei_revolt_tt #Tells the Player that these people will not rise up again. Maybe make an event instead?
 		708 = { #Zhangye
@@ -607,9 +607,9 @@ country_event = { #The Xibei Culture Revolts! -Shun and Qin-
 }
 #Rebel Event for Jin Culture Provinces
 country_event = { #The Jin Culture Revolts! -Jin-
-	id = yuandisaster.101
-	title = yuandisaster.101.t
-	desc = yuandisaster.101.d
+	id = yuanredturban.101
+	title = yuanredturban.101.t
+	desc = yuanredturban.101.d
 	picture = CIVIL_WAR_eventPicture
 	
 	fire_only_once = yes
@@ -637,7 +637,7 @@ country_event = { #The Jin Culture Revolts! -Jin-
 	}
 		
 	option = { #Too late to take it back now. Fight the rebels!
-		name = yuandisaster.101.a
+		name = yuanredturban.101.a
 		set_country_flag = yuan_red_turban_jin_revolt_flag
 		custom_tooltip = yuan_red_turban_jin_revolt_tt #Tells the Player that these people will not rise up again. Maybe make an event instead?
 		shanxi_area = {
@@ -684,9 +684,9 @@ country_event = { #The Jin Culture Revolts! -Jin-
 }
 #Rebel Event for Zhili Culture Provinces
 country_event = { #The Zhili Culture Revolts! -Yan-
-	id = yuandisaster.102
-	title = yuandisaster.102.t
-	desc = yuandisaster.102.d
+	id = yuanredturban.102
+	title = yuanredturban.102.t
+	desc = yuanredturban.102.d
 	picture = CIVIL_WAR_eventPicture
 	
 	fire_only_once = yes
@@ -714,7 +714,7 @@ country_event = { #The Zhili Culture Revolts! -Yan-
 	}
 		
 	option = { #Too late to take it back now. Fight the rebels!
-		name = yuandisaster.102.a
+		name = yuanredturban.102.a
 		set_country_flag = yuan_red_turban_zhili_revolt_flag
 		custom_tooltip = yuan_red_turban_zhili_revolt_tt #Tells the Player that these people will not rise up again. Maybe make an event instead?
 		south_hebei_area = {
@@ -761,9 +761,9 @@ country_event = { #The Zhili Culture Revolts! -Yan-
 }
 #Rebel Event for Shandong Provinces
 country_event = { #The Shandong Culture Revolts! -Qi-
-	id = yuandisaster.103
-	title = yuandisaster.103.t
-	desc = yuandisaster.103.d
+	id = yuanredturban.103
+	title = yuanredturban.103.t
+	desc = yuanredturban.103.d
 	picture = CIVIL_WAR_eventPicture
 	
 	fire_only_once = yes
@@ -791,7 +791,7 @@ country_event = { #The Shandong Culture Revolts! -Qi-
 	}
 		
 	option = { #Too late to take it back now. Fight the rebels!
-		name = yuandisaster.103.a
+		name = yuanredturban.103.a
 		set_country_flag = yuan_red_turban_shandong_revolt_flag
 		custom_tooltip = yuan_red_turban_shandong_revolt_tt #Tells the Player that these people will not rise up again. Maybe make an event instead?
 		2138 = { #Wuding
@@ -852,9 +852,9 @@ country_event = { #The Shandong Culture Revolts! -Qi-
 }
 #Rebel Event for Zhongyuan Provinces
 country_event = { #The Zhongyuan Culture Revolts! -Liang/Tang-
-	id = yuandisaster.104
-	title = yuandisaster.104.t
-	desc = yuandisaster.104.d
+	id = yuanredturban.104
+	title = yuanredturban.104.t
+	desc = yuanredturban.104.d
 	picture = CIVIL_WAR_eventPicture
 	
 	fire_only_once = yes
@@ -882,7 +882,7 @@ country_event = { #The Zhongyuan Culture Revolts! -Liang/Tang-
 	}
 		
 	option = { #Too late to take it back now. Fight the rebels!
-		name = yuandisaster.104.a
+		name = yuanredturban.104.a
 		set_country_flag = yuan_noble_rebellion_jiangsu_revolt_flag
 		custom_tooltip = yuan_red_turban_zhongyuan_revolt_tt #Tells the Player that these people will not rise up again. Maybe make an event instead?
 		henan_area = { #South Henan
@@ -959,9 +959,9 @@ country_event = { #The Zhongyuan Culture Revolts! -Liang/Tang-
 }
 #Rebel Event for Jianghuai Culture Provinces
 country_event = { #The Jinghuai Culture Revolts! -Ming- 
-	id = yuandisaster.105
-	title = yuandisaster.105.t
-	desc = yuandisaster.105.d
+	id = yuanredturban.105
+	title = yuanredturban.105.t
+	desc = yuanredturban.105.d
 	picture = CIVIL_WAR_eventPicture
 	
 	fire_only_once = yes
@@ -989,7 +989,7 @@ country_event = { #The Jinghuai Culture Revolts! -Ming-
 	}
 		
 	option = { #Too late to take it back now. Fight the rebels!
-		name = yuandisaster.105.a
+		name = yuanredturban.105.a
 		set_country_flag = yuan_red_turban_jianghuai_revolt_flag
 		custom_tooltip = yuan_red_turban_jianghuai_revolt_tt #Tells the Player that these people will not rise up again. Maybe make an event instead?
 		south_jiangsu_area = {
@@ -1056,9 +1056,9 @@ country_event = { #The Jinghuai Culture Revolts! -Ming-
 }
 #Rebel Event for Wu Culture Provinces
 country_event = { #The Wu Culture Revolts! -Wu- 
-	id = yuandisaster.106
-	title = yuandisaster.106.t
-	desc = yuandisaster.106.d
+	id = yuanredturban.106
+	title = yuanredturban.106.t
+	desc = yuanredturban.106.d
 	picture = CIVIL_WAR_eventPicture
 	
 	fire_only_once = yes
@@ -1086,7 +1086,7 @@ country_event = { #The Wu Culture Revolts! -Wu-
 	}
 		
 	option = { #Too late to take it back now. Fight the rebels!
-		name = yuandisaster.106.a
+		name = yuanredturban.106.a
 		set_country_flag = yuan_red_turban_wu_revolt_flag
 		custom_tooltip = yuan_red_turban_wu_revolt_tt #Tells the Player that these people will not rise up again. Maybe make an event instead?
 		zhejiang_area = {
@@ -1133,9 +1133,9 @@ country_event = { #The Wu Culture Revolts! -Wu-
 }
 #Rebel Event for Min Culture Provinces
 country_event = { #The Min Culture Revolts! -Min- 
-	id = yuandisaster.107
-	title = yuandisaster.107.t
-	desc = yuandisaster.107.d
+	id = yuanredturban.107
+	title = yuanredturban.107.t
+	desc = yuanredturban.107.d
 	picture = CIVIL_WAR_eventPicture
 	
 	fire_only_once = yes
@@ -1163,7 +1163,7 @@ country_event = { #The Min Culture Revolts! -Min-
 	}
 		
 	option = { #Too late to take it back now. Fight the rebels!
-		name = yuandisaster.107.a
+		name = yuanredturban.107.a
 		set_country_flag = yuan_red_turban_min_revolt_flag
 		custom_tooltip = yuan_red_turban_min_revolt_tt #Tells the Player that these people will not rise up again. Maybe make an event instead?
 		2152 = { #Jianning
@@ -1240,9 +1240,9 @@ country_event = { #The Min Culture Revolts! -Min-
 }
 #Rebel Event for Hakka Culture Provinces
 country_event = { #The Hakka Culture Revolts! -Huai- 
-	id = yuandisaster.108
-	title = yuandisaster.108.t
-	desc = yuandisaster.108.d
+	id = yuanredturban.108
+	title = yuanredturban.108.t
+	desc = yuanredturban.108.d
 	picture = CIVIL_WAR_eventPicture
 	
 	fire_only_once = yes
@@ -1270,7 +1270,7 @@ country_event = { #The Hakka Culture Revolts! -Huai-
 	}
 		
 	option = { #Too late to take it back now. Fight the rebels!
-		name = yuandisaster.108.a
+		name = yuanredturban.108.a
 		set_country_flag = yuan_red_turban_hakka_revolt_flag
 		custom_tooltip = yuan_red_turban_hakka_revolt_tt #Tells the Player that these people will not rise up again. Maybe make an event instead?
 		2158 = { #Shiukwan
@@ -1317,9 +1317,9 @@ country_event = { #The Hakka Culture Revolts! -Huai-
 }
 #Rebel Event for Gan Culture Provinces
 country_event = { #The Gan Culture Revolts! -Ning- 
-	id = yuandisaster.109
-	title = yuandisaster.109.t
-	desc = yuandisaster.109.d
+	id = yuanredturban.109
+	title = yuanredturban.109.t
+	desc = yuanredturban.109.d
 	picture = CIVIL_WAR_eventPicture
 	
 	fire_only_once = yes
@@ -1347,7 +1347,7 @@ country_event = { #The Gan Culture Revolts! -Ning-
 	}
 		
 	option = { #Too late to take it back now. Fight the rebels!
-		name = yuandisaster.109.a
+		name = yuanredturban.109.a
 		set_country_flag = yuan_red_turban_gan_revolt_flag
 		custom_tooltip = yuan_red_turban_gan_revolt_tt #Tells the Player that these people will not rise up again. Maybe make an event instead?
 		2151 = { #Poyang
@@ -1384,9 +1384,9 @@ country_event = { #The Gan Culture Revolts! -Ning-
 }
 #Rebel Event for Xiang Culture Provinces
 country_event = { #The Xiang Culture Revolts! -Chu- 
-	id = yuandisaster.110
-	title = yuandisaster.110.t
-	desc = yuandisaster.110.d
+	id = yuanredturban.110
+	title = yuanredturban.110.t
+	desc = yuanredturban.110.d
 	picture = CIVIL_WAR_eventPicture
 	
 	fire_only_once = yes
@@ -1414,7 +1414,7 @@ country_event = { #The Xiang Culture Revolts! -Chu-
 	}
 		
 	option = { #Too late to take it back now. Fight the rebels!
-		name = yuandisaster.110.a
+		name = yuanredturban.110.a
 		set_country_flag = yuan_red_turban_xiang_revolt_flag
 		custom_tooltip = yuan_red_turban_xiang_revolt_tt #Tells the Player that these people will not rise up again. Maybe make an event instead?
 		672 = { #Wuling
@@ -1451,9 +1451,9 @@ country_event = { #The Xiang Culture Revolts! -Chu-
 }
 #Rebel Event for Miao Culture Provinces
 country_event = { #The Miao Culture Revolts! -Miao- 
-	id = yuandisaster.111
-	title = yuandisaster.111.t
-	desc = yuandisaster.111.d
+	id = yuanredturban.111
+	title = yuanredturban.111.t
+	desc = yuanredturban.111.d
 	picture = CIVIL_WAR_eventPicture
 	
 	fire_only_once = yes
@@ -1481,7 +1481,7 @@ country_event = { #The Miao Culture Revolts! -Miao-
 	}
 		
 	option = { #Too late to take it back now. Fight the rebels!
-		name = yuandisaster.111.a
+		name = yuanredturban.111.a
 		set_country_flag = yuan_red_turban_miao_revolt_flag
 		custom_tooltip = yuan_red_turban_miao_revolt_tt #Tells the Player that these people will not rise up again. Maybe make an event instead?
 		2173 = { #Yuanling
@@ -1518,9 +1518,9 @@ country_event = { #The Miao Culture Revolts! -Miao-
 }
 #Rebel Event for Hubei Culture Provinces
 country_event = { #The Hubei Culture Revolts! -Xi- 
-	id = yuandisaster.112
-	title = yuandisaster.112.t
-	desc = yuandisaster.112.d
+	id = yuanredturban.112
+	title = yuanredturban.112.t
+	desc = yuanredturban.112.d
 	picture = CIVIL_WAR_eventPicture
 	
 	fire_only_once = yes
@@ -1548,7 +1548,7 @@ country_event = { #The Hubei Culture Revolts! -Xi-
 	}
 		
 	option = { #Too late to take it back now. Fight the rebels!
-		name = yuandisaster.112.a
+		name = yuanredturban.112.a
 		set_country_flag = yuan_red_turban_hubei_revolt_flag
 		custom_tooltip = yuan_red_turban_hubei_revolt_tt #Tells the Player that these people will not rise up again. Maybe make an event instead?
 		4197 = { #Huangzhou
@@ -1595,9 +1595,9 @@ country_event = { #The Hubei Culture Revolts! -Xi-
 }
 #Rebel Event for Sichuanese Culture Provinces
 country_event = { #The Sichuanese Culture Revolts! -Shu- 
-	id = yuandisaster.113
-	title = yuandisaster.113.t
-	desc = yuandisaster.113.d
+	id = yuanredturban.113
+	title = yuanredturban.113.t
+	desc = yuanredturban.113.d
 	picture = CIVIL_WAR_eventPicture
 	
 	fire_only_once = yes
@@ -1625,7 +1625,7 @@ country_event = { #The Sichuanese Culture Revolts! -Shu-
 	}
 		
 	option = { #Too late to take it back now. Fight the rebels!
-		name = yuandisaster.113.a
+		name = yuanredturban.113.a
 		set_country_flag = yuan_red_turban_sichuanese_revolt_flag
 		custom_tooltip = yuan_red_turban_sichuanese_revolt_tt #Tells the Player that these people will not rise up again. Maybe make an event instead?
 		sichuan_area = {
@@ -1682,9 +1682,9 @@ country_event = { #The Sichuanese Culture Revolts! -Shu-
 }
 #Rebel Event for Cantonese Culture Provinces
 country_event = { #The Cantonese Culture Revolts! -Yue- 
-	id = yuandisaster.114
-	title = yuandisaster.114.t
-	desc = yuandisaster.114.d
+	id = yuanredturban.114
+	title = yuanredturban.114.t
+	desc = yuanredturban.114.d
 	picture = CIVIL_WAR_eventPicture
 	
 	fire_only_once = yes
@@ -1712,7 +1712,7 @@ country_event = { #The Cantonese Culture Revolts! -Yue-
 	}
 		
 	option = { #Too late to take it back now. Fight the rebels!
-		name = yuandisaster.114.a
+		name = yuanredturban.114.a
 		set_country_flag = yuan_red_turban_cantonese_revolt_flag
 		custom_tooltip = yuan_red_turban_cantonese_revolt_tt #Tells the Player that these people will not rise up again. Maybe make an event instead?
 		668 = { #Macau
@@ -1774,9 +1774,9 @@ country_event = { #The Cantonese Culture Revolts! -Yue-
 ########################
 #Rebel Event in Tibet 
 country_event = { #The Tibetians think it's time for independence! 
-	id = yuandisaster.130
-	title = yuandisaster.130.t
-	desc = yuandisaster.130.d
+	id = yuanredturban.130
+	title = yuanredturban.130.t
+	desc = yuanredturban.130.d
 	picture = CIVIL_WAR_eventPicture
 	
 	fire_only_once = yes
@@ -1795,7 +1795,7 @@ country_event = { #The Tibetians think it's time for independence!
 	}
 		
 	option = { #Too late to take it back now. Fight the rebels!
-		name = yuandisaster.105.a
+		name = yuanredturban.105.a
 		set_country_flag = yuan_red_turban_tibet_revolt_flag
 		tibet_region = {
 			limit = {
@@ -1803,18 +1803,17 @@ country_event = { #The Tibetians think it's time for independence!
 			}
 			spawn_rebels = {
 				type = nationalist_rebels
-				size = 1
-				win = no
+				size = 2
 				unrest = 5
 			}
 		}
 	}
 }
 #Rebel Event in Korea
-country_event = { #The Koreans think it's time for independence! -Pyongan/Hamgyeong-
-	id = yuandisaster.131
-	title = yuandisaster.131.t
-	desc = yuandisaster.131.d
+country_event = { #The Koreans think it's time for independence! All of Korea
+	id = yuanredturban.131
+	title = yuanredturban.131.t
+	desc = yuanredturban.131.d
 	picture = CIVIL_WAR_eventPicture
 	
 	fire_only_once = yes
@@ -1833,25 +1832,15 @@ country_event = { #The Koreans think it's time for independence! -Pyongan/Hamgye
 	}
 		
 	option = { #Too late to take it back now. Fight the rebels!
-		name = yuandisaster.131.a
+		name = yuanredturban.131.a
 		set_country_flag = yuan_red_turban_korea_revolt_flag
-		pyongan_area = {
+		korea_region = {
 			limit = {
 				owner = { tag = YUA }
 			}
 			spawn_rebels = {
 				type = nationalist_rebels
-				size = 1
-				unrest = 5
-			}
-		}
-		hamgyeong_area = {
-			limit = {
-				owner = { tag = YUA }
-			}
-			spawn_rebels = {
-				type = nationalist_rebels
-				size = 1
+				size = 2
 				unrest = 5
 			}
 		}
@@ -1888,7 +1877,7 @@ country_event = { #The Bai/Yi think it's time for independence! -Yun-Gui Hinterl
 			}
 			spawn_rebels = {
 				type = nationalist_rebels
-				size = 1
+				size = 2
 				unrest = 5
 			}
 		}
@@ -1898,7 +1887,7 @@ country_event = { #The Bai/Yi think it's time for independence! -Yun-Gui Hinterl
 			}
 			spawn_rebels = {
 				type = nationalist_rebels
-				size = 1
+				size = 2
 				unrest = 5
 			}
 		}
@@ -1936,7 +1925,7 @@ country_event = { #The Nomads think it's time for independence!
 			}
 			spawn_rebels = {
 				type = nationalist_rebels
-				size = 1
+				size = 2
 				unrest = 5
 			}
 		}
@@ -1976,7 +1965,7 @@ country_event = { #The Manchurians think it's time for independence! -Manchuria/
 			}
 			spawn_rebels = {
 				type = nationalist_rebels
-				size = 1
+				size = 2
 				unrest = 5
 			}
 		}
@@ -1986,7 +1975,7 @@ country_event = { #The Manchurians think it's time for independence! -Manchuria/
 			}
 			spawn_rebels = {
 				type = nationalist_rebels
-				size = 1
+				size = 2
 				unrest = 5
 			}
 		}
@@ -1996,7 +1985,7 @@ country_event = { #The Manchurians think it's time for independence! -Manchuria/
 			}
 			spawn_rebels = {
 				type = nationalist_rebels
-				size = 1
+				size = 2
 				unrest = 5
 			}
 		}
@@ -2006,7 +1995,7 @@ country_event = { #The Manchurians think it's time for independence! -Manchuria/
 			}
 			spawn_rebels = {
 				type = nationalist_rebels
-				size = 1
+				size = 2
 				unrest = 5
 			}
 		}
@@ -2016,7 +2005,7 @@ country_event = { #The Manchurians think it's time for independence! -Manchuria/
 			}
 			spawn_rebels = {
 				type = nationalist_rebels
-				size = 1
+				size = 2
 				unrest = 5
 			}
 		}
@@ -2026,7 +2015,7 @@ country_event = { #The Manchurians think it's time for independence! -Manchuria/
 			}
 			spawn_rebels = {
 				type = nationalist_rebels
-				size = 1
+				size = 2
 				unrest = 5
 			}
 		}
@@ -2036,7 +2025,7 @@ country_event = { #The Manchurians think it's time for independence! -Manchuria/
 			}
 			spawn_rebels = {
 				type = nationalist_rebels
-				size = 1
+				size = 2
 				unrest = 5
 			}
 		}
@@ -2046,7 +2035,7 @@ country_event = { #The Manchurians think it's time for independence! -Manchuria/
 			}
 			spawn_rebels = {
 				type = nationalist_rebels
-				size = 1
+				size = 2
 				unrest = 5
 			}
 		}
@@ -2056,7 +2045,7 @@ country_event = { #The Manchurians think it's time for independence! -Manchuria/
 			}
 			spawn_rebels = {
 				type = nationalist_rebels
-				size = 1
+				size = 2
 				unrest = 5
 			}
 		}
@@ -2066,7 +2055,7 @@ country_event = { #The Manchurians think it's time for independence! -Manchuria/
 			}
 			spawn_rebels = {
 				type = nationalist_rebels
-				size = 1
+				size = 2
 				unrest = 5
 			}
 		}
@@ -2076,7 +2065,7 @@ country_event = { #The Manchurians think it's time for independence! -Manchuria/
 			}
 			spawn_rebels = {
 				type = nationalist_rebels
-				size = 1
+				size = 2
 				unrest = 5
 			}
 		}
@@ -2086,7 +2075,7 @@ country_event = { #The Manchurians think it's time for independence! -Manchuria/
 			}
 			spawn_rebels = {
 				type = nationalist_rebels
-				size = 1
+				size = 2
 				unrest = 5
 			}
 		}
@@ -2096,7 +2085,7 @@ country_event = { #The Manchurians think it's time for independence! -Manchuria/
 			}
 			spawn_rebels = {
 				type = nationalist_rebels
-				size = 1
+				size = 2
 				unrest = 5
 			}
 		}
@@ -2106,7 +2095,7 @@ country_event = { #The Manchurians think it's time for independence! -Manchuria/
 			}
 			spawn_rebels = {
 				type = nationalist_rebels
-				size = 1
+				size = 2
 				unrest = 5
 			}
 		}
@@ -2145,7 +2134,7 @@ country_event = { #Just in the case you somehow took land from Indochina
 			}
 			spawn_rebels = {
 				type = nationalist_rebels
-				size = 1
+				size = 2
 				unrest = 10
 			}
 		}
@@ -2182,7 +2171,7 @@ country_event = { #Just in the case you somehow took land from Burma
 			}
 			spawn_rebels = {
 				type = nationalist_rebels
-				size = 1
+				size = 2
 				unrest = 5
 			}
 		}
@@ -2219,7 +2208,7 @@ country_event = { #Just in the case you somehow took land from Japan
 			}
 			spawn_rebels = {
 				type = nationalist_rebels
-				size = 1
+				size = 2
 				unrest = 5
 			}
 		}

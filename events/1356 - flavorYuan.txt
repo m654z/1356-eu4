@@ -42,6 +42,10 @@ country_event = {
 		caucasia_region = {
 			discover_country = YUA
 		}
+		add_disaster_progress = {
+			disaster = red_turban_rebellion_disaster
+			value = 99
+		}
 		
 	}
 }

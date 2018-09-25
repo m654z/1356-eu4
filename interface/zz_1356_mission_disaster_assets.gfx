@@ -1,0 +1,20 @@
+spriteTypes = {
+
+	##1356 Mission Stuff begins here##
+	spriteType = {
+		name = "mission_1356_trebuchet_firing.dds"
+		texturefile = "gfx//interface//missions//mission_1356_trebuchet_firing.dds"
+	}
+	spriteType = {
+		name = "mission_1356_trebuchet_firing.dds"
+		texturefile = "gfx//interface//missions//mission_1356_trebuchet_idle.dds"
+	}
+# Yuan Disaster sprite
+	spriteType = {
+		name = "GFX_red_turban_rebellion_disaster"
+		texturefile = "gfx//interface//disasters//yua_red_turban_rebellion_disaster.dds"
+		noOfFrames = 3
+		loadType = "INGAME"
+	}
+	
+}
