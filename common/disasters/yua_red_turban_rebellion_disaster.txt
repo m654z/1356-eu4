@@ -3,19 +3,24 @@ red_turban_rebellion_disaster = {
 		tag = YUA
 		is_emperor_of_china = yes
 		NOT = { is_year = 1380 }
-		NOT = { has_country_flag = red_turban_rebellion_over_flag }
-		NOT = { has_country_flag = yuan_red_turban_rebellion_began_flag }
+		NOT = { has_country_flag = red_turban_rebellion_over_flag } #Prevents it appearing again.
 	}
 	
 	can_start = { #Always
 		tag = YUA
+		NOT = { is_year = 1380 }
+		
+#		NOT = { has_country_flag = red_turban_rebellion_over_flag }
 	}
 	
-	can_stop = { #Not Emperor, is a Nomad, or Red Turban Rebellion is over.
+	can_stop = { 
 		OR = {
 			is_emperor_of_china = no
 			has_country_flag = red_turban_rebellion_over_flag
-			technology_group = nomad_group
+			AND = {
+				technology_group = nomad_group
+				is_emperor_of_china = no
+			}
 		}		
 	}
 	
@@ -24,13 +29,22 @@ red_turban_rebellion_disaster = {
 			factor = 50
 			tag = YUA
 			is_emperor_of_china = yes
-			NOT = { started_in = 1380.1.1 }
 		}
 	}
 	
-	can_end = { #Just have the flag, that's all. You've been through enough shit at this point. OR be a nomad AND not be emperor...
+	can_end = { 
 		OR = {
-			has_country_flag = red_turban_rebellion_over_flag
+			AND = {
+				is_emperor_of_china = yes
+				stability = 1
+				prestige = -10
+				NOT = { war_exhaustion = 5 }
+				is_at_war = no
+				NOT = { has_spawned_rebels = yuan_red_turban_rebels }
+				NOT = { has_spawned_rebels = nationalist }
+				NOT = { num_of_rebel_controlled_provinces = 3 }
+				NOT = {	num_of_revolts = 3 }
+			}
 			AND = { 
 				technology_group = nomad_group
 				is_emperor_of_china = no
@@ -39,22 +53,47 @@ red_turban_rebellion_disaster = {
 	}
 	
 	modifier = {
-		global_unrest = 15
+		#global_unrest = 5
+		years_of_nationalism = 8 #I hope this will just cause a snowball effect, instead of a blanket unrest modifier.
+		stability_cost_modifier = 0.1
+		global_autonomy = 0.05
 	}	
 	
-	on_start = yua.33
-	on_end = yua.34
+	on_start = yuanredturban.1
+	on_end = yuanredturban.2
 	
 	on_monthly = {
 		events = {
 	
 		}
 		random_events = { 
-#			1000 = 0
-#			100 = yua.35
-#			100 = peasants_war.3
-#			100 = peasants_war.4
-#			100 = peasants_war.5
+			#Chinese Rebels
+			100 = yuanredturban.100
+			100 = yuanredturban.101
+			100 = yuanredturban.102
+			100 = yuanredturban.103
+			100 = yuanredturban.104
+			100 = yuanredturban.105
+			100 = yuanredturban.106
+			100 = yuanredturban.107
+			100 = yuanredturban.108
+			100 = yuanredturban.109
+			100 = yuanredturban.110
+			100 = yuanredturban.111
+			100 = yuanredturban.112
+			100 = yuanredturban.113
+			100 = yuanredturban.114
+			#Non Chinese Rebels
+			100 = yuanredturban.130
+			100 = yuanredturban.131
+			100 = yuanredturban.132
+			100 = yuanredturban.133
+			100 = yuanredturban.134
+			100 = yuanredturban.135
+			100 = yuanredturban.136
+			100 = yuanredturban.137
+			
+			
 		
 		}
 	}

@@ -6,10 +6,6 @@ GLH = {
 # Yuan
 YUA = {
 	is_core = yes
-	OR = {
-		culture = mongol
-		culture = yuan
-	}
 }
 
 GYO = {

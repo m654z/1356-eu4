@@ -90,14 +90,13 @@ country_event = {
 		remove_accepted_culture = manchu
 		set_government_rank = 2		
 		change_government = steppe_horde
-		hidden = {
-			clr_country_flag = heir_elected_yua_flag
-			clr_country_flag = yuan_bribed_noble_rebellion_away_flag
-			clr_country_flag = yuan_noble_revolt_imminent_flag
-			clr_country_flag = yuan_nobles_succeed_plot_flag
-			clr_country_flag = yuan_noble_plot_over_flag
-			clr_country_flag = yua_noble_rebellion_popped_flag
-		}
+
+		clr_country_flag = heir_elected_yua_flag
+		clr_country_flag = yuan_bribed_noble_rebellion_away_flag
+		clr_country_flag = yuan_noble_revolt_imminent_flag
+		clr_country_flag = yuan_nobles_succeed_plot_flag
+		clr_country_flag = yuan_noble_plot_over_flag
+		clr_country_flag = yua_noble_rebellion_popped_flag
 	}
 }
 
@@ -150,7 +149,7 @@ country_event = { #Nomads want their dues now... -Succeeded, still emperor-
 	}
 }
 
-country_event = { #Toqto Returns! #Rework to be more gaurenteed to occur.
+country_event = { #Toqto Returns! #Tied into the Red Turban Rebellion Disaster
 	id = yua.4
 	title = yua.4.t
 	desc = yua.4.d
@@ -162,23 +161,12 @@ country_event = { #Toqto Returns! #Rework to be more gaurenteed to occur.
 		tag = YUA
 		NOT = { is_year = 1400 }
 		is_emperor_of_china = yes
-		OR = {
-			is_at_war = yes
-			num_of_rebel_armies = 3
-			has_country_flag = red_turban_rebellion_over_flag
-		}
+		has_disaster = red_turban_rebellion_disaster
 		NOT = { has_country_flag = yuan_toqto_returns_flag }
+		NOT = { has_country_flag = yuan_toqto_killed_flag }
 	}
 	mean_time_to_happen = {
-		months = 500
-		modifier = {
-			factor = 0.5
-			war_score = -25
-		}
-		modifier = {
-			factor = 0.3
-			war_score = -50
-		}
+		months = 50
 		modifier = {
 			factor = 0.5
 			num_of_rebel_armies = 5
@@ -221,13 +209,8 @@ country_event = { #Toqto Returns! #Rework to be more gaurenteed to occur.
 		set_country_flag = yuan_toqto_returns_flag
 		add_stability = -1
 		add_prestige = -50
-		add_meritocracy = -15
-		add_manpower = 15
-		remove_country_modifier = fall_of_yuan_mandate
-		add_country_modifier = {
-			name = "fall_of_yuan_mandate_toqto"
-			duration = -1
-		}
+		add_meritocracy = -20
+		add_manpower = 20
 		define_advisor = {
 			type = army_reformer
 			name = "Toqto'a"
@@ -240,14 +223,19 @@ country_event = { #Toqto Returns! #Rework to be more gaurenteed to occur.
 		define_general = {
 			name = "Toqto'a"
 			trait = inspirational_leader_general_personality
-			shock = 5
-			fire = 3
-			manuever = 2
-			siege = 2
+			shock = 6
+			fire = 2
+			manuever = 4
+			siege = 1
 		}
 		add_historical_rival = GYO
 		add_historical_rival = KOR
-		GYO = { add_historical_rival = YUA }
+		GYO = {
+			country_event = { #Tells the Koreans that Toqto'a has returned
+				id = koreagoryeo.1
+				days = 30
+			}
+		}
 	}
 	option = { #I thought we exiled you! Guards! Kill this man!
 		name = yua.4.b
@@ -588,203 +576,6 @@ country_event = { #Event to turn remains of Yuan Tengrist if desired
 	}
 }
 
-#Red Turban Rebellion Events
-
-#Rebel Events
-
-#UNFINISHED
-province_event = { #Was a WIP, unsure of if it works
-	id = yua.27
-	title = "yua.27.t"
-	desc = "yua.27.d"
-	picture = ANGRY_MOB_eventPicture
-	
-	trigger = {
-		always = no
-		owner = { tag = YUA }
-		owner = { NOT = { has_country_flag = red_turban_rebellion_over_flag } }
-		owner = {
-			OR = {
-				exists = MNG
-				exists = SHU
-				exists = QIC
-				exists = CXI
-				NOT = {
-					north_china_region = {
-						type = all
-						country_or_non_sovereign_subject_holds = ROOT
-					}
-					xinan_region = {
-						type = all
-						country_or_non_sovereign_subject_holds = ROOT
-					}
-					guangdong_area = {
-						type = all
-						country_or_non_sovereign_subject_holds = ROOT
-					}
-					fujian_area = {
-						type = all
-						country_or_non_sovereign_subject_holds = ROOT
-					}
-					jiangxi_area = {
-						type = all
-						country_or_non_sovereign_subject_holds = ROOT
-					}
-					zhejiang_area = {
-						type = all
-						country_or_non_sovereign_subject_holds = ROOT
-					}
-					south_anhui_area = {
-							type = all
-						country_or_non_sovereign_subject_holds = ROOT
-					}
-					south_jiangsu_area = {
-						type = all
-						country_or_non_sovereign_subject_holds = ROOT
-					}		
-				}			
-			}
-		
-		}
-		owner = { NOT = { num_of_rebel_controlled_provinces = 30 } }
-		owner = { NOT = { stability = 3 }  }
-		NOT = { controlled_by = REB }
-		culture_group = east_asian
-	}
-
-	mean_time_to_happen = {
-		months = 360
-		modifier = { #10 War Exhaustion
-			factor = 0.85
-			owner = { war_exhaustion = 10 }
-		}
-		modifier = { #15 War Exhaustion
-			factor = 0.85
-			owner = { war_exhaustion = 15 }
-		}
-		modifier = { #Less than 0 stability
-			factor = 0.85
-			owner = { NOT = { stability = 0 } }
-		}
-		modifier = { #Less than -2 Stability
-			factor = 0.85
-			owner = { NOT = { stability = -2 } }
-		}
-		modifier = {
-			factor = 0.95
-			exists = MNG
-		}
-		modifier = {
-			factor = 0.95
-			exists = SHU
-		}
-		modifier = {
-			factor = 0.95
-			exists = QIC
-		}
-		modifier = {
-			factor = 0.95
-			exists = CXI
-		}
-		modifier = {
-			factor = 0.95
-			exists = WUU
-		}
-		modifier = {
-			factor = 0.95
-			exists = YAN
-		}	
-		modifier = {
-			factor = 0.95
-			exists = JIN
-		}		
-		modifier = {
-			factor = 0.95
-			exists = CSH
-		}		
-		modifier = {
-			factor = 0.95
-			exists = CHC
-		}		
-		modifier = {
-			factor = 0.95
-			exists = CYI
-		}		
-		modifier = {
-			factor = 0.95
-			exists = NNG
-		}				
-		modifier = {
-			factor = 0.95
-			exists = QIN
-		}		
-		modifier = {
-			factor = 0.95
-			exists = LNG
-		}		
-		modifier = {
-			factor = 0.95
-			exists = CMI
-		}	
-		modifier = {
-			factor = 0.95
-			exists = CGS
-		}		
-		modifier = {
-			factor = 0.95
-			exists = CZH
-		}		
-		modifier = {
-			factor = 0.95
-			exists = HUA
-		}		
-		modifier = {
-			factor = 0.95
-			exists = YUE
-		}		
-		modifier = {
-			factor = 0.95
-			exists = MIN
-		}
-		modifier = {
-			factor = 0.5
-			exists = KHA
-			exists = YUA
-		}				
-	}
-
-	option = {
-		name = "yua.27.a"
-		random_list = {
-			30 = {
-				spawn_rebels = {
-					type = yuan_red_turban_rebels
-					size = 2
-				}
-			}
-			20 = {
-				spawn_rebels = {
-					type = yuan_red_turban_rebels
-					size = 3
-				}
-			}
-			30 = {
-				spawn_rebels = {
-					type = yuan_red_turban_rebels
-					size = 2
-				}
-			}
-			20 = {
-				spawn_rebels = {
-					type = yuan_red_turban_rebels
-					size = 3
-				}
-			}
-		}
-	}
-}
-
-
 #Lady Ki Mission Path/Events
 
 #Execution of Toqto'a
@@ -810,32 +601,13 @@ country_event = {
 		}
 		GYO = {
 			country_event = { #Korea Receives word Toqto'a was found and executed.
-				id = yua.31
+				id = koreagoryeo.2
 				days = 30
 			}
 		}
 	}
 }
 
-#Korea/Goryeo
-
-#Korea receives word that Toqto'a was ordered to be executed.
-country_event = {
-	id = yua.31
-	title = yua.31.t
-	desc = yua.31.desc
-	picture = DEATH_OF_HEIR_eventPicture
-	
-	fire_only_once = yes
-	is_triggered_only = yes
-	
-	option = { #Perfect! The first step of our plan has worked!
-		name = yua.31.a
-		add_prestige = 10	
-	}
-}
-
-#Yuan Again
 
 #The Empire focuses on the Rebel Problem
 country_event = {
@@ -853,158 +625,6 @@ country_event = {
 	}
 }
 
-#Start of Red Turban Rebellion Disaster
-country_event = {
-	id = yua.33
-	title = "yua.33.t"
-	desc = "yua.33.d"
-	picture = ANGRY_MOB_eventPicture
-	
-	major = yes
-	
-	is_triggered_only = yes
 
-	mean_time_to_happen = {
-		days = 1
-	}
-	
-	immediate = {
-		set_country_flag = yuan_red_turban_rebellion_began_flag
-		add_stability = -6
-		add_prestige = -10
-		random_list = { #Random Revolt in China
-			33 = {
-				north_china_region = {
-					random_owned_province = { 
-						spawn_rebels = {
-							type = yuan_red_turban_rebels
-							size = 2
-							win = yes
-							unrest = 15
-						}
-					}
-				}
-			}
-			
-			33 = {
-				xinan_region = {
-					random_owned_province = { 
-						spawn_rebels = {
-							type = yuan_red_turban_rebels
-							size = 2
-							win = yes
-							unrest = 15
-						}
-					}
-				}
-			}
-			
-			34 = {
-				south_china_region = {
-					random_owned_province = { 
-						spawn_rebels = {
-							type = yuan_red_turban_rebels
-							size = 2
-							win = yes
-							unrest = 15
-						}
-					}
-				}
-			}
-		}
-	}
-
-	option = {
-		name = "yua.33.a"			# Dire times are ahead of us	
-	}
-}
-
-#End of the Red Turban Rebellion Disaster
-country_event = {
-	id = yua.34
-	title = "yua.34.t"
-	desc = "yua.34.d"
-	picture = ANGRY_MOB_eventPicture
-	
-	
-	is_triggered_only = yes
-	
-	major = yes
-
-	mean_time_to_happen = {
-		days = 1
-	}
-	
-
-	option = { #We still stand!
-		name = "yua.34.a"
-		add_adm_power = 100
-		add_dip_power = 100
-		add_mil_power = 100
-	}
-}
-
-#The Rebellion Event
-country_event = {
-	id = yua.35
-	title = "yua.35.t"
-	desc = "yua.35.d"
-	picture = ANGRY_MOB_eventPicture
-
-
-	is_triggered_only = yes
-
-	mean_time_to_happen = {
-		days = 1
-	}
-
-
-	option = { #Bring it on
-		name = "yua.35.a"			
-		random_list = { #Random Revolt in China
-			33 = {
-				north_china_region = {
-					random_owned_province = { 
-						spawn_rebels = {
-							type = yuan_red_turban_rebels
-							size = 2
-							win = yes
-							unrest = 15
-						}
-					}
-				}
-			}
-			
-			33 = {
-				xinan_region = {
-					random_owned_province = { 
-						spawn_rebels = {
-							type = yuan_red_turban_rebels
-							size = 2
-							win = yes
-							unrest = 15
-						}
-					}
-				}
-			}
-			
-			34 = {
-				south_china_region = {
-					random_owned_province = { 
-						spawn_rebels = {
-							type = yuan_red_turban_rebels
-							size = 2
-							win = yes
-							unrest = 15
-						}
-					}
-				}
-			}
-		}
-		capital_scope = { 
-			yuan_red_turban_rebels = 2
-		}
-	}
-}
 
 #Need to finish the Toqto suspected revolt path.
