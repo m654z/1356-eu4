@@ -994,6 +994,53 @@ yuan_starter_group_2 = { #Starting Mission - Get a Feel for the Tree
 
 }
 
+yuan_toqtoa_start_main = { #Toqto's Return - Starting Tree - Splinters here
+	slot = 5
+	generic = no
+	ai = yes
+	
+	potential = { 
+		tag = YUA
+		has_country_flag = yuan_toqto_returns_flag
+		NOT = { has_country_flag = yuan_toqto_killed_flag }
+	}
+	has_country_shield = yes	
+	yua_quell_red_turban_rebellion_toqto_mission_3 = { #End The War to deal with the rebels
+		icon =  mission_chinese_general_riding
+		required_missions = { yua_quell_red_turban_rebellion_toqto_mission }
+		position = 3
+		trigger = {
+			OR = {
+				truce_with = SHU
+				NOT = { exists = SHU }
+			}
+			OR = {
+				truce_with = CXI
+				NOT = { exists = CXI }
+			}
+			OR = {
+				truce_with = QIC
+				NOT = { exists = QIC }
+			}
+			OR = {
+				truce_with = MNG
+				NOT = { exists = MNG }
+			}
+			OR = { 
+				truce_with = MIN
+				NOT = { exists = MIN }
+			}
+			OR = {
+				truce_with = WUU
+				NOT = { exists = WUU }
+			}
+		}
+		effect = {
+			add_war_exhaustion = -5
+		}
+	}
+}
+
 yuan_toqtoa_red_turban_rebellion_5_group = { #Toqto's Return - Crush Part of the Rebels
 	slot = 5
 	generic = no
@@ -1256,53 +1303,6 @@ yuan_ki_dip_group = { #Ki
 			add_dip_power = 10
 			add_mil_power = 10
 		}	
-	}
-}
-
-yuan_toqtoa_start_main = { #Toqto's Return - Starting Tree - Splinters here
-	slot = 5
-	generic = no
-	ai = yes
-	
-	potential = { 
-		tag = YUA
-		has_country_flag = yuan_toqto_returns_flag
-		NOT = { has_country_flag = yuan_toqto_killed_flag }
-	}
-	has_country_shield = yes	
-	yua_quell_red_turban_rebellion_toqto_mission_3 = { #End The War to deal with the rebels
-		icon =  mission_chinese_general_riding
-		required_missions = { yua_quell_red_turban_rebellion_toqto_mission }
-		position = 3
-		trigger = {
-			OR = {
-				truce_with = SHU
-				NOT = { exists = SHU }
-			}
-			OR = {
-				truce_with = CXI
-				NOT = { exists = CXI }
-			}
-			OR = {
-				truce_with = QIC
-				NOT = { exists = QIC }
-			}
-			OR = {
-				truce_with = MNG
-				NOT = { exists = MNG }
-			}
-			OR = { 
-				truce_with = MIN
-				NOT = { exists = MIN }
-			}
-			OR = {
-				truce_with = WUU
-				NOT = { exists = WUU }
-			}
-		}
-		effect = {
-			add_war_exhaustion = -5
-		}
 	}
 }
 

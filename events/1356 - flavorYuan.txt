@@ -44,7 +44,7 @@ country_event = {
 		}
 		add_disaster_progress = {
 			disaster = red_turban_rebellion_disaster
-			value = 99
+			value = 50
 		}
 		
 	}
@@ -271,7 +271,7 @@ country_event = { #Peasants flock to Toqto'as Side!
 		tag = YUA
 		has_country_flag = yuan_toqto_returns_flag
 		NOT = { is_year = 1400 }
-		NOT = { has_country_flag = red_turban_rebellion_over_flag } 
+		has_disaster = red_turban_rebellion_disaster
 		is_emperor_of_china = yes
 		NOT = { manpower = 10 }
 	}
