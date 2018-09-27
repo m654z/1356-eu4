@@ -385,6 +385,27 @@ yua_toqtoa_mil_reward_finisher_mission_modifier = {
 	leader_land_manuever = 1
 }
 
+yua_toqtoa_adm_reward_2_mission_modifier = {
+	stability_cost_modifier = -0.1
+	adm_advisor_cost = -0.1
+}
+
+yua_toqtoa_adm_reward_4_mission_modifier = {
+	global_autonomy = -0.05
+	autonomy_change_time = -0.25
+}
+
+yua_toqtoa_adm_finisher_mission_modifier = {
+	global_institution_spread = 0.25
+	embracement_cost = -0.25
+	rival_change_cost = -0.5
+	prestige = 0.5
+}
+
+yua_toqtoa_adm_reward_5_mission_modifier = {
+	liberty_desire_from_subject_development = -0.40
+}
+
 #Gascony
 gas_pyrenne_kingdom_modifier = {
 	diplomats = 1

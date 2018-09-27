@@ -12,3 +12,7 @@
 yuan_toqo_mission_reconquer_china_reward = {
 	local_unrest = -10
 }
+
+yuan_toqoa_mission_keep_korea_reward = {
+	local_unrest = -10
+}

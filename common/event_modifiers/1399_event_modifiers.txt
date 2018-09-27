@@ -257,6 +257,8 @@ mongol_debuff = { #The Mil Mongol Debuff
 
 mongol_debuff_dip = { #Dip Mongol Debuff
 	dip_tech_cost_modifier = 0.2
+	reduced_liberty_desire = -20
+	liberty_desire_from_subject_development = 0.25
 	culture_conversion_cost = 0.35
 	interest = 1
 	inflation_reduction = -0.05
@@ -272,6 +274,7 @@ mongol_debuff_adm = { #Adm Mongol Debuff
 	advisor_cost = 0.1
 	adm_tech_cost_modifier = 0.2
 	stability_cost_modifier = 0.35
+	global_autonomy = 0.05
 	core_creation = 0.25
 	enemy_core_creation = -0.35
 	global_spy_defence = -0.2
