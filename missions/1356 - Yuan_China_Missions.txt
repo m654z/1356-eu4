@@ -1318,6 +1318,8 @@ yuan_toqtoa_interior_adm = { #Toqto's Return - Dealing with the Interior Issues
 	}
 	has_country_shield = yes	
 
+	
+	
 }
 
 yuan_ki_start_group = { #Starter Ki Mission
@@ -1357,7 +1359,7 @@ yuan_toqtoa_interior_start = { #Toqto's Return - Dealing with the Interior Issue
 	}
 	has_country_shield = yes	
 
-	yua_toqtoa_interior_start = { #End The War to deal with the rebels
+	yua_toqtoa_interior_start = { #Start of interior path
 		icon =  mission_chinese_general_riding
 		required_missions = { yua_quell_red_turban_rebellion_toqto_mission_3 }
 		position = 4
@@ -1367,6 +1369,33 @@ yuan_toqtoa_interior_start = { #Toqto's Return - Dealing with the Interior Issue
 		effect = {
 			add_prestige = 1
 		}
+	}
+	
+	yua_toqtoa_reform_government = { #Begin reforming our government so we can handle this rebellion properly
+		icon = mission_buddhist_monk_praying
+		required_missions = { yua_toqtoa_interior_start }
+		position = 5
+	
+		provinces_to_highlight = {
+			OR = {
+				province_id = 1816
+				province_id = 726
+				province_id = 697
+			}
+			NOT = { controlled_by = YUA } #Is this right?
+		}
+		
+		trigger = {
+			1816 = { controlled_by = YUA }
+			697 = { controlled_by = YUA }
+			726 = { controlled_by = YUA }
+			num_of_rebel_controlled_provinces = 3
+		}
+		effect = {
+			add_adm_power = 10
+			add_dip_power = 10
+			add_mil_power = 10
+		}	
 	}
 }
 
@@ -1525,6 +1554,139 @@ yuan_toqtoa_interior_dip = { #Toqto's Return - Dealing with the Interior Issues
 	}
 	has_country_shield = yes	
 
+	yua_toqtoa_dip_reforms = { #Make sure our Diplomats are trained
+		icon =  mission_alliances
+		required_missions = { yua_toqtoa_reform_government }
+		position = 6
+		trigger = {
+			num_of_allies = 3
+			num_of_diplomatic_relations = 4
+		}
+		effect = {
+			add_country_modifier = { 
+				name = yua_toqtoa_dip_reward_1_mission_modifier
+				duration = 1825  
+			}
+		}
+	}
+	yua_toqtoa_dip_reforms_2 = { #Be stable
+		icon = mission_chinese_general_riding
+		required_missions = { yua_toqtoa_dip_reforms }
+		position = 7
+		trigger = {
+			OR = {
+				has_any_disaster = yes
+				NOT = { stability = 1 }
+			}
+			prestige = 15
+			dip_power = 350
+		}
+		effect = {
+			add_country_modifier = { 
+				name = yua_toqtoa_dip_reward_2_mission_modifier
+				duration = 1825  
+			}
+		}
+	}
+	yua_toqtoa_dip_reforms_3 = { #Rescue the currency
+		icon =  mission_rice_field
+		required_missions = { yua_toqtoa_dip_reforms_2 }
+		position = 8
+		trigger = {
+			NOT = { num_of_loans = 4 }
+			treasury = 200
+		}
+		effect = {
+			add_country_modifier = { 
+				name = yua_toqtoa_dip_reward_3_mission_modifier
+				duration = 1825  
+			}
+
+		}
+	}
+	yua_toqtoa_dip_reforms_4 = { #Rescue our Trade and Advisors
+		icon =  mission_war_chest
+		required_missions = { yua_toqtoa_dip_reforms_3 }
+		position = 9
+		trigger = {
+			OR = {
+				statesman = 1
+				naval_reformer = 1
+				trader = 1
+				spymaster = 1
+				colonial_governor = 1
+				diplomat = 1
+				navigator = 1
+			}
+			production_leader = {
+				trade_goods = chinaware
+			}
+			NOT = { num_of_trade_embargos = 1 }
+		}
+		effect = {
+			define_advisor = {
+				type = statesman
+				skill = 2
+				discount = yes
+			}
+			add_country_modifier = { 
+				name = yua_toqtoa_dip_reward_4_mission_modifier
+				duration = 1825  
+			}
+			
+		}
+	}
+	yua_toqtoa_dip_reforms_5 = { #Rescue our Navy
+		icon = mission_asian_trader
+		required_missions = { yua_toqtoa_dip_reforms_4 }
+		position = 10
+		trigger = {
+			num_of_ports = 20
+			navy_size_percentage = 0.80
+			NOT = { transport_fraction = 0.45 }
+		}
+		effect = {
+			add_country_modifier = { 
+				name = yua_toqtoa_dip_reward_5_mission_modifier
+				duration = 2555  
+			}
+		}
+	}
+	yua_toqtoa_dip_reforms_end = { #Ties everything together.
+		icon =  mission_market_place_with_asian_traders
+		required_missions = { yua_toqtoa_dip_reforms_5 }
+		position = 11
+		trigger = {
+			OR = {
+				has_any_disaster = yes
+				NOT = { stability = 1 }
+			}
+			prestige = 20
+			num_of_allies = 3
+			num_of_diplomatic_relations = 4
+			NOT = { num_of_loans = 4 }
+			treasury = 200
+			production_leader = {
+				trade_goods = chinaware
+			}
+			NOT = { num_of_trade_embargos = 1 }
+			num_of_ports = 25
+			navy_size_percentage = 0.80
+			NOT = { transport_fraction = 0.45 }
+			dip_power = 350
+		}
+		effect = {
+			set_country_flag = yua_dip_fixed
+			remove_country_modifier = mongol_debuff_dip
+			add_country_modifier = { 
+				name = yua_toqtoa_reward_dip_mission_modifier
+				duration = 3650  
+				desc = yua_toqtoa_reward_dip_mission_modifier_tooltip
+			}
+
+		}
+	}	
+	
 }
 
 yuan_toqtoa_interior_mil = { #Toqto's Return - Dealing with the Interior Issues
@@ -1538,7 +1700,167 @@ yuan_toqtoa_interior_mil = { #Toqto's Return - Dealing with the Interior Issues
 		NOT = { has_country_flag = yuan_toqto_killed_flag }
 	}
 	has_country_shield = yes	
-
+	yua_toqtoa_drastic_reforms = { #Military Advisors Fix
+		icon =  mission_have_two_subjects
+		required_missions = { yua_toqtoa_reform_government }
+		position = 6
+		trigger = {
+			OR = {
+				fortification_expert = 1
+				recruitmaster = 1
+				quartermaster = 1
+				commandant = 1
+				army_organiser = 1
+				army_reformer = 1
+			}
+			mil_power = 350
+		}
+		effect = {
+			add_country_modifier = { 
+				name = yua_toqtoa_mil_reward_1_mission_modifier
+				duration = 1875  
+			}
+			define_advisor = {
+				type = army_organiser
+				name = "Saibigan Borjigin"
+				skill = 3
+				culture = oirat
+				religion = tengri_pagan_reformed
+			}
+		}
+	}
+	yua_toqtoa_drastic_reforms_2 = { #Fix the Generals
+		icon =  mission_alliances
+		required_missions = { yua_toqtoa_drastic_reforms }
+		position = 7
+		trigger = {
+			OR = {
+				num_of_generals = 2
+				AND = {
+					is_monarch_leader = yes
+					is_heir_leader = yes
+				}
+			}
+			mil_power = 350
+			army_tradition = 25
+		}
+		effect = {
+			add_army_tradition = 10
+			create_general = {
+				tradition = 75
+			}
+		}
+	}
+	yua_toqtoa_drastic_reforms_3 = { #Reorganize the Army
+		icon =  mission_assemble_an_army
+		required_missions = { yua_toqtoa_drastic_reforms_2 }
+		position = 8
+		trigger = {
+			land_forcelimit = 85
+			num_of_infantry = 55
+			num_of_cavalry = 15
+		}
+		effect = {
+			add_manpower = 25
+			add_army_tradition = 5
+		}
+	}
+	yua_toqtoa_drastic_reforms_4 = { #Bring more Soldiers into the Army
+		icon =  mission_arabian_fort
+		required_missions = { yua_toqtoa_drastic_reforms_3 }
+		position = 9
+		trigger = {
+			manpower_percentage = 0.80
+			army_size_percentage = 0.8
+			NOT = { num_of_mercenaries = 5 }
+		}
+		effect = {
+			add_country_modifier = { 
+				name = yua_toqtoa_mil_reward_4_mission_modifier
+				duration = 3650  
+			}
+			1816 = {
+				add_base_manpower = 3
+			}
+			4194 = {
+				add_base_manpower = 2
+			}
+			695 = {
+				add_base_manpower = 2
+			}
+		}
+	}
+	yua_toqtoa_drastic_reforms_5 = { #Adopt new Militairy Reforms
+		icon =  mission_assemble_an_army
+		required_missions = { yua_toqtoa_drastic_reforms_4 }
+		position = 10
+		trigger = {
+			OR = {
+				AND = {
+					mil_tech = 4
+					mil_power = 200
+				}
+				AND = {
+					mil_tech = 3
+					mil_power = 500
+				}
+				AND = {
+					mil_tech = 2
+					mil_power = 500
+					army_tradition = 50
+					manpower_percentage = 0.95
+				}
+			}
+		}
+		effect = {
+			add_country_modifier = { 
+				name = yua_toqtoa_mil_reward_5_mission_modifier
+				duration = 1875  
+			}
+			add_manpower = 5
+		}
+	}
+	yua_toqtoa_drastic_reforms_end_mil = { #Bring everything together.
+		icon =  mission_build_up_to_force_limit
+		required_missions = { yua_toqtoa_drastic_reforms_5 }
+		position = 11
+		trigger = {
+			mil_power = 400
+			land_forcelimit = 85
+			manpower_percentage = 0.80	
+			army_size_percentage = 0.8
+			num_of_infantry = 55
+			num_of_cavalry = 15
+			NOT = { num_of_mercenaries = 5 }
+			army_tradition = 30
+			
+			OR = {
+				num_of_generals = 2
+				AND = {
+					is_monarch_leader = yes
+					is_heir_leader = yes
+				}
+			}
+			OR = {
+				fortification_expert = 1
+				recruitmaster = 1
+				quartermaster = 1
+				commandant = 1
+				army_organiser = 1
+				army_reformer = 1
+			}
+		}
+		effect = {
+			set_country_flag = yua_mil_fixed
+			remove_country_modifier = mongol_debuff #Removes Mil Debuff
+			add_country_modifier = { 
+				name = yua_toqtoa_mil_reward_finisher_mission_modifier
+				duration = 1875  
+			}
+			
+		}
+	}
+	
 }
 
 yuan_quell_red_turban_rebellion_naval_group = {
