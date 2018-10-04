@@ -1,5 +1,5 @@
-government = feudal_monarchy
-technology_group = western
+government = monarchy
+add_government_reform = feudalism_reformtechnology_group = western
 unit_type = western
 primary_culture = danish
 religion = catholic

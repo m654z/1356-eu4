@@ -1,5 +1,5 @@
-government = feudal_monarchy
-government_rank = 1
+government = monarchy
+add_government_reform = feudalism_reformgovernment_rank = 1
 primary_culture = hannoverian
 religion = catholic
 technology_group = western

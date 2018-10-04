@@ -1,27 +1,3 @@
-yuan_quell_red_turban_rebellion_internal_group = {
-	slot = 1
-	generic = no
-	ai = yes
-	
-	potential = { 
-		tag = YUA
-	}
-	has_country_shield = yes
-	
-	yua_quell_red_turban_rebellion_internal_mission_1 = { #Hire an Advisor
-		icon =  mission_alliances
-		required_missions = { yua_quell_red_turban_rebellion_mission_0 }
-		position = 2
-		trigger = {
-			has_advisor = yes
-		}
-		effect = {
-			add_years_of_income = 0.25
-			add_inflation = 0.25
-		}
-	}
-}
-
 yuan_toqtoa_red_turban_rebellion_1_group = { #Toqto's Return - Crush Part of the Rebels
 	slot = 1
 	generic = no
@@ -360,29 +336,51 @@ yuan_toqtoa_red_turban_rebellion_2_group = { #Toqto's Return - Crush Part of the
 	}	
 }
 
-yuan_toqtoa_start_group = { #Toqto'a Starting Mission
-	slot = 4
+yuan_toqtoa_start_main = { #Toqto's Return - Start of the Crush the Rebels Branch
+	slot = 3
 	generic = no
 	ai = yes
 	
 	potential = { 
 		tag = YUA
+		has_country_flag = yuan_toqto_returns_flag
 		NOT = { has_country_flag = yuan_toqto_killed_flag }
 	}
-	has_country_shield = yes
-	
-	yua_quell_red_turban_rebellion_toqto_mission = {
+	has_country_shield = yes	
+	yua_quell_red_turban_rebellion_toqto_mission_3 = { #End The War to deal with the rebels
 		icon =  mission_chinese_general_riding
-		required_missions = { yua_quell_red_turban_rebellion_mission_0 }
-		position = 2
+		required_missions = { yua_quell_red_turban_rebellion_toqto_mission }
+		position = 3
 		trigger = {
-			has_country_flag = yuan_toqto_returns_flag
+			OR = {
+				truce_with = SHU
+				NOT = { exists = SHU }
+			}
+			OR = {
+				truce_with = CXI
+				NOT = { exists = CXI }
+			}
+			OR = {
+				truce_with = QIC
+				NOT = { exists = QIC }
+			}
+			OR = {
+				truce_with = MNG
+				NOT = { exists = MNG }
+			}
+			OR = { 
+				truce_with = MIN
+				NOT = { exists = MIN }
+			}
+			OR = {
+				truce_with = WUU
+				NOT = { exists = WUU }
+			}
 		}
 		effect = {
-			swap_non_generic_missions = yes
+			add_war_exhaustion = -5
 		}
 	}
-	
 }
 
 yuan_toqtoa_red_turban_rebellion_group = { #Start of the Crush the Rebellion Tree
@@ -640,6 +638,31 @@ yuan_toqtoa_red_turban_rebellion_3_group = { #Toqto's Return - Crush Part of the
 			#Set the flag to remove the altaic stuff though
 		}
 	}
+}
+
+yuan_toqtoa_start_group = { #Toqto'a Starting Mission
+	slot = 4
+	generic = no
+	ai = yes
+	
+	potential = { 
+		tag = YUA
+		NOT = { has_country_flag = yuan_toqto_killed_flag }
+	}
+	has_country_shield = yes
+	
+	yua_quell_red_turban_rebellion_toqto_mission = {
+		icon =  mission_chinese_general_riding
+		required_missions = { yua_quell_red_turban_rebellion_mission_0 }
+		position = 2
+		trigger = {
+			has_country_flag = yuan_toqto_returns_flag
+		}
+		effect = {
+			swap_non_generic_missions = yes
+		}
+	}
+	
 }
 
 yuan_toqtoa_red_turban_rebellion_4_group = { #Toqto's Return - Crush Part of the Rebels
@@ -1213,53 +1236,6 @@ yuan_starter_group_2 = { #Starting Mission - Get a Feel for the Tree
 
 }
 
-yuan_toqtoa_start_main = { #Toqto's Return - Starting Tree - Splinters here
-	slot = 5
-	generic = no
-	ai = yes
-	
-	potential = { 
-		tag = YUA
-		has_country_flag = yuan_toqto_returns_flag
-		NOT = { has_country_flag = yuan_toqto_killed_flag }
-	}
-	has_country_shield = yes	
-	yua_quell_red_turban_rebellion_toqto_mission_3 = { #End The War to deal with the rebels
-		icon =  mission_chinese_general_riding
-		required_missions = { yua_quell_red_turban_rebellion_toqto_mission }
-		position = 3
-		trigger = {
-			OR = {
-				truce_with = SHU
-				NOT = { exists = SHU }
-			}
-			OR = {
-				truce_with = CXI
-				NOT = { exists = CXI }
-			}
-			OR = {
-				truce_with = QIC
-				NOT = { exists = QIC }
-			}
-			OR = {
-				truce_with = MNG
-				NOT = { exists = MNG }
-			}
-			OR = { 
-				truce_with = MIN
-				NOT = { exists = MIN }
-			}
-			OR = {
-				truce_with = WUU
-				NOT = { exists = WUU }
-			}
-		}
-		effect = {
-			add_war_exhaustion = -5
-		}
-	}
-}
-
 yuan_toqtoa_red_turban_rebellion_5_group = { #Toqto's Return - Crush Part of the Rebels
 	slot = 5
 	generic = no
@@ -1811,9 +1787,9 @@ yuan_ki_start_group = { #Starter Ki Mission
 	
 	}
 }
-
-yuan_toqtoa_interior_start = { #Toqto's Return - Dealing with the Interior Issues
-	slot = 7
+	
+yuan_toqtoa_interior_religion = { #Toqto's Return - Dealing with the Interior Issues
+	slot = 6
 	generic = no
 	ai = yes
 	
@@ -1823,23 +1799,11 @@ yuan_toqtoa_interior_start = { #Toqto's Return - Dealing with the Interior Issue
 		NOT = { has_country_flag = yuan_toqto_killed_flag }
 	}
 	has_country_shield = yes	
-
-	yua_toqtoa_interior_start = { #Start of interior path
-		icon =  mission_chinese_general_riding
-		required_missions = { yua_quell_red_turban_rebellion_toqto_mission_3 }
-		position = 4
-		trigger = {
-			always = yes
-		}
-		effect = {
-			add_prestige = 1
-		}
-	}
 	
-	yua_toqtoa_reform_government = { #Begin reforming our government so we can handle this rebellion properly
+	yua_toqtoa_reform_religion_start = { #Change how we handle our Religion so we can stay stable.
 		icon = mission_buddhist_monk_praying
 		required_missions = { yua_toqtoa_interior_start }
-		position = 5
+		position = 12
 	
 		provinces_to_highlight = {
 			OR = {
@@ -1861,11 +1825,24 @@ yuan_toqtoa_interior_start = { #Toqto's Return - Dealing with the Interior Issue
 			add_mil_power = 10
 		}	
 	}
+}
 	
+yuan_toqtoa_interior_adm = { #Toqto's Return - Dealing with the Interior Issues
+	slot = 7
+	generic = no
+	ai = yes
+	
+	potential = { 
+		tag = YUA
+		has_country_flag = yuan_toqto_returns_flag
+		NOT = { has_country_flag = yuan_toqto_killed_flag }
+	}
+	has_country_shield = yes	
+
 	yua_toqtoa_adm_reforms = { #Ensure a Stable Nation
 		icon =  mission_asian_trader
 		required_missions = { yua_toqtoa_reform_government }
-		position = 6
+		position = 5
 		trigger = {
 			stability = 2
 			legitimacy_equivalent = 90
@@ -1898,7 +1875,7 @@ yuan_toqtoa_interior_start = { #Toqto's Return - Dealing with the Interior Issue
 	yua_toqtoa_adm_reforms_2 = { #Keep the Advisors Loyal #Tie random events into this?
 		icon =  mission_colonial
 		required_missions = { yua_toqtoa_adm_reforms }
-		position = 7
+		position = 6
 		trigger = {
 			OR = {
 				philosopher = 1
@@ -1926,7 +1903,7 @@ yuan_toqtoa_interior_start = { #Toqto's Return - Dealing with the Interior Issue
 	yua_toqtoa_adm_reforms_3 = { #Educate the Ruling Family
 		icon =  mission_buddhist_monk_praying
 		required_missions = { yua_toqtoa_adm_reforms_2 }
-		position = 8
+		position = 7
 		trigger = {
 			OR = {
 				has_heir = yes
@@ -1954,7 +1931,7 @@ yuan_toqtoa_interior_start = { #Toqto's Return - Dealing with the Interior Issue
 	yua_toqtoa_adm_reforms_4 = { #Province Admistration
 		icon =  mission_arabian_fort
 		required_missions = { yua_toqtoa_adm_reforms_3 }
-		position = 9
+		position = 8
 		trigger = {
 			average_autonomy = 20
 		}
@@ -1968,7 +1945,7 @@ yuan_toqtoa_interior_start = { #Toqto's Return - Dealing with the Interior Issue
 	yua_toqtoa_adm_reforms_5 = { #Loyal Tributaries/Bring Tributaries back
 		icon =  mission_have_two_subjects
 		required_missions = { yua_toqtoa_adm_reforms_4 }
-		position = 10
+		position = 9
 		trigger = {
 			num_of_vassals = 5
 		}
@@ -1982,7 +1959,7 @@ yuan_toqtoa_interior_start = { #Toqto's Return - Dealing with the Interior Issue
 	yua_toqtoa_adm_reforms_end = { #Wrap it all up
 		icon =  mission_monarch_in_throne_room
 		required_missions = { yua_toqtoa_adm_reforms_5 }
-		position = 11
+		position = 10
 		trigger = {
 			stability = 2
 			legitimacy_equivalent = 90
@@ -2183,6 +2160,57 @@ yuan_ki_mil_reforms_group = { #Ki - Enables Yuan to actually be able to Fight th
 	
 }
 
+yuan_toqtoa_interior_start = { #Toqto's Return - Dealing with the Interior Issues
+	slot = 8
+	generic = no
+	ai = yes
+	
+	potential = { 
+		tag = YUA
+		has_country_flag = yuan_toqto_returns_flag
+		NOT = { has_country_flag = yuan_toqto_killed_flag }
+	}
+	has_country_shield = yes	
+
+	yua_toqtoa_interior_start = { #Start of interior path
+		icon =  mission_chinese_general_riding
+		required_missions = { yua_quell_red_turban_rebellion_toqto_mission }
+		position = 3
+		trigger = {
+			always = yes
+		}
+		effect = {
+			add_prestige = 1
+		}
+	}
+	
+	yua_toqtoa_reform_government = { #Begin reforming our government so we can handle this rebellion properly
+		icon = mission_buddhist_monk_praying
+		required_missions = { yua_toqtoa_interior_start }
+		position = 4
+	
+		provinces_to_highlight = {
+			OR = {
+				province_id = 1816
+				province_id = 726
+				province_id = 697
+			}
+			NOT = { controlled_by = YUA } #Is this right?
+		}
+		trigger = {
+			1816 = { controlled_by = YUA }
+			697 = { controlled_by = YUA }
+			726 = { controlled_by = YUA }
+			num_of_rebel_controlled_provinces = 3
+		}
+		effect = {
+			add_adm_power = 10
+			add_dip_power = 10
+			add_mil_power = 10
+		}	
+	}
+}
+
 yuan_toqtoa_interior_dip = { #Toqto's Return - Dealing with the Interior Issues
 	slot = 8
 	generic = no
@@ -2198,7 +2226,7 @@ yuan_toqtoa_interior_dip = { #Toqto's Return - Dealing with the Interior Issues
 	yua_toqtoa_dip_reforms = { #Make sure our Diplomats are trained
 		icon =  mission_alliances
 		required_missions = { yua_toqtoa_reform_government }
-		position = 6
+		position = 5
 		trigger = {
 			num_of_allies = 3
 			num_of_diplomatic_relations = 4
@@ -2213,7 +2241,7 @@ yuan_toqtoa_interior_dip = { #Toqto's Return - Dealing with the Interior Issues
 	yua_toqtoa_dip_reforms_2 = { #Be stable
 		icon = mission_chinese_general_riding
 		required_missions = { yua_toqtoa_dip_reforms }
-		position = 7
+		position = 6
 		trigger = {
 			OR = {
 				has_any_disaster = yes
@@ -2232,7 +2260,7 @@ yuan_toqtoa_interior_dip = { #Toqto's Return - Dealing with the Interior Issues
 	yua_toqtoa_dip_reforms_3 = { #Rescue the currency
 		icon =  mission_rice_field
 		required_missions = { yua_toqtoa_dip_reforms_2 }
-		position = 8
+		position = 7
 		trigger = {
 			NOT = { num_of_loans = 4 }
 			treasury = 200
@@ -2248,7 +2276,7 @@ yuan_toqtoa_interior_dip = { #Toqto's Return - Dealing with the Interior Issues
 	yua_toqtoa_dip_reforms_4 = { #Rescue our Trade and Advisors
 		icon =  mission_war_chest
 		required_missions = { yua_toqtoa_dip_reforms_3 }
-		position = 9
+		position = 8
 		trigger = {
 			OR = {
 				statesman = 1
@@ -2280,7 +2308,7 @@ yuan_toqtoa_interior_dip = { #Toqto's Return - Dealing with the Interior Issues
 	yua_toqtoa_dip_reforms_5 = { #Rescue our Navy
 		icon = mission_asian_trader
 		required_missions = { yua_toqtoa_dip_reforms_4 }
-		position = 10
+		position = 9
 		trigger = {
 			num_of_ports = 20
 			navy_size_percentage = 0.80
@@ -2296,7 +2324,7 @@ yuan_toqtoa_interior_dip = { #Toqto's Return - Dealing with the Interior Issues
 	yua_toqtoa_dip_reforms_end = { #Ties everything together.
 		icon =  mission_market_place_with_asian_traders
 		required_missions = { yua_toqtoa_dip_reforms_5 }
-		position = 11
+		position = 10
 		trigger = {
 			OR = {
 				has_any_disaster = yes
@@ -2331,7 +2359,7 @@ yuan_toqtoa_interior_dip = { #Toqto's Return - Dealing with the Interior Issues
 	yua_toqtoa_government_reforms_mission_end = { #Begin reforming our government so we can handle this rebellion properly
 		icon = mission_monarch_in_throne_room
 		required_missions = { yua_toqtoa_dip_reforms_end yua_toqtoa_adm_reforms_end yua_toqtoa_drastic_reforms_end_mil }
-		position = 12
+		position = 11
 	
 		provinces_to_highlight = {
 			OR = {
@@ -2379,7 +2407,7 @@ yuan_toqtoa_interior_mil = { #Toqto's Return - Dealing with the Interior Issues
 	yua_toqtoa_drastic_reforms = { #Military Advisors Fix
 		icon =  mission_have_two_subjects
 		required_missions = { yua_toqtoa_reform_government }
-		position = 6
+		position = 5
 		trigger = {
 			OR = {
 				fortification_expert = 1
@@ -2408,7 +2436,7 @@ yuan_toqtoa_interior_mil = { #Toqto's Return - Dealing with the Interior Issues
 	yua_toqtoa_drastic_reforms_2 = { #Fix the Generals
 		icon =  mission_alliances
 		required_missions = { yua_toqtoa_drastic_reforms }
-		position = 7
+		position = 6
 		trigger = {
 			OR = {
 				num_of_generals = 2
@@ -2430,7 +2458,7 @@ yuan_toqtoa_interior_mil = { #Toqto's Return - Dealing with the Interior Issues
 	yua_toqtoa_drastic_reforms_3 = { #Reorganize the Army
 		icon =  mission_assemble_an_army
 		required_missions = { yua_toqtoa_drastic_reforms_2 }
-		position = 8
+		position = 7
 		trigger = {
 			land_forcelimit = 85
 			num_of_infantry = 55
@@ -2444,7 +2472,7 @@ yuan_toqtoa_interior_mil = { #Toqto's Return - Dealing with the Interior Issues
 	yua_toqtoa_drastic_reforms_4 = { #Bring more Soldiers into the Army
 		icon =  mission_arabian_fort
 		required_missions = { yua_toqtoa_drastic_reforms_3 }
-		position = 9
+		position = 8
 		trigger = {
 			manpower_percentage = 0.80
 			army_size_percentage = 0.8
@@ -2469,7 +2497,7 @@ yuan_toqtoa_interior_mil = { #Toqto's Return - Dealing with the Interior Issues
 	yua_toqtoa_drastic_reforms_5 = { #Adopt new Militairy Reforms
 		icon =  mission_assemble_an_army
 		required_missions = { yua_toqtoa_drastic_reforms_4 }
-		position = 10
+		position = 9
 		trigger = {
 			OR = {
 				AND = {
@@ -2499,7 +2527,7 @@ yuan_toqtoa_interior_mil = { #Toqto's Return - Dealing with the Interior Issues
 	yua_toqtoa_drastic_reforms_end_mil = { #Bring everything together.
 		icon =  mission_build_up_to_force_limit
 		required_missions = { yua_toqtoa_drastic_reforms_5 }
-		position = 11
+		position = 10
 		trigger = {
 			mil_power = 400
 			land_forcelimit = 85
@@ -2533,52 +2561,191 @@ yuan_toqtoa_interior_mil = { #Toqto's Return - Dealing with the Interior Issues
 				name = yua_toqtoa_mil_reward_finisher_mission_modifier
 				duration = 1875  
 			}
-			
 		}
-	}
-	
+	}	
 }
 
-yuan_quell_red_turban_rebellion_naval_group = {
+yuan_toqtoa_interior_diplomacy = { #Toqto's Return - Get our Diplomacy back on Track
+	slot = 9
+	generic = no
+	ai = yes
+	
+	potential = { 
+		tag = YUA
+		has_country_flag = yuan_toqto_returns_flag
+		NOT = { has_country_flag = yuan_toqto_killed_flag }
+	}
+	has_country_shield = yes	
+	
+	yua_toqtoa_reform_diplomacy_mission_1 = { #Hire Diplomats 
+		icon = mission_have_two_subjects
+		required_missions = { yua_toqtoa_interior_start }
+		position = 12
+	
+		trigger = {
+			treasury = 150
+		}
+		effect = {
+			add_treasury = -150
+			remove_country_modifier = yua_toqtoa_diplomacy_reform_mission_1_modifier
+		}	
+	}
+	yua_toqtoa_reform_diplomacy_mission_2 = { #Fix our Dip Rep
+		icon = mission_have_two_subjects
+		required_missions = { yua_toqtoa_reform_diplomacy_mission_1 }
+		position = 13
+	
+		trigger = {
+			OR = {
+				dip = 4
+				consort_dip = 3
+				heir_dip = 3
+			}
+			is_at_war = no
+			has_regency = no
+			dip_power = 200
+		}
+		effect = {
+			add_dip_power = -200
+			remove_country_modifier = yua_toqtoa_diplomacy_reform_mission_2_modifier
+		}	
+	}
+	yua_toqtoa_reform_diplomacy_mission_3 = { #Improve our Relations Speed/Remove extra AE
+		icon = mission_have_two_subjects
+		required_missions = { yua_toqtoa_reform_diplomacy_mission_2 }
+		position = 14
+	
+		trigger = {
+			dip_power = 200
+			has_advisor = yes
+			has_regency = no
+		}
+		effect = {
+			add_dip_power = -200
+			remove_country_modifier = yua_toqtoa_diplomacy_reform_mission_3_modifier
+		}	
+	}
+	yua_toqtoa_reform_diplomacy_mission_4 = { #Remove negative Diplomatic Relations
+		icon = mission_have_two_subjects
+		required_missions = { yua_toqtoa_reform_diplomacy_mission_3 }
+		position = 15
+	
+		trigger = {
+			stability = 0
+			dip_power = 200
+			num_of_diplomatic_relations = 3
+			has_regency = no
+		}
+		effect = {
+			add_dip_power = -200
+			remove_country_modifier = yua_toqtoa_diplomacy_reform_mission_4_modifier
+		}	
+	}
+	
+	yua_toqtoa_reform_diplomacy_mission_5 = { #Allow player to have vassals/Remove Vassal Disloyalty
+		icon = mission_have_two_subjects
+		required_missions = { yua_toqtoa_reform_diplomacy_mission_4 }
+		position = 16
+	
+		trigger = {
+			num_of_diplomatic_relations = 4
+			manpower = 20
+			is_at_war = no
+		}
+		effect = {
+			remove_country_modifier = yua_toqtoa_diplomacy_reform_mission_5_modifier
+		}	
+	}
+	yua_toqtoa_reform_diplomacy_mission_6 = { #General Vassal Bonuses
+		icon = mission_have_two_subjects
+		required_missions = { yua_toqtoa_reform_diplomacy_mission_5 }
+		position = 17
+	
+		trigger = {
+			dip_tech = 4
+			is_at_war = no
+		}
+		effect = {
+			remove_country_modifier = yua_toqtoa_diplomacy_reform_mission_6_modifier
+		}	
+	}
+}
+
+yuan_toqtoa_interior_spies_trade = { #Toqto's Return - Get our Spys back on track/Claims/Fix our Trade
 	slot = 10
 	generic = no
 	ai = yes
 	
 	potential = { 
-		always = no
 		tag = YUA
-		#OR = {
-		#	has_country_flag = yuan_toqto_returns_flag
-		#	has_country_flag = yuan_toqto_killed_flag
-		#}
+		has_country_flag = yuan_toqto_returns_flag
+		NOT = { has_country_flag = yuan_toqto_killed_flag }
 	}
-	has_country_shield = yes
+	has_country_shield = yes	
 	
-	yua_quell_red_turban_rebellion_naval_mission_1 = { #Bigger Navy than all 4 Nations, Or they don't exist.
-		icon =  mission_establish_high_seas_navy
-		required_missions = { yua_quell_red_turban_rebellion_mission_0 }
-		position = 2
+	yua_toqtoa_reform_spies_mission_1 = { #Offense and Defense
+		icon = mission_have_two_subjects
+		required_missions = { yua_toqtoa_interior_start }
+		position = 12
+	
+		trigger = {
+			owns = 1821
+			is_core = 1821
+		}
+		effect = {
+			remove_country_modifier = yua_toqtoa_spies_reform_mission_1_modifier
+		}	
+	}
+	yua_toqtoa_reform_spies_mission_2 = { #Relations, Rebel Support, etc
+		icon = mission_have_two_subjects
+		required_missions = { yua_toqtoa_reform_spies_mission_1 }
+		position = 13
+	
 		trigger = {
 			OR = {
-				AND = {
-					navy_size = MNG
-					navy_size = SHU
-					navy_size = CXI
-					navy_size = QIC
+				has_spy_network_in = { #Goryeo
+					who = GYO
+					value = 20
 				}
-				
-				AND = {
-					NOT = { exists = QIC }
-					NOT = { exists = CXI }
-					NOT = { exists = SHU }
-					NOT = { exists = MNG }
+				has_spy_network_in = { #Korea
+					who = KOR
+					value = 20
 				}
-			
+				has_spy_network_in = { #Changtai
+					who = CHG
+					value = 20
+				}
+				has_spy_network_in = { #Ming
+					who = MNG
+					value = 20
+				}
+				has_spy_network_in = { #Qi
+					who = QIC
+					value = 20
+				}
+				has_spy_network_in = { #Tsang
+					who = UTS
+					value = 20
+				}
 			}
 		}
 		effect = {
-			add_yearly_sailors = 10
-			create_admiral = 75
+			remove_country_modifier = yua_toqtoa_spies_reform_mission_2_modifier
+		}	
+	}
+	yua_toqtoa_reform_spies_mission_3 = { #Claims, Trade Conflict, Enemy Core Cost, Claim Duration.
+		icon = mission_have_two_subjects
+		required_missions = { yua_toqtoa_reform_spies_mission_2 }
+		position = 14
+	
+		trigger = {
+			dip_power = 100 
+			mil_power = 100
 		}
+		effect = {
+			add_dip_power = -100
+			add_mil_power = -100
+			remove_country_modifier = yua_toqtoa_spies_reform_mission_3_modifier
+		}	
 	}
 }

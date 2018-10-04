@@ -171,25 +171,70 @@ historical_friend = CHG
 }
 
 1356.1.1 = { 
-	add_country_modifier = { 
+	add_country_modifier = { #Nomadic Brothers
 		name = yuan_starting_modifiers
 		duration = -1
 		desc = yuan_starting_modifiers_tooltip
 	}
-	add_country_modifier = { 
+	add_country_modifier = { #Mil Limitations
 		name = mongol_debuff
 		duration = -1
 		desc = mongol_debuff_tooltip
 	}
-	add_country_modifier = { 
+	add_country_modifier = { #Dip Limitations
 		name = mongol_debuff_dip
 		duration = -1
 		desc = mongol_debuff_dip_tooltip
 	}
-	add_country_modifier = { 
+	add_country_modifier = { #Adm Limitations
 		name = mongol_debuff_adm
 		duration = -1
 		desc = mongol_debuff_adm_tooltip
+	}
+	add_country_modifier = { #Diplomats/Rival Cost
+		name = yua_toqtoa_diplomacy_reform_mission_1_modifier
+		duration = -1
+		desc = yua_toqtoa_diplomacy_reform_mission_1_modifier_tt
+	}
+	add_country_modifier = { #Dip Rep/AE
+		name = yua_toqtoa_diplomacy_reform_mission_2_modifier
+		duration = -1
+		desc = yua_toqtoa_diplomacy_reform_mission_2_modifier_tt
+	}
+	add_country_modifier = { #Improve Relations/Travel Time
+		name = yua_toqtoa_diplomacy_reform_mission_3_modifier
+		duration = -1
+		desc = yua_toqtoa_diplomacy_reform_mission_3_modifier_tt
+	}
+	add_country_modifier = { #Diplomatic Slots
+		name = yua_toqtoa_diplomacy_reform_mission_4_modifier
+		duration = -1
+		desc = yua_toqtoa_diplomacy_reform_mission_4_modifier_tt
+	}
+	add_country_modifier = { #Vassal Loyalty
+		name = yua_toqtoa_diplomacy_reform_mission_5_modifier
+		duration = -1
+		desc = yua_toqtoa_diplomacy_reform_mission_5_modifier_tt
+	}
+	add_country_modifier = { #General Vassal Bonuses
+		name = yua_toqtoa_diplomacy_reform_mission_6_modifier
+		duration = -1
+		desc = yua_toqtoa_diplomacy_reform_mission_6_modifier_tt
+	}
+	add_country_modifier = { #Offense and Defense
+		name = yua_toqtoa_spies_reform_mission_1_modifier
+		duration = -1
+		desc = yua_toqtoa_spies_reform_mission_1_modifier_tt
+	}
+	add_country_modifier = { #Relations, Rebel Support, etc
+		name = yua_toqtoa_spies_reform_mission_2_modifier
+		duration = -1
+		desc = yua_toqtoa_spies_reform_mission_2_modifier_tt
+	}
+	add_country_modifier = { #Claims, Trade Conflict, Enemy Core Cost, Claim Duration.
+		name = yua_toqtoa_spies_reform_mission_3_modifier
+		duration = -1
+		desc = yua_toqtoa_spies_reform_mission_3_modifier_tt
 	}
 }
 

@@ -1,4 +1,5 @@
-government = elective_feudal_monarchy
+government = monarchy
+add_government_reform = elective_feudal_monarchy_reform
 primary_culture = norwegian
 religion = catholic
 technology_group = western

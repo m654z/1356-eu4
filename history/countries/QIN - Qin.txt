@@ -1,4 +1,5 @@
-government = chinese_kingdom_government
+government = monarchy
+add_government_reform = chinese_kingdom_government_reform
 technology_group = chinese
 religion = confucianism
 primary_culture = xibei

@@ -1,4 +1,5 @@
-government = barbary_sultanate
+government = monarchy
+add_government_reform = autocracy_reform
 primary_culture = moroccan
 government_rank = 1
 religion = sunni

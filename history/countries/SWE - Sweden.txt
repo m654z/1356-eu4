@@ -1,4 +1,5 @@
-government = elective_feudal_monarchy
+government = monarchy
+add_government_reform = elective_feudal_monarchy_reform
 technology_group = western
 unit_type = western
 primary_culture = swedish

@@ -1,7 +1,8 @@
 #######################################
 # Timurid Empire
 #######################################
-government = steppe_horde
+government = tribal
+add_government_reform = steppe_horde
 technology_group = nomad_group
 primary_culture = uzbehk
 add_accepted_culture = afghani

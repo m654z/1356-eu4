@@ -1,5 +1,5 @@
-government = french_vassal_feudal_monarchy
-government_rank = 1
+government = monarchy
+add_government_reform = french_vassal_feudal_monarchy_reformgovernment_rank = 1
 technology_group = western
 religion = catholic
 primary_culture = gascon

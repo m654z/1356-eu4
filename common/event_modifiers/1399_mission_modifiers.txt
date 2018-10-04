@@ -406,6 +406,47 @@ yua_toqtoa_adm_reward_5_mission_modifier = {
 	liberty_desire_from_subject_development = -0.40
 }
 
+yua_toqtoa_diplomacy_reform_mission_1_modifier = { #Diplomats/Rival Cost
+	diplomats = -5
+	rival_change_cost = 0.5
+}
+yua_toqtoa_diplomacy_reform_mission_2_modifier = { #Dip rep
+	diplomatic_reputation = -20
+	ae_impact = 0.5
+}
+yua_toqtoa_diplomacy_reform_mission_3_modifier = { #Relations Speed
+	improve_relation_modifier = -1.00
+	envoy_travel_time = 0.55
+}
+yua_toqtoa_diplomacy_reform_mission_4_modifier = { #Relations
+	diplomatic_upkeep = -5
+}
+yua_toqtoa_diplomacy_reform_mission_5_modifier = { #Vassal Loyalty
+	liberty_desire_from_subject_development = 0.35
+	reduced_liberty_desire = -15
+	reduced_liberty_desire_on_same_continent = -15
+}
+yua_toqtoa_diplomacy_reform_mission_6_modifier = { #General Vassal bonuses
+	vassal_income = -0.25
+	vassal_forcelimit_bonus = -0.25
+}
+yua_toqtoa_spies_reform_mission_1_modifier = { #Offense and Defense
+	spy_offence = -1
+	global_spy_defence = -0.5
+}
+
+yua_toqtoa_spies_reform_mission_2_modifier = { #Relations, Rebel Support, etc
+	discovered_relations_impact = 0.5
+	rebel_support_efficiency = -0.75
+}
+
+yua_toqtoa_spies_reform_mission_3_modifier = { #Claims, Trade Conflict, Enemy Core Cost, Claim Duration.
+	fabricate_claims_cost = 1
+	justify_trade_conflict_cost = 1
+	enemy_core_creation = -0.25
+	claim_duration = -0.25
+}
+
 #Gascony
 gas_pyrenne_kingdom_modifier = {
 	diplomats = 1
