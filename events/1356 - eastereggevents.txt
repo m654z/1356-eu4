@@ -182,6 +182,62 @@ country_event = {
 	}
 }
 
+#Yuan
+
+#Stalin Event
+country_event = { #The Great Purge
+	id = eastereggflandy.5
+	title = "eastereggflandy.5.t"
+	desc = "eastereggflandy.5.desc"
+	picture = REFORM_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = YUA
+		owns_core_province = 4301
+	}
+
+	mean_time_to_happen = {
+		months = 12
+	}
+	
+	option = { #Glorious Stalin!
+		name = eastereggflandy.5.a
+		kill_advisor = random
+		kill_advisor = random
+		kill_advisor = random
+		add_manpower = -2
+		add_war_exhaustion = 2
+		add_army_tradition = 10
+		define_general = {
+			name = "Ioseb Besarionis"
+			trait = ruthless_personality
+			shock = 1
+			fire = 5
+			manuever = 2
+			siege = 3
+		}
+		define_advisor = {
+			type = commandant
+			Name = "Ioseb Besarionis"
+			male = yes
+			culture = georgian
+			religion = orthodox
+			location = 4301
+			skill = 3
+			discount = yes
+		}
+
+	}
+	option = { #Who's that?
+		name = eastereggflandy.5.b
+		add_manpower = 10
+		add_army_tradition = 10
+		add_war_exhaustion = -5
+	}
+}
+
 #Misc
 
 #The Souless Wind God Speaks

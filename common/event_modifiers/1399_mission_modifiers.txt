@@ -270,142 +270,6 @@ nav_francia_kingdom_claimed = {
 }
 
 #Yuan
-yuan_merc_mission_reward = {
-	merc_maintenance_modifier = -0.15
-}
-
-yuan_mission_3_reward = {
-	manpower_recovery_speed = 0.15
-}
-
-yua_ki_reward_merc_mission_modifier = {
-	infantry_cost = -0.1
-	cavalry_cost = -0.1
-	reserves_organisation = 0.1
-	reinforce_speed = 0.05
-}
-
-yua_ki_reward_adm_mission_modifier = {
-	stability_cost_modifier = -0.15
-	harsh_treatment_cost = -0.15
-	advisor_cost = -0.15
-	global_tax_modifier = 0.1
-}
-
-yua_ki_reward_dip_mission_modifier = {
-	diplomatic_reputation = 1
-	envoy_travel_time = -0.2
-	improve_relation_modifier = 0.2
-	technology_cost = -0.1
-	global_institution_spread = 0.15
-	prestige = 0.5
-}
-
-yua_ki_dip_reward_2_mission_modifier = {
-	harsh_treatment_cost = -0.1
-	global_spy_defence = 0.15
-	tolerance_own = 1
-}
-
-yua_ki_dip_reward_3_mission_modifier = {
-	advisor_pool = 2
-	advisor_cost = -0.15
-}
-
-yua_ki_dip_reward_5_mission_modifier = {
-	global_ship_cost = -0.1
-	naval_forcelimit = 10
-	naval_morale = 0.1
-	global_ship_repair = 0.1
-}
-
-yua_ki_dip_reward_4_mission_modifier = {
-	diplomats = 1
-	envoy_travel_time = -0.2
-	improve_relation_modifier = 0.1
-}
-
-yua_toqtoa_dip_reward_1_mission_modifier = {
-	diplomats = 1
-	envoy_travel_time = -0.2
-	improve_relation_modifier = 0.2
-}
-
-yua_toqtoa_dip_reward_2_mission_modifier = {
-	harsh_treatment_cost = -0.15
-	global_spy_defence = 0.15
-	tolerance_own = 2
-}
-
-yua_toqtoa_dip_reward_3_mission_modifier = {
-	interest = -1
-	inflation_action_cost = -0.15
-	inflation_reduction = -0.04
-}
-
-yua_toqtoa_dip_reward_4_mission_modifier = {
-	dip_advisor_cost = -0.25
-	global_prov_trade_power_modifier = 0.15
-	trade_efficiency = 0.05
-}
-
-yua_toqtoa_dip_reward_5_mission_modifier = {
-	global_ship_cost = -0.1
-	naval_maintenance_modifier = -0.1
-	global_sailors_modifier = 0.1
-	sailors_recovery_speed = 0.1
-	naval_forcelimit = 10
-}
-
-yua_toqtoa_reward_dip_mission_modifier = {
-	all_power_cost = -0.1
-	global_institution_spread = 0.15
-}
-
-yua_toqtoa_mil_reward_1_mission_modifier = {
-	advisor_pool = 1
-	mil_advisor_cost = -0.25
-}
-yua_toqtoa_mil_reward_4_mission_modifier = {
-	manpower_recovery_speed = 0.1	
-	reserves_organisation = 0.1
-	reinforce_cost_modifier = -0.25
-	reinforce_speed = 0.1
-}
-
-yua_toqtoa_mil_reward_5_mission_modifier = {
-	land_maintenance_modifier = -0.1
-	defensiveness = 0.25
-}
-
-yua_toqtoa_mil_reward_finisher_mission_modifier = {
-	fort_maintenance_modifier = -0.15
-	war_exhaustion = -0.1
-	leader_siege = 1	
-	leader_land_manuever = 1
-}
-
-yua_toqtoa_adm_reward_2_mission_modifier = {
-	stability_cost_modifier = -0.1
-	adm_advisor_cost = -0.1
-}
-
-yua_toqtoa_adm_reward_4_mission_modifier = {
-	global_autonomy = -0.05
-	autonomy_change_time = -0.25
-}
-
-yua_toqtoa_adm_finisher_mission_modifier = {
-	global_institution_spread = 0.25
-	embracement_cost = -0.25
-	rival_change_cost = -0.5
-	prestige = 0.5
-}
-
-yua_toqtoa_adm_reward_5_mission_modifier = {
-	liberty_desire_from_subject_development = -0.40
-}
-
 yua_toqtoa_diplomacy_reform_mission_1_modifier = { #Diplomats/Rival Cost
 	diplomats = -5
 	rival_change_cost = 0.5
@@ -430,22 +294,81 @@ yua_toqtoa_diplomacy_reform_mission_6_modifier = { #General Vassal bonuses
 	vassal_income = -0.25
 	vassal_forcelimit_bonus = -0.25
 }
+
 yua_toqtoa_spies_reform_mission_1_modifier = { #Offense and Defense
 	spy_offence = -1
 	global_spy_defence = -0.5
 }
-
 yua_toqtoa_spies_reform_mission_2_modifier = { #Relations, Rebel Support, etc
 	discovered_relations_impact = 0.5
 	rebel_support_efficiency = -0.75
 }
-
 yua_toqtoa_spies_reform_mission_3_modifier = { #Claims, Trade Conflict, Enemy Core Cost, Claim Duration.
 	fabricate_claims_cost = 1
 	justify_trade_conflict_cost = 1
 	enemy_core_creation = -0.25
 	claim_duration = -0.25
+	privateer_efficiency = -0.5
 }
+
+yua_toqtoa_trade_reform_mission_1_modifier = {  #Merchants, Efficiency, Range
+	merchants = -3
+	trade_efficiency = -0.5
+	trade_range_modifier = -0.5	
+}
+yua_toqtoa_trade_reform_mission_2_modifier = { #Caravan Power, Global Trade Power, Trade Steering
+	caravan_power = -0.5
+	global_own_trade_power = -0.5	
+	trade_steering = -0.5	
+}
+yua_toqtoa_trade_reform_mission_3_modifier = { #Global Trade Power, Foreign Trade Power, Embargo Efficiency
+	global_trade_power = -0.5
+	global_foreign_trade_power = -0.5	
+	embargo_efficiency = -0.5	
+}
+
+yua_toqtoa_administration_reform_mission_1_modifier = { #Advisors
+	advisor_pool = -5
+}
+yua_toqtoa_administration_reform_mission_2_modifier = { #General Advisor Costs
+	advisor_cost = 0.5
+}
+yua_toqtoa_administration_reform_mission_3_modifier = { #Specific Advisor Costs
+	adm_advisor_cost = 0.25
+	dip_advisor_cost = 0.25
+	mil_advisor_cost = 0.25	
+}
+yua_toqtoa_administration_reform_mission_7_modifier = { #Min Autonomy/Global Autonomy
+	min_autonomy = 10
+	global_autonomy = 0.05
+}
+yua_toqtoa_administration_reform_mission_8_modifier = { #Autonomy Change Time/Territories Autonomy
+	autonomy_change_time = 0.25
+	min_autonomy_in_territories = 0.25
+}
+yua_toqtoa_administration_reform_mission_9_modifier = { #Global Autonomy/Autonomy Change Time
+	global_autonomy = 0.05
+	autonomy_change_time = 0.25
+}
+
+yua_toqtoa_royal_family_reform_mission_1_modifier = { #Heir Chance, Corruption, Prestige
+	heir_chance = -0.5
+	prestige = -1
+	yearly_corruption = 0.02
+}
+yua_toqtoa_royal_family_reform_mission_2_modifier = { #Legitimacy, Mandate
+	meritocracy = -1
+	legitimacy = -1	
+	horde_unity = -1
+	imperial_mandate = -0.1
+}
+yua_toqtoa_royal_family_reform_mission_3_modifier = { #Monarch Power Gains
+	monarch_admin_power = -1
+	monarch_diplomatic_power = -1
+	monarch_military_power = -1
+}
+
+
 
 #Gascony
 gas_pyrenne_kingdom_modifier = {

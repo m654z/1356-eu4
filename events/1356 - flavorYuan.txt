@@ -628,3 +628,65 @@ country_event = {
 
 
 #Need to finish the Toqto suspected revolt path.
+
+
+#Misc
+
+#Event from Reform Religion Path
+country_event = {
+	id = yua.200
+	title = yua.200.t
+	desc = yua.200.desc
+	picture = RELIGION_eventPicture
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = { #Stay Vajrayana
+		name = yua.200.a
+		ai_chance = { factor = 100 }
+		add_prestige = 25
+		add_mandate = 15
+		add_legitimacy = 25
+		add_meritocracy = 25			
+	}
+	option = { #Confucian
+		name = yua.200.b
+		ai_chance = { factor = 10 }
+		trigger = { any_owned_province = { religion = confucianism } }
+		change_religion = confucianism
+		add_stability = -3
+		add_prestige = -25
+		add_mandate = -25
+		add_legitimacy = -50
+		add_meritocracy = -50	
+	}
+	option = { #Mahayana
+		name = yua.200.c
+		ai_chance = { factor = 1 }
+		trigger = { any_owned_province = { religion = mahayana } }
+		change_religion = mahayana
+		add_stability = -2
+		add_prestige = -15
+		add_mandate = -15
+		add_legitimacy = -25
+		add_meritocracy = -25	
+			
+	}
+	option = { #Theravada
+		name = yua.200.d
+		ai_chance = { factor = 1 }
+		trigger = { any_owned_province = { religion = buddhism } }
+		change_religion = buddhism
+		add_stability = -2
+		add_prestige = -15
+		add_mandate = -15
+		add_legitimacy = -25
+		add_meritocracy = -25	
+			
+	}
+	option = { #Religion of our Ancestors! -Trait Locked?-
+		name = yua.200.e
+			
+	}
+}
