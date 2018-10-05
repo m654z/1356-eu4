@@ -1,9 +1,10 @@
 country_decisions = {
-	yua_quell_chinese_rebellion_decision = {
+	yua_quell_chinese_rebellion_decision = { #Disabled for now, converted to mission.
 		major = yes
 		
 		potential = {
 			tag = YUA
+			always = no
 			is_emperor_of_china = yes
 			has_country_flag = red_turban_rebellion_over_flag
 			owns = 1816
