@@ -5,6 +5,7 @@ yuan_toqtoa_red_turban_rebellion_1_group = { #Toqto's Return - Crush Part of the
 	
 	potential = { 
 		tag = YUA
+		always = no
 		has_country_flag = yuan_toqto_returns_flag
 		NOT = { has_country_flag = yuan_toqto_killed_flag }
 	}
@@ -12,7 +13,7 @@ yuan_toqtoa_red_turban_rebellion_1_group = { #Toqto's Return - Crush Part of the
 	yua_quell_red_turban_rebellion_toqto_north_eastern_central_china_mission = { #Begin to Crush the Rebellion - North Eastern Central China
 		icon =  mission_have_two_subjects
 		required_missions = { yua_quell_red_turban_rebellion_toqto_mission_4 }
-		position = 5
+		position = 7
 		provinces_to_highlight = {
 			OR = {
 				area = henan_area
@@ -107,7 +108,7 @@ yuan_toqtoa_red_turban_rebellion_1_group = { #Toqto's Return - Crush Part of the
 	yua_toqtoa_red_turban_rebellion_manchuria = { #Crush the Rebels - Manchuria
 		icon =  mission_have_two_subjects
 		required_missions = { yua_toqtoa_red_turban_quelled_north_south_china }
-		position = 8
+		position = 10
 		provinces_to_highlight = {
 			region = manchuria_region
 			NOT = {
@@ -146,6 +147,7 @@ yuan_toqtoa_red_turban_rebellion_2_group = { #Toqto's Return - Crush Part of the
 	
 	potential = { 
 		tag = YUA
+		always = no
 		has_country_flag = yuan_toqto_returns_flag
 		NOT = { has_country_flag = yuan_toqto_killed_flag }
 	}
@@ -153,7 +155,7 @@ yuan_toqtoa_red_turban_rebellion_2_group = { #Toqto's Return - Crush Part of the
 	yua_quell_red_turban_rebellion_toqto_north_eastern_china_mission = { #Begin to Crush the Rebellion - North Western China
 		icon =  mission_have_two_subjects
 		required_missions = { yua_quell_red_turban_rebellion_toqto_mission_4 }
-		position = 5
+		position = 7
 		provinces_to_highlight = {
 			OR = {
 				area = hebei_area
@@ -249,7 +251,7 @@ yuan_toqtoa_red_turban_rebellion_2_group = { #Toqto's Return - Crush Part of the
 	yua_quell_red_turban_rebellion_toqto_secured_current_areas_china_mission = { #Secured North China
 		icon =  mission_chinese_general_riding
 		required_missions = {yua_quell_red_turban_rebellion_toqto_north_eastern_central_china_mission yua_quell_red_turban_rebellion_toqto_north_eastern_china_mission yua_quell_red_turban_rebellion_toqto_north_western_china_mission  }
-		position = 6
+		position = 8
 		provinces_to_highlight = {
 			region = north_china_region
 			NOT = {
@@ -280,7 +282,7 @@ yuan_toqtoa_red_turban_rebellion_2_group = { #Toqto's Return - Crush Part of the
 	yua_toqtoa_red_turban_rebellion_tibet = { #Crush the Rebels - Tibet
 		icon =  mission_have_two_subjects
 		required_missions = { yua_toqtoa_red_turban_quelled_north_south_china }
-		position = 8
+		position = 10
 		provinces_to_highlight = {
 			OR = {
 				area = amdo_area
@@ -347,40 +349,82 @@ yuan_toqtoa_start_rebel = { #Toqto's Return - Start of the Crush the Rebels Bran
 		NOT = { has_country_flag = yuan_toqto_killed_flag }
 	}
 	has_country_shield = yes	
-	yua_quell_red_turban_rebellion_toqto_mission_3 = { #End The War to deal with the rebels
+		
+	yua_quell_red_turban_mission_1 = { #Hit the Force Limit - Removes Debuffs related to manpower and training.
 		icon =  mission_chinese_general_riding
 		required_missions = { yua_quell_red_turban_rebellion_toqto_mission }
 		position = 3
 		trigger = {
-			OR = {
-				truce_with = SHU
-				NOT = { exists = SHU }
-			}
-			OR = {
-				truce_with = CXI
-				NOT = { exists = CXI }
-			}
-			OR = {
-				truce_with = QIC
-				NOT = { exists = QIC }
-			}
-			OR = {
-				truce_with = MNG
-				NOT = { exists = MNG }
-			}
-			OR = { 
-				truce_with = MIN
-				NOT = { exists = MIN }
-			}
-			OR = {
-				truce_with = WUU
-				NOT = { exists = WUU }
-			}
+			army_size_percentage = 1
 		}
 		effect = {
-			add_war_exhaustion = -5
+			remove_country_modifier = yua_quell_red_turban_mission_1_modifier
 		}
 	}
+	
+	yua_quell_red_turban_mission_2 = { #Hit the Force Limit P2 - Removes Debuffs related to manpower and training.
+		icon =  mission_chinese_general_riding
+		required_missions = { yua_quell_red_turban_mission_1 }
+		position = 4
+		trigger = {
+			army_size_percentage = 0.75
+		}
+		effect = {
+			remove_country_modifier = yua_quell_red_turban_mission_2_modifier
+		}
+	}
+	
+	yua_quell_red_turban_mission_3 = { #Morale/Infantry Power/Tradition Decay
+		icon =  mission_chinese_general_riding
+		required_missions = { yua_quell_red_turban_mission_2 }
+		position = 5
+		trigger = {
+			mil_power = 200
+		}
+		effect = {
+			add_mil_power = -200
+			remove_country_modifier = yua_quell_red_turban_mission_3_modifier
+		}
+	}
+	yua_quell_red_turban_mission_4 = { #Calvary Power/Cav Flanking/Tradition Decay/Reinforce Speed
+		icon =  mission_chinese_general_riding
+		required_missions = { yua_quell_red_turban_mission_3 }
+		position = 6
+		trigger = {
+			manpower = 15
+		}
+		effect = {
+			add_manpower = -15
+			remove_country_modifier = yua_quell_red_turban_mission_4_modifier
+		}
+	}
+	yua_quell_red_turban_mission_5 = { #Discipline/Tradition Decay/Recover Morale Speed
+		icon =  mission_chinese_general_riding
+		required_missions = { yua_quell_red_turban_mission_4 }
+		position = 7
+		trigger = {
+			manpower = 10
+			mil_power = 100
+		}
+		effect = {
+			add_manpower = -10
+			add_mil_power = -100
+			remove_country_modifier = yua_quell_red_turban_mission_5_modifier
+		}
+	}
+	yua_quell_red_turban_mission_6 = { #Price of stuff
+		icon =  mission_chinese_general_riding
+		required_missions = { yua_quell_red_turban_mission_5 }
+		position = 8
+		trigger = {
+			treasury = 200
+		}
+		effect = {
+			add_treasury = -200
+			remove_country_modifier = yua_quell_red_turban_mission_6_modifier
+		}
+	}
+
 }
 
 yuan_toqtoa_red_turban_rebellion_group = { #Start of the Crush the Rebellion Tree
@@ -390,6 +434,7 @@ yuan_toqtoa_red_turban_rebellion_group = { #Start of the Crush the Rebellion Tre
 	
 	potential = { 
 		tag = YUA
+		always = mp
 		has_country_flag = yuan_toqto_returns_flag
 		NOT = { has_country_flag = yuan_toqto_killed_flag }
 	}
@@ -398,7 +443,7 @@ yuan_toqtoa_red_turban_rebellion_group = { #Start of the Crush the Rebellion Tre
 	yua_quell_red_turban_rebellion_toqto_mission_4 = { #Crush The Rebels 
 		icon =  mission_assemble_an_army
 		required_missions = { yua_quell_red_turban_rebellion_toqto_mission_3 }
-		position = 4
+		position = 6
 		trigger = {
 			always = yes
 		}
@@ -416,6 +461,7 @@ yuan_toqtoa_red_turban_rebellion_3_group = { #Toqto's Return - Crush Part of the
 	
 	potential = { 
 		tag = YUA
+		always = no
 		has_country_flag = yuan_toqto_returns_flag
 		NOT = { has_country_flag = yuan_toqto_killed_flag }
 	}
@@ -423,7 +469,7 @@ yuan_toqtoa_red_turban_rebellion_3_group = { #Toqto's Return - Crush Part of the
 	yua_quell_red_turban_rebellion_toqto_north_western_china_mission = { #Begin to Crush the Rebellion - North Western China
 		icon =  mission_have_two_subjects
 		required_missions = { yua_quell_red_turban_rebellion_toqto_mission_4 }
-		position = 5
+		position = 7
 		provinces_to_highlight = {
 			OR = {
 				area = west_gansu_area
@@ -500,7 +546,7 @@ yuan_toqtoa_red_turban_rebellion_3_group = { #Toqto's Return - Crush Part of the
 	yua_toqtoa_red_turban_rebellion_korea = { #Crush the Rebels - Northern Korea
 		icon =  mission_have_two_subjects
 		required_missions = { yua_toqtoa_red_turban_quelled_north_south_china }
-		position = 8
+		position = 10
 		provinces_to_highlight = {
 			OR = {
 				area = pyongan_area
@@ -555,7 +601,7 @@ yuan_toqtoa_red_turban_rebellion_3_group = { #Toqto's Return - Crush Part of the
 	yua_quell_red_turban_rebellion_toqto_end = { #Secured China from the rebellion, the Empire is saved...Or is it? -Turns into Noble Rebellion Path- #SCRIPT THAT PART STILL
 		icon =  mission_chinese_general_riding
 		required_missions = { yua_toqtoa_red_turban_rebellion_korea yua_toqtoa_red_turban_rebellion_tibet yua_quell_red_turban_rebellion_toqto_far_west_china_mission }
-		position = 9
+		position = 11
 		provinces_to_highlight = {
 			OR = {
 				region = north_china_region
@@ -640,7 +686,7 @@ yuan_toqtoa_red_turban_rebellion_3_group = { #Toqto's Return - Crush Part of the
 	}
 }
 
-yuan_toqtoa_start_group = { #Toqto'a Starting Mission
+yuan_toqtoa_start_group = { #Toqto'a Starting Mission - The Return of Toqtoa
 	slot = 4
 	generic = no
 	ai = yes
@@ -651,7 +697,7 @@ yuan_toqtoa_start_group = { #Toqto'a Starting Mission
 	}
 	has_country_shield = yes
 	
-	yua_quell_red_turban_rebellion_toqto_mission = {
+	yua_quell_red_turban_rebellion_toqto_mission = { #The Return of Toqtoa
 		icon =  mission_chinese_general_riding
 		required_missions = { yua_quell_red_turban_rebellion_mission_0 }
 		position = 2
@@ -672,6 +718,7 @@ yuan_toqtoa_red_turban_rebellion_4_group = { #Toqto's Return - Crush Part of the
 	
 	potential = { 
 		tag = YUA
+		always = no
 		has_country_flag = yuan_toqto_returns_flag
 		NOT = { has_country_flag = yuan_toqto_killed_flag }
 	}
@@ -679,7 +726,7 @@ yuan_toqtoa_red_turban_rebellion_4_group = { #Toqto's Return - Crush Part of the
 	yua_quell_red_turban_rebellion_toqto_southern_china_coast_mission = { #Begin to Crush the Rebellion - Southern China Coast
 		icon = mission_non-western_cavalry_raid
 		required_missions = { yua_quell_red_turban_rebellion_toqto_mission_4 }
-		position = 5
+		position = 7
 		provinces_to_highlight = {
 			OR = {
 				area = fujian_area
@@ -756,7 +803,7 @@ yuan_toqtoa_red_turban_rebellion_4_group = { #Toqto's Return - Crush Part of the
 	yua_toqtoa_red_turban_quelled_north_south_china = { #Secured South China
 		icon =  mission_chinese_general_riding
 		required_missions = { yua_quell_red_turban_rebellion_toqto_secured_current_areas_south_china_mission yua_quell_red_turban_rebellion_toqto_secured_current_areas_china_mission }
-		position = 7
+		position = 9
 		provinces_to_highlight = {
 			OR = {
 				region = north_china_region
@@ -902,7 +949,7 @@ yuan_toqtoa_red_turban_rebellion_4_group = { #Toqto's Return - Crush Part of the
 	yua_quell_red_turban_rebellion_toqto_far_west_china_mission = { #Begin to Crush the Rebellion - Xinan
 		icon =  mission_have_two_subjects
 		required_missions = { yua_toqtoa_red_turban_quelled_north_south_china }
-		position = 8
+		position = 10
 		provinces_to_highlight = {
 			OR = {
 				area = sichuan_area
@@ -1013,39 +1060,6 @@ yuan_toqtoa_red_turban_rebellion_4_group = { #Toqto's Return - Crush Part of the
 	}
 
 }
-
-yuan_ki_red_turban_group = {
-	slot = 4
-	generic = no
-	ai = yes
-	
-	potential = { 
-		tag = YUA
-		has_country_flag = yuan_toqto_killed_flag
-		NOT = { has_country_flag = yuan_toqto_returns_flag }
-	}
-	has_country_shield = yes
-	
-
-	yua_ki_red_turban_rebellion_start_mission = { #Begin reforming our government so we can handle this rebellion properly
-		icon = mission_arabian_fort
-		required_missions = { yua_quell_red_turban_rebellion_korean_consort_mission }
-		position = 3
-		
-		trigger = {
-			num_of_rebel_controlled_provinces = 5
-			num_of_revolts = 5
-			has_spawned_rebels = yuan_red_turban_rebels
-			war_exhaustion = 10
-			NOT = { stability = 1 }
-			NOT = { prestige = 15 }
-		}
-		effect = {
-			
-		}	
-	}
-
-}
 	
 yuan_starter_group = { #Starting Mission - Get a Feel for the Tree
 	slot = 5
@@ -1103,6 +1117,7 @@ yuan_toqtoa_red_turban_rebellion_5_group = { #Toqto's Return - Crush Part of the
 	
 	potential = { 
 		tag = YUA
+		always = no
 		has_country_flag = yuan_toqto_returns_flag
 		NOT = { has_country_flag = yuan_toqto_killed_flag }
 	}
@@ -1110,7 +1125,7 @@ yuan_toqtoa_red_turban_rebellion_5_group = { #Toqto's Return - Crush Part of the
 	yua_quell_red_turban_rebellion_toqto_far_central_china_mission = { #Begin to Crush the Rebellion - Central China Coast Area
 		icon =  mission_have_two_subjects
 		required_missions = { yua_quell_red_turban_rebellion_toqto_mission_4 }
-		position = 5
+		position = 7
 		provinces_to_highlight = {
 			OR = {
 				area = south_jiangsu_area
@@ -1187,7 +1202,7 @@ yuan_toqtoa_red_turban_rebellion_5_group = { #Toqto's Return - Crush Part of the
 	yua_quell_red_turban_rebellion_toqto_secured_current_areas_south_china_mission = { #Secured South China
 		icon =  mission_chinese_general_riding
 		required_missions = { yua_quell_red_turban_rebellion_toqto_far_central_china_mission yua_quell_red_turban_rebellion_toqto_southern_china_coast_mission yua_quell_red_turban_rebellion_toqto_far_southern_china_mission}
-		position = 6
+		position = 8
 		provinces_to_highlight = {
 			OR = {
 				area = guangdong_area
@@ -1320,20 +1335,6 @@ yuan_toqtoa_red_turban_rebellion_5_group = { #Toqto's Return - Crush Part of the
 	}
 }
 
-yuan_toqtoa_interior_army_navy = { #Toqto's Return - Dealing with Army & Navy
-	slot = 6
-	generic = no
-	ai = yes
-	
-	potential = { 
-		tag = YUA
-		has_country_flag = yuan_toqto_returns_flag
-		NOT = { has_country_flag = yuan_toqto_killed_flag }
-	}
-	has_country_shield = yes	
-	
-}	
-
 yuan_toqtoa_red_turban_rebellion_6_group = { #Toqto's Return - Crush Part of the Rebels
 	slot = 6
 	generic = no
@@ -1341,6 +1342,7 @@ yuan_toqtoa_red_turban_rebellion_6_group = { #Toqto's Return - Crush Part of the
 	
 	potential = { 
 		tag = YUA
+		always = no
 		has_country_flag = yuan_toqto_returns_flag
 		NOT = { has_country_flag = yuan_toqto_killed_flag }
 	}
@@ -1349,7 +1351,7 @@ yuan_toqtoa_red_turban_rebellion_6_group = { #Toqto's Return - Crush Part of the
 	yua_quell_red_turban_rebellion_toqto_far_southern_china_mission = { #Begin to Crush the Rebellion - Far Southern China
 		icon = mission_non-western_cavalry_raid
 		required_missions = { yua_quell_red_turban_rebellion_toqto_mission_4 }
-		position = 5
+		position = 7
 		provinces_to_highlight = {
 			OR = {
 				area = guangxi_area
@@ -1670,7 +1672,6 @@ yuan_toqtoa_interior_religion = { #Toqto's Return - Dealing with the topic of Re
 	}
 
 }
-
 
 yuan_toqtoa_interior_royal_family = { #Toqto's Return - Handling the Royal Family/Global Governence/Stability/
 	slot = 7

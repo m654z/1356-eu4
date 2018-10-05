@@ -327,6 +327,36 @@ historical_friend = CHG
 		duration = -1
 		desc = yua_toqtoa_economy_reform_mission_2_modifier_tt
 	}
+ 	add_country_modifier = { #Getting the Manpower Back Force Limit/Recruit Speed/Manpower Modifier/Manpower Recovery Speed
+		name = yua_quell_red_turban_mission_1_modifier
+		duration = -1
+		desc = yua_quell_red_turban_mission_1_modifier_tt
+	}
+ 	add_country_modifier = { #Getting the Manpower Back Force Limit/Recruit Speed/Manpower Modifier/Manpower Recovery Speed
+		name = yua_quell_red_turban_mission_2_modifier
+		duration = -1
+		desc = yua_quell_red_turban_mission_2_modifier_tt
+	}
+ 	add_country_modifier = { #Morale/Infantry Power/Tradition Decay
+		name = yua_quell_red_turban_mission_3_modifier
+		duration = -1
+		desc = yua_quell_red_turban_mission_3_modifier_tt
+	}
+ 	add_country_modifier = { #Calvary Power/Cav Flanking/Tradition Decay/Reinforce Speed
+		name = yua_quell_red_turban_mission_4_modifier
+		duration = -1
+		desc = yua_quell_red_turban_mission_4_modifier_tt
+	}
+ 	add_country_modifier = { #Discipline/Tradition Decay/Recover Morale Speed
+		name = yua_quell_red_turban_mission_5_modifier
+		duration = -1
+		desc = yua_quell_red_turban_mission_5_modifier_tt
+	}
+ 	add_country_modifier = { #Price of stuff
+		name = yua_quell_red_turban_mission_6_modifier
+		duration = -1
+		desc = yua_quell_red_turban_mission_6_modifier_tt
+	}
 }
 
 1368.9.14 = {
