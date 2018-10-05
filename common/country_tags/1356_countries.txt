@@ -40,6 +40,11 @@ FRB = "countries/Freiburg.txt"
 THG = "countries/Thurgau.txt"
 WLI = "countries/Wallis.txt"
 RAE = "countries/Raetia.txt"
+SWB = "countries/Swabia.txt"
+ZUR = "countries/Zurich.txt"
+BRN = "countries/Bern.txt"
+VAU = "countries/Vaud.txt"
+
 	
 #Spain
 CTR = "countries/Trastamara.txt"
@@ -101,6 +106,7 @@ TPM = "countries/TimuridEmpireAbsolute.txt"
 SCN = "countries/Sican.txt"
 AZC = "countries/Azcapotzalco.txt"
 TPY = "countries/Tepeyac.txt"
+TBS = "countries/Tabasco.txt"
 
 #Africa
 

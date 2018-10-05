@@ -1,11 +1,11 @@
 # 1869 - Zurich (1356)
 # Changes: HAB/STY/TIR
 
-owner = HAB
-controller = HAB
+owner = ZUR
+controller = ZUR
 culture = swiss
 religion = catholic
-capital = "Zürich"
+capital = "ZÃ¼rich"
 trade_goods = wool
 hre = yes
 base_tax = 4 
@@ -14,8 +14,7 @@ base_production = 4
 base_manpower = 2
 is_city = yes
 estate = estate_burghers
-add_core = HAB
-add_core = SWI
+add_core = ZUR
 
 discovered_by = western
 discovered_by = eastern

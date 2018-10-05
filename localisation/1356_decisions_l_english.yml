@@ -98,3 +98,5 @@
  yua_ask_nomadic_tribes_for_loyalty_decision_desc: "We can ask the Nomadic Tribes in the north for support during the Red Turban Rebellion, however they will want paid, and rewarded. While we can convince them the reward will come after we win, they want the payment up front. We can only hope that this will save us some trouble in the future."
  update_missions_decision_title: "Update Missions"
  update_missions_decision_desc: "In the case that your missions become broken, or do not refresh on forming a new tag, this should fix it. The AI is told to not use this, so if they happen to be broken and you wish to fix them you'll have to do this for them."
+ swabian_nation_title:0 "Unite the Swabian Duchies"
+ swabian_nation_desc:0 "The squabbling Swabian states have been in decadence for a good couple centuries now, but with the unification of Swabia by our nation, that period has come to an end. Rejoice, for the Duchy of Swabia has been born anew! With the blessing of God, the Swabians will once again be the masters of the Holy Roman Empire and all of Europe will kneel before our majesty!"

@@ -612,4 +612,9 @@
  indo_islam_spreads_opt1: "It is time for conversion."
  indo_islam_spreads_opt2: "$COUNTRY$ will always be $COUNTRY_RELIGION$"
  red_turban_rebellion_disaster: "Red Turban Rebellion"
- 
+ swiss_canton:0 "Swiss Canton"
+ swiss_canton_desc:0 "Cantons are the fabric that make up the patchwork of the Swiss Confederacy. In game this government reform is unique to Swiss minors."
+ earldom:0 "Earldom"
+ earldom_desc:0 "Earldoms are found in Ireland. They were very conservative, and would resist a change in hands with everything with have."
+ beylik:0 "Beylik"
+ beylik_desc:0 "The Turkish beyliks fought for power in the 1300's, with the Ottomans eventually coming out on top. They often had complex alliance networks."

@@ -1068,6 +1068,33 @@ barbary_sultanate_reform = {
 	}
 }
 
+beylik_reform = {
+	icon = "noble_muslim"
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			NOT = {
+				tag = TUR
+			}
+			primary_culture = turkish
+			government_rank = 1
+		}
+	}
+	legacy_equivalent = beylik 
+	lock_level_when_selected = yes 
+	fixed_rank = 1
+	valid_for_nation_designer = no 
+	modifiers = {
+		global_tax_modifier = 0.1
+		global_manpower_modifier = 0.1
+		stability_cost_modifier = -0.1
+		diplomatic_upkeep = 1
+	}
+	custom_attributes = {
+		locked_government_type = yes
+	}
+}
+
 timurid_government_reform = {
 	icon = "ottoman_government"
 	lock_level_when_selected = yes
@@ -1099,6 +1126,31 @@ timurid_government_reform = {
 	conditional = {
 		allow = { has_dlc = "Rights of Man" }
 		has_harem = yes
+	}
+}
+
+earldom_reform = {
+	icon = "man_and_children"
+	allow_normal_conversion = yes
+	potential = {	
+		OR = {
+			has_reform = earldom_reform
+			have_had_reform = earldom_reform
+		}
+		primary_culture = irish
+	}
+	valid_for_nation_designer = no 
+	lock_level_when_selected = yes
+	legacy_equivalent = earldom 
+	fixed_rank = 1
+	modifiers = {
+		land_morale = 0.1
+		leader_land_manuever = 1
+		hostile_attrition = 1
+		diplomatic_upkeep = -1
+	}
+	custom_attributes = {
+		locked_government_type = yes
 	}
 }
 

@@ -101,6 +101,52 @@ french_feudal_monarchy = { #Unused
 
 }
 
+beylik = {
+	icon = "noble_muslim"
+	allow_normal_conversion = yes
+	legacy_government = yes
+	monarchy = yes 
+	valid_for_new_country = no 
+	valid_for_nation_designer = no 
+	nation_designer_cost = 0
+	
+	ai = {
+		factor = 0
+	}
+	
+	modifiers = {
+		max_states = 2
+		global_tax_modifier = 0.1
+		global_manpower_modifier = 0.1
+		stability_cost_modifier = -0.1
+		diplomatic_upkeep = 1
+	}
+}
+
+earldom = {
+	icon = "castle"
+	allow_normal_conversion = yes
+	legacy_government = yes
+	monarchy = yes
+	valid_for_new_country = no
+	valid_for_nation_designer = no
+	nation_designer_cost = 0
+	
+	ai = {
+		factor = 0
+	}
+	
+	modifiers = {
+		max_states = 2
+		land_morale = 0.1
+		hostile_attrition = 1
+		leader_land_manuever = 1
+		diplomatic_upkeep = -1
+
+	}
+	
+}
+
 french_vassal_feudal_monarchy = { #French Dukes Only
 	icon = "castle"
 	monarchy = yes

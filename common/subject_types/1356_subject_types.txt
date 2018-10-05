@@ -155,3 +155,38 @@ nusantara = {
 	overlord_opinion_modifier = is_vassal
 	subject_opinion_modifier = is_vassal
 }
+
+canton = {
+	copy_from = default
+
+	# Graphics:
+	sprite = GFX_icon_vassal
+	diplomacy_overlord_sprite = GFX_diplomacy_leadvassal
+	diplomacy_subject_sprite = GFX_diplomacy_amvassal
+
+	# Properties:
+	transfer_trade_power = yes
+	can_be_annexed = no
+	has_power_projection = no
+
+	max_government_rank = 1
+	takes_diplo_slot = no
+
+	relative_power_class = 1
+
+	restoration_cb = cb_canton
+
+	# Subject Interactions:
+	divert_trade = yes
+	
+	# Modifiers:
+	modifier_subject = {
+		modifier = vassal_nation
+	}
+	modifier_overlord = {
+		modifier = vassal_subject
+	}
+
+	overlord_opinion_modifier = is_vassal
+	subject_opinion_modifier = is_vassal
+}

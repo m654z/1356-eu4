@@ -34,6 +34,8 @@ monarchy = {
 				french_feudal_monarchy_reform
 				timurid_government_reform
 				kalmar_union_reform
+				beylik_reform
+				earldom_reform
 				#####END 1356 CHANGES#####
 			}
 		}
@@ -121,6 +123,8 @@ monarchy = {
 		kalmar_union
 		french_vassal_feudal_monarchy
 		french_feudal_monarchy
+		earldom
+		beylik
 		#####END 1356 CHANGES#####
 	}
 
@@ -141,6 +145,8 @@ monarchy = {
 		barbary_sultanate_reform
 		french_vassal_feudal_monarchy_reform
 		french_feudal_monarchy_reform
+		earldom_reform
+		beylik_reform
 		#####END 1356 CHANGES#####
 	}
 
@@ -197,6 +203,9 @@ republic = {
 		peasants_republic_legacy
 		veche_republic_legacy
 		cossacks_legacy_reform
+		#####1356 Additions#####
+		swiss_canton
+		#####1356 Additions End#####
 	}
 	reform_levels = {
 		oligarchy_merchant_class_noble_elite = {
@@ -216,6 +225,9 @@ republic = {
 				revolutionary_republic_reform
 				presidential_despot_reform
 				cossacks_reform
+				#####1356 Additions#####
+				swiss_canton_reform
+				#####1356 Additions End#####
 			}
 		}
 		republican_virtues = {
@@ -287,6 +299,7 @@ republic = {
 		trading_city
 		american_republic
 		revolutionary_republic_reform
+		swiss_canton_reform
 	}
 }
 
