@@ -1,3 +1,27 @@
+# Swiss Confederacy
+alliance = {
+	first = ZUR
+	second = BRN
+	start_date = 1355.1.1
+	end_date = 1790.1.1
+}
+
+dependency = {
+	subject_type = "canton"
+	first = ZUR
+	second = RAE
+	start_date = 1355.1.1
+	end_date = 1790.1.1
+}
+
+dependency = {
+	subject_type = "canton"
+	first = ZUR
+	second = WLI
+	start_date = 1355.1.1
+	end_date = 1790.1.1
+}
+
 # Hungary-Poland
 alliance = {
 	first = HUN
