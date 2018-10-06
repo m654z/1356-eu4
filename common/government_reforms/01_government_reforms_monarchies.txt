@@ -1072,17 +1072,15 @@ beylik_reform = {
 	icon = "noble_muslim"
 	allow_normal_conversion = yes
 	potential = {
-		OR = {
+		AND = {
 			NOT = {
 				tag = TUR
 			}
 			primary_culture = turkish
-			government_rank = 1
 		}
 	}
 	legacy_equivalent = beylik 
 	lock_level_when_selected = yes 
-	fixed_rank = 1
 	valid_for_nation_designer = no 
 	modifiers = {
 		global_tax_modifier = 0.1
