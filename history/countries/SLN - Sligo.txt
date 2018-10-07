@@ -1,5 +1,5 @@
 government = monrachy
-add_government_reform = feudalism_reform
+add_government_reform = earldom_reform
 government_rank = 1
 technology_group = western
 primary_culture = irish
