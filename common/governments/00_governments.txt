@@ -31,7 +31,7 @@ monarchy = {
 				chinese_kingdom_government_reform
 				barbary_sultanate_reform
 				french_vassal_feudal_monarchy_reform
-				french_feudal_monarchy_reform
+				#french_feudal_monarchy_reform
 				timurid_government_reform
 				kalmar_union_reform
 				beylik_reform
