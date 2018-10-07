@@ -1,5 +1,5 @@
 government = monarchy
-add_government_reform = feudalism_reform
+add_government_reform = byzantine_empire_reform
 government_rank = 3
 primary_culture = greek
 religion = orthodox
@@ -210,7 +210,7 @@ fixed_capital = 151 # Cannot move capital away from this province & no power cos
 	queen = {
 		country_of_origin = MAC
 		name = "Jelena"
-		dynasty = "Dragaö"
+		dynasty = "Draga≈°"
 		birth_date = 1372.1.1
 		death_date = 1450.3.23
 		female = yes
