@@ -1,5 +1,5 @@
 government = monarchy
-add_government_reform = autocracy_reform
+add_government_reform = beylik_reform
 government_rank = 1
 primary_culture = turkish
 religion = sunni
@@ -10,7 +10,7 @@ religious_school = hanafi_school
 
 1346.1.1 = {
 	monarch = {
-		name = "Fahrüddin Ilyas"
+		name = "FahrÃ¼ddin Ilyas"
 		dynasty = "Saruhanoglu"
 		adm = 2
 		dip = 2
@@ -21,7 +21,7 @@ religious_school = hanafi_school
 
 1362.1.1 = {
 	monarch = {
-		name = "Mazafferüddin Ishak"
+		name = "MazafferÃ¼ddin Ishak"
 		dynasty = "Saruhanoglu"
 		adm = 2
 		dip = 2
