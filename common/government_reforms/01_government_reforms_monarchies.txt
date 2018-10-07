@@ -939,6 +939,57 @@ elective_feudal_monarchy_reform = {
 	}
 }
 
+byzantine_empire_reform = {
+	icon = "crown_highlighted"
+	allow_normal_conversion = no 
+	potential = {	
+		OR = {
+			has_reform = byzantine_empire_reform
+			have_had_reform = byzantine_empire_reform
+		}
+		tag = BYZ
+	}
+	valid_for_nation_designer = no 
+	lock_level_when_selected = yes
+	legacy_equivalent = byzantine_empire_gov
+	fixed_rank = 3
+	modifiers = {
+		mercenary_cost = -0.15
+		land_maintenance_modifier = -0.1
+		global_manpower_modifier = 0.1
+		diplomatic_upkeep = -1
+		diplomats = 1
+	}
+	custom_attributes = {
+		locked_government_type = yes
+	}
+}
+
+
+archduchy_reform = {
+	icon = "king_highlighted"
+	allow_normal_conversion = no 
+	potential = {
+		OR = {
+			has_reform = archduchy_reform
+			have_had_reform = archduchy_reform
+		}
+	}
+	legacy_equivalent = archduchy
+	lock_level_when_selected = yes
+	fixed_rank = 1
+	valid_for_nation_designer = no 
+	modifiers = {
+		diplomats = 1
+		diplomatic_reputation = 2
+		imperial_authority_value = 0.1
+		prestige = 1
+	}
+	custom_attributes = {
+		locked_government_type = yes
+	}
+}
+
 #french_feudal_monarchy_reform = { #Unused
 #	icon = "castle"
 #	allow_normal_conversion = no
@@ -1072,17 +1123,15 @@ beylik_reform = {
 	icon = "noble_muslim"
 	allow_normal_conversion = yes
 	potential = {
-		OR = {
+		AND = {
 			NOT = {
 				tag = TUR
 			}
 			primary_culture = turkish
-			government_rank = 1
 		}
 	}
 	legacy_equivalent = beylik 
 	lock_level_when_selected = yes 
-	fixed_rank = 1
 	valid_for_nation_designer = no 
 	modifiers = {
 		global_tax_modifier = 0.1

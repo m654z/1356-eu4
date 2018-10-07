@@ -1,5 +1,5 @@
 government = monarchy
-add_government_reform = autocracy_reform
+add_government_reform = beylik_reform
 government_rank = 1
 primary_culture = turkish
 religion = sunni
@@ -10,7 +10,7 @@ religious_school = hanafi_school
 
 1351.1.1 = {
 	monarch = {
-		name = "Süleyman"
+		name = "SÃ¼leyman"
 		dynasty = "Karesiogullari"
 		adm = 2
 		dip = 2

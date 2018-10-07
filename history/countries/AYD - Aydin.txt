@@ -1,5 +1,5 @@
 government = monarchy
-add_government_reform = autocracy_reform
+add_government_reform = beylik_reform
 government_rank = 1
 primary_culture = turkish
 religion = sunni
@@ -43,8 +43,8 @@ religious_school = hanafi_school
 
 1402.1.2 = {
 	heir = {
-		name = "Cüneyd"
-		monarch_name = "Cüneyd"
+		name = "CÃ¼neyd"
+		monarch_name = "CÃ¼neyd"
 		dynasty = "Aydinoglu"
 		birth_date = 1380.1.1
 		death_date = 1425.1.1
@@ -69,7 +69,7 @@ religious_school = hanafi_school
 
 1405.1.1 = {
 	monarch = {
-		name = "Cüneyd"
+		name = "CÃ¼neyd"
 		dynasty = "Aydinoglu"
 		birth_date = 1380.1.1
 		adm = 2
