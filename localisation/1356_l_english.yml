@@ -618,3 +618,7 @@
  earldom_desc:0 "Earldoms are found in Ireland. They were very conservative, and would resist a change in hands with everything with have."
  beylik:0 "Beylik"
  beylik_desc:0 "The Turkish beyliks fought for power in the 1300's, with the Ottomans eventually coming out on top. They often had complex alliance networks."
+ archduchy: "Archduchy"
+ archduchy_desc: "An Austrian creation, an archduchy is similar to a duchy, but with more privleges and a more prestigious standing. Austria is the biggest example of an archduchy, but there were a couple others in history."
+ byzantine_empire_gov: "Theme System"
+ byzantine_empire_gov_desc: "The Theme System was the Byzantine method of governing their territories."
