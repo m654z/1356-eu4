@@ -147,6 +147,23 @@ earldom = {
 	
 }
 
+swiss_canton = {
+	
+	allow_normal_conversion = no
+	legacy_government = yes
+	republic = yes
+	icon = "free_city"
+	modifiers = {
+		max_states = 1
+		global_unrest = -2
+		land_forcelimit_modifier = 0.15
+		mercenary_cost = -0.1
+	}
+	ai = {
+		factor = 4
+	}
+}
+
 french_vassal_feudal_monarchy = { #French Dukes Only
 	icon = "castle"
 	monarchy = yes
