@@ -36,6 +36,8 @@ monarchy = {
 				kalmar_union_reform
 				beylik_reform
 				earldom_reform
+				archduchy_reform
+				byzantine_empire_reform
 				#####END 1356 CHANGES#####
 			}
 		}
@@ -125,6 +127,8 @@ monarchy = {
 		french_feudal_monarchy
 		earldom
 		beylik
+		archduchy
+		byzantine_empire_gov
 		#####END 1356 CHANGES#####
 	}
 
@@ -147,6 +151,8 @@ monarchy = {
 		french_feudal_monarchy_reform
 		earldom_reform
 		beylik_reform
+		archduchy_reform
+		byzantine_empire_gov
 		#####END 1356 CHANGES#####
 	}
 
@@ -164,6 +170,8 @@ monarchy = {
 		###1356 ADDITION#######
 		timurid_government_reform
 		kalmar_union_reform
+		archduchy_reform
+		byzantine_empire_gov
 		#####END 1356 CHANGES#####
 		
 	}
