@@ -122,7 +122,7 @@ monarchy = {
 		barbary_sultanate
 		kalmar_union
 		french_vassal_feudal_monarchy
-		french_feudal_monarchy
+		#french_feudal_monarchy
 		earldom
 		beylik
 		#####END 1356 CHANGES#####
