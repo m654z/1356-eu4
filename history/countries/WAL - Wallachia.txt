@@ -342,8 +342,6 @@ capital = 161 # Tîrgoviste
 	}
 }
 
-1440.1.1 = { government = feudal_monarchy }
-
 1442.1.1 = {
 	monarch = {
 		name = "Mircea II"

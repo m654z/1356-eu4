@@ -91,4 +91,4 @@ capital = 90	# Brugge
 ########################################
 
 
-1440.1.1 = { government = feudal_monarchy }
+#1440.1.1 = { government = feudalism_reform }

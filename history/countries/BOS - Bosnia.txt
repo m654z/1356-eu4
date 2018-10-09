@@ -267,7 +267,7 @@ historical_friend = SER
 	}
 }
 
-1440.1.1 = { government = feudal_monarchy }
+#1440.1.1 = { government = feudalism_reform }
 
 1443.6.23 = {
 	monarch = {

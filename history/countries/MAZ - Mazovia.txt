@@ -102,8 +102,6 @@ capital = 257	# Warsaw
 	add_ruler_personality = architectural_visionary_personality
 }
 
-1440.1.1 = { government = feudal_monarchy }
-
 1448.1.1 = {
 	heir = {
 		name = "Konrad Rudy"

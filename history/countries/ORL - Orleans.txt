@@ -103,8 +103,6 @@ fixed_capital = 184 # Cannot move capital away from this province & no power cos
 	}
 }
 
-1440.1.1 = { government = feudal_monarchy }
-
 1440.11.27 = {
 	queen = {
 		country_of_origin = KLE
@@ -160,7 +158,10 @@ fixed_capital = 184 # Cannot move capital away from this province & no power cos
 
 # 1498.4.7 - Louis II becomes the King of France
 
-1515.1.2 = { government = despotic_monarchy }
+1515.1.2 = { 
+	government = monarchy
+	add_government_reform = autocracy_reform
+}
 
 1519.3.31 = {
 	monarch = {
@@ -235,6 +236,9 @@ fixed_capital = 184 # Cannot move capital away from this province & no power cos
 
 # 1574.5.30 - Henri III becomes the King of France
 
-1589.8.3 = { government = administrative_monarchy }
+1589.8.3 = { set_legacy_government = administrative_monarchy }
 
-1661.3.9 = { government = despotic_monarchy }
+1661.3.9 = { government = monarchy
+add_government_reform = autocracy_reform }
+
+

@@ -160,7 +160,7 @@ fixed_capital = 1857 # Cannot move capital away from this province & no power co
 	}
 }
 
-1440.1.1 = { government = feudal_monarchy }
+#1440.1.1 = { government = feudalism_reform }
 
 1463.7.16 = {
 	monarch = {

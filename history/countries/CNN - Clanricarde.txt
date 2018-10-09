@@ -52,7 +52,7 @@ capital = 376	# Galway
 }
 
 1440.1.1 = {
-	government = feudal_monarchy
+	add_government_reform = earldom_reform
 	heir = {
 		name = "Ulick Fionn"
 		monarch_name = "Ulick Fionn"

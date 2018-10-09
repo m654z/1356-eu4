@@ -1231,21 +1231,6 @@ global_trade = {
 	embracement_speed = {
 	
 		modifier = {
-			factor = 0.02
-			scale = yes
-			has_building = marketplace
-		}
-		modifier = {
-			factor = 0.1
-			scale = yes
-			has_building = trade_depot
-		}
-		modifier = {
-			factor = 1
-			scale = yes
-			has_building = stock_exchange
-		}
-		modifier = {
 			factor = 0.4 #Not scaled
 			province_trade_power = 15
 		}
@@ -1265,11 +1250,30 @@ global_trade = {
 			factor = 0.5
 			scale = yes
 			potential = {
-				province_has_center_of_trade_of_level = 2
+				OR = {
+					province_has_center_of_trade_of_level = 3
+				}
 			}
 			custom_trigger_tooltip = {
 				tooltip = tooltip_center_of_trade_spread
-				province_has_center_of_trade_of_level = 2
+				OR = {
+					province_has_center_of_trade_of_level = 3
+				}
+			}
+		}
+		modifier = {
+			factor = 0.1
+			scale = yes
+			potential = {
+				OR = {
+					province_has_center_of_trade_of_level = 2
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = tooltip_center_of_trade_spread
+				OR = {
+					province_has_center_of_trade_of_level = 2
+				}
 			}
 		}
 		modifier = {

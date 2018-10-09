@@ -188,7 +188,7 @@ capital = 1773	# Mystras
 	}
 }
 
-1432.1.1 = { primary_culture = greek religion = orthodox government = despotic_monarchy } # 1432 Byzantine Empire
+1432.1.1 = { primary_culture = greek religion = orthodox } # 1432 Byzantine Empire
 
 1453.5.29 = {
 	monarch = {

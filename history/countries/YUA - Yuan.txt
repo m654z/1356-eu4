@@ -361,7 +361,8 @@ historical_friend = CHG
 
 1368.9.14 = {
 	technology_group = nomad_group
-	government = steppe_horde
+	government = tribal
+	add_government_reform = steppe_horde
 	religion = tengri_pagan_reformed
 	capital = 2190
 }

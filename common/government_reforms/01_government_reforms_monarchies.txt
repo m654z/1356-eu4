@@ -62,7 +62,10 @@ grand_duchy_reform = {
 	allow_normal_conversion = yes
 	potential = {
 		OR = {
-			tag = LIT
+			AND = {
+				tag = LIT
+				NOT = { map_setup = map_setup_random }
+			}
 			AND = {
 				is_playing_custom_nation = yes
 				have_had_reform = grand_duchy_reform
@@ -82,8 +85,11 @@ indian_sultanate_reform = {
 	icon = "indian_sultanate"
 	allow_normal_conversion = yes
 	potential = {
-		capital_scope = {
-			superregion = india_superregion
+		OR = {
+			capital_scope = {
+				superregion = india_superregion
+			}
+			has_reform = indian_sultanate_reform
 		}
 		religion_group = muslim
 	}
@@ -113,6 +119,7 @@ shogunate = {
 	icon = "shogunate"
 	allow_normal_conversion = yes
 	potential = {
+		NOT = { has_country_flag = formed_japan_flag }
 		OR = {
 			AND = {
 				capital_scope = {
@@ -157,6 +164,7 @@ daimyo = {
 	icon = "daimyo"
 	allow_normal_conversion = no
 	potential = {
+		NOT = { has_country_flag = formed_japan_flag }
 		overlord = { has_reform = shogunate }
 	}
 	legacy_equivalent = daimyo_legacy
@@ -183,6 +191,7 @@ indep_daimyo = {
 	icon = "samurai"
 	allow_normal_conversion = no
 	potential = {
+		NOT = { has_country_flag = formed_japan_flag }
 		OR = {
 			AND = {
 				OR = {
@@ -366,8 +375,14 @@ ottoman_government = {
 	potential = {
 		religion_group = muslim
 		OR = {
-			tag = TUR
-			tag = RUM
+			AND = {
+				tag = TUR
+				NOT = { map_setup = map_setup_random }
+			}
+			AND = {
+				tag = RUM
+				NOT = { map_setup = map_setup_random }
+			}
 			AND = {
 				is_playing_custom_nation = yes
 				have_had_reform = ottoman_government
@@ -407,7 +422,10 @@ prussian_monarchy = {
 	allow_normal_conversion = yes
 	potential = {
 		OR = {
-			tag = PRU
+			AND = {
+				tag = PRU
+				NOT = { map_setup = map_setup_random }
+			}
 			AND = {
 				is_playing_custom_nation = yes
 				have_had_reform = prussian_monarchy
@@ -474,8 +492,14 @@ tsardom = {
 	potential = {
 		religion = orthodox
 		OR = {
-			tag = RUS
-			tag = UKR
+			AND = {
+				tag = RUS
+				NOT = { map_setup = map_setup_random }
+			}
+			AND = {
+				tag = UKR
+				NOT = { map_setup = map_setup_random }
+			}
 			AND = {
 				is_playing_custom_nation = yes
 				have_had_reform = tsardom
@@ -513,7 +537,10 @@ mamluk_government = {
 	potential = {
 		religion_group = muslim
 		OR = {
-			tag = MAM
+			AND = {
+				tag = MAM
+				NOT = { map_setup = map_setup_random }
+			}
 			AND = {
 				is_playing_custom_nation = yes
 				have_had_reform = mamluk_government
@@ -596,7 +623,10 @@ mughal_government = {
 	allow_normal_conversion = yes
 	potential = {
 		OR = {
-			tag = MUG
+			AND = {
+				tag = MUG
+				NOT = { map_setup = map_setup_random }
+			}
 			AND = {
 				is_playing_custom_nation = yes
 				have_had_reform = mughal_government
@@ -752,6 +782,7 @@ mughal_government = {
 	}
 }
 
+
 revolutionary_empire_reform = {
 	lock_level_when_selected = yes
 	icon = "rioting_burning_2"
@@ -905,7 +936,7 @@ gond_kingdom = {
 	nation_designer_cost = 0
 	nation_designer_trigger = {
 		technology_group = indian
-		primary_culture = gond
+		primary_culture = gondi
 	}
 	legacy_equivalent = tribal_kingdom_legacy
 	modifiers = {
@@ -935,6 +966,7 @@ elective_feudal_monarchy_reform = {
 	}
 
 	conditional = {
+		allow = { has_dlc = "Res Publica" }
 		is_elective = yes
 	}
 }
@@ -1123,12 +1155,8 @@ beylik_reform = {
 	icon = "noble_muslim"
 	allow_normal_conversion = yes
 	potential = {
-		AND = {
-			NOT = {
-				tag = TUR
-			}
-			primary_culture = turkish
-		}
+		NOT = {	tag = TUR }
+		primary_culture = turkish
 	}
 	legacy_equivalent = beylik 
 	lock_level_when_selected = yes 
@@ -1371,7 +1399,6 @@ yuan_celestial_empire_elective_heirs_reform = { #Mostly to show that you have th
 	allow_normal_conversion = yes
 	lock_level_when_selected = yes
 	potential = {
-		allow = { has_dlc = "Dharma" }
 		tag = YUA
 		is_emperor_of_china = yes
 		OR = {
@@ -1391,10 +1418,15 @@ yuan_celestial_empire_elective_heirs_reform = { #Mostly to show that you have th
 		custom_tooltip = celestial_empire_noble_republic_reform_tt
 		set_country_flag = yuan_celestial_empire_noble_republic_flag
 	}
+	
+	conditional = {
+		allow = { has_dlc = "Dharma" }
+	}
 
 }
 
 #####1356 Changes End 2########
+
 
 #Bureaucracy:
 
@@ -1436,6 +1468,7 @@ mansabdari_reform = {
 	allow_normal_conversion = yes
 	potential = {
 		tag = MUG
+		NOT = { map_setup = map_setup_random }
 	}
 	modifiers = {
 		army_tradition_decay = -0.003
@@ -1457,6 +1490,18 @@ clergy_in_administration_reform = {
 of_noble_bearing_reform = {
 	icon = "nobleman"
 	allow_normal_conversion = yes
+	potential = {
+		NOT = {
+			has_estate = estate_maratha
+			technology_group = indian
+			NOT = { has_estate = estate_nobles }
+		}
+		NOT = {
+			has_estate = estate_rajput
+			technology_group = indian
+			NOT = { has_estate = estate_nobles }
+		}
+	}
 	modifiers = {
 		leader_cost = -0.1
 		#Extra Loyalty
@@ -1544,6 +1589,7 @@ states_general_reform = {
 		queen = no
 		heir = no
 		duration = 4
+		has_term_election = yes
 		states_general_mechanic = {
 			statists = {
 				diplomatic_reputation = 1
@@ -1615,7 +1661,7 @@ become_a_republic_reform = {
 	}
 	effect = {
 		set_country_flag = populists_in_government
-		lose_reforms = 6
+		lose_reforms = 3
 		change_government_via_reform = republic
 	}
 	ai = {

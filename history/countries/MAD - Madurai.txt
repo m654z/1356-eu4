@@ -42,7 +42,8 @@ capital = 2101 # Tirunelveli
 # Rajas of Madurai 
 
 1431.1.1 = {
-	government = feudal_monarchy
+	government = monarchy
+	add_government_reform = feudalism_reform
 	religion = hinduism
 	monarch = {
 		name = "Parakrama"

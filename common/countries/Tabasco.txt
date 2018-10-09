@@ -98,7 +98,7 @@ ship_names = {
 	Gumarcaj Gucumatz
 	Hocchob Hormiguero Hunahpu Huracan
 	Ixbalanque Ixchel Ixtab Ichmac Ichmul Itzan Ixil Iximche Ixlu Izamal "Ix Chel"
-	Labná Louisville Lubaantun Lubaantun Jaina Jolja "Joya de Cerén"
+	Labná Louisville Lubaantun Jaina Jolja "Joya de Cerén"
 	Kaminaljuyu Kabah Kiuic "Kantunil Kin"
 	Lamanai 
 	Mayapan Machaquila Mani Muluchtzekel Muyil 

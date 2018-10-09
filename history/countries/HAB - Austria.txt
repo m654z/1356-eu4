@@ -261,8 +261,6 @@ national_focus = ADM
 	add_ruler_personality = careful_personality
 }
 
-1440.1.1 = { government = feudal_monarchy }
-
 #1450.1.1 = { decision = court_of_wards_and_liveries }
 
 #Ladislaus is freed.
@@ -543,7 +541,8 @@ national_focus = ADM
 	}
 }
 
-1556.10.2 = { government = despotic_monarchy }
+1556.10.2 = { government = monarchy
+add_government_reform = autocracy_reform }
 
 1560.1.1 = {
 	leader = {
@@ -1284,8 +1283,6 @@ national_focus = ADM
 		mil = 1
 	}
 }
-
-1740.10.22 = { government = enlightened_despotism }
 
 1741.1.1 = { leader = {	name = "von Laudon"            	type = general	fire = 4	shock = 5	manuever = 5	siege = 0	death_date = 1789.1.1 } }
 

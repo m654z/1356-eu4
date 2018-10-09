@@ -1,5 +1,6 @@
 government = monarchy
-add_government_reform = feudalism_reformgovernment_rank = 1
+add_government_reform = feudalism_reform
+government_rank = 1
 primary_culture = hannoverian
 religion = catholic
 technology_group = western
@@ -154,7 +155,7 @@ capital = 1775	# Kiel
 }
 
 1440.1.1 = {
-	government = feudal_monarchy 
+	add_government_reform = feudalism_reform 
 	heir = {
 		name = "Christian I"
 		monarch_name = "Christian I"

@@ -162,8 +162,6 @@ add_army_professionalism = 0.05
 	}
 }
 
-1440.1.1 = { government = feudal_monarchy }
-
 1443.2.21 = {
 	monarch = {
 		name = "Oddantonio I"

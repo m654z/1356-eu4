@@ -1,5 +1,5 @@
 government = monarchy
-add_government_reform = feudalism_reform
+add_government_reform = earldom_reform
 government_rank = 1
 technology_group = western
 primary_culture = normand
@@ -51,7 +51,8 @@ capital = 4120	# Kildare
 }
 
 1440.1.1 = {
-	government = feudal_monarchy
+	government = monarchy
+	add_government_reform = earldom_reform
 }
 
 1444.1.1 = {

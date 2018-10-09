@@ -53,7 +53,3 @@ capital = 242	# Gwynedd
 		mil = 4
 	}
 }
-
-1440.1.1 = {
-	government = feudal_monarchy
-}

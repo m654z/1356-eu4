@@ -201,7 +201,11 @@ fixed_capital = 175 # Cannot move capital away from this province & no power cos
 	}
 }
 
-1440.1.1 = { government = feudal_monarchy }
+1440.1.1 = { 
+	government = monarchy
+	add_government_reform = feudalism_reform
+}
+
 
 1450.11.5 = {
 	monarch = {
@@ -303,7 +307,10 @@ fixed_capital = 175 # Cannot move capital away from this province & no power cos
 	}
 }
 		
-1515.1.2 = { government = despotic_monarchy }
+1525.4.12 = { 
+	government = monarchy
+	add_government_reform = autocracy_reform
+}
 
 1525.4.12 = {
 	monarch = {
@@ -335,6 +342,9 @@ fixed_capital = 175 # Cannot move capital away from this province & no power cos
 
 1560.1.1   = { religion = reformed }
 
-1562.11.18 = { government = administrative_monarchy }
+1562.11.18 = { set_legacy_government = administrative_monarchy }
 
-1661.3.9   = { government = despotic_monarchy }
+1661.3.9 = { 
+	government = monarchy
+	add_government_reform = autocracy_reform
+}

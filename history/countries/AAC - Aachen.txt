@@ -17,5 +17,3 @@ fixed_capital = 1878 # Cannot move capital away from this province & no power co
 		regent = yes
 	}
 }
-
-1798.1.1 = { government = constitutional_republic }

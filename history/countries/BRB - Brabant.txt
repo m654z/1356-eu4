@@ -141,4 +141,4 @@ capital = 92
 
 # 1430.8.4 Philippe I dies with no heirs, Burgundy (cousin of Philippe I) inherits the Duchy of Brabant
 
-1440.1.1 = { government = feudal_monarchy }
+#1440.1.1 = { government = feudalism_reform }

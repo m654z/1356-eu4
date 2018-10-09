@@ -7,7 +7,7 @@ primary_culture = irish
 capital = 4121	# Ulster
 
 1440.1.1 = {
-	government = feudal_monarchy
+	add_government_reform = earldom_reform
 }
 
 1444.1.1 = { #Magginis clan gained control of much of this province following the collapse of English control of the Earldom of Ulster. Date and name fictional as we haven't found a list of these Magginises.

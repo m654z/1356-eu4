@@ -71,6 +71,3 @@ capital = 2974	# Loon
 		mil = 2
 	}
 }
-
-
-1440.1.1 = { government = feudal_monarchy }

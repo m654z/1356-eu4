@@ -125,8 +125,6 @@ fixed_capital = 58 # Cannot move capital away from this province & no power cost
 	add_ruler_personality = charismatic_negotiator_personality
 }
 
-1440.1.1 = { government = feudal_monarchy }
-
 1450.1.1 = {
 	heir = {
 		name = "Ernst"

@@ -273,8 +273,6 @@ fixed_capital = 53 # Cannot move capital away from this province & no power cost
 	add_heir_personality = craven_personality
 }
 
-1440.1.1 = { government = feudal_monarchy }
-
 1445.6.1 = {
 	monarch = {
 		name = "Friedrich II der Fromme"

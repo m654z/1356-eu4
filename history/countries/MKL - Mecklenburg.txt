@@ -226,8 +226,6 @@ fixed_capital = 46 # Cannot move capital away from this province & no power cost
 	add_ruler_personality = drunkard_personality
 }
 
-1440.1.1 = { government = feudal_monarchy }
-
 1441.1.1 = {
 	heir = {
 		name = "Magnus"
@@ -529,7 +527,9 @@ fixed_capital = 46 # Cannot move capital away from this province & no power cost
 	}
 }
 
-1740.1.1 = { government = enlightened_despotism }
+1740.1.1 = { government = monarchy
+# add_government_reform = letat_cest_moi_reform 
+}
 
 1756.5.30 = {
 	monarch = {

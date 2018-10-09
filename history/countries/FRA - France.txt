@@ -235,8 +235,6 @@ historical_rival = HAB
 	}
 }
 
-1440.1.1 = { government = feudal_monarchy }
-
 1455.1.1 = { add_army_professionalism = 0.1 }
 
 1461.7.22 = {
@@ -387,7 +385,9 @@ historical_rival = HAB
 
 1511.1.1 = { leader = {	name = "Gaston de Foix"		type = general	fire = 2	shock = 4	manuever = 3	siege = 0	death_date = 1512.4.11 } }
 
-1515.1.1 = { government = despotic_monarchy }
+1515.1.1 = { government = monarchy
+add_government_reform = autocracy_reform }
+
 
 1515.1.1 = { leader = { name = "Pedro Navarro"		type = general	fire = 3	shock = 2	manuever = 2	siege = 3	death_date = 1528.8.28 } }
 
@@ -657,7 +657,9 @@ historical_rival = HAB
 
 1589.8.3 = { leader = { name = "François de Bonne"	type = general	fire = 3	shock = 3	manuever = 4	siege = 0	death_date = 1626.9.21 } }
 
-1589.8.8 = { government = despotic_monarchy }
+1589.8.8 = { government = monarchy
+add_government_reform = autocracy_reform }
+
 
 1598.4.13 = { clr_country_flag = religious_turmoil clr_country_flag = religious_intolerance  decision = enact_edict_de_nantes } # Edict of Nantes
 
@@ -805,7 +807,6 @@ historical_rival = HAB
     add_queen_personality = charismatic_negotiator_personality
 }
 
-1661.3.9 = { government = enlightened_despotism }
 
 1665.1.1 = { leader = {	name = "Jean-Baptiste de Valbelle"		type = admiral	fire = 2	shock = 3	manuever = 2	siege = 0	death_date = 1690.1.1 } }
 
@@ -1060,7 +1061,7 @@ historical_rival = HAB
 
 1788.12.27 = { set_country_flag = road_to_bankruptcy }
 
-1789.7.14 = { set_country_flag = revolution government = constitutional_monarchy }
+1789.7.14 = { set_country_flag = revolution set_legacy_government = constitutional_monarchy }
 
 #1790.1.1 = { leader = {	name = "Albert De Luynes"	type = general	fire = 3	shock = 2	manuever = 2	siege = 0	death_date = 1807.5.23  } }
 #1790.1.1 = { leader = {	name = "Duc de Luynes"		type = general	fire = 3	shock = 2	manuever = 2	siege = 0	death_date = 1807.5.20 } }
@@ -1071,7 +1072,7 @@ historical_rival = HAB
 
 #1792.4.1 = { leader = {	name = "François Christophe Kellermann"	type = general	fire = 3	shock = 4	manuever = 4	siege = 0	death_date = 1814.4.6 } }
 
-1792.9.21 = { government = revolutionary_republic revolution_target = yes government_rank = 3 } # The establishment of the First Republic
+1792.9.21 = { government = republic add_government_reform = revolutionary_republic_reform revolution_target = yes government_rank = 3 } # The establishment of the First Republic
 #1792.9.21 = { leader = {	name = "André Masséna"		type = general	fire = 4	shock = 5	manuever = 4	siege = 2 	death_date = 1814.4.6 } } # Removed /SWÖ
 #1792.9.21 = { leader = {	name = "Jean Victor Marie Moreau"	type = general	fire = 4	shock = 3	manuever = 4	siege = 0	death_date = 1813.9.2 } }
 #1792.9.21 = { leader = {	name = "Nicolas-Charles-Victor Oudinott"	type = general	fire = 5	shock = 3	manuever = 3	siege = 1	death_date = 1814.4.6 } }
@@ -1146,7 +1147,8 @@ historical_rival = HAB
 1802.1.1 = { leader = {	name = "Jean-Baptiste Bessières"	type = general	fire = 3	shock = 2	manuever = 4	siege = 1	death_date = 1813.5.1 } }
 
 1804.5.18 = {
-	government = revolutionary_empire
+	government = monarchy
+	add_government_reform = revolutionary_empire_reform
     queen = {
         country_of_origin = FRA
         name = "Joséphine"
@@ -1191,7 +1193,7 @@ historical_rival = HAB
 }
 
 1814.4.11 = {
-	government = administrative_monarchy
+	set_legacy_government = administrative_monarchy
 	government_rank = 2
 	monarch = {
 		name = "Louis XVIII"
@@ -1219,7 +1221,8 @@ historical_rival = HAB
 
 
 1815.3.20 = {
-	government = revolutionary_empire 
+	government = monarchy
+	add_government_reform = revolutionary_empire_reform
 	monarch = {
 		name = "Napoléon I"
 		dynasty = "Bonaparte" 
@@ -1248,7 +1251,7 @@ historical_rival = HAB
 }
 
 1815.7.8 = {
-	government = administrative_monarchy
+	set_legacy_government = administrative_monarchy
 	monarch = {
 		name = "Louis XVIII"
 		dynasty = "de Bourbon"

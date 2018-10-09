@@ -225,8 +225,6 @@ capital = 1858	# Stettin
 	add_ruler_personality = scholar_personality
 }
 
-1440.1.1 = { government = feudal_monarchy }
-
 1444.5.29 = {
 	heir = {
 		name = "Ota"

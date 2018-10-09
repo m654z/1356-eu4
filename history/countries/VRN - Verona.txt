@@ -1,4 +1,4 @@
-government = monarhcy
+government = monarchy
 add_government_reform = feudalism_reform
 government_rank = 1
 primary_culture = venetian
@@ -123,5 +123,3 @@ capital = 108	# Verona
 		mil = 2
 	}
 }
-
-1440.1.1 = { government = feudal_monarchy }

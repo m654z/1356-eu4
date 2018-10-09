@@ -1,6 +1,5 @@
 government = monarchy
 add_government_reform = autocracy_reform
-government = despotic_monarchy
 primary_culture = chimuan
 religion = inti
 technology_group = andean

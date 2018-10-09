@@ -145,8 +145,6 @@ fixed_capital = 190 # Cannot move capital away from this province & no power cos
 	}
 }
 
-1440.1.1 = { government = feudal_monarchy }
-
 1456.12.5 = {
 	monarch = {
 		name = "Jean II"
@@ -320,6 +318,7 @@ fixed_capital = 190 # Cannot move capital away from this province & no power cos
 
 # 1531.9.22 - To French Royal Domain
 
-1562.11.18 = { religion = reformed government = administrative_monarchy }
+1562.11.18 = { religion = reformed set_legacy_government = administrative_monarchy }
 
-1661.3.9 = { government = despotic_monarchy }
+1661.3.9 = { government = monarchy
+add_government_reform = autocracy_reform }

@@ -84,8 +84,6 @@ capital = 63	# Erfurt
 	}
 }
 
-1440.1.1 = { government = feudal_monarchy }
-
 # 1440.5.7 - 1445.9.10 Part of Saxony
 
 1445.9.10 = {
@@ -446,7 +444,9 @@ capital = 63	# Erfurt
 	}
 }
 
-1746.1.1 = { government = despotic_monarchy }
+1746.1.1 = { government = monarchy
+add_government_reform = autocracy_reform }
+
 
 1748.1.19 = {
 	monarch = {
@@ -505,8 +505,9 @@ capital = 63	# Erfurt
 		dip = 5
 		mil = 3
 	}
-	government = enlightened_despotism
+	government = monarchy
 }
+
 
 1783.2.2 = {
 	heir = {

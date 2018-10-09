@@ -147,8 +147,6 @@ capital = 70	# Stuttgart
 	}
 }
 
-1440.1.1 = { government = feudal_monarchy }
-
 1442.1.25 = {
 	monarch = {
 		name = "Ulrich V"
@@ -279,7 +277,9 @@ capital = 70	# Stuttgart
 	}
 }
 
-1556.10.2 = { government = despotic_monarchy }
+1556.10.2 = { government = monarchy
+add_government_reform = autocracy_reform }
+
 
 1568.12.28 = {
 	monarch = {

@@ -1,5 +1,6 @@
 government = monarchy
-add_government_reform = french_vassal_feudal_monarchy_reformgovernment_rank = 1
+add_government_reform = french_vassal_feudal_monarchy_reform
+government_rank = 1
 technology_group = western
 religion = catholic
 primary_culture = gascon
@@ -210,8 +211,6 @@ fixed_capital = 176 # Cannot move capital away from this province & no power cos
 	}
 }
 
-1440.1.1 = { government = feudal_monarchy }
-
 1444.1.1 = {
 	heir = {
 		name = "Gaston"
@@ -264,10 +263,12 @@ fixed_capital = 176 # Cannot move capital away from this province & no power cos
 
 # 1479.2.13 Foix is incorporated in Navarra
 
-1512.9.1  = { government = despotic_monarchy }
+1512.9.12 = { government = monarchy
+add_government_reform = autocracy_reform }
 
-1555.5.30 = { government = administrative_monarchy }
+1555.5.30 = { set_legacy_government = administrative_monarchy }
 
 1560.1.1  = { religion = reformed }
 
-1661.3.9  = { government = despotic_monarchy }
+1661.3.9 = { government = monarchy
+add_government_reform = autocracy_reform }

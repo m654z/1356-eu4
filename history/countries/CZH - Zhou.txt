@@ -40,7 +40,8 @@ historical_rival = CSH
 1382.1.6 = { religion = confucianism }
 
 1662.1.1 = { 
-	government = despotic_monarchy
+	government = monarchy
+	add_government_reform = autocracy_reform
 	government_rank = 1
 	monarch = {
 		name = "Sangui"

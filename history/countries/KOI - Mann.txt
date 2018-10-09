@@ -36,7 +36,3 @@ capital = 4365 # Mann
 		mil = 2
 	}
 }
-
-1440.1.1 = {
-	government = feudal_monarchy
-}

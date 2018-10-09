@@ -57,8 +57,6 @@ religious_school = hanafi_school
 	}
 }
 
-1444.1.1 = { decision = jizya_tax }
-
 1460.1.1 = {
 	monarch = {
 		name = "Hussain I"

@@ -253,8 +253,6 @@ capital = 121 # Napoli
 	}
 }
 
-1440.1.1 = { government = feudal_monarchy }
-
 #################################################################
 #  1442.6.2 - 1458.6.27 PU under Aragon (Alfons de Trastámara)  #
 #################################################################
@@ -367,7 +365,10 @@ capital = 121 # Napoli
 	}		
 }
 
-1709.12.22 = { government = despotic_monarchy }
+
+1709.12.22 = { government = monarchy
+add_government_reform = autocracy_reform }
+
 
 1713.9.22 = {
 	monarch = {
@@ -381,7 +382,7 @@ capital = 121 # Napoli
 	}
 }
 
-1734.6.2 = { government = enlightened_despotism government_rank = 1 }
+1734.6.2 = { government = monarchy government_rank = 1 }
 
 1734.6.2 = {
 	monarch = {

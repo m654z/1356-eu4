@@ -105,7 +105,7 @@ capital = 4118	# Cork
 }
 
 1430.1.1 = {
-	government = feudal_monarchy
+	add_government_reform = earldom_reform
 	heir = {
 		name = "Thomas"
 		monarch_name = "Thomas"

@@ -301,10 +301,13 @@ historical_rival = TNG
 }
 
 1644.10.30 = {
-	government = celestial_empire
+	government = monarchy
 }
 
-1645.7.1 = { capital = 1816 } # Beijing
+1645.7.1 = { 
+	add_government_reform = celestial_empire
+	capital = 1816 
+} # Beijing
 
 1654.5.4 = {
 	heir = {

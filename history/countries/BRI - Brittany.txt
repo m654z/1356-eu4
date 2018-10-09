@@ -108,7 +108,7 @@ capital = 172	# Nantes
 	}
 }
 
-1440.1.1 = { government = feudal_monarchy }
+#1440.1.1 = { government = feudalism_reform }
 
 1442.8.29 = {
 	monarch = {
@@ -308,6 +308,7 @@ capital = 172	# Nantes
 	}
 }
 
-1589.8.3 = { government = administrative_monarchy }
+1589.8.3 = { set_legacy_government = administrative_monarchy }
 
-1661.3.9 = { government = despotic_monarchy }
+1661.3.9 = { government = monarchy
+add_government_reform = autocracy_reform }

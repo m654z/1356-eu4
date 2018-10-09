@@ -93,7 +93,8 @@ technology = { #The Early Carrack
 	naval_morale			=	0.2
 	naval_maintenance		= 	0.1
 	range					= 	40
-	trade_efficiency 		= 	0.05
+	trade_efficiency 		= 	0.02
+	#global_colonial_growth	= 	15
 	
 	enable = early_carrack
 
@@ -118,7 +119,7 @@ technology = {
 	# Tech 5
 	year = 1466
 	
-	trade_efficiency 		= 	0.1
+	trade_efficiency 		= 	0.2
 }
 
 technology = { #Shipyards
@@ -168,7 +169,7 @@ technology = { #The Flute
 	# Tech 10
 	year = 1531
 	
-	trade_efficiency		= 	0.05
+	trade_efficiency		= 	0.02
 	trade_range				=	20
 	global_colonial_growth  = 	10
 	enable = flute
@@ -198,7 +199,7 @@ technology = { #Chartered Companies
 	# Tech 13
 	year = 1570
 	
-	trade_efficiency 		= 	0.05
+	trade_efficiency 		= 	0.02
 	enable = brig
 
 }
@@ -232,7 +233,7 @@ technology = { #Development of Maritime Law
 	# Tech 16
 	year = 1609
 	
-	trade_efficiency 		= 	0.05
+	trade_efficiency 		= 	0.02
 	trade_range				=	20
 
 }
@@ -280,7 +281,7 @@ technology = { #Naval Professionalization
 	# Tech 20
 	year = 1661
 
-	trade_efficiency 		= 	0.05
+	trade_efficiency 		= 	0.02
 	trade_range				=	20
 	num_accepted_cultures = 1
 	
@@ -331,7 +332,7 @@ technology = { #The Archipelago Frigate
 	grand_shipyard = yes 
 
 	
-	trade_efficiency 		= 	0.05
+	trade_efficiency 		= 	0.02
 	trade_range				=	20
 	enable = archipelago_frigate
 	may_corrupt_officials = yes
@@ -374,7 +375,7 @@ technology = { #Joint Stock Companies
 	# Tech 28
 	year = 1775
 	
-	trade_efficiency 		= 	0.05
+	trade_efficiency 		= 	0.02
 	trade_range				=	20
 }
 

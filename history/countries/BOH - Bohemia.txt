@@ -181,7 +181,7 @@ add_army_professionalism = 0.1
 	}
 }
 
-1440.1.1 = { government = feudal_monarchy }
+#1440.1.1 = { government = feudalism_reform }
 
 # 1453.10.28 - 1457.11.23 PU under Austria (Ladislaus Postumus von Habsburg)
 
@@ -294,10 +294,12 @@ add_army_professionalism = 0.1
 }
 
 1526.8.30 = {
-	government = despotic_monarchy
+	government = monarchy
+	add_government_reform = autocracy_reform
 	elector = no
 	add_accepted_culture = schlesian
 }
+
 
 1526.8.30 = {
 	monarch = {
@@ -309,8 +311,6 @@ add_army_professionalism = 0.1
 		mil = 4
 	}
 }
-
-1556.10.2 = { government = despotic_monarchy }
 
 1562.9.17 = {
 	monarch = {

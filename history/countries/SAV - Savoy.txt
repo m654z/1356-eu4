@@ -146,8 +146,6 @@ add_army_professionalism = 0.05
 	}
 }
 
-1440.1.1 = { government = feudal_monarchy }
-
 1465.1.30 = {
 	monarch = {
 		name = "Amedeo IX"
@@ -333,7 +331,10 @@ add_army_professionalism = 0.05
 1538.6.17 = {
 	capital = 102 # Nice
 }
-1553.8.18 = { government = despotic_monarchy }
+
+1553.8.18 = { government = monarchy
+add_government_reform = autocracy_reform }
+
 
 1553.8.18 = {
 	monarch = {

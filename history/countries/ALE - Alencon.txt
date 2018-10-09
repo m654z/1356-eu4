@@ -173,7 +173,11 @@ fixed_capital = 1879 # Cannot move capital away from this province & no power co
 	}
 }
 
-1440.1.1 = { government = feudal_monarchy }
+1440.1.1 = { 
+	government = monarchy
+	add_government_reform = feudalism_reform
+}
+
 
 1454.1.1 = {
 	heir = {
@@ -260,7 +264,11 @@ fixed_capital = 1879 # Cannot move capital away from this province & no power co
 	}
 }
 
-1515.1.2 = { government = despotic_monarchy }
+1515.1.2 = { 
+	government = monarchy
+	add_government_reform = autocracy_reform
+}
+
 
 1525.4.12 = {
 	monarch = {
@@ -290,6 +298,10 @@ fixed_capital = 1879 # Cannot move capital away from this province & no power co
 
 # 1549.12.21 - To French Royal Domain
 
-1589.8.3 = { government = administrative_monarchy }
+1589.8.3 = { set_legacy_government = administrative_monarchy }
 
-1661.3.9 = { government = despotic_monarchy }
+1661.3.9 = { 
+	government = monarchy
+	add_government_reform = autocracy_reform
+}
+

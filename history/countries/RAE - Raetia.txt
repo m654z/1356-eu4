@@ -64,7 +64,7 @@ capital = 1873	# Graubünden
 }
 
 1440.1.1 = { 
-	government = administrative_republic
+	set_legacy_government = administrative_republic
 	monarch = {
 		name = "Gotteshausbund"
 		adm = 3

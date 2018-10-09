@@ -177,7 +177,7 @@ fixed_capital = 138 # Cannot move capital away from this province & no power cos
 	}
 }
 
-1440.1.1 = { government = feudal_monarchy }
+1440.1.1 = { add_government_reform = feudalism_reform }
 
 1456.12.25 = {
 	monarch = {
@@ -244,9 +244,6 @@ fixed_capital = 138 # Cannot move capital away from this province & no power cos
 		mil = 2
 	}
 }
-
-#Prince-Bishops of Montenegro
-1516.1.1 = { government = theocratic_government }
 
 1516.1.1 = {
 	monarch = {

@@ -138,8 +138,6 @@ capital = 81	# Kassel
 	}
 }
 
-1440.1.1 = { government = feudal_monarchy }
-
 1458.1.18 = {
 	monarch = {
 		name = "Ludwig II"

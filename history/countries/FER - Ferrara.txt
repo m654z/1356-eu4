@@ -282,7 +282,9 @@ add_army_professionalism = 0.05
 	}
 }
 
-1534.10.30 = { government = despotic_monarchy }
+1534.10.30 = { government = monarchy
+add_government_reform = autocracy_reform }
+
 
 1534.10.30 = {
 	monarch = {

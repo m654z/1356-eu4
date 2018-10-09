@@ -1,4 +1,4 @@
-government = monrachy
+government = monarchy
 add_government_reform = earldom_reform
 government_rank = 1
 technology_group = western
@@ -59,7 +59,7 @@ capital = 4119	# Sligo
 }
 
 1440.1.1 = {
-	government = feudal_monarchy
+	add_government_reform = earldom_reform
 	monarch = {
 		name = "Eoghan"
 		dynasty = "O'Conor"

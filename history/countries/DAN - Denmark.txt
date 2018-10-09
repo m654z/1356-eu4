@@ -128,7 +128,7 @@ capital = 12 # Sjaelland
 }
 
 1440.4.9 = {
-	government = feudal_monarchy
+	add_government_reform = feudalism_reform
 	monarch = {
 		name = "Christopher III"
 		dynasty = "von Wittelsbach"
@@ -151,7 +151,7 @@ capital = 12 # Sjaelland
 		death_date = 1471.4.11
 		female = yes
 		adm = 5
-		dip = 5
+		dip = 4
 		mil = 2
 	}
 }
@@ -168,20 +168,6 @@ capital = 12 # Sjaelland
 	set_country_flag = christian_elected
 }
 
-1445.9.26 = {
-	queen = {
-		country_of_origin = BRA
-		name = "Dorothea"
-		dynasty = "von Hohenzollern"
-		birth_date = 1430.1.1
-		death_date = 1471.4.11
-		female = yes
-		adm = 5
-		dip = 4
-		mil = 2
-	}
-}
-
 1455.2.2 = {
 	heir = {
 		name = "Hans"
@@ -195,7 +181,8 @@ capital = 12 # Sjaelland
 		mil = 4
 		leader = { 
 			name = "Hans"
-			type = general
+			type = general
+
 			fire = 2
 			shock = 2
 			manuever = 2
@@ -203,6 +190,7 @@ capital = 12 # Sjaelland
 		}
 	}
 }
+
 
 1481.5.23 = {
 	monarch = {
@@ -414,7 +402,8 @@ capital = 12 # Sjaelland
 		mil = 0
 		leader = { 
 			name = "Christian IV"
-			type = general
+			type = general
+
 			fire = 3
 			shock = 3
 			manuever = 2
@@ -538,7 +527,8 @@ capital = 12 # Sjaelland
 		mil = 3
 		leader = { 
 			name = "Christian V"
-			type = general
+			type = general
+
 			fire = 3
 			shock = 3
 			manuever = 3
@@ -582,7 +572,8 @@ capital = 12 # Sjaelland
 	}
 }
 
-1670.2.10 = { government = despotic_monarchy }
+1670.2.10 = { government = monarchy
+add_government_reform = autocracy_reform }
 
 1671.10.11 = {
 	heir = {

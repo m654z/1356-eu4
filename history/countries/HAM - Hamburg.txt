@@ -23,4 +23,4 @@ historical_friend = RIG # Riga
 
 1529.1.1 = { religion = protestant }
 
-1529.1.1 = { government = administrative_republic }
+1529.1.1 = { set_legacy_government = administrative_republic }

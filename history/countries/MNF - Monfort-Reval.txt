@@ -128,8 +128,7 @@ capital = 170	# Finistere
 	}
 }
 
-1440.1.1 = { government = feudal_monarchy }
+1589.8.3 = { set_legacy_government = administrative_monarchy }
 
-1589.8.3 = { government = administrative_monarchy }
-
-1661.3.9 = { government = despotic_monarchy }
+1661.3.9 = { government = monarchy
+add_government_reform = autocracy_reform }

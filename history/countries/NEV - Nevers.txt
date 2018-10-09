@@ -125,7 +125,6 @@ fixed_capital = 191 # Cannot move capital away from this province & no power cos
 	}
 }
 
-1440.1.1 = { government = feudal_monarchy }
 
 1464.5.1 = {
 	monarch = {
@@ -209,6 +208,8 @@ fixed_capital = 191 # Cannot move capital away from this province & no power cos
 	}
 }
 
-1659.7.11 = { government = administrative_monarchy } # Mazarin
+1659.7.11 = { set_legacy_government = administrative_monarchy } # Mazarin
 
-1661.3.9 = { government = despotic_monarchy }
+1661.3.9 = { government = monarchy
+add_government_reform = autocracy_reform }
+

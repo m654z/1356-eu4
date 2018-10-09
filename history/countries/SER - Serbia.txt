@@ -165,8 +165,6 @@ historical_rival = TUR
 	}
 }
 
-1440.1.1 = { government = feudal_monarchy }
-
 1456.12.25 = {
 	monarch = {
 		name = "Lazar II"
@@ -268,7 +266,7 @@ historical_rival = TUR
 		dip = 1
 		mil = 1
 	}
-	government = administrative_monarchy
+	set_legacy_government = administrative_monarchy
 	capital = 141
 }
 

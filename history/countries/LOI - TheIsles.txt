@@ -16,10 +16,6 @@ government_rank = 1
 	}
 }
 
-1440.1.1 = {
-	government = feudal_monarchy
-}
-
 1444.1.1 = {
 	heir = {
 		name = "Eoin"

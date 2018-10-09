@@ -206,8 +206,6 @@ national_focus = ADM
 	}
 }	# Also Monarch of Hungary 1439.10.27 - 1444.11.10
 
-1440.1.1 = { government = feudal_monarchy }
-
 1444.11.11 = {
 	monarch = {
 		name = "(Interregnum)"

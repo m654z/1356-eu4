@@ -233,7 +233,7 @@ capital = 73	# Innsbruck
 	}
 }
 
-1440.1.1 = { government = feudal_monarchy }
+1440.1.1 = { add_government_reform = feudalism_reform }
 
 1454.1.1 = {
 	monarch = {
@@ -335,7 +335,8 @@ capital = 73	# Innsbruck
 	}
 }
 
-1646.5.17 = { government = despotic_monarchy }
+1646.5.17 = { government = monarchy
+add_government_reform = autocracy_reform }
 
 1662.1.1 = {
 	monarch = {

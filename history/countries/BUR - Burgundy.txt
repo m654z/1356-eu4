@@ -255,7 +255,8 @@ capital = 192	# Dijon
 	}
 }
 
-1506.9.26 = { government = despotic_monarchy }
+1506.9.26 = { government = monarchy
+add_government_reform = autocracy_reform }
 
 1506.9.26 = {
 	monarch = {
@@ -269,6 +270,7 @@ capital = 192	# Dijon
 }
 
 
-1589.8.3 = { government = administrative_monarchy }
+1589.8.3 = { set_legacy_government = administrative_monarchy }
 
-1661.3.9 = { government = despotic_monarchy }
+1661.3.9 = { government = monarchy
+add_government_reform = autocracy_reform }

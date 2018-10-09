@@ -103,7 +103,8 @@ religious_school = shafii_school
 }
 
 1666.1.1 = {
-	government = despotic_monarchy
+		government = monarchy
+add_government_reform = autocracy_reform
 	monarch = { 
 		name = "Ahmad I"
 		dynasty = "Kambarani"

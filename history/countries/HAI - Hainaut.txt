@@ -171,5 +171,3 @@ capital = 91	# Mons
 		mil = 2
 	}
 }
-
-1440.1.1 = { government = feudal_monarchy }

@@ -164,7 +164,7 @@ capital = 57 # Brunswick
 	}
 }
 
-1440.1.1 = { government = feudal_monarchy }
+#1440.1.1 = { government = feudalism_reform }
 
 #Dukes of Braunschweig-Wolfenbüttel
 

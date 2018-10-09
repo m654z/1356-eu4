@@ -212,7 +212,7 @@ capital = 214 # Zaragoza
 	}
 }
 
-1440.1.1 = { government = feudal_monarchy }
+#1440.1.1 = { government = feudalism_reform }
 
 1443.1.1 = { leader = {	name = "Bernat de Vilamarí"	type = admiral	fire = 3	shock = 2	manuever = 2	siege = 0	death_date = 1463.9.1 } }
 
@@ -287,8 +287,11 @@ capital = 214 # Zaragoza
 
 1512.1.1 = { leader = { name = "Fernando d'Avalos"	 	type = general	fire = 3	shock = 3	manuever = 3	siege = 1	death_date = 1525.11.4 } }
 
-1516.1.23 = { government = despotic_monarchy }
+1516.1.23 = { government = monarchy
+add_government_reform = autocracy_reform }
 
-1724.1.20 = { government = administrative_monarchy }
+1724.1.20 = { set_legacy_government = administrative_monarchy }
 
-1759.8.12 = { government = despotic_monarchy }
+1759.8.12 = { government = monarchy
+add_government_reform = autocracy_reform }
+

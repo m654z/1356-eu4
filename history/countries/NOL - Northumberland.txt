@@ -104,7 +104,4 @@ capital = 246	# Newcastle
 	}
 }
 
-1440.1.1 = {
-	government = feudal_monarchy
-}
 # 1405 Duchy of Nothumberland forfeit independence

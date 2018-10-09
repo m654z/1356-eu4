@@ -168,6 +168,4 @@ capital = 4383	# Den Haag
 	}
 }
 
-1440.1.1 = { government = feudal_monarchy }
-
-1580.1.1 = { government = administrative_republic } # Constitutionalism and the General Estates
+1580.1.1 = { set_legacy_government = administrative_republic } # Constitutionalism and the General Estates

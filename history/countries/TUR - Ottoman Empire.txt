@@ -109,8 +109,6 @@ religious_school = hanafi_school
 	}
 }
 
-1399.1.1 = { decision = jizya_tax }
-
 # Actually Ottoman interregnum between 1402-1413
 
 1403.3.8 = { capital = 326 } # Angora

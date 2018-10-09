@@ -62,5 +62,3 @@ capital = 72	# Freiburg
 	}
 }
 
-1440.1.1 = { government = feudal_monarchy }
-

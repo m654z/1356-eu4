@@ -230,7 +230,7 @@ fixed_capital = 321 # Cannot move capital away from this province & no power cos
 	}
 }
 
-1440.1.1 = { government = feudal_monarchy }
+#1440.1.1 = { government = feudalism_reform }
 
 1442.2.3 = {
 	queen = {

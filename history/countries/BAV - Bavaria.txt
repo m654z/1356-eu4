@@ -149,7 +149,7 @@ capital = 65	# München!
 	}
 }
 
-1440.1.1 = { government = feudal_monarchy }
+#1440.1.1 = { government = feudalism_reform }
 
 1460.2.28  = {
 	monarch = {

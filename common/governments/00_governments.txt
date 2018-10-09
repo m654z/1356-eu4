@@ -69,6 +69,8 @@ monarchy = {
 				meritocratic_focus_reform
 				dakhni_culture_reform
 				zabt_reform
+				permanent_marathas_council_reform
+				governmental_purbias_register_reform
 			}
 		}
 		deliberative_assembly = {
@@ -201,6 +203,7 @@ republic = {
 		noble_republic
 		oligarchic_republic
 		merchant_republic
+		venetian_merchant_republic
 		imperial_city
 		trading_city_legacy
 		ambrosian_republic_legacy
@@ -220,6 +223,7 @@ republic = {
 			reforms = {
 				oligarchy_reform
 				merchants_reform
+				venice_merchants_reform
 				noble_elite_reform
 				free_city
 				trading_city
@@ -249,6 +253,9 @@ republic = {
 			reforms = {
 				frequent_elections_reform
 				consolidation_of_power_reform
+				permanent_marathas_council_reform
+				governmental_purbias_register_reform
+				lottery_reform
 			}
 		}
 		federalism_vs_unitarism_vs_confederacy = {
@@ -284,7 +291,8 @@ republic = {
 		}
 		office_selection = {
 			reforms = {
-				sortition_reform
+				appointment_by_committee_reform
+				bureaucratic_aparatus_reform
 				universal_suffrage_reform
 			}
 		}
@@ -307,7 +315,14 @@ republic = {
 		trading_city
 		american_republic
 		revolutionary_republic_reform
+		#########Begin 1356 Changes#####
 		swiss_canton_reform
+		######End 1356 Changes#####
+	}
+	exclusive_reforms = {
+		lottery_reform
+		venice_merchants_reform
+		dutch_republic
 	}
 }
 
@@ -316,12 +331,12 @@ tribal = {
 	basic_reform = tribe_mechanic
 
 	legacy_government = {
-		siberian_native_council
+		tribal_despotism_legacy
+		tribal_kingdom_legacy
 		tribal_democracy_legacy
 		tribal_federation_legacy
-		tribal_kingdom_legacy
-		tribal_despotism_legacy
 		steppe_horde_legacy
+		siberian_native_council
 		
 		####BEGIN 1356 CHANGES#####
 		tribal_federation_ilkhan
@@ -338,6 +353,7 @@ tribal = {
 				tribal_kingdom
 				siberian_tribe
 				gond_kingdom
+				great_mongol_state_reform
 			}
 		}
 		tribal_cultural_values = {
@@ -419,6 +435,8 @@ theocracy = {
 			reforms = {
 				subservient_administrators_reform
 				religious_administrators_reform
+				permanent_marathas_council_reform
+				governmental_purbias_register_reform
 			}
 		}
 		secularization = {
@@ -442,7 +460,7 @@ pre_dharma_mapping = {
 		government = monarchy
 		legacy_government = feudal_monarchy
 	}
-	#######1356 ADDITION#######
+	#######1356 ADDITION####### #The Question is, do we need this here? I'm unsure.
 	elective_feudal_monarchy = {
 		government = monarchy
 		legacy_government = elective_feudal_monarchy

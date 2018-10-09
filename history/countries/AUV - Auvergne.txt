@@ -220,7 +220,7 @@ capital = 199	# Clermont
 	}
 }
 
-1440.1.1 = { government = feudal_monarchy }
+#1440.1.1 = { government = feudalism_reform }
 		
 1461.3.22 = {
 	monarch = {
@@ -351,10 +351,12 @@ capital = 199	# Clermont
 
 # 1589.1.5 - To Navarra Kingdom
 
-1531.3.28  = { government = despotic_monarchy }
+1531.3.28 = { government = monarchy
+add_government_reform = autocracy_reform }
 
-1560.1.1   = { religion = reformed }
+1560.1.1 = { religion = reformed }
 
-1562.11.18 = { government = administrative_monarchy }
+1562.11.18 = { set_legacy_government = administrative_monarchy }
 
-1661.3.9   = { government = despotic_monarchy }
+1661.3.9 = { government = monarchy
+add_government_reform = autocracy_reform }

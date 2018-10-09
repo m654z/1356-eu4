@@ -159,7 +159,7 @@ capital = 187	# Verdun
 
 # 1434.11.12 - Inherited by Provence under René de Valois-Anjou
 
-1440.1.1 = { government = feudal_monarchy }
+#1440.1.1 = { government = feudalism_reform }
 
 1480.7.10 = {
 	monarch = {

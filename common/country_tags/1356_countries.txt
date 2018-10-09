@@ -67,7 +67,6 @@ MRM = "countries/Murom.txt"
 
 #Arabia	
 JLR = "countries/Jalayirid.txt"
-ILK = "countries/Ilkhanate.txt"
 QON = "countries/Qoyunlu.txt"
 
 #Middle East

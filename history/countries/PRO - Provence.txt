@@ -211,8 +211,6 @@ capital = 201 # Aix-en-Provence
 
 1435.2.2 = { add_accepted_culture = sicilian }
 
-1440.1.1 = { government = feudal_monarchy }
-
 1442.6.2 = { remove_accepted_culture = sicilian }
 
 1454.9.10 = {
@@ -256,10 +254,13 @@ capital = 201 # Aix-en-Provence
 
 # 1481.12.10 - To French Royal Domain
 
-1515.1.1 = { government = despotic_monarchy }
+1515.1.1 = { government = monarchy
+add_government_reform = autocracy_reform }
 
 1560.1.1 = { religion = reformed }
 
-1589.8.3 = { government = administrative_monarchy }
+1589.8.3 = { set_legacy_government = administrative_monarchy }
 
-1661.3.9 = { government = despotic_monarchy }
+1661.3.9 = { government = monarchy
+add_government_reform = autocracy_reform }
+

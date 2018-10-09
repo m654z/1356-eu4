@@ -176,10 +176,6 @@ capital = 248 # Edinburgh
 	add_ruler_personality = righteous_personality
 }
 
-1440.1.1 = {
-	government = feudal_monarchy
-}
-
 1449.7.3 = {
 	queen = {
 		country_of_origin = GEL
@@ -324,7 +320,7 @@ capital = 248 # Edinburgh
 	}
 }
 
-1567.7.15 = { government = despotic_monarchy	religion = reformed }
+1567.7.15 = { government = monarchy add_government_reform = autocracy_reform	religion = reformed }
 
 1600.11.19 = {
 	heir = {

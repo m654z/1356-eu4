@@ -241,8 +241,6 @@ capital = 2981	# Montferrat
 	}
 }
 
-1440.1.1 = { government = feudal_monarchy }
-
 1445.3.12 = {
 	monarch = {
 		name = "Giovanni IV"
@@ -565,7 +563,8 @@ capital = 2981	# Montferrat
 	}
 }
 
-1627.12.26 = { government = despotic_monarchy }
+1627.8.26 = { government = monarchy
+add_government_reform = autocracy_reform }
 
 1627.12.26 = {
 	monarch = {

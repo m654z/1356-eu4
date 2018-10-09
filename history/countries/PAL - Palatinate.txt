@@ -198,8 +198,6 @@ capital = 77	# Pfalz
 	add_ruler_personality = bold_fighter_personality
 }
 
-1440.1.1 = { government = feudal_monarchy }
-
 1445.10.18 = {
 	queen = {
 		country_of_origin = SAV

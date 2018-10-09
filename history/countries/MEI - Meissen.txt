@@ -124,5 +124,3 @@ fixed_capital = 61 # Cannot move capital away from this province & no power cost
 }
 
 # Do not confuse the guy above with Friedrich IV of Thüringen, his cousin.
-
-1440.1.1 = { government = feudal_monarchy }

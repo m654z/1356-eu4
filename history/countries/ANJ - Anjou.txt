@@ -146,7 +146,10 @@ capital = 177	# Maine
 	# Also Monarch of Lorraine 1434.11.12 - 1453.2.28
 	# Also Monarch of Neaples  1435.2.2 - 1442.6.2
 
-1440.1.1 = { government = feudal_monarchy }
+1440.1.1 = { 
+	government = monarchy
+	add_government_reform = feudalism_reform
+}
 
 1454.9.10 = {
 	queen = {
@@ -189,10 +192,16 @@ capital = 177	# Maine
 
 # 1481.12.10 - To French Royal Domain
 
-1515.1.1 = { government = despotic_monarchy }
+1515.1.1 = { 
+	government = monarchy
+	add_government_reform = autocracy_reform
+}
 
 1560.1.1 = { religion = reformed }
 
-1589.8.3 = { government = administrative_monarchy }
+1589.8.3 = { set_legacy_government = administrative_monarchy }
 
-1661.3.9 = { government = despotic_monarchy }
+1661.3.9 = { 
+	government = monarchy
+	add_government_reform = autocracy_reform
+}

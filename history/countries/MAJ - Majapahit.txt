@@ -42,7 +42,6 @@ capital = 628	# Surabaya
 }
 
 1429.1.1 = {
-	government = despotic_monarchy
 	monarch = {
 		name = "Suhita"
 		dynasty = "Rajasanagara"

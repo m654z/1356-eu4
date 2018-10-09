@@ -57,7 +57,7 @@ capital = 17 # Akershus
 	}
 }
 
-1388.2.1 = { government = feudal_monarchy } # Norway gets under Denmark PU
+1388.2.1 = { add_government_reform = feudalism_reform } # Norway gets under Denmark PU
 
 1436.1.1 = { 
 	leader = { 
@@ -87,7 +87,9 @@ capital = 17 # Akershus
 
 1537.1.1 = { religion = protestant } # Christian III decrees Lutheranism as State Church
 
-1670.2.10 = { government = despotic_monarchy }
+1670.2.10 = { government = monarchy
+add_government_reform = autocracy_reform }
+
 
 1814.2.16 = {
 	monarch = {
