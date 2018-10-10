@@ -14,6 +14,8 @@ base_manpower = 2
 is_city = yes
 add_core = JLR
 fort_15th = yes # Fortress City of Amed/Diyarbakir as well as the Citadel of Mardin which withstood repeated sieges by Timur and was frequently seiged in Ottoman-Safavid conflicts.
+extra_cost = 8
+center_of_trade = 1
 
 discovered_by = east_african
 discovered_by = western

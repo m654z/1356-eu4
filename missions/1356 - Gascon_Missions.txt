@@ -163,8 +163,10 @@ gas_new_kingdom_group_2 = { #Create a New Kingdom - Special Missions
 			add_prestige = 5
 			210 = { #Navarra
 				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { owned_by = ROOT }
+					AND = {
+						NOT = { is_core = ROOT }
+						NOT = { owned_by = ROOT }
+					}
 				}
 				add_permanent_claim = ROOT
 			}
@@ -794,8 +796,10 @@ gas_freedom = {
 			}
 			173 = {
 				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { owned_by = ROOT }
+					AND = {
+						NOT = { is_core = ROOT }
+						NOT = { owned_by = ROOT }
+					}
 				}
 				add_permanent_claim = ROOT
 			}
@@ -829,7 +833,7 @@ gas_secure_aquitaine = { #Secure The Kingdom of Aquitaine-
 		trigger = {
 			OR = {
 				primary_culture = gascon
-				primary_culture = occitan
+				primary_culture = occitain
 			}
 			OR = {
 				religion = catholic
@@ -862,8 +866,10 @@ gas_secure_aquitaine = { #Secure The Kingdom of Aquitaine-
 			}
 			173 = { #Navarra
 				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { owned_by = ROOT }
+					AND = {
+						NOT = { is_core = ROOT }
+						NOT = { owned_by = ROOT }
+					}
 				}
 				add_permanent_claim = ROOT
 			}

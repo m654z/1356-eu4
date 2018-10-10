@@ -5,7 +5,7 @@ GLH = {
 
 # Yuan
 YUA = {
-	is_core = yes
+	is_core = YUA
 }
 
 GYO = {

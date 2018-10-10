@@ -20,6 +20,8 @@ discovered_by = western
 discovered_by = eastern
 discovered_by = muslim
 discovered_by = ottoman
+extra_cost = 8
+center_of_trade = 1
 
 1399.2.1   = { owner = MLO controller = MLO fort_15th = no }
 1402.9.15  = { owner = PIS controller = PIS add_core = LAN }

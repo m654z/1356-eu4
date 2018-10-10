@@ -816,6 +816,7 @@ bur_lotharingia_imperial_tree = { #Burgundy/Arles/Lotharingia - Lotharingia Tree
 					}
 # Audax Validator "." Ignore_1006
 					NOT = { is_rival = emperor }
+# Audax Validator "." Ignore_1006
 					NOT = { historical_rival_with = emperor }
 				}
 				AND = {	
@@ -1967,7 +1968,7 @@ bur_form_netherlands_tree = { #Burgundy - Form the Netherlands
 					government = theocracy
 					religion = catholic
 				}
-				change_government = administrative_monarchy
+				change_government = monarchy
 				PAP = {
 					add_opinion = {
 						who = ROOT
@@ -1980,7 +1981,7 @@ bur_form_netherlands_tree = { #Burgundy - Form the Netherlands
 					government = theocracy
 					NOT = { religion = catholic }
 				}
-				change_government = administrative_monarchy
+				change_government = monarchy
 			}
 			if = { #Remove Vassals and send to France if in French Region
 				limit = {

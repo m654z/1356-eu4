@@ -276,7 +276,7 @@ swedish_missions_2 = {
 		effect = {
 			add_prestige = 10
 			if = {
-				limit = { NOR = { is_subject = SWE } }
+				limit = { NOR = { is_subject_of = SWE } }
 				NOR = { add_liberty_desire = -20 }
 			}
 			if = {

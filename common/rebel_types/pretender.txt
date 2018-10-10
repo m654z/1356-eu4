@@ -44,7 +44,7 @@ pretender_rebels = {
 		modifier = {
 			factor = 0
 			owner = {
-				government = papal_government
+				has_reform = papacy_reform
 			}
 		}
 		modifier = {
@@ -222,10 +222,7 @@ pretender_rebels = {
 		modifier = {
 			factor = 2.5
 			owner = {
-				OR = {
-					government = tribal_despotism
-					government = tribal_federation
-				}
+				government = tribal
 			}
 		}
 	}
@@ -281,6 +278,12 @@ pretender_rebels = {
 	# Country Scope	
 	demands_enforced_effect = {
 		if = {
+			limit = {
+				has_states_general_mechanic = yes
+			}
+			change_statists_vs_orangists = 200
+		}
+		if = {
 			limit = { religion = inti }
 			remove_religious_reforms = 2
 		}
@@ -293,28 +296,29 @@ pretender_rebels = {
 			limit = {
 				NOT = {
 					OR = {
-						government = french_vassal_feudal_monarchy #1356 ADDITION
-						government = papal_government
-						government = steppe_horde
-						government = celestial_empire
-						government = iqta
-						government = indep_daimyo
-						government = principality
-						government = daimyo
-						government = shogunate
-						government = colonial_government
-						government = siberian_native_council
-						government = native_council
-						government = elective_monarchy
-						government = english_monarchy
-						government = ottoman_government
-						government = tribal_federation
-						government = feudal_theocracy
-						government = mamluk_government
+						has_reform = french_vassal_feudal_monarchy_reform #1356 addition
+						government = theocracy
+						has_reform = steppe_horde
+						has_reform = celestial_empire
+						has_reform = iqta
+						has_reform = indep_daimyo
+						has_reform = principality
+						has_reform = daimyo
+						has_reform = shogunate
+						has_reform = colonial_government
+						has_reform = siberian_tribe
+						government = native
+						has_reform = elective_monarchy
+						has_reform = english_monarchy
+						has_reform = ottoman_government
+						has_reform = tribal_federation
+						has_reform = feudal_theocracy
+						has_reform = mamluk_government
 					}
 				}
 			}
 			change_government = REB
+			set_legacy_government = despotic_monarchy
 		}
 		set_country_flag = no_new_succession_crisis_if_pretender_rebels #This is used in the event that triggers from the on_action to ensure that you don't get new pretenders if these pretenders are happening because of a succession crisis.
 		define_ruler = {

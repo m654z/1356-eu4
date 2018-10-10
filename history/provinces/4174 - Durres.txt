@@ -26,6 +26,8 @@ discovered_by = GOL
 discovered_by = GLH
 discovered_by = AST
 discovered_by = QAS
+extra_cost = 8
+center_of_trade = 1
 
 1367.1.1  = { owner = ALB controller = ALB }
 1376.1.1  = { owner = NAP controller = NAP }

@@ -15,8 +15,9 @@ base_tax = 7
 base_production = 7
 add_core = SON
 fort_15th = yes
-
 discovered_by = sub_saharan
+extra_cost = 8
+center_of_trade = 1
 
 1400.1.1  = { religion = sunni }
 1421.1.1  = { owner = SON remove_core = MAL controller = SON }

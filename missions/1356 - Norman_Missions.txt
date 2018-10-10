@@ -813,7 +813,6 @@ nrm_norman_legacy = {
 			change_tag = KOJ
 			swap_non_generic_missions = yes
 			remove_non_electors_emperors_from_empire_effect = yes
-			change_government = feudal_monarchy
 			add_adm_power = 200
 			add_dip_power = 200
 			379 = {

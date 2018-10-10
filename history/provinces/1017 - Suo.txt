@@ -19,6 +19,9 @@ discovered_by = MCH
 discovered_by = KHA
 discovered_by = OIR
 discovered_by = QNG
+extra_cost = 8
+center_of_trade = 1
+
 
 1356.1.1  = { revolt = { type = ikko_ikki_rebels size = 1 } }
 1386.1.1  = { revolt = {} }

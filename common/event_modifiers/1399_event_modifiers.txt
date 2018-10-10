@@ -4,33 +4,6 @@ rush_of_colonists = {
 
 #Center of Trade Modifiers
 
-# Audax Validator "." Ignore_ALL
-center_of_trade_modifier = {
-	local_institution_spread = 0.10
-	province_trade_power_value = 20
-	naval_forcelimit = 2
-	land_forcelimit = 2
-	local_development_cost = -0.1
-	local_sailors_modifier = 0.25
-	local_manpower_modifier = 0.25
-	picture = "province_trade_power_value"
-}
-
-# Audax Validator "." Ignore_ALL
-inland_center_of_trade_modifier = {
-	local_institution_spread = 0.10
-	province_trade_power_value = 20
-	local_development_cost = -0.1
-	picture = "province_trade_power_value"
-}
-
-# Audax Validator "." Ignore_ALL
-sound_toll = {
-	province_trade_power_value = 20
-	province_trade_power_modifier = 0.25
-	picture = "province_trade_power_value"
-}
-
 golden_gate = {
 	local_defensiveness = 1.0
 	local_hostile_attrition = 2
@@ -107,17 +80,6 @@ ice_norse_tradition = { #Gogo Iceland into Norse Empire?
 }
 
 #Balkans/Anatolia
-
-# Audax Validator "." Ignore_ALL
-bosphorous_sound_toll = {
-	picture = "province_trade_power_value"
-	province_trade_power_value = 20
-	province_trade_power_modifier = 0.25
-	naval_forcelimit = 2
-	land_forcelimit = 2
-	local_sailors_modifier = 0.25
-	local_manpower_modifier = 0.25
-}
 
 turkish_settlement = {
 	local_tax_modifier = -0.25
