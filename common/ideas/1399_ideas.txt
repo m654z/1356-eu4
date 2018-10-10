@@ -1190,42 +1190,43 @@ JLR_ideas = {
 		ae_impact = -0.10
 	}
 }
-ILK_ideas = {
-	start = {
-		core_creation = -0.25
-        cavalry_power = 0.25
-	}
-	bonus = {
-		land_forcelimit_modifier  = 0.33
-	}
-	trigger = {
-		tag = ILK
-	}
-	free = yes
-	
-	ILK_citadels_and_fortesses = {
-		discipline = 0.05
-	}
-	ILK_ayyubid_heritage = {
-		administrative_efficiency = 0.05
-	}
-	ILK_righteousness_of_the_faith = {
-		land_morale = 0.1
-	}
-	ILK_elite_warriors = {
-		diplomatic_reputation = 1
-		legitimacy = 1
-	}
-	ILK_rise_of_the_eagle = {
-	     caravan_power = 0.25
-	}
-	ILK_strenghten_central_authority = {
-		global_trade_goods_size_modifier = 0.15
-	}
-	ILK_state_economics = {
-		technology_cost = -0.1
-	}
-}
+
+#ILK_ideas = {
+#	start = {
+#		core_creation = -0.25
+#        cavalry_power = 0.25
+#	}
+#	bonus = {
+#		land_forcelimit_modifier  = 0.33
+#	}
+#	trigger = {
+#		tag = ILK
+#	}
+#	free = yes
+#	
+#	ILK_citadels_and_fortesses = {
+#		discipline = 0.05
+#	}
+#	ILK_ayyubid_heritage = {
+#		administrative_efficiency = 0.05
+#	}
+#	ILK_righteousness_of_the_faith = {
+#		land_morale = 0.1
+#	}
+#	ILK_elite_warriors = {
+#		diplomatic_reputation = 1
+#		legitimacy = 1
+#	}
+#	ILK_rise_of_the_eagle = {
+#	     caravan_power = 0.25
+#	}
+#	ILK_strenghten_central_authority = {
+#		global_trade_goods_size_modifier = 0.15
+#	}
+#	ILK_state_economics = {
+#		technology_cost = -0.1
+#	}
+#}
 
 CHB_ideas = {
 	start = {

@@ -142,9 +142,10 @@ siberian_tribe = {
 ######1356 Changes#######
 tribal_federation_ilkhan_reform = { #Tribes
 	icon = "tribal_council"
-	allow_normal_conversion = yes
+	allow_normal_conversion = no
 	lock_level_when_selected = yes
 	valid_for_nation_designer = no
+	nation_designer_cost = 0
 	modifiers = {
 		years_of_nationalism = -5
 		cav_to_inf_ratio = 0.25
@@ -164,9 +165,10 @@ tribal_federation_ilkhan_reform = { #Tribes
 
 ilkhanate_government_tribal_reform = { #Ilkhanate itself
 	icon = "tribal_council"
-	allow_normal_conversion = yes
+	allow_normal_conversion = no
 	lock_level_when_selected = yes
 	valid_for_nation_designer = no
+	nation_designer_cost = 0
 	modifiers = {
 		max_states = 7
 		unjustified_demands = -0.17

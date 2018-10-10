@@ -761,7 +761,7 @@ mughal_government = {
 		tartar = {
 			cavalry_cost = -0.15
 		}
-		thai = {
+		southeastasian_group = {
 			development_cost = -0.05
 		}
 		tibetan_group = {
@@ -958,11 +958,11 @@ elective_feudal_monarchy_reform = {
 	legacy_equivalent = elective_feudal_monarchy
 	lock_level_when_selected = no
 	valid_for_nation_designer = no
+	nation_designer_cost = 0
 	modifiers = {
 		vassal_income = 0.25
 		global_unrest = -1
-		max_absolutism = -30
-		max_states = 2
+		max_absolutism = -20
 	}
 
 	conditional = {
@@ -975,13 +975,14 @@ byzantine_empire_reform = {
 	icon = "crown_highlighted"
 	allow_normal_conversion = no 
 	potential = {	
-		OR = {
-			has_reform = byzantine_empire_reform
-			have_had_reform = byzantine_empire_reform
-		}
+		#OR = {
+		#	has_reform = byzantine_empire_reform
+		#	have_had_reform = byzantine_empire_reform
+		#}
 		tag = BYZ
 	}
 	valid_for_nation_designer = no 
+	nation_designer_cost = 0
 	lock_level_when_selected = yes
 	legacy_equivalent = byzantine_empire_gov
 	fixed_rank = 3
@@ -997,7 +998,6 @@ byzantine_empire_reform = {
 	}
 }
 
-
 archduchy_reform = {
 	icon = "king_highlighted"
 	allow_normal_conversion = no 
@@ -1007,10 +1007,11 @@ archduchy_reform = {
 			have_had_reform = archduchy_reform
 		}
 	}
-	legacy_equivalent = archduchy
+	legacy_equivalent = archduchy_legacy
 	lock_level_when_selected = yes
 	fixed_rank = 1
 	valid_for_nation_designer = no 
+	nation_designer_cost = 0
 	modifiers = {
 		diplomats = 1
 		diplomatic_reputation = 2
@@ -1022,55 +1023,19 @@ archduchy_reform = {
 	}
 }
 
-#french_feudal_monarchy_reform = { #Unused
-#	icon = "castle"
-#	allow_normal_conversion = no
-#	potential = {
-#		OR = {
-#			AND = {
-#				tag = FRA
-#				#has_subject_type = french_feudal_vassal
-#				NOT = { is_year = 1444 }
-#				always = no
-#			}
-#			always = no
-#		}
-#	}
-#	legacy_equivalent = french_feudal_monarchy
-#	valid_for_nation_designer = no
-#	lock_level_when_selected = yes
-#	modifiers = {
-#		global_manpower_modifier = 0.1	
-#		vassal_income = 0.25
-#	}
-#	custom_attributes = {
-#		locked_government_type = yes
-#	}
-#	ai = {
-#		factor = 0 
-#	}
-#
-#}
-
 french_vassal_feudal_monarchy_reform = {
 	icon = "castle"
 	allow_normal_conversion = no
 	potential = {
 		culture_group = french
-		government_rank = 1
 		NOT = { tag = FRA }
-		OR = {
-			has_reform = french_vassal_feudal_monarchy_reform
-		#		is_subject_of_type = french_ducal_vassal #Crashes the game
-			AND = {
-				NOT = { has_reform = french_vassal_feudal_monarchy_reform }
-				is_subject_of = FRA
-		#		is_subject_of_type = french_ducal_vassal #Crashes the game
-			}
-		}
+		exists = FRA
+		has_reform = french_vassal_feudal_monarchy_reform
+		is_subject_of = FRA
 	}
 	legacy_equivalent = french_vassal_feudal_monarchy
 	valid_for_nation_designer = no
+	nation_designer_cost = 0
 	lock_level_when_selected = yes
 	fixed_rank = 1
 	modifiers = {
@@ -1095,10 +1060,11 @@ kalmar_union_reform = {
 			have_had_reform = kalmar_union_reform
 		}
 	}
-	legacy_equivalent = kalmar_union
+	legacy_equivalent = kalmar_union_legacy
 	lock_level_when_selected = yes
 	fixed_rank = 3
 	valid_for_nation_designer = no
+	nation_designer_cost = 0
 	modifiers = {
 		reduced_liberty_desire = 25
 		global_autonomy = -0.1
@@ -1122,21 +1088,20 @@ barbary_sultanate_reform = {
 	valid_for_nation_designer = yes
 	lock_level_when_selected = yes
 	nation_designer_cost = 30
+	queen = no
 	nation_designer_trigger = {
 		religion_group = muslim
 		culture_group = maghrebi
 	}
 
 	legacy_equivalent = barbary_sultanate
-	queen = no
 	modifiers = {
-			max_states = 4
-			privateer_efficiency = 0.15	
-			ship_durability = 0.1
-			trade_steering = 0.10
-			galley_power = 0.20
-			improve_relation_modifier = -0.1
-			capture_ship_chance = 0.15
+		privateer_efficiency = 0.15	
+		ship_durability = 0.1
+		trade_steering = 0.10
+		galley_power = 0.20
+		improve_relation_modifier = -0.1
+		capture_ship_chance = 0.15
 	}
 	
 	custom_attributes = {
@@ -1156,11 +1121,15 @@ beylik_reform = {
 	allow_normal_conversion = yes
 	potential = {
 		NOT = {	tag = TUR }
+		NOT = { tag = RUM }
 		primary_culture = turkish
 	}
-	legacy_equivalent = beylik 
+	legacy_equivalent = beylik_legacy 
 	lock_level_when_selected = yes 
-	valid_for_nation_designer = no 
+	valid_for_nation_designer = no
+	nation_designer_cost = 0
+	maintain_dynasty = yes
+	#fixed_rank = 2	
 	modifiers = {
 		global_tax_modifier = 0.1
 		global_manpower_modifier = 0.1
@@ -1185,11 +1154,12 @@ timurid_government_reform = {
 		}
 	}
 	valid_for_nation_designer = no
+	nation_designer_cost = 0
 	legacy_equivalent = timurid_government
 	fixed_rank = 3
 	maintain_dynasty = yes
 	modifiers = {
-		max_states = 5
+		max_states = 3
 		unjustified_demands = -0.15
 		legitimacy = 0.5
 		global_autonomy = -0.05
@@ -1217,8 +1187,9 @@ earldom_reform = {
 		primary_culture = irish
 	}
 	valid_for_nation_designer = no 
+	nation_designer_cost = 0
 	lock_level_when_selected = yes
-	legacy_equivalent = earldom 
+	legacy_equivalent = earldom_legacy 
 	fixed_rank = 1
 	modifiers = {
 		land_morale = 0.1
@@ -1226,48 +1197,26 @@ earldom_reform = {
 		hostile_attrition = 1
 		diplomatic_upkeep = -1
 	}
-	custom_attributes = {
-		locked_government_type = yes
-	}
 }
 
 chinese_kingdom_government_reform = {
 	icon = "peasants"
-	allow_normal_conversion = yes
+	allow_normal_conversion = no
 	potential = {
-		OR = {
-			AND = {
-				have_had_reform = chinese_kingdom_government_reform
-				NOT = { has_reform = celestial_empire }
-			}
-			AND = {
-				has_reform = chinese_kingdom_government_reform
-				NOT = { has_reform = celestial_empire }
-			}
-
-		}
+		NOT = { has_reform = celestial_empire }
 		government_rank = 2
 		culture_group = east_asian
-		religion_group = eastern
+		OR = {
+			religion_group = eastern
+			religion_group = pagan
+		}
 	}
 	maintain_dynasty = yes
 	lock_level_when_selected = yes
 	legacy_equivalent = chinese_kingdom_government
 	fixed_rank = 2
-	valid_for_nation_designer = yes
-	nation_designer_cost = 30
-	nation_designer_trigger = {
-		religion_group = eastern
-		culture_group = east_asian
-		technology_group = chinese
-		capital_scope = {
-			OR = {
-				region = north_china_region
-				region = xinan_region
-				region = south_china_region
-			}
-		}
-	}
+	valid_for_nation_designer = no
+	nation_designer_cost = 0
 	modifiers = {
 		max_states = 2
 		province_warscore_cost = -0.2
@@ -1396,8 +1345,7 @@ deccani_society_reform = {
 
 yuan_celestial_empire_elective_heirs_reform = { #Mostly to show that you have this
 	icon = "crown"
-	allow_normal_conversion = yes
-	lock_level_when_selected = yes
+	allow_normal_conversion = no
 	potential = {
 		tag = YUA
 		is_emperor_of_china = yes
@@ -1406,7 +1354,6 @@ yuan_celestial_empire_elective_heirs_reform = { #Mostly to show that you have th
 			has_country_flag = yuan_celestial_empire_noble_republic_flag
 		}
 		has_country_flag = yuan_noble_republic_disaster_over_flag #Exclusive to this reform
-		has_reform = yuan_celestial_empire_elective_heirs_reform
 	}
 	modifiers = {
 		global_manpower_modifier = 0.05
@@ -1422,7 +1369,6 @@ yuan_celestial_empire_elective_heirs_reform = { #Mostly to show that you have th
 	conditional = {
 		allow = { has_dlc = "Dharma" }
 	}
-
 }
 
 #####1356 Changes End 2########

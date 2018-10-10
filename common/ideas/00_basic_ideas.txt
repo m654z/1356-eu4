@@ -56,18 +56,15 @@ aristocracy_ideas = {
 	}
 }
 
-theocratic_ideas = { #Will need testing to see if this still works
+theocratic_ideas = { 
 	category = MIL
 
 	bonus = {
 		infantry_power = 0.1
 	}
 
-	trigger = { #Will need testing to see if this still works
-		OR = {
-			government = theocracy
-			government = monastic_order_government
-		}
+	trigger = { 
+		government = theocracy
 	}
 	
 	the_word_of_god = { 
@@ -636,7 +633,7 @@ exploration_ideas = {
 				tag = FRA
 				tag = KUR
 				tag = GUY #1356
-				tag = OCC #1356
+				#tag = OCC #1356 #Never got added
 				tag = AQT #1356
 				tag = NOR #1356
 				tag = ICE #1356

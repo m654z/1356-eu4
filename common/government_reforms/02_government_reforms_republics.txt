@@ -300,11 +300,9 @@ trading_city = {
 		mr_traders
 		mr_guilds
 	}
-	valid_for_nation_designer = no
 	modifiers = {
 		max_absolutism = -20
 		global_trade_power = 0.1
-		max_absolutism = -20
 	}
 
 	custom_attributes = {
@@ -380,9 +378,6 @@ veche_republic = {
 		}
 	}
 	legacy_equivalent = veche_republic_legacy
-	nation_designer_trigger = {
-		culture_group = east_slavic
-	}
 	modifiers = {
 		merchants = 1
 		max_states = 1
@@ -691,15 +686,24 @@ cossacks_reform = {
 	duration = 4
 }
 ######1356 Changes#####
-swiss_canton_reform = {
+swiss_canton_reform = { #Maybe give it access to Parlament mechanics?
 	icon = "free_city"
+	allow_normal_conversion = no
+	valid_for_nation_designer = no
+	nation_designer_cost = 0
 	legacy_equivalent = swiss_canton
+	republican_name = yes
+	royal_marriage = no
 	potential = {
 		primary_culture = swiss 
 	}
 	modifiers = {
 		land_forcelimit_modifier = 0.15
 		mercenary_cost = -0.1
+	}
+	custom_attributes = {
+		enables_plutocratic_idea_group = yes
+		enables_aristocratic_idea_group = no
 	}
 	duration = 4
 }
