@@ -1029,9 +1029,17 @@ french_vassal_feudal_monarchy_reform = {
 	potential = {
 		culture_group = french
 		NOT = { tag = FRA }
-		exists = FRA
-		has_reform = french_vassal_feudal_monarchy_reform
-		is_subject_of = FRA
+		#exists = FRA
+		OR = {
+			AND = {
+				has_reform = french_vassal_feudal_monarchy_reform
+				is_subject_of = FRA
+			}
+			AND = {
+				have_had_reform = french_vassal_feudal_monarchy_reform
+				is_subject_of = FRA
+			}
+		}
 	}
 	legacy_equivalent = french_vassal_feudal_monarchy
 	valid_for_nation_designer = no
