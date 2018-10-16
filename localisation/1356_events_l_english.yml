@@ -573,3 +573,27 @@
  eastereggflandy.5.desc: "An upstart and rather handsome Peasant from a province we recently conquered in Georgia has arrived in the Court of the great [YUA.Monarch.GetName]! He is saying there are tratiors in our ranks and if nothing is done soon then terrible things may happen. Terrible things such as a rebellion against our rule, the murder of our children and wife, and ending with us being impailed! Some of our most trusted advisors find this man amusing, and think he is joking. However there are also others that agree with him, and think what he's saying may be right. Even if there is no plot against us maybe it couldn't hurt to purge a little...?"
  eastereggflandy.5.a: "Glory be to the Great Purge!"
  eastereggflandy.5.b: "This is ridiculous. There never will be a 'Great Purge!'"
+
+ flaflavorlith.4.a: "We must retain the Jagiellon Dynasty"
+ flaflavorlith.4.b: "Stay Romuvan"
+ flaflavorlith.4.d: "Lithuania is one of the last Pagan nations in Europe, and not only that, it also shares a border with a few feisty Catholic Holy Orders! The Teutonics and Livonians are on a Crusade against Lithuania and now the nation is at a cross roads. Shall they stay with their old ways and hold out against the onslaught of the Christians, or shall they accept the Polish Proposal by Queen Jadwiga of Poland, which is to join her in marriage, and adopt Christianity?"
+ flaflavorlith.4.t: "The Christianization of Lithuania - Lithuania"
+ flaflavorlith.5.t: "The Christianization of Lithuania - Poland"
+ flaflavorlith.5.d: "'King' Jadwiga of Poland has been torn between potential husbands for a long period of time now. Her father had arranged for her to marry William of Austria, however the Polish Nobility were against it completly, and protested. To her nations east however, lays the Pagan nation of Lithuania, that is in the middle of a large conflict against the Teutonic Order. Lithuania's King Jagiello is in a tight spot, and may accept any offer we propose to them. Perhaps we can solve both of our issues by joining our countries and taking eachothers hands in marriage?"
+ flaflavorlith.5.a: "Let us offer salvation and marriage to our neighbor!"
+ flaflavorlith.5.b: "Leave the Heathens and our nobility to their own devices!"
+ 
+ sapmi.NAME1: "The topic of Religion"
+ sapmi.DESC1: "Our nation is at a crossroads! Do we stay the religion of our ancestors and stay at it alone, or do we convert to Christanity and ask the Holy Father for forgiveness?"
+ sapmi.OPT1: "We stay the religion of our ancestors!"
+ sapmi.OPT2: "Forgive me Holy Father, for I have sinned..."
+ sapmi.OPT3: "Our Russian neighbors are very convincing..."
+ 
+ timurlane.4444.a: "Oh well."
+ timurlane.4445.a: "Oh well."
+ kalmar.3.a: "Leave them to their own devices."
+ sweden_estate_help_opt1: "Help the Estates!"
+ 
+ ban.5.t: "NOLOCALIZATION"
+ ban.5.d: "NOLOCALIZATION"
+ ban.5.a: "NOLOCALIZATION"

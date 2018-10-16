@@ -85,8 +85,6 @@
  early_feudal_monarchy_desc: "The Early Feudal Monarchy was a form of government in which often the combined power of the Kings Vassals was greater than that of the King himself. Maintaining the crown meant that good relations with the various Dukes of the realm were essential."
  LIBERTY_DESIRE_FROM_DAIMYO: "High Feudal Vassal"
  LIBERTY_DESIRE_DAIMYO: "High Feudal Vassal"
- elective_feudal_monarchy: "Elective Feudal Monarchy"
- elective_feudal_monarchy_desc: "An elective feudal monarchy is an early monarchy ruled by an elected monarch, in contrast to a hereditary monarchy in which the office is automatically passed down as a family inheritance."
  elective_feudal_monarchy_ruler: "King"
  elective_feudal_monarchy_ruler_female: "Queen"
  hundred_years_war: "The Hundred Years' War"
@@ -622,6 +620,8 @@
  yuan_red_turban_rebels_demand_desc: "The Separatists demand Independence for the Han People. They feel that the Yuan Dynasty does not hold the interests of the Han people at all, and wish to overthrow their dynasty as a result."
  yuan_red_turban_rebels_demand: "Independence for the Han Chinese People"
  yuan_red_turban_rebels_desc: "The Red Turbans were orignally followers of the White Lotus and Persian Gnostics that existed to resist the Mongols, getting their name 'Red Turbans' for their Red Banners and Red Turbans they wore to distinguish themselves. At first the rebellions were sporadic, starting in Zhejiang and assaulting a group of Yuan officials. Eventually, after changing leadership a handful of times and rebellions merging into bigger groups Zhu Yuanzhang became the leader of the rebellion after Guo Zixing passed away. Zhu would go on to lead a campaign against the Yuan, and finally founding the Ming Dynasty in 1368 when he proclaimed himself Emperor. The whole rebellion lasted around 20 years, and every Yuan official that was captured by the Red Turbans was brutally murdered. /n/nThese rebels wish to gain freedom from Yuan oppression, and will stop at nothing to get it. The only way to deal with them is to reform your country, and put down the rebellions province by province, systematicly executing anyone that played a part in the rebellion."
+ 
+ cb_make_nusantara: "Make Nusantara"
  
  
  

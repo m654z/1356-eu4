@@ -89,7 +89,8 @@ country_event = {
 		change_unit_type = nomad_group
 		remove_accepted_culture = manchu
 		set_government_rank = 2		
-		change_government = steppe_horde
+		government = tribal
+		set_government_reform = steppe_horde_reform
 
 		clr_country_flag = heir_elected_yua_flag
 		clr_country_flag = yuan_bribed_noble_rebellion_away_flag
@@ -217,7 +218,7 @@ country_event = { #Toqto Returns! #Tied into the Red Turban Rebellion Disaster
 			location = 720
 			discount = yes
 			skill = 3
-			culture = mongolian
+			culture = mongol
 			religion = vajrayana
 		}
 		define_general = {
