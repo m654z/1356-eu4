@@ -1930,7 +1930,7 @@ yuan_toqtoa_interior_province_administration = { #Toqto's Return - Get the Provi
 	}
 	yua_toqtoa_reform_administration_mission_3 = { #Specific Advisor Costs
 		icon = mission_have_two_subjects
-		required_missions = { yua_toqtoa_reform_administration_mission_2 }
+		required_missions = { yua_toqtoa_reform_administration_mission_2 yua_toqtoa_reform_diplomacy_mission_2 }
 		position = 14
 	
 		trigger = {

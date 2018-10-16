@@ -1,5 +1,5 @@
 namespace = yua
-#GO THROUGH ALL EVENTS AND MAKE SURE THEY WORK WITH THE NEW SYSTEM OF DEBUFFS
+
 
 
 ###############################################################################

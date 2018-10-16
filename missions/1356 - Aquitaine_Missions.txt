@@ -432,6 +432,7 @@ AQT_put_france_in_check = {
 		completed_by = 1821.1.1
 		trigger = {	
 			OR = {
+# Audax Validator "." Ignore_NEXT
 				has_truce = FRA
 				NOT = { exists = FRA }
 			}

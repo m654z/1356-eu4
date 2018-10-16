@@ -1,8 +1,10 @@
 # Golden Horde
+# Audax Validator "." Ignore_NEXT
 GLH = {
 	is_core = GLH
 }
 
+# Audax Validator "." Ignore_NEXT
 # Yuan
 YUA = {
 	is_core = YUA
@@ -12,6 +14,6 @@ GYO = {
 	is_core = GYO
 }
 
-KOR = {
-	NOT = { is_core = GYO}
-}
+#KOR = {
+#	NOT = { is_core = GYO}
+#}

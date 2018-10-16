@@ -1,8 +1,8 @@
 # 733 - Hwanghae (1356)
 # Changes: religion
 
-owner = GYO
-controller = GYO
+owner = KOR
+controller = KOR
 culture = korean
 religion = mahayana
 capital = "Hwangju"
@@ -13,6 +13,7 @@ base_production = 2
 base_manpower = 2
 is_city = yes
 add_core = GYO
+add_core = KOR
 
 discovered_by = chinese
 discovered_by = nomad_group

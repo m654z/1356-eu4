@@ -41,8 +41,10 @@ country_decisions = {
 				name = "centralization_modifier"
 				duration = 3650
 			}
-			if = {
-				NOT = { government = monarchy }
+			limit = {
+				if = {
+					NOT = { government = monarchy }
+				}
 				change_government = monarchy
 			}
 		}

@@ -67,6 +67,7 @@ country_decisions = {
 						has_province_modifier = major_slave_market
 					}
 				}
+				# Audax Validator "." Ignore_NEXT
 				change_trade_goods = unknown
 				remove_province_modifier = major_slave_market
 			}

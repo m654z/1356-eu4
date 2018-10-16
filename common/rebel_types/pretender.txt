@@ -38,7 +38,7 @@ pretender_rebels = {
 		modifier = { #1356 ADDITION
 			factor = 0 #1356 ADDITION
 			owner = { #1356 ADDITION
-				government = french_vassal_feudal_monarchy #1356 ADDITION
+				has_reform = french_vassal_feudal_monarchy_reform #1356 ADDITION
 			} #1356 ADDITION
 		} #1356 ADDITION
 		modifier = {

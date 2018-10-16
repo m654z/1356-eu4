@@ -126,7 +126,7 @@ country_event = { #TEST TO SEE IF THIS STILL WORKS
 	option = {
 		name = "feudalvassalevents.4.a"
 		#change_government = feudal_monarchy
-		add_reform = feudalism_reform
+		set_government_reform = feudalism_reform
 		set_legacy_government = feudal_monarchy
 	}		
 }

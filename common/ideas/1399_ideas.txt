@@ -1095,31 +1095,31 @@ CTR_ideas = { #Just spains ideas, same localisation and all
 	}
 	free = yes		#will be added at load.
 
-	the_reconquista = {
+	CTR_the_reconquista = {
 		discipline = 0.05
 	}
-	spanish_inquisition = {
+	CTR_spanish_inquisition = {
 		global_missionary_strength = 0.02
 	}
-	inter_caetera = {
+	CTR_inter_caetera = {
 		idea_claim_colonies = yes
 		colonists = 1
 	}
-	devout_catholisism = {
+	CTR_devout_catholisism = {
 		papal_influence = 2
 	}
 
-	gold_fleet = {
+	CTR_gold_fleet = {
 		global_tariffs = 0.15
 		global_prov_trade_power_modifier = 0.1
 	}
 
-	spanish_armada = {
+	CTR_spanish_armada = {
 		heavy_ship_power = 0.10
 		global_sailors_modifier = 0.1
 	}
 
-	siglo_de_oro = {
+	CTR_siglo_de_oro = {
 		prestige = 1
 	}
 }

@@ -3,6 +3,7 @@ defaults_reform = {
 	allow_convert = yes
 	rulers_can_be_generals = yes
 	heirs_can_be_generals = yes
+# Audax Validator "." Ignore_NEXT
 	fixed_rank = 0
 	republican_name = no
 	militarised_society = no
@@ -18,6 +19,7 @@ defaults_reform = {
 	has_devotion = no
 	has_meritocracy = no
 	allow_force_tributary = yes
+# Audax Validator "." Ignore_NEXT
 	duration = 0
 	election_on_death = no
 	monarchy = no
@@ -944,7 +946,6 @@ theocratic_government = {
 
 	rulers_can_be_generals = no
 
-	valid_for_new_country = yes
 	valid_for_nation_designer = yes
 	nation_designer_cost = 0
 
@@ -984,7 +985,6 @@ monastic_order_government = {
 	royal_marriage = no
 	
 
-	valid_for_new_country = no
 	valid_for_nation_designer = yes
 	nation_designer_cost = 10
 

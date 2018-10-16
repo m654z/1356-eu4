@@ -52,7 +52,6 @@ country_event = {
 	option = {
 		name = timurlane.1.a
 		set_global_flag = "timur_conquest"
-        set_government_rank = 3
         change_technology_group = muslim
 		change_tag = TIM
 		swap_free_idea_group = yes	
@@ -68,6 +67,8 @@ country_event = {
         }
 		add_ruler_modifier = {
 			name = "Tamerlane"
+			duration = -1
+			hidden = yes
 		}
 		kill_heir = yes
 		add_ruler_personality = conqueror_personality
@@ -280,6 +281,7 @@ country_event = {
         has_global_flag = "timur_conquest"
 			if = {
 				limit = {
+# Audax Validator "." Ignore_NEXT
 					exists = CHG
 				}
 				total_development = CHG
@@ -320,132 +322,134 @@ country_event = {
 	}
 }
 
-country_event = {
-	id = timurlane.14
-	title = timurlane.14.t
-	desc = timurlane.14.d
-	picture = NOT_DISCIPLINED_SOLDIERS_eventPicture
+#country_event = {
+#	id = timurlane.14
+#	title = timurlane.14.t
+#	desc = timurlane.14.d
+#	picture = WOUNDED_SOLDIERS_eventPicture
+#
+#	trigger = {
+#		tag = TIM
+#		522 = { controlled_by = TIM }
+#		FROM = {
+#			development = 15
+#		}
+#	}
+#	
+#	is_triggered_only = yes
+#	
+#	mean_time_to_happen = {
+#		days = 1
+#	}
+#	
+#	option = {
+#		name = army_professionalism_events.1.c #Such are the rules of warfare
+#		ai_chance = {
+#			factor = 25
+#			modifier = {
+#				factor = 0
+#				is_core = FROM
+#			}
+#			modifier = {
+#				factor = 0
+#				culture = FROM
+#			}
+#			modifier = {
+#				factor = 5
+#				has_reform = steppe_horde
+#			}
+#		}
+#		add_prestige = 25
+#		add_loot_from_province_effect = yes
+#		FROM = {
+#		    province_event = { id = timurlane.15 }
+#			tooltip = {
+#				add_devastation = 100
+#				add_base_tax = -3
+#				add_base_production = -3
+#				add_base_manpower = -3
+#			}
+#		}
+#		tooltip = {
+#			event_target:attacked_country = {
+#				add_opinion = {
+#					who = ROOT
+#					modifier = sack_of_x
+#				}
+#				add_country_modifier = {
+#					name = "enemies_sacked_city"
+#					duration = 3650
+#				}
+#			}
+#		}
+#	}
+#}
 
-	trigger = {
-		tag = TIM
-		522 = { controlled_by = TIM }
-		FROM = {
-			development = 15
-		}
-	}
-	
-	is_triggered_only = yes
-	
-	mean_time_to_happen = {
-		days = 1
-	}
-	
-	option = {
-		name = army_professionalism_events.1.c #Such are the rules of warfare
-		ai_chance = {
-			factor = 25
-			modifier = {
-				factor = 0
-				is_core = FROM
-			}
-			modifier = {
-				factor = 0
-				culture = FROM
-			}
-			modifier = {
-				factor = 5
-				has_reform = steppe_horde
-			}
-		}
-		add_prestige = 25
-		add_loot_from_province_effect = yes
-		FROM = {
-		    province_event = { id = timurlane.15 }
-			tooltip = {
-				add_devastation = 100
-				add_base_tax = -3
-				add_base_production = -3
-				add_base_manpower = -3
-			}
-		}
-		tooltip = {
-			event_target:attacked_country = {
-				add_opinion = {
-					who = ROOT
-					modifier = sack_of_x
-				}
-				add_country_modifier = {
-					name = "enemies_sacked_city"
-					duration = 3650
-				}
-			}
-		}
-	}
-}
+#Note; the base tax, production, and manpower bits in this are giving me a validator error. Do these actually work?
 
-country_event = {
-	id = timurlane.15
-	title = timurlane.15.t
-	desc = timurlane.15.d
-	picture = NOT_DISCIPLINED_SOLDIERS_eventPicture
+#country_event = {
+#	id = timurlane.15
+#	title = timurlane.15.t
+#	desc = timurlane.15.d
+#	picture = NOT_DISCIPLINED_SOLDIERS_eventPicture
+#
+#	is_triggered_only = yes
+#
+#	option = {
+#		name = timurlane.15.a #Barbarians!
+#		add_devastation = 100
+#		add_base_tax = -3
+#		add_base_production = -3
+#		add_base_manpower = -3
+#		ROOT = {
+#			add_country_modifier = {
+#				name = "enemies_sacked_city"
+#				duration = 3650
+#			}
+#			add_opinion = {
+#				who = FROM
+#				modifier = sack_of_x
+#			}
+#		}
+#	}
+#}
 
-	is_triggered_only = yes
+#country_event = { 
+#	id = timurlane.166 #Timur offer Vassalization, must convert to Sunni and adopt a Timurid ruler
+#	title = timurlane.166.t
+#	desc = timurlane.166.d
+#	picture = NOT_DISCIPLINED_SOLDIERS_eventPicture
+#
+#	is_triggered_only = yes
+#
+#	#option = {
+#	#	name = timurlane.166.a #We must give in to the Timurids
+#	#	white_peace = TIM 
+#	#	TIM = {
+#	#		create_march = SAB
+#	#	}
+#	#}
+#	option = {
+#		name = timurlane.166.b #We shall fight to the last man!		
+#	}
+#}
 
-	option = {
-		name = timurlane.15.a #Barbarians!
-		add_devastation = 100
-		add_base_tax = -3
-		add_base_production = -3
-		add_base_manpower = -3
-		owner = {
-			add_country_modifier = {
-				name = "enemies_sacked_city"
-				duration = 3650
-			}
-			add_opinion = {
-				who = FROM
-				modifier = sack_of_x
-			}
-		}
-	}
-}
-
-country_event = { 
-	id = timurlane.166 #Timur offer Vassalization, must convert to Sunni and adopt a Timurid ruler
-	title = timurlane.166.t
-	desc = timurlane.166.d
-	picture = NOT_DISCIPLINED_SOLDIERS_eventPicture
-
-	is_triggered_only = yes
-
-	#option = {
-	#	name = timurlane.166.a #We must give in to the Timurids
-	#	white_peace = TIM 
-	#	TIM = {
-	#		create_march = SAB
-	#	}
-	#}
-	option = {
-		name = timurlane.166.b #We shall fight to the last man!		
-	}
-}
-
-country_event = { 
-	id = timurlane.1666 #Timur offer Vassalization, must convert to Sunni and adopt a Timurid ruler
-	title = timurlane.1666.t
-	desc = timurlane.1666.d
-	picture = NOT_DISCIPLINED_SOLDIERS_eventPicture
-
-	is_triggered_only = yes
-
-	#option = {
-	#	name = timurlane.1666.a #We must give in to the Timurids
-	#   create_march = SAB
-	#}
-	option = {
-		name = timurlane.1666.b #We shall fight to the last man!
-	}
-}
+#country_event = { 
+#	id = timurlane.1666 #Timur offer Vassalization, must convert to Sunni and adopt a Timurid ruler
+#	title = timurlane.1666.t
+#	desc = timurlane.1666.d
+#	picture = NOT_DISCIPLINED_SOLDIERS_eventPicture
+#
+#	is_triggered_only = yes
+#
+#	#option = {
+#	#	name = timurlane.1666.a #We must give in to the Timurids
+#	#   create_march = SAB
+#	#}
+#	option = {
+#		name = timurlane.1666.b #We shall fight to the last man!
+#	}
+#}
 
 country_event = { 
 	id = timurlane.167 #Timur offer Vassalization, must convert to Sunni and adopt a Timurid ruler
@@ -1028,6 +1032,8 @@ country_event = {
 		add_yearly_manpower = 2
 		add_ruler_modifier = {
 			name = "sabardarid_conquest"
+			duration = -1
+			hidden = yes
 		}
 	}
 }
@@ -1055,6 +1061,8 @@ country_event = {
 		add_yearly_manpower = 2
 		add_ruler_modifier = {
 			name = "kurtid_conquest"
+			duration = -1
+			hidden = yes
 		}
 	}
 }
@@ -1082,6 +1090,8 @@ country_event = {
 		add_yearly_manpower = 2
 		add_ruler_modifier = {
 			name = "mihrabanid_conquest"
+			duration = -1
+			hidden = yes
 		}
 	}
 }
@@ -1108,6 +1118,8 @@ country_event = {
 		add_yearly_manpower = 2
 		add_ruler_modifier = {
 			name = "muzafarrid_conquest"
+			duration = -1
+			hidden = yes
 		}
 	}
 }
@@ -1134,6 +1146,8 @@ country_event = {
 		add_yearly_manpower = 2
 		add_ruler_modifier = {
 			name = "injuid_conquest"
+			durration = -1
+			hidden = yes
 		}
 	}
 }

@@ -5,7 +5,7 @@ country_event = { #Point of no return event for the Gascons forming the Pyrenne 
 	id = flagas.1
 	title = "flagas.1.t"
 	desc = "flagas.1.desc"
-	picture = GOOD_WITH_MONARCH_eventPicture.dds
+	picture = GOOD_WITH_MONARCH_eventPicture
 	
 	fire_only_once = yes
 	is_triggered_only = yes
@@ -31,7 +31,7 @@ country_event = { #Final Event/Mission for Gascony forming the Pyrenne Kingdom
 	id = flagas.2
 	title = "flagas.2.t"
 	desc = "flagas.2.desc"
-	picture = GOOD_WITH_MONARCH_eventPicture.dds
+	picture = GOOD_WITH_MONARCH_eventPicture
 	
 	fire_only_once = yes
 	is_triggered_only = yes

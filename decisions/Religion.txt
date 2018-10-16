@@ -555,6 +555,7 @@ country_decisions = {
 			}
 		}
 		effect = {
+# Audax Validator "." Ignore_NEXT
 			change_religion = capital
 			add_stability = 1
 			add_legitimacy = 10

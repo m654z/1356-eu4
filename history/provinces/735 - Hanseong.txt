@@ -1,8 +1,8 @@
 # 735 - Gyeonggi (1356)
 # Changes: religion
 
-owner = GYO
-controller = GYO
+owner = KOR
+controller = KOR
 culture = korean
 religion = mahayana
 capital = "Hanseong"
@@ -12,7 +12,8 @@ base_tax = 4
 base_production = 4
 base_manpower = 2
 is_city = yes
-add_core = GYO
+#add_core = GYO
+add_core = KOR
 fort_15th = yes
 
 discovered_by = chinese

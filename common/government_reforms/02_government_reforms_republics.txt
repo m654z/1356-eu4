@@ -368,9 +368,7 @@ veche_republic = {
 	allow_normal_conversion = yes
 	potential = {
 		OR = {
-			AND = {
-				culture_group = east_slavic
-			}
+			culture_group = east_slavic
 			AND = {
 				is_playing_custom_nation = yes
 				have_had_reform = veche_republic
@@ -746,6 +744,7 @@ frequent_elections_reform = {
 	trigger = {
 		custom_trigger_tooltip = {
 			tooltip = "NEEDS_REGULAR_ELECTIONS"
+# Audax Validator "." Ignore_NEXT
 			has_government_attribute = has_term_election
 		}
 	}

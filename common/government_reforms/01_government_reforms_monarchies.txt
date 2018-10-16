@@ -737,6 +737,7 @@ mughal_government = {
 		mande = {
 			tolerance_heretic = 1
 		}
+# Audax Validator "." Ignore_NEXT
 		mon_khmer = {
 			build_cost = -0.05
 		}
@@ -1351,33 +1352,34 @@ deccani_society_reform = {
 
 #####1356 Changes Start 2######
 
-yuan_celestial_empire_elective_heirs_reform = { #Mostly to show that you have this
-	icon = "crown"
-	allow_normal_conversion = no
-	potential = {
-		tag = YUA
-		is_emperor_of_china = yes
-		OR = {
-			has_country_flag = yuan_nobles_succeed_plot_flag
-			has_country_flag = yuan_celestial_empire_noble_republic_flag
-		}
-		has_country_flag = yuan_noble_republic_disaster_over_flag #Exclusive to this reform
-	}
-	modifiers = {
-		global_manpower_modifier = 0.05
-		global_unrest = -1
-		stability_cost_modifier = -0.05
-	}
-	
-	effect = {
-		custom_tooltip = celestial_empire_noble_republic_reform_tt
-		set_country_flag = yuan_celestial_empire_noble_republic_flag
-	}
-	
-	conditional = {
-		allow = { has_dlc = "Dharma" }
-	}
-}
+#Commented out as it's unfinished
+#yuan_celestial_empire_elective_heirs_reform = { #Mostly to show that you have this
+#	icon = "crown"
+#	allow_normal_conversion = no
+#	potential = {
+#		tag = YUA
+#		is_emperor_of_china = yes
+#		OR = {
+#			has_country_flag = yuan_nobles_succeed_plot_flag
+#			has_country_flag = yuan_celestial_empire_noble_republic_flag
+#		}
+#		has_country_flag = yuan_noble_republic_disaster_over_flag #Exclusive to this reform
+#	}
+#	modifiers = {
+#		global_manpower_modifier = 0.05
+#		global_unrest = -1
+#		stability_cost_modifier = -0.05
+#	}
+#	
+#	effect = {
+#		custom_tooltip = celestial_empire_noble_republic_reform_tt
+#		set_country_flag = yuan_celestial_empire_noble_republic_flag
+#	}
+#	
+#	conditional = {
+#		allow = { has_dlc = "Dharma" }
+#	}
+#}
 
 #####1356 Changes End 2########
 

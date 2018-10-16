@@ -159,9 +159,7 @@ country_event = {
 	option = {
 		name = "hansa.4.o4"
 		trigger = {
-			OR = {
-				NOT = { has_country_modifier = hansa_reform_2_member }
-			}
+			NOT = { has_country_modifier = hansa_reform_2_member }
 		}
 		add_prestige = -5
 		FROM = {

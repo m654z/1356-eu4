@@ -202,7 +202,7 @@ republic = {
 		oligarchic_republic
 		merchant_republic
 		venetian_merchant_republic
-		imperial_city
+		imperial_city_legacy
 		trading_city_legacy
 		ambrosian_republic_legacy
 		dutch_republic_legacy

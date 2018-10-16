@@ -3,6 +3,7 @@
 # Uses all 'modifiers' possible thats exported as a Modifier.
 
 
+# Audax Validator "." Ignore_NEXT
 christian = {	
 	hussite = {
 		color = { 0.7 0.6 0.4 }
@@ -247,6 +248,7 @@ christian = {
 	}
 }	
 
+# Audax Validator "." Ignore_NEXT
 pagan = {
 	defender_of_faith = yes
 

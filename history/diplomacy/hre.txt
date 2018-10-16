@@ -10,6 +10,7 @@
 1740.12.22 = { emperor = BAV }
 1745.1.21  = { emperor = TUS }
 1765.1.1   = { emperor = HAB }
+# Audax Validator "." Ignore_NEXT
 1806.7.12  = { emperor = XXX } 
 
 

@@ -308,14 +308,14 @@ historical_friend = CHG
 		desc = yua_toqtoa_culture_reform_mission_2_modifier_tt
 	}
  	add_country_modifier = { #Stab Cost/Tech Cost/Institution Spread
-		name = yua_toqtoa_culture_reform_mission_1_modifier
+		name = yua_toqtoa_stability_reform_mission_1_modifier
 		duration = -1
-		desc = yua_toqtoa_culture_reform_mission_1_modifier_tt
+		desc = yua_toqtoa_stability_reform_mission_1_modifier_tt
 	}
  	add_country_modifier = { #Stab Cost/Harsh Treatment Cost/Idea Cost
-		name = yua_toqtoa_culture_reform_mission_2_modifier
+		name = yua_toqtoa_stability_reform_mission_2_modifier
 		duration = -1
-		desc = yua_toqtoa_culture_reform_mission_2_modifier_tt
+		desc = yua_toqtoa_stability_reform_mission_2_modifier_tt
 	}
  	add_country_modifier = { #Tax Modifier/Build Cost/Build Time/Interest/Inflation
 		name = yua_toqtoa_economy_reform_mission_1_modifier

@@ -810,13 +810,13 @@ bur_lotharingia_imperial_tree = { #Burgundy/Arles/Lotharingia - Lotharingia Tree
 			OR = {
 				AND = {
 					has_opinion = {
-# Audax Validator "." Ignore_1006
+# Audax Validator "." Ignore_NEXT
 						who = emperor
 						value = 150
 					}
-# Audax Validator "." Ignore_1006
+# Audax Validator "." Ignore_NEXT
 					NOT = { is_rival = emperor }
-# Audax Validator "." Ignore_1006
+# Audax Validator "." Ignore_NEXT
 					NOT = { historical_rival_with = emperor }
 				}
 				AND = {	

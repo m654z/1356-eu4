@@ -220,8 +220,7 @@ country_event = { #The Great Purge
 		}
 		define_advisor = {
 			type = commandant
-			Name = "Ioseb Besarionis"
-			male = yes
+			name = "Ioseb Besarionis"
 			culture = georgian
 			religion = orthodox
 			location = 4301
