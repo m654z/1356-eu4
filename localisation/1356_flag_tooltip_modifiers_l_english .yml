@@ -257,9 +257,9 @@
  yuadisaster_event_42_bribe_tooltip: "We sent bribes to every Noble, Noble's Son, Noble's Wife, Noble's Daughter, Noble's Second Counsin, and Noble's Horse. There is no way this rebellion can continue much longer!"
  yuan_red_turban_begin_next_event_tt: "An Old Friend Returns..."
  yua_toqtoa_reward_dip_mission_modifier_tooltip: "We've successfully fixed our Trade, Diplomacy, Navy, Close Advisors, and Currency!"
- yua_alatic_provinces_tooltip: "Our Nomadic Brothers"
+ 1356_yua_alatic_provinces_tooltip: "Our Nomadic Brothers"
  
- yua_starting_modifiers_tooltip: "Nomadic Brothers"
+ yuan_starting_modifiers_tooltip: "Nomadic Brothers"
  yua_toqtoa_diplomacy_reform_mission_1_modifier_tt: "During recent years our Diplomats fled our court, some fled when we exiled Toqto'a, others more recently. Regardless of when, currently our ability to conduct diplomatic actions is very limited."
  yua_toqtoa_diplomacy_reform_mission_2_modifier_tt: "As we fell into decline, as did our Diplomatic Reputation. Many nations near us won't even trust us to watch their horse, let alone conduct any diplomatic actions! We must put a lot of work into fixing our reputation, less we never get out of this hole we've dug ourselves into."
  yua_toqtoa_diplomacy_reform_mission_3_modifier_tt: "What few Diplomats we have are not trusted to even conduct diplomacy with the Emperors Horse! We should invest money and time into properly training them, less we insult someone on accident."
@@ -290,4 +290,12 @@
  yua_toqtoa_stability_reform_mission_2_modifier_tt: "Now that we've gotten over the roadblock that was stopping us from advancing in technolgy out of the way perhaps we should adopt some new nationalist ideals while we're at it."
  yua_toqtoa_economy_reform_mission_1_modifier_tt: "With the ability to trade with foreign nations back in our hands, perhaps we should finally start collecting taxes again?"
  yua_toqtoa_economy_reform_mission_2_modifier_tt: "Trade goods are what makes a nation the most money. Currently our peasants are producing next to nothing, we should remedy this soon less we may be forced to declare bankrupcy."
+ yua_quell_red_turban_mission_1_modifier_tt: ""
+ yua_quell_red_turban_mission_2_modifier_tt: ""
+ yua_quell_red_turban_mission_3_modifier_tt: ""
+ yua_quell_red_turban_mission_4_modifier_tt: ""
+ yua_quell_red_turban_mission_5_modifier_tt: ""
+ yua_quell_red_turban_mission_6_modifier_tt: ""
+ 
+ forming_swiss_diplomatically_tooltip: "$TAG% needs to be the overlord of the following nations. Bern, Zurich, Thurgau, Churraetia, and Wallis."
  

@@ -102,3 +102,7 @@
  swabian_nation_desc:0 "The squabbling Swabian states have been in decadence for a good couple centuries now, but with the unification of Swabia by our nation, that period has come to an end. Rejoice, for the Duchy of Swabia has been born anew! With the blessing of God, the Swabians will once again be the masters of the Holy Roman Empire and all of Europe will kneel before our majesty!"
  qing_culture_shift_decision_title: "A New Culture?"
  qing_culture_shift_decision_desc: "Now that we are the new Son of Heaven and have claimed the mandate, perhaps it is time to become more like those we rule. It may be a good idea to do this so we can avoid the same fate as the Yuan Dynasty..."
+ swiss_nation_dip_title: "Form the Swiss Nation Diplomaticly"
+ swiss_nation_dip_desc: "Even though we've banded together for protection from outsiders we're still weak. If we were to all unite together under one nation perhaps we would be able to stand a chance against our neighbors who would do us harm..."
+ swiss_nation_mil_title: "Form the Swiss Nation by Force"
+ swiss_nation_mil_+desc: "If the other Swiss Cantons can not be brought to our side of the united Switzerland debate, then we will have to show them what we mean by force! They must understand this is out of love and protection, not out of hatred or greed!"

@@ -41,6 +41,7 @@ country_decisions = {
 				name = "centralization_modifier"
 				duration = 3650
 			}
+			#This doesnt work. Neither does it for the Swiss.
 			limit = {
 				if = {
 					NOT = { government = monarchy }

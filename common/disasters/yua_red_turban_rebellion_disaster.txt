@@ -41,7 +41,7 @@ red_turban_rebellion_disaster = {
 				NOT = { war_exhaustion = 5 }
 				is_at_war = no
 				NOT = { has_spawned_rebels = yuan_red_turban_rebels }
-				NOT = { has_spawned_rebels = nationalist }
+				NOT = { has_spawned_rebels = nationalist_rebels }
 				NOT = { num_of_rebel_controlled_provinces = 3 }
 				NOT = {	num_of_revolts = 3 }
 			}
