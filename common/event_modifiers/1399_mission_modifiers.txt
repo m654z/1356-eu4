@@ -502,3 +502,58 @@ gas_pyrenne_kingdom_mod_4_modifier = {
 	state_maintenance_modifier = -0.2
 	interest = -1
 }
+#Zurich
+zur_cantons_satisfied = {
+	vassal_income = 0.2
+	vassal_forcelimit_bonus = 0.1
+}
+
+zur_ready_for_war = {
+	land_morale = 0.1
+}
+
+zur_conquest_of_fribourg = {
+	manpower_recovery_speed = 0.1
+	discipline = 0.05
+}
+
+zur_sempacherbrief_written = {
+	liberty_desire = -10
+	liberty_desire_from_subject_development = -0.3
+}
+
+zur_clearing_the_habsburgs = {
+	prestige = 1
+	land_morale = 0.1
+}
+
+zur_expansion_into_italy = {
+	ae_impact = -0.1
+	production_efficiency = 0.1
+}
+
+zur_religious_unity = {
+	tolerance_own = 1
+	religious_unity = 0.5
+	tolerance_heretic = 1
+}
+
+zur_fiery_rhetoric = {
+	diplomatic_reputation = 2
+	land_morale = 0.05
+}
+
+zur_fort = {
+	prestige = 1
+	defensiveness = 0.1
+}
+
+zur_papal_diplomacy = {
+	diplomatic_reputation = 3
+	diplomats = 1
+}
+
+zur_swiss_mercenaries = {
+	shock_damage = 0.2
+	discipline = 0.05
+}
