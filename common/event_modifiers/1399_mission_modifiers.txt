@@ -557,3 +557,21 @@ zur_swiss_mercenaries = {
 	shock_damage = 0.2
 	discipline = 0.05
 }
+
+zur_berner_trade_goods = {
+	global_trade_power = 0.075
+}
+
+zur_developed_subjects = {
+	liberty_desire = -5
+	diplomatic_reputation = 1
+}
+
+zur_waldstatte_dev_cost = {
+	local_development_cost = -0.25
+	allowed_num_of_buildings = 1
+}
+
+zur_reduced_dev_cost = {
+	development_cost = -0.1
+}
