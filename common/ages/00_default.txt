@@ -261,8 +261,8 @@ age_of_feudalism = {
 				
 			}
 			modifier = {
-				papal_influence = 0.5
-				missionaries = 1
+				papal_influence = 2
+				enforce_religion_cost = -0.5
 			}
 			ai_will_do = {
 				factor = 100

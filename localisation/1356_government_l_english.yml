@@ -50,5 +50,10 @@
  swiss_canton_reform_desc: ""
  byzantine_empire_reform: "Theme System"
  byzantine_empire_reform_desc: "The Byzantine Empire, or otherwise known as the Eastern Roman Empire, is the continuation of the Roman Empire. During the later part of its reign, the Byzantines used what is called a 'Theme System' to control its provinces."
- 
- 
+ venetian_merchant_republic: "Serene Republic"
+ chinese_kingdom_government: "Warlord State"
+ kalmar_union_legacy: "Kalmar Union"
+ earldom_legacy: "Earldom"
+ beylik_legacy: "Beylik"
+ archduchy_legacy: "Archduchy"
+ imperial_city: "Imperial City"

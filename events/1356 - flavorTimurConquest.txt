@@ -459,13 +459,6 @@ country_event = {
 
 	is_triggered_only = yes
 
-	#option = {
-	#	name = timurlane.167.a #We must give in to the Timurids
-	#	white_peace = TIM 
-	#	TIM = {
-	#		create_march = KRT
-	#	}
-	#}
 	option = {
 		name = timurlane.167.b #We shall fight to the last man!
 	}

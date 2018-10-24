@@ -1,6 +1,6 @@
 NDefines.NGame.START_DATE = "1356.12.25"
 NDefines.NGame.END_DATE = "1836.1.1"
-NDefines.NDiplomacy.IMPERIAL_REFORM_COST = 75
+NDefines.NDiplomacy.IMPERIAL_REFORM_COST = 65
 NDefines.NCountry.FREE_IDEA_GROUP_COST  = 4
 NDefines.NCountry.PS_BUY_NATIVE_ADVANCEMENT = 800
 NDefines.NGraphics.COLOR_WASTELANDS = 1
