@@ -685,7 +685,7 @@ yuan_toqtoa_red_turban_rebellion_non_nomad_group = { #Toqto's Return - Crush Tib
 			}			
 		}
 	}
-	yua_toqtoa_red_turban_rebellion_korea = { #Crush the Rebels -  Southern Korea
+	yua_toqtoa_red_turban_rebellion_korea_2 = { #Crush the Rebels -  Southern Korea
 		icon =  mission_have_two_subjects
 		required_missions = { yua_toqtoa_red_turban_rebellion_korea }
 		position = 12

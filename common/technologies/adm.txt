@@ -32,6 +32,7 @@ technology = {
 
 	tribal_democracy_legacy = yes
 	tribal_kingdom_legacy = yes
+	may_fabricate_claims = yes	
 }
 
 technology = {
@@ -39,7 +40,6 @@ technology = {
 	year = 1360
 	
 	may_support_rebels = yes
-	#may_fabricate_claims = yes	
 }
 
 technology = {

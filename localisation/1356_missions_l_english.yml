@@ -902,6 +902,20 @@
  yua_toqtoa_reform_economy_mission_1_title: "Taxation Reforms"
  yua_toqtoa_reform_economy_mission_2_title: "Restarting Production"
  yua_toqtoa_reform_yuan_finished_mission_title: "A Reformed Yuan"
+ yua_quell_red_turban_rebellion_toqto_xinan_mission_title: "Crush Xinan Rebels"
+ yua_red_turban_rebellion_outer_mongolia_mission_title: "Outer Mongolia"
+ yua_red_turban_rebellion_manchuria_title: "Manchuria"
+ yua_red_turban_rebellion_buryatia_title: "Buryatia"
+ yua_toqtoa_red_turban_rebellion_tibet_title: "Annex Tibet"
+ yua_toqtoa_red_turban_rebellion_tibet_more_mission_title: "Annex Tibet Again"
+ yua_toqtoa_red_turban_rebellion_korea_title: "North Korea"
+ yua_toqtoa_red_turban_rebellion_korea_2_title: "Annex South Korea"
+ yua_quell_red_turban_rebellion_toqto_henan_china_mission_title: "Secure the Henan Area"
+ yua_quell_red_turban_rebellion_capital_mission: "Secure the Capital Area"
+ yua_red_turban_rebellion_inner_mongolia_mission: "Secure our Homeland"
+ yua_quell_red_turban_rebellion_toqtoa_north_china_coast_mission: "Secure the North Coast"
+ yua_quell_red_turban_rebellion_toqto_secured_north_china_mission: "Secured the North"
+ 
  
   
  #Mission Container Groups
