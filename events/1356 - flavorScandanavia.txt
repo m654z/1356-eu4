@@ -11,10 +11,10 @@ country_event = { #Perhaps we should tweak this to take into account queens and 
 
 	trigger = {
 		tag = NOR
-		OR = {
+		#OR = {
 			has_reform = elective_feudal_monarchy_reform
-			has_legacy_government = elective_feudal_monarchy
-		}
+			#has_legacy_government = elective_feudal_monarchy
+		#}
 		OR = {
 			marriage_with = DAN
 			marriage_with = SWE
@@ -190,10 +190,10 @@ country_event = {
 			tag = SWE
 		}
 		is_lesser_in_union = yes
-		OR = {
+		#OR = {
 			has_reform = elective_feudal_monarchy_reform
-			has_legacy_government = elective_feudal_monarchy
-		}
+			#has_legacy_government = elective_feudal_monarchy
+		#}
 	}
 	
 	mean_time_to_happen = {

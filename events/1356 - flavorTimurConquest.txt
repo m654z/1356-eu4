@@ -56,14 +56,15 @@ country_event = {
 		change_tag = TIM
 		swap_free_idea_group = yes	
 		define_ruler = {
-        name = "Timur"
-		dynasty = "Timurid"
-		age = 34
-		claim = 100
-		adm = 6
-		dip = 4
-		mil = 6
-		leader = { name = "Tamerlane"	type = general	fire = 6	shock = 6	manuever = 6	siege = 4 }
+			name = "Timur"
+			dynasty = "Timurid"
+			age = 34
+			claim = 100
+			adm = 6
+			dip = 4
+			mil = 6
+			# Audax Validator "." Ignore_NEXT
+			leader = { name = "Tamerlane"	type = general	fire = 6	shock = 6	manuever = 6	siege = 4 }
         }
 		add_ruler_modifier = {
 			name = "Tamerlane"
@@ -284,7 +285,7 @@ country_event = {
 # Audax Validator "." Ignore_NEXT
 					exists = CHG
 				}
-				total_development = CHG
+				#total_development = CHG
 				total_development = 300
 			}
 			else = {
@@ -455,7 +456,7 @@ country_event = {
 	id = timurlane.167 #Timur offer Vassalization, must convert to Sunni and adopt a Timurid ruler
 	title = timurlane.167.t
 	desc = timurlane.167.d
-	picture = NOT_DISCIPLINED_SOLDIERS_eventPicture
+	picture = ACCUSATION_eventPicture
 
 	is_triggered_only = yes
 
@@ -506,7 +507,7 @@ country_event = {
 			}
 		}
 		SAB = {
-			country_event = { id = timurlane.166 days = 1 }
+			#country_event = { id = timurlane.166 days = 1 }
 		    hidden_effect = {
 			    add_country_modifier = {
 				    name = timurid_death_mark
@@ -593,7 +594,7 @@ country_event = {
 			}
 		}
 		SAB = {
-			country_event = { id = timurlane.166 days = 1 }
+			#country_event = { id = timurlane.166 days = 1 }
 		    hidden_effect = {
 			    add_country_modifier = {
 				    name = timurid_death_mark
@@ -703,7 +704,7 @@ country_event = {
 			}
 		}
 		MUZ = {
-			country_event = { id = timurlane.166 days = 1 }
+			#country_event = { id = timurlane.166 days = 1 }
 		    hidden_effect = {
 			    add_country_modifier = {
 				    name = timurid_death_mark
@@ -793,7 +794,7 @@ country_event = {
 			}
 		}
 		MUZ = {
-			country_event = { id = timurlane.166 days = 1 }
+			#country_event = { id = timurlane.166 days = 1 }
 		    hidden_effect = {
 			    add_country_modifier = {
 				    name = timurid_death_mark
@@ -907,7 +908,7 @@ country_event = {
 			}
 		}
 		INT = {
-			country_event = { id = timurlane.166 days = 1 }
+			#country_event = { id = timurlane.166 days = 1 }
 		    hidden_effect = {
 			    add_country_modifier = {
 				    name = timurid_death_mark
@@ -1139,7 +1140,7 @@ country_event = {
 		add_yearly_manpower = 2
 		add_ruler_modifier = {
 			name = "injuid_conquest"
-			durration = -1
+			duration = -1
 			hidden = yes
 		}
 	}

@@ -162,12 +162,6 @@ gas_new_kingdom_group_2 = { #Create a New Kingdom - Special Missions
 		effect = {
 			add_prestige = 5
 			210 = { #Navarra
-				limit = {
-					AND = {
-						NOT = { is_core = ROOT }
-						NOT = { owned_by = ROOT }
-					}
-				}
 				add_permanent_claim = ROOT
 			}
 		}
@@ -795,12 +789,6 @@ gas_freedom = {
 				add_permanent_claim = ROOT
 			}
 			173 = {
-				limit = {
-					AND = {
-						NOT = { is_core = ROOT }
-						NOT = { owned_by = ROOT }
-					}
-				}
 				add_permanent_claim = ROOT
 			}
 			pyrenees_area = {
@@ -851,26 +839,12 @@ gas_secure_aquitaine = { #Secure The Kingdom of Aquitaine-
 		effect = {
 			add_prestige = 5
 			languedoc_area = { 
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { owned_by = ROOT }
-				}
 				add_permanent_claim = ROOT
 			}
 			guyenne_area = { 
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { owned_by = ROOT }
-				}
 				add_permanent_claim = ROOT
 			}
 			173 = { #Navarra
-				limit = {
-					AND = {
-						NOT = { is_core = ROOT }
-						NOT = { owned_by = ROOT }
-					}
-				}
 				add_permanent_claim = ROOT
 			}
 		}

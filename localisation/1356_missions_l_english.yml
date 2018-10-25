@@ -1116,6 +1116,16 @@
  yuan_toqtoa_red_turban_rebellion_west_china_group: "Group"
  yuan_toqtoa_red_turban_rebellion_misc_group: "Group"
  yuan_toqtoa_red_turban_rebellion_xinan_region_group: "Group"
+ yuan_toqtoa_interior_diplomacy: "Group"
+ yuan_toqtoa_interior_spies_trade: "Group"
+ 
+ zurich_two: "Group"
+ zur_three: "Group"
+ zur_four: "Group"
+ zur_six: "Group"
+ zur_eight: "Group"
+ zur_ten: "Group"
+ 
  
  ###Start Swiss Missions###
  zur_appease_cantons_title:0 "Appease the Cantons"

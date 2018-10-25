@@ -89,8 +89,8 @@ country_event = {
 		change_unit_type = nomad_group
 		remove_accepted_culture = manchu
 		set_government_rank = 2		
-		government = tribal
-		set_government_reform = steppe_horde_reform
+		change_government = tribal
+		add_government_reform = steppe_horde
 
 		clr_country_flag = heir_elected_yua_flag
 		clr_country_flag = yuan_bribed_noble_rebellion_away_flag
@@ -165,6 +165,7 @@ country_event = { #Toqto Returns! #Tied into the Red Turban Rebellion Disaster
 		has_disaster = red_turban_rebellion_disaster
 		NOT = { has_country_flag = yuan_toqto_returns_flag }
 		NOT = { has_country_flag = yuan_toqto_killed_flag }
+
 	}
 	mean_time_to_happen = {
 		months = 50
@@ -231,12 +232,12 @@ country_event = { #Toqto Returns! #Tied into the Red Turban Rebellion Disaster
 		}
 		add_historical_rival = GYO
 		add_historical_rival = KOR
-		GYO = {
-			country_event = { #Tells the Koreans that Toqto'a has returned
-				id = koreagoryeo.1
-				days = 30
-			}
-		}
+		#GYO = {
+		#	country_event = { #Tells the Koreans that Toqto'a has returned
+		#		id = koreagoryeo.1
+		#		days = 30
+		#	}
+		#}
 	}
 	option = { #I thought we exiled you! Guards! Kill this man!
 		name = yua.4.b
@@ -553,7 +554,10 @@ country_event = { #Event to turn remains of Yuan Tengrist if desired
 	fire_only_once = yes
 	
 	trigger = {
-		tag = KHA
+		OR = {
+			tag = KHA
+			tag = YUA
+		}
 		has_country_flag = final_fall_of_yuan_flag
 		NOT = { is_year = 1444 }
 		religion = confucianism
@@ -581,51 +585,51 @@ country_event = { #Event to turn remains of Yuan Tengrist if desired
 #Lady Ki Mission Path/Events
 
 #Execution of Toqto'a
-country_event = {
-	id = yua.30
-	title = yua.30.t
-	desc = yua.30.desc
-	picture = DEATH_OF_HEIR_eventPicture
-	
-	fire_only_once = yes
-	major = yes
-	is_triggered_only = yes
-	
-	option = { #Off with his head! 
-		name = yua.30.a
-		add_stability = 1
-		add_prestige = 10
-		add_meritocracy = 10
-		add_manpower = -10
-		country_event = { #Now to turn our focus to these rebels!
-			id = yua.32
-			days = 180
-		}
-		GYO = {
-			country_event = { #Korea Receives word Toqto'a was found and executed.
-				id = koreagoryeo.2
-				days = 30
-			}
-		}
-	}
-}
+#country_event = {
+#	id = yua.30
+#	title = yua.30.t
+#	desc = yua.30.desc
+#	picture = DEATH_OF_HEIR_eventPicture
+#	
+#	fire_only_once = yes
+#	major = yes
+#	is_triggered_only = yes
+#	
+#	option = { #Off with his head! 
+#		name = yua.30.a
+#		add_stability = 1
+#		add_prestige = 10
+#		add_meritocracy = 10
+#		add_manpower = -10
+#		country_event = { #Now to turn our focus to these rebels!
+#			id = yua.32
+#			days = 180
+#		}
+		#GYO = {
+		#	country_event = { #Korea Receives word Toqto'a was found and executed.
+		#		id = koreagoryeo.2
+		#		days = 30
+		#	}
+		#}
+#	}
+#}
 
 
 #The Empire focuses on the Rebel Problem
-country_event = {
-	id = yua.32
-	title = yua.32.t
-	desc = yua.32.desc
-	picture = DEATH_OF_HEIR_eventPicture
-	
-	fire_only_once = yes
-	is_triggered_only = yes
-	
-	option = { #
-		name = yua.32.a
-			
-	}
-}
+#country_event = {
+#	id = yua.32
+#	title = yua.32.t
+#	desc = yua.32.desc
+#	picture = DEATH_OF_HEIR_eventPicture
+#	
+#	fire_only_once = yes
+#	is_triggered_only = yes
+#	
+#	option = { #
+#		name = yua.32.a
+#			
+#	}
+#}
 
 
 
@@ -687,8 +691,7 @@ country_event = {
 		add_meritocracy = -25	
 			
 	}
-	option = { #Religion of our Ancestors! -Trait Locked?-
-		name = yua.200.e
-			
-	}
+	#option = { #Religion of our Ancestors! -Trait Locked?- #Never implimented
+	#	name = yua.200.e		
+	#}
 }

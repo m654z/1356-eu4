@@ -145,6 +145,16 @@
  yua_toqtoa_economy_reform_mission_2_modifier: "Production at a Grinding Hault"
  yua_crushed_pre_start_korean_rebellion_modifier: "Crushed the Koreans"
  yua_annex_tibet_modifier: "Annexed Tibet"
+ zur_reduced_dev_cost: "Reduced Development Cost"
+ yua_quell_red_turban_mission_6_modifier: "Army Costs Increased"
+ yua_quell_red_turban_mission_5_modifier: "Army Lack ofDiscipline"
+ yua_quell_red_turban_mission_4_modifier: "Lack of Calvary Training"
+ yua_quell_red_turban_mission_3_modifier: "Lack of Infantry Training"
+ yua_quell_red_turban_mission_2_modifier: "Lowered Army Force Limit 2"
+ yua_quell_red_turban_mission_1_modifier: "Lowered Army Force Limit"
+ yua_toqtoa_culture_reform_mission_3_modifier: "A Cultural Revolution"
+ yua_toqtoa_religion_reform_mission_4_modifier: "Religious Enthusiasm"
+ yuan_toqoa_mission_keep_korea_reward: "Annexed Southern Korea"
  
  #Policies
  desc_the_inquisitor_act: "The Inquisitor Act"
@@ -191,6 +201,7 @@
  yuan_ki_reformed_government_flag: "Successfully reformed the Yuan Government"
  yuan_red_turban_rebellion_began_flag: "Red Turban Rebellion Begins..."
  yua_quelled_xinan_rebellion_flag: "Quelled Xinan Region"
+ red_turban_rebellion_over_flag: "End of the Red Turban Rebellion"
  
  #Scripted Effects
  yuan_culture_convert_decision_effect: "Our King, heir, and Mongolian provinces adopt a new culture. One more...Chinese?"
@@ -311,9 +322,16 @@
  yuan_red_turban_zhili_revolt_tt: "The Zhili Revolt!"
  yuan_red_turban_jin_revolt_tt: "The Jin Revolt"
  yuan_red_turban_xibei_revolt_tt: "The Xibei Revolt"
- yua_toqtoa_culture_reform_mission_3_modifier_tt: ""
- yua_toqtoa_religion_reform_mission_4_modifier_tt: ""
+ yua_toqtoa_religion_reform_mission_4_modifier_tt: "Extensive Religious Reforms"
+ yua_toqtoa_culture_reform_mission_3_modifier_tt: "Cultural Revolution"
+ yuan_red_turban_sichuanese_revolt_tt: "The Sichuanese Revolt!"
+ yuan_red_turban_miao_revolt_tt: "The Miao Revolt!"
+ yuan_red_turban_hubei_revolt_tt: "The Hubei Revolt!"
+ yuan_red_turban_gan_revolt_tt: "The Gan Revolt!"
  
- 
+ yua_toqtoa_diplomacy_reform_mission_7_modifier: "Diplomacy Reform"
+ yua_toqtoa_diplomacy_reform_mission_8_modifier: "Diplomacy Reform"
+ yua_toqtoa_diplomacy_reform_mission_9_modifier: "Diplomacy Reform"
+  
  forming_swiss_diplomatically_tooltip: "$TAG% needs to be the overlord of the following nations. Bern, Zurich, Thurgau, Churraetia, and Wallis."
  

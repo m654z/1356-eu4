@@ -620,8 +620,10 @@
  yuan_red_turban_rebels_demand_desc: "The Separatists demand Independence for the Han People. They feel that the Yuan Dynasty does not hold the interests of the Han people at all, and wish to overthrow their dynasty as a result."
  yuan_red_turban_rebels_demand: "Independence for the Han Chinese People"
  yuan_red_turban_rebels_desc: "The Red Turbans were orignally followers of the White Lotus and Persian Gnostics that existed to resist the Mongols, getting their name 'Red Turbans' for their Red Banners and Red Turbans they wore to distinguish themselves. At first the rebellions were sporadic, starting in Zhejiang and assaulting a group of Yuan officials. Eventually, after changing leadership a handful of times and rebellions merging into bigger groups Zhu Yuanzhang became the leader of the rebellion after Guo Zixing passed away. Zhu would go on to lead a campaign against the Yuan, and finally founding the Ming Dynasty in 1368 when he proclaimed himself Emperor. The whole rebellion lasted around 20 years, and every Yuan official that was captured by the Red Turbans was brutally murdered. /n/nThese rebels wish to gain freedom from Yuan oppression, and will stop at nothing to get it. The only way to deal with them is to reform your country, and put down the rebellions province by province, systematicly executing anyone that played a part in the rebellion."
- 
+ yuan_red_turban_rebels_army: "Red Turbans"
  cb_make_nusantara: "Make Nusantara"
+ pfaffenbrief_created: "Paffenbrief"
+ zur_rented_mercs: "Rented Mercenaries"
  
  
  
