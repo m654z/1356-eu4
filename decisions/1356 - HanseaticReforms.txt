@@ -47,11 +47,9 @@ country_decisions = {
 			has_country_flag = reform_1_pending
 		}
 		allow = {
-			every_country = {
-				limit = {
-					has_country_modifier = member_of_hansa_ev
-					NOT = { is_rival = ROOT }
-				}
+			any_country = {
+				has_country_modifier = member_of_hansa_ev
+				NOT = { is_rival = ROOT }
 				has_opinion = {
 					who = ROOT
 					value = 50
@@ -89,7 +87,7 @@ country_decisions = {
 			modifier = {
 				factor = 0
 				any_country = {
-					limit = { has_country_modifier = member_of_hansa_ev }
+					has_country_modifier = member_of_hansa_ev
 					has_opinion = {
 						who = ROOT
 						value = -150
@@ -155,10 +153,8 @@ country_decisions = {
 			has_global_flag = reform_1_done
 		}
 		allow = {
-			every_country = {
-				limit = {
-					has_country_modifier = member_of_hansa_ev
-				}
+			any_country = {
+				has_country_modifier = member_of_hansa_ev
 				NOT = {
 					has_opinion_modifier = {
 						who = ROOT
@@ -235,7 +231,7 @@ country_decisions = {
 			modifier = {
 				factor = 0
 				any_country = {
-					limit = { has_country_modifier = member_of_hansa_ev }
+					has_country_modifier = member_of_hansa_ev
 					has_opinion = {
 						who = ROOT
 						value = -150
@@ -303,10 +299,8 @@ country_decisions = {
 			has_global_flag = reform_2_done
 		}
 		allow = {
-			every_country = {
-				limit = {
-					has_country_modifier = member_of_hansa_ev
-				}
+			any_country = {
+				has_country_modifier = member_of_hansa_ev
 				NOT = {
 					has_opinion_modifier = {
 						who = ROOT
@@ -383,7 +377,7 @@ country_decisions = {
 			modifier = {
 				factor = 0
 				any_country = {
-					limit = { has_country_modifier = member_of_hansa_ev }
+					has_country_modifier = member_of_hansa_ev
 					has_opinion = {
 						who = ROOT
 						value = -150
@@ -452,10 +446,8 @@ country_decisions = {
 			has_global_flag = reform_3_done
 		}
 		allow = {
-			every_country = {
-				limit = {
-					has_country_modifier = member_of_hansa_ev
-				}
+			any_country = {
+				has_country_modifier = member_of_hansa_ev
 				NOT = {
 					has_opinion_modifier = {
 						who = ROOT
@@ -528,7 +520,7 @@ country_decisions = {
 			modifier = {
 				factor = 0
 				any_country = {
-					limit = { has_country_modifier = member_of_hansa_ev }
+					has_country_modifier = member_of_hansa_ev
 					has_opinion = {
 						who = ROOT
 						value = -150
@@ -598,10 +590,8 @@ country_decisions = {
 			has_global_flag = reform_4_done
 		}
 		allow = {
-			every_country = {
-				limit = {
-					has_country_modifier = member_of_hansa_ev
-				}
+			any_country = {
+				has_country_modifier = member_of_hansa_ev
 				NOT = {
 					has_opinion_modifier = {
 						who = ROOT
@@ -674,7 +664,7 @@ country_decisions = {
 			modifier = {
 				factor = 0
 				any_country = {
-					limit = { has_country_modifier = member_of_hansa_ev }
+					has_country_modifier = member_of_hansa_ev
 					has_opinion = {
 						who = ROOT
 						value = -150
@@ -745,10 +735,8 @@ country_decisions = {
 			has_global_flag = reform_5_done
 		}
 		allow = {
-			every_country = {
-				limit = {
-					has_country_modifier = member_of_hansa_ev
-				}
+			any_country = {
+				has_country_modifier = member_of_hansa_ev
 				NOT = {
 					has_opinion_modifier = {
 						who = ROOT
@@ -812,7 +800,7 @@ country_decisions = {
 			modifier = {
 				factor = 0
 				any_country = {
-					limit = { has_country_modifier = member_of_hansa_ev }
+					has_country_modifier = member_of_hansa_ev
 					has_opinion = {
 						who = ROOT
 						value = -150

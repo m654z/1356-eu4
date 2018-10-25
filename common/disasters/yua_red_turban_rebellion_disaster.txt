@@ -36,9 +36,9 @@ red_turban_rebellion_disaster = {
 		OR = {
 			AND = {
 				is_emperor_of_china = yes
-				stability = 1
-				prestige = -10
-				NOT = { war_exhaustion = 5 }
+				stability = 2
+				prestige = 0
+				NOT = { war_exhaustion = 4 }
 				is_at_war = no
 				NOT = { has_spawned_rebels = yuan_red_turban_rebels }
 				NOT = { has_spawned_rebels = nationalist_rebels }
@@ -53,9 +53,9 @@ red_turban_rebellion_disaster = {
 	}
 	
 	modifier = {
-		global_unrest = -20
+		global_unrest = -15
 		#years_of_nationalism = 8 #I hope this will just cause a snowball effect, instead of a blanket unrest modifier.
-		stability_cost_modifier = 0.1
+		stability_cost_modifier = 0.25
 		global_autonomy = 0.05
 	}	
 	

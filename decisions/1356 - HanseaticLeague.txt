@@ -20,7 +20,7 @@ country_decisions = {
 			NOT = { num_of_loans = 1 }
 			monthly_income = 2
 			any_country = {
-				limit = { has_country_modifier = member_of_hansa_ev }
+				has_country_modifier = member_of_hansa_ev
 				NOT = {
 					has_opinion = {
 						who = ROOT
@@ -92,7 +92,7 @@ country_decisions = {
 		allow = {
 			NOT = {
 				calc_true_if = {
-					every_country = {
+					any_country = {
 						has_country_modifier = member_of_hansa_ev
 					}
 					amount = 4
@@ -208,6 +208,7 @@ country_decisions = {
 		}
 		ai_will_do = { factor = 1 }
 	}
+
 	reform_info = {
 		major = yes
 		potential = {

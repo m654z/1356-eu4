@@ -1701,6 +1701,7 @@ yuan_toqtoa_mil_reform_group = { #Toqto's Return - Repair the devestated mil
 		position = 4
 		trigger = {
 			army_size_percentage = 1
+			is_year = 1359
 		}
 		effect = {
 			remove_country_modifier = yua_quell_red_turban_mission_1_modifier
@@ -1712,6 +1713,7 @@ yuan_toqtoa_mil_reform_group = { #Toqto's Return - Repair the devestated mil
 		position = 5
 		trigger = {
 			army_size_percentage = 0.75
+			is_year = 1362
 		}
 		effect = {
 			remove_country_modifier = yua_quell_red_turban_mission_2_modifier
