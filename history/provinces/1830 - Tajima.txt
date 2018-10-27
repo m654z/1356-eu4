@@ -22,7 +22,7 @@ discovered_by = KHA
 discovered_by = OIR
 discovered_by = QNG
 
-1370.1.1  = { controller = IMG }
+1370.1.1  = { owner = IMG controller = IMG }
 1371.1.1  = { owner = YMN controller = YMN remove_core = IMG }
 1542.1.1  = { discovered_by = POR }
 1569.1.1  = { add_core = ODA }

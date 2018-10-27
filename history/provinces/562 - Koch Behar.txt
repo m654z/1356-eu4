@@ -24,8 +24,7 @@ discovered_by = chinese
 
 1587.1.1  = { capital = "Atharokotha" }
 1627.1.1  = { discovered_by = POR }
-1660.1.1  = { controller = MUG }
-1661.1.1  = { owner = MUG }
+1660.1.1  = { controller = MUG owner = MUG }
 1680.1.1  = {	controller = KMT
 		owner = KMT
 	    } # Independent but bhutanese puppet

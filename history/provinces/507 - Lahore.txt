@@ -57,8 +57,8 @@ center_of_trade = 2
 		controller = PUN
 		remove_core = BNG
 	    } # Death of Islam Shah Sur, Suri empire split
-1554.7.1  = { controller = MUG } # Humayun invades
-1554.12.1 = { owner = MUG } # Aftermath of the battle of Sirhind
+1554.7.1  = { owner = MUG controller = MUG } # Humayun invades
+#1554.12.1 = { owner = MUG } # Aftermath of the battle of Sirhind
 1566.1.1  = { revolt = { type = noble_rebels size = 1 } }
 1566.6.1  = { revolt = { } }
 1567.1.1  = { fort_15th = no fort_16th = yes } # Renovated and rebuilt by Akbar

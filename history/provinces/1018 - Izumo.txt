@@ -24,7 +24,7 @@ discovered_by = KHA
 discovered_by = OIR
 discovered_by = QNG
 
-1368.1.1   = { controller = STK }
+1368.1.1   = { owner = STK controller = STK }
 1379.1.1   = { owner = YMN controller = YMN }
 1391.1.1   = { owner = STK controller = STK }
 1444.1.1   = { owner = AMA controller = AMA remove_core = YMN }

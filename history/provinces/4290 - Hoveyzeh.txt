@@ -26,10 +26,10 @@ discovered_by = indian
 1409.5.13 = { owner = JLR controller = JLR remove_core = TIM }
 1432.1.1  = { owner = IRQ controller = IRQ add_core = IRQ }
 1444.1.1  = { owner = MSY controller = MSY }
-1535.1.1  = { controller = TUR } # Wartime occupation
-1536.1.1  = { controller = MSY } # End of Ottoman-Safavid war
-1587.1.1  = { controller = TUR } # Wartime occupation
-1590.3.21 = { controller = MSY } # Peace of Istanbul
+1535.1.1  = { owner = TUR controller = TUR } # Wartime occupation
+1536.1.1  = { owner = MSY controller = MSY } # End of Ottoman-Safavid war
+1587.1.1  = { owner = TUR controller = TUR } # Wartime occupation
+1590.3.21 = { owner = MSY controller = MSY } # Peace of Istanbul
 1673.1.1  = { discovered_by = ENG }
 1707.5.12 = { discovered_by = GBR }
 1719.1.1  = { unrest = 5 } # Rebellion

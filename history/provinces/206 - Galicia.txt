@@ -2,7 +2,7 @@
 # Changes: CTR/revolts
 
 owner = CTR
-controller = CAS
+controller = CTR
 add_core = CTR
 culture = galician
 religion = catholic

@@ -21,8 +21,8 @@ discovered_by = muslim
 discovered_by = ottoman
 discovered_by = chinese
 
-1439.1.1  = { controller = MLW }
-1441.1.1  = { controller = SIR }
+1439.1.1  = { controller = MLW owner = MLW }
+1441.1.1  = { controller = SIR owner = SIR }
 1467.1.1  = {	owner = BAH
 		controller = BAH
 		add_core = BAH
@@ -37,8 +37,8 @@ discovered_by = chinese
 		controller = GDW
 		add_core = GDW
 	    } # Malwa conquered by Ahmad Shahis
-1564.2.1  = { controller = MUG } # Conquered by Mughals
-1564.7.1  = {	owner = MUG
+1564.2.1  = { owner = MUG controller = MUG } # Conquered by Mughals
+1564.7.1  = {
 		add_core = MUG
 		capital = "Jabalpur"
 	    } # Annexed by Mughals

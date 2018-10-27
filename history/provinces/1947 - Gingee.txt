@@ -31,10 +31,8 @@ discovered_by = chinese
 1565.1.26 = {	owner = KRK
 		controller = KRK
 	    } # The Vijayanagar empire collapses, the Nayaks proclaimed themselves rulers
-1649.1.1  = { controller = BIJ } # Conquered by Bijapur
-1649.12.1 = {	owner = BIJ
-		add_core = BIJ
-	    } # Conquered by Bijapur
+1649.1.1  = { owner = BIJ controller = BIJ } # Conquered by Bijapur
+1649.12.1 = { add_core = BIJ } # Conquered by Bijapur
 1685.1.1  = { controller = MUG }
 1686.1.1  = { owner = MUG add_core = MUG }
 1710.1.1  = {	owner = KRK

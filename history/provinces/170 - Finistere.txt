@@ -24,8 +24,8 @@ extra_cost = 8
 center_of_trade = 1
 
 1341.4.30  = { owner = MNF controller = MNF add_core = MNF add_core = BLS remove_core = BRI } # Bretton war of succession
-1345.3.1   = { controller = BLS }
-1345.7.1   = { controller = MNF }
+1345.3.1   = { owner = BLS controller = BLS }
+1345.7.1   = { owner = MNF controller = MNF }
 1365.4.12  = { owner = BRI controller = BRI remove_core = MNF remove_core = BLS add_core = BRI } # Treaty of Guerande
 1379.10.14 = { owner = ENG controller = ENG add_core = ENG } # Handed to England due to help recovering the duchy of Brittany
 1397.6.12  = { owner = BRI controller = BRI remove_core = ENG } # Returned to Brittany diplomatically

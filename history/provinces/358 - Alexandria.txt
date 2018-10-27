@@ -28,8 +28,8 @@ center_of_trade = 1
 
 1356.1.1 = { owner = ALX controller = ALX add_core = ALX }
 1360.1.1   = { religion = sunni }
-1365.10.9  = { controller = CYP } # Crusade against Alexandria
-1365.10.12 = { controller = MAM }
+1365.10.9  = { owner = CYP controller = CYP } # Crusade against Alexandria
+1365.10.12 = { owner = MAM controller = MAM }
 1444.1.1 = { add_core = MAM owner = MAM controller = MAM remove_core = ALX }
 1517.1.1   = {	owner = TUR
 		controller = TUR

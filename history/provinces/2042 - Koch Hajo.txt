@@ -22,8 +22,8 @@ discovered_by = muslim
 discovered_by = ottoman
 discovered_by = chinese
 
-1502.1.1  = { controller = BNG }
-1502.6.1  = { owner = BNG } # Conquered by Bengal
+1502.1.1  = { owner = BNG controller = BNG }
+#1502.6.1  = { owner = BNG } # Conquered by Bengal
 1518.1.1  = {	controller = KMT
 		owner = KMT
 	    } # Koch dynasty

@@ -23,7 +23,7 @@ discovered_by = ANU
 
 1366.1.1   = { owner = HTK controller = HTK add_core = HTK }
 1380.1.1   = { owner = SBA controller = SBA remove_core = HTK }
-1385.1.1  = { controller = SBA }
+1385.1.1  = { owner = SBA controller = SBA }
 1460.1.1   = { add_core = ASA }
 1471.7.1   = { owner = ASA controller = ASA }
 1471.7.1   = { capital = "Ichijodani" }

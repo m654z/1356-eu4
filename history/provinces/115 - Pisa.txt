@@ -30,8 +30,8 @@ center_of_trade = 1
 1494.1.1   = { controller = PIS owner = PIS } # Pisan Republic
 1495.1.1   = { hre = no }
 1509.1.1   = { controller = LAN owner = LAN } # Annexed back
-1527.1.1   = { controller = SPA } # War of the League of Cognac
-1529.8.3   = { controller = LAN } # Treaty of Cambrai
+1527.1.1   = { owner = SPA controller = SPA } # War of the League of Cognac
+1529.8.3   = { owner = LAN controller = LAN } # Treaty of Cambrai
 1569.8.1   = {	owner = TUS
 		controller = TUS
 		add_core = TUS

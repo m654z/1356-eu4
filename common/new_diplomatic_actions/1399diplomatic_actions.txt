@@ -8,7 +8,7 @@ establish_kontor = {
 	is_visible = {
 		ROOT = {
 			has_country_flag = member_of_hansa_ev
-			NOT = { government = merchant_republic }
+			NOT = { government = republic }
 		}
 	}
 	is_allowed = {

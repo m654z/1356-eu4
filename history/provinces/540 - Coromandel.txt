@@ -33,8 +33,8 @@ center_of_trade = 2
 		controller = KRK
 		add_core = KRK
 	    } # The Vijayanagar empire collapses
-1649.1.1  = { controller = BIJ } # Conquered by Bijapur
-1649.12.1 = {	owner = BIJ
+1649.1.1  = { controller = BIJ owner = BIJ} # Conquered by Bijapur
+1649.12.1 = {
 		add_core = BIJ
 		remove_core = KRK
 	    } # Conquered by Bijapur

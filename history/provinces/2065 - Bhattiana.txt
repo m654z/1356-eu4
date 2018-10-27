@@ -45,8 +45,8 @@ discovered_by = chinese
 		controller = PUN
 		remove_core = BNG
 	    } # Death of Islam Shah Sur, Suri empire split
-1554.7.1  = { controller = MUG } # Humayun invades
-1554.12.1 = { owner = MUG } # Aftermath of the battle of Sirhind
+1554.7.1  = { owner = MUG controller = MUG } # Humayun invades
+#1554.12.1 = { owner = MUG } # Aftermath of the battle of Sirhind
 1690.1.1  = { discovered_by = ENG }
 1707.5.12 = { discovered_by = GBR }
 1760.1.1  = {	owner = JAN

@@ -21,10 +21,8 @@ discovered_by = ottoman
 discovered_by = nomad_group
 discovered_by = chinese
 
-1564.6.24 = { controller = MUG } # Conquered by Mughals
-1564.7.1  = {	owner = MUG
-		add_core = MUG
-	    } # Annexed by Mughals
+1564.6.24 = { owner = MUG controller = MUG } # Conquered by Mughals
+1564.7.1  = { add_core = MUG } # Annexed by Mughals
 1690.1.1  = { discovered_by = ENG }
 1705.1.1  = {	owner = GDW
 		controller = GDW
