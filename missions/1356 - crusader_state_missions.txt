@@ -31,7 +31,6 @@ crusader_states_missions = {
 	}
 	has_country_shield = yes
 	
-	
 	conquer_adana = {
 		icon = mission_conquer_50_development
 		required_missions = { }
@@ -46,11 +45,6 @@ crusader_states_missions = {
 		trigger = {
 			is_subject = no
 			owns = 327
-			327 = {
-				owner = { 
-					NOT = { religion_group = christian }
-				}
-			}
 		}
 		effect = {
 			add_claim = 377

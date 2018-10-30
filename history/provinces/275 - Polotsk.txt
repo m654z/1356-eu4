@@ -15,6 +15,7 @@ estate = estate_burghers
 is_city = yes 
 fort_15th = yes 
 add_core = PLT
+add_core = LIT
 
 discovered_by = western
 discovered_by = eastern

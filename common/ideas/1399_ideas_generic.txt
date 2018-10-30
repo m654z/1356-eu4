@@ -1,44 +1,3 @@
-gen_SWI_ideas = {
-	start = {
-		global_manpower_modifier = 0.1
-		infantry_power = 0.1
-	}
-	
-	bonus = {
-		discipline = 0.05
-	}
-	
-	trigger = {
-		OR = {
-			tag = THG
-			tag = WLI
-		}
-	}
-	free = yes  #will be triggered at load
-	
-	generic_the_swiss_confederation = {
-		stability_cost_modifier = -0.1
-	}
-	generic_swiss_mercenaries = {
-		mercenary_cost = -0.2
-	}
-	generic_alpine_defensiveness = {
-		fort_maintenance_modifier = -0.2
-	}
-	generic_oasis_of_peace_and_prosperity = {
-		development_cost = -0.1
-	}
-	generic_swiss_tolerance = {
-		tolerance_heretic = 2
-	}
-	generic_haven_for_refugees = {
-		prestige = 1
-	}
-	generic_clockwork = {
-		production_efficiency = 0.1
-	}
-}
-
 gen_BUL_ideas = {
 	start = {	
 		merchants = 1
@@ -139,7 +98,7 @@ gen_anatolian_beyliks_ideas = {
 	}
 	free = yes
 	
-	generic_travelling_ozan= {
+	generic_travelling_ozan = {
 		global_unrest = -1
 	}
 	generic_seljuq_marches = {
@@ -162,44 +121,6 @@ gen_anatolian_beyliks_ideas = {
 	}
 }
 
-gen_ARM_ideas = {
-	start = {
-		war_exhaustion_cost = -0.1
-		recover_army_morale_speed = 0.05
-	}
-
-	bonus = {
-		hostile_attrition = 1
-	}
-	
-	trigger = {
-		tag = KHC
-	}
-	free = yes		#will be added at load.
-	
-	generic_apostolic_church = {
-		global_missionary_strength = 0.02
-	}
-	generic_land_reclamation = {
-		build_cost = -0.1
-	}
-	generic_border_nation = {
-		diplomatic_reputation = 1
-	}
-	generic_melikdom_organization = {
-		global_tax_modifier = 0.1
-	}
-	generic_sygnakhs = {
-		global_regiment_cost = -0.1
-	}
-	generic_nakharar_titles = {
-		enemy_core_creation = 0.25
-	}
-	generic_end_of_armenian_diaspora = {
-		production_efficiency = 0.1
-	}
-}
-
 gen_BRI_ideas = {
 	start = {
 		navy_tradition = 1
@@ -211,7 +132,10 @@ gen_BRI_ideas = {
 	}
 	
 	trigger = {
-		tag = BRI
+		OR = {
+			tag = BLS
+			tag = MNF
+		}
 	}
 	free = yes
 	
@@ -237,7 +161,4 @@ gen_BRI_ideas = {
 	gen_catholicon = {
 		prestige = 1
  	}
-
-
-
 }

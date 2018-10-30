@@ -106,3 +106,16 @@
  swiss_nation_dip__desc: "Even though we've banded together for protection from outsiders we're still weak. If we were to all unite together under one nation perhaps we would be able to stand a chance against our neighbors who would do us harm..."
  swiss_nation_mil_title: "Form the Swiss Nation by Force"
  swiss_nation_mil_desc: "If the other Swiss Cantons can not be brought to our side of the united Switzerland debate, then we will have to show them what we mean by force! They must understand this is out of love and protection, not out of hatred or greed!"
+ fix_zoro_religion_title: "DEBUG - Fix for noreligion Zoroastrians"
+ fix_zoro_religion_desc: "Turns all noreligion provinces into Zoroastrian provinces, same with state religion. PAUSE WHEN CLICKING THIS. COULD CAUSE LAG."
+ ilknanate_nation_title: "Reform the Ilkhanate"
+ ilknanate_nation_desc: "Since the collapse of the Ilkhanate the Tribes of Persia and Iraq have been locked in neverending conflict, however $MONARCH$ has gathered a sizeable support from the Tribes.While Genghis is long dead and the Borjigin dynasty in exile perhaps $MONARCH$ leadership and respect will be able to create a more strengthed Ilkhanate state."
+ persian_timurid_nation_title: "Modernize the Timurid Empire"
+ persian_timurid_nation_desc: "It has been nearly 300 years since the Great Timur conquered the lands of Persia and Afghanistan. Over this period of time our Descendants have slowly abandon the old language Uzbek, the language used by our forefathers for the more Prominent Persian language. Perhaps the time has come for use to formally adopt this language and reform into a more centralized state."
+ turkish_settlement: "Turkish Settlement"
+ desc_turkish_settlement: "In March 1354, an earthquake forced the Byzantine Emperor John VI Kantakouzenos to evacuate the Gallipoli fortress and peninsula. Within a month, the Ottoman Turks led by Süleyman Pasha crossed the Bosphorus and seized the site, quickly fortifying it and populating it with Turkish families from Anatolia."
+ persian_timurid_nation_title: "Modernize the Timurid Empire"
+ persian_timurid_nation_desc: "It has been nearly 300 years since the Great Timur conquered the lands of Persia and Afghanistan. Over this period of time our Descendants have slowly abandon the old language Uzbek, the language used by our forefathers for the more Prominent Persian language. Perhaps the time has come for use to formally adopt this language and reform into a more centralized state."
+ 
+ 
+ 

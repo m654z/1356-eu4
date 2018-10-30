@@ -108,71 +108,72 @@ country_event = { #The Xibei Culture Revolts! -Shun and Qin-
 		name = yuanredturban.100.a
 		set_country_flag = yuan_red_turban_xibei_revolt_flag
 		custom_tooltip = yuan_red_turban_xibei_revolt_tt #Tells the Player that these people will not rise up again. Maybe make an event instead?
-		707 = { #Yumen
+
+		if = {
 			limit = {
-				owned_by = YUA
+				owns = 707
 			}
-			cede_province = CSH
+			707 = { cede_province = CSH } #Yumen
 		}
-		708 = { #Zhangye
+		if = {
 			limit = {
-				owned_by = YUA
+				owns = 708
 			}
-			cede_province = CSH
+			708 = { cede_province = CSH } #Zhangye
 		}
-		2182 = { #Liangzhou
+		if = {
 			limit = {
-				owned_by = YUA
+				owns = 2182
 			}
-			cede_province = CSH
+			2182 = { cede_province = CSH } #Liangzhou
 		}
-		2184 = { #Xining
+		if = {
 			limit = {
-				owned_by = YUA
+				owns = 2184
 			}
-			cede_province = CSH
+			2184 = { cede_province = CSH } #Xining
 		}
-		2183 = { #Taozhou
+		if = {
 			limit = {
-				owned_by = YUA
+				owns = 2183
 			}
-			cede_province = QIN
+			2183 = { cede_province = QIN } #Taozhou
 		}
-		699 = { #Lanzhou
+		if = {
 			limit = {
-				owned_by = YUA
+				owns = 699
 			}
-			cede_province = CSH
+			699 = { cede_province = CSH } #Lanzhou
 		}
-		2181 = { #Pingliang
+		if = {
 			limit = {
-				owned_by = YUA
+				owns = 2181
 			}
-			cede_province = QIN
+			2181 = { cede_province = QIN } #Pingliang
 		}
-		2180 = { #Tianshui
+		if = {
 			limit = {
-				owned_by = YUA
+				owns = 2180
 			}
-			cede_province = QIN
+			2180 = { cede_province = QIN } #Tianshui
 		}
-		689 = { #Hanzhong
+		if = {
 			limit = {
-				owned_by = YUA
+				owns = 689
 			}
-			cede_province = QIN
+			689 = { cede_province = QIN } #Hanzhong
 		}
-		4198 = { #Fengxiang
+		if = {
 			limit = {
-				owned_by = YUA
+				owns = 4198
 			}
-			cede_province = QIN
+			4198 = { cede_province = QIN } #Fengxiang
 		}
-		700 = { #Xi'an
+		if = {
 			limit = {
-				owned_by = YUA
+				owns = 700
 			}
-			cede_province = QIN
+			700 = { cede_province = QIN } #Xi'an
 		}
 	}
 }
@@ -203,23 +204,24 @@ country_event = { #The Jin Culture Revolts! -Jin-
 		name = yuanredturban.101.a
 		set_country_flag = yuan_red_turban_jin_revolt_flag
 		custom_tooltip = yuan_red_turban_jin_revolt_tt #Tells the Player that these people will not rise up again. Maybe make an event instead?
-		2136 = { #Xuanhua
+
+		if = {
 			limit = {
-				owned_by = YUA
+				owns = 2136
 			}
-			cede_province = JIN
+			2136 = { cede_province = JIN } #Xuanhua
 		}
-		2179 = { #Yan'an
+		if = {
 			limit = {
-				owned_by = YUA
+				owns = 2179
 			}
-			cede_province = JIN
+			2179 = { cede_province = JIN } #Yan'an
 		}
-		692 = { #Huaiqing
+		if = {
 			limit = {
-				owned_by = YUA
+				owns = 692
 			}
-			cede_province = JIN
+			692 = { cede_province = JIN } #Huaiqing
 		}
 		shanxi_area = {
 			limit = {
@@ -262,23 +264,23 @@ country_event = { #The Zhili Culture Revolts! -Yan-
 			}
 			cede_province = YAN
 		}
-		1816 = { #Beijing
+		if = {
 			limit = {
-				owned_by = YUA
+				owns = 1816
 			}
-			cede_province = YAN
+			1816 = { cede_province = YAN } #Beijing
 		}
-		4194 = { #Yongping
+		if = {
 			limit = {
-				owned_by = YUA
+				owns = 4194
 			}
-			cede_province = YAN
+			4194 = { cede_province = YAN } #Yongping
 		}
-		704 = { #Ningyuan
+		if = {
 			limit = {
-				owned_by = YUA
+				owns = 704
 			}
-			cede_province = YAN
+			704 = { cede_province = YAN } #Ningyuan
 		}
 	}
 }
@@ -310,35 +312,35 @@ country_event = { #The Shandong Culture Revolts! -Qi-
 		set_country_flag = yuan_red_turban_shandong_revolt_flag
 		custom_tooltip = yuan_red_turban_shandong_revolt_tt #Tells the Player that these people will not rise up again. Maybe make an event instead?
 
-		2138 = { #Wuding
+		if = {
 			limit = {
-				owned_by = YUA
+				owns = 2138
 			}
-			cede_province = QIC
+			2138 = { cede_province = QIC } #Wuding
 		}
-		691 = { #Jinan
+		if = {
 			limit = {
-				owned_by = YUA
+				owns = 691
 			}
-			cede_province = QIC
+			691 = { cede_province = QIC } #Jinan
 		}
-		2139 = { #Laizhou
+		if = {
 			limit = {
-				owned_by = YUA
+				owns = 2139
 			}
-			cede_province = QIC
+			2139 = { cede_province = QIC } #Laizhou
 		}
-		690 = { #Qingzhou
+		if = {
 			limit = {
-				owned_by = YUA
+				owns = 690
 			}
-			cede_province = QIC
+			690 = { cede_province = QIC } #Qingzhou
 		}
-		2113 = { #Gaizhou
+		if = {
 			limit = {
-				owned_by = YUA
+				owns = 2113
 			}
-			cede_province = QIC
+			2113 = { cede_province = QIC } #Gaizhou
 		}
 	}
 }
@@ -379,41 +381,42 @@ country_event = { #The Zhongyuan Culture Revolts! -Liang/Tang-
 			}
 			cede_province = LNG
 		}
-		1836 = { #Louyang
+		
+		if = {
 			limit = {
-				owned_by = YUA
+				owns = 1836
 			}
-			cede_province = LNG
+			1836 = { cede_province = LNG } #Louyang
 		}
-		688 = { #Kaifeng
+		if = {
 			limit = {
-				owned_by = YUA
+				owns = 688
 			}
-			cede_province = TNG
+			688 = { cede_province = TNG } #Kaifeng
 		}
-		2140 = { #Yanzhou
+		if = {
 			limit = {
-				owned_by = YUA
+				owns = 2140
 			}
-			cede_province = TNG
+			2140 = { cede_province = TNG } #Yanzhou
 		}
-		2141 = { #Xuzhou
+		if = {
 			limit = {
-				owned_by = YUA
+				owns = 2141
 			}
-			cede_province = TNG
+			2141 = { cede_province = TNG } #Xuzhou
 		}
-		2144 = { #Fuyang
+		if = {
 			limit = {
-				owned_by = YUA
+				owns = 2144
 			}
-			cede_province = TNG
+			2144 = { cede_province = TNG } #Fuyang
 		}
-		2143 = { #Fengyang
+		if = {
 			limit = {
-				owned_by = YUA
+				owns = 2143
 			}
-			cede_province = TNG
+			2143 = { cede_province = TNG } #Fengyang
 		}		
 	}
 }
@@ -449,36 +452,36 @@ country_event = { #The Jinghuai Culture Revolts! -Ming-
 				owned_by = YUA
 			}
 			cede_province = MNG
-		}
-		1838 = { #Hefei
+		}	
+		if = {
 			limit = {
-				owned_by = YUA
+				owns = 1838
 			}
-			cede_province = MNG
+			1838 = { cede_province = MNG } #Hefei
 		}
-		686 = { #Anqing
+		if = {
 			limit = {
-				owned_by = YUA
+				owns = 686
 			}
-			cede_province = MNG
+			686 = { cede_province = MNG } #Anqing
 		}
-		2146 = { #Ningguo
+		if = {
 			limit = {
-				owned_by = YUA
+				owns = 2146
 			}
-			cede_province = MNG
+			2146 = { cede_province = MNG } #Ningguo
 		}
-		2142 = { #Huai'an
+		if = {
 			limit = {
-				owned_by = YUA
+				owns = 2142
 			}
-			cede_province = MNG
+			2142 = { cede_province = MNG } #Huai'an
 		}
-		4196 = { #Haizhou
+		if = {
 			limit = {
-				owned_by = YUA
+				owns = 4196
 			}
-			cede_province = MNG
+			4196 = { cede_province = MNG } #Haizhou
 		}
 	}
 }
@@ -516,30 +519,31 @@ country_event = { #The Wu Culture Revolts! -Wu-
 			}
 			cede_province = WUU
 		}
-		1822 = { #Suzhou
+		
+		if = {
 			limit = {
-				owned_by = YUA
+				owns = 1822
 			}
-			cede_province = WUU
+			1822 = { cede_province = WUU } #Suzhou
 		}
-		2147 = { #Huizhou
+		if = {
 			limit = {
-				owned_by = YUA
+				owns = 2147
 			}
-			cede_province = WUU
+			2147 = { cede_province = WUU } #Huizhou
 		}
-		2142 = { #Huai'an
+		if = {
 			limit = {
-				owned_by = YUA
+				owns = 2142
 			}
-			cede_province = MNG
+			2142 = { cede_province = MNG } #Huai'an
 		}
-		4196 = { #Haizhou
+		if = {
 			limit = {
-				owned_by = YUA
+				owns = 4196
 			}
-			cede_province = MNG
-		}		
+			4196 = { cede_province = MNG } #Haizhou
+		}			
 	}
 }
 #Rebel Event for Min Culture Provinces
@@ -569,47 +573,48 @@ country_event = { #The Min Culture Revolts! -Min-
 		name = yuanredturban.107.a
 		set_country_flag = yuan_red_turban_min_revolt_flag
 		custom_tooltip = yuan_red_turban_min_revolt_tt #Tells the Player that these people will not rise up again. Maybe make an event instead?
-		2152 = { #Jianning
+
+		if = {
 			limit = {
-				owned_by = YUA
+				owns = 2152
 			}
-			cede_province = MIN
+			2152 = { cede_province = MIN } #Jianning
 		}
-		669 = { #Fuzhou
+		if = {
 			limit = {
-				owned_by = YUA
+				owns = 669
 			}
-			cede_province = MIN
+			669 = { cede_province = MIN } #Fuzhou
 		}
-		1829 = { #Quanzhou
+		if = {
 			limit = {
-				owned_by = YUA
+				owns = 1829
 			}
-			cede_province = MIN
+			1829 = { cede_province = MIN } #Quanzhou
 		}
-		2156 = { #Chaochow
+		if = {
 			limit = {
-				owned_by = YUA
+				owns = 2156
 			}
-			cede_province = MIN
+			2156 = { cede_province = MIN } #Chaochow
 		}
-		2159 = { #Leichow
+		if = {
 			limit = {
-				owned_by = YUA
+				owns = 2159
 			}
-			cede_province = MIN
+			2159 = { cede_province = MIN } #Leichow
 		}
-		666 = { #Kingchow
+		if = {
 			limit = {
-				owned_by = YUA
+				owns = 666
 			}
-			cede_province = MIN
+			666 = { cede_province = MIN } #Kingchow
 		}
-		2160 = { #Ngaichow
+		if = {
 			limit = {
-				owned_by = YUA
+				owns = 2160
 			}
-			cede_province = MIN
+			2160 = { cede_province = MIN } #Ngaichow
 		}			
 	}
 }
@@ -640,29 +645,30 @@ country_event = { #The Hakka Culture Revolts! -Huai-
 		name = yuanredturban.108.a
 		set_country_flag = yuan_red_turban_hakka_revolt_flag
 		custom_tooltip = yuan_red_turban_hakka_revolt_tt #Tells the Player that these people will not rise up again. Maybe make an event instead?
-		2158 = { #Shiukwan
+
+		if = {
 			limit = {
-				owned_by = YUA
+				owns = 2158
 			}
-			cede_province = HUA
+			2158 = { cede_province = HUA } #Shiukwan
 		}
-		670 = { #Ganzhou
+		if = {
 			limit = {
-				owned_by = YUA
+				owns = 670
 			}
-			cede_province = HUA
+			670 = { cede_province = HUA } #Ganzhou
 		}
-		2153 = { #Tingzhou
+		if = {
 			limit = {
-				owned_by = YUA
+				owns = 2153
 			}
-			cede_province = HUA
+			2153 = { cede_province = HUA } #Tingzhou
 		}
-		2157 = { #Waichow
+		if = {
 			limit = {
-				owned_by = YUA
+				owns = 2157
 			}
-			cede_province = HUA
+			2157 = { cede_province = HUA } #Waichow
 		}		
 	}
 }
@@ -693,23 +699,24 @@ country_event = { #The Gan Culture Revolts! -Ning-
 		name = yuanredturban.109.a
 		set_country_flag = yuan_red_turban_gan_revolt_flag
 		custom_tooltip = yuan_red_turban_gan_revolt_tt #Tells the Player that these people will not rise up again. Maybe make an event instead?
-		2151 = { #Poyang
+
+		if = {
 			limit = {
-				owned_by = YUA
+				owns = 2151
 			}
-			cede_province = NNG
+			2151 = { cede_province = NNG } #Poyang
 		}
-		1833 = { #Ji'an
+		if = {
 			limit = {
-				owned_by = YUA
+				owns = 1833
 			}
-			cede_province = NNG
+			1833 = { cede_province = NNG } #Ji'an
 		}
-		683 = { #Nanchang
+		if = {
 			limit = {
-				owned_by = YUA
+				owns = 683
 			}
-			cede_province = NNG
+			683 = { cede_province = NNG } #Nanchang
 		}
 	}
 }
@@ -740,24 +747,25 @@ country_event = { #The Xiang Culture Revolts! -Chu-
 		name = yuanredturban.110.a
 		set_country_flag = yuan_red_turban_xiang_revolt_flag
 		custom_tooltip = yuan_red_turban_xiang_revolt_tt #Tells the Player that these people will not rise up again. Maybe make an event instead?
-		672 = { #Wuling
+
+		if = {
 			limit = {
-				owned_by = YUA
+				owns = 672
 			}
-			cede_province = CHC
+			672 = { cede_province = CHC } #Wuling
 		}
-		671 = { #Changsha
+		if = {
 			limit = {
-				owned_by = YUA
+				owns = 671
 			}
-			cede_province = CHC
+			671 = { cede_province = CHC } #Changsha
 		}
-		2174 = { #Hengyang
+		if = {
 			limit = {
-				owned_by = YUA
+				owns = 2174
 			}
-			cede_province = CHC
-		}
+			2174 = { cede_province = CHC } #Hengyang
+		}	
 	}
 }
 #Rebel Event for Miao Culture Provinces
@@ -787,23 +795,24 @@ country_event = { #The Miao Culture Revolts! -Miao-
 		name = yuanredturban.111.a
 		set_country_flag = yuan_red_turban_miao_revolt_flag
 		custom_tooltip = yuan_red_turban_miao_revolt_tt #Tells the Player that these people will not rise up again. Maybe make an event instead?
-		2173 = { #Yuanling
+
+		if = {
 			limit = {
-				owned_by = YUA
+				owns = 2173
 			}
-			cede_province = CMI
+			2173 = { cede_province = CMI } #Yuanling
 		}
-		4199 = { #Tongren
+		if = {
 			limit = {
-				owned_by = YUA
+				owns = 4199
 			}
-			cede_province = CMI
+			4199 = { cede_province = CMI } #Tongren
 		}
-		673 = { #Zhenyuan
+		if = {
 			limit = {
-				owned_by = YUA
+				owns = 673
 			}
-			cede_province = CMI
+			673 = { cede_province = CMI } #Zhenyuan
 		}		
 	}
 }
@@ -835,29 +844,29 @@ country_event = { #The Hubei Culture Revolts! -Xi-
 		set_country_flag = yuan_red_turban_hubei_revolt_flag
 		custom_tooltip = yuan_red_turban_hubei_revolt_tt #Tells the Player that these people will not rise up again. Maybe make an event instead?
 
-		4197 = { #Huangzhou
+		if = {
 			limit = {
-				owned_by = YUA
+				owns = 4197
 			}
-			cede_province = CXI
+			4197 = { cede_province = CXI } #Huangzhou
 		}
-		682 = { #Wuchang
+		if = {
 			limit = {
-				owned_by = YUA
+				owns = 682
 			}
-			cede_province = CXI
+			682 = { cede_province = CXI } #Wuchang
 		}
-		2172 = { #Jingzhou
+		if = {
 			limit = {
-				owned_by = YUA
+				owns = 2172
 			}
-			cede_province = CXI
+			2172 = { cede_province = CXI } #Jingzhou
 		}
-		2171 = { #Xiangyang
+		if = {
 			limit = {
-				owned_by = YUA
+				owns = 2171
 			}
-			cede_province = CXI
+			2171 = { cede_province = CXI } #Xiangyang
 		}
 	}
 }
@@ -894,29 +903,29 @@ country_event = { #The Sichuanese Culture Revolts! -Shu-
 			}
 			cede_province = SHU
 		}
-		4213 = { #Luzhou
+		if = {
 			limit = {
-				owned_by = YUA
+				owns = 4213
 			}
-			cede_province = SHU
+			4213 = { cede_province = SHU } #Luzhou
 		}
-		681 = { #Yichang
+		if = {
 			limit = {
-				owned_by = YUA
+				owns = 681
 			}
-			cede_province = SHU
+			681 = { cede_province = SHU } #Yichang
 		}
-		4211 = { #Dazhou
+		if = {
 			limit = {
-				owned_by = YUA
+				owns = 4211
 			}
-			cede_province = SHU
+			4211 = { cede_province = SHU } #Dazhou
 		}
-		2169 = { #Langzhong
+		if = {
 			limit = {
-				owned_by = YUA
+				owns = 2169
 			}
-			cede_province = SHU
+			2169 = { cede_province = SHU } #Langzhong
 		}
 	}
 }
@@ -947,36 +956,36 @@ country_event = { #The Cantonese Culture Revolts! -Yue-
 		name = yuanredturban.114.a
 		set_country_flag = yuan_red_turban_cantonese_revolt_flag
 		custom_tooltip = yuan_red_turban_cantonese_revolt_tt #Tells the Player that these people will not rise up again. Maybe make an event instead?
-
-		668 = { #Macau
+		
+		if = {
 			limit = {
-				owned_by = YUA
+				owns = 668
 			}
-			cede_province = YUE
+			668 = { cede_province = YUE } #Macau
 		}
-		667 = { #Canton
+		if = {
 			limit = {
-				owned_by = YUA
+				owns = 667
 			}
-			cede_province = YUE
+			667 = { cede_province = YUE } #Canton
 		}
-		665 = { #Shiuhing
+		if = {
 			limit = {
-				owned_by = YUA
+				owns = 665
 			}
-			cede_province = YUE
+			665 = { cede_province = YUE } #Shiuhing
 		}
-		2162 = { #Ngchow
+		if = {
 			limit = {
-				owned_by = YUA
+				owns = 2162
 			}
-			cede_province = YUE
+			2162 = { cede_province = YUE } #Ngchow
 		}
-		2161 = { #Limchow
+		if = {
 			limit = {
-				owned_by = YUA
+				owns = 2161
 			}
-			cede_province = YUE
+			2161 = { cede_province = YUE } #Limchow
 		}
 	}
 }
@@ -1123,71 +1132,71 @@ country_event = { #The Bai/Yi think it's time for independence! -Yun-Gui Hinterl
 	option = { #Too late to take it back now. Fight the rebels!
 		name = yuanredturban.132.a
 		set_country_flag = yuan_red_turban_xinan_revolt_flag
-		2168 = { #Bozhou
+		if = {
 			limit = {
-				owned_by = YUA
+				owns = 2168
 			}
-			cede_province = CYI
+			2168 = { cede_province = CYI } #Bozhou
 		}
-		674 = { #Guiyang
+		if = {
 			limit = {
-				owned_by = YUA
+				owns = 674
 			}
-			cede_province = CYI
+			674 = { cede_province = CYI } #Guiyang
 		}
-		675 = { #Umung
+		if = {
 			limit = {
-				owned_by = YUA
+				owns = 675
 			}
-			cede_province = CYI
+			675 = { cede_province = CYI } #Umung
 		}
-		2748 = { #Jianchang
+		if = {
 			limit = {
-				owned_by = YUA
+				owns = 2748
 			}
-			cede_province = CYI
+			2748 = { cede_province = CYI } #Jianchang
 		}
-		2167 = { #Lijiang
+		if = {
 			limit = {
-				owned_by = YUA
+				owns = 2167
 			}
-			cede_province = CDL
+			2167 = { cede_province = CDL } #Lijiang
 		}
-		661 = { #Dali
+		if = {
 			limit = {
-				owned_by = YUA
+				owns = 661
 			}
-			cede_province = CDL
+			661 = { cede_province = CDL } #Dali
 		}
-		2166 = { #Dehong
+		if = {
 			limit = {
-				owned_by = YUA
+				owns = 2166
 			}
-			cede_province = CDL
+			2166 = { cede_province = CDL } #Dehong
 		}
-		2165 = { #Pu'er
+		if = {
 			limit = {
-				owned_by = YUA
+				owns = 2165
 			}
-			cede_province = CDL
+			2165 = { cede_province = CDL } #Pu'er
 		}
-		660 = { #Sibsongbanna
+		if = {
 			limit = {
-				owned_by = YUA
+				owns = 660
 			}
-			cede_province = CDL
+			660 = { cede_province = CDL } #Sibsongbanna
 		}
-		662 = { #Yunnan
+		if = {
 			limit = {
-				owned_by = YUA
+				owns = 662
 			}
-			cede_province = CDL
+			662 = { cede_province = CDL } #Yunnan
 		}
-		663 = { #Guangnan
+		if = {
 			limit = {
-				owned_by = YUA
+				owns = 663
 			}
-			cede_province = CDL
+			663 = { cede_province = CDL } #Guangnan
 		}
 	}
 }
@@ -1223,24 +1232,6 @@ country_event = { #The Nomads think it's time for independence!
 				owned_by = YUA
 			}
 			cede_province = BRT
-		}
-		674 = { #Guiyang
-			limit = {
-				owned_by = YUA
-			}
-			cede_province = CYI
-		}
-		675 = { #Umung
-			limit = {
-				owned_by = YUA
-			}
-			cede_province = CYI
-		}
-		2748 = { #Jianchang
-			limit = {
-				owned_by = YUA
-			}
-			cede_province = CYI
 		}
 	}
 }
@@ -1284,11 +1275,11 @@ country_event = { #The Manchurians think it's time for independence! -Manchuria/
 			}
 			cede_province = MYR
 		}
-		725 = { #Cicigar
+		if = {
 			limit = {
-				owned_by = YUA
+				owns = 725
 			}
-			cede_province = KRC
+			725 = { cede_province = KRC } #Cicigar
 		}
 		central_jilin_area = { 
 			limit = {
@@ -1320,65 +1311,65 @@ country_event = { #The Manchurians think it's time for independence! -Manchuria/
 			}
 			cede_province = KRC
 		}
-		4201 = { #Jianzhou
+		if = {
 			limit = {
-				owned_by = YUA
+				owns = 4201
 			}
-			cede_province = MJZ
+			4201 = { cede_province = MJZ } #Jianzhou
 		}
-		2110 = { #Yehe
+		if = {
 			limit = {
-				owned_by = YUA
+				owns = 2110
 			}
-			cede_province = MHX
+			2110 = { cede_province = MHX } #Yehe
 		}
-		730 = { #Girin
+		if = {
 			limit = {
-				owned_by = YUA
+				owns = 730
 			}
-			cede_province = MHX
+			730 = { cede_province = MHX } #Girin
 		}
-		2188 = { #Alchuka
+		if = {
 			limit = {
-				owned_by = YUA
+				owns = 2188
 			}
-			cede_province = MHX
+			2188 = { cede_province = MHX } #Alchuka
 		}
-		2103 = { #Udi
+		if = {
 			limit = {
-				owned_by = YUA
+				owns = 2103
 			}
-			cede_province = MYR
+			2103 = { cede_province = MYR } #Udi
 		}
-		726 = { #Shenyang
+		if = {
 			limit = {
-				owned_by = YUA
+				owns = 726
 			}
-			cede_province = MHX
+			726 = { cede_province = MHX } #Shenyang
 		}
-		2112 = { #Andong
+		if = {
 			limit = {
-				owned_by = YUA
+				owns = 2112
 			}
-			cede_province = MHX
+			2112 = { cede_province = MHX } #Andong
 		}
-		2111 = { #Hetu Ala
+		if = {
 			limit = {
-				owned_by = YUA
+				owns = 2111
 			}
-			cede_province = MHX
+			2111 = { cede_province = MHX } #Hetu Ala
 		}
-		2115 = { #Chahar
+		if = {
 			limit = {
-				owned_by = YUA
+				owns = 2115
 			}
-			cede_province = KRC
+			2115 = { cede_province = KRC } #Chahar
 		}
-		703 = { #Chengde
+		if = {
 			limit = {
-				owned_by = YUA
+				owns = 703
 			}
-			cede_province = KRC
+			703 = { cede_province = KRC } #Chengde
 		}
 		4203 = { add_core = KHA }
 		722 = { add_core = KHA }

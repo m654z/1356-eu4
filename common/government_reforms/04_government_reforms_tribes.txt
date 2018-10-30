@@ -142,6 +142,18 @@ siberian_tribe = {
 ######1356 Changes#######
 tribal_federation_ilkhan_reform = { #Tribes
 	icon = "tribal_council"
+	potential = {
+		OR = {
+			tag = JLR
+			tag = INT
+			tag = CHB
+			tag = MUZ
+			tag = SAB
+			tag = KRT
+			has_reform = tribal_federation_ilkhan_reform
+			have_had_reform = tribal_federation_ilkhan_reform
+		}
+	}
 	allow_normal_conversion = no
 	lock_level_when_selected = yes
 	valid_for_nation_designer = no
@@ -165,6 +177,13 @@ tribal_federation_ilkhan_reform = { #Tribes
 
 ilkhanate_government_tribal_reform = { #Ilkhanate itself
 	icon = "tribal_council"
+	potential = {
+		tag = ILK
+		OR = {
+			has_reform = tribal_federation_ilkhan_reform
+			have_had_reform = tribal_federation_ilkhan_reform
+		}
+	}
 	allow_normal_conversion = no
 	lock_level_when_selected = yes
 	valid_for_nation_designer = no

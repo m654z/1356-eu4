@@ -1,4 +1,5 @@
 ﻿l_english:
+ hussite: "Hussite" 
  norse_pagan_reformed: "Norse"
  tengri_pagan_reformed: "Tengri"
  baltic_pagan_reformed: "Romuva"
@@ -36,8 +37,7 @@
  TABORITE: "Taborite"
  OREBITES: "Orebites"
  SIROTCI: "Sirotci"
-   
- #Religious Rebels
+ 
  west_african_pagan_reformed_rebels_demand: "Convert $COUNTRYNAME$"
  west_african_pagan_reformed_rebels_demand_desc: "The religious rebels fight for the $RELIGION$ religion. They demand that we recognize its supremacy or at the very least cease our efforts to convert them and let them worship in peace."
  west_african_pagan_reformed_rebels_title: "Religious"
@@ -104,8 +104,6 @@
  hussite_rebels_army: "Hussite Army"
  hussite_rebels_demand: "Convert to Hussite"
  hussite_rebels_demand_desc: "These rebels follow the teachings of the late Jan Hus. Accepting their demands will change our state religion."
- 
- #Religious Mechanics
  PROTESTANT_ASPECTS: "Protestant Aspects"
  ANGLICAN_ASPECTS: "Anglican Aspects"
  HUSSITE_ASPECTS: "Hussite Aspects"
@@ -129,4 +127,36 @@
  desc_threat_of_crusades_aspect: "Since the Hussite Faith has been declared a herest of the Catholic Church crusades can now be launched against us! Historically crusades were launched against the Hussites, where both the Radicals and the Moderates banded together! Pope Martin V called onto Catholics to take up arms against the Hussites, and a 12 year long crusade followed. Joan of Arc herself wrote a letter to the Bohemians threatening to lead an army against them, but she was captured by the English and Burgundians before she could do anything."
  unite_the_nobility_hussite_aspect: "Unified Nobility"
  desc_unite_the_nobility_hussite_aspect: "The Noblity of our country are split now! Some are still Catholic, some are Radicals, and some are Moderates! This will not do! If we do not act fast and unite them behind us then we are at a great risk of a Civil War occuring!"
+ assyrian: "Assyrian" 
+ assyrian_group: "Syriacs"
+ old_egyptian_mod: "Old Egyptian"
+ coptic_group: "Egyptian"
+ icelandic: "Icelandic"
+ picard: "Picard"
+ crusader_culture: "Jerusalemite"
+ crusader_culture_group: "Crusaders"
+ cosmopolitan_french: "Française"
+ nestorian: "Nestorian"
+ the_immortals: "The Immortals"
+ desc_the_immortals: "The Immortals were a elite Holy Order within the Old Persian Empire. The Shah has restored there order and integrated the order into the Royal Army."
+ hussite_council_aspect: "Hussite Council"
+ desc_hussite_council_aspect: "The Hussites, like many reformation movements, did not seek to create a schism in the church, merely to reform it. The Hussite Councils looked to reconcile differences amongst the different Christian faiths."
+ wagon_forts_aspect: "Wagon Forts"
+ desc_wagon_forts_aspect: "A laager, also known as a wagon fort, is a mobile fortification made of wagons arranged into a rectangle, a circle or other shape and possibly joined with each other, an improvised military camp. The wagon fort allowed infantry to quickly and efficiently prepare defensive positions during a battle."
+ zizka_legacy_aspect: "Zizka's Legacy"
+ desc_zizka_legacy_aspect: "Jan 'One Eye' Zizka was a Hussite General during the Hussite Wars. His revolutionary and unorthodox use of wagons during battles won him many victories, and the tactic continued to be used well into the 19th Century."
+ yuan_culture: "Yuan"
+ qing_culture: "Qing"
+ akka: "Akka"
+ akka_desc: "Akka is the mother of the tribe, and the goddess of women and children."
+ rana: "Rana"
+ rana_desc: "Rana is the goddess of the earth and fertility."
+ horagalles: "Horagalles"
+ horagalles_desc: "Horagalles is the god of the sky, thunder and weather."
+ lieaibolmmai: "Lieaibolmmai"
+ lieaibolmmai_desc: "Lieaibolmmai is the god of the hunt and of men."
+ beaivi: "Beaivi"
+ beaivi_desc: "Beaivi is the goddess of the sun and the mother of humankind."
+ hussite_center_of_reformation:"Center of Reformation"
+  
  
