@@ -67,9 +67,13 @@ country_event = { #Spawns Timur, Timur nation, and lots of flags.
 			adm = 6
 			dip = 4
 			mil = 6
-			# Audax Validator "." Ignore_NEXT
-			leader = { name = "Tamerlane"	type = general	fire = 6	shock = 6	manuever = 6	siege = 4 }
         }
+		define_ruler_to_general = {
+			fire = 6
+			shock = 6
+			manuever = 6
+			siege = 4
+		}
 		add_ruler_modifier = {
 			name = "Tamerlane"
 			duration = -1
@@ -1274,9 +1278,13 @@ country_event = { #Spawns Timur, Timur nation, and lots of flags. RANDOM TIMUR C
 			adm = 6
 			dip = 4
 			mil = 6
-			# Audax Validator "." Ignore_NEXT
-			leader = { name = "Tamerlane"	type = general	fire = 6	shock = 6	manuever = 6	siege = 4 }
         }
+		define_ruler_to_general = {
+			fire = 6
+			shock = 6
+			manuever = 6
+			siege = 4
+		}
 		add_ruler_modifier = {
 			name = "tamerlane_random"
 			duration = -1
@@ -1527,9 +1535,13 @@ country_event = { #Spawns Timur, Timur nation, and lots of flags. RANDOM TIMUR C
 			adm = 6
 			dip = 4
 			mil = 6
-			# Audax Validator "." Ignore_NEXT
-			leader = { name = "Tamerlane"	type = general	fire = 6	shock = 6	manuever = 6	siege = 4 }
         }
+		define_ruler_to_general = {
+			fire = 6
+			shock = 6
+			manuever = 6
+			siege = 4
+		}
 		add_ruler_modifier = {
 			name = "tamerlane_random"
 			duration = -1
@@ -1608,9 +1620,13 @@ country_event = { #Spawns Timur, Timur nation, and lots of flags. RANDOM TIMUR C
 			adm = 6
 			dip = 4
 			mil = 6
-			# Audax Validator "." Ignore_NEXT
-			leader = { name = "Tamerlane"	type = general	fire = 6	shock = 6	manuever = 6	siege = 4 }
         }
+		define_ruler_to_general = {
+			fire = 6
+			shock = 6
+			manuever = 6
+			siege = 4
+		}
 		add_ruler_modifier = {
 			name = "tamerlane_random"
 			duration = -1
@@ -1636,8 +1652,6 @@ country_event = { #Spawns Timur, Timur nation, and lots of flags. RANDOM TIMUR C
 		set_global_flag = "timur_conquest"
 		change_technology_group = muslim
 		change_government = monarchy
-		add_government_reform = timurid_government_reform
-		set_legacy_government = timurid_government
 		persia_region = {
 			limit = {
 				NOT = { owned_by = TIM }
@@ -1754,9 +1768,13 @@ country_event = { #Spawns Timur, Timur nation, and lots of flags. RANDOM TIMUR C
 			adm = 6
 			dip = 4
 			mil = 6
-			# Audax Validator "." Ignore_NEXT
-			leader = { name = "Tamerlane"	type = general	fire = 6	shock = 6	manuever = 6	siege = 4 }
         }
+		define_ruler_to_general = {
+			fire = 6
+			shock = 6
+			manuever = 6
+			siege = 4
+		}
 		add_ruler_modifier = {
 			name = "tamerlane_random"
 			duration = -1

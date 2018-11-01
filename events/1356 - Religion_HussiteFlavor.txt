@@ -14,10 +14,7 @@ country_event = { #I hope I updated the governments properly
 		NOT = { is_religion_enabled = hussite }
 		religion = catholic
 		is_defender_of_faith = no	
-		OR = {
-			NOT = { has_reform = papacy_reform }
-			NOT = { government = theocracy }
-		}
+		NOT = { government = theocracy }
 		reform_desire = 0.15
 		is_year = 1415
 		NOT = { is_year = 1500 }

@@ -2080,7 +2080,7 @@ yuan_toqtoa_interior_royal_family = { #Toqto's Return - Handling the Royal Famil
 		}
 		effect = {
 			add_adm_power = -100
-			remove_country_modifier = yua_toqtoa_diplomacy_reform_mission_7_modifier
+			remove_country_modifier = yua_toqtoa_administration_reform_mission_7_modifier
 		}	
 	}
 	yua_toqtoa_reform_administration_mission_8 = { #Autonomy Change Time/Territories Autonomy
@@ -2094,7 +2094,7 @@ yuan_toqtoa_interior_royal_family = { #Toqto's Return - Handling the Royal Famil
 		}
 		effect = {
 			add_adm_power = -100
-			remove_country_modifier = yua_toqtoa_diplomacy_reform_mission_8_modifier
+			remove_country_modifier = yua_toqtoa_administration_reform_mission_8_modifier
 		}	
 	}
 	yua_toqtoa_reform_administration_mission_9 = { #Global Autonomy/Autonomy Change Time
@@ -2106,7 +2106,7 @@ yuan_toqtoa_interior_royal_family = { #Toqto's Return - Handling the Royal Famil
 			NOT = { average_autonomy = 25 }
 		}
 		effect = {
-			remove_country_modifier = yua_toqtoa_diplomacy_reform_mission_9_modifier
+			remove_country_modifier = yua_toqtoa_administration_reform_mission_9_modifier
 		}	
 	}
 	#Stability/Eco branch
