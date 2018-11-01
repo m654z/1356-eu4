@@ -1,6 +1,6 @@
 namespace = timurlane
 
-country_event = {
+country_event = { #Tells game if Timur is to spawn or not
 	id = timurlane.999	#Disable Timur?
 	title = timurlane.999.t
 	desc = timurlane.999.d
@@ -27,10 +27,13 @@ country_event = {
 		set_global_flag = "disable_timur_conquest"
 		set_global_flag = "timurid_decision"
 	}	
+	option = { #Non Historical Timur, lets him do whatever.
+		name = timurlane.999.c
+		set_global_flag = "timurid_non_historical_flag"
+		set_global_flag = "timurid_decision"
+	}
 }
-
-				
-country_event = {
+country_event = { #Spawns Timur, Timur nation, and lots of flags.
 	id = timurlane.1
 	title = timurlane.1.t
 	desc = timurlane.1.d
@@ -43,6 +46,7 @@ country_event = {
 		tag = TRS
         is_year = 1370
 		NOT = { has_global_flag = "disable_timur_conquest" }
+		NOT = { has_global_flag = "timurid_non_historical_flag"}
 	}
 
 	mean_time_to_happen = {
@@ -79,7 +83,7 @@ country_event = {
 				cavalry = 0.2
 			}
 		}
-					persia_region = {
+			persia_region = {
 				limit = {
 					NOT = { owned_by = TIM }
 					NOT = { is_core = TIM }
@@ -177,6 +181,7 @@ country_event = {
 				}
 				add_permanent_claim = TIM
 			}
+		change_government = monarchy
 		add_government_reform = timurid_government_reform
 		set_legacy_government = timurid_government
 		set_government_rank = 3
@@ -188,7 +193,8 @@ country_event = {
 		}	
 	}
 }
-country_event = {
+
+country_event = { #Sets Timur dead flag, ending the chain of conquests.
 	id = timurlane.4 #Death of Tamerlane
 	title = timurlane.4.t
 	desc = timurlane.4.d
@@ -213,62 +219,60 @@ country_event = {
 	}
 }
 
-country_event = {
-	id = timurlane.4444 #Death of Tamerlane
-	title = timurlane.41.t
-	desc = timurlane.41.d
-	picture = HORDE_ON_HORSEBACK_eventPicture
+#country_event = { #Disabled because it was never finished
+#	id = timurlane.4444 #Death of Tamerlane
+#	title = timurlane.41.t
+#	desc = timurlane.41.d
+#	picture = HORDE_ON_HORSEBACK_eventPicture
+#
+#	fire_only_once = yes
+#	major = yes
+#	
+#	trigger = {
+#		tag = CHB
+#	}
+#
+#	mean_time_to_happen = {
+#		days = 1
+#	}
+#
+#	option = {
+#		name = timurlane.4444.a
+#		switch_tag = ARL
+#		ARL = {
+#			country_event = {
+#				id = timurlane.4445
+#			}
+#		}	
+#	}
+#}
 
-	fire_only_once = yes
-	major = yes
-	
-	trigger = {
-		always = no
-		tag = CHB
-	}
+#country_event = {
+#	id = timurlane.4445 #Death of Tamerlane
+#	title = timurlane.42.t
+#	desc = timurlane.42.d
+#	picture = HORDE_ON_HORSEBACK_eventPicture
+#
+#	is_triggered_only = yes
+#	fire_only_once = yes
+#	major = yes
+#	
+#	trigger = {
+#		tag = ARL
+#	}
+#
+#	mean_time_to_happen = {
+#		days = 1
+#	}
+#
+#	option = {
+#		name = timurlane.4445.a
+#		inherit = CHB
+#		set_government_rank = 2
+#	}
+#}
 
-	mean_time_to_happen = {
-		days = 1
-	}
-
-	option = {
-		name = timurlane.4444.a
-		switch_tag = ARL
-		ARL = {
-			country_event = {
-				id = timurlane.4445
-			}
-		}	
-	}
-}
-
-
-country_event = {
-	id = timurlane.4445 #Death of Tamerlane
-	title = timurlane.42.t
-	desc = timurlane.42.d
-	picture = HORDE_ON_HORSEBACK_eventPicture
-
-	is_triggered_only = yes
-	fire_only_once = yes
-	major = yes
-	
-	trigger = {
-		tag = ARL
-	}
-
-	mean_time_to_happen = {
-		days = 1
-	}
-
-	option = {
-		name = timurlane.4445.a
-		inherit = CHB
-		set_government_rank = 2
-	}
-}
-
-country_event = {
+country_event = { #Timur Demands North India from Chagatai
 	id = timurlane.5 #Timur Demands North India
 	title = timurlane.5.t
 	desc = timurlane.5.d
@@ -452,7 +456,7 @@ country_event = {
 #	}
 #}
 
-country_event = { 
+country_event = { #Event that lets the player know they are being invaded by Timur.
 	id = timurlane.167 #Timur offer Vassalization, must convert to Sunni and adopt a Timurid ruler
 	title = timurlane.167.t
 	desc = timurlane.167.d
@@ -465,9 +469,8 @@ country_event = {
 	}
 }
 
-
 # Beginning of Timur Invasion event change
-country_event = {
+country_event = { #Invade the Sarbadarid or Kurtid
 	id = timurlane.78
 	title = "timurlane.78.t"
 	desc = "timurlane.78.d"
@@ -488,6 +491,9 @@ country_event = {
 	
 	option = {
 		name = "timurlane.78.a" #Invade the Sarbadarid
+		trigger = {
+			exists = SAB
+		}
 		ai_chance = {
 			factor = 100 #Shouldn't take this from them really.
 			modifier = {
@@ -500,9 +506,9 @@ country_event = {
 			}
 		}
 		set_global_flag = "timur_conquest_SAB"
-		TIM = {
+		SAB = {
 			declare_war_with_cb = {
-				who = SAB
+				who = TIM
 				casus_belli = cb_horde_vs_civ
 			}
 		}
@@ -512,13 +518,15 @@ country_event = {
 			    add_country_modifier = {
 				    name = timurid_death_mark
 				    duration = 1825
-				    hidden = yes
 			    }
 			}	
 		}			
 	}
 	option = {
 		name = "timurlane.78.b" #Invade the Kurtid
+		trigger = { 
+			exists = KRT
+		}
 		ai_chance = {
 			factor = 100 #Shouldn't take this from them really.
 			modifier = {
@@ -531,9 +539,9 @@ country_event = {
 			}
 		}
 		set_global_flag = "timur_conquest_KRT"
-		TIM = {
+		KRT = {
 			declare_war_with_cb = {
-				who = KRT
+				who = TIM
 				casus_belli = cb_horde_vs_civ
 			}
 		}
@@ -543,15 +551,24 @@ country_event = {
 			    add_country_modifier = {
 				    name = timurid_death_mark
 				    duration = 1825
-				    hidden = yes
 			    }
 			}				
 		}
 	}
+	option = { #The "Nation X got annexed" backup plan
+		name = "timurlane.78.c"
+		trigger = {
+			NOT = { exists = SAB }
+			NOT = { exists = KRT }
+		}
+		set_global_flag = "timur_conquest_stage_1"
+		set_global_flag = "KRT_conquest_complete"
+		set_global_flag = "SAB_conquest_complete"
+		set_global_flag = "timur_conquest_KRT"
+		set_global_flag = "timur_conquest_SAB"
+	}
 }
-
-# Invade Sarbadarid, if #78 went Kurtid.
-country_event = {
+country_event = { #Invade Sarbadarid, if #78 went Kurtid
 	id = timurlane.79
 	title = "timurlane.79.t"
 	desc = "timurlane.79.d"
@@ -574,6 +591,9 @@ country_event = {
 	
 	option = {
 		name = "timurlane.79.a" #Invade the Sarbadarid
+		trigger = {
+			exists = SAB
+		}
 		ai_chance = {
 			factor = 100 #Shouldn't take this from them really.
 			modifier = {
@@ -587,9 +607,9 @@ country_event = {
 		}
 		set_global_flag = "timur_conquest_stage_1"
 		set_global_flag = "KRT_conquest_complete"
-		TIM = {
+		SAB = {
 			declare_war_with_cb = {
-				who = SAB
+				who = TIM
 				casus_belli = cb_horde_vs_civ
 			}
 		}
@@ -599,14 +619,20 @@ country_event = {
 			    add_country_modifier = {
 				    name = timurid_death_mark
 				    duration = 1825
-				    hidden = yes
 			    }
 			}			
 		}
 	}
+	option = { #The "Nation X got annexed" backup plan
+		name = "timurlane.79.b"
+		trigger = {
+			NOT = { exists = SAB }
+		}
+		set_global_flag = "timur_conquest_stage_1"
+		set_global_flag = "KRT_conquest_complete"
+	}
 }
-# Invade Kurtid, if #78 went Sarbadarid.
-country_event = {
+country_event = { #Invade Kurtid, if #78 went Sarbadarid
 	id = timurlane.80
 	title = "timurlane.80.t"
 	desc = "timurlane.80.d"
@@ -629,6 +655,9 @@ country_event = {
 	
 	option = {
 		name = "timurlane.80.a" #Invade the Kurtid
+		trigger = {
+			exists = KRT
+		}
 		ai_chance = {
 			factor = 100 #Shouldn't take this from them really.
 			modifier = {
@@ -642,9 +671,9 @@ country_event = {
 		}
 		set_global_flag = "timur_conquest_stage_1"
 		set_global_flag = "SAB_conquest_complete"
-		TIM = {
+		KRT = {
 			declare_war_with_cb = {
-				who = KRT
+				who = TIM
 				casus_belli = cb_horde_vs_civ
 			}
 		}
@@ -654,14 +683,22 @@ country_event = {
 			    add_country_modifier = {
 				    name = timurid_death_mark
 				    duration = 1825
-				    hidden = yes
 			    }
 			}			
 		}
 	}
+	option = { #The "Nation X got annexed" backup plan
+		name = "timurlane.80.b"
+		trigger = {
+			NOT = { exists = KRT }
+		}
+		set_global_flag = "timur_conquest_stage_1"
+		set_global_flag = "SAB_conquest_complete"
+	}
 }
+
 # Timur invasion of Central and lower Persia, War with Jalayirids
-country_event = {
+country_event = {#Invade the Muzaffarid or Mihrabanid
 	id = timurlane.81
 	title = "timurlane.81.t"
 	desc = "timurlane.81.d"
@@ -683,6 +720,9 @@ country_event = {
 	
 	option = {
 		name = "timurlane.81.a" #Invade the Muzaffarid
+		trigger = {
+			exists = MUZ
+		}
 		ai_chance = {
 			factor = 100 #Shouldn't take this from them really.
 			modifier = {
@@ -697,9 +737,9 @@ country_event = {
 		set_global_flag = "timur_conquest_MUZ"
 		set_global_flag = "KRT_conquest_complete"
 		set_global_flag = "SAB_conquest_complete"
-		TIM = {
+		MUZ = {
 			declare_war_with_cb = {
-				who = MUZ
+				who = TIM
 				casus_belli = cb_horde_vs_civ
 			}
 		}
@@ -709,13 +749,15 @@ country_event = {
 			    add_country_modifier = {
 				    name = timurid_death_mark
 				    duration = 1825
-				    hidden = yes
 			    }
 			}				
 		}
 	}
 	option = {
 		name = "timurlane.81.b" #Invade the Mihrabanid
+		trigger = {
+			exists = MIH
+		}
 		ai_chance = {
 			factor = 100 #Shouldn't take this from them really.
 			modifier = {
@@ -730,9 +772,9 @@ country_event = {
 		set_global_flag = "timur_conquest_MIH"
 		set_global_flag = "KRT_conquest_complete"
 		set_global_flag = "SAB_conquest_complete"
-		TIM = {
+		MIH = {
 			declare_war_with_cb = {
-				who = MIH
+				who = TIM
 				casus_belli = cb_horde_vs_civ
 			}
 		}
@@ -742,15 +784,27 @@ country_event = {
 			    add_country_modifier = {
 				    name = timurid_death_mark
 				    duration = 1825
-				    hidden = yes
 			    }
 			}			
 		}
 	}
+	option = { #The "Nation X got annexed" backup plan
+		name = "timurlane.81.c"
+		trigger = {
+			NOT = { exists = MTH }
+			NOT = { exists = MUZ }
+		}
+		set_global_flag = "timur_conquest_MUZ"
+		set_global_flag = "KRT_conquest_complete"
+		set_global_flag = "SAB_conquest_complete"
+		set_global_flag = "timur_conquest_MIH"
+		set_global_flag = "KRT_conquest_complete"
+		set_global_flag = "SAB_conquest_complete"
+		set_global_flag = "MIH_conquest_complete"
+		set_global_flag = "MUZ_conquest_complete"
+	}
 }
-
-# Invade Muzaffarid, if #78 went Mihrabanid.
-country_event = {
+country_event = { #Invade Muzaffarid, if #78 went Mihrabanid
 	id = timurlane.82
 	title = "timurlane.82.t"
 	desc = "timurlane.82.d"
@@ -774,6 +828,9 @@ country_event = {
 	
 	option = {
 		name = "timurlane.82.a" #Invade the Sarbadarid
+		trigger = { 
+			exists = MUZ
+		}
 		ai_chance = {
 			factor = 100 #Shouldn't take this from them really.
 			modifier = {
@@ -787,9 +844,9 @@ country_event = {
 		}
 		set_global_flag = "timur_conquest_MUZ"
 		set_global_flag = "MIH_conquest_complete"
-		TIM = {
+		MUZ = {
 			declare_war_with_cb = {
-				who = MUZ
+				who = TIM
 				casus_belli = cb_horde_vs_civ
 			}
 		}
@@ -799,14 +856,20 @@ country_event = {
 			    add_country_modifier = {
 				    name = timurid_death_mark
 				    duration = 1825
-				    hidden = yes
 			    }
 			}			
 		}
 	}
+	option = { #The "Nation X got annexed" backup plan
+		name = "timurlane.82.b"
+		trigger = {
+			NOT = { exists = MUZ }
+		}
+		set_global_flag = "timur_conquest_MUZ"
+		set_global_flag = "MIH_conquest_complete"
+	}
 }
-# Invade Mihrabanid, if #78 went Muzaffarid.
-country_event = {
+country_event = { #Invade Mihrabanid, if #78 went Muzaffarid
 	id = timurlane.83
 	title = "timurlane.83.t"
 	desc = "timurlane.83.d"
@@ -828,8 +891,11 @@ country_event = {
 		days = 1
 	}
 	
-	option = {
-		name = "timurlane.83.a" #Invade the Kurtid
+	option = { #Invade the Mihrabanid
+		name = "timurlane.83.a" 
+		trigger = {
+			exists = MIH
+		}
 		ai_chance = {
 			factor = 100 #Shouldn't take this from them really.
 			modifier = {
@@ -843,9 +909,9 @@ country_event = {
 		}
 		set_global_flag = "timur_conquest_MIH"
 		set_global_flag = "MUZ_conquest_complete"
-		TIM = {
+		MIH = {
 			declare_war_with_cb = {
-				who = MIH
+				who = TIM
 				casus_belli = cb_horde_vs_civ
 			}
 		}
@@ -855,15 +921,21 @@ country_event = {
 			    add_country_modifier = {
 				    name = timurid_death_mark
 				    duration = 1825
-				    hidden = yes
 			    }
 			}			
 		}
 	}
+	option = { #The "Nation X got annexed" backup plan
+		name = "timurlane.83.b"
+		trigger = {
+			NOT = { exists = MIH }
+		}
+		set_global_flag = "timur_conquest_MIH"
+		set_global_flag = "MUZ_conquest_complete"
+	}
 }
 
-# Invade Injuid,
-country_event = {
+country_event = { #Invade Injuid
 	id = timurlane.84
 	title = "timurlane.84.t"
 	desc = "timurlane.84.d"
@@ -887,6 +959,9 @@ country_event = {
 	
 	option = {
 		name = "timurlane.82.a" #Invade the Sarbadarid
+		trigger = { 
+			exists = INT
+		}
 		ai_chance = {
 			factor = 100 #Shouldn't take this from them really.
 			modifier = {
@@ -901,26 +976,33 @@ country_event = {
 		set_global_flag = "timur_conquest_INT"
 		set_global_flag = "MIH_conquest_complete"
 		set_global_flag = "MUZ_conquest_complete"
-		TIM = {
+		INT = {
 			declare_war_with_cb = {
-				who = INT
+				who = TIM
 				casus_belli = cb_horde_vs_civ
 			}
 		}
 		INT = {
-			#country_event = { id = timurlane.166 days = 1 }
+			country_event = { id = timurlane.167 days = 1 }
 		    hidden_effect = {
 			    add_country_modifier = {
 				    name = timurid_death_mark
 				    duration = 1825
-				    hidden = yes
 			    }
 			}			
 		}
 	}
+	option = { #The "Nation X got annexed" backup plan
+		name = "timurlane.84.b"
+		trigger = {
+			NOT = { exists = INT }
+		}
+		set_global_flag = "timur_conquest_INT"
+		set_global_flag = "MIH_conquest_complete"
+		set_global_flag = "MUZ_conquest_complete"
+	}
 }
-# Invade Jalayirids, if #78 went Muzaffarid.
-country_event = {
+country_event = { #Invade Jalayirids, if #78 went Muzaffarid
 	id = timurlane.85
 	title = "timurlane.85.t"
 	desc = "timurlane.85.d"
@@ -945,6 +1027,9 @@ country_event = {
 	
 	option = {
 		name = "timurlane.83.a" #Invade the Kurtid
+		trigger = { 
+			exists = JLR
+		}
 		ai_chance = {
 			factor = 100 #Shouldn't take this from them really.
 			modifier = {
@@ -958,9 +1043,9 @@ country_event = {
 		}
 		set_global_flag = "timur_conquest_JLR"
 		set_global_flag = "INT_conquest_complete"
-		TIM = {
+		JLR = {
 			declare_war_with_cb = {
-				who = JLR
+				who = TIM
 				casus_belli = cb_horde_vs_civ
 			}
 		}
@@ -970,10 +1055,17 @@ country_event = {
 			    add_country_modifier = {
 				    name = timurid_death_mark
 				    duration = 1825
-				    hidden = yes
 			    }
 			}			
 		}
+	}
+	option = { #The "Nation X got annexed" backup plan
+		name = "timurlane.85.b"
+		trigger = {
+			NOT = { exists = JLR }
+		}
+		set_global_flag = "timur_conquest_JLR"
+		set_global_flag = "INT_conquest_complete"
 	}
 }
 #End of Event chain
@@ -1003,7 +1095,7 @@ country_event = {
 	}
 }
 #Extra Modifiers for Timur
-country_event = {
+country_event = { #Conquest of Sabardarid
 	id = timurlane.777	#End of Conquest
 	title = timurlane.777.t
 	desc = timurlane.777.d
@@ -1031,8 +1123,7 @@ country_event = {
 		}
 	}
 }
-
-country_event = {
+country_event = { #Conquest of Kurtid
 	id = timurlane.778	#End of Conquest
 	title = timurlane.778.t
 	desc = timurlane.778.d
@@ -1060,8 +1151,7 @@ country_event = {
 		}
 	}
 }
-
-country_event = {
+country_event = { #Conquest of Mihrabanid
 	id = timurlane.779	#End of Conquest
 	title = timurlane.779.t
 	desc = timurlane.779.d
@@ -1089,7 +1179,7 @@ country_event = {
 		}
 	}
 }
-country_event = {
+country_event = { #Conquested Muzafarrid
 	id = timurlane.780	#End of Conquest
 	title = timurlane.780.t
 	desc = timurlane.780.d
@@ -1117,7 +1207,7 @@ country_event = {
 		}
 	}
 }
-country_event = {
+country_event = { #Conquested Injuid
 	id = timurlane.781	#End of Conquest
 	title = timurlane.781.t
 	desc = timurlane.781.d
@@ -1143,5 +1233,617 @@ country_event = {
 			duration = -1
 			hidden = yes
 		}
+	}
+}
+
+#Random Timurlane option stuff below.
+
+country_event = { #Spawns Timur, Timur nation, and lots of flags. RANDOM TIMUR CONQUESTS.
+	id = timurlane.990
+	title = timurlane.990.t
+	desc = timurlane.990.d
+	picture = HORDE_ON_HORSEBACK_eventPicture
+
+	fire_only_once = yes
+	major = yes
+	
+	trigger = {
+		tag = TRS
+        is_year = 1370
+		has_global_flag = "timurid_non_historical_flag"
+		NOT = { has_global_flag = "disable_timur_conquest" }
+	}
+
+	mean_time_to_happen = {
+		months = 24
+	}
+
+	option = { #AI's option
+		name = timurlane.990.a
+		trigger = {
+			ai = yes
+		}
+		set_global_flag = "timur_conquest_random"
+		change_tag = TIM
+		swap_free_idea_group = yes	
+		define_ruler = {
+			name = "Timur"
+			dynasty = "Timurid"
+			age = 34
+			claim = 100
+			adm = 6
+			dip = 4
+			mil = 6
+			# Audax Validator "." Ignore_NEXT
+			leader = { name = "Tamerlane"	type = general	fire = 6	shock = 6	manuever = 6	siege = 4 }
+        }
+		add_ruler_modifier = {
+			name = "tamerlane_random"
+			duration = -1
+		}
+		kill_heir = yes
+		add_ruler_personality = conqueror_personality
+		random_owned_province = {
+			build_to_forcelimit = {
+				infantry = 0.4
+				cavalry = 0.6
+			}
+		}
+		random_list = {
+			40 = { #China
+				change_unit_type = nomad_group
+				change_technology_group = nomad_group
+				change_government = tribal
+				add_government_reform = steppe_horde
+				set_legacy_government = steppe_horde_legacy
+				add_horde_unity = 100
+				add_prestige = 25
+				change_religion = vajrayana
+				add_historical_rival = YUA
+				add_historical_rival = MNG
+				YUA = { add_historical_rival = TIM }
+				MNG = { add_historical_rival = TIM }
+				every_owned_province = {
+					add_institution_embracement = {
+						value = 100
+						which = "feudalism"
+					}
+				}
+				central_asia_region = {
+					limit = {
+						NOT = { owned_by = TIM }
+						NOT = { is_core = TIM }
+					}
+					add_permanent_claim = TIM
+				}
+				manchuria_region = {
+					limit = {
+						NOT = { owned_by = TIM }
+						NOT = { is_core = TIM }
+					}
+					add_permanent_claim = TIM
+				}
+				north_china_region = {
+					limit = {
+						NOT = { owned_by = TIM }
+						NOT = { is_core = TIM }
+					}
+					add_permanent_claim = TIM
+				}
+				south_china_region = {
+					limit = {
+						NOT = { owned_by = TIM }
+						NOT = { is_core = TIM }
+					}
+					add_permanent_claim = TIM
+				}
+				xinan_region = {
+					limit = {
+						NOT = { owned_by = TIM }
+						NOT = { is_core = TIM }
+					}
+					add_permanent_claim = TIM
+				}
+			}
+			20 = { #Historical
+				set_global_flag = "timur_conquest_random_historical"
+				set_global_flag = "timur_conquest"
+				change_technology_group = muslim
+				change_government = monarchy
+				add_government_reform = timurid_government_reform
+				set_legacy_government = timurid_government
+				every_owned_province = {
+					add_institution_embracement = {
+						value = 100
+						which = "feudalism"
+					}
+				}
+				persia_region = {
+					limit = {
+						NOT = { owned_by = TIM }
+						NOT = { is_core = TIM }
+					}
+					add_permanent_claim = TIM
+				}
+				khorasan_region = {
+					limit = {
+						NOT = { owned_by = TIM }
+						NOT = { is_core = TIM }
+					}
+					add_permanent_claim = TIM
+				}
+				transoxiana_area = {
+					limit = {
+						NOT = { owned_by = TIM }
+						NOT = { is_core = TIM }
+					}
+					add_permanent_claim = TIM
+				}
+				arys_area = {
+					limit = {
+						NOT = { owned_by = TIM }
+						NOT = { is_core = TIM }
+					}
+					add_permanent_claim = TIM
+				}
+				transcaspia_area = {
+					limit = {
+						NOT = { owned_by = TIM }
+						NOT = { is_core = TIM }
+					}
+					add_permanent_claim = TIM
+				}
+				khiva_area = {
+					limit = {
+						NOT = { owned_by = TIM }
+						NOT = { is_core = TIM }
+					}
+					add_permanent_claim = TIM
+				}
+				ferghana_area = {
+					limit = {
+						NOT = { owned_by = TIM }
+						NOT = { is_core = TIM }
+					}
+					add_permanent_claim = TIM
+				}
+				termez_area = {
+					limit = {
+						NOT = { owned_by = TIM }
+						NOT = { is_core = TIM }
+					}
+					add_permanent_claim = TIM
+				}
+				basra_area = {
+					limit = {
+						NOT = { owned_by = TIM }
+						NOT = { is_core = TIM }
+					}
+					add_permanent_claim = TIM
+				}
+				iraq_arabi_area = {
+					limit = {
+						NOT = { owned_by = TIM }
+						NOT = { is_core = TIM }
+					}
+					add_permanent_claim = TIM
+				}
+				al_jazira_area = {
+					limit = {
+						NOT = { owned_by = TIM }
+						NOT = { is_core = TIM }
+					}
+					add_permanent_claim = TIM
+				}
+				armenia_area = {
+					limit = {
+						NOT = { owned_by = TIM }
+						NOT = { is_core = TIM }
+					}
+					add_permanent_claim = TIM
+				}
+				north_kurdistan_area = {
+					limit = {
+						NOT = { owned_by = TIM }
+						NOT = { is_core = TIM }
+					}
+					add_permanent_claim = TIM
+				}
+				erzurum_area = {
+					limit = {
+						NOT = { owned_by = TIM }
+						NOT = { is_core = TIM }
+					}
+					add_permanent_claim = TIM
+				}
+			}
+			40 = { #Steppes
+				set_global_flag = "timur_conquest_random_steppes"
+				change_unit_type = nomad_group
+				change_technology_group = nomad_group
+				change_government = tribal
+				add_government_reform = steppe_horde
+				set_legacy_government = steppe_horde_legacy
+				add_horde_unity = 100
+				add_prestige = 15
+				central_asia_region = {
+					limit = {
+						NOT = { owned_by = TIM }
+						NOT = { is_core = TIM }
+					}
+					add_permanent_claim = TIM
+				}
+				crimea_region = {
+					limit = {
+						NOT = { owned_by = TIM }
+						NOT = { is_core = TIM }
+					}
+					add_permanent_claim = TIM
+				}
+				ural_region = {
+					limit = {
+						NOT = { owned_by = TIM }
+						NOT = { is_core = TIM }
+					}
+					add_permanent_claim = TIM
+				}
+				west_siberia_region = {
+					limit = {
+						NOT = { owned_by = TIM }
+						NOT = { is_core = TIM }
+					}
+					add_permanent_claim = TIM
+				}
+				mongolia_region = {
+					limit = {
+						NOT = { owned_by = TIM }
+						NOT = { is_core = TIM }
+					}
+					add_permanent_claim = TIM
+				}
+				manchuria_region = {
+					limit = {
+						NOT = { owned_by = TIM }
+						NOT = { is_core = TIM }
+					}
+					add_permanent_claim = TIM
+				}
+			}
+		}
+	}
+	option = { #China
+		name = timurlane.990.b
+		trigger = {
+			ai = no
+		}
+		set_global_flag = "timur_conquest_random"
+		change_tag = TIM
+		swap_free_idea_group = yes	
+		define_ruler = {
+			name = "Timur"
+			dynasty = "Timurid"
+			age = 34
+			claim = 100
+			adm = 6
+			dip = 4
+			mil = 6
+			# Audax Validator "." Ignore_NEXT
+			leader = { name = "Tamerlane"	type = general	fire = 6	shock = 6	manuever = 6	siege = 4 }
+        }
+		add_ruler_modifier = {
+			name = "tamerlane_random"
+			duration = -1
+		}
+		kill_heir = yes
+		add_ruler_personality = conqueror_personality
+		random_owned_province = {
+			build_to_forcelimit = {
+				infantry = 0.4
+				cavalry = 0.6
+			}
+		}
+		add_government_reform = timurid_government_reform
+		set_legacy_government = timurid_government
+		set_government_rank = 3
+		every_owned_province = {
+			add_institution_embracement = {
+				value = 100
+				which = "feudalism"
+			}
+		}
+		change_unit_type = nomad_group
+		change_technology_group = nomad_group
+		change_government = tribal
+		add_government_reform = steppe_horde
+		set_legacy_government = steppe_horde_legacy
+		add_horde_unity = 100
+		add_prestige = 25
+		change_religion = vajrayana
+		add_historical_rival = YUA
+		add_historical_rival = MNG
+		YUA = { add_historical_rival = TIM }
+		MNG = { add_historical_rival = TIM }
+		manchuria_region = {
+			limit = {
+				NOT = { owned_by = TIM }
+				NOT = { is_core = TIM }
+			}
+			add_permanent_claim = TIM
+		}
+		north_china_region = {
+			limit = {
+				NOT = { owned_by = TIM }
+				NOT = { is_core = TIM }
+			}
+			add_permanent_claim = TIM
+		}
+		south_china_region = {
+			limit = {
+				NOT = { owned_by = TIM }
+				NOT = { is_core = TIM }
+			}
+			add_permanent_claim = TIM
+		}
+		xinan_region = {
+			limit = {
+				NOT = { owned_by = TIM }
+				NOT = { is_core = TIM }
+			}
+			add_permanent_claim = TIM
+		}
+	}
+	
+	option = { #Historical
+		name = timurlane.990.c
+		trigger = {
+			ai = no
+		}
+		change_tag = TIM
+		swap_free_idea_group = yes	
+		define_ruler = {
+			name = "Timur"
+			dynasty = "Timurid"
+			age = 34
+			claim = 100
+			adm = 6
+			dip = 4
+			mil = 6
+			# Audax Validator "." Ignore_NEXT
+			leader = { name = "Tamerlane"	type = general	fire = 6	shock = 6	manuever = 6	siege = 4 }
+        }
+		add_ruler_modifier = {
+			name = "tamerlane_random"
+			duration = -1
+		}
+		kill_heir = yes
+		add_ruler_personality = conqueror_personality
+		random_owned_province = {
+			build_to_forcelimit = {
+				infantry = 0.5
+				cavalry = 0.3
+			}
+		}
+		add_government_reform = timurid_government_reform
+		set_legacy_government = timurid_government
+		set_government_rank = 3
+		every_owned_province = {
+			add_institution_embracement = {
+				value = 100
+				which = "feudalism"
+			}
+		}
+		set_global_flag = "timur_conquest_random_historical"
+		set_global_flag = "timur_conquest"
+		change_technology_group = muslim
+		change_government = monarchy
+		add_government_reform = timurid_government_reform
+		set_legacy_government = timurid_government
+		persia_region = {
+			limit = {
+				NOT = { owned_by = TIM }
+				NOT = { is_core = TIM }
+			}
+			add_permanent_claim = TIM
+		}
+		khorasan_region = {
+			limit = {
+				NOT = { owned_by = TIM }
+				NOT = { is_core = TIM }
+			}
+			add_permanent_claim = TIM
+		}
+		transoxiana_area = {
+			limit = {
+				NOT = { owned_by = TIM }
+				NOT = { is_core = TIM }
+			}
+			add_permanent_claim = TIM
+		}
+		arys_area = {
+			limit = {
+				NOT = { owned_by = TIM }
+				NOT = { is_core = TIM }
+			}
+			add_permanent_claim = TIM
+		}
+		transcaspia_area = {
+			limit = {
+				NOT = { owned_by = TIM }
+				NOT = { is_core = TIM }
+			}
+			add_permanent_claim = TIM
+		}
+		khiva_area = {
+			limit = {
+				NOT = { owned_by = TIM }
+				NOT = { is_core = TIM }
+			}
+			add_permanent_claim = TIM
+		}
+		ferghana_area = {
+			limit = {
+				NOT = { owned_by = TIM }
+				NOT = { is_core = TIM }
+			}
+			add_permanent_claim = TIM
+		}
+		termez_area = {
+			limit = {
+				NOT = { owned_by = TIM }
+				NOT = { is_core = TIM }
+			}
+			add_permanent_claim = TIM
+		}
+		basra_area = {
+			limit = {
+				NOT = { owned_by = TIM }
+				NOT = { is_core = TIM }
+			}
+			add_permanent_claim = TIM
+		}
+		iraq_arabi_area = {
+			limit = {
+				NOT = { owned_by = TIM }
+				NOT = { is_core = TIM }
+			}
+			add_permanent_claim = TIM
+		}
+		al_jazira_area = {
+			limit = {
+				NOT = { owned_by = TIM }
+				NOT = { is_core = TIM }
+			}
+			add_permanent_claim = TIM
+		}
+		armenia_area = {
+			limit = {
+				NOT = { owned_by = TIM }
+				NOT = { is_core = TIM }
+			}
+			add_permanent_claim = TIM
+		}
+		north_kurdistan_area = {
+			limit = {
+				NOT = { owned_by = TIM }
+				NOT = { is_core = TIM }
+			}
+			add_permanent_claim = TIM
+		}
+		erzurum_area = {
+			limit = {
+				NOT = { owned_by = TIM }
+				NOT = { is_core = TIM }
+			}
+			add_permanent_claim = TIM
+		}
+	}
+	
+	option = { #Steppes
+		name = timurlane.990.e
+		trigger = {
+			ai = no
+		}
+		set_global_flag = "timur_conquest_random"
+		change_tag = TIM
+		swap_free_idea_group = yes	
+		define_ruler = {
+			name = "Timur"
+			dynasty = "Timurid"
+			age = 34
+			claim = 100
+			adm = 6
+			dip = 4
+			mil = 6
+			# Audax Validator "." Ignore_NEXT
+			leader = { name = "Tamerlane"	type = general	fire = 6	shock = 6	manuever = 6	siege = 4 }
+        }
+		add_ruler_modifier = {
+			name = "tamerlane_random"
+			duration = -1
+		}
+		kill_heir = yes
+		add_ruler_personality = conqueror_personality
+		random_owned_province = {
+			build_to_forcelimit = {
+				infantry = 0.4
+				cavalry = 0.6
+			}
+		}
+		set_global_flag = "timur_conquest_random_steppes"
+		change_unit_type = nomad_group
+		change_technology_group = nomad_group
+		change_government = tribal
+		add_government_reform = steppe_horde
+		set_legacy_government = steppe_horde_legacy
+		add_horde_unity = 100
+		add_prestige = 15
+		central_asia_region = {
+			limit = {
+				NOT = { owned_by = TIM }
+				NOT = { is_core = TIM }
+			}
+			add_permanent_claim = TIM
+		}
+		crimea_region = {
+			limit = {
+				NOT = { owned_by = TIM }
+				NOT = { is_core = TIM }
+			}
+			add_permanent_claim = TIM
+		}
+		ural_region = {
+			limit = {
+				NOT = { owned_by = TIM }
+				NOT = { is_core = TIM }
+			}
+			add_permanent_claim = TIM
+		}
+		west_siberia_region = {
+			limit = {
+				NOT = { owned_by = TIM }
+				NOT = { is_core = TIM }
+			}
+			add_permanent_claim = TIM
+		}
+		mongolia_region = {
+			limit = {
+				NOT = { owned_by = TIM }
+				NOT = { is_core = TIM }
+			}
+			add_permanent_claim = TIM
+		}
+		manchuria_region = {
+			limit = {
+				NOT = { owned_by = TIM }
+				NOT = { is_core = TIM }
+			}
+			add_permanent_claim = TIM
+		}
+	
+	}
+}
+
+country_event = { #Sets Timur dead flag, ending the chain of conquests - Random Branch
+	id = timurlane.991 #Death of Tamerlane
+	title = timurlane.991.t
+	desc = timurlane.991.d
+	picture = HORDE_ON_HORSEBACK_eventPicture
+
+	fire_only_once = yes
+	major = yes
+	
+	trigger = {
+		tag = TIM
+		NOT = { has_ruler = "Timur" }
+        has_global_flag = "timur_conquest_random"
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = timurlane.991.a
+		set_global_flag = "death_of_timur_random"	
 	}
 }

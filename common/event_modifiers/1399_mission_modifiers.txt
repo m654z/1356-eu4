@@ -592,3 +592,14 @@ zur_waldstatte_dev_cost = {
 zur_reduced_dev_cost = {
 	development_cost = -0.1
 }
+
+zur_reduced_build_cost = {
+	build_cost = -0.15
+	build_time = -0.25
+}
+
+zur_bustling_city = { #Province Modifier
+	local_development_cost = -0.1
+	local_institution_spread = 0.25
+	trade_goods_size = 0.2
+}

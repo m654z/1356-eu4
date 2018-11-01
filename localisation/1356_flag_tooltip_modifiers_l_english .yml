@@ -111,6 +111,7 @@
  gas_pyrenne_kingdom_mod_2_modifier: "Pyrenne Kingdom2"
  gas_pyrenne_kingdom_mod_3_modifier: "Pyrenne Kingdom3"
  gas_pyrenne_kingdom_mod_4_modifier: "Pyrenne Kingdom4"
+ tamerlane_random: "Tamerlane - Random Conquest"
  
  yua_toqtoa_mission_keep_korea_reward: "Kept Korea"
  yua_toqtoa_diplomacy_reform_mission_1_modifier: "Diplomats Desert"
@@ -155,6 +156,8 @@
  yua_toqtoa_culture_reform_mission_3_modifier: "A Cultural Revolution"
  yua_toqtoa_religion_reform_mission_4_modifier: "Religious Enthusiasm"
  yuan_toqoa_mission_keep_korea_reward: "Annexed Southern Korea"
+ zur_reduced_build_cost: "Reduced Build Cost"
+ zur_bustling_city: "Bustling City"
  
  #Policies
  desc_the_inquisitor_act: "The Inquisitor Act"
@@ -204,6 +207,11 @@
  red_turban_rebellion_over_flag: "End of the Red Turban Rebellion"
  jean_darc_flag: "France has had event: \"Jeanne d'Arc\""
  not_jean_darc_flag: "France has NOT had event: \"Jeanne d'Arc\""
+ timurid_non_historical_flag: "Non Historical Timur Conquest"
+ timur_conquest_random: "Timur Conquest - Random"
+ timur_conquest_random_historical: "Timur Conquest - Random: Historical Choice"
+ timur_conquest_random_steppes: "Timur Conquest - Random: Steppe Choice"
+ death_of_timur_random: "The Death of Timur (Chose Random)"
  
  
  #Scripted Effects
@@ -211,6 +219,7 @@
  yuan_nomad_low_revolt_risk_decision_effect: "All provinces of an accepted culture, and primary culture gain -100 revolt risk until the end of the rebellion."
  
  #Tooltips
+ zur_insult: "We must insult Austria!"
  tooltip_government_fixed: "Will remove the 'Declining Power' triggered modifier"
  flavor_fla_fra.tooltip: "The Fate of Dauphine"
  flavor_fla_fralowlands.tooltip: "We must decide who shall now rule the Lowlands. The King of France, or a servant of the King?"

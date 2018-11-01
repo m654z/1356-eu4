@@ -3,7 +3,6 @@ zurich_two = {
 	generic = no
 	ai = yes
 	potential = {
-		always = no
 		tag = ZUR
 	}
 	has_country_shield = yes
@@ -84,10 +83,8 @@ zurich_two = {
 		position = 3
 		trigger = {
 			BRN = {
-				AND = {
-					is_subject_of = ROOT
-					is_subject_of_type = canton
-				}
+				is_subject_of = ROOT
+				is_subject_of_type = canton
 			}
 		}
 		effect = {
@@ -100,17 +97,21 @@ zurich_two = {
 		}
 	}
 	
-	zur_vaud_canton = {
+	zur_vaud_canton = { #This trigger also doesn't work completly.
 		icon = mission_cannons_firing
 		required_missions = { zur_make_bern_canton }
 		position = 4
 		trigger = {
-			1867 = {
-				controlled_by = ROOT
-				province_owner = {
-					war_score = -50
+			OR = {
+				1867 = {
+					controlled_by = ROOT
+					province_owner = {
+						war_score = -50
+					}
 				}
+				owns = 1867
 			}
+
 		}
 		effect = {
 			1867 = {
@@ -185,7 +186,6 @@ zur_three = {
 	generic = no
 	ai = yes
 	potential = {
-		always = no
 		tag = ZUR
 	}
 	has_country_shield = yes
@@ -251,7 +251,7 @@ zur_three = {
 		}
 	}
 	
-	zur_weather_reformation = {
+	zur_weather_reformation = { #It should be noted that THIS DOESNT WORK.
 		icon = mission_religious
 		required_missions = { zur_milan zur_conquer_fribourg }
 		position = 6
@@ -299,7 +299,6 @@ zur_four = {
 	generic = no
 	ai = yes
 	potential = {
-		always = no
 		tag = ZUR
 	}
 	has_country_shield = yes
@@ -353,10 +352,10 @@ zur_four = {
 			num_of_subjects = 3
 		}
 		effect = {
-			country_event= {
-				id = swiss_event.2
-			}
-			add_manpower = -5
+			#country_event= {
+			#	id = swiss_event.2
+			#}
+			#add_manpower = -5
 		}
 	}
 	
@@ -387,7 +386,6 @@ zur_six = {
 	generic = no 
 	ai = yes
 	potential = {
-		always = no
 		tag = ZUR
 	}
 	has_country_shield = yes
@@ -439,7 +437,6 @@ zur_eight = {
 	generic = no 
 	ai = yes
 	potential = {
-		always = no
 		tag = ZUR
 	}
 	has_country_shield = yes
@@ -525,7 +522,9 @@ zur_eight = {
 		}
 		effect = {
 			every_owned_province = {
-				primary_culture = swiss
+				limit = {
+					primary_culture = swiss
+				}
 				add_base_manpower = 2
 				add_base_production = 2
 				add_base_tax = 2
@@ -543,7 +542,6 @@ zur_ten = {
 	generic = no 
 	ai = yes
 	potential = {
-		always = no
 		tag = ZUR
 	}
 	has_country_shield = yes
