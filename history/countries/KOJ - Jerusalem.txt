@@ -1,9 +1,14 @@
 government = monarchy
 add_government_reform = feudalism_reform
 
-primary_culture = cosmopolitan_french
+primary_culture = crusader_culture
+add_accepted_culture = cosmopolitan_french
 religion = catholic
 technology_group = eastern
 capital = 379	# Jerusalem
+
+historical_friend = KNI
+historical_friend = CYP
+historical_friend = CIC
 
 

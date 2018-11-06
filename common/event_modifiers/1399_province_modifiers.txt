@@ -16,3 +16,11 @@ yuan_toqo_mission_reconquer_china_reward = {
 yuan_toqoa_mission_keep_korea_reward = {
 	local_unrest = -10
 }
+
+alexandria_coptic_church_province_modifier = { #For Alexandria 358
+	local_missionary_strength = -0.05
+	local_culture_conversion_cost = 0.35
+	local_unrest = -5
+	local_development_cost = -0.1
+	picture = "icon_religious"
+}

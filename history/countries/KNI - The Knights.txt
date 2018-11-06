@@ -1,12 +1,15 @@
 government = theocracy
 add_government_reform = monastic_order_reform
 government_rank = 1
-primary_culture = occitain
+primary_culture = crusader_culture
+add_accepted_culture = occitain
 religion = catholic
 technology_group = western
 capital = 320 # Rhodes
 historical_friend = VEN
 historical_friend = CYP
+historical_friend = CIC
+historical_friend = KOJ
 add_army_professionalism = 0.1
 
 1355.8.24 = {

@@ -363,7 +363,7 @@ ambrosian_republic = {
 	duration = 4
 }
 
-veche_republic = {
+veche_republic = { 
 	icon = "merchant"
 	allow_normal_conversion = yes
 	potential = {
@@ -684,6 +684,54 @@ cossacks_reform = {
 	duration = 4
 }
 ######1356 Changes#####
+
+novgorod_republic_gov = { #The New Russian Noble Republic Government
+	icon = "russian_principality"
+	allow_normal_conversion = yes
+	potential = {
+		NOT = { has_reform = tsardom }
+		NOT = { have_had_reform = tsardom }
+		religion = orthodox
+		OR = {
+			culture_group = east_slavic
+			AND = {
+				is_playing_custom_nation = yes
+				have_had_reform = novgorod_republic_gov
+			}
+		}
+	}
+	legacy_equivalent = novgorod_republic_gov_legacy
+	#boost_income = yes #WHY IS THIS THE THING THAT WILL FORCE YOU TO BE A MERCHANT REPUBLIC?!
+	fixed_rank = 1
+	republican_name = yes
+	royal_marriage = yes
+	valid_for_nation_designer = yes
+	nation_designer_cost = 10
+
+	nation_designer_trigger = {
+		culture_group = east_slavic
+	}
+	modifiers = {
+		max_states = 2
+		global_tax_modifier = 0.1
+	}
+
+	duration = 8
+	
+	custom_attributes = {
+		enables_plutocratic_idea_group = no
+		enables_aristocratic_idea_group = yes
+		is_merchant_republic = no
+	}
+	
+	conditional = {
+		allow = { has_dlc = "Third Rome" }
+		government_abilities = {
+			russian_mechanic
+		}
+	}
+}
+
 swiss_canton_reform = { #Maybe give it access to Parlament mechanics?
 	icon = "free_city"
 	allow_normal_conversion = no

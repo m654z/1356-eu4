@@ -3,7 +3,7 @@
 
 owner = MAM
 controller = MAM
-culture = al_misr_arabic
+culture = old_egyptian_mod
 religion = coptic
 capital = "Qus"
 trade_goods = livestock
@@ -25,7 +25,10 @@ discovered_by = nomad_group
 discovered_by = indian
 discovered_by = east_african
 
-1365.1.1   = { religion = sunni }
+1365.1.1 = { 
+	culture = al_misr_arabic
+	religion = sunni
+}
 1517.1.1   = {	owner = TUR
 		controller = TUR
 		add_core = TUR

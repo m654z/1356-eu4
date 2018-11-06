@@ -6,7 +6,7 @@ controller = FRA
 capital = "Amiens"
 is_city = yes
 estate = estate_nobles
-culture = cosmopolitan_french
+culture = picard
 religion = catholic
 hre = no
 base_tax = 6 
@@ -32,6 +32,7 @@ discovered_by = ottoman
 1465.7.1  = { owner = BUR controller = BUR remove_core = NEV } # Charles the Bold recovers Picardy
 1475.8.29 = { remove_core = ENG } # Treaty of Picquigny
 1477.1.5  = { owner = FRA controller = FRA add_core = FRA remove_core = BUR } # Charles the Bold dies and transfers Picardie to France
+1500.1.1 = { culture = cosmopolitan_french }
 1513.8.16 = { controller = ENG } # Henry VIII defeats La Palice at Guinnegate and sacks Therouanne
 1514.5.5  = { controller = FRA } # Henry VIII concludes a seperate peace with France
 1544.7.5  = { controller = ENG } # English forces take hold of parts of Picardie in the Anglo-French War (1542-1546)

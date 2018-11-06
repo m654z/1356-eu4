@@ -1778,3 +1778,40 @@ RAE_ideas = {
 			defensiveness = 0.2
 	}
 }
+
+ALX_ideas = {
+	start = {
+		
+	}
+	
+	bonus = {
+		
+	}
+	
+	trigger = {
+		tag = ALX
+	}
+	free = yes
+	
+	alx_idea_1 = {
+		
+	}
+	alx_idea_2 = {
+		
+	}
+	alx_idea_3 = {
+		
+	}
+	alx_idea_4 = {
+		
+	}
+	alx_idea_5 = {
+		
+	}
+	alx_idea_6 = {
+		
+	}
+	alx_idea_7 = {
+		
+	}
+}

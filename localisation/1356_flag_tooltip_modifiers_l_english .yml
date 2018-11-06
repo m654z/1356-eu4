@@ -1,9 +1,9 @@
 ﻿l_english:
  #Triggered Modifiers/Event Modifiers
- 1356_early_government_replacement_4: "Early Feudalism"
- 1356_early_government_replacement_3: "Early Feudalism"
- 1356_early_government_replacement_2: "Early Feudalism"
- 1356_early_government_replacement_1: "Early Feudalism"
+ 1356_early_government_replacement_4: "Late Feudalism"
+ 1356_early_government_replacement_3: "Late Feudalism"
+ 1356_early_government_replacement_2: "Late Feudalism"
+ 1356_early_government_replacement_1: "Late Feudalism"
  fall_of_yuan_mandate: "The Fall of Yuan"
  nav_charles_in_paris: "Charles in Paris"
  nav_ruler_prison_break: "The Prison Break"
@@ -158,6 +158,9 @@
  yuan_toqoa_mission_keep_korea_reward: "Annexed Southern Korea"
  zur_reduced_build_cost: "Reduced Build Cost"
  zur_bustling_city: "Bustling City"
+ alexandria_coptic_church_province_modifier: "The Coptic Church"
+ alexandria_tolerated_copts: "Tolerated the Coptics"
+ alexandria_not_tolerated_copts: "Coptics tolerated no more"
  
  #Policies
  desc_the_inquisitor_act: "The Inquisitor Act"
@@ -167,6 +170,7 @@
  desc_order_of_monastic_knights: "Order of Monastic Knights"
  
  #Flags
+ alexandria_tolerated_copts_flag: "Copts Tolerated"
  nav_claimed_france: "Navarra Claimed France Flag"
  1356_karling_throne_claimed: "Karling Throne Claimed Flag"
  1356_karling_empire_formed: "Francia Formed Flag"
@@ -212,6 +216,7 @@
  timur_conquest_random_historical: "Timur Conquest - Random: Historical Choice"
  timur_conquest_random_steppes: "Timur Conquest - Random: Steppe Choice"
  death_of_timur_random: "The Death of Timur (Chose Random)"
+ alexandria_massacure_flag: "The Alexandrian Massacure"
  
  
  #Scripted Effects

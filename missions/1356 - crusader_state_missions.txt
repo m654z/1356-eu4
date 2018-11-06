@@ -6,25 +6,37 @@ crusader_states_missions = {
 		OR = {
 			tag = CYP
 			tag = KOJ
-			AND = {
-				tag = ATO
-				culture_group = french
-				religion = catholic
-			}
 			tag = KNI
 			AND = {
+				tag = ATO
+				OR = {
+					culture_group = latin
+					culture_group = french
+				}
+				religion = catholic
+			}
+			AND = {
 				tag = ATH
-				culture_group = latin
+				OR = {
+					culture_group = latin
+					culture_group = french
+				}
 				religion = catholic
 			}
 			AND = {
 				tag = ACH
-				culture_group = latin
+				OR = {
+					culture_group = latin
+					culture_group = french
+				}
 				religion = catholic
 			}
 			AND = {
 				tag = CIC
-				culture_group = french
+				OR = {
+					culture_group = latin
+					culture_group = french
+				}
 				religion = catholic
 			}
 		}

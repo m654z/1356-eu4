@@ -193,6 +193,51 @@ swiss_canton = {
 	}
 }
 
+novgorod_republic_gov_legacy = { #The New Russian Noble Republic Government
+	# government mechanics flags go here
+	icon = "russian_principality"
+	allow_normal_conversion = no
+	legacy_government = yes
+	monarchy = yes
+	duration = 8
+
+	valid_for_new_country = no
+	
+	republican_name = yes
+	royal_marriage = yes
+
+	valid_for_nation_designer = yes
+	nation_designer_cost = 10
+	nation_designer_trigger = {
+		culture_group = east_slavic
+	}
+	
+    fixed_rank = 1
+	
+	modifiers = {
+		max_states = 2
+		global_tax_modifier = 0.1
+		max_absolutism = -40
+	}
+
+	conditional = {
+		allow = {
+			has_dlc = "Third Rome"
+		}
+		government_abilities = {
+			russian_mechanic
+		}
+	}
+
+	government_abilities = {
+		is_merchant_republic = no
+	}
+	
+	ai = {
+		factor = 0
+	}
+}
+
 french_vassal_feudal_monarchy = { #French Dukes Only
 	icon = "castle"
 	monarchy = yes

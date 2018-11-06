@@ -1,6 +1,7 @@
 government = republic
 add_government_reform = oligarchy_reform
-primary_culture = norwegian
+primary_culture = icelandic
+add_accepted_culture = norwegian
 religion = catholic
 technology_group = western
 historical_rival = SCO

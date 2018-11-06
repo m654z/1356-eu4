@@ -61,6 +61,7 @@ theocratic_ideas = {
 
 	bonus = {
 		infantry_power = 0.1
+		may_convert_territories = yes
 	}
 
 	trigger = { 
@@ -187,6 +188,7 @@ religious_ideas = {
 
 	bonus = {
 		culture_conversion_cost = -0.25
+		may_convert_territories = yes
 	}
 
 	missionary_schools = {

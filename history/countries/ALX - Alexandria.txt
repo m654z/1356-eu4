@@ -1,6 +1,7 @@
 government = monarchy
 add_government_reform = iqta
 primary_culture = al_misr_arabic
+add_accepted_culture = old_egyptian_mod
 religion = sunni
 technology_group = muslim
 capital = 358 # Cairo
@@ -14,4 +15,8 @@ religious_school = hanbali_school
 		dip = 2
 		mil = 5
 	}
+}
+
+1361.1.1 = {
+	remove_accepted_culture = old_egyptian_mod
 }

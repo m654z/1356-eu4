@@ -234,5 +234,15 @@ yua_ruler_distrusts_spies = {
 }
 
 #yua_nobles_succeed_plot_modifier = {
-#
+
 #}
+
+#Alexandria
+
+alexandria_tolerated_copts = {
+	tolerance_heathen = 2
+}
+
+alexandria_not_tolerated_copts = {
+	tolerance_heathen = -2
+}
