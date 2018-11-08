@@ -161,6 +161,10 @@
  alexandria_coptic_church_province_modifier: "The Coptic Church"
  alexandria_tolerated_copts: "Tolerated the Coptics"
  alexandria_not_tolerated_copts: "Coptics tolerated no more"
+ chinese_minor_alliance_modifier: "Red Turban Alliance"
+ chinese_minor_must_take_mandate_opinion: "Must Hold Mandate of Heaven"
+ chinese_minor_overthrow_yuan_opinion: "Red Turban Rebellion"
+ 
  
  #Policies
  desc_the_inquisitor_act: "The Inquisitor Act"
@@ -170,6 +174,9 @@
  desc_order_of_monastic_knights: "Order of Monastic Knights"
  
  #Flags
+ chinese_minor_red_turban_over_flag: "Red Turban Alliance Over Flag"
+ chinese_minor_truce_flag: "Red Turban Alliance Flag"
+ mam_coptic_advisor_flag: "Recruited a Coptic Advisor"
  alexandria_tolerated_copts_flag: "Copts Tolerated"
  nav_claimed_france: "Navarra Claimed France Flag"
  1356_karling_throne_claimed: "Karling Throne Claimed Flag"

@@ -63,3 +63,13 @@ zur_rented_mercs = {
 	opinion = 100
 	yearly_decay = 2.5
 }
+
+chinese_minor_must_take_mandate_opinion = {
+	opinion = -500
+	yearly_decay = 0.01
+}
+
+chinese_minor_overthrow_yuan_opinion = {
+	opinion = 500
+	yearly_decay = 0.01
+}

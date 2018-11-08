@@ -1780,12 +1780,13 @@ RAE_ideas = {
 }
 
 ALX_ideas = {
-	start = {
-		
+	start = { #They were a center of technology for a time, and were very renouned
+		technology_cost = -0.1
+		diplomatic_reputation = 2
 	}
 	
-	bonus = {
-		
+	bonus = { 
+		army_tradition = 0.5
 	}
 	
 	trigger = {
@@ -1793,25 +1794,78 @@ ALX_ideas = {
 	}
 	free = yes
 	
-	alx_idea_1 = {
-		
+	alx_idea_1 = { #The Nile allows for many populated cities
+		development_cost = -0.1
+		culture_conversion_cost = -0.15
 	}
-	alx_idea_2 = {
-		
+	alx_idea_2 = { #Claim decendence from Ancient Egyptian Dynasty
+		legitimacy = 1
+		prestige = 0.5
 	}
-	alx_idea_3 = {
-		
+	alx_idea_3 = { 
+		land_forcelimit_modifier = 0.1
+		land_maintenance_modifier = -0.05
 	}
-	alx_idea_4 = {
-		
+	alx_idea_4 = { #A rich land with many goods
+		production_efficiency = 0.1
+		global_trade_goods_size_modifier = 0.05
 	}
-	alx_idea_5 = {
-		
+	alx_idea_5 = { #To help with how isolated it is
+		religious_unity = 0.25
+		tolerance_heretic = 1
+		tolerance_heathen = 1
 	}
-	alx_idea_6 = {
-		
+	alx_idea_6 = {#Ancient Egypt was great with its Administration
+		possible_adm_policy = 1
 	}
-	alx_idea_7 = {
-		
+	alx_idea_7 = { #Egypt should hold many boats
+		naval_forcelimit_modifier = 0.15
+		naval_maintenance_modifier = -0.1
+	}
+}
+
+EGY_ideas = {
+	start = { 
+		technology_cost = -0.1
+		global_institution_spread = 0.1
+	}
+	
+	bonus = { 
+		navy_tradition = 0.5
+		army_tradition = 0.5
+	}
+	
+	trigger = {
+		tag = EGY
+	}
+	free = yes
+	
+	egy_idea_1 = { #The Nile allows for many populated cities & A Booming Economy
+		development_cost = -0.1
+		global_trade_goods_size_modifier = 0.1
+	}
+	egy_idea_2 = { #Claim decendence from Ancient Egyptian Dynasty
+		legitimacy = 1
+		devotion = 1
+		max_absolutism = 15
+	}
+	egy_idea_3 = { #A Powerful Navy for a Powerful Pharaoh
+		global_ship_cost = -0.1
+		ship_durability = 0.1
+	}
+	egy_idea_4 = { #Encourage Languages
+		culture_conversion_cost = -0.25
+		same_culture_advisor_cost = -0.1
+	}
+	egy_idea_5 = { #Replicate the Administrations of Old
+		free_adm_policy = 1
+		possible_adm_policy = 1
+	}
+	egy_idea_6 = { #Loyalty to the Pharaoh
+		global_spy_defence = 0.15
+		manpower_recovery_speed = 0.15
+	}
+	egy_idea_7 = { #Ferocity Amoung Troops
+		leader_land_fire = 1
 	}
 }

@@ -237,6 +237,12 @@ yua_ruler_distrusts_spies = {
 
 #}
 
+#Chinese
+
+chinese_minor_alliance_modifier = {
+	diplomatic_upkeep = 13
+}
+
 #Alexandria
 
 alexandria_tolerated_copts = {

@@ -3,6 +3,7 @@ add_government_reform = mamluk_government
 government_rank = 3
 primary_culture = al_misr_arabic
 add_accepted_culture = al_suryah_arabic
+add_accepted_culture = old_egyptian_mod
 religion = sunni
 technology_group = muslim
 historical_rival = TUR
@@ -72,6 +73,10 @@ religious_school = shafii_school
 		dip = 2
 		mil = 2
 	}
+}
+
+1365.1.1 = {
+	remove_accepted_culture = old_egyptian_mod
 }
 
 1370.1.1 = {

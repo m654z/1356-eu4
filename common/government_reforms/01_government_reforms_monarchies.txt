@@ -430,6 +430,10 @@ prussian_monarchy = {
 				is_playing_custom_nation = yes
 				have_had_reform = prussian_monarchy
 			}
+			AND = {
+				tag = GER
+				have_had_reform = prussian_monarchy
+			}
 		}
 	}
 	valid_for_nation_designer = yes

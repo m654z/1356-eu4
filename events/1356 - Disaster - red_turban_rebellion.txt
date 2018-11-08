@@ -101,7 +101,7 @@ country_event = { #The Xibei Culture Revolts! -Shun and Qin-
 	}
 	
 	mean_time_to_happen = {
-		months = 450
+		months = 750
 	}
 		
 	option = { #Too late to take it back now. Fight the rebels!
@@ -197,7 +197,7 @@ country_event = { #The Jin Culture Revolts! -Jin-
 	}
 	
 	mean_time_to_happen = {
-		months = 450
+		months = 750
 	}
 		
 	option = { #Too late to take it back now. Fight the rebels!
@@ -251,7 +251,7 @@ country_event = { #The Zhili Culture Revolts! -Yan-
 	}
 	
 	mean_time_to_happen = {
-		months = 500
+		months = 600
 	}
 		
 	option = { #Too late to take it back now. Fight the rebels!
@@ -304,7 +304,7 @@ country_event = { #The Shandong Culture Revolts! -Qi-
 	}
 	
 	mean_time_to_happen = {
-		months = 500
+		months = 650
 	}
 		
 	option = { #Too late to take it back now. Fight the rebels!
@@ -367,7 +367,7 @@ country_event = { #The Zhongyuan Culture Revolts! -Liang/Tang-
 	}
 	
 	mean_time_to_happen = {
-		months = 450
+		months = 600
 	}
 		
 	option = { #Too late to take it back now. Fight the rebels!
@@ -440,7 +440,7 @@ country_event = { #The Jinghuai Culture Revolts! -Ming-
 	}
 	
 	mean_time_to_happen = {
-		months = 500
+		months = 700
 	}
 		
 	option = { #Too late to take it back now. Fight the rebels!
@@ -505,7 +505,7 @@ country_event = { #The Wu Culture Revolts! -Wu-
 	}
 	
 	mean_time_to_happen = {
-		months = 500
+		months = 750
 	}
 		
 	option = { #Too late to take it back now. Fight the rebels!
@@ -566,7 +566,7 @@ country_event = { #The Min Culture Revolts! -Min-
 	}
 	
 	mean_time_to_happen = {
-		months = 450
+		months = 750
 	}
 		
 	option = { #Too late to take it back now. Fight the rebels!
@@ -638,7 +638,7 @@ country_event = { #The Hakka Culture Revolts! -Huai-
 	}
 	
 	mean_time_to_happen = {
-		months = 300
+		months = 600
 	}
 		
 	option = { #Too late to take it back now. Fight the rebels!
@@ -692,7 +692,7 @@ country_event = { #The Gan Culture Revolts! -Ning-
 	}
 	
 	mean_time_to_happen = {
-		months = 350
+		months = 600
 	}
 		
 	option = { #Too late to take it back now. Fight the rebels!
@@ -740,7 +740,7 @@ country_event = { #The Xiang Culture Revolts! -Chu-
 	}
 	
 	mean_time_to_happen = {
-		months = 400
+		months = 650
 	}
 		
 	option = { #Too late to take it back now. Fight the rebels!
@@ -788,7 +788,7 @@ country_event = { #The Miao Culture Revolts! -Miao-
 	}
 	
 	mean_time_to_happen = {
-		months = 300
+		months = 550
 	}
 		
 	option = { #Too late to take it back now. Fight the rebels!
@@ -836,7 +836,7 @@ country_event = { #The Hubei Culture Revolts! -Xi-
 	}
 	
 	mean_time_to_happen = {
-		months = 300
+		months = 600
 	}
 		
 	option = { #Too late to take it back now. Fight the rebels!
@@ -890,7 +890,7 @@ country_event = { #The Sichuanese Culture Revolts! -Shu-
 	}
 	
 	mean_time_to_happen = {
-		months = 350
+		months = 650
 	}
 		
 	option = { #Too late to take it back now. Fight the rebels!
@@ -949,7 +949,7 @@ country_event = { #The Cantonese Culture Revolts! -Yue-
 	}
 	
 	mean_time_to_happen = {
-		months = 300
+		months = 550
 	}
 		
 	option = { #Too late to take it back now. Fight the rebels!
@@ -1020,7 +1020,7 @@ country_event = { #The Tibetians think it's time for independence!
 	}
 	
 	mean_time_to_happen = {
-		months = 250
+		months = 600
 	}
 		
 	option = { #Too late to take it back now. Fight the rebels!
@@ -1092,7 +1092,7 @@ country_event = { #The Koreans think it's time for independence! All of Korea
 	}
 	
 	mean_time_to_happen = {
-		months = 250
+		months = 350
 	}
 		
 	option = { #Too late to take it back now. Fight the rebels!
@@ -1126,7 +1126,7 @@ country_event = { #The Bai/Yi think it's time for independence! -Yun-Gui Hinterl
 	}
 	
 	mean_time_to_happen = {
-		months = 250
+		months = 400
 	}
 		
 	option = { #Too late to take it back now. Fight the rebels!
@@ -1221,7 +1221,7 @@ country_event = { #The Nomads think it's time for independence!
 	}
 	
 	mean_time_to_happen = {
-		months = 120
+		months = 200
 	}
 		
 	option = { #Too late to take it back now. Fight the rebels!
@@ -1261,7 +1261,7 @@ country_event = { #The Manchurians think it's time for independence! -Manchuria/
 	}
 	
 	mean_time_to_happen = {
-		months = 120
+		months = 250
 	}
 		
 	option = { #Too late to take it back now. Fight the rebels!
@@ -1375,6 +1375,7 @@ country_event = { #The Manchurians think it's time for independence! -Manchuria/
 		722 = { add_core = KHA }
 	}
 }
+
 #Rebel Event in Indochina #Never Converted to New Rebel System
 country_event = { #Just in the case you somehow took land from Indochina
 	id = yuanredturban.135

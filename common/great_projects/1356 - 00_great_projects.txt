@@ -1,0 +1,10 @@
+great_library = {
+	ambient_object = moose #Obviously a placeholder, we're not making the "Great Library of Moose" here.
+	province = 358
+	time = 120
+	
+	modifier = {
+		local_institution_spread = 0.5
+	}
+}
+

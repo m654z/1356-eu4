@@ -11,33 +11,41 @@ country_event = {
 	picture = RELIGION_eventPicture
 	
 	trigger = {
-		OR = {
-			AND = {
-		
-			}
-		
-			AND = {
-		
+		tag = MAM
+		religion_group = muslim
+		accepted_culture = old_egyptian_mod
+		NOT = {
+			employed_advisor = {
+				home_religion = coptic
+				home_culture = old_egyptian_mod
 			}
 		}
-		NOT = { has_global_flag = alexandria_massacure_flag }
-	
-	
-	
+		has_country_flag = mam_coptic_advisor_flag
+		NOT = { primary_culture = old_egyptian_mod }
+		NOT = { has_global_flag = alexandria_massacure_flag }	
 	}
 	
 	mean_time_to_happen = {
-		months = 1
+		months = 40
 	}
 	
-	option = {
+	option = { #Yes! Coptics make great advisors!
 		name = "flamamluk.1.a"
-
+		set_country_flag = mam_coptic_advisor_flag
+		add_treasury = -40
+		define_advisor = {
+			type = treasurer
+			skill = 2
+			culture = old_egyptian_mod
+			religion = coptic
+			location = 358
+			discount = yes
+		}
 	}
-	
-	option = {
+	option = { #We do not need their help currently.
 		name = flamamluk.1.b
-		
+		set_country_flag = mam_coptic_advisor_flag
+		add_adm_power = 5		
 	}
 }
 
@@ -48,33 +56,42 @@ country_event = {
 	desc = "flamamluk.2.d"
 	picture = RELIGION_eventPicture
 	
-
-	
 	trigger = {
-		OR = {
-			AND = {
-		
-			}
-		
-			AND = {
-		
+		tag = MAM
+		religion_group = muslim
+		accepted_culture = old_egyptian_mod
+		NOT = {
+			employed_advisor = {
+				home_religion = coptic
+				home_culture = old_egyptian_mod
 			}
 		}
+		has_country_flag = mam_coptic_advisor_flag
+		NOT = { primary_culture = old_egyptian_mod }
 		NOT = { has_global_flag = alexandria_massacure_flag }
 	}
 	
 	mean_time_to_happen = {
-		months = 1
+		months = 40
 	}
 	
-	option = {
+	option = { #Yes! Coptics make great advisors!
 		name = "flamamluk.2.a"
-
+		clr_country_flag = mam_coptic_advisor_flag
+		add_treasury = -40
+		define_advisor = {
+			type = treasurer
+			skill = 2
+			culture = old_egyptian_mod
+			religion = coptic
+			location = 358
+			discount = yes
+		}
 	}
-	
-	option = {
+	option = { #We do not need their help currently.
 		name = flamamluk.2.b
-		
+		clr_country_flag = mam_coptic_advisor_flag		
+		add_adm_power = 5
 	}
 }
 
