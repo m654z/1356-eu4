@@ -88,9 +88,15 @@ country_event = {
 				}
 			}
 		}
+		OR = {
+			NOT = { vassal_of = MAM }
+			MAM = { has_country_modifier = alexandria_tolerated_copts }
+			has_country_modifier = alexandria_tolerated_copts
+		}
 		358 = { has_province_modifier = alexandria_coptic_church_province_modifier }
 		is_year = 1360
 		NOT = { is_year = 1375 }
+		NOT = { has_country_modifier = alexandria_not_tolerated_copts }
 	}
 	
 	mean_time_to_happen = {

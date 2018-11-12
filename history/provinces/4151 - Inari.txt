@@ -14,19 +14,20 @@ discovered_by = eastern
 discovered_by = western
 
 1356.1.1 = {
-	owner = SAP
-	controller = SAP
-	add_core = SAP
+	owner = SMI
+	controller = SMI
+	add_core = SMI
 }
 
-1440.1.1 = {	owner = SWE
+1440.1.1 = {
+		owner = SWE
 		controller = SWE
 		add_core = SWE
 		is_city = yes
 		religion = catholic
 		trade_goods = fur
 		add_local_autonomy = 90
-	    }
+	   }
 1527.6.1  = { religion = protestant}
 1598.8.1  = { controller = PLC } # Sigismund tries to reconquer his crown
 1599.7.15 = { controller = SWE } # Duke Karl get it back

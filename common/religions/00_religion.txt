@@ -1821,33 +1821,34 @@ pagan = {#1356
 	
 	#####1356 Changes Start Here#####
 	
-	west_african_pagan_reformed = {
-		color = { 0.4 0.3 0.25 }
-		icon = 29
-		allowed_conversion = {
-			sunni
-			shiite
-		}
-		country = {
-			tolerance_own = 1
-			tolerance_heretic = -1
-		}
-		
-		on_convert = {
-			change_religion = west_african_pagan_reformed
-			add_stability = -3
-			remove_country_modifier = counter_reformation
-			remove_country_modifier = the_statue_in_restraint_of_appeals
-			remove_country_modifier = bavarian_jesuits
-			remove_country_modifier = the_societas_jesu
-			remove_country_modifier = the_declaration_of_indulgence
-			remove_country_modifier = de_heretico_comburendo			
-		}
-		
-		annex = yes
-		
-		heretic = { OLD_WEST_AFRICAN }
-	}
+	#west_african_pagan_reformed = {
+	#	color = { 0.4 0.3 0.25 }
+	#	icon = 29
+	#	allowed_conversion = {
+	#		sunni
+	#		shiite
+	#	}
+	#	country = {
+	#		tolerance_own = 1
+	#		tolerance_heretic = -1
+	#	}
+	#	
+	#	on_convert = {
+	#		change_religion = west_african_pagan_reformed
+	#		add_stability = -3
+	#		remove_country_modifier = counter_reformation
+	#		remove_country_modifier = the_statue_in_restraint_of_appeals
+	#		remove_country_modifier = bavarian_jesuits
+	#		remove_country_modifier = the_societas_jesu
+	#		remove_country_modifier = the_declaration_of_indulgence
+	#		remove_country_modifier = de_heretico_comburendo			
+	#	}
+	#	
+	#	annex = yes
+	#	
+	#	heretic = { OLD_WEST_AFRICAN }
+	#}
+	
 	baltic_pagan_reformed = {
 		color = { 0.75 0.5 0.35 }
 		icon = 30
@@ -1872,20 +1873,20 @@ pagan = {#1356
 			remove_country_modifier = the_declaration_of_indulgence
 			remove_country_modifier = de_heretico_comburendo			
 		}
-		
+		personal_deity = yes
 		
 		heretic = { OLD_ROMUVA }	
 	}
 	finnish_pagan_reformed = {
 		color = { 0.65 0.65 0.1 }
 		icon = 31
-		allowed_conversion = {
-			catholic
-			reformed
-			protestant
-			orthodox
-			hussite
-		}
+		#allowed_conversion = {
+			#catholic
+			#reformed
+			#protestant
+			#orthodox
+			#hussite
+		#}
 		country = {
 			defensiveness = 0.1
 			tolerance_heretic = 1
@@ -1930,7 +1931,7 @@ pagan = {#1356
 			remove_country_modifier = the_declaration_of_indulgence
 			remove_country_modifier = de_heretico_comburendo			
 		}
-		
+		personal_deity = yes
 		
 		heretic = { OLD_SLAVIC }	
 	}
@@ -1953,7 +1954,7 @@ pagan = {#1356
 			remove_country_modifier = the_declaration_of_indulgence
 			remove_country_modifier = de_heretico_comburendo			
 		}
-		
+		personal_deity = yes
 		
 		heretic = { GOAT_SKULL }	
 	}

@@ -15,7 +15,7 @@ base_manpower = 2
 is_city = yes
 estate = estate_burghers
 add_core = TUR
-add_core = BYZ
+#add_core = BYZ
 
 discovered_by = western
 discovered_by = eastern

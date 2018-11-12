@@ -16,7 +16,7 @@ is_city = yes
 add_core = SER
 add_core = MAC
 add_core = BUL
-add_claim = BYZ
+#add_claim = BYZ
 
 discovered_by = western
 discovered_by = eastern

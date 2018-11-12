@@ -15,7 +15,7 @@ base_manpower = 2
 is_city = yes
 add_core = MEN
 add_core = TEK
-add_claim = BYZ
+#add_claim = BYZ
 
 discovered_by = western
 discovered_by = eastern

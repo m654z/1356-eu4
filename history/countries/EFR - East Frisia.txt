@@ -1,5 +1,4 @@
-government = monarchy
-add_government_reform = feudalism_reform
+government = tribal
 government_rank = 1
 primary_culture = hannoverian
 religion = catholic

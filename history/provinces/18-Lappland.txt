@@ -15,9 +15,9 @@ discovered_by = eastern
 discovered_by = western
 
 1356.1.1 = {
-	owner = SAP
-	controller = SAP
-	add_core = SAP
+	owner = SMI
+	controller = SMI
+	add_core = SMI
 }
 
 1440.1.1 = {	owner = SWE

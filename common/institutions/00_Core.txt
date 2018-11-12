@@ -55,8 +55,7 @@ feudalism = {
 					culture = turkish
 					culture = omani_culture
 					culture = yemeni_culture
-					culture = swahili
-					culture = manchu
+					#culture = manchu #In our start date, no. Covered below.
 					culture_group = byzantine
 					culture_group = dravidian
 					culture_group = east_asian
@@ -64,21 +63,25 @@ feudalism = {
 					culture_group = eastern_aryan
 					culture_group = japanese_g
 					culture_group = korean_g
-					culture_group = scandinavian
+					#culture_group = scandinavian
+					primary_culture = icelandic #1356
+					primary_culture = danish #1356
+					primary_culture = swedish #1356
+					primary_culture = norwegian #1356
 					culture_group = west_slavic
 					culture_group = western_aryan
-					province_id = 383
-					province_id = 412
-					province_id = 2327
-					province_id = 2329
-					province_id = 2331
-					province_id = 2999
+					#province_id = 383
+					#province_id = 412
+					#province_id = 2327
+					#province_id = 2329
+					#province_id = 2331
+					#province_id = 2999
 				}
 			}
-			AND = {
-				region = horn_of_africa_region
-				owner = { NOT = { has_reform = tribal_federation } }
-			}
+			#AND = { #1356 #Removed so Nubians can be Tribal
+			#	region = horn_of_africa_region
+			#	owner = { NOT = { has_reform = tribal_federation } }
+			#}
 			AND = {
 				culture = al_misr_arabic
 				NOT = { area = libyan_desert_area }
@@ -102,6 +105,13 @@ feudalism = {
 					technology_group = south_american
 					technology_group = sub_saharan
 				}
+			}
+			AND = { #1356
+				OR = {
+					culture = swahili
+					culture = manchu
+				}
+				is_year = 1430
 			}
 			AND = {
 				is_year = 1600

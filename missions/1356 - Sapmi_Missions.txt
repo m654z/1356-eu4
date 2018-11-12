@@ -3,7 +3,7 @@ sapmi_missions = {
 	generic = no
 	ai = yes
 	potential = {
-		tag = SAP
+		tag = SMI
 	}
 	has_country_shield = yes
 	
@@ -147,7 +147,7 @@ sapmi_missions_2 = {
 	generic = no
 	ai = yes
 	potential = {
-		tag = SAP
+		tag = SMI
 	}
 	has_country_shield = yes
 	
@@ -281,7 +281,7 @@ sapmi_missions_3 = {
 	generic = no
 	ai = yes
 	potential = {
-		tag = SAP
+		tag = SMI
 	}
 	has_country_shield = yes
 	
@@ -398,12 +398,13 @@ sapmi_missions_4 = {
 	generic = no
 	ai = yes
 	potential = {
-		tag = SAP
+		tag = SMI
 	}
 	has_country_shield = yes
 	
 	sap_build_treasury = {
 		icon = mission_war_chest
+		position = 2
 		trigger = {
 			treasury = 400
 		}
@@ -418,6 +419,7 @@ sapmi_missions_4 = {
 	sap_buildings = {
 		icon = mission_early_game_buildings
 		required_missions = { sap_build_treasury }
+		position = 3
 		trigger = {
 			workshop = 3
 		}
@@ -431,10 +433,11 @@ sapmi_missions_4 = {
 	
 	the_fur_trade = {
 		icon = mission_galleys_in_port
+		position = 4
 		required_missions = { sap_buildings }
 		trigger = {
 			1652 = { #White Sea, let's see if this fixes it.
-				is_strongest_trade_power = SAP
+				is_strongest_trade_power = SMI
 			}
 		}
 		effect = {
@@ -447,6 +450,7 @@ sapmi_missions_4 = {
 	
 	the_fish_trade = {
 		icon = mission_galleys_in_port
+		position = 5
 		required_missions = { the_fur_trade }
 		trigger = {
 			fish = 4
@@ -461,10 +465,11 @@ sapmi_missions_4 = {
 	
 	control_trade = {
 		icon = mission_galleys_in_port
+		position = 6
 		required_missions = { the_fish_trade }
 		trigger = {
 			1263 = {
-				is_strongest_trade_power = SAP
+				is_strongest_trade_power = SMI
 			}
 		}
 		effect = {
@@ -478,13 +483,14 @@ sapmi_missions_4 = {
 	
 	dominate_trade = {
 		icon = mission_galleys_in_port
+		position = 7
 		required_missions = { control_trade }
 		trigger = {
 			1975 = {
-				is_strongest_trade_power = SAP
+				is_strongest_trade_power = SMI
 			}
 			1926 = {
-				is_strongest_trade_power = SAP
+				is_strongest_trade_power = SMI
 			}
 		}
 		effect = {
@@ -502,7 +508,7 @@ sapmi_missions_5 = {
 	generic = no
 	ai = yes
 	potential = {
-		tag = SAP
+		tag = SMI
 	}
 	has_country_shield = yes
 	
@@ -550,6 +556,7 @@ sapmi_missions_5 = {
 	overseas_colonies = {
 		icon = mission_establish_high_seas_navy
 		required_missions = { control_trade }
+		position = 7
 		trigger = {
 			any_owned_province = {
 				is_colony = yes

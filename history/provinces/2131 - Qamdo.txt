@@ -1,8 +1,8 @@
 # 2131 - Qamdo (1356)
 # Changes: YUA
 
-owner = YUA
-controller = YUA
+owner = KAM
+controller = KAM
 culture = tibetan
 religion = vajrayana
 capital = "Qamdo"
@@ -19,7 +19,7 @@ discovered_by = chinese
 discovered_by = nomad_group
 discovered_by = indian
 
-1368.9.14 = { owner = KAM controller = KAM remove_core = YUA }
+1368.9.14 = { remove_core = YUA }
 1640.6.1  = {	controller = KSD
 		owner = KSD
 		add_core = KSD 

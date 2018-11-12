@@ -4,7 +4,7 @@ country_decisions = {
 			ai = no
 		}
 		allow = { 
-			always = yes
+			ai = no
 		}
 		effect = { swap_non_generic_missions = yes }
 		
