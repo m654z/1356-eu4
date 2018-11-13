@@ -1869,3 +1869,49 @@ EGY_ideas = {
 		leader_land_fire = 1
 	}
 }
+
+
+CUM_ideas = {
+	start = { #Former nomadic nation
+		cavalry_power = 0.15
+		cav_to_inf_ratio = 0.25
+	}
+	
+	bonus = { 
+		may_perform_slave_raid = yes
+		privateer_efficiency = 0.25
+	}
+	
+	trigger = {
+		tag = CUM
+	}
+	free = yes
+	
+	cum_idea_1 = { #They do not loot on the way to their target, but they loot on the way back and take as much as they can carry.
+		loot_amount = 0.25
+		cavalry_cost = -0.15
+	}
+	cum_idea_2 = { #They Ride through the night to make better time, and their horses have feedbags on frequently to prevent having to stop.
+		land_attrition = -0.2
+		movement_speed = 0.025
+	}
+	cum_idea_3 = { #They adapted to Tribal life from nomads
+		global_institution_spread = 0.2
+	}
+	cum_idea_4 = { #They are far away from their old home and linguistic brothers, they have to adapt to their new area.
+		num_accepted_cultures = 2
+	}
+	cum_idea_5 = { #Former nomads, they can take more than they came for.
+		unjustified_demands = -0.15
+		years_of_nationalism = -2.5
+	}
+	cum_idea_6 = { #Cuman Unity - Whats left of us have to band together in order to prevent the death of the Cuman identity!-
+		legitimacy = 1
+		horde_unity = 1
+		candidate_random_bonus = 1
+	}
+	cum_idea_7 = { #Feirce Caravan defense
+		caravan_power = 0.25
+		discipline = 0.05
+	}
+}

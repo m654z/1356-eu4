@@ -132,8 +132,8 @@
  old_egyptian_mod: "Coptic Egyptian"
  icelandic: "Icelandic"
  picard: "Picard"
- crusader_culture: "Crusader"
- crusader_culture_group: "Crusaders"
+ crusader_culture: "Outremer"
+ crusader_culture_group: "Outremer"
  cosmopolitan_french: "Française"
  nestorian: "Nestorian"
  the_immortals: "The Immortals"
@@ -174,4 +174,5 @@
  slavic_vida: "Vida"
  slavic_zhibog: "Zhibog"
  slavic_ognebog: "Ognebog"
+ cuman: "Cuman"
  

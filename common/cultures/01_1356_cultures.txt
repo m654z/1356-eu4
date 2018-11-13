@@ -263,3 +263,24 @@ assyrian_group = { #WIP
 	}
 	
 }
+
+tartar	= {
+	graphical_culture = muslimgfx
+	cuman = { #Imported from CK2
+	primary = CUM
+	male_names = { #Partially suggested by Cobex in Discord
+		Çilbu Aepak Asalup Asep Atrak Bönek Bachman Begluk Blush Bonyak Borç Eldeçyuk Etrek Girgen Gzi Itlar Ituk Könçek Kobyak Kopti Kotyan Koza
+		Kozel Kubasar Kuntuvdi Kutan Pulad Saru Sevenç Sirçan Sokal Sotan Sugr Törtogul Togli Tolun Tugor Uzluk Uzur Kutub, Boniak, Taz, Köten, Konchak, Yuri Kobyak, Köpek, Kopyak, Chilbuk, Koza, Gzak Kopti
+		Eldechyuk Toksobich Ovlur "Sharukan Toglyy" "Sokal Kutesk" Beka Otrok Vakhtang Sirchan Eltut Sevinch Asalup Girgen Zeyhan Arbuz "Tort-oyul" Menk Begovars Uzur Tolon
+		Alpra Kutlu Aslan Kitzes Sytzigan Barc Membrok Baytursun Tapar Saraga Bachman Baibars Kuman Kutuz
+	}
+	female_names = { #Partially Suggested by Cobex in Discord
+		Çiçek Çilen Çiltanesi Özgul Özlem Akgul Asli Ayasun Ayten Bozçin Dilek Esin Gulçiçek Gulay Gunduz Gundes Gunes Ilkay Ipek Ipekel Irge
+		Karacik Mala Mutlu Peksen Samur Sarica Sati Sevilay Sevindik Sibel Sirin Sirma Songul Tekçe Tura Umay Usunbike Yasar Yeldem Yildiz
+		Konchakovna Svoboda Jiajak Jaqeli Gurandukht
+	}
+	dynasty_names = { #Imported from my defunct mod, which got it from various CK2 mods and the importer.
+		"Boke Temur" "Qutlugh Vachir" "Suren Chinua" "Delger Bayar" "Shria Gan" "Bora Chinua" Nasange Temur-chi Chinuagene 
+		Toluilun Qutughqan "Koke Burilgi" Surenchar Bayangge
+	}
+}

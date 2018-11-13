@@ -8,13 +8,11 @@ religion = hinduism
 capital = "Pune"
 trade_goods = grain	# Millet
 hre = no
-base_tax = 5 
-
-base_production = 5
+base_tax = 4
+base_production = 4
 base_manpower = 3
 is_city = yes
-estate = estate_dhimmi
-add_core = BAH
+add_rajputs_or_marathas_or_nobles_effect = yes
 add_core = AHM
 
 discovered_by = indian
@@ -23,7 +21,7 @@ discovered_by = muslim
 discovered_by = ottoman
 discovered_by = chinese
 
-1425.1.1  = { owner = BAH controller = BAH }
+1425.1.1  = { owner = BAH controller = BAH add_core = BAH }
 1490.1.1  = {	remove_core = BAH
 		controller = AHM
 		owner = AHM

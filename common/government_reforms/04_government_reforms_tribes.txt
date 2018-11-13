@@ -153,6 +153,7 @@ tribal_federation_ilkhan_reform = { #Tribes
 			has_reform = tribal_federation_ilkhan_reform
 			have_had_reform = tribal_federation_ilkhan_reform
 		}
+		NOT = { tag = ILK }
 	}
 	allow_normal_conversion = no
 	lock_level_when_selected = yes

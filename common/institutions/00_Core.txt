@@ -47,12 +47,47 @@ feudalism = {
 			AND = {
 				owner = { is_playing_custom_nation = no }
 				OR = {
-					culture = persian
-					culture = azerbaijani
-					culture = kurdish
-					culture = armenian
-					culture = mazandarani
-					culture = turkish
+					AND = {#1356
+						culture = persian
+						primary_culture = persian #1356
+						NOT = { tag = MUZ } #1356
+						NOT = { tag = INT } #1356
+					}
+					
+					AND = { #1356
+						culture = azerbaijani
+						primary_culture = azerbaijani #1356
+						NOT = { tag = CHB } #1356
+					}
+					AND = { #1356
+						culture = kurdish
+						primary_culture = kurdish #1356
+						NOT = { tag = JLR } #1356
+					}
+					AND = { #1356
+						culture = armenian
+						primary_culture = armenian #1356
+						NOT = { tag = QON }#1356
+					}
+					AND = {#1356
+						culture = mazandarani
+						primary_culture = mazandarani #1356
+						NOT = { tag = PAD } #1356
+					}
+					AND = {
+						culture = turkish
+						primary_culture = turkish #1356
+						NOT = { tag = ERE } #1356
+						NOT = { tag = QON } #1356
+					}
+					AND = {
+						culture = khorasani
+						primary_culture = khorasani #1356
+						NOT = { tag = KRT } #1356
+						NOT = { tag = MIH } #1356
+						NOT = { tag = SAB } #1356
+						NOT = { tag = TRS } #1356
+					}
 					culture = omani_culture
 					culture = yemeni_culture
 					#culture = manchu #In our start date, no. Covered below.
@@ -63,7 +98,7 @@ feudalism = {
 					culture_group = eastern_aryan
 					culture_group = japanese_g
 					culture_group = korean_g
-					#culture_group = scandinavian
+					#culture_group = scandinavian #1356 #Replaced so Sami dont get stuck with Feudalism
 					primary_culture = icelandic #1356
 					primary_culture = danish #1356
 					primary_culture = swedish #1356

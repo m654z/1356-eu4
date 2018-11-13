@@ -377,3 +377,38 @@ union = {
 	start_date = 1385.12.31
 	end_date = 1386.2.24
 }
+
+vassal = {
+	first = HUN
+	second = CUM
+	start_date = 1356.12.1
+	end_date = 1444.1.1
+}
+
+vassal = { #For vanilla start date users
+	first = HUN
+	second = CUM
+	start_date = 1444.1.2
+	end_date = 1526.1.1
+}
+
+vassal = {
+	first = HAB
+	second = CUM
+	start_date = 1526.8.30
+	end_date = 1542.1.1
+} #Ends with Turkish occupation
+
+vassal = { #Begins again with Austrian Occupation
+	first = HAB
+	second = CUM
+	start_date = 1699.1.26
+	end_date = 1711.1.1 #Privilages revoked
+}
+
+vassal = { #Autonomy restored by Maria Threasa
+	first = HAB
+	second = CUM
+	start_date = 1745.1.1
+	end_date = 1876.1.1
+}
