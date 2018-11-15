@@ -412,3 +412,10 @@ vassal = { #Autonomy restored by Maria Threasa
 	start_date = 1745.1.1
 	end_date = 1876.1.1
 }
+
+vassal = {
+	first = TEU
+	second = LIV
+	start_date = 1356.12.25
+	end_date = 1444.11.11
+}

@@ -86,7 +86,6 @@ country_event = { #The Xibei Culture Revolts! -Shun and Qin-
 	picture = CIVIL_WAR_eventPicture
 	
 	fire_only_once = yes
-	major = yes
 	
 	trigger = {
 		tag = YUA
@@ -185,7 +184,6 @@ country_event = { #The Jin Culture Revolts! -Jin-
 	picture = CIVIL_WAR_eventPicture
 	
 	fire_only_once = yes
-	major = yes
 	
 	trigger = {
 		tag = YUA
@@ -239,7 +237,6 @@ country_event = { #The Zhili Culture Revolts! -Yan-
 	picture = CIVIL_WAR_eventPicture
 	
 	fire_only_once = yes
-	major = yes
 	
 	trigger = {
 		tag = YUA
@@ -292,7 +289,6 @@ country_event = { #The Shandong Culture Revolts! -Qi-
 	picture = CIVIL_WAR_eventPicture
 	
 	fire_only_once = yes
-	major = yes
 	
 	trigger = {
 		tag = YUA
@@ -352,7 +348,6 @@ country_event = { #The Zhongyuan Culture Revolts! -Liang/Tang-
 	picture = CIVIL_WAR_eventPicture
 	
 	fire_only_once = yes
-	major = yes
 	
 	trigger = {
 		tag = YUA
@@ -428,7 +423,6 @@ country_event = { #The Jinghuai Culture Revolts! -Ming-
 	picture = CIVIL_WAR_eventPicture
 	
 	fire_only_once = yes
-	major = yes
 	
 	trigger = {
 		tag = YUA
@@ -493,7 +487,6 @@ country_event = { #The Wu Culture Revolts! -Wu-
 	picture = CIVIL_WAR_eventPicture
 	
 	fire_only_once = yes
-	major = yes
 	
 	trigger = {
 		tag = YUA
@@ -554,7 +547,6 @@ country_event = { #The Min Culture Revolts! -Min-
 	picture = CIVIL_WAR_eventPicture
 	
 	fire_only_once = yes
-	major = yes
 	
 	trigger = {
 		tag = YUA
@@ -626,7 +618,6 @@ country_event = { #The Hakka Culture Revolts! -Huai-
 	picture = CIVIL_WAR_eventPicture
 	
 	fire_only_once = yes
-	major = yes
 	
 	trigger = {
 		tag = YUA
@@ -680,7 +671,6 @@ country_event = { #The Gan Culture Revolts! -Ning-
 	picture = CIVIL_WAR_eventPicture
 	
 	fire_only_once = yes
-	major = yes
 	
 	trigger = {
 		tag = YUA
@@ -728,7 +718,6 @@ country_event = { #The Xiang Culture Revolts! -Chu-
 	picture = CIVIL_WAR_eventPicture
 	
 	fire_only_once = yes
-	major = yes
 	
 	trigger = {
 		tag = YUA
@@ -776,7 +765,6 @@ country_event = { #The Miao Culture Revolts! -Miao-
 	picture = CIVIL_WAR_eventPicture
 	
 	fire_only_once = yes
-	major = yes
 	
 	trigger = {
 		tag = YUA
@@ -824,7 +812,6 @@ country_event = { #The Hubei Culture Revolts! -Xi-
 	picture = CIVIL_WAR_eventPicture
 	
 	fire_only_once = yes
-	major = yes
 	
 	trigger = {
 		tag = YUA
@@ -878,7 +865,6 @@ country_event = { #The Sichuanese Culture Revolts! -Shu-
 	picture = CIVIL_WAR_eventPicture
 	
 	fire_only_once = yes
-	major = yes
 	
 	trigger = {
 		tag = YUA
@@ -937,7 +923,6 @@ country_event = { #The Cantonese Culture Revolts! -Yue-
 	picture = CIVIL_WAR_eventPicture
 	
 	fire_only_once = yes
-	major = yes
 	
 	trigger = {
 		tag = YUA
@@ -1002,7 +987,6 @@ country_event = { #The Tibetians think it's time for independence!
 	picture = CIVIL_WAR_eventPicture
 	
 	fire_only_once = yes
-	major = yes
 	
 	trigger = {
 		tag = YUA
@@ -1072,7 +1056,6 @@ country_event = { #The Koreans think it's time for independence! All of Korea
 	picture = CIVIL_WAR_eventPicture
 	
 	fire_only_once = yes
-	major = yes
 	
 	trigger = {
 		tag = YUA
@@ -1115,7 +1098,6 @@ country_event = { #The Bai/Yi think it's time for independence! -Yun-Gui Hinterl
 	picture = CIVIL_WAR_eventPicture
 	
 	fire_only_once = yes
-	major = yes
 	
 	trigger = {
 		tag = YUA
@@ -1208,7 +1190,6 @@ country_event = { #The Nomads think it's time for independence!
 	picture = CIVIL_WAR_eventPicture
 	
 	fire_only_once = yes
-	major = yes
 	
 	trigger = {
 		tag = YUA
@@ -1243,7 +1224,6 @@ country_event = { #The Manchurians think it's time for independence! -Manchuria/
 	picture = CIVIL_WAR_eventPicture
 	
 	fire_only_once = yes
-	major = yes
 	
 	trigger = {
 		tag = YUA
@@ -1376,6 +1356,8 @@ country_event = { #The Manchurians think it's time for independence! -Manchuria/
 	}
 }
 
+#Defunct & Never converted to the same system the above rebels use
+
 #Rebel Event in Indochina #Never Converted to New Rebel System
 country_event = { #Just in the case you somehow took land from Indochina
 	id = yuanredturban.135
@@ -1384,9 +1366,9 @@ country_event = { #Just in the case you somehow took land from Indochina
 	picture = CIVIL_WAR_eventPicture
 	
 	fire_only_once = yes
-	major = yes
 	
 	trigger = {
+		always = no
 		tag = YUA
 		is_emperor_of_china = yes
 		has_disaster = red_turban_rebellion_disaster
@@ -1421,9 +1403,9 @@ country_event = { #Just in the case you somehow took land from Burma
 	picture = CIVIL_WAR_eventPicture
 	
 	fire_only_once = yes
-	major = yes
 	
 	trigger = {
+		always = no
 		tag = YUA
 		is_emperor_of_china = yes
 		has_disaster = red_turban_rebellion_disaster
@@ -1458,9 +1440,9 @@ country_event = { #Just in the case you somehow took land from Japan
 	picture = CIVIL_WAR_eventPicture
 	
 	fire_only_once = yes
-	major = yes
 	
 	trigger = {
+		always = no
 		tag = YUA
 		is_emperor_of_china = yes
 		has_disaster = red_turban_rebellion_disaster

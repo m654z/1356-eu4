@@ -4,7 +4,7 @@
 owner = CHG
 controller = CHG
 culture = uyghur
-religion = coptic
+religion = nestorian
 capital = "Kashgar"
 trade_goods = wool
 hre = no

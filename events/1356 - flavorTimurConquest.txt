@@ -1865,3 +1865,95 @@ country_event = { #Sets Timur dead flag, ending the chain of conquests - Random 
 		set_global_flag = "death_of_timur_random"	
 	}
 }
+
+country_event = { #Slaughter of the Assyrians
+	id = timurlane.992 
+	title = timurlane.992.t
+	desc = timurlane.992.d
+	picture = HORDE_ON_HORSEBACK_eventPicture
+
+	fire_only_once = yes
+	major = yes
+	
+	trigger = {
+		tag = TIM
+		NOT = { religion = nestorian }
+		#NOT = { primary_culture = assyrian }
+		owns = 2310
+		owns = 410
+		owns = 411
+		2310 = {
+			religion = nestorian
+			culture = assyrian
+		}
+		NOT = { is_year = 1500 }
+	}
+
+	mean_time_to_happen = {
+		months = 12
+	}
+
+	option = { #Historical - Slaughter them all
+		name = timurlane.992.a
+		ai_chance = { factor = 90 }
+		add_treasury = 300
+		add_adm_power = 100
+		add_dip_power = 50
+		add_prestige = -10
+		2310 = {
+			add_base_tax = -1
+			add_base_production = -1
+			add_base_manpower = -1
+			change_religion = sunni
+			change_culture = al_iraqiya_arabic
+			spawn_rebels = {
+				type = peasant_rebels
+				culture = assyrian
+				religion = nestorian
+				size = 1
+			}
+		}
+		410 = {
+			add_base_tax = -2
+			add_base_production = -2
+			add_base_manpower = -2
+			spawn_rebels = {
+				type = peasant_rebels
+				culture = assyrian
+				religion = nestorian
+				win = yes
+				size = 2
+			}
+		}
+		411 = {
+			add_base_tax = -1
+			add_base_production = -1
+			add_base_manpower = -1
+			spawn_rebels = {
+				type = peasant_rebels
+				culture = assyrian
+				religion = nestorian
+				size = 1
+			}
+		}		
+	}
+	option = { #Ahistorical - Let them live
+		name = timurlane.992.b
+		ai_chance = { factor = 10 }
+		410 = {
+			add_base_tax = 2
+			add_base_production = 1
+			add_base_manpower = 1
+		}
+		411 = {
+			add_base_tax = 1
+			add_base_production = 1
+			add_base_manpower = 1
+		}
+		2310 = {
+			add_base_tax = 1
+			add_base_production = 1
+			add_base_manpower = 1
+		}
+	}
+}

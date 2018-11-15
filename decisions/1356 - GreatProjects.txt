@@ -25,6 +25,11 @@ country_decisions = {
 			}
 		}
 		allow = {
+			OR = {
+				religion = coptic
+				religion = hellenic_pagan
+				religion = nestorian
+			}
 			owns_or_vassal_of = 358
 			is_subject = no			
 			adm_tech = 18 #Would be ADM 15 in vanilla?
