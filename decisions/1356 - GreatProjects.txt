@@ -3,7 +3,7 @@ country_decisions = {
 	build_great_library = { #Give Nation making this events related to this decision & a national modifier related to tech and idea cost.
 		major = yes
 		potential = {
-			OR = {
+			OR = { #AI check
 				ai = no
 				AND = { #For AI's
 					treasury = 10000
@@ -12,9 +12,8 @@ country_decisions = {
 			}
 			has_discovered = 358
 			358 = {
-				range = ROOT
 				NOT = { has_great_project = great_library }
-				#NOT = { has_construction = canal } #Do I need to change this to anything? Or is this Canal only?
+				NOT = { has_construction = great_project  } 
 			}
 			adm_tech = 12 #Would be ADM 9 in vanilla?
 		}
@@ -40,7 +39,7 @@ country_decisions = {
 			add_dip_power = -400
 			add_mil_power = -400
 			358 = {	#Alexandria
-				add_great_project = kiel_canal
+				add_great_project = great_library
 			}
 		}
 		ai_will_do = {
@@ -55,12 +54,12 @@ country_decisions = {
 			owns_or_vassal_of = 358
 			is_subject = no
 			358 = {
-				has_construction = canal
+				has_construction = great_project 
 			}
 		}
 		allow = {
 			358 = {
-				has_construction = canal
+				has_construction = great_project 
 			}
 		}
 		effect = {
