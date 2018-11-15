@@ -916,3 +916,13 @@
  chineseflv.6.d: "There has been much bloodshed in the name of various Warlords across China in the past few decades, however now we have usurped the Mandate for ourselves! However before we celebrate too much we should put the rest of the Warlords down, them even existing damages our claim to be the Son of Heaven!"
  chineseflv.6.a: "I am the new Son of Heaven!"
  
+ flagreatproject.1.t: "The Great Library of Alexandria"
+ flagreatproject.1.d: "The Great Library of Alexandria was burned down in the Roman Civil War circa 48BC, it was partially rebuilt for it to last until somewhere circa 270AD where it was completly destroyed, or whatever may have been left of it. \n\nNow the Clergy, Nobility, and peasants have all worked together under the reign of [ALX.Monarch.GetTitle] [ALX.Monarch.GetName] in [TAG] seems to have finally finished their ambitious reconstruction of the Great Library of Alexandria. Any knowledge in the [TAG] was copied and stored in the Great Library for safe keepings, and to prevent another tragic loss it is on 24/7 guard. Perhaps this may usher in a new era for the world?"
+ flagreatproject.1.a: "What a great feat!"
+ flagreatproject.2.t: "The Great Library of Alexandria"
+ flagreatproject.2.d: "We are now in posession of the Great Library of Alexandria, we now have access to its insides and its secrets. This shall help us gain an advantage over our neighbors!"
+ flagreatproject.2.a: "We shall preserve knowledge for everyones betterment!"
+ flagreatproject.3.t: "Loss of the Great Library of Alexandria"
+ flagreatproject.3.d: "We are no longer in control of the Library, this is a tragic loss for our nation!"
+ flagreatproject.3.a: "We shall reclaim what is rightfully ours!"
+ 
