@@ -137,6 +137,7 @@ country_event = {
 			current_age = age_of_feudalism
 			NOT = { is_year = 1480 }
 		}
+		is_part_of_hre = no
 		NOT = { has_global_flag = emperor_declined_offer_to_french_dukes }
 		NOT = { has_country_flag = fre_minor_declined_hre_offer_flag }
 		NOT = { tag = FRA }

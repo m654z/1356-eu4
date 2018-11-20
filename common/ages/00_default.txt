@@ -269,7 +269,9 @@ age_of_discovery = {
 	start = 1400
 	
 	can_start = {
-		any_country = { has_idea = quest_for_the_new_world }
+		any_country = { 
+			has_county_flag = trigger_for_age_of_discovery_flag
+		}
 	}
 	
 	religious_conflicts = yes

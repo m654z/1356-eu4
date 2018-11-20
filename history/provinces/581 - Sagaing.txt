@@ -9,7 +9,6 @@ capital = "Sagaing"
 trade_goods = cotton
 hre = no
 base_tax = 5 
-
 base_production = 5
 base_manpower = 4
 is_city = yes
@@ -19,6 +18,7 @@ discovered_by = chinese
 discovered_by = indian
 
 1364.4.1  = { owner = AVA controller = AVA add_core = AVA }
+
 1527.1.1  = {	owner = SST
 		controller = SST
 		add_core = SST

@@ -3,7 +3,7 @@
 
 owner = KGR
 controller = KGR
-culture = panjabi
+culture = pahari
 religion = hinduism
 capital = "Kangra"
 trade_goods = cotton
@@ -23,13 +23,15 @@ discovered_by = chinese
 
 1398.1.1  = { owner = TIM controller = TIM add_core = TIM }
 1405.2.19 = { owner = KGR controller = KGR remove_core = TIM }
-1620.1.1  = { controller = MUG } # Mughals
-1621.1.1  = { owner = MUG add_core = MUG } # Mughals
-1690.1.1  = { discovered_by = ENG }
-1707.3.15 = {	controller = KGR
-		owner = KGR
-		remove_core = MUG
-	    }
+
+1620.1.1 = { controller = MUG } # Mughals
+1621.1.1 = { owner = MUG add_core = MUG } # Mughals
+1690.1.1 = { discovered_by = ENG }
+1707.3.15 = {
+	controller = KGR
+	owner = KGR
+	remove_core = MUG
+}
 1707.5.12 = { discovered_by = GBR }
-1806.1.1  = { controller = NPL }
-1809.1.1  = { controller = KGR }
+1806.1.1 = { controller = NPL }
+1809.1.1 = { controller = KGR }

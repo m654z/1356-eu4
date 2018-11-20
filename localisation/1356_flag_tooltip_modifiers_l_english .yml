@@ -175,6 +175,7 @@
  desc_order_of_monastic_knights: "Order of Monastic Knights"
  
  #Flags
+ trigger_for_age_of_discovery_flag: "Age of Discovery will come soon"
  chinese_minor_red_turban_over_flag: "Red Turban Alliance Over Flag"
  chinese_minor_truce_flag: "Red Turban Alliance Flag"
  mam_coptic_advisor_flag: "Recruited a Coptic Advisor"

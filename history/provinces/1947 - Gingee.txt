@@ -1,8 +1,8 @@
 # 1947 - Gingee (1356)
 # Changes: MAD
 
-owner = MAD
-controller = MAD
+owner = GNG
+controller = GNG
 culture = tamil
 religion = hinduism
 capital = "Gingee"
@@ -12,9 +12,8 @@ base_tax = 3
 base_production = 3
 base_manpower = 2
 is_city = yes
-add_core = MAD
+add_core = GNG
 add_core = KRK
-add_core = VIJ
 fort_15th = yes # Gingee Fort
 add_local_autonomy = 25
 
@@ -24,7 +23,8 @@ discovered_by = ottoman
 discovered_by = nomad_group
 discovered_by = chinese
 
-1378.1.1  = { owner = VIJ controller = VIJ }
+1378.1.1  = { owner = VIJ controller = VIJ add_core = VIJ add_local_autonomy = 25 }
+
 1498.1.1  = { discovered_by = POR }
 1543.1.1  = { controller = REB revolt = { size = 1 type = nationalist_rebels } }
 1545.1.1  = { controller = VIJ revolt = { } }

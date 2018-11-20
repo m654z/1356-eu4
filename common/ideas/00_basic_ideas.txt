@@ -496,10 +496,7 @@ exploration_ideas = {
 	
 	
 	trigger = {
-		OR = {
-			adm_tech = 9
-			dip_tech = 9
-		}
+		NOT = { current_age = age_of_feudalism }
 	}
 	
 	bonus = {
@@ -782,10 +779,7 @@ expansion_ideas = {
 	important = yes
 		
 	trigger = {
-		OR = {
-			adm_tech = 9
-			dip_tech = 9
-		}
+		NOT = { current_age = age_of_feudalism }
 	}
 	
 	bonus = {

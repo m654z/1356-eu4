@@ -1,8 +1,8 @@
 government = monarchy
 add_government_reform = feudalism_reform 
-primary_culture = crusader_culture
+primary_culture = armenian
 add_accepted_culture = cosmopolitan_french
-add_accepted_culture = armenian
+add_accepted_culture = crusader_culture
 religion = catholic
 technology_group = western
 historical_friend = ARM

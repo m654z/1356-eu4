@@ -1,0 +1,135 @@
+namespace = flaageevents
+
+#Event to spawn colonialism
+country_event = {
+	id = flaageevents.1
+	title = "flaageevents.1.t"
+	desc = "flaageevents.1.d"
+	picture = HARBOUR_eventPicture
+
+	trigger = {
+		NOT = { has_country_flag = trigger_for_age_of_discovery_flag }
+		is_year = 1420
+		current_age = age_of_feudalism
+		OR ={
+			AND = { #In General everyone after byz falls
+				NOT = { 151 = { owner = BYZ } }
+				151 = { owner = { religion = muslim } } 
+			}
+			AND = { #Iberians and their problems
+				NOT = { exists = CTR }
+				OR = {
+					NOT = { exists = SEV }
+					NOT = { exists = CAS }
+				}
+				OR = {
+					tag = LON
+					tag = POR
+					tag = SPA
+					tag = MJO
+					tag = SEV
+					tag = CAS
+					tag = ARA
+					tag = NAV
+					tag = CAT
+					tag = GRA
+					tag = ADU
+					tag = GAL
+				}
+				OR = {
+					AND = {
+						religion = christian
+						iberia_region = {
+							type = all
+							NOT = { religion_group = muslim }
+						}
+					}
+					AND = {
+						religion = muslim
+						iberia_region = {
+							type = all
+							NOT = { religion_group = christian }
+						}
+					}
+				}
+			}
+			AND = { #Norway if Vinland doesnt fall
+				OR = {
+					tag = NOR
+					tag = GRE
+					tag = ICE
+				}
+				owns = 980
+				owns = 1104
+				owns = 1105
+			}
+			AND = { #France, if England is kicked out and Burgundy subdued, and Navarra burned
+				tag = FRA
+				OR = { #England
+					france_region = { #Does this work?
+						type = all
+						NOT = { owns_or_subject_of = ENG }	
+					}
+					NOT = { exists = ENG }
+				}
+				OR = { #Burgundy
+					NOT = { exists = BUR }
+					BUR = { vassal_of = FRA }
+				}
+				NOT = { exists = NAV }
+				
+			}
+			AND = { #Brittany, Burgundy, Lotharingia, or Arles #Test this?
+				OR = {
+					tag = BUR
+					tag = LOT
+					tag = ARE
+					tag = FRA
+				}
+				OR = {
+					FRA = { NOT = { num_of_cities = 8 } }
+					NOT = { exists = FRA }
+					FRA = { vassal_of = ROOT }
+				}	
+			}
+			AND = { #England if the War of Roses ends #Test this?
+				tag = ENG
+				has_country_flag = had_war_of_the_roses
+				OR = {
+					NOT = { exists = FRA }
+					FRA = { vassal_of = ENG }
+					france_region = { #Does this work?
+						NOT = { owns_or_subject_of = ROOT }
+						
+					}
+				}
+			}
+			AND = { #Welsh, Irish, Scotish, Man, The Isles
+				OR = {
+					tag = IRE
+					tag = SCO
+					tag = MAN
+					tag = LOI
+					tag = WLS
+				}
+				ENG = {
+					NOT = { num_of_ports = 5 }
+				}
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 12
+	}
+
+	option = { #We must find a way around this!
+		name = "flaageevents.1.a"
+		set_country_flag = trigger_for_age_of_discovery_flag
+		add_prestige = 10
+		add_dip_power = 50		
+		create_explorer = 75
+		create_conquistador = 75
+	}
+}
+
