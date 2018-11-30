@@ -4,7 +4,7 @@
 owner = BOH
 controller = BOH
 capital = "Brünn"
-culture = czech
+culture = moravian
 religion = catholic
 trade_goods = wine  
 hre = yes

@@ -8,7 +8,7 @@ technology = {
 	
 	sprite_level = 1
 
-	infantry_fire		= 	0.25
+	infantry_fire		= 	0.15
 	infantry_shock 		= 	0.10	
 	cavalry_shock  		= 	0.8	
 	#artillery_shock 	=	0.05
@@ -16,43 +16,28 @@ technology = {
 
 	fort_15th = yes
 	
-	enable = south_american_spearmen		
-	enable = native_indian_archer
-	enable = native_clubmen
-	enable = african_spearmen
-	enable = african_clubmen
-	enable = indian_archers
-	enable = mesoamerican_spearmen
-	enable = halberd_infantry
-	enable = chevauchee
-	enable = western_medieval_knights
-	enable = bardiche_infantry
-	enable = muslim_cavalry_archers
-	enable = western_medieval_infantry
-	enable = eastern_medieval_infantry
-	enable = ottoman_yaya
-	enable = chinese_longspear
-	enable = japanese_archer
-	enable = persian_footsoldier
-	enable = east_asian_spearmen
-	enable = mongolian_bow	
-	enable = indian_footsoldier	
-	enable = rajput_hill_fighters	
-	enable = eastern_bow	
-	enable = persian_cavalry_charge
-	enable = african_mandelaku
-	enable = african_abyssinian_light_cavalry
-	enable = mongol_swarm
-	enable = mongol_steppe	
-	enable = mongol_bow	
-	enable = eastern_knights
-	enable = druzhina_cavalry	
-	enable = ottoman_musellem	
-	enable = mamluk_archer	
-	enable = mamluk_cavalry_charge	
-	enable = south_american_warfare	
-	enable = ha_xantican_warrior
-
+	enable = 1356-early_meso_spearmen
+	enable = native_clubmen #Repurposed Tier 1 NA Inf, they received a new tier 2 inf unit instead.
+	enable = 1356-early_south_american_inf
+	enable = 1356-early_ha_xantican_warrior
+	enable = 1356-early_african_inf
+	enable = 1356-early_african_cav
+	enable = 1356-indian_early_inf
+	enable = 1356-early_indian_cav
+	enable = 1356-early_indian_elephant
+	enable = east_asian_spearmen #Repurposed Asian Tier 1 inf, they did have 3.
+	enable = 1356-generic_asian_cav
+	enable = 1356-asian_early_cav
+	enable = 1356-early_anatolian_cav
+	enable = 1356-early_anatolian_inf
+	enable = 1356-early_muslim_inf
+	enable = persian_cavalry_charge #Repurposed Muslim Tier 1 Cav, they had 3.
+	enable = 1356-early_mongol_inf
+	enable = 1356-early_mongol_cav
+	enable = 1356-early_eastern_peasant_levy
+	enable = eastern_knights #Repurposed Eastern Tier 1 Cav, they had two
+	enable = 1356-early_western_peasant_levy
+	enable = 1356-early_western_knights
 }
 
 technology = {
@@ -68,6 +53,9 @@ technology = {
 	year = 1360
 	
 	combat_width = 4
+	enable = mongol_swarm
+	enable = mongol_steppe	
+	enable = mongol_bow	
 	
 	
 }
@@ -78,7 +66,6 @@ technology = {
 	
 	land_morale = 0.2
 
-	
 }
 
 technology = {
@@ -86,6 +73,21 @@ technology = {
 	year = 1384
 	
 	land_morale = 0.1
+	infantry_fire = 0.1
+	enable = 1356-trebuchet_arty
+	enable = 1356-asian_early_arty
+	enable = 1356-indian_early_arty
+	enable = 1356-eastern_trebuchet_arty
+	enable = 1356-anatolian_trebuchet_arty
+	enable = 1356-muslim_trebuchet_arty
+	enable = chinese_longspear
+	enable = eastern_bow	
+	enable = japanese_archer
+	enable = mongolian_bow	
+	enable = indian_footsoldier	
+	enable = indian_archers #Basic Tier 1 Elephant
+	enable = rajput_hill_fighters #Basic Tier 1 Cav Indian
+	enable = ha_xantican_warrior
 	
 }
 
@@ -94,8 +96,13 @@ technology = {
 	# Tech 5
 	year = 1396
 	
-	
 	land_morale = 0.1
+	enable = ottoman_musellem	
+	enable = ottoman_yaya
+	enable = mamluk_cavalry_charge	
+	enable = mamluk_archer	
+	enable = muslim_cavalry_archers
+	enable = persian_footsoldier
 	
 
 }
@@ -104,9 +111,23 @@ technology = {
 	# Tech 6
 	year = 1408
 	
-	infantry_shock		= 	0.2
+	infantry_shock = 0.2
 	land_morale = 0.1
-
+	enable = halberd_infantry
+	enable = western_medieval_infantry
+	enable = western_medieval_knights 
+	enable = chevauchee 
+	enable = eastern_medieval_infantry
+	enable = bardiche_infantry
+	enable = druzhina_cavalry	#Buffed slightly to compensate for only 1 cav
+	enable = african_spearmen
+	enable = african_clubmen
+	enable = african_mandelaku
+	enable = african_abyssinian_light_cavalry
+	enable = mesoamerican_spearmen
+	enable = south_american_warfare	
+	enable = south_american_spearmen	
+	enable = native_indian_archer
 }
 
 technology = {
@@ -182,6 +203,8 @@ technology = {
 	enable = chinese_footsoldier		
 	enable = japanese_footsoldier	
 	enable = ha_reformed_xantican_warrior
+	
+	enable = 1356-extra_na_inf #NA Replacement Unit for next tier
 	
 	combat_width = 2
 }

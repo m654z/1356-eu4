@@ -3,6 +3,7 @@
 CAS = {
 	NOT = { 
 		exists = SPA 
+		exists = CTR 
 		is_year = 1700
 	}
 }
@@ -10,22 +11,27 @@ CAS = {
 SPA = {
 	NOT = { 
 		exists = CAS
+		exists = CTR 
 		is_year = 1700
 	}
 }
 
-TUR = {
+TUR = { #Adjust?
 	NOT = { 
 		is_year = 1700
 	}
 }
 
 RUS = {
-	always = yes
+	NOT = {
+		exists = MOS
+		exists = GLH
+	}
 }
 
 MOS = {
 	NOT = { 
+		exists = GLH
 		exists = RUS
 	}
 }
@@ -40,16 +46,16 @@ ENG = {
 	}
 }
 
-FRA = {
+FRA = { #Change to take into effect after FRA unification
 	is_year = 1428
 }
 
-HAB = {
+HAB = { #Change to take into effect after HAB unification
 	always = yes
 }
 
 PRU = {
-	is_year = 1700
+	is_year = 1650
 }
 
 NED = {
@@ -74,10 +80,8 @@ PLC = {
 	}
 }
 
-BUR = {
-	NOT = {
-		is_year = 1450
-	}
+BUR = { #Tweak this to be based off # of provinces?
+	always = yes
 }
 
 DAN = {
@@ -87,9 +91,7 @@ DAN = {
 }
 
 ARA = {
-	NOT = {
-		is_year = 1500
-	}
+		is_subject = no
 }
 
 LIT = {

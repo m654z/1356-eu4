@@ -83,6 +83,9 @@ TEK = "countries/Teke.txt"
 
 #Levant
 ATO = "countries/Antioch.txt"
+EDE = "countries/Edessa.txt"
+TPO = "countries/CrusaderTripoli.txt"
+
 	
 #Maghreb
 

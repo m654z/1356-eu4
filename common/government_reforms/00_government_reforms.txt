@@ -429,6 +429,29 @@ chinese_kingdom_government = { #Chinese Minor Government Type
 	}
 }
 
+crusader_state_gov = {
+	icon = "castle"
+	allow_normal_conversion = yes
+	legacy_government = yes
+	monarchy = yes
+	valid_for_new_country = yes
+	valid_for_nation_designer = no
+	nation_designer_cost = 0
+	
+	ai = {
+		factor = 0
+	}
+	
+	modifiers = {
+		global_missionary_strength = 0.02
+		religious_unity = 0.2
+		papal_influence = 0.5
+		tolerance_own = 1
+		tolerance_heathen = -2	
+	}
+	
+}
+
 #########1356 Changes END########
 
 

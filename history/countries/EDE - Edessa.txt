@@ -1,0 +1,7 @@
+government = monarchy
+add_government_reform = crusader_state_reform
+primary_culture = crusader_culture
+add_accepted_culture = cosmopolitan_french
+religion = catholic
+technology_group = western
+capital = 2308	# Urfa

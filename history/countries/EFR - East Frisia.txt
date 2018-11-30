@@ -1,6 +1,7 @@
 government = tribal
 government_rank = 1
-primary_culture = hannoverian
+primary_culture = frisian
+add_accepted_culture = hannoverian
 religion = catholic
 technology_group = western
 capital = 1931	# Emden

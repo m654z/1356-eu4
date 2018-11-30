@@ -19,7 +19,8 @@ country_decisions = {
 			NOT = { tag = ARE }
 			NOT = { tag = LOT }
 			NOT = { tag = AQT }
-			NOT = { tag = NCH } #Francia
+			NOT = { tag = NCH } #1356 #Francia
+			NOT = { primary_culture = crusader_culture } #1356
 			OR = {
 				ai = no
 				NOT = { exists = FRA }

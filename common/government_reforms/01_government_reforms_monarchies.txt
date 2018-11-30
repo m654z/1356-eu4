@@ -1241,6 +1241,33 @@ chinese_kingdom_government_reform = {
 	}
 }
 
+crusader_state_reform = {
+	icon = "castle"
+	potential = {	
+		OR = {
+			has_reform = crusader_state_reform
+			have_had_reform = crusader_state_reform
+		}
+		primary_culture = crusader_culture
+		religion = catholic
+	}
+	allow_normal_conversion = yes
+	lock_level_when_selected = yes
+	legacy_equivalent = crusader_state_gov
+	valid_for_nation_designer = no
+	nation_designer_cost = 0
+	modifiers = {
+		global_missionary_strength = 0.02
+		religious_unity = 0.2
+		papal_influence = 0.5
+		tolerance_own = 1
+		tolerance_heathen = -2
+	}
+	custom_attributes = {
+		locked_government_type = yes
+	}
+}
+
 ######END 1356 CHANGES#####
 
 

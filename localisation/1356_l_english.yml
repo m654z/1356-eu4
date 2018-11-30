@@ -151,5 +151,11 @@
  great_library_title: "The Great Library of Alexandria"
  great_project_great_library: "The Great Library of Alexandria"
  
+ crusader_papal_action_1: "Request Papal Decree"
+ crusader_papal_action_1_title: "Request Papal Decree"
+ crusader_papal_action_1_desc: "We, as a Crusader State are on the Frontier of Christianity, if we fail at our goals then we will fail all of Christanity, the Pope, and most importantly God. Perhaps if we pull some strings the Pope could issue a Papal Decree, or Papal Blessing onto us, and incentivize pious Christians to donate Duccats and send able bodied men to fight with us! This may give us the edge we need, however the Pope is bound to only do this once per Ruler, so we should be careful when we use it."
+ crusader_papal_action_1_tooltip: "Can request a Papal Decree"
+ crusader_papal_action_1_alert_tooltip: "Can request a Papal Decree"
+ 
  
  

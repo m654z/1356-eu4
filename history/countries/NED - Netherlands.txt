@@ -4,6 +4,7 @@ government_rank = 1
 technology_group = western
 primary_culture = dutch
 add_accepted_culture = flemish
+add_accepted_culture = frisian #1356
 religion = catholic
 capital = 4383 #Haag
 

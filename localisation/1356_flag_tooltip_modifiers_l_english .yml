@@ -112,7 +112,6 @@
  gas_pyrenne_kingdom_mod_3_modifier: "Pyrenne Kingdom3"
  gas_pyrenne_kingdom_mod_4_modifier: "Pyrenne Kingdom4"
  tamerlane_random: "Tamerlane - Random Conquest"
- 
  yua_toqtoa_mission_keep_korea_reward: "Kept Korea"
  yua_toqtoa_diplomacy_reform_mission_1_modifier: "Diplomats Desert"
  yua_toqtoa_diplomacy_reform_mission_2_modifier: "Tarnished Diplomatic Reputation"
@@ -164,8 +163,11 @@
  chinese_minor_alliance_modifier: "Red Turban Alliance"
  chinese_minor_must_take_mandate_opinion: "Must Hold Mandate of Heaven"
  chinese_minor_overthrow_yuan_opinion: "Red Turban Rebellion"
- alx_great_library_perma_modifier: "The Great Library of Alexandria"
- 
+ alx_great_library_perma_modifier: "The Great Library of Alexandria" 
+ crusader_state_borders_religious_enemy_modifier: "Borders Heathens"
+ gave_aid_to_crusader_state_already_modifier: "Sent aid to struggling Crusaders"
+ rejected_aid_to_crusader_state_modifier: "Rejected Crusaders Plight"
+ crusader_state_received_aid_recently_modifier: "Received Aid from Distant Catholics"
  
  #Policies
  desc_the_inquisitor_act: "The Inquisitor Act"
@@ -218,20 +220,20 @@
  yuan_red_turban_rebellion_began_flag: "Red Turban Rebellion Begins..."
  yua_quelled_xinan_rebellion_flag: "Quelled Xinan Region"
  red_turban_rebellion_over_flag: "End of the Red Turban Rebellion"
- jean_darc_flag: "France has had event: \"Jeanne d'Arc\""
- not_jean_darc_flag: "France has NOT had event: \"Jeanne d'Arc\""
+ jean_darc_flag: "France has had event: 'Jeanne d'Arc'"
+ not_jean_darc_flag: "France has NOT had event: 'Jeanne d'Arc'"
  timurid_non_historical_flag: "Non Historical Timur Conquest"
  timur_conquest_random: "Timur Conquest - Random"
  timur_conquest_random_historical: "Timur Conquest - Random: Historical Choice"
  timur_conquest_random_steppes: "Timur Conquest - Random: Steppe Choice"
  death_of_timur_random: "The Death of Timur (Chose Random)"
  alexandria_massacure_flag: "The Alexandrian Massacure"
- 
+ crusder_ruler_asked_pope_assistance_flag: "Papal Assistance" 
  
  #Scripted Effects
  yuan_culture_convert_decision_effect: "Our King, heir, and Mongolian provinces adopt a new culture. One more...Chinese?"
  yuan_nomad_low_revolt_risk_decision_effect: "All provinces of an accepted culture, and primary culture gain -100 revolt risk until the end of the rebellion."
- 
+
  #Tooltips
  zur_insult: "We must insult Austria!"
  tooltip_government_fixed: "Will remove the 'Declining Power' triggered modifier"
@@ -299,7 +301,6 @@
  yuan_red_turban_begin_next_event_tt: "An Old Friend Returns..."
  yua_toqtoa_reward_dip_mission_modifier_tooltip: "We've successfully fixed our Trade, Diplomacy, Navy, Close Advisors, and Currency!"
  1356_yua_alatic_provinces_tooltip: "Our Nomadic Brothers"
- 
  yuan_starting_modifiers_tooltip: "Nomadic Brothers"
  yua_toqtoa_diplomacy_reform_mission_1_modifier_tt: "During recent years our Diplomats fled our court, some fled when we exiled Toqto'a, others more recently. Regardless of when, currently our ability to conduct diplomatic actions is very limited."
  yua_toqtoa_diplomacy_reform_mission_2_modifier_tt: "As we fell into decline, as did our Diplomatic Reputation. Many nations near us won't even trust us to watch their horse, let alone conduct any diplomatic actions! We must put a lot of work into fixing our reputation, less we never get out of this hole we've dug ourselves into."
@@ -331,7 +332,6 @@
  yua_toqtoa_stability_reform_mission_2_modifier_tt: "Now that we've gotten over the roadblock that was stopping us from advancing in technolgy out of the way perhaps we should adopt some new nationalist ideals while we're at it."
  yua_toqtoa_economy_reform_mission_1_modifier_tt: "With the ability to trade with foreign nations back in our hands, perhaps we should finally start collecting taxes again?"
  yua_toqtoa_economy_reform_mission_2_modifier_tt: "Trade goods are what makes a nation the most money. Currently our peasants are producing next to nothing, we should remedy this soon less we may be forced to declare bankrupcy."
- 
  yuan_red_turban_cantonese_revolt_tt: "The Cantonese Revolt!"
  yua_quell_red_turban_mission_1_modifier_tt: "Low Force Limit"
  yua_quell_red_turban_mission_2_modifier_tt: "Low Force Limit P2"
@@ -355,10 +355,13 @@
  yuan_red_turban_miao_revolt_tt: "The Miao Revolt!"
  yuan_red_turban_hubei_revolt_tt: "The Hubei Revolt!"
  yuan_red_turban_gan_revolt_tt: "The Gan Revolt!"
- 
  yua_toqtoa_diplomacy_reform_mission_7_modifier: "Diplomacy Reform"
  yua_toqtoa_diplomacy_reform_mission_8_modifier: "Diplomacy Reform"
  yua_toqtoa_diplomacy_reform_mission_9_modifier: "Diplomacy Reform"
-  
  forming_swiss_diplomatically_tooltip: "$TAG% needs to be the overlord of the following nations. Bern, Zurich, Thurgau, Churraetia, and Wallis."
- 
+ crusader_accepting_crusaders_decision_tooltip: "We send word to the Papacy and other pious Catholics in Europe that we need aid to further clense our borders of hethens!"
+ gave_aid_to_crusader_state_modifier_desc: "The Crusaders in the Holy Land requested aid in any form in order to continue the fight against the heathens that occupy the Holy Land, and we sent all the aid we can spare! We can only pray that it is enough."
+ rejected_aid_to_crusader_state_modifier_desc: "The vile Crusaders in the Holy Land requested aid to continue their bitter fight against the heathens that occupy the Holy Land, they have already squandered all the aid previous Kings sent them, so why should we bother to aid a failing cause?"
+ rejected_aid_to_crusader_state_tooltip: "We refuse to send the Crusaders additional aid, we will not get the change to send aid to them for another 7 years." 
+ sent_aid_to_crusader_state_tooltip: "We send aid to assist the Crusaders against the heathens that threaten to retake the Holy Land, they will appreciate the help, and will not ask us again for help for another 7 years." 
+ crusader_state_aid_received_success_tooltip: "[From.TAG.GetName] has sent us aid! It has already been delivered, may we make great use of it!"

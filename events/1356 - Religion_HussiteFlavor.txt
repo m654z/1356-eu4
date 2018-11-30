@@ -1,7 +1,7 @@
 namespace=hussite_spr
 
 # The Hussite Reformation
-country_event = { #I hope I updated the governments properly
+country_event = { #Spawn for the Hussites
 	id = hussite_spr.1
 	title = hussite_spr.1.t
 	desc = hussite_spr.1.d
@@ -14,9 +14,10 @@ country_event = { #I hope I updated the governments properly
 		NOT = { is_religion_enabled = hussite }
 		religion = catholic
 		is_defender_of_faith = no	
+		is_papal_controller = no
 		NOT = { government = theocracy }
 		reform_desire = 0.15
-		is_year = 1415
+		is_year = 1400
 		NOT = { is_year = 1500 }
 		num_of_cities = 2
 		capital_scope = {
@@ -29,109 +30,138 @@ country_event = { #I hope I updated the governments properly
 	mean_time_to_happen = {
 		months = 14000
 		
-		modifier = {
+		modifier = { #If income above 20 a month, faster
 			factor = 0.6
 			NOT = { monthly_income = 20 }
 		}
-		modifier = {
+		modifier = { #Silesian Primary Culture, Moravian Primary Culture, or Czech Primary culture
 			factor = 0.5
-			culture_group = west_slavic
-
-		}
-		
-		modifier = {
-			factor = 0.4
-			tag = BOH
-		}
-				
-		modifier = {
-			factor = 0.6
-			is_part_of_hre = yes
-		}
-		modifier = {
-			factor = 0.4
-			OR = {
-				primary_culture = czech
+			OR = { 
+				primary_culture = moravian
 				primary_culture = schlesian
+				primary_culture = czech
 			}
 		}
-		modifier = {
-			factor = 0.75
+		modifier = { #Bohemia
+			factor = 0.3
+			tag = BOH
+		}
+		modifier = { #Silesia or Moravia
+			factor = 0.4
+			OR = {
+				tag = SIL
+				tag = MVA
+			}
+		}		
+		modifier = { #Part of the HRE
+			factor = 0.55
+			is_part_of_hre = yes
+		}
+		modifier = { #Reform Desire 20%
+			factor = 0.80
 			reform_desire = 0.2
 		}
-		modifier = {
-			factor = 0.66
+		modifier = { #Reform Desire 40%
+			factor = 0.60
 			reform_desire = 0.4
 		}
-		modifier = {
-			factor = 0.50
+		modifier = { #Reform Desire 60%
+			factor = 0.40
+			reform_desire = 0.6
+		}
+		modifier = { #Reform Desire 80%
+			factor = 0.25
 			reform_desire = 0.8
 		}
-		modifier = {
+		modifier = { #Is year 1405
 			factor = 0.8
 			is_year = 1405
 		}
-		modifier = {
+		modifier = { #Is year 1410
 			factor = 0.8
 			is_year = 1410
 		}
-		modifier = {
+		modifier = { #Is year 1415
 			factor = 0.8
 			is_year = 1415
 		}
-		modifier = {
+		modifier = { #Is year 1420
 			factor = 0.8
 			is_year = 1420
 		}
-		modifier = {
+		modifier = { #Is year 1425
 			factor = 0.8
 			is_year = 1425
 		}
-		modifier = {
+		modifier = { #Is year 1430
 			factor = 0.8
 			is_year = 1430
 		}
-		modifier = {
-			factor = 0.25
+		modifier = { #100% Reform Desire
+			factor = 0.15
 			reform_desire = 1
 		}
-		
-		
-		modifier = {
+		modifier = { #If has taken innovativeness idea group
 			factor = 0.75
 			has_idea_group = innovativeness_ideas
 		}
-		modifier = {
+		modifier = { #Slower if taken Religious
 			factor = 1.25
 			has_idea_group = religious_ideas
 		}
-
-		modifier = {
+		modifier = { #If has shaky relations with pope
 			factor = 0.95
 			NOT = { has_opinion = { who = PAP value = -50 } }
 		}
-		modifier = {
+		modifier = { #If has shaky relations with pope
 			factor = 0.85
 			NOT = { has_opinion = { who = PAP value = -100 } }
 		}
-		modifier = {
+		modifier = { #If has shaky relations with pope
 			factor = 0.75
 			NOT = { has_opinion = { who = PAP value = -150 } }
 		}		
-		modifier = {
+		modifier = { #If has at least 1 revolt
 			factor = 0.5
 			num_of_revolts = 1
 		}
-		modifier = {
+		modifier = { #Slower if a theocracy
 			factor = 2.0
 			government = theocracy
 		}
-		modifier = {
-			factor = 8.0
+		modifier = { #Slower if a Tribe
+			factor = 1.1
+			government = tribal
+		}
+		modifier = { #MUCH slower if a Crusader 
+			factor = 10
+			government = crusader_state_reform
+		}
+		modifier = { #Slower if Sami, Iceland, Cummania, Teutonic, or Livonian
+			factor 3.0
+			OR = {
+				tag = SMI #Would have recently converted
+				tag = ICE #Prevents it from spawning on tiny island
+				tag = CUM #Recent convert, mostly for the safety of the nation.
+				tag = TEU #Its a Holy Order...
+				tag = LIV #Its a Holy Order...
+				tag = PAP #Just no
+			}
+		}
+		modifier = { #Much Slower if Latin or Iberian
+			factor = 12.0
 			OR = {
 				culture_group = latin
 				culture_group = iberian
+				primary_culture = irish
+				primary_culture = polish
+				primary_culture = crusader_culture
+				
 			}
+		}
+		modifier = { #You know, if you can get around the requirements to get the Hussite Faith as the pope, you can spawn it if your fucking lucky.
+			factor = 1000.0
+			tag = PAP
 		}
 	}
 
@@ -168,10 +198,8 @@ country_event = {
 	fire_only_once = yes
 	
 	trigger = {
-
 		has_country_flag = "hussite_reformation"
 		religion = hussite
-		
 	}
 	
 	option = {
@@ -179,7 +207,7 @@ country_event = {
 		define_general = {
 			name = "Jan 'One-Eye' Zizka"
 			fire = 5
-			shock = 2
+			shock = 4
 			manuever = 1
 			siege = 2
 		}
@@ -194,11 +222,9 @@ province_event = {
 	picture = RELIGION_eventPicture
 	
 	trigger = {
-	
 		religion = hussite
 		is_reformation_center = yes
 		NOT = { has_province_flag = "hussite_center" }
-	
 	}
 	
 	mean_time_to_happen = {
@@ -207,7 +233,6 @@ province_event = {
 	
 	option = {
 		name = hussite_spr.5.a
-		
 		change_religion = catholic
 	}
 	
@@ -224,7 +249,6 @@ country_event = {
 	fire_only_once = yes
 	
 	trigger = {
-	
 		is_religion_enabled = hussite
 		OR = {
 			AND = {
@@ -243,9 +267,7 @@ country_event = {
 				}
 			is_great_power = yes
 			}
-	
 		}
-		
 	}
 	
 	mean_time_to_happen = {
@@ -257,15 +279,12 @@ country_event = {
 			factor = 100 
 			modifier = {
 				factor = 0
-				
 				is_at_war = yes
 				NOT = { war_score = 0 }
 				war_exhaustion = 10
 			}
 		}
-		
 		name = hussite_spr.6.a
-		
 		random_country = {  
 			limit = {
 				has_country_flag = "hussite_reformation"
@@ -278,31 +297,23 @@ country_event = {
 				}
 			}
 		}
-		
 		set_global_flag = "hussite_wars"
-		
 	}
-
 	
 	option = {
 		ai_chance = { 
 			factor = 0 
 			modifier = {
 				factor = 100
-				
 				is_at_war = yes
 				NOT = { war_score = 0 }
 				war_exhaustion = 10
 			}
 		}
-	
 		name = hussite_spr.6.b
-		
 		add_stability = -1
 		add_prestige = -20
-
 	}
-
 }
 
 #country_event = { #Hashed out because both unfinished, and buggy
@@ -325,8 +336,7 @@ country_event = {
 #}
 
 
-province_event = {
-
+province_event = { #Event to force convert the Hussite Center of Reformation if the spawning nation failed
 	id = hussite_spr.4
 	title = hussite_spr.4.t
 	desc = hussite_spr.4.d
@@ -336,7 +346,6 @@ province_event = {
 	fire_only_once = yes
 	
 	trigger = {
-	
 		owner = {
 			has_country_flag = "hussite_reformation"
 			NOT = { religion = hussite }
@@ -351,9 +360,7 @@ province_event = {
 				has_province_flag = "hussite_center"
 				NOT = { religion = hussite }
 			}
-		}
-
-	
+		}	
 	}
 	
 	mean_time_to_happen = {
@@ -362,10 +369,8 @@ province_event = {
 	
 	option = {
 		name = hussite_spr.4.a
-		
 		add_prestige = -20
 		change_religion = catholic
 		add_reform_desire = -0.25
 	}
-	
 }
