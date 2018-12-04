@@ -3,7 +3,7 @@
 
 owner = TUR
 controller = TUR
-culture = greek
+culture = bithynian
 religion = orthodox
 capital = "Bolu"
 trade_goods = fish

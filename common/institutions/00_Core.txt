@@ -375,9 +375,36 @@ renaissance = {
 	
 	can_start = {
 		is_year = 1450
-		region = italy_region
+		OR = {
+			AND = {
+				region = italy_region
+				NOT = { province_id = 126 }
+			}
+			AND = {
+				tag = BYZ
+				num_of_cities = 25
+				NOT = { exists = TUR }
+				NOT = { exists = RUM }
+				
+			}
+			AND = {
+				tag = ADU
+				num_of_cities = 25
+				NOT = { exists = CAS }
+				NOT = { exists = SPA }
+			}
+			AND = {
+				region = low_countries_region
+				OR = {
+					primary_culture = flemish
+					primary_culture = dutch
+					primary_culture = wallonian
+					primary_culture = frisian
+				}
+				NOT = { province_id = 1931 }
+			}
+		}
 		is_state = yes
-		NOT = { province_id = 126 }
 		is_island = no
 		OR = {
 			development = 20

@@ -1876,21 +1876,46 @@ country_event = { #Slaughter of the Assyrians
 	major = yes
 	
 	trigger = {
-		tag = TIM
-		NOT = { religion = nestorian }
-		#NOT = { primary_culture = assyrian }
-		owns = 2310
-		owns = 410
-		owns = 411
+		OR = {
+			tag = TIM
+			AND = {
+				NOT = { exists = TIM }
+				is_year = 1380
+				NOT = { religion = nestorian }
+				NOT = { primary_culture = assyrian }
+				num_of_revolts = 3
+			}
+		}
 		2310 = {
-			religion = nestorian
+			owned_by = ROOT
+			#religion = nestorian #Mostly commented out to prevent conversion related bugs
+			culture = assyrian
+		}
+		406 = {
+			owned_by = ROOT
+			#religion = nestorian
+			culture = assyrian
+		}
+		2309 = {
+			owned_by = ROOT
+			#religion = nestorian
+			culture = assyrian
+		}
+		407 = {
+			owned_by = ROOT
+			#religion = nestorian
+			culture = assyrian
+		}
+		2314 = {
+			owned_by = ROOT
+			#religion = nestorian
 			culture = assyrian
 		}
 		NOT = { is_year = 1500 }
 	}
 
 	mean_time_to_happen = {
-		months = 12
+		months = 48
 	}
 
 	option = { #Historical - Slaughter them all
@@ -1913,7 +1938,7 @@ country_event = { #Slaughter of the Assyrians
 				size = 1
 			}
 		}
-		410 = {
+		406 = {
 			add_base_tax = -2
 			add_base_production = -2
 			add_base_manpower = -2
@@ -1925,7 +1950,7 @@ country_event = { #Slaughter of the Assyrians
 				size = 2
 			}
 		}
-		411 = {
+		2309 = {
 			add_base_tax = -1
 			add_base_production = -1
 			add_base_manpower = -1
@@ -1935,22 +1960,54 @@ country_event = { #Slaughter of the Assyrians
 				religion = nestorian
 				size = 1
 			}
-		}		
+		}	
+		2314 = {
+			add_base_tax = -1
+			add_base_production = -1
+			add_base_manpower = -1
+			spawn_rebels = {
+				type = peasant_rebels
+				culture = assyrian
+				religion = nestorian
+				size = 1
+			}
+		}
+		407 = {
+			add_base_tax = -1
+			add_base_production = -1
+			add_base_manpower = -1
+			spawn_rebels = {
+				type = peasant_rebels
+				culture = assyrian
+				religion = nestorian
+				size = 1
+			}
+		}			
 	}
 	option = { #Ahistorical - Let them live
 		name = timurlane.992.b
 		ai_chance = { factor = 10 }
-		410 = {
+		406 = {
 			add_base_tax = 2
 			add_base_production = 1
 			add_base_manpower = 1
 		}
-		411 = {
+		2309 = {
 			add_base_tax = 1
 			add_base_production = 1
 			add_base_manpower = 1
 		}
 		2310 = {
+			add_base_tax = 1
+			add_base_production = 1
+			add_base_manpower = 1
+		}
+		2314 = {
+			add_base_tax = 1
+			add_base_production = 1
+			add_base_manpower = 1
+		}
+		407 = {
 			add_base_tax = 1
 			add_base_production = 1
 			add_base_manpower = 1

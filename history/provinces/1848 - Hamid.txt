@@ -3,8 +3,8 @@
 
 owner = HMD
 controller = HMD
-culture = turkish
-religion = sunni
+culture = lykian
+religion = orthodox
 capital = "Burdur"
 trade_goods = grain
 hre = no
@@ -23,6 +23,7 @@ discovered_by = nomad_group
 1391.1.1  = { owner = TUR add_core = TUR controller = TUR }
 1402.8.1  = { owner = KAR add_core = KAR controller = KAR }
 1429.1.1  = { owner = TUR controller = TUR } # Incorporated into the Ottoman Empire
+1430.1.1  = { culture = turkish religion = sunni }
 1481.6.1  = { revolt = { type = pretender_rebels size = 0 } controller = REB } # Civil war, Bayezid & Jem
 1482.7.26 = { revolt = {} controller = TUR } # Jem escapes to Rhodes
 1509.1.1  = { revolt = { type = revolutionary_rebels size = 0 } controller = REB } # Civil war

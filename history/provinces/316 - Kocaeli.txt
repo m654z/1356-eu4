@@ -3,7 +3,7 @@
 
 owner = TUR
 controller = TUR
-culture = greek
+culture = bithynian
 religion = orthodox
 capital = "Izmit"
 trade_goods = grain

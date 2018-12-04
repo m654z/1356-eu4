@@ -3,8 +3,8 @@
 
 owner = MEN
 controller = MEN
-culture = turkish
-religion = sunni
+culture = lykian
+religion = orthodox
 capital = "Mughla"
 trade_goods = salt
 hre = no
@@ -26,6 +26,7 @@ discovered_by = ottoman
 1391.1.1  = { owner = TUR controller = TUR add_core = TUR }
 1402.8.1  = { owner = MEN controller = MEN }
 1421.1.1  = { owner = TUR controller = TUR }
+1425.1.1  = { culture = turkish religion = sunni }
 1453.5.29 = { remove_claim = BYZ }
 1481.6.1  = { revolt = { type = pretender_rebels size = 0 } controller = REB } # Civil war, Bayezid & Jem
 1482.7.26 = { revolt = {} controller = TUR } # Jem escapes to Rhodes

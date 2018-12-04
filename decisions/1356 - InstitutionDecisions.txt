@@ -1,0 +1,56 @@
+country_decisions = {
+	age_of_discovery_decision_unlock = {
+		potential = {
+			current_age = age_of_feudalism
+			NOT = { has_country_flag = age_of_discovery_decision_flag }
+			capital_scope = { 
+				OR = {
+					continent = europe
+					region = maghreb_region
+					region = north_china_region
+					region = south_china_region
+					region = korea_region
+					region = japan_region
+					region = manchuria_region
+					region = moluccas_region
+				}
+			}
+			num_of_total_ports = 1
+			NOT = { government = tribal }
+			is_subject = no
+			current_age = age_of_feudalism
+		}
+		allow = { 
+			stability = 1
+			is_subject = no
+			is_at_war = no
+			NOT = { war_exhaustion = 5 }
+			current_age = age_of_feudalism
+			num_of_total_ports = 5
+			total_development = 75
+			navy_size_percentage = 0.75
+			navy_tradition = 20
+		}
+		effect = { 
+			set_country_flag = age_of_discovery_decision_flag
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	expansion_decision_unlock = {
+		potential = {
+		
+		}
+		allow = {
+		
+		}
+		effect = {
+		
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

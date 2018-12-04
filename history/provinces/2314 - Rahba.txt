@@ -3,8 +3,8 @@
 
 owner = JLR
 controller = JLR
-culture = al_suryah_arabic
-religion = sunni
+culture = assyrian
+religion = nestorian
 capital = "Deir ez-Zor"
 trade_goods = grain
 hre = no
@@ -22,6 +22,7 @@ discovered_by = east_african
 
 1394.1.1  = { owner = TIM controller = TIM add_core = TIM }
 1396.1.1  = { owner = JLR controller = JLR }
+1400.1.1   = { religion = sunni culture = al_suryah_arabic }
 1401.4.1  = { controller = TIM }
 1401.7.1  = { owner = TIM }
 1405.2.19 = { owner = JLR controller = JLR remove_core = TIM }

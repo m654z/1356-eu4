@@ -4,7 +4,7 @@
 owner = VEN
 controller = VEN
 add_core = VEN
-culture = croatian
+culture = dalmatian
 religion = catholic
 capital = "Zadar"
 trade_goods = wool

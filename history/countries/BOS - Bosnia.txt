@@ -1,7 +1,8 @@
 government = monarchy
 add_government_reform = feudalism_reform
 government_rank = 1
-primary_culture = serbian
+primary_culture = bosnian
+add_accepted_culture = serbian
 add_accepted_culture = croatian
 religion = catholic
 technology_group = eastern

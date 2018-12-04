@@ -496,7 +496,10 @@ exploration_ideas = {
 	
 	
 	trigger = {
-		NOT = { current_age = age_of_feudalism }
+		OR = {
+			has_country_flag = age_of_discovery_decision_flag
+			NOT = { current_age = age_of_feudalism }
+		}
 	}
 	
 	bonus = {
