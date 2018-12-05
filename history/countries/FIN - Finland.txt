@@ -11,6 +11,7 @@ capital = 27	# Nyland
 	monarch = {
 		name = "Bengt I"
 		dynasty = "Algotsson"
+		culture = swedish
 		birth_date = 1330.1.1
 		ADM = 3
 		DIP = 3
