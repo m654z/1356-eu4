@@ -5,3 +5,5 @@ add_accepted_culture = cosmopolitan_french
 religion = catholic
 technology_group = western
 capital = 2308	# Urfa
+
+add_historical_friend = MRO

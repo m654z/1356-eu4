@@ -17,6 +17,7 @@ country_decisions = {
 				primary_culture = gascon
 				primary_culture = occitain
 				primary_culture = aquitaine
+				primary_culture = arpitan
 			}
 			NOT = { has_country_flag = GAS_pyrenne_kingdom }
 			is_colonial_nation = no
@@ -479,7 +480,7 @@ country_decisions = {
 			factor = 1
 		}
 	}
-	arles_nation = { #Arles, Hard to form
+	arles_nation = { #Arles, Hard to form #Make event to give them a choice to go Arpitian?
 		major = yes
 		potential = {
 			normal_or_historical_nations = yes

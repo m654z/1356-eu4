@@ -67,11 +67,12 @@ GLY = "countries/Galich.txt"
 MRM = "countries/Murom.txt"
 
 #Arabia	
-JLR = "countries/Jalayirid.txt"
-QON = "countries/Qoyunlu.txt"
 
 #Middle East
 ALX = "countries/Alexandria.txt"
+ASY = "countries/Assyria.txt"
+JLR = "countries/Jalayirid.txt"
+QON = "countries/Qoyunlu.txt"
 
 		
 #Asia Minor		
@@ -85,7 +86,7 @@ TEK = "countries/Teke.txt"
 ATO = "countries/Antioch.txt"
 EDE = "countries/Edessa.txt"
 TPO = "countries/CrusaderTripoli.txt"
-
+MRO = "countries/Maronite.txt"
 	
 #Maghreb
 

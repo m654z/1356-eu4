@@ -1,5 +1,5 @@
 government = monarchy
-add_government_reform = feudalism_reform
+add_government_reform = crusader_state_reform
 
 primary_culture = crusader_culture
 add_accepted_culture = cosmopolitan_french
@@ -10,5 +10,7 @@ capital = 379	# Jerusalem
 historical_friend = KNI
 historical_friend = CYP
 historical_friend = CIC
+historical_friend = MRO
+
 
 

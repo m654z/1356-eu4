@@ -28,8 +28,8 @@ country_decisions = {
 			current_age = age_of_feudalism
 			num_of_total_ports = 5
 			total_development = 75
-			navy_size_percentage = 0.75
-			navy_tradition = 20
+			navy_size_percentage = 0.50
+			navy_tradition = 10
 		}
 		effect = { 
 			set_country_flag = age_of_discovery_decision_flag

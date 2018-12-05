@@ -4,6 +4,7 @@ government_rank = 1
 technology_group = western
 religion = catholic
 primary_culture = austrian
+add_accepted_culture = slovenian
 capital = 1769	# Görz
 
 1338.3.17  = {
