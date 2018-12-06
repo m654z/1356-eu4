@@ -168,6 +168,7 @@
  gave_aid_to_crusader_state_already_modifier: "Sent aid to struggling Crusaders"
  rejected_aid_to_crusader_state_modifier: "Rejected Crusaders Plight"
  crusader_state_received_aid_recently_modifier: "Received Aid from Distant Catholics"
+ delhi_sultanate_collapse_modifier: "Falling Nation"
  
  #Policies
  desc_the_inquisitor_act: "The Inquisitor Act"

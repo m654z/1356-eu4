@@ -3,7 +3,7 @@
 
 owner = MON
 controller = MON
-culture = serbian
+culture = bosnian
 religion = orthodox
 capital = "Trebinje"
 trade_goods = wool

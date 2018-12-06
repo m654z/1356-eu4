@@ -12,6 +12,26 @@ country_decisions = {
 			factor = 0
 		}
 	}
-
-
+	
+	remove_delhi_starting_modifier_decision = {
+		potential = {
+			tag = DLH
+			ai = no
+			NOT = { is_year = 1400 }
+			has_country_modifier = delhi_sultanate_collapse_modifier
+		}
+		allow = {
+			tag = DLH
+			ai = no
+			NOT = { is_year = 1400 }
+			has_country_modifier = delhi_sultanate_collapse_modifier
+		}
+		effect = {
+			remove_country_modifier = delhi_sultanate_collapse_modifier
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
 }

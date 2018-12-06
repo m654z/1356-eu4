@@ -282,3 +282,11 @@ alx_great_library_perma_modifier = {
 	global_manpower_modifier = 0.05
 	manpower_recovery_speed = 0.05
  }
+ 
+#Delhi Collapse Modifier Temp
+
+delhi_sultanate_collapse_modifier = { #Geno remove this when you rework Delhi
+	global_unrest = 5
+	stability_cost_modifier = 0.5
+	years_of_nationalism = 10	
+}

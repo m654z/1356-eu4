@@ -41,16 +41,16 @@ country_decisions = {
 	}
 	expansion_decision_unlock = {
 		potential = {
-		
+			always = no
 		}
 		allow = {
-		
+			always = no
 		}
 		effect = {
 		
 		}
 		ai_will_do = {
-			factor = 1
+			factor = 0
 		}
 	}
 }

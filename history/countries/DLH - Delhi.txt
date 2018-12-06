@@ -19,6 +19,13 @@ religious_school = hanafi_school
 	}
 }
 
+1356.1.1 = {
+	add_country_modifier = { 
+		name = delhi_sultanate_collapse_modifier
+		duration = 14600
+	}
+}
+
 1388.9.20 = {
 	monarch = {
 		name = "Ghiyath-ud-din Shah"
@@ -78,6 +85,8 @@ religious_school = hanafi_school
 		MIL = 0
 	}
 }
+
+1401.1.1 = { remove_country_modifier = delhi_sultanate_collapse_modifier }
 
 1414.5.28 = {
 	monarch = {

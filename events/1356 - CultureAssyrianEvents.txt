@@ -1,0 +1,24 @@
+namespace = assyrianeventsfla
+
+country_event = { #The Fate of Assyrians in the Previous Century
+	id = assyrianeventsfla.1
+	title = "assyrianeventsfla.1.t"
+	desc = "assyrianeventsfla.1.desc"
+	picture = COURT_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		always = no
+	}
+
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = { #Lets the Player know whats happened to assyrians previously
+		name = assyrianeventsfla.1.a
+
+	}
+
+}
