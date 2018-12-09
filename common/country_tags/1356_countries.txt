@@ -18,6 +18,7 @@ LNC = "countries/Lancaster.txt"
 
 #Eastern Europe
 CUM = "countries/Cumania.txt"
+KOG = "countries/Konigsberg.txt"
 
 #France 
 PBG = "countries/Palatinate of Burgundy.txt"
