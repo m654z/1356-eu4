@@ -1,5 +1,6 @@
 country_decisions = {
 	age_of_discovery_decision_unlock = {
+		major = yes
 		potential = {
 			current_age = age_of_feudalism
 			NOT = { has_country_flag = age_of_discovery_decision_flag }
@@ -18,7 +19,6 @@ country_decisions = {
 			num_of_total_ports = 1
 			NOT = { government = tribal }
 			is_subject = no
-			current_age = age_of_feudalism
 		}
 		allow = { 
 			stability = 1
@@ -33,24 +33,33 @@ country_decisions = {
 		}
 		effect = { 
 			set_country_flag = age_of_discovery_decision_flag
+			custom_tooltip = exploration_ideas_unlock_tooltip
 		}
 		
 		ai_will_do = {
-			factor = 1
+			factor = 100
 		}
 	}
 	expansion_decision_unlock = {
+		major = yes
 		potential = {
-			always = no
+			has_empty_adjacent_province = yes
+			current_age = age_of_feudalism
+			NOT = { has_country_flag = unlock_expansion_ideas_decision }
 		}
 		allow = {
-			always = no
+			has_empty_adjacent_province = yes
+			current_age = age_of_feudalism
+			NOT = { government = tribal }
+			is_at_war = no
+			is_subject = no
 		}
 		effect = {
-		
+			set_country_flag = unlock_expansion_ideas_decision
+			custom_tooltip = expansion_ideas_unlock_tooltip
 		}
 		ai_will_do = {
-			factor = 0
+			factor = 100
 		}
 	}
 }

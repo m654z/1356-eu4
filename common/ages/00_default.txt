@@ -268,11 +268,9 @@ age_of_feudalism = {
 age_of_discovery = {
 	start = 1400
 	
-	can_start = { #Give me a tooltip instead
+	can_start = {
 		any_country = { 
 			exploration_ideas = 2
-			dip_tech = 6
-			dip = 2
 		}
 	}
 	

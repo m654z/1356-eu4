@@ -782,7 +782,10 @@ expansion_ideas = {
 	important = yes
 		
 	trigger = {
-		NOT = { current_age = age_of_feudalism }
+		OR = {
+			NOT = { current_age = age_of_feudalism }
+			has_country_flag = unlock_expansion_ideas_decision
+		}
 	}
 	
 	bonus = {

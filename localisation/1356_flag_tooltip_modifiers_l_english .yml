@@ -366,3 +366,6 @@
  rejected_aid_to_crusader_state_tooltip: "We refuse to send the Crusaders additional aid, we will not get the change to send aid to them for another 7 years." 
  sent_aid_to_crusader_state_tooltip: "We send aid to assist the Crusaders against the heathens that threaten to retake the Holy Land, they will appreciate the help, and will not ask us again for help for another 7 years." 
  crusader_state_aid_received_success_tooltip: "[From.TAG.GetName] has sent us aid! It has already been delivered, may we make great use of it!"
+ expansion_ideas_unlock_tooltip: "You will have access to the Expansion Ideas group."
+ exploration_ideas_unlock_tooltip: "You will have access to the Exploration ideas group."
+ 
