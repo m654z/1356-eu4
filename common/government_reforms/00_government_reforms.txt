@@ -44,6 +44,7 @@ defaults_reform = {
 	allow_vassal_war = no
 	allow_vassal_alliance = no
 	min_autonomy = 0
+	factions_frame = 2
 	factions = { }
 	foreign_slave_rulers = no
 	royal_marriage = yes
@@ -54,6 +55,10 @@ defaults_reform = {
 	allow_normal_conversion = yes
 	start_territory_to_estates = 0.8
 	has_term_election = no
+	force_admiral_leader = no
+	admirals_become_rulers = no
+	generals_become_rulers = no
+	disallowed_trade_goods = {}
 }
 
 ######1356 Changes Start######
@@ -767,6 +772,224 @@ oligarchic_republic = {
     	max_states = 2
 	}
 
+	ai = {
+		factor = 0
+	}
+}
+
+pirate_republic = {
+	icon = "trading_city" # should have a unique icon
+	allow_normal_conversion = no
+	legacy_government = yes
+	valid_for_new_country = yes
+	valid_for_nation_designer = yes
+	nation_designer_cost = 40
+	duration = 4
+	
+	republican_name = yes
+	royal_marriage = no
+	
+	republic = yes
+	can_form_trade_league = no
+
+	nation_designer_trigger = {
+		has_dlc = "Golden Century"
+		capital_scope = {
+			has_port = yes
+			OR = {
+				province_is_on_an_island = yes
+				region = maghreb_region
+			}
+		}
+	}
+	
+	potential = {	
+		has_dlc = "Golden Century"
+	}
+	
+	factions_frame = 9
+	factions = {
+		pr_buccaneers
+		pr_smugglers
+		pr_captains
+	}
+	
+	modifiers = {
+		republican_tradition = -1
+		max_absolutism = -50
+		naval_forcelimit_modifier = 0.5
+		capture_ship_chance = 0.33
+		may_perform_slave_raid_on_same_religion = yes
+	}
+	
+	custom_attributes = {
+		force_admiral_leader = yes
+	}
+	
+	ai = {
+		factor = 0
+	}
+}
+
+pirate_kingdom = {
+	icon = "trading_city" # should have a unique icon
+	allow_normal_conversion = no
+	legacy_government = yes
+	valid_for_new_country = no
+	valid_for_nation_designer = no
+	has_term_election = no
+	
+	
+	republican_name = yes
+	royal_marriage = no
+	
+	republic = yes
+	
+	potential = {	
+		has_dlc = "Golden Century"
+	}
+	
+	nation_designer_trigger = {
+		capital_scope = {
+			has_port = yes
+			OR = {
+				province_is_on_an_island = yes
+				region = maghreb_region
+			}
+		}
+	}
+	
+	factions = {
+		pr_buccaneers
+		pr_smugglers
+		pr_captains
+	}
+	
+	modifiers = {
+		republican_tradition = -1
+		max_absolutism = -50
+		naval_forcelimit_modifier = 0.5
+		capture_ship_chance = 0.33
+		pr_captains_influence = 0.1
+		harsh_treatment_cost = -0.2
+		leader_naval_fire = 1
+		may_perform_slave_raid_on_same_religion = yes
+	}
+	
+	custom_attributes = {
+		admirals_become_rulers = yes
+	}
+	
+	ai = {
+		factor = 0
+	}
+}
+
+war_against_the_world_government = {
+	icon = "trading_city" # should have a unique icon
+	allow_normal_conversion = no
+	legacy_government = yes
+	valid_for_new_country = no
+	valid_for_nation_designer = no
+	duration = 4
+	disallowed_trade_goods = { slaves }
+	
+	republican_name = yes
+	royal_marriage = no
+	
+	republic = yes
+	
+	potential = {	
+		has_dlc = "Golden Century"
+	}
+	
+	nation_designer_trigger = {
+		capital_scope = {
+			has_port = yes
+			OR = {
+				province_is_on_an_island = yes
+				region = maghreb_region
+			}
+		}
+	}
+	
+	factions = {
+		pr_buccaneers
+		pr_smugglers
+		pr_captains
+	}
+	
+	modifiers = {
+		republican_tradition = -1
+		max_absolutism = -50
+		naval_forcelimit_modifier = 0.5
+		capture_ship_chance = 0.33
+		pr_buccaneers_influence = 0.1
+		years_of_nationalism = -5
+		global_manpower_modifier = 0.1
+		may_perform_slave_raid_on_same_religion = yes
+	}
+	
+	custom_attributes = {
+		force_admiral_leader = yes
+	}
+	
+	ai = {
+		factor = 0
+	}
+}
+
+black_market_consortium_government = {
+	icon = "trading_city" # should have a unique icon
+	allow_normal_conversion = no
+	legacy_government = yes
+	valid_for_new_country = no
+	valid_for_nation_designer = no
+	duration = 4
+	
+	republican_name = yes
+	royal_marriage = no
+	
+	republic = yes
+	
+	nation_designer_trigger = {
+		capital_scope = {
+			has_port = yes
+			OR = {
+				province_is_on_an_island = yes
+				region = maghreb_region
+			}
+		}
+	}
+	
+	factions = {
+		pr_buccaneers
+		pr_smugglers
+		pr_captains
+	}
+	
+	modifiers = {
+		republican_tradition = -1
+		max_absolutism = -50
+		naval_forcelimit_modifier = 0.5
+		capture_ship_chance = 0.33
+		pr_smugglers_influence = 0.1
+		global_foreign_trade_power = 0.3
+		may_perform_slave_raid_on_same_religion = yes
+	}
+	
+	custom_attributes = {
+		force_admiral_leader = yes
+	}
+	
+	conditional = {
+		allow = {
+			has_dlc = "Res Publica"
+		}
+		can_use_trade_post = yes
+	}
+	boost_income = yes
+	
 	ai = {
 		factor = 0
 	}
@@ -2107,6 +2330,7 @@ veche_republic_legacy = {
 
 	nation_designer_trigger = {
 		culture_group = east_slavic
+		religion = orthodox
 	}
 
 	factions = {
@@ -2214,6 +2438,7 @@ principality_legacy = {
 	nation_designer_cost = 5
 	nation_designer_trigger = {
 		culture_group = east_slavic
+		religion = orthodox
 	}
 
     fixed_rank = 1
@@ -2250,6 +2475,7 @@ tsardom_legacy = {
 
 	nation_designer_trigger = {
 		culture_group = east_slavic
+		religion = orthodox
 	}
 
     fixed_rank = 3

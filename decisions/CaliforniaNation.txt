@@ -1,17 +1,17 @@
 country_decisions = {
 
-	la_plata_nation = { #1356 - Changed Tech
+	california_nation = { #1356 - Changed Tech
 		major = yes
 		potential = {
 			NOT = { has_country_flag = changed_from_colonial_nation }
-			is_nomad = no
 			was_never_end_game_tag_trigger = yes
+			is_nomad = no
 			is_random_new_world = no			
 			OR = {
 				is_former_colonial_nation = yes
 				is_colonial_nation = yes
 			}
-			colonial_la_plata = {
+			colonial_california = {
 				owned_by = ROOT
 			}
 			OR = {
@@ -22,19 +22,23 @@ country_decisions = {
 				}
 			}
 		}
+		provinces_to_highlight = {
+			province_id = 4637	# Atacama
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+			}
+		}
 		allow = {
-			adm_tech = 16 #Orignally 10
+			adm_tech = 16 #Was 10
 			is_former_colonial_nation = yes
 			is_free_or_tributary_trigger = yes
 			is_at_war = no
-			capital_scope = {
-				colonial_region = colonial_la_plata
-				is_core = ROOT
-			}
-			NOT = { exists = LAP }
+			NOT = { exists = CAL }
+			owns_core_province = 4637
 		}
 		effect = {
-			change_tag = LAP
+			change_tag = CAL
 			remove_non_electors_emperors_from_empire_effect = yes
 			if = {
 				limit = {
@@ -44,15 +48,23 @@ country_decisions = {
 			}
 			if = {
 				limit = {
-					primary_culture = portugese
+					culture_group = british
+					NOT = { primary_culture = american }
 				}
-				change_primary_culture = brazilian
+				change_primary_culture = american
 			}
-			colonial_la_plata = {
+			if = {
+				limit = {
+					culture_group = iberian
+					NOT = { primary_culture = mexican }
+				}
+				change_primary_culture = mexican
+			}
+			colonial_california = {
 				limit = {
 					NOT = { owned_by = ROOT }
 				}
-				add_permanent_claim = LAP
+				add_permanent_claim = CAL
 			}
 			add_country_modifier = {
 				name = "centralization_modifier"

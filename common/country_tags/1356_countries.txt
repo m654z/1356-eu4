@@ -30,7 +30,7 @@ POU = "countries/Poitou.txt"
 AQT = "countries/Aquitaine.txt"
 ARE = "countries/Arles.txt"
 LOT = "countries/Lotharingia.txt"
-VAL = "countries/Valois.txt"
+VLS = "countries/Valois.txt"
 NCH = "countries/CharlamagneEmpire.txt"
 
 	
@@ -50,7 +50,6 @@ VAU = "countries/Vaud.txt"
 	
 #Spain
 CTR = "countries/Trastamara.txt"
-MJO = "countries/Majorca.txt"
 SEV = "countries/Sevilla.txt"
 
 #Italy

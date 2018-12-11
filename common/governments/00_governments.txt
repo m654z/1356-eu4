@@ -1,38 +1,5 @@
 
 monarchy = {
-	legacy_government = {
-		despotic_monarchy
-		feudal_monarchy
-		administrative_monarchy
-		constitutional_monarchy
-		enlightened_despotism
-		revolutionary_empire
-		english_monarchy_legacy
-		mamluk_government_legacy
-		feudal_theocracy_legacy
-		elective_monarchy_legacy
-		celestial_empire_legacy
-		ottoman_government_legacy
-		prussian_monarchy_legacy
-		iqta_legacy
-		daimyo_legacy
-		shogunate_legacy
-		indep_daimyo_legacy
-		principality_legacy
-		tsardom_legacy
-		###1356 ADDITION#######
-		elective_feudal_monarchy
-		chinese_kingdom_government
-		timurid_government
-		barbary_sultanate
-		kalmar_union_legacy
-		french_vassal_feudal_monarchy
-		earldom_legacy
-		beylik_legacy
-		archduchy_legacy
-		byzantine_empire_gov
-		#####END 1356 CHANGES#####
-	}
 	reform_levels = {
 		feudalism_vs_autocracy = {
 			reforms = {
@@ -71,7 +38,6 @@ monarchy = {
 				earldom_reform
 				archduchy_reform
 				byzantine_empire_reform
-				crusader_state_reform
 				#####END 1356 CHANGES#####
 			}
 		}
@@ -94,6 +60,7 @@ monarchy = {
 				decentralize_reform
 				sidhi_recruitment
 				mansabdari_reform
+				council_of_the_indies_reform
 			}
 		}
 		growth_of_administration = {
@@ -134,6 +101,39 @@ monarchy = {
 
 	basic_reform = monarchy_mechanic
 
+	legacy_government = {
+		despotic_monarchy
+		feudal_monarchy
+		administrative_monarchy
+		constitutional_monarchy
+		enlightened_despotism
+		revolutionary_empire
+		english_monarchy_legacy
+		mamluk_government_legacy
+		feudal_theocracy_legacy
+		elective_monarchy_legacy
+		celestial_empire_legacy
+		ottoman_government_legacy
+		prussian_monarchy_legacy
+		iqta_legacy
+		daimyo_legacy
+		shogunate_legacy
+		indep_daimyo_legacy
+		principality_legacy
+		tsardom_legacy
+		###1356 ADDITION#######
+		elective_feudal_monarchy
+		chinese_kingdom_government
+		timurid_government
+		barbary_sultanate
+		kalmar_union_legacy
+		french_vassal_feudal_monarchy
+		earldom_legacy
+		beylik_legacy
+		archduchy_legacy
+		byzantine_empire_gov
+		#####END 1356 CHANGES#####
+	}
 
 	# Each group of exclusive reforms are mutually exclusive to each other
 
@@ -154,7 +154,6 @@ monarchy = {
 		french_vassal_feudal_monarchy_reform
 		earldom_reform
 		beylik_reform
-		crusader_state_reform
 		#####END 1356 CHANGES#####
 	}
 
@@ -202,9 +201,10 @@ republic = {
 		administrative_republic
 		noble_republic
 		oligarchic_republic
+		pirate_republic
 		merchant_republic
 		venetian_merchant_republic
-		imperial_city_legacy
+		imperial_city
 		trading_city_legacy
 		ambrosian_republic_legacy
 		dutch_republic_legacy
@@ -214,9 +214,11 @@ republic = {
 		peasants_republic_legacy
 		veche_republic_legacy
 		cossacks_legacy_reform
+		pirate_kingdom
+		war_against_the_world_government
+		black_market_consortium_government
 		#####1356 Additions#####
 		swiss_canton
-		novgorod_republic_gov_legacy
 		#####1356 Additions End#####
 	}
 	reform_levels = {
@@ -225,6 +227,7 @@ republic = {
 				oligarchy_reform
 				merchants_reform
 				venice_merchants_reform
+				pirate_republic_reform
 				noble_elite_reform
 				free_city
 				trading_city
@@ -240,7 +243,6 @@ republic = {
 				cossacks_reform
 				#####1356 Additions#####
 				swiss_canton_reform
-				novgorod_republic_gov
 				#####1356 Additions End#####
 			}
 		}
@@ -249,6 +251,9 @@ republic = {
 				republican_authoritarianism_reform
 				nepotism_reform
 				republicanism_reform
+				council_of_captains_reform
+				articles_of_agreement_reform
+				smugglers_haven_reform
 			}
 		}
 		frequent_elections_vs_consolidation_of_power = {
@@ -258,6 +263,7 @@ republic = {
 				permanent_marathas_council_reform
 				governmental_purbias_register_reform
 				lottery_reform
+				council_of_the_indies_reform
 			}
 		}
 		federalism_vs_unitarism_vs_confederacy = {
@@ -271,6 +277,9 @@ republic = {
 			reforms = {
 				parliamentary_reform
 				presidential_reform
+				pirate_king_reform
+				war_against_the_world_doctrine_reform
+				black_market_consortium_reform
 			}
 		}
 		consolidation_of_power_category = {
@@ -304,6 +313,7 @@ republic = {
 				proclaim_divine_guidance_reform
 				strengthen_executive_powers_reform
 				reinforce_republican_values_reform
+				pirates_become_republic_reform
 			}
 		}
 	}
@@ -317,15 +327,16 @@ republic = {
 		trading_city
 		american_republic
 		revolutionary_republic_reform
+		pirate_republic_reform
 		#########Begin 1356 Changes#####
 		swiss_canton_reform
-		novgorod_republic_gov
 		######End 1356 Changes#####
 	}
 	exclusive_reforms = {
 		lottery_reform
 		venice_merchants_reform
 		dutch_republic
+		pirate_republic_reform
 	}
 }
 
@@ -400,6 +411,7 @@ native = {
 	}
 	color = { 194 127 209 }
 }
+
 
 theocracy = {
 	color = { 75 170 75 }

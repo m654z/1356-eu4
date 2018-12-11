@@ -1,11 +1,8 @@
 government = monarchy
+
 add_government_reform = feudalism_reform
-primary_culture = catalan
-add_accepted_culture = occitain
+
 religion = catholic
+primary_culture = catalan
 technology_group = western
-historical_friend = POR
-historical_friend = ARA
-capital = 333 # The Baleares
-
-
+capital = 333	# Majorca

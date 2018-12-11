@@ -11,7 +11,7 @@ country_event = {
 	id = prices.1
 	title = prices.1.t
 	desc = prices.1.d
-	picture = TRADEGOODS_eventPicture
+	picture = TRADE_GOODS_PLANTATION_GOODS_IN_WAREHOUSE_eventPicture
 
 	fire_only_once = yes
 	
@@ -60,7 +60,7 @@ country_event = {
 	id = prices.2
 	title = prices.2.t
 	desc = prices.2.d
-	picture = TRADEGOODS_eventPicture
+	picture = TRADE_GOODS_PLANTATION_GOODS_IN_WAREHOUSE_eventPicture
 
 	fire_only_once = yes
 	
@@ -113,7 +113,7 @@ country_event = {
 	id = prices.3
 	title = prices.3.t
 	desc = prices.3.d
-	picture = TRADEGOODS_eventPicture
+	picture = TRADE_GOODS_PLANTATION_GOODS_IN_WAREHOUSE_eventPicture
 
 	fire_only_once = yes
 	
@@ -150,7 +150,7 @@ country_event = {
 	id = prices.4
 	title = prices.4.t
 	desc = prices.4.d
-	picture = TRADEGOODS_eventPicture
+	picture = TRADE_GOODS_FURS_FISH_AND_SALT_eventPicture
 
 	fire_only_once = yes
 	
@@ -192,7 +192,7 @@ country_event = {
 	id = prices.5
 	title = prices.5.t
 	desc = prices.5.d
-	picture = TRADEGOODS_eventPicture
+	picture = TRADE_GOODS_PLANTATION_GOODS_IN_WAREHOUSE_eventPicture
 
 	fire_only_once = yes
 	
@@ -245,7 +245,7 @@ country_event = {
 	id = prices.6
 	title = prices.6.t
 	desc = prices.6.d
-	picture = TRADEGOODS_eventPicture
+	picture = TRADE_GOODS_PLANTATION_GOODS_IN_WAREHOUSE_eventPicture
 
 	
 	major = yes
@@ -386,7 +386,7 @@ country_event = {
 	id = prices.7
 	title = prices.7.t
 	desc = prices.7.d
-	picture = TRADEGOODS_eventPicture
+	picture = TRADE_GOODS_PLANTATION_GOODS_IN_WAREHOUSE_eventPicture
 
 	fire_only_once = yes
 	
@@ -471,7 +471,7 @@ country_event = {
 	id = prices.8
 	title = prices.8.t
 	desc = prices.8.d
-	picture = TRADEGOODS_eventPicture
+	picture = TRADE_GOODS_PLANTATION_GOODS_IN_WAREHOUSE_eventPicture
 
 	fire_only_once = yes
 	
@@ -529,7 +529,7 @@ country_event = {
 	id = prices.9
 	title = prices.9.t
 	desc = prices.9.d
-	picture = TRADEGOODS_eventPicture
+	picture = TRADE_GOODS_PLANTATION_GOODS_IN_WAREHOUSE_eventPicture
 
 	fire_only_once = yes
 	
@@ -605,7 +605,7 @@ country_event = {
 	id = prices.11
 	title = prices.11.t
 	desc = prices.11.d
-	picture = TRADEGOODS_eventPicture
+	picture = TRADE_GOODS_FURS_FISH_AND_SALT_eventPicture
 
 	fire_only_once = yes
 	
@@ -790,7 +790,7 @@ country_event = {
 	id = prices.15
 	title = prices.15.t
 	desc = prices.15.d
-	picture = TRADEGOODS_eventPicture
+	picture = TRADE_GOODS_FURS_FISH_AND_SALT_eventPicture
 
 	fire_only_once = yes
 	
@@ -899,7 +899,7 @@ country_event = {
 	id = prices.17
 	title = prices.17.t
 	desc = prices.17.d
-	picture = TRADEGOODS_eventPicture
+	picture = TRADE_GOODS_FURS_FISH_AND_SALT_eventPicture
 
 	fire_only_once = yes
 	
@@ -932,7 +932,7 @@ country_event = {
 	id = prices.18
 	title = prices.18.t
 	desc = prices.18.d
-	picture = TRADEGOODS_eventPicture
+	picture = TRADE_GOODS_FURS_FISH_AND_SALT_eventPicture
 
 	fire_only_once = yes
 	
@@ -1020,7 +1020,7 @@ country_event = {
 	id = prices.20
 	title = prices.20.t
 	desc = prices.20.d
-	picture = TRADEGOODS_eventPicture
+	picture = TRADE_GOODS_METALS_AND_MINING_EQUIPENT_eventPicture
 
 	fire_only_once = yes
 	
@@ -1093,7 +1093,7 @@ country_event = {
 	id = prices.22
 	title = prices.22.t
 	desc = prices.22.d
-	picture = TRADEGOODS_eventPicture
+	picture = TRADE_GOODS_PLANTATION_GOODS_IN_WAREHOUSE_eventPicture
 
 	fire_only_once = yes
 	
@@ -1132,7 +1132,7 @@ country_event = {
 	id = prices.23
 	title = prices.23.t
 	desc = prices.23.d
-	picture = TRADEGOODS_eventPicture
+	picture = TRADE_GOODS_PLANTATION_GOODS_IN_WAREHOUSE_eventPicture
 
 	fire_only_once = yes
 	
@@ -1418,7 +1418,7 @@ country_event = {
 	id = prices.28
 	title = prices.28.t
 	desc = prices.28.d
-	picture = TRADEGOODS_eventPicture
+	picture = TRADE_GOODS_METALS_AND_MINING_EQUIPENT_eventPicture
 
 	fire_only_once = yes
 	
@@ -1455,7 +1455,7 @@ country_event = {
 	id = prices.29
 	title = prices.29.t
 	desc = prices.29.d
-	picture = TRADEGOODS_eventPicture
+	picture = TRADE_GOODS_PLANTATION_GOODS_IN_WAREHOUSE_eventPicture
 
 	fire_only_once = yes
 	
@@ -1497,7 +1497,7 @@ country_event = {
 	id = prices.30
 	title = prices.30.t
 	desc = prices.30.d
-	picture = TRADEGOODS_eventPicture
+	picture = TRADE_GOODS_PLANTATION_GOODS_IN_WAREHOUSE_eventPicture
 
 	fire_only_once = yes
 	
@@ -1538,7 +1538,7 @@ country_event = {
 	id = prices.31
 	title = prices.31.t
 	desc = prices.31.d
-	picture = TRADEGOODS_eventPicture
+	picture = TRADE_GOODS_PLANTATION_GOODS_IN_WAREHOUSE_eventPicture
 
 	fire_only_once = yes
 	
@@ -1610,7 +1610,7 @@ country_event = {
 	id = prices.32
 	title = prices.32.t
 	desc = prices.32.d
-	picture = TRADEGOODS_eventPicture
+	picture = TRADE_GOODS_PLANTATION_GOODS_IN_WAREHOUSE_eventPicture
 
 	is_triggered_only = yes
 	
@@ -2581,7 +2581,7 @@ country_event = {
 	id = prices.46
 	title = prices.46.t
 	desc = prices.46.d
-	picture = TRADEGOODS_eventPicture
+	picture = TRADE_GOODS_METALS_AND_MINING_EQUIPENT_eventPicture
 
 	fire_only_once = yes
 	

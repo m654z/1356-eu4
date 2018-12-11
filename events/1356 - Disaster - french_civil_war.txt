@@ -64,7 +64,7 @@ country_event = {
 				remove_core = FRA
 			}
 		}
-		change_tag = VAL
+		change_tag = VLS
 		set_government_rank = 1
 		remove_accepted_culture = occitain
 		remove_accepted_culture = gascon
@@ -73,7 +73,7 @@ country_event = {
 		remove_accepted_culture = burgundian
 		remove_accepted_culture = wallonian
 		every_core_province = { 
-			remove_core = VAL
+			remove_core = VLS
 		}
 		add_core = 4388
 		add_core = 182
