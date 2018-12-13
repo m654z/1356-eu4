@@ -1,9 +1,10 @@
 # 853 - Huastec (1356)
 # Changes: AZC
 
-owner = AZC
-controller = AZC
-add_core = AZC
+owner = OTO
+controller = OTO
+add_core = OTO
+add_core = AZT
 culture = aztek 
 religion = nahuatl
 capital = "Huastec" 

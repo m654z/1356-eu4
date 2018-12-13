@@ -5,7 +5,7 @@ culture = yucatec
 owner = MAY
 controller = MAY
 add_core = MAY
-add_core = COC
+add_core = CTM
 is_city = yes
 religion = mesoamerican_religion
 capital = "Uaymil"
@@ -22,7 +22,7 @@ native_hostileness = 2
 
 discovered_by = mesoamerican
 
-1440.1.1  = { owner = COC controller = COC }
+1440.1.1  = { owner = CTM controller = CTM }
 1547.1.1  = {	owner = SPA 
 		controller = SPA 
 		add_core = SPA

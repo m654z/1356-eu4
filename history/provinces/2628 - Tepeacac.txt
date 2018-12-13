@@ -2,9 +2,9 @@
 # Changes: TPY
 
 culture = aztek
-owner = TPY
-controller = TPY
-add_core = TPY
+owner = TEO
+controller = TEO
+add_core = TEO
 is_city = yes
 religion = nahuatl
 capital = "Tepeacac"

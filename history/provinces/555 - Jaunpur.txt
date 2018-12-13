@@ -3,7 +3,6 @@
 
 owner = DLH
 controller = DLH
-add_core = DLH
 culture = avadhi
 religion = hinduism
 capital = "Jaunpur"
@@ -23,7 +22,7 @@ discovered_by = ottoman
 discovered_by = chinese
 
 1355.1.1   = { unrest = 10 }
-1394.1.1   = { owner = JNP controller = JNP remove_core = DLH unrest = 0  }
+1394.1.1   = { owner = JNP controller = JNP unrest = 0  }
 
 1486.1.1 = {
 	owner = DLH

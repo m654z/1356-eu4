@@ -2,9 +2,9 @@
 # Changes: AZC
 
 culture = aztek
-owner = AZC
-controller = AZC
-add_core = AZC
+owner = MAT
+controller = MAT
+add_core = MAT
 is_city = yes
 religion = nahuatl
 capital = "Tolluca"

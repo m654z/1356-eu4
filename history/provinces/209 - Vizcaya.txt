@@ -5,6 +5,7 @@ owner = CAS
 controller = CAS
 add_core = CAS
 add_core = NAV
+add_core = ASU
 culture = basque
 religion = catholic
 hre = no

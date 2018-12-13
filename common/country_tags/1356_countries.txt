@@ -105,12 +105,12 @@ INT = "countries/Injuid.txt"
 MIH = "countries/Mihrabanid.txt"
 TPM = "countries/TimuridEmpireAbsolute.txt"
 
+#North America
 
-#Americas
+#Central America
+
+#South America
 SCN = "countries/Sican.txt"
-AZC = "countries/Azcapotzalco.txt"
-TPY = "countries/Tepeyac.txt"
-TBS = "countries/Tabasco.txt"
 
 #Africa
 

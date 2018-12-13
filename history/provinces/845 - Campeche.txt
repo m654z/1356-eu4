@@ -14,11 +14,11 @@ base_production = 4
 base_manpower = 1 
 is_city = yes
 add_core = MAY
-add_core = XIU
+add_core = CNP
 
 discovered_by = mesoamerican
 
-1440.1.1  = { owner = XIU controller = XIU }
+1440.1.1  = { owner = CNP controller = CNP }
 1517.1.1  = { discovered_by = SPA }
 1542.1.23 = {	owner = SPA
 		controller = SPA

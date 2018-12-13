@@ -17,7 +17,7 @@ discovered_by = ottoman
 discovered_by = western
 
 1356.12.25 = { owner = TFL controller = TFL }
-1444.1.1 = { owner = MOR controller = MOR add_core = MOR }
+1444.1.1 = { owner = TLC controller = TLC add_core = TLC }
 
 1549.1.1 = {
 	owner = MOR

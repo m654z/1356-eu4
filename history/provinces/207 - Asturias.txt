@@ -9,6 +9,7 @@ owner = CTR
 controller = CTR
 add_core = CTR
 add_core = LON
+add_core = ASU
 culture = leonese
 religion = catholic
 hre = no

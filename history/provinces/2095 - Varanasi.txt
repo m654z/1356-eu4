@@ -3,7 +3,6 @@
 
 owner = DLH
 controller = DLH
-add_core = DLH
 culture = bihari
 religion = "hinduism"
 capital = "Varanasi"
@@ -29,7 +28,7 @@ add_province_triggered_modifier = hindu_varanasi
 
 
 1355.1.1  = { unrest = 10 }
-1394.1.1  = { owner = JNP controller = JNP remove_core = DLH unrest = 0 }
+1394.1.1  = { owner = JNP controller = JNP unrest = 0 }
 
 1486.1.1 = {
 	owner = DLH
