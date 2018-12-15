@@ -1,9 +1,9 @@
 # 1133 - Gao (1356)
 # Changes: MAL/religion
 
-owner = MAL
-controller = MAL
-add_core = MAL
+owner = SON
+controller = SON
+add_core = SON
 culture = songhai
 is_city = yes
 base_manpower = 2
@@ -13,7 +13,6 @@ trade_goods = cloth
 hre = no
 base_tax = 7 
 base_production = 7
-add_core = SON
 fort_15th = yes
 discovered_by = sub_saharan
 extra_cost = 8

@@ -1,9 +1,9 @@
 # 2288 - Yao (1356)
 # Changes: religion
 
-owner = YAO
-controller = YAO
-add_core = YAO
+owner = KBO
+controller = KBO
+add_core = KBO
 culture = bilala 
 religion = shamanism #Fetishism
 capital = "Yao"
