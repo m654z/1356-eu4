@@ -113,7 +113,7 @@ TPM = "countries/TimuridEmpireAbsolute.txt"
 SCN = "countries/Sican.txt"
 
 #Africa
-
+NRI ="countries/Nri.txt"
 
 #Far East
 SRI = "countries/Srivijaya.txt"
