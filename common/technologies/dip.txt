@@ -14,7 +14,7 @@ technology = {
 	trade_range 				=   50
 	naval_maintenance		=	0.1
 	naval_morale				=	1.5
-	range					=	70
+	range					=	55
 	enable = cog
 	enable = galley
 	enable = crayer
@@ -80,6 +80,7 @@ technology = {
 	year = 1419
 
 	trade_range				=	50
+	range = 15
 	enable 		= barque
 
 }

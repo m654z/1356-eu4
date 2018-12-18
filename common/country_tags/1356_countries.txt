@@ -8,6 +8,9 @@ DOB = "countries/Dobruja.txt"
 VID = "countries/Vidin.txt"
 TES = "countries/Thessaly.txt"
 MAC = "countries/Macedonia.txt"
+CPP = "countries/Cappadocia.txt"
+BYT = "countries/Bithynia.txt"
+LYC = "countries/Lycia.txt"
 
 #British Isles 
 YRK = "countries/York.txt"

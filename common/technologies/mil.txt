@@ -11,7 +11,6 @@ technology = {
 	infantry_fire		= 	0.15
 	infantry_shock 		= 	0.10	
 	cavalry_shock  		= 	0.8	
-	#artillery_shock 	=	0.05
 	land_morale 		= 	1.5
 
 	fort_15th = yes
@@ -244,7 +243,7 @@ technology = {
 	
 	#The limber
 	artillery_fire 		= 	1
-	artillery_shock 	=	0.05
+	artillery_shock 	=	0.05 
 	military_tactics 	= 	0.25
 	enable = large_cast_bronze_mortar 
 	enable = houfnice

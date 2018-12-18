@@ -341,46 +341,30 @@ germanic = { #1356
 			"von Liebenau" "von Loeben" "von Logau" "von Lüttichau" "von Taube" "von Tettau" Vitzthum "von Wolffersdorff" Wöhrmann "von Werthern" "von Wackerbarth" "von Bredow" "von Brandt"
 		}
 	}
-	frisian = { #Needs proper localised names #I *REALLY* hate this being in Germanic, but it needs to be in the same as Dutch for Balance sake
+	frisian = { #I *REALLY* hate this being in Germanic, but it needs to be in the same as Dutch for Balance sake
 		primary = FRI
 		male_names = {
-			Adriaen Albrecht Albert Alwin Ambroos Antoon Arnold Arnold Arnulf Arnulf Balderik Barend 
-			Barnaerd Bernard Bartolomeus Bartolomeus
-			Bavo Bertold Boudewijn Baldwin Claes Nicholas Claeuwaert Daevit David Damaes Diederick 
-			Thierry Dirk Thierry Douwe Eduard Edward Egmund Ekbert
-			Emmo Engelbrecht Filips Philip Floris Folbert Frans Francis Frederik Frederick Gerard Gerolt 
-			Gerulf
-			Gerrit Gijsbrecht Giselbert Gilbert Godfried Godfrey Godschalk Gozewijn Guij Guy Gwijde 
-			Gwijde Hendrik Henry Herman Herman Hubert
-			Hugo Hugh Ijsbrand Ijsbrecht Jacco Jacob Jan John Karel Charles Koenraad Konrad
-			Kristof Christopher Lambert Lambert Lodewijk Louis Ludewijn Lutbert Luthard Maertijn Martin
-			Marquart Niclaes Nicholas
-			Olivier Oliver Otto Otto Otwin Onno Pieter Peter Reinaerd Reinoud Reinhold Reginar Robrecht
-			Robert Robert Robert Rodulf 
-			Roelof Roland Rutger Sebastiaen Sebastian Sicco Simon Steven Stephen Steyn Sten Theodolf
-			Waelram Walter Walter
-			Wicher Willem William Wolfard Hendrik Maurits
-			Adriaan Andries Antonius Gaspar Isaac Johan Laurens Paul Abraham Barthout Christiaan
-			Christoffel Constantijn Cornelis Daniel Eise Gabriel Gerben Hans Jeroen Joost Nicolaas 
-			Roeland Rogier Thomas Vincent Zacharias
+			Adelbrik Aitet Aldgisl Audulf Auutet Avin Avo Avuko Avutet Bavo Bentet Bernhard Blekulf Blithulf Brunhard
+			Bubo Bôio Edulf Egildeg Eilbern Eilherd Eilulf Eilward Eldei Elderd Elhard Engilbald Enhard Entet Esulf Euitet
+			Euuerhard Eðelbern Eðelulf Eðelwi Focko Folcbald Folkbern Folkhard Folkward Frethirik Frethold Frethuhard Frethwi
+			Frithunath Geldulf Geltet Gerbald Gerbrand Gerbruht Gerdeg Gerhard Gerold Gerulf Gerwar
+			Gosse Habo Haring Hathuward Hebetet Helibad Hessel Hobern Hoitet Hroðhard Hroðward Juw Liaftet Liudbad
+			Liudbald Liudger Liudgod Liudulf Liudward Liuppo Lubbiko Magnus Meginbraht Meginhard
+			Meginulf Meintet Menbold Menfrid Menger Menhard Menhold Meniko Mentet Menward Merulf Miginward Notheri
+			Occo Odo Osnath Osnoð Popetet Poppo Raeddeg Rauantet Redbad Reginhard Reinbern Reinier
+			Renhard Renward Riklef Rikwi Rodbern Saco Salaco Sibod Sibraht Sidei Sikke Silef Siward Siwi
+			Sjoerd Sytse Taco Tadaco Tado Thancward Thankbern Thiadbold Thiadbrund Thiaddi Thiaderd
+			Thiadulf Thiadward Thiadwi Thiedold Thonkrik Wambald Wening Wentet Wibad Wibraht Wibrund Wiftet Wigbald Wigerd
+			Wihard Wilbrand Wilco Wiltet Wulfnoth Ygo
 		}
 		female_names = {
-			Ada Adela Adelheid Adelaide Aechte Agaete Aleid Alijse Alice Aliken Anna Annelies
-			Badeloge Bava Beatrijs Beatrice Benedicta
-			Blanca Blanche Blanceflore Cecily Cecilia Cille Clara Clementia 
-			Ellijnore Eleanor Emma Ermingarde Ermengarde Fenne
-			Filippa Philippa Frida Gheertrude Gertrude Gerda Godila Haduwijn Helena Helen Herlinda 
-			Hilligonda Ide Ida Imagina Irene Isabelle Iudith
-			Jacoba Jaccobijn Jasminne Johanna Joan Jolanda Juliana Jutte Kathrijne 
-			Katrien Catherine Liedwin Lisebet Elisabeth Machtelt Margareta Margaret
-			Maria Mathilde Matilda Oda Odelt Olinde Onna Pieternelle Petronilla Reynilde Sanne 
-			Sigerda Sophie Sophia Swanhildis Thetburga Tiburge Waltrud
-			Wila Wendelmoet Wenna Willemine Yonefij Yvonne Zoete Margaretha Rosanne Tamara
+			Aleberna Alena Aleydis Alretieren Amalburga Amelgeir Atghardis Aue Auesoete Badeloghen Baua Berta
+			Bet Breghlent Brundonis Dieuwke Douwen Eingeliadis Elke Emgelberna Erkenradis Ermegardis
+			Esa Femke Fenna Folqui Gerburgis Ghela Ghodelde Hadewigis Heike Hersewindis Hodine Imma Imsoete Inka
+			Itsburgis Jeltsje Lenildis Liedelde Liudburgis Lutghardis Lys Maike Mareike Mette Minke Nienke
+			Rengnalda Volcwiif Wendelmodis Wiebke Wobbe Yda Ymmekine Ælidis
 		}
-		dynasty_names = {
-			"van Oranje" Nassau "van Wassenberg" "van Henegouwen" "de Friesland"
-			"van Haspinga" "van Limburg" "van Lotharingen"  "von der Mark"
-			"van Leuven" "van Brabant" "van Egmont" "de Reginar" "van Jülich-Hengebach"
+		dynasty_names = { #Could use Dynastic Names
 			# CKII
 			"van Loon" "von Geldern" "van Sulzbach" "von Salm"
 			"van Bergh" "van Heinsberg" "van de Veluwe" "De Graeff"
@@ -729,38 +713,23 @@ scandinavian = { #Nordic #1356
 	}
 #1356 added cultures #2
 
-	icelandic = { #Needs better Icelandic names
+	icelandic = { 
 		primary = ICE
 		male_names = {
-				Ale Alfr Alf Alfgeir Anders Andrew Anlaufr Anundr Anund Arnbjörn Arngrimr Arni Arne Arnfast 
-				Asbjörn Bagge Baldr Balder Barid Bengt Benedict Bersi Bertil Birger Björn Beorn Bo Borkvard 
-				Botulfr Bragi Brage Buðli Dag Dan Dyre Eilif Egill Egil Emund Einarr Einar Eirikr Erik 
-				Eskild Falki Faste Filip Philip Fredrik Frederick Frirek Frode Freyr Frej Folki Folke 
-				Gandalfr Geirr Georg George Gnupa Gorm Greger Gregory Grimr Grim Godfrey Guðmundr 
-				Gudmund Gudröd Gunnarr Gunnar Hakon Halsten Haraldr Harold Haukr Helgi Helge Hemming 
-				Holmger Hrafn Hrolfr Rolf Hrane Hæsteinn Hjalmar Hysing 
-				Ingólfr Ingolf Ingemar Ingjald Ivar Jedvard Edward Jon John Karl Charles Kettil Kettilmund 
-				Kjartan Klas Kol Kolbjörn Magnus Markus Marcus Mats Matthew Nils Niklas Nicholas Oddr 
-				Odd Ofeig Olafr Olaf Ormr Orm Ottarr Ottar Refr Refil Ragnarr Ragnar Rikulfr Rögnvaldr 
-				Ragnvald Skuli Skule Snorri Sigbjörn Sigtrygg Sigurðr Sigurd Starkad Steinn Sten 
-				Sturla Styrbjörn Styrkar Somerled Suni Sune Sveinn Sven Sverker Sæmundr Sämund 
-				Sölvi Sölve Sörkver Tjudmund Toke Tolir Þorbjörn Torbjörn Þorfinn Torfinn Þorbrandr Torbrand 
-				Þordr Tord Þorgil Torkel Þorsteinn Torsten Þorolfr Thorolf Toste Totil Tryggve Tyke Ulfr Ulf 
-				Vagn Valdemar Vladimir Åke Yngvar Ingvar Örvar Orvar Öysteinn Eysteinn Håkon Olav 
-				Christoffer Harald Inge Aksel Ansgard Arvid Bernt Bjørn Daniel Edvard Eilert Elias Esben 
-				Kasper Kennet Knut Ludvig Mikael Njåld Njord Oddmund Peder Rikard Simon Søren Tollak
+			Ale Alfr Alfgeir Anders Anlaufr Anundr Arnbjörn Arngrimr Arni Arnfast Asbjörn Bagge Baldr Barid Bengt Bersi Bertil Birger Björn Bo Borkvard Botulfr Bragi Buðli
+			Dag Dan Dyre Eilif Egill Emund Einarr Eirikr Eskild Falki Faste Filip Fredrik Frirek Froði Freyr Folki Gandalfr Geirr Georg Gnupa Gorm Greger Grimr Guðfrið Guðmundr Guðröðr Gunnarr Hakon Halsten Haraldr Haukr Helgi
+			Hemming Holmger Hrafn Hrolfr Hrane Hæsteinn Hjalmar Hroðgar Hroðulfr Hrörekr Ingólfr Ingemar Ingjald Ivar Jedvard Jonn Karl Kettil Kettilmund Kjartan Klas Knut Kol Kolbjörn Magnus Markus
+			Magni Mats Nils Niklas Oddr Ofeig Olafr Ormr Ottarr Refr Refil Ragnarr Rikulfr Rögnvaldr Skuli Snorri Sigbjörn Sigtrygg Sigurðr Starkaðr Steinn Sturla Styrbjörn Styrkar Sumarliði Suni Sveinn
+			Sverker Sæmundr Sölvi Sörkver Tjudmund Toke Tolir Þorbjörn Þorfinn Þorbrandr Þordr Þorgil Þorsteinn Þorolfr Toste Totil Tryggve Tyke Ulfr Vagn Valdemar Åke Yngvar Örvar Öysteinn
 		}
 		female_names = {
-			Torhild Aleta Alfhildr Alfhild Alfridh Alvör Anna Asa Åsa Aslaug Asta Astrid Beata 
-			Birgitta Brigid Björg Bodil Bothildr Bothild Cecilia Edla Elin Elisabet Elizabeth Freyja Freja 	
-			Grima Gunnhildr Gunhild Gurli Gudrun Gyla Gytha Hafrid Halla Helena 
-			Helen Holmfrid Iliana Inga Ingfrid Ingibjörg Ingeborg Ingjerðr Ingegerd Ingrid Karin 
-			Katarina Catherine Kraka Kristina Christina Linda Maer Malmfrið Malmfrid Margareta Margaret 
-			Maria Rikissa Rögnfrid Ragnfrid Rögnhildr Ragnhild Saga Sara Sarah Sif Sigrid Skuld Sofia 
-			Sophia Svanhildr Svanhild Ulfhildr Ulvhilde Vigdis Ylva Yrsa Þora Thora Þordis Thordis Þyra 
-			Thyra
+			Aleta Alfhildr Alfrið Alvör Anna Asa Aslaug Asta Astrid Beata Birgitta Björg Bodil Bothildr Cecilia
+			Edla Elin Elisabet Freyja Gerðr Gloð Grima Gunnhildr Gurli Gudrun Gyla Gyrið Gyða Hafrid Halla Helena Holmfrid
+			Iliana Inga Ingfrid Ingibjörg Ingegerd Ingridd Karin Katarina Kraka Kristina Linda Maer
+			Malmfrið Margareta Maria Rikissa Ragnfrid Rögnhildr Saga Sara Sif Sigrid Skuld Sofia
+			Svanhildr Ulfhildr Vigdis Ylva Yrsa Þora Þordis Þyra
 		}
-		dynasty_names = {
+		dynasty_names = { #Needs Dynastic Names still
 			"Hårfagreætta" "Bielke" "Bildt" "Galte" "Paus" "Smør" "Benkestok" "Bonde"
 			"Drake" "av Hafrsfjord" "Ytra" "av Askø" "Koss" "av Røra" "av Nordland" "Hylling"
 			"Alfr" "Herja" "Vansö" "Flod" "af Vendel" "av Alfheim" Vidfamne "Bille"
@@ -1686,7 +1655,7 @@ french	= { #1356
 	}
 #1356 Additional Cultures #3
 
-	crusader_culture = { #Needs more proper localised names
+	crusader_culture = { 
 		primary = KOJ
 		male_names = {
 			Édouard Érrard Étienne Adémar Adrien Aimery Alain 
@@ -1718,7 +1687,7 @@ french	= { #1356
 			"de Rohan" "de Bar" "d'Albert" "d'Escoubleau" "de Neufville" 
 		}
 	}
-	picard = { #Needs more proper names localised
+	picard = { #Couldnt find any sources on Names, left with French
 		primary = PIC
 		male_names = {
 			Édouard Érrard Étienne Adémar Adrien Aimery Alain 
@@ -1750,7 +1719,7 @@ french	= { #1356
 			"de Rohan" "de Bar" "d'Albert" "d'Escoubleau" "de Neufville" 
 		}
 	}
-	arpitan = { #Franco-Provençal #Needs more proper names localised
+	arpitan = { #Franco-Provençal #Couldnt find any sources on Names, left with French
 		primary = PRO
 		male_names = {
 			Édouard Érrard Étienne Adémar Adrien Aimery Alain 
@@ -2007,19 +1976,27 @@ south_slavic = { #1356
 	}
 #1356 Additional Cultures #4
 
-	slovenian = { #Needs proper names
-		#primary = CRO #What tag???
+	slovenian = {
+		primary = GOR
 		male_names = {
-			Kresimir Stjepan Almos Dimitrije Zvonimir Trpimir Goislav Slavic Svetoslav Miroslav Mutimir 
-			Ladislav Karlo Andrej Luj Pero Vladislav Vjenceslav Aleksandar Dragutin Fauszty Franjo Gavrilo Ivan 
-			Juraj Luka Matija Marko Mihajlo Milan Mirko Nenad Nikola Slavko Toma Vladko Zvonomir
-			Adam Andrija Bartol Bartolomeus Besar Bojan Boris Branimir Castimir Danail Daniel Dmitar 
-			Dobromir Dragan Dragomir Drzislav Dujam Duym Filip Philip Gaspar Gheorghe George Grigorii 
-			Hranislav Hrvoje Igor Ioan John Ivan John Ivanis Jitej Karlo Charles Koloman Koloman 
-			Ladislav Ljudevit Ljutomisl Lovro Matej Matthew Mihajlo Milman Mislav Mutimir
-			Nikolitza Nicholas Ognjen Petar Peter Prohor Radomir Ratimir Sebeslav Seslav Slavich 
-			Stanislav Stjepan Sulvan Teodor Tomislav Tvrdoslav Tvrtko Ulfo Ulf Vid Vitomir Vlaicu
-			Vukan Zvonimir Kresimir Gregory Caspar Josip
+			Bedoslav Beli Benebod Benko Bislav Blagosod Boleslav Bodigoj Bogomir Bogumil Bojnoslav Borigoj Borižit Borut Branimir Braslav 
+			Budigoj Budin Cestilo Cestimir Crné Crnel Crni Crnig Dalimir Danimir Debeligoj Dober Dobrislav Dobrej Dobren Dobrodej Dorogoj Dobromisl 
+			Dobroneg Dobrost Dobrovlast Dobrožit Domagoj Domažil Domomir Domomisl Dragomir Dragoslav Dragovit Glavac Glušo Gnevaš Godemir Godemisl 
+			Gojen Gojimir Gojislav Golodrag Golomir Golotek Gorazd Gostibil Gostidrag Grd Hoten Hotimir Hrast Inko Izbor Jaroslav Jelen Junik Lastigoj Lastimir Lastnik 
+			Ljuban Ljubiš Ljubodrag Ljuboneg Ljubotin Ljubšin Ljutic Ljutomir Manidrag Maraš Medved Mil Milaš Milej Milo Misl 
+			Minigoj Mirigoj Miromisl Miroslav Mistibor Mistislav Nacek Naciživ Nadovid Namdrag Našemisl Nebomir Negoj Negomir Nenadej Nepokor Neško Nežir Nico Omisl 
+			Petanko Pitalo Pomik Predoslav Premil Premisl Pribibor Pribigoj Pribislav Prisnec Prisnoslav Prodan Radek Radogej Radenko Radigoj Radin Radoh Radoš Radul Radušic Sebeteh Sebibor Sebidrag Sebigoj Sebimir 
+			Semiko Skrben Slav Slavko Slavuš Sojdrag Sprejmir Stagoj Stamer Stane Stanislav Stano Stansgoj 
+			Stanon Stislav Stojan Stojce Stojdrag Stojgoj Stojmir Stradoslav Stranimir Stregomil Sujce Svegoj Sveljub Svemir Svetec Svetin Svetodrag Svetogoj Svetomir Svetoslav Scenedrag Tihodrag Tihomir Tihožit 
+			Trdac Trdogoj Trdomir Trdoslav Trebec Trebegoj Trebeš Trebibor Trebibrat Trebil Trebin Trebimir Trebišin Trebivit Trebnik Trebušnež Uncat Unislav Val Valnik Vecegoj Vecevoj Veligoj Velikne Vencegoj 
+			Venko Vilan Vitin Vitomir Vitomisl Vitogoj Vitošlav Višegoj Višemir Vladimir Vlado Voinomir Volkoj Volkun Zababerad Zadrag Zdebor Zdedrag Zdegoj Zdemir Zdeslav Zdestan Zememišl Zemeteh Zemiboned 
+			Zemidrug Zemignev Zemin Zloslav Zverce Zvergoj Zverko Železen Židislav Žilec Žitigoj Žitomir Žitomisl Žitovit Žizemir
+			Blaško Bogdan Bogoslav Božidar Božo Bojan Boril Boris Boroj Boško Branko Budislav Cvetni Cvetašin Cvetin Cvetoš 
+			Dejan Doberko Dobrilo Dobrovoj Dobroslav Dragaš Dragobrat Dražilo Dušan Godomir Gojko Gradimir Hraber Ivko Izeslav Jezerko 
+			Kazimir Karan Kocelj Krilan Ljuben Ljubenko Liubivoj Ljubinko Ljubomir Ljuboslav Maleš Miladin Milan Milanko Milen Milenko 
+			Milevoj Milin Milinko Milislav Milovan Milorad Miloš Milun Miluš Milutin Miljen Miljko Milobrat Milodrag Mirko Mirodar Mišljen Mladen 
+			Negoš Nedeljko Ninko Nino Novko Obren Prerad Pribic Radan Radivoj Radinko Radislav Radic Radmil Radovan Radoj Radojko Radomir Radosim Radoslav Rajko Ratko Rebom Savo Slavoljub 
+			Sokol Srecan Srecko Stanko Stojadin Stojko Svetopolk Šišman Šumijak Tašo Tihomil Uroš Valhun Vasoj Veselin Vecerin Vetko Vid Vidojko Vitko Vitor Vladoslav Vlatko Vojdrag Vojtek Volkašin Vratislav Zlatko Zlatoslav Zlatoust
 		}
 		female_names = {
 			Adriana Anna Borislava Cededa Doroteja Dorothy Ekaterina Catherine Helena Helen Jadviga 
@@ -2029,7 +2006,7 @@ south_slavic = { #1356
 			Rijeka Silvija Snjezana Sofija Sophia Suzana Susana Svjetlana Suronja Tatjana Tihana 
 			Vedrana Visnja Vjekoslava Zlata Zvonimira Valerija Katalin
 		}
-		dynasty_names = {
+		dynasty_names = { #Needs more Proper Dynastic Names
 			"Kulinic" "Trpimirovic" "Mihaljevic" "Subic" "Hrvatinic" 
 			"Kosaca" "Vukcic" "Vukasin" "Dukasin" "Babonic" "Frankopan" "Kacic" "Draskovic" 
 			"Bebek" "Svetoslavic" "Krešimirovic" "Domagojevic" "Feštetic" "Gorjanski"
@@ -2038,65 +2015,49 @@ south_slavic = { #1356
 			"Crnkovic" "Cerva" "Rubido"
 		}
 	}
-	bosnian = { #Bosniak #Needs proper names #Ideally it should spawn when/if Serbia or Bosnia fall under Muslim rule and the other does not. 
+	bosnian = { 
 		primary = BOS
 		male_names = {
-			Stefan Lazar Djuradj Milosh Djordje Alexa Grgur Petrija Todor Aleksandar Mihailo Milan 
-			Bratislav Darko Dragan Dubravko Dusan Filip Goran Ivan Josif Konstantin Luka Marko Mateja Miroslav 
-			Nebojsa Nemanja Nenad Nikola Pedrag Stanko Toma Vinko Vjekoslav Zdravko Zvonimir
-			Aldimir Asen Berbat Blaz Blaise Boleslav Borna Branimir Budimir Kosmin Danilo Daniel 
-			George Dmitar Dobroslav Dragija Dragos Dragutin Gavrilo Gabriel Godimir Goran
-			Grgur Ilija Ivan John Josif Joseph Josip Joseph Jovan John Kasjan Konstantin Constantine 
-			Lazar Ljudevit Luka Marko Marcus Martin Martin Matija Matthew Mihailo Mihovil Milorad 
-			Mircea Miroslav Miroslav Mislav Nenad Nikodim Nicodemus Nikola Nicholas
-			Ninoslav Petar Peter Porin Prvoslav Radoslav Rastko Ratomir Roman Serapion Simeon 
-			Sinisa Slavko Slobodan Stefan Stephen Teodosije Trajan Uros Visarion Vladimir Vladimir 
-			Vladislav Vladislav Vlastimir Milutin Krsto Djordje Bogdan Branko 
-			Vuk Lupo Vukan Vukasin Vukoman Zoran Zvonimir Simon Mladen
+			Boric Kulin Matej Ninoslav "Matej Ninoslav" Prijezda Stjepan Tvrtko Vuk Vladislav Dabisa 
+			Sanko Vlatko Hrana Hran Sandalj Mihajlo Juraj Ostoja Hrvoje
+			Pavle Petar Radislav Ivanis Nikola_Nicholas Tomas Vukac Radivoj Vukmir
+			Vukasin Grgur Bogisa Sibislav Bogut Batalo Miroslav Brailo Hval Brajko Radic Priboje Batic
+			Radogost Milovan Dragonja Andrija Danis Krsmir Tisemir
 		}
 		female_names = {
-			Agata Agatha Barbara Branimira Desislava Dubravka Elena Helen Hicela Jelena Karolina 
-			Lovorka Marija Maria Milka Neda Radica Zdenka Andjela Antonija
-			Bastina Biljana Bistrina Bojana Casna Chasna Dejana Dragana Dragoslava Duga Dusica Gordana 
-			Grana Grubana Jagoda Jovana Jovanka Karika
-			Ljubica Luka Majka Malina Medeni Meki Milinka Miljana Miriti Mirjana Mudary Mudra Nada 
-			Namena Nadanje Keratza Branka Mirna
+			Katarina_Catherine Elizabeta Jelena_Helena Gruba Stana Kujava Doroteja 
+			Vitaca Milisa Marija Resa Mara_Maria Vojaca Gojslava Teodora Vojislava
+			Andrijana Mateja Miroslava Radislava Petra Nikolena Nika Pavica
 		}
-		dynasty_names = {
+		dynasty_names = { #Needs Dynasstic Names still
 			"Nemanjic" "Vlastimirovic" "Obrenovic" "Obilic" "Karadjordjevic" "Kovacevic" "Petrovic" 
 			"Dragutinovic" "Vojislavljevic" "Sokolovic" "Ilic" "Vukanovic" "Mrnjavcevic" "Lazarevic" 
-			"Brakovic" "Balsic" "Vukovic" "Branovic"
+			"Brakovic" "Balsic" "Vukovic" "Branovic" "Kotromanic"
 		}
 	}
 	dalmatian = { #Ragusa
 		primary = RAG
 		male_names = {
-			Kresimir Stjepan Almos Dimitrije Zvonimir Trpimir Goislav Slavic Svetoslav Miroslav Mutimir 
-			Ladislav Karlo Andrej Luj Pero Vladislav Vjenceslav Aleksandar Dragutin Fauszty Franjo Gavrilo Ivan 
-			Juraj Luka Matija Marko Mihajlo Milan Mirko Nenad Nikola Slavko Toma Vladko Zvonomir
-			Adam Andrija Bartol Bartolomeus Besar Bojan Boris Branimir Castimir Danail Daniel Dmitar 
-			Dobromir Dragan Dragomir Drzislav Dujam Duym Filip Philip Gaspar Gheorghe George Grigorii 
-			Hranislav Hrvoje Igor Ioan John Ivan John Ivanis Jitej Karlo Charles Koloman Koloman 
-			Ladislav Ljudevit Ljutomisl Lovro Matej Matthew Mihajlo Milman Mislav Mutimir
-			Nikolitza Nicholas Ognjen Petar Peter Prohor Radomir Ratimir Sebeslav Seslav Slavich 
-			Stanislav Stjepan Sulvan Teodor Tomislav Tvrdoslav Tvrtko Ulfo Ulf Vid Vitomir Vlaicu
-			Vukan Zvonimir Kresimir Gregory Caspar Josip
+			Andre Andreas Bisti Blaxius Calenda Clime Comes
+			Domagna Gaucoli Gauzoli Gervasius Giuco Give
+			Jugno Juliano Junius Laurenzo Leonardus Loncho Lucarus
+			Mare_Marcus Marco Maroe Marinus Matheus Michael Nale Nichiforus Nicola
+			Pascalis Pasqualis Petragna Petrus Piero Perue Rassinus Rusco
+			Stane Stanislav Thoma Tuone Vallius Vita
 		}
 		female_names = {
-			Adriana Anna Borislava Cededa Doroteja Dorothy Ekaterina Catherine Helena Helen Jadviga 
-			Jovana Kera Ladika Maria Maria Mihaela Nada Petra Viola Yolanda Jadranka Mare
-			Antonija Capeka Dragana Dubravka Emilija Emily Gordana Jagoda Jelena Jelka Lucija Lucia 
-			Catherine Marija Maria Marijana Mirjana Mirna Mojca Natalija Natasha
-			Rijeka Silvija Snjezana Sofija Sophia Suzana Susana Svjetlana Suronja Tatjana Tihana 
-			Vedrana Visnja Vjekoslava Zlata Zvonimira Valerija Katalin
+			Ana Anna Antolina Antonia Anussa Babalio Bodacia Catarena Caterina Clara Drase Dea Descia Deia Deussa Elena Giva
+			Jachussa Jacobica Jelussa Laurica Lene
+			Magdalena Margerita Maria Mauressa Micha Mira Nicoletta Nixa
+			Rade Rado Regina Rossa Schimosa Thome Vele
 		}
-		dynasty_names = {
+		dynasty_names = { #Would still appreciate more dynastic names
 			"Kulinic" "Trpimirovic" "Mihaljevic" "Subic" "Hrvatinic" 
 			"Kosaca" "Vukcic" "Vukasin" "Dukasin" "Babonic" "Frankopan" "Kacic" "Draskovic" 
 			"Bebek" "Svetoslavic" "Krešimirovic" "Domagojevic" "Feštetic" "Gorjanski"
 			"Svacic" "Kobilic" "Lackovic" "Šubic"
 			"Berislavic" "Nepilic" "Jalacic" "Zrinski" "Garaj" "Eltz" "Kaboga" 
-			"Crnkovic" "Cerva" "Rubido"
+			"Crnkovic" "Cerva" "Rubido" "Stanislav"
 		}
 	}
 	#Macedonian almost made it in, but realisticly its not distinct enough during this time frame to justify it.
@@ -2190,15 +2151,15 @@ west_slavic = { #1356
 	}
 #1356 Additional Cultures #5
 	
-	moravian = { #Needs more proper names localised
+	moravian = { 
 		primary = MVA
-		male_names = {
+		male_names = { #Currently Uses Schlesian Names
 			Fryderyk Jan Henryk Ludwik Jan Krystian Jerzy Jerzy Rudolf Jerzy Wilhelm Joachim Fryderyk Krystian 
 			Jan Jerzy Jerzy Ernest August Ernest Krystian Ludwik Rudolf Wladislaw Albert Aleksander Andel 
 			Cezar Dietrich Eugeniusz Filip Hermann Joachim Krzysztof Lech Libor Markus Maurycy Radomir 
 			Václav Wilhelm Ruprecht Branko Bruno Siegfried Tomás 
 		}
-		female_names = {
+		female_names = { #Currently Uses Schlesian Names
 			Heinrike Ilona Andrea Helgi Heli Helina Helju Helle Helmi Helve Hiie Hilda Hilja Hille Iiris Ille Ilme Ilona Imbi 
 			Ines Inga Inge 
 		}
@@ -2989,43 +2950,49 @@ byzantine = { #1356
 	}
 #1356 Additional Cultures #6
 	
-	old_egyptian_mod = { #Coptic Egyptian #Needs more proper names localised
+	old_egyptian_mod = { #Coptic Egyptian 
 		primary = ALX
-		dynasty_names = {
+		dynasty_names = { #Could do with more Dynastic Names
 			Thinis Memphis Abydos Herakleopolis Thebes Itjtawy Avaris Bubastis Sais
 		}
 		male_names = {
 			Seka Khayu Tiu Thesh Neheb Wazner Mekh "Iry-Hor" Sekhen Serqer Narmer "Hor-Aha" Djer Djet Den Semerkhet "Qa'a" Sneferka Raneb Nynetjer Senedj Neferkara Hudjefa Djoser Sekhemkhet Sanakht Khaba Huni Sneferu Khufu Khafre Djdefre Menkaure Thamphtis Userkaf Sahure Neferefre Shepseskare Nyuserre Unas Teti "Dejkadre Shemai" Neferkare Merenhor Nikare Intef "Sankhkare Mentuhotep" Menkare Segerseni Senusret Nerikare Sonbef Sebkay Sobekhotep Dedumose Sheeshi Nehesy Sheneh Semenre Rahotep "Nebpehtire Ahmose" Amenhotep Thutmose  "Awybre Hor" Akhenaten Tutankhamun Ramesses Herihor Piankh Masaharta Menkheperre Smendes Pinedjem
+			Aaron Abanoub Abderahman Abianos Abisalom Ablarion Abraam Agathon Agathonikos Agathos
+			Ahmod Aiai Aha Akhom Amon Amakhte An Andronicus Androus Anthinos Apanoub Apahour Apamon Apas Aretee Arsenios Ashraf
+			Athanasios Beet Bertouet Biktor Binyamin Bishoi Bolis Boutros Cosmas Damianos Danyal
+			Da’oud Ennikeran Erhu Ezra Farag Gerges Ghabri Guirguis Habil Hanouf Hanri Hany Haroun Hesdy Ilyas Ishaaq
+			Jerjer Jinti Jori Keloj Krystafer Kyrillos Lot Macari Marcos Mareten Matta Mei Mikail
+			Mikhael Milad Mina Musa Nakat Nahdi Nishde Nai Naui Nishti Nofr Noub Ounouf Ourot Ouini Ounisht Pajro Pakat Pakhom Pamin
+			Panous Papnouti Pashnona Pasnadi Patape Payom Philotheos Pijimi Pijoul Pikhit Pimen Pimoue Pimoui Pishai Pisha-eneh Pishoui Psote Rami Rashad Rashi
+			Roufail Ruweis Shenouda Shenouti Shosi Sim'an Sok Tadros Taio Tawadros Touma Yakovos Yared
+			Yoannis Yousab Zacharias Zaia
 		}
 		female_names = {
 			"Sobekkare Sobekneferu" Hatshepsut Tentamun Nitocris Neit Cleopatra Neferneferuaten Nefertiti 
+			Afaf Amunet Asmin Demiana Elpis Eratee Ese Ester Fana Hana Hawwa Heit Hoeite Ilizabith Kasrin Khnau Khreere Kristina
+			Lelou Mariam Marta Maysoon Meriam Nefret Paisi Pernoufe Piama Piamun Potamina Raune Ro'oune Sai'ou Samia Sawsan Shouree Shoushou
+			Sofia Stoi Takla Talida Taloushem Tanouti Ta'ou Tawaret Uradaa Virina
 		}
 	}
-	bithynian = { #Needs Primary tag
-		primary = GRE
+	bithynian = { 
+		primary = BYT
 		male_names = {
-			Adrianos Adrian Akakios Alexandros Alexander Alexios Alexis Anastasios Anastasius Anatolios 
-			Andreas Andrew Andronikos Andronicus Anthemios Anthimos Antiochos Antonios Antonius Apollonios 
-			Arsenios Artemios Athanasios Athanasius Bardas
-			Bartholomaios Bartolomeus Basileios Basil Belisarios Belisarius Boethios Bosporios 
-			Christophoros Christopher Chrysanthos Chrysogonos Damianos Daniel Daniel David David Demetrios 
-			Demetrius Diogenes Dionysios Dionysus Dorotheos Eirenaios Eudoxios Eustratios
-			Eugenios Euphemios Eusebios Eustathios Eustace Evangelos Gabriel Gabriel Gennadios Georgios 
-			George Gerasimos Germanos Germanus Gregoras Gregory Gregorios Gregory Hektorios Helias 
-			Herakleios Heracles Hierotheos Himerios
-			Georgios Alexandros Konstantinos Pavlos Andreas Nikolaos Aineias Alexeios Ambrosios
-			Chrysanthos David Demetrios Diogenes Dionysos Eirenaios Elpidios Gregorios Hektor Herakles 
-			Kastor Manuel Matthaios Nestor Nikomedes Orestes Palaemon Pelagios Petros Philemon Philippos 
-			Skantarios Stefanos Theodoros Thomas Basileios Prokopios Ioannes Iason Bartholomaios
+			Adrianos Akakios Alexandros Alexios Anastasios Anatolios Andreas Andronikos Anthemios Anthimos Antiochos Antonios Apollonios Arsenios Artemios Athanasios Bardas
+			Bartholomaios Basileios Basil Belisarios Boethios Bosporios Christophoros Chrysanthos Chrysogonos DamianosDaniel David Demetrios Diogenes Dionysios Dionysus Dorotheos Eirenaios Eudoxios Eustratios
+			Eugenios Euphemios Eusebios Eustathios Evangelos Gabriel Gennadios Georgios Gerasimos Germanos Gregoras Gregorios Hektorios Helias Herakleios Hierotheos Himerios
+			Hippolytos Hypatios Iakobos Ignatios Innokentios Ioannes Ioannikios Iordanes Ioseph Isaakios Isaias Isidoros Ioulianos Ioustinianos Ioustinos Kaisarios
+			Kallinikos Kallistos Komitas Konstantinos Constantine Konstantios Konstas Kosmas Kyriakos Kyrillosl Kyros Laurentios Lazaros Leon Leontios Loukas Makarios Manuel Markos
+			Matthaios Maurikios Maximos Megistos Meletios Methodios Michael Narses Neophytos Nikephoros Niketas Nikodemos Nikolaos Niphon Orestes Pamphilios Pankratios Pantoleon Paschalis
+			Pavlos Pelagios Petros Philaretos Philippos Philotheos Phokas Photios Polykarpos Porphyrios Prokopios Pyrros Raphail Romanos Sabas Samuel Serapion Sebastianos Sergios Stephanos
+			Staurakios Symeon Symmachos Theocharistos Theodoros Theodosios Theodotos Theodoulos Theoktistos Theophanes Theophilos Theophylaktos Thomas Tiberios Traianos
+			Timotheos Tryphon Valerios Zacharias Zenobios Zenon
 		}
 		female_names = {
-			Alexandra Adriane Adriana Agathe Agatha Agne Agnes Aikaterine Alexeia Anastasia Anastasia 
-			Anna Anthe Anthousa Antipatra Antonia Apollonia Athanasia Barbara Basillike
-			Chrysogone Damiane Demetra Dionysia Dorothea Dorothy Aigidia Eirene Irene Elaiodora Epiphania 
-			Eudokia Eudocia Eudoxia Eugenia Eulalia Eunike Euphemia Euphrasia Euphrosyne Euphrosyne
-			Eupraxia Eusebia Eustathia Evanthia Gabrielia Garyphallia Georgia Gregoria Helene Helen 
-			Ioanna Joan Ioulia Julia Iouliana Juliana Ioustina Justina Kale Konstantia Constantia 
-			Konstantine Constantina Kyra Kyriake Hypatia Zoe
+			Adriane Agathe Agne Aikaterine Alexandra Alexeia Anastasia Anna Anthe Anthousa Antipatra Antonia Apollonia Athanasia Barbara Basillike
+			Chrysogone Damiane Demetra Dionysia Dorothea Aigidia Eirene Elaiodora Epiphania Eudokia Eudoxia Eugenia Eulalia Eunike Euphemia Euphrasia Euphrosyne
+			Eupraxia Eusebia Eustathia Evanthia Gabrielia Garyphallia Georgia Gregoria Helene Hypatia Ioanna Ioulia Iouliana Ioustina Kale Konstantia Konstantine Kyra Kyriake
+			Leontia Margarita Maria Markia Martha Melissa Nikarete Nikoletta Nonna Parthena Pavlina Pelagia Petronia Philippa Phyllis Pulcheria Rhodanthe Romane Romylia Sergia Sibylla
+			Simonis Sophia Stephania Thekla Theochariste Theodora Theodosia Theognosia Theoktiste Theophano Thomais Valeria Viviana Xene Zenobia Zoe
 		}
 		dynasty_names = {
 			Kantakouzenos Doukas Komnenos Palaiologos Laskaris Angelos Phokas
@@ -3119,31 +3086,25 @@ byzantine = { #1356
 			"Apsimaros" "Artemios"
 		}
 	}
-	lykian = { #Needs Primary tag
-		primary = GRE
+	lykian = { 
+		primary = LYK
 		male_names = {
-			Adrianos Adrian Akakios Alexandros Alexander Alexios Alexis Anastasios Anastasius Anatolios 
-			Andreas Andrew Andronikos Andronicus Anthemios Anthimos Antiochos Antonios Antonius Apollonios 
-			Arsenios Artemios Athanasios Athanasius Bardas
-			Bartholomaios Bartolomeus Basileios Basil Belisarios Belisarius Boethios Bosporios 
-			Christophoros Christopher Chrysanthos Chrysogonos Damianos Daniel Daniel David David Demetrios 
-			Demetrius Diogenes Dionysios Dionysus Dorotheos Eirenaios Eudoxios Eustratios
-			Eugenios Euphemios Eusebios Eustathios Eustace Evangelos Gabriel Gabriel Gennadios Georgios 
-			George Gerasimos Germanos Germanus Gregoras Gregory Gregorios Gregory Hektorios Helias 
-			Herakleios Heracles Hierotheos Himerios
-			Georgios Alexandros Konstantinos Pavlos Andreas Nikolaos Aineias Alexeios Ambrosios
-			Chrysanthos David Demetrios Diogenes Dionysos Eirenaios Elpidios Gregorios Hektor Herakles 
-			Kastor Manuel Matthaios Nestor Nikomedes Orestes Palaemon Pelagios Petros Philemon Philippos 
-			Skantarios Stefanos Theodoros Thomas Basileios Prokopios Ioannes Iason Bartholomaios
+			Adrianos Akakios Alexandros Alexios Anastasios Anatolios Andreas Andronikos Anthemios Anthimos Antiochos Antonios Apollonios Arsenios Artemios Athanasios Bardas
+			Bartholomaios Basileios Basil Belisarios Boethios Bosporios Christophoros Chrysanthos Chrysogonos DamianosDaniel David Demetrios Diogenes Dionysios Dionysus Dorotheos Eirenaios Eudoxios Eustratios
+			Eugenios Euphemios Eusebios Eustathios Evangelos Gabriel Gennadios Georgios Gerasimos Germanos Gregoras Gregorios Hektorios Helias Herakleios Hierotheos Himerios
+			Hippolytos Hypatios Iakobos Ignatios Innokentios Ioannes Ioannikios Iordanes Ioseph Isaakios Isaias Isidoros Ioulianos Ioustinianos Ioustinos Kaisarios
+			Kallinikos Kallistos Komitas Konstantinos Constantine Konstantios Konstas Kosmas Kyriakos Kyrillosl Kyros Laurentios Lazaros Leon Leontios Loukas Makarios Manuel Markos
+			Matthaios Maurikios Maximos Megistos Meletios Methodios Michael Narses Neophytos Nikephoros Niketas Nikodemos Nikolaos Niphon Orestes Pamphilios Pankratios Pantoleon Paschalis
+			Pavlos Pelagios Petros Philaretos Philippos Philotheos Phokas Photios Polykarpos Porphyrios Prokopios Pyrros Raphail Romanos Sabas Samuel Serapion Sebastianos Sergios Stephanos
+			Staurakios Symeon Symmachos Theocharistos Theodoros Theodosios Theodotos Theodoulos Theoktistos Theophanes Theophilos Theophylaktos Thomas Tiberios Traianos
+			Timotheos Tryphon Valerios Zacharias Zenobios Zenon
 		}
 		female_names = {
-			Alexandra Adriane Adriana Agathe Agatha Agne Agnes Aikaterine Alexeia Anastasia Anastasia 
-			Anna Anthe Anthousa Antipatra Antonia Apollonia Athanasia Barbara Basillike
-			Chrysogone Damiane Demetra Dionysia Dorothea Dorothy Aigidia Eirene Irene Elaiodora Epiphania 
-			Eudokia Eudocia Eudoxia Eugenia Eulalia Eunike Euphemia Euphrasia Euphrosyne Euphrosyne
-			Eupraxia Eusebia Eustathia Evanthia Gabrielia Garyphallia Georgia Gregoria Helene Helen 
-			Ioanna Joan Ioulia Julia Iouliana Juliana Ioustina Justina Kale Konstantia Constantia 
-			Konstantine Constantina Kyra Kyriake Hypatia Zoe
+			Adriane Agathe Agne Aikaterine Alexandra Alexeia Anastasia Anna Anthe Anthousa Antipatra Antonia Apollonia Athanasia Barbara Basillike
+			Chrysogone Damiane Demetra Dionysia Dorothea Aigidia Eirene Elaiodora Epiphania Eudokia Eudoxia Eugenia Eulalia Eunike Euphemia Euphrasia Euphrosyne
+			Eupraxia Eusebia Eustathia Evanthia Gabrielia Garyphallia Georgia Gregoria Helene Hypatia Ioanna Ioulia Iouliana Ioustina Kale Konstantia Konstantine Kyra Kyriake
+			Leontia Margarita Maria Markia Martha Melissa Nikarete Nikoletta Nonna Parthena Pavlina Pelagia Petronia Philippa Phyllis Pulcheria Rhodanthe Romane Romylia Sergia Sibylla
+			Simonis Sophia Stephania Thekla Theochariste Theodora Theodosia Theognosia Theoktiste Theophano Thomais Valeria Viviana Xene Zenobia Zoe
 		}
 		dynasty_names = {
 			Kantakouzenos Doukas Komnenos Palaiologos Laskaris Angelos Phokas
@@ -3237,31 +3198,25 @@ byzantine = { #1356
 			"Apsimaros" "Artemios"
 		}
 	}
-	cappadocian = { #Needs Primary tag
-		primary = GRE
+	cappadocian = { 
+		primary = CPP
 		male_names = {
-			Adrianos Adrian Akakios Alexandros Alexander Alexios Alexis Anastasios Anastasius Anatolios 
-			Andreas Andrew Andronikos Andronicus Anthemios Anthimos Antiochos Antonios Antonius Apollonios 
-			Arsenios Artemios Athanasios Athanasius Bardas
-			Bartholomaios Bartolomeus Basileios Basil Belisarios Belisarius Boethios Bosporios 
-			Christophoros Christopher Chrysanthos Chrysogonos Damianos Daniel Daniel David David Demetrios 
-			Demetrius Diogenes Dionysios Dionysus Dorotheos Eirenaios Eudoxios Eustratios
-			Eugenios Euphemios Eusebios Eustathios Eustace Evangelos Gabriel Gabriel Gennadios Georgios 
-			George Gerasimos Germanos Germanus Gregoras Gregory Gregorios Gregory Hektorios Helias 
-			Herakleios Heracles Hierotheos Himerios
-			Georgios Alexandros Konstantinos Pavlos Andreas Nikolaos Aineias Alexeios Ambrosios
-			Chrysanthos David Demetrios Diogenes Dionysos Eirenaios Elpidios Gregorios Hektor Herakles 
-			Kastor Manuel Matthaios Nestor Nikomedes Orestes Palaemon Pelagios Petros Philemon Philippos 
-			Skantarios Stefanos Theodoros Thomas Basileios Prokopios Ioannes Iason Bartholomaios
+			Adrianos Akakios Alexandros Alexios Anastasios Anatolios Andreas Andronikos Anthemios Anthimos Antiochos Antonios Apollonios Arsenios Artemios Athanasios Bardas
+			Bartholomaios Basileios Basil Belisarios Boethios Bosporios Christophoros Chrysanthos Chrysogonos DamianosDaniel David Demetrios Diogenes Dionysios Dionysus Dorotheos Eirenaios Eudoxios Eustratios
+			Eugenios Euphemios Eusebios Eustathios Evangelos Gabriel Gennadios Georgios Gerasimos Germanos Gregoras Gregorios Hektorios Helias Herakleios Hierotheos Himerios
+			Hippolytos Hypatios Iakobos Ignatios Innokentios Ioannes Ioannikios Iordanes Ioseph Isaakios Isaias Isidoros Ioulianos Ioustinianos Ioustinos Kaisarios
+			Kallinikos Kallistos Komitas Konstantinos Constantine Konstantios Konstas Kosmas Kyriakos Kyrillosl Kyros Laurentios Lazaros Leon Leontios Loukas Makarios Manuel Markos
+			Matthaios Maurikios Maximos Megistos Meletios Methodios Michael Narses Neophytos Nikephoros Niketas Nikodemos Nikolaos Niphon Orestes Pamphilios Pankratios Pantoleon Paschalis
+			Pavlos Pelagios Petros Philaretos Philippos Philotheos Phokas Photios Polykarpos Porphyrios Prokopios Pyrros Raphail Romanos Sabas Samuel Serapion Sebastianos Sergios Stephanos
+			Staurakios Symeon Symmachos Theocharistos Theodoros Theodosios Theodotos Theodoulos Theoktistos Theophanes Theophilos Theophylaktos Thomas Tiberios Traianos
+			Timotheos Tryphon Valerios Zacharias Zenobios Zenon
 		}
 		female_names = {
-			Alexandra Adriane Adriana Agathe Agatha Agne Agnes Aikaterine Alexeia Anastasia Anastasia 
-			Anna Anthe Anthousa Antipatra Antonia Apollonia Athanasia Barbara Basillike
-			Chrysogone Damiane Demetra Dionysia Dorothea Dorothy Aigidia Eirene Irene Elaiodora Epiphania 
-			Eudokia Eudocia Eudoxia Eugenia Eulalia Eunike Euphemia Euphrasia Euphrosyne Euphrosyne
-			Eupraxia Eusebia Eustathia Evanthia Gabrielia Garyphallia Georgia Gregoria Helene Helen 
-			Ioanna Joan Ioulia Julia Iouliana Juliana Ioustina Justina Kale Konstantia Constantia 
-			Konstantine Constantina Kyra Kyriake Hypatia Zoe
+		Adriane Agathe Agne Aikaterine Alexandra Alexeia Anastasia Anna Anthe Anthousa Antipatra Antonia Apollonia Athanasia Barbara Basillike
+			Chrysogone Damiane Demetra Dionysia Dorothea Aigidia Eirene Elaiodora Epiphania Eudokia Eudoxia Eugenia Eulalia Eunike Euphemia Euphrasia Euphrosyne
+			Eupraxia Eusebia Eustathia Evanthia Gabrielia Garyphallia Georgia Gregoria Helene Hypatia Ioanna Ioulia Iouliana Ioustina Kale Konstantia Konstantine Kyra Kyriake
+			Leontia Margarita Maria Markia Martha Melissa Nikarete Nikoletta Nonna Parthena Pavlina Pelagia Petronia Philippa Phyllis Pulcheria Rhodanthe Romane Romylia Sergia Sibylla
+			Simonis Sophia Stephania Thekla Theochariste Theodora Theodosia Theognosia Theoktiste Theophano Thomais Valeria Viviana Xene Zenobia Zoe
 		}
 		dynasty_names = {
 			Kantakouzenos Doukas Komnenos Palaiologos Laskaris Angelos Phokas
@@ -3833,14 +3788,14 @@ maghrebi = { #1356
 	moorish = { #Sunni Andalucians, different from Christian Andalucians
 		primary = GRA
 		dynasty_names = {
-			Nasrid Ummayad Zirid
+			Nasrid Ummayad Zirid Zayyanid
 		}
 		male_names = {
 			Muhammad Yûsuf 'Alî Sa'd Isma'îl Nasr 'Abd al-Karim Ayman Barakat Basir Dawud Fahd Faris Faruq 
 			Haidar Hashim Husam Iqbal Jabbar Ja'far Jamal Junayd Khaliq Malik Mansur Mustafa Najib Qasim Qusay 
 			Rashîd Safi Sakhr Samir Tariq Umar Wahid Zahir Firdaus Fuad Rahim
 			Abbad Abbas Abbas Abdallah Abdullah Abdul-Aziz Abdul-Hakam Abdul-Hasan Hasan Abdul-Hazm 
-			Abdul-Rahman Abdul-Razzaq Abdul Abdul Abu Abu-Bakr Abu-Bakr Adfuns Alphonse Ahmad Ahmad Ali Ali Amr 
+			Abdul-Rahman Abdul-Razzaq Abdul Abu Abu-Bakr Adfuns Alphonse Ahmad Ali Amr 
 			Ayyub Balashk Vasco Bilal Fadl Fath Galind Galindo Garsiya Garcia Hakam Hakam Hilal Ibrahim Abraham 
 			Isma'il Ismail Jyad Lubb Lupo Ma'n Mubashir Muhammad Muhammad Mundir Musa Moses Muyahid Raf Rashid 
 			Rasiq Sa'd Sanyo Sancho Siddray Suleyman Solomon Tariq Tifilwit Umar Umar Utman Wannaqo Inigo 
@@ -8902,18 +8857,25 @@ tartar	= { #1356
 assyrian_group = { #WIP #rename to Aramaic
 	graphical_culture = easterngfx
 
-	assyrian = { #Needs Primary TAG #WIP #Needs more proper names localised
+	assyrian = { #Needs Primary TAG #WIP #Names are localised
 		dynasty_names = {
 			Abbarid Adonibaalid Ahiromid Baalhannid Baalid Barcid Bostarid Chelbesid Eshbaalid Eugorid Hannid Hiramid Magoid Mattanid Metallid 
 		Milkiramid Philosirid
 		}
-		male_names = {
-			Abbar Abdmelqart Adonibaal Agbal Ahirom Azimilik Baal Baalhanno Bodashtart Bodmelqart Bomilcar Bostar Boulomenus Carthalo Chelbes 
-			Eshbaal Eugoras Germelqart Hamilcar Hannibal Hanno Hasdrubal Himilco Hiram Mago Maharbal Mattan Metallo Milkherem Milkiram 
-			Paltibaal Philosir
+		male_names = { #Imported from CK2
+			"Aba Abba" "Abahu Abahu" "Abaya Abaya" "Abaye Abaya" "Abayi Abaya" "Abba Abba" Abdima Abdisho Abgar Abimalek Abraham Abris Abrisius Acacius Achan Achina "Addai Thaddeus" Adlai Aggai Ahai Ahadabui Ahha "Akha d'abuh'" Akh-es-Samain Aqib-Alaha Asa Asher Avahu "Avda Abahu" Avdima Avdima Avina Avira Azai
+			Babaeus "Babai Babaeus" "Babowai Babaeus" "Babwahi Babaeus" Bar "Bar-Abba" "Barba'shimin" Bartholomew "Bar Nabha" Bar-Talmai Bar-Timai Bar-Tolmai Bustan Caiaphas "Cephas Peter" "Cephus Peter" Chadlai Chama Chanin "Chanina Chanin" "Chaninai Chanin" "Chinena Chanin"
+			Chozai Chuma Chunya Clopas Dadisho' Denha Dikla Diklah Dimi Dinkha Dunanu Elisha Eliya Emmanuel Enosh Ezekiel Farbokht Foma "Grwgari Gregory" "Hanina Chanin" Hnanisho' "Hozai Chozai" Idan Idra Ila Isaac Isho' Isho'yahb Kaiapha Karna Katsiu Kelaya "Lazar Lazarus"
+			"Lazer Lazarus" Lebbaeus Maadai Macabee "Magna Ma'na" Makkikha Maluch Ma'na Marabokht Maremmeh Mari Mikha'il Moqli Muna Nahir Nahor Narsai Nazuk Chunya
+			Nahir Nehorai Niv Nun Nur Nahir Pappa Paul Pethion Peter Petuel Qaligh Qayyoma Raka Rachim Rahim Raka Raz Raphael Rubil Saad Saba Sabrisho' Sabrisho' Salu Samal Sami Sami Sagi Sargis Saba Sawma
+			Shafer Shahdost Shahlufa Shai Shalmai Shama Shamir Shammai Shemaiah Shem'on Sheraga Shila Shovai Shraga Sima Sliba-zkha Surin Tabbai Taddai Thaddeus Talia Taliah Talmai Talya Tam
+			Tam'as Ta'mhas Targhal Tauma Tavi Tavish Tevis Th'amhais Thoma Timai Tiv Toba Todos Tolmai Tomarsa Tamuza Tulmay Ukba Yahballaha Yanai Ya'qob Yeshua Yohannan Yosip Yousef Yunanis Zerika
 		}
-		female_names = {
-			Abdosir Arishat Astarte Batnoam Dido Shayna Sophonisba Tamar
+		female_names = { #Imported from CK2
+			Adva Alya Anena Anina Bustan Chanina Chasina Chayuta Chiyuta Dikla Diklah Diklit Duvsha Hanina Hasna Hayuta Hina Ketina Kitra
+			Magdala Mahalia Mahalie Marfa Mariam Marta Marte Martha Marthe Marti Martita Mehalia Meiriona Meirona Morta
+			Nahara Nura Raz Reuma Saba Sabah Samantha Sameah Samee Sameeai Samiya Samiyah Samiyya Samya Sava Shapira Sima Tabatha Tabetha
+			Tabitha Tadea Talia Talitha Tam Tamasin Tamia Tammy Thaddea Zeita Zeta
 		}
 	}
 	
