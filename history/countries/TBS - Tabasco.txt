@@ -1,6 +1,0 @@
-government = tribal
-add_government_reform = tribal_kingdom
-primary_culture = putun
-religion = mesoamerican_religion
-technology_group = mesoamerican
-capital = 2632	# Tabasco

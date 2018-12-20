@@ -805,7 +805,36 @@ swiss_canton_reform = { #Maybe give it access to Parlament mechanics?
 	}
 	duration = 4
 }
+
+frisian_republic_gov = {
+	allow_normal_conversion = yes
+	icon = "peasant_republic"
+	potential = {
+		primary_culture = frisian
+		OR = {
+			have_had_reform = frisian_republic_gov
+			has_reform = frisian_republic_gov
+		}
+	}
+	valid_for_nation_designer = yes
+	nation_designer_cost = 20
+	legacy_equivalent = frisian_republic_legacy
+	modifiers = {
+		production_efficiency = 0.1
+		state_maintenance_modifier = -0.25
+		global_unrest = -1
+		global_tax_modifier = -0.1
+		max_absolutism = -50
+	}
+	custom_attributes = {
+		enables_plutocratic_idea_group = yes
+		enables_aristocratic_idea_group = no
+	}
+	duration = 3
+}
+
 #####1356 Changes End#####
+
 #Republican Virtues
 
 republican_authoritarianism_reform = {

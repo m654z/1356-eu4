@@ -207,6 +207,24 @@ ilkhanate_government_tribal_reform = { #Ilkhanate itself
 	}
 }
 
+#tribal_republic_gov = { #Cut for now as I had issues actually getting the Republic Mechanics to work here.
+#	icon = "shaman"
+#	allow_normal_conversion = yes
+#	valid_for_nation_designer = yes
+#	valid_for_new_country = no
+#	allow_convert = yes
+#	nation_designer_cost = 0
+#	modifiers = {
+#		core_creation = -0.15
+#	}
+#	
+#	republic = yes
+#	rulers_can_be_generals = yes
+#	duration = 8
+#	
+#	legacy_equivalent = tribal_democracy_legacy
+#}
+
 #######END 1356 Changes#######
 
 #tribal_cultural_values

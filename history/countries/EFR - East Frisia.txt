@@ -201,7 +201,10 @@ capital = 1931	# Emden
 	}
 }
 
-#1440.1.1 = { government = feudalism_reform }
+#1440.1.1 = { 
+#	government = republic 
+#	add_government_reform = frisian_republic_gov
+#}
 
 1450.1.1 = {
 	monarch = {

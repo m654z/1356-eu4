@@ -529,7 +529,7 @@
  ilkhanate_government_iqta: "Ilkhanatische Regierung (Iqta)"
  ilkhanate_government_iqta_desc: ""
  tribal_federation_ilkhan: "Stammeskonförderation (Ilkhanatisch)"
- tribal_federation_ilkhan_desc: Eine Regierungsform, bei der eine Stammeskonförderation regiert mit einem Gewissen grad an interner Autonomie aber auf nationaler Ebene von einer zentralen Autorität geführt werden. Die Nachfolgestaaten des Ilkhanats limitierten die Erbfolge auf Verwandte der herrschenden Dynastie, es sei denn, sie werden besiegt."
+ tribal_federation_ilkhan_desc: "Eine Regierungsform, bei der eine Stammeskonförderation regiert mit einem Gewissen grad an interner Autonomie aber auf nationaler Ebene von einer zentralen Autorität geführt werden. Die Nachfolgestaaten des Ilkhanats limitierten die Erbfolge auf Verwandte der herrschenden Dynastie, es sei denn, sie werden besiegt."
  timurlane.999.t: "Ermöglicht eine Timuridische Expansion?"
  timurlane.999.d: "Ermöglicht es, dass Timur erscheint und 1370 einfällt. Diese Invasion ist gescripted wird sehr wahrscheinlich zum Fall des Ilkhanats in Persien führen, wie auch Timur mit mächtigen Modifikatoren versehen."
  timurlane.999.a: "Erlaubt es Timur zu erscheinen"
@@ -581,7 +581,7 @@
  fix_zoro_religion_title: "DEBUG - Fix für unreligiöse Provinzen der Zoroastristen"
  fix_zoro_religion_desc: "Verwandelt alle unreligiösen Provinzen in Zoroastristische Provinzen, selbiges mit der Staatsreligion. PAUSIERE BEIM KLICKEN DIESES EVENTS. DAS SPIEL KÖNNTE STARK LAGGEN."
  ilknanate_nation_title: "Reformiert das Ilkhanat"
- ilknanate_nation_desc: "Seit dem Kollaps des Ilkhanats sind die Stämme Persiens und des Irans in einem niemals endenden Konflikt gefangen, trotz allem hat $MONARCH$ ansehnliche Unterstützung von den Stämmen gesammelt. Nachdem Dschingis Khan  
+ ilknanate_nation_desc: "Seit dem Kollaps des Ilkhanats sind die Stämme Persiens und des Irans in einem niemals endenden Konflikt gefangen, trotz allem hat $MONARCH$ ansehnliche Unterstützung von den Stämmen gesammelt. Nachdem Dschingis Khan"
  reform_4_passed: "Reform 4 wurde durchgeführt"
  reform_passed_opposed: "Durchsetzung einer gegensätzlichen Reform"
  french_vassal_feudal_monarchy: "feudal-herzögliche Monarchie"

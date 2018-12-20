@@ -219,6 +219,8 @@ republic = {
 		black_market_consortium_government
 		#####1356 Additions#####
 		swiss_canton
+		frisian_republic_legacy
+		novgorod_republic_gov_legacy
 		#####1356 Additions End#####
 	}
 	reform_levels = {
@@ -243,6 +245,8 @@ republic = {
 				cossacks_reform
 				#####1356 Additions#####
 				swiss_canton_reform
+				frisian_republic_gov
+				novgorod_republic_gov_legacy
 				#####1356 Additions End#####
 			}
 		}
@@ -371,6 +375,7 @@ tribal = {
 				####BEGIN 1356 CHANGES#####
 				tribal_federation_ilkhan_reform
 				ilkhanate_government_tribal_reform
+				#tribal_republic_gov #Its legacy uses Tribal Democracy
 				#####END 1356 CHANGES#####
 			}
 		}

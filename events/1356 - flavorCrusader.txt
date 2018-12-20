@@ -1277,6 +1277,7 @@ country_event = { #Tells Crusader State Aid has arrived from previous nation
 	is_triggered_only = yes
 	
 	option = {
-		"name = crusader_states.19.a"
+		name = crusader_states.19.a
 		custom_tooltip = crusader_state_aid_received_success_tooltip
 	}
+}

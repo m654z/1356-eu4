@@ -81,7 +81,6 @@ add_army_professionalism = 0.05
 		monarch_name = "Amedeo VIII"
 		dynasty = "di Savoia"
 		culture = arpitan
-		add_heir_personality = scholar_personality #Donated to arts
 		birth_date = 1383.9.4
 		death_date = 1451.1.7
 		claim = 95
@@ -89,19 +88,20 @@ add_army_professionalism = 0.05
 		dip = 1
 		mil = 2
 	}
+	add_heir_personality = scholar_personality #Donated to arts
 }
 
 1391.11.1 = {
 	monarch = {
 		name = "Amedeo VIII"
 		dynasty = "di Savoia"
-		add_ruler_personality = scholar_personality #He donated to the arts
 		culture = arpitan
 		birth_date = 1338.9.4
 		adm = 1
 		dip = 1
 		mil = 2
 	}
+	add_ruler_personality = scholar_personality #He donated to the arts
 }
 
 1393.10.30 = {
@@ -153,9 +153,6 @@ add_army_professionalism = 0.05
 		monarch_name = "Amedeo IX"
 		dynasty = "di Savoia"
 		culture = arpitan
-		add_heir_personality = zealot_personality
-		add_heir_personality = pious_personality
-		add_heir_personality = babbling_buffoon_personality
 		birth_date = 1435.2.1
 		death_date = 1472.3.30
 		claim = 95
@@ -163,6 +160,9 @@ add_army_professionalism = 0.05
 		dip = 2
 		mil = 0
 	}
+	add_heir_personality = zealot_personality
+	add_heir_personality = pious_personality
+	add_heir_personality = babbling_buffoon_personality
 }
 
 1465.1.30 = { 
@@ -170,9 +170,6 @@ add_army_professionalism = 0.05
 		name = "Amedeo IX"
 		dynasty = "di Savoia"
 		culture = arpitan
-		add_ruler_personality = zealot_personality
-		add_ruler_personality = pious_personality
-		add_ruler_personality = babbling_buffoon_personality
 		adm = 3
 		dip = 2
 		mil = 0
@@ -189,6 +186,9 @@ add_army_professionalism = 0.05
 		dip = 3
 		mil = 2
 	}
+	add_ruler_personality = zealot_personality
+	add_ruler_personality = pious_personality
+	add_ruler_personality = babbling_buffoon_personality
 }
 
 1465.8.17 = {

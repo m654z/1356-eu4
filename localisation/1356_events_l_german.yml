@@ -233,7 +233,7 @@
  por_djm.1.d: "Prinz Heinrich von Portugal, Herzog von Viseu (4. März 1394 - 13. November 1460), besser bekannt als Heinrich der Seefahrer, war eine wichtige Figur in der portugiesischen Politik des 15. Jahrhunderts, in den frühen Tagen des portugiesischen Reiches. Durch seine Verwaltungsrichtlinien, wird er als der Hauptinitiator dessen angesehen, was später als das Zeitalter der Entdeckungen bekannt werden sollte. Henrichs Hausmacht brachte viele Taktiker, Navigatoren und Entdecker hervor, welche damit fortfuhren weite Teile Makaronesiens in seinem Namen zu entdecken."
  por_djm.1.a: "Lasst uns navigieren!"
  norway_union_name: "Norwegische Erbschaft"
- norway_union_desc: "Als König Haakon VI von Norwegen, verheiratet mit Margaret von Dänemark, gestorben ist, wurde sein Königreich an seinen Sohn Olav II übertragen. Olav war auch der Erbe zum dänischen Thron, womit sich mit diesem Ereignis die beiden Königreiche vereingten.
+ norway_union_desc: "Als König Haakon VI von Norwegen, verheiratet mit Margaret von Dänemark, gestorben ist, wurde sein Königreich an seinen Sohn Olav II übertragen. Olav war auch der Erbe zum dänischen Thron, womit sich mit diesem Ereignis die beiden Königreiche vereingten."
  norway_union_opt1: "Wir müssen unsere Dynastien zusammenbinden!"
  norway_union_opt2: "Es lohnt sich nicht."
  sweden_estate_name: "Machtvolle adelige Anwesen"
@@ -727,7 +727,7 @@
  eastereggflandy.4.a: "Ja, schickt Nachricht an unsere Generäle. Bereitet euch vor!"
  eastereggflandy.4.b: "Ach Quatsch! Unsere Armee ist stark genug!"
  eastereggflandy.5.t: "Die große Säuberung!"
- eastereggflandy.5.desc: "Ein aufstrebender und recht attraktiver Bauer aus einer Provinz die wir kürzlich in Georgien erobert haben trifft am Hofe des großen [YUA.Monarch.GetName] ein! Er sagt, dass es Verräter in unseren Reihen gibt und wenn wir nichts unternehmen wird bald etwas schlimmes passieren. Etwas schlimmes wie eine Rebellion gegen unsere Herrschaft, die Ermordung unsere Kinder und Frau und wir enden gepfählt! Einige unsere vertrautesten Berater finden diesen Mann amüsant und denken, dass er Witze macht. Es gibt jedoch auch andere, die ihm zustimmen und denken, dass er eventuell recht hat. Auch wenn es keine Verschwörung gegen uns gibt, eine kleine Säuberung kann nicht schaden, oder...?  
+ eastereggflandy.5.desc: "Ein aufstrebender und recht attraktiver Bauer aus einer Provinz die wir kürzlich in Georgien erobert haben trifft am Hofe des großen [YUA.Monarch.GetName] ein! Er sagt, dass es Verräter in unseren Reihen gibt und wenn wir nichts unternehmen wird bald etwas schlimmes passieren. Etwas schlimmes wie eine Rebellion gegen unsere Herrschaft, die Ermordung unsere Kinder und Frau und wir enden gepfählt! Einige unsere vertrautesten Berater finden diesen Mann amüsant und denken, dass er Witze macht. Es gibt jedoch auch andere, die ihm zustimmen und denken, dass er eventuell recht hat. Auch wenn es keine Verschwörung gegen uns gibt, eine kleine Säuberung kann nicht schaden, oder...?"  
  eastereggflandy.5.a: "Glorreich wird die große Säuberung sein!"
  eastereggflandy.5.b: "Das ist lächerlich, es wird niemals eine 'große Säuberung' geben!"
 

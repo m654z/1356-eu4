@@ -126,4 +126,5 @@
  start_accepting_crusaders_into_ranks_desc: "We now border a religious enemy, furthermore we do not have a large population to draw soldiers from so we must send word to the Pope and other pious Catholics that we need aid in order to defend the Holy Land from the heathens that threaten its existance. We can only hope aid arrives soon."
  remove_delhi_starting_modifier_decision_title: "DEBUG - Remove Starting Modifiers"
  remove_delhi_starting_modifier_decision_desc: "You're seeing this because AI Delhi receives a small malus to help them collapse, until next major update this modifier exists for the first 40 years, then it disapears. For players they can choose to remove this modifier for free."
- 
+ frisian_government_decision_title: "Frisian Freedom"
+ frisian_government_decision_desc: "The Frisian peoples have a long history of fighting Feudalism, instead opting for wealthly landowners who owned vast tracts of land serving as the judiciary, and protecting their local neighbors. The entire government System of Frisia, for a time, was completly Anti-Feudal, and any Feudal lord who took over the region was plagued with frequent revolts."

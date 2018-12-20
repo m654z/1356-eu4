@@ -494,7 +494,7 @@
  ale_fort_maint: "Der französische Schmelztiegel"
  ale_fort_maint_desc: "Als die Franken erstmals in Frankreich ankamen haben sie sich langsam an die lokalen Gegebenheiten angepasst und über die Zeit das erschaffen, was heute als französisch bekannt ist. Es wurden ebenfalls einige andere Kulturen von den Franzosen assimiliert, jedoch wurde nicht alle getilgt. Wir gehören zu diesen wenigen..."
  ale_forts: "Das Pontifikat von Avignon"
- ale_forts_desc: Als der französische König noch Kontrolle über das Pontifikat hatte, hatten auch alle Herzöge, Grafen und Adligen mehr Einfluss auf ihn, was er tat und was sie von ihm erhalten konnten."
+ ale_forts_desc: "Als der französische König noch Kontrolle über das Pontifikat hatte, hatten auch alle Herzöge, Grafen und Adligen mehr Einfluss auf ihn, was er tat und was sie von ihm erhalten konnten."
  ale_trade_power: "Regionaler Handelseinfluss"
  ale_trade_power_desc: "Die Loire ist die Handelsader der Region und wir haben genug Kontrolle über sie, um auf den Handel ebenfalls Einfluss zu nehmen. Zu Schade, dass wir nicht mehr kontrollieren."
  alencon_spies: "Französische Spionagenetzwerke"
@@ -614,7 +614,7 @@
  catholic_bastion_desc:0 "Während und nach der Reformation war Köln weiterhin eine Bastion des Katholizismus und bekämpfte protestantischen Bestrebungen in- und außerhalb der Stadtgrenzen. Köln war die einzige freie Stadt des Heiligen Römischen Reiches, die alle Thesen Luthers ablehnte."
  free_city:0 "Freie Stadt Köln"
  free_city_desc:0 "1475 wurde Köln freie Stadt im Heiligen Römischen Reich mit allen Vorzügen, auch vor der offiziellen Nominierung war Köln eine der wirtschaftlich stärksten Städte in Deutschland."
- carneval:0 "Karneval
+ carneval:0 "Karneval"
  carneval_desc:0 "Der Karneval in Köln (Fasteleer), wie auch die Meenzer Fassenacht sind die bekanntesten und größten dieser Art. Auch wenn er zwischendurch verboten war und als unsittlich galt, so hat sich diese Trsdition letztendlich durchgesetzt, einmal im Jahr muss man sich ja wohl ungestraft über die Obrigkeit lustig machen dürfen."
  
  bergische_ideas:0 "Bergische Ideen"
@@ -645,7 +645,7 @@
  gyo_years_under_yuan: "Tributstaat"
  gyo_years_under_yuan_desc: "Zwar mussten wir dem Kaiser Tribut entrichten, das hatte aber auch sein Gutes. Neben der Tatsache, dass wir unter seinem Schutz standen haben wir auch seinen Verwaltungsstil kopiert und für uns angepasst."
  gyo_enemies_on_all_sides: "Bedrohung durch die Horden"
- gyo_enemies_on_all_sides_desc: "Nicht alle unserer Nachbarn sind uns so wohlgesonnen wie wir es gerne hätten. Um uns gegen die einfallenden Wilden zu schützen haben wir ein System zur Verteidigung unserer Grenzen entwickelt. Unsere Festungen sind ausgebaut und schwerer zu nehmen, außerdem wurden die Garnisonen aufgestockt.
+ gyo_enemies_on_all_sides_desc: "Nicht alle unserer Nachbarn sind uns so wohlgesonnen wie wir es gerne hätten. Um uns gegen die einfallenden Wilden zu schützen haben wir ein System zur Verteidigung unserer Grenzen entwickelt. Unsere Festungen sind ausgebaut und schwerer zu nehmen, außerdem wurden die Garnisonen aufgestockt."
  gyo_legitimate_monarch: "Staatsrat"
  gyo_legitimate_monarch_desc: "Auch wenn wir eine Monarchie sind, so besitzen wir doch einen Staatsrat, der uns als rechtmäßgen Herrscher ansieht und bestätigt. Ihr Wort ist gegen jeden Zweifel erhaben!"
  gyo_war_exhaustion: "Gesichtertes Hinterland"

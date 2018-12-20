@@ -131,9 +131,8 @@ highland_charge = {
 	#icon = 1
 }
 
-new_power = {
+new_power = { #Do we really need this? I set most of these to Historical Lucky Nations...
 	potential = {
-
 		OR = {
 			has_country_flag = anatolian_power
 			tag = TUR
@@ -171,16 +170,17 @@ new_power = {
 	army_tradition = 1
 }
 
-time_of_peace = {
-	potential = {
-		has_country_flag = time_of_peace
-		ai = yes
-	}
-	trigger = {
-	}
-
-	global_unrest = -3	
-}
+#time_of_peace = { #Is this an old leftover?
+#	potential = {
+#		has_country_flag = time_of_peace
+#		ai = yes
+#	}
+#	trigger = {
+#	
+#	}
+#
+#	global_unrest = -3	
+#}
 
 shia_persia = {
 	potential = {
@@ -203,6 +203,14 @@ baltic_crusader = {
 		OR = {
 			tag = TEU
 			tag = LIV
+			tag = POL
+			tag = LIT
+			tag = MOS
+			tag = NOV
+			tag = SWE
+			tag = DAN
+			tag = BRA
+			tag = POM
 		}
 		NOT = {
 			is_year = 1420
@@ -210,6 +218,10 @@ baltic_crusader = {
 	}
 
 	trigger = {
+		OR = {
+			tag = TEU
+			tag = LIV
+		}
 		NOT = { is_year = 1420 }
 	}
 	
@@ -219,238 +231,407 @@ baltic_crusader = {
 	army_tradition = 1
 }
 
-1356_early_government_replacement_1 = {
+1356_late_feudalism_mechanics = { #Mechanics for Settled Nations
 	potential = {
-		#NOT = { date = 1440.1.1 }
-		NOT = { technology_group = north_american }
-		NOT = { technology_group = mesoamerican }
-		NOT = { technology_group = south_american }
-		NOT = { technology_group = andean }
-		#NOT = { technology_group = nomad_group }
-		NOT = { adm_tech = 9 }
-		NOT = { dip_tech = 9 }
-		NOT = { mil_tech = 9 }
-	
+		current_age = age_of_feudalism
+		technology_group = western
+		technology_group = eastern
+		technology_group = high_american
 	}
-	
 	trigger = {
-		OR = {
-			adm_tech = 1
-			dip_tech = 1
-			mil_tech = 1
-		}
-		NOT = { adm_tech = 3 }
-		NOT = { dip_tech = 3 }
-		NOT = { mil_tech = 3 }
-	
-	
+		current_age = age_of_feudalism
 	}
 	core_creation = 1
-	core_decay_on_your_own = 0.25
+	core_decay_on_your_own = 2
 	development_cost = 0.4
-	build_time = 0.25
+	build_time = 0.3
 	diplomats = -1	
 	diplomatic_upkeep = 3
 	unjustified_demands = 0.25 
 	province_warscore_cost = 0.25 
-	#diplomatic_annexation_cost = -0.2 
-#	yearly_army_professionalism = -0.25
-#	drill_decay_modifier = 0.25
+	diplomatic_annexation_cost = 0.1
 	global_manpower_modifier = -0.25
+	reinforce_speed = -0.2
+	recover_army_morale_speed = -0.15
 	merc_maintenance_modifier = -0.25
 	mercenary_cost = -0.30
 	possible_mercenaries = 1
-	loot_amount = 0.25
-#	raze_power_gain = 0.15
-#	mercenary_discipline = 0.05
+	artillery_cost = 0.4
 }
 
-1356_early_government_replacement_2 = {
+1356_late_feudalism_mechanics_muslim = { #Mechanics for Muslims
 	potential = {
-		#NOT = { date = 1440.1.1 }
-		NOT = { technology_group = north_american }
-		NOT = { technology_group = mesoamerican }
-		NOT = { technology_group = south_american }
-		NOT = { technology_group = andean }
-		#NOT = { technology_group = nomad_group }
-		NOT = { adm_tech = 9 }
-		NOT = { dip_tech = 9 }
-		NOT = { mil_tech = 9 }
-	
+		current_age = age_of_feudalism
+		technology_group = ottoman
+		technology_group = muslim
 	}
-	
 	trigger = {
-		OR = {
-			adm_tech = 3
-			dip_tech = 3
-			mil_tech = 3
-		}
-		NOT = { adm_tech = 5 }
-		NOT = { dip_tech = 5 }
-		NOT = { mil_tech = 5 }
-	
+		current_age = age_of_feudalism
 	}
-	core_creation = 0.77
-	core_decay_on_your_own = 0.2
+	core_creation = 0.7
+	core_decay_on_your_own = 2
 	development_cost = 0.3
-	build_time = 0.20
+	technology_cost = -0.1
+	build_time = 0.25
 	diplomats = -1	
 	diplomatic_upkeep = 2
 	unjustified_demands = 0.2 
-	province_warscore_cost = 0.2
-#	yearly_army_professionalism = -0.2
-#	drill_decay_modifier = 0.15
-	global_manpower_modifier = -0.20
-	merc_maintenance_modifier = -0.20
-	mercenary_cost = -0.25
-	possible_mercenaries = 0.75
-#	raze_power_gain = 0.1
-	loot_amount = 0.20
-#	mercenary_discipline = 0.05
-
-
-}
-
-1356_early_government_replacement_3 = {
-	potential = {
-		#NOT = { date = 1440.1.1 }
-		NOT = { technology_group = north_american }
-		NOT = { technology_group = mesoamerican }
-		NOT = { technology_group = south_american }
-		NOT = { technology_group = andean }
-		#NOT = { technology_group = nomad_group }
-		NOT = { adm_tech = 9 }
-		NOT = { dip_tech = 9 }
-		NOT = { mil_tech = 9 }
-	
-	}
-	
-	trigger = {
-		OR = {
-			adm_tech = 5
-			dip_tech = 5
-			mil_tech = 5
-		}
-		NOT = { adm_tech = 7 }
-		NOT = { dip_tech = 7 }
-		NOT = { mil_tech = 7 }
-	
-	}
-	core_creation = 0.5
-	core_decay_on_your_own = 0.15
-	development_cost = 0.2
-	build_time = 0.15
-	diplomats = -1	
-	diplomatic_upkeep = 1
-	unjustified_demands = 0.15
-	province_warscore_cost = 0.15
-#	yearly_army_professionalism = -0.15
-#	drill_decay_modifier = 0.10
-	global_manpower_modifier = -0.10
-	merc_maintenance_modifier = -0.10
-	mercenary_cost = -0.15
-	possible_mercenaries = 0.50
-#	mercenary_discipline = 0.05
-#	raze_power_gain = 0.075
-	loot_amount = 0.15
-
-
-
-}
-
-1356_early_government_replacement_4 = {
-	potential = {
-		#NOT = { date = 1440.1.1 }
-		NOT = { technology_group = north_american }
-		NOT = { technology_group = mesoamerican }
-		NOT = { technology_group = south_american }
-		NOT = { technology_group = andean }
-		#NOT = { technology_group = nomad_group }
-		NOT = { adm_tech = 9 }
-		NOT = { dip_tech = 9 }
-		NOT = { mil_tech = 9 }
-	
-	}
-	
-	trigger = {
-		OR = {
-			adm_tech = 7
-			dip_tech = 7
-			mil_tech = 7
-		}
-		NOT = { adm_tech = 9 }
-		NOT = { dip_tech = 9 }
-		NOT = { mil_tech = 9 }	
-	}
-
-	core_creation = 0.33
-	core_decay_on_your_own = 0.1
-	development_cost = 0.1
-	build_time = 0.1
-	diplomats = -1	
-	diplomatic_upkeep = 1
-	unjustified_demands = 0.1
-	province_warscore_cost = 0.1
-#	yearly_army_professionalism = -0.10
-#	drill_decay_modifier = 0.10
-#	global_manpower_modifier = -0.10
-#	merc_maintenance_modifier = -0.10
-	mercenary_cost = -0.1
-	possible_mercenaries = 0.25
-#	mercenary_discipline = 0.05
-#	raze_power_gain = 0.5
-	loot_amount = 0.10
-
-
-}
-
-1356_early_feudalism_nomad_1 = {
-	potential = {
-		always = no #Remove after Patch
-		NOT = { is_year = 1444 }
-		technology_group = nomad_group
-	}
-	
-	trigger = {
-		always = no #Remove after Patch
-		technology_group = nomad_group
-		NOT = { is_year = 1444 }
-	}
-	core_creation = 0.5
-	core_decay_on_your_own = 2 #They never go away...
-	development_cost = 0.65
-	culture_conversion_cost = 0.5 #May require testing
-	num_accepted_cultures = 2 #May require testing
-	promote_culture_cost = 0.25 #May require testing
-	#years_of_nationalism = 5 #TEST FURTHER
-	#global_unrest = 2 #TEST FURTHER
-	build_time = 0.5
-	#max_states = 2 #How fair would this be? Playtesting required.
-	diplomats = 1	
-	improve_relation_modifier = -0.2
-	spy_offence = 0.1
-	discovered_relations_impact = 0.15
-	unjustified_demands = 0.15
-	province_warscore_cost = 0.15
-	#ae_impact = 0.1 #Unsure how fun this could be/Fair...
-	leader_land_manuever = 1
+	province_warscore_cost = 0.25
+	diplomatic_annexation_cost = 0.2
+	global_manpower_modifier = -0.25
+	reinforce_speed = -0.2
+	recover_army_morale_speed = -0.15
+	merc_maintenance_modifier = -0.25
+	mercenary_cost = -0.30
+	possible_mercenaries = 1
 	leader_siege = 1
-	hostile_attrition = 1
-	war_exhaustion = -0.05
-	land_attrition = -0.15
-	shock_damage = 0.1
-	shock_damage_received = 0.1
-	fire_damage_received = 0.2
-	discipline = -0.05
-	infantry_power = -0.15
-	cav_to_inf_ratio = 0.15
-	#movement_speed = 0.1 #Seems unfair and unfun
-	merc_maintenance_modifier = -0.15
+	artillery_cost = 0.25
+}
+
+1356_late_feudalism_mechanics_asian = { #Mechanics for Asians
+	potential = {
+		current_age = age_of_feudalism
+		technology_group = indian
+		technology_group = chinese
+	}
+	trigger = {
+		current_age = age_of_feudalism
+	}
+	core_creation = 0.8
+	core_decay_on_your_own = 2
+	development_cost = 0.35
+	technology_cost = -0.05
+	build_time = 0.25
+	diplomats = -1	
+	diplomatic_upkeep = 2
+	unjustified_demands = 0.2
+	province_warscore_cost = 0.25 
+	diplomatic_annexation_cost = 0.2
+	global_manpower_modifier = -0.25
+	reinforce_speed = -0.15
+	recover_army_morale_speed = -0.1
+	merc_maintenance_modifier = -0.2
 	mercenary_cost = -0.2
 	possible_mercenaries = 0.75
-	global_tax_modifier = -0.1
-	production_efficiency = -0.1
-	loot_amount = 1
-	raze_power_gain = 0.25
-	harsh_treatment_cost = -0.05
+	artillery_power = 0.1
+	artillery_cost = 0.3
 }
+
+1356_late_feudalism_mechanics_african = { #Mechanics for Settled Africans
+	potential = {
+		current_age = age_of_feudalism
+		technology_group = east_african
+		technology_group = central_african
+		technology_group = sub_saharan
+	}
+	trigger = {
+		current_age = age_of_feudalism
+	}
+	core_creation = 1
+	core_decay_on_your_own = 2
+	development_cost = 0.7
+	global_institution_spread = -0.5
+	technology_cost = 0.15
+	build_time = 0.5
+	diplomats = -1	
+	diplomatic_upkeep = 2
+	years_of_nationalism = 10
+	unjustified_demands = 0.25 
+	province_warscore_cost = 0.25 
+	diplomatic_annexation_cost = 0.2
+	loot_amount = 0.25
+	global_manpower_modifier = -0.3
+	reinforce_speed = -0.25
+	recover_army_morale_speed = -0.15
+	merc_maintenance_modifier = -0.1
+	mercenary_cost = -0.15
+	possible_mercenaries = 0.5
+}
+
+1356_late_feudalism_mechanics_natives = { #Mechanics for American Natives
+	potential = {
+		current_age = age_of_feudalism
+		OR = {
+			technology_group = north_american
+			technology_group = mesoamerican
+			technology_group = south_american
+			technology_group = andean
+		}
+	}
+	trigger = {
+		current_age = age_of_feudalism
+		OR = {
+			technology_group = north_american
+			technology_group = mesoamerican
+			technology_group = south_american
+			technology_group = andean
+		}
+	}
+	core_creation = 0.75
+	core_decay_on_your_own = 1
+	development_cost = 0.5
+	loot_amount = 0.25
+	global_institution_spread = -0.5
+	build_time = 0.3
+	inflation_reduction = 0.05
+	technology_cost = 0.2
+	native_advancement_cost = 0.4
+	diplomatic_upkeep = 2
+	diplomatic_annexation_cost = 0.15
+	province_warscore_cost = 0.25 
+	ae_impact = 0.2
+	years_of_nationalism = 5
+	harsh_treatment_cost = 0.1
+	global_manpower_modifier = -0.25
+}
+
+1356_late_feudalism_mechanics_nomads = { #Mechanics for Nomads
+	potential = {
+		current_age = age_of_feudalism
+		technology_group = nomad_group
+	}
+	trigger = {
+		current_age = age_of_feudalism
+		technology_group = nomad_group
+	}
+	core_creation = 0.55
+	core_decay_on_your_own = 5 #They never go away...
+	unjustified_demands = 0.15
+	province_warscore_cost = 0.15
+	ae_impact = 0.1 
+	development_cost = 0.5
+	loot_amount = 0.5
+	raze_power_gain = 0.25
+	global_institution_spread = -0.25 #Is this bad?
+	build_time = 0.5
+	diplomats = -1	
+	diplomatic_upkeep = 1
+	improve_relation_modifier = -0.2
+	culture_conversion_cost = 0.5
+	promote_culture_cost = 0.3
+	war_exhaustion = -0.05
+	harsh_treatment_cost = -0.05
+	years_of_nationalism = 5
+	leader_land_manuever = 1
+	hostile_attrition = 1
+	land_attrition = -0.15
+	cavalry_cost = -0.1
+	cav_to_inf_ratio = 0.15
+	cavalry_flanking = 0.1
+	shock_damage = 0.1
+}
+
+# 1356_early_government_replacement_1 = {
+	# potential = {
+		# #NOT = { date = 1440.1.1 }
+		# NOT = { technology_group = north_american }
+		# NOT = { technology_group = mesoamerican }
+		# NOT = { technology_group = south_american }
+		# NOT = { technology_group = andean }
+		# #NOT = { technology_group = nomad_group }
+		# NOT = { adm_tech = 9 }
+		# NOT = { dip_tech = 9 }
+		# NOT = { mil_tech = 9 }
+	# }
+	# trigger = {
+		# OR = {
+			# adm_tech = 1
+			# dip_tech = 1
+			# mil_tech = 1
+		# }
+		# NOT = { adm_tech = 3 }
+		# NOT = { dip_tech = 3 }
+		# NOT = { mil_tech = 3 }
+	# }
+	# core_creation = 1
+	# core_decay_on_your_own = 0.25
+	# development_cost = 0.4
+	# build_time = 0.25
+	# diplomats = -1	
+	# diplomatic_upkeep = 3
+	# unjustified_demands = 0.25 
+	# province_warscore_cost = 0.25 
+	# #diplomatic_annexation_cost = -0.2 
+# #	yearly_army_professionalism = -0.25
+# #	drill_decay_modifier = 0.25
+	# global_manpower_modifier = -0.25
+	# merc_maintenance_modifier = -0.25
+	# mercenary_cost = -0.30
+	# possible_mercenaries = 1
+	# loot_amount = 0.25
+# #	raze_power_gain = 0.15
+# #	mercenary_discipline = 0.05
+# }
+
+# 1356_early_government_replacement_2 = {
+	# potential = {
+		# #NOT = { date = 1440.1.1 }
+		# NOT = { technology_group = north_american }
+		# NOT = { technology_group = mesoamerican }
+		# NOT = { technology_group = south_american }
+		# NOT = { technology_group = andean }
+		# #NOT = { technology_group = nomad_group }
+		# NOT = { adm_tech = 9 }
+		# NOT = { dip_tech = 9 }
+		# NOT = { mil_tech = 9 }
+	# }
+	# trigger = {
+		# OR = {
+			# adm_tech = 3
+			# dip_tech = 3
+			# mil_tech = 3
+		# }
+		# NOT = { adm_tech = 5 }
+		# NOT = { dip_tech = 5 }
+		# NOT = { mil_tech = 5 }
+	# }
+	# core_creation = 0.77
+	# core_decay_on_your_own = 0.2
+	# development_cost = 0.3
+	# build_time = 0.20
+	# diplomats = -1	
+	# diplomatic_upkeep = 2
+	# unjustified_demands = 0.2 
+	# province_warscore_cost = 0.2
+# #	yearly_army_professionalism = -0.2
+# #	drill_decay_modifier = 0.15
+	# global_manpower_modifier = -0.20
+	# merc_maintenance_modifier = -0.20
+	# mercenary_cost = -0.25
+	# possible_mercenaries = 0.75
+# #	raze_power_gain = 0.1
+	# loot_amount = 0.20
+# #	mercenary_discipline = 0.05
+# }
+
+# 1356_early_government_replacement_3 = {
+	# potential = {
+		# #NOT = { date = 1440.1.1 }
+		# NOT = { technology_group = north_american }
+		# NOT = { technology_group = mesoamerican }
+		# NOT = { technology_group = south_american }
+		# NOT = { technology_group = andean }
+		# #NOT = { technology_group = nomad_group }
+		# NOT = { adm_tech = 9 }
+		# NOT = { dip_tech = 9 }
+		# NOT = { mil_tech = 9 }
+	# }
+	# trigger = {
+		# OR = {
+			# adm_tech = 5
+			# dip_tech = 5
+			# mil_tech = 5
+		# }
+		# NOT = { adm_tech = 7 }
+		# NOT = { dip_tech = 7 }
+		# NOT = { mil_tech = 7 }
+	# }
+	# core_creation = 0.5
+	# core_decay_on_your_own = 0.15
+	# development_cost = 0.2
+	# build_time = 0.15
+	# diplomats = -1	
+	# diplomatic_upkeep = 1
+	# unjustified_demands = 0.15
+	# province_warscore_cost = 0.15
+# #	yearly_army_professionalism = -0.15
+# #	drill_decay_modifier = 0.10
+	# global_manpower_modifier = -0.10
+	# merc_maintenance_modifier = -0.10
+	# mercenary_cost = -0.15
+	# possible_mercenaries = 0.50
+# #	mercenary_discipline = 0.05
+# #	raze_power_gain = 0.075
+	# loot_amount = 0.15
+# }
+
+# 1356_early_government_replacement_4 = {
+	# potential = {
+		# #NOT = { date = 1440.1.1 }
+		# NOT = { technology_group = north_american }
+		# NOT = { technology_group = mesoamerican }
+		# NOT = { technology_group = south_american }
+		# NOT = { technology_group = andean }
+		# #NOT = { technology_group = nomad_group }
+		# NOT = { adm_tech = 9 }
+		# NOT = { dip_tech = 9 }
+		# NOT = { mil_tech = 9 }
+	# }
+	# trigger = {
+		# OR = {
+			# adm_tech = 7
+			# dip_tech = 7
+			# mil_tech = 7
+		# }
+		# NOT = { adm_tech = 9 }
+		# NOT = { dip_tech = 9 }
+		# NOT = { mil_tech = 9 }	
+	# }
+	# core_creation = 0.33
+	# core_decay_on_your_own = 0.1
+	# development_cost = 0.1
+	# build_time = 0.1
+	# diplomats = -1	
+	# diplomatic_upkeep = 1
+	# unjustified_demands = 0.1
+	# province_warscore_cost = 0.1
+# #	yearly_army_professionalism = -0.10
+# #	drill_decay_modifier = 0.10
+# #	global_manpower_modifier = -0.10
+# #	merc_maintenance_modifier = -0.10
+	# mercenary_cost = -0.1
+	# possible_mercenaries = 0.25
+# #	mercenary_discipline = 0.05
+# #	raze_power_gain = 0.5
+	# loot_amount = 0.10
+# }
+
+# 1356_early_feudalism_nomad_1 = {
+	# potential = {
+		# always = no #Remove after Patch
+		# NOT = { is_year = 1444 }
+		# technology_group = nomad_group
+	# }
+	# trigger = {
+		# always = no #Remove after Patch
+		# technology_group = nomad_group
+		# NOT = { is_year = 1444 }
+	# }
+	# core_creation = 0.5
+	# core_decay_on_your_own = 2 #They never go away...
+	# development_cost = 0.65
+	# culture_conversion_cost = 0.5 #May require testing
+	# num_accepted_cultures = 2 #May require testing
+	# promote_culture_cost = 0.25 #May require testing
+	# #years_of_nationalism = 5 #TEST FURTHER
+	# #global_unrest = 2 #TEST FURTHER
+	# build_time = 0.5
+	# #max_states = 2 #How fair would this be? Playtesting required.
+	# diplomats = 1	
+	# improve_relation_modifier = -0.2
+	# spy_offence = 0.1
+	# discovered_relations_impact = 0.15
+	# unjustified_demands = 0.15
+	# province_warscore_cost = 0.15
+	# #ae_impact = 0.1 #Unsure how fun this could be/Fair...
+	# leader_land_manuever = 1
+	# leader_siege = 1
+	# hostile_attrition = 1
+	# war_exhaustion = -0.05
+	# land_attrition = -0.15
+	# shock_damage = 0.1
+	# shock_damage_received = 0.1
+	# fire_damage_received = 0.2
+	# discipline = -0.05
+	# infantry_power = -0.15
+	# cav_to_inf_ratio = 0.15
+	# #movement_speed = 0.1 #Seems unfair and unfun
+	# merc_maintenance_modifier = -0.15
+	# mercenary_cost = -0.2
+	# possible_mercenaries = 0.75
+	# global_tax_modifier = -0.1
+	# production_efficiency = -0.1
+	# loot_amount = 1
+	# raze_power_gain = 0.25
+	# harsh_treatment_cost = -0.05
+# }

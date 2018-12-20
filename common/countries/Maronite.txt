@@ -4,6 +4,13 @@ graphical_culture = easterngfx
 
 color = { 232  147  97 }
 
+monarch_names = {
+	"Abdmelqart #1" = 80
+	"Germelqart #1" = 80
+	"Hannibal #1" = 80
+}
+
+
 historical_idea_groups = {
 	defensive_ideas
 	religious_ideas
