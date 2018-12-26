@@ -234,9 +234,11 @@ baltic_crusader = {
 1356_late_feudalism_mechanics = { #Mechanics for Settled Nations
 	potential = {
 		current_age = age_of_feudalism
-		technology_group = western
-		technology_group = eastern
-		technology_group = high_american
+		OR = {
+			technology_group = western
+			technology_group = eastern
+			technology_group = high_american
+		}
 	}
 	trigger = {
 		current_age = age_of_feudalism
@@ -262,8 +264,10 @@ baltic_crusader = {
 1356_late_feudalism_mechanics_muslim = { #Mechanics for Muslims
 	potential = {
 		current_age = age_of_feudalism
-		technology_group = ottoman
-		technology_group = muslim
+		OR = {
+			technology_group = ottoman
+			technology_group = muslim
+		}
 	}
 	trigger = {
 		current_age = age_of_feudalism
@@ -291,8 +295,10 @@ baltic_crusader = {
 1356_late_feudalism_mechanics_asian = { #Mechanics for Asians
 	potential = {
 		current_age = age_of_feudalism
-		technology_group = indian
-		technology_group = chinese
+		OR = {
+			technology_group = indian
+			technology_group = chinese
+		}
 	}
 	trigger = {
 		current_age = age_of_feudalism
@@ -320,9 +326,11 @@ baltic_crusader = {
 1356_late_feudalism_mechanics_african = { #Mechanics for Settled Africans
 	potential = {
 		current_age = age_of_feudalism
-		technology_group = east_african
-		technology_group = central_african
-		technology_group = sub_saharan
+		OR = {
+			technology_group = east_african
+			technology_group = central_african
+			technology_group = sub_saharan
+		}
 	}
 	trigger = {
 		current_age = age_of_feudalism
