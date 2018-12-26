@@ -7,7 +7,7 @@ latent_trade_goods = {
 
 owner = NOL
 controller = NOL
-culture = english
+culture = northumbrian
 religion = catholic
 hre = no
 base_tax = 3
@@ -25,6 +25,7 @@ discovered_by = ottoman
 discovered_by = eastern
 
 1403.7.21  = { owner = ENG controller = ENG add_core = ENG }
+1405.1.1 = { culture = english }
 1453.1.1   = { unrest = 5 } # Start of the War of the Roses
 1461.6.1   = { revolt = { type = revolutionary_rebels size = 0 } unrest = 2 controller = REB } # Lancastrian Holdouts after Coronation of Edward IV
 1464.6.1   = { revolt = {} controller = ENG }

@@ -20,6 +20,7 @@ country_decisions = {
 			OR = {
 				primary_culture = dutch
 				primary_culture = flemish
+				primary_culture = frisian
 				tag = BUR
 			}
 			OR = {

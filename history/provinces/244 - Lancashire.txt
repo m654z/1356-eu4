@@ -3,7 +3,7 @@
 
 owner = ENG
 controller = ENG
-culture = english
+culture = northumbrian
 religion = catholic
 hre = no
 base_tax = 3 
@@ -23,6 +23,7 @@ discovered_by = eastern
 
 1351.3.6  = { owner = LNC controller = LNC remove_core = ENG }
 1399.2.3  = { owner = ENG controller = ENG add_core = ENG remove_core = LNC }
+1405.1.1 = { culture = english }
 1453.1.1  = { unrest = 5 } # Start of the War of the Roses
 1461.6.1  = { unrest = 2 } # Coronation of Edward IV
 1467.1.1  = { unrest = 5 } # Rivalry between Edward IV & Warwick

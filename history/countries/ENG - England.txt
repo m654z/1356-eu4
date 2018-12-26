@@ -3,6 +3,7 @@ add_government_reform = english_monarchy
 mercantilism = 25
 technology_group = western
 primary_culture = english
+add_accepted_culture = northumbrian
 add_accepted_culture = gascon
 add_accepted_culture = normand
 religion = catholic
@@ -151,6 +152,10 @@ national_focus = DIP
 		dip = 2
 		mil = 2
 	}
+}
+
+1405.1.1 = {
+	remove_accepted_culture = northumbrian
 }
 
 1413.3.21 = {

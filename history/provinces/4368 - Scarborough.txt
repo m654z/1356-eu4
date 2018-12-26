@@ -2,7 +2,7 @@
 
 owner = ENG
 controller = ENG
-culture = english
+culture = northumbrian
 religion = catholic
 hre = no
 base_tax = 2
@@ -20,6 +20,7 @@ discovered_by = ottoman
 discovered_by = eastern
 
 1385.1.1   = { owner = YRK controller = YRK  remove_core = ENG }
+1405.1.1 = { culture = english }
 #1385.1.2  = { remove_core = NOL }
 1444.1.1 = { owner = ENG controller = ENG remove_core = YRK  add_core = ENG }
 1453.1.1 = { unrest = 5 } # Start of the War of the Roses

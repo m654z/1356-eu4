@@ -101,7 +101,10 @@ country_decisions = {
 	brittany_nation = { #Form Brittany, not for Breton Minors MNF and BLS
 		major = yes
 		potential = {
-			primary_culture = breton
+			OR = {
+				primary_culture = breton
+				primary_culture = celtic_breton
+			}
 			NOT = { exists = BRI }
 			NOT = { tag = FRA }
 			NOT = { tag = BLS }

@@ -2,11 +2,12 @@ government = monarchy
 add_government_reform = feudalism_reform
 government_rank = 1
 technology_group = western
-primary_culture = prussian
+primary_culture = kurland_culture
+add_accepted_culture = prussian
 religion = catholic
 capital = 1935	# Mitau
 
-1561.11.28 = { religion = protestant}
+1561.11.28 = { religion = protestant} #Investigate Rulers to see if they should be Prussian or Kurland culture
 
 1561.11.28 = {
 	monarch = {

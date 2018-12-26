@@ -29,6 +29,29 @@ country_event = {
 			add_core = 245
 			add_core = 4368
 			add_core = 4367
+			define_ruler = {
+				name = "Edmund I"
+				dynasty = "York"
+				religion = catholic
+				culture = northumbrian
+				adm = 4
+				dip = 2
+				mil = 1
+				age = 42
+				claim = 100
+			}
+			define_heir = {
+				name = "Edward"
+				male = yes
+				dynasty = "York"
+				religion = catholic
+				culture = northumbrian
+				age = 12
+				claim = 100
+				adm = 2
+				dip = 1
+				mil = 3
+			}
 		}
 		ENG = {
 			release = YRK
