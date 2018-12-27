@@ -935,6 +935,25 @@
  flaageevents.1.d: "Our people, nobles, and even foreign rulers are looking for new ways to bypass Constantanopole and receive trade from the far east in different more efficient ways! Out advisors are now talking about new ways to reach far away lands, perhaps this could be the start of a worthwhile venture?"
  flaageevents.1.a: "We shall find another way to reach the riches of the east!"
  
+ por_djm.2.t: "The Colonization of The Cannaries"
+ por_djm.2.d: "Recently Fishermen have been sailing further out to catch bigger fish, and a few of them claim to have spotted an island on the horizion not too far from our coast. Perhaps if we were to send some settlers over there it could be useful to us in the future... Or, we could sell it to someone else for some quick cash. Either way, we've come into some luck!"
+ por_djm.2.a: "Send out colonists!"
+ por_djm.2.b: "Sell it to Portugal, we dont need it."
+ por_djm.2.c: "Sell it to Castile, we dont need it."
+ por_djm.2.e: "Sell it to Morocco, we dont need it."
+ por_djm.3.t: "The Colonization of The Azores"
+ por_djm.3.d: "Recently Fishermen have been sailing further out to catch bigger fish, and a few of them claim to have spotted an island on the horizion not too far from our coast. Perhaps if we were to send some settlers over there it could be useful to us in the future... Or, we could sell it to someone else for some quick cash. Either way, we've come into some luck!"
+ por_djm.3.a: "Send out Colonists!"
+ por_djm.3.b: "Sell it to Portugal, we dont need it."
+ por_djm.3.c: "Sell it to Castile, we dont need it."
+ por_djm.3.e: "Sell it to Morocco, we dont need it."
+ por_djm.4.t: "The Colonization of Maderia"
+ por_djm.4.d: "Recently Fishermen have been sailing further out to catch bigger fish, and a few of them claim to have spotted an island on the horizion not too far from our coast. Perhaps if we were to send some settlers over there it could be useful to us in the future... Or, we could sell it to someone else for some quick cash. Either way, we've come into some luck!"
+ por_djm.4.a: "Send out Colonists"
+ por_djm.4.b: "Sell it to Portugal, we dont need it."
+ por_djm.4.c: "Sell it to Castile, we dont need it."
+ por_djm.4.e: "Sell it to Morocco, we dont need it."
+ 
  crusader_states.12.t: "The Plight of $KOJ$"
  crusader_states.12.d: ""
  crusader_states.12.a: "Send the Crusaders my best Knights!"
@@ -955,4 +974,5 @@
  crusader_states.19.t: "Aid Received from the [From.TAG.GetAdjective] [From.TAG.Monarch.GetName]"
  crusader_states.19.d: "The pious nation of [From.TAG.GetName] has sent us aid! May this aid be enough to help us starve off any who would wish harm onto us!"
  crusader_states.19.a: "Any aid is good aid!"
+ 
  

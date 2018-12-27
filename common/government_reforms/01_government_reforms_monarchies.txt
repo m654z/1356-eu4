@@ -1241,10 +1241,10 @@ chinese_kingdom_government_reform = {
 	valid_for_nation_designer = no
 	nation_designer_cost = 0
 	modifiers = {
-		max_states = 2
-		province_warscore_cost = -0.2
-		ae_impact = -0.15
-		diplomatic_upkeep = -1	
+		max_states = 4
+		province_warscore_cost = -0.25
+		ae_impact = -0.2
+		diplomatic_upkeep = -4	
 	}
 	custom_attributes = {
 		locked_government_type = yes
