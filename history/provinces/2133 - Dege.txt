@@ -21,6 +21,13 @@ discovered_by = indian
 extra_cost = 8
 center_of_trade = 1
 
+1356.12.25 = { 
+	add_province_modifier = small_nestorian_community
+}
+
+1400.1.1 = {
+	remove_province_modifier = small_nestorian_community
+}
 
 1709.1.1  = { discovered_by = SPA }
 1776.1.1  = {	owner = QNG

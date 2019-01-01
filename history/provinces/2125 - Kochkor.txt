@@ -21,7 +21,7 @@ discovered_by = indian
 discovered_by = nomad_group
 discovered_by = muslim
 
-1375.1.1  = { religion = sunni }
+1375.1.1  = { religion = sunni add_province_modifier = small_nestorian_community }
 1389.1.1  = { owner = TIM controller = TIM add_core = TIM }
 1409.5.13 = { owner = CHG controller = CHG remove_core = TIM }
 1429.1.1  = { owner = TRS controller = TRS add_core = TRS }

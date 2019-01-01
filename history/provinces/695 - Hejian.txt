@@ -19,7 +19,11 @@ add_core = YAN
 discovered_by = chinese
 discovered_by = nomad_group
 
-1368.9.14 = { owner = MNG controller = MNG add_core = MNG remove_core = YUA }
+1356.12.25 = { 
+	add_province_modifier = medium_nestorian_community
+}
+
+1368.9.14 = { owner = MNG controller = MNG add_core = MNG remove_core = YUA remove_province_modifier = medium_nestorian_community }
 1402.7.13 = { revolt = {} controller = MNG }
 1519.1.1  = { discovered_by = POR } # Tome Pires
 1542.1.1  = { unrest = 5 } # Assassination attemp on Shizong Emperor

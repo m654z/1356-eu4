@@ -1,0 +1,26 @@
+##Nestorian Minorities## #Really clones of the Parsi Minorities
+small_nestorian_community = {
+	trade_goods_size = 0.5
+	min_local_autonomy = 05
+}
+medium_nestorian_community = {
+	trade_goods_size = 0.75
+	local_development_cost = -0.05
+	local_unrest = -1
+	min_local_autonomy = 10
+}
+large_nestorian_community = {
+	trade_goods_size = 1
+	local_development_cost = -0.1
+	local_unrest = -2
+	local_culture_conversion_cost = 0.1
+	min_local_autonomy = 15
+}
+expelled_nestorian = {
+	prestige = 0.001
+}
+encourage_nestorian_growth = {
+	prestige = 0.001
+}
+
+

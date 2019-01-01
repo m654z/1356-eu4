@@ -1,0 +1,41 @@
+#####
+country_decisions = {
+	expell_nestorian_community_decision = { #Eventually allow them to return? #Associate an event with this everytime this occurs?
+		potential = {
+			always = no
+		}
+		allow = {
+			always = no
+		}
+		effect = {
+
+
+
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	encourage_growth_of_nestorian_community_decision = {
+		potential = {
+			ai = no
+			OR = {
+				any_owned_province = { has_province_modifier = small_nestorian_community }
+				any_owned_province = { has_province_modifier = medium_nestorian_community }
+				any_owned_province = { has_province_modifier = large_nestorian_community }
+			}
+			NOT = { has_country_modifier = expelled_nestorian }
+		}
+		allow = {
+			always = no
+		}
+		effect = {
+
+
+
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+}

@@ -133,3 +133,46 @@ country_event = {
 	}
 }
 
+country_event = { #Event to give Nations with Exploration Ideas a range bonus. #Should I make an event to clear the flag later?
+	id = flaageevents.2
+	title = "flaageevents.2.t"
+	desc = "flaageevents.2.d"
+	picture = HARBOUR_eventPicture
+	
+	major = yes
+
+	trigger = {
+		is_year = 1410
+		NOT = { is_year = 1470 }
+		has_idea_group = exploration_ideas
+		NOT = { has_country_flag = exploration_ideas_early_bonus }
+		num_of_ports = 6
+		treasury = 75
+	}
+	
+	mean_time_to_happen = {
+		months = 50
+	}
+	
+	option = { #The High Seas shall be explored!
+		name = "flaageevents.2.a"
+		set_country_flag = exploration_ideas_early_bonus
+		add_treasury = -75
+		define_advisor = {
+			type = navigator
+			discount = yes
+			skill = 1
+		}
+		add_country_modifier = { 
+			name = 1356_colonial_boost_exploration_modifier
+			duration = 6205  
+		}
+	}
+	option = { #Why would we sail West?
+		name = "flaageevents.2.b"
+		add_prestige = -5
+		set_country_flag = exploration_ideas_early_bonus
+	}
+	
+}
+

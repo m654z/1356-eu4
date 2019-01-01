@@ -19,6 +19,10 @@ discovered_by = ottoman
 discovered_by = chinese
 discovered_by = east_african
 
+1356.12.25 = { 
+	add_province_modifier = large_nestorian_community
+}
+
 1413.1.1 = { discovered_by = chinese }
 1498.1.1 = { discovered_by = POR }
 1663.1.1 = { # Dutch Malabar

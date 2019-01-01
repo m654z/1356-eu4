@@ -22,9 +22,13 @@ discovered_by = ottoman
 discovered_by = nomad_group
 discovered_by = indian
 
+1356.12.25 = { 
+	add_province_modifier = medium_nestorian_community
+}
+
 1365.7.1  = { controller = CHG }
 1369.1.1  = { controller = TRS }
-1370.4.9  = { owner = TIM controller = TIM }
+1370.4.9  = { owner = TIM controller = TIM add_core = TIM remove_province_modifier = medium_nestorian_communnity }
 1409.5.13 = { # Ulugh Beg is made Governor of Samarkand
 		owner = TRS
 		controller = TRS

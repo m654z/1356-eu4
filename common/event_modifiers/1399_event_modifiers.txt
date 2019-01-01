@@ -23,6 +23,13 @@ generic_men_flock_to_banner = {
 
 }
 
+1356_colonial_boost_exploration_modifier = {
+	navy_tradition = 0.25
+	naval_attrition = -0.05
+	range = 0.1
+	global_colonial_growth = -5
+}
+
 # North Europe region
 member_of_hansa_ev = {
 	trade_steering = 0.2

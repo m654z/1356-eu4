@@ -118,6 +118,9 @@ country_event = { #Event to colonize the Cannaries
 		
 	option = { #Sell it to Portugal (CAS)
 		name = por_djm_2.b
+		trigger = {
+			tag = CAS
+		}
 		add_treasury = 100
 		4565 = {
 			create_colony = 800
@@ -135,7 +138,9 @@ country_event = { #Event to colonize the Cannaries
 	
 	option = { #Sell it to Castile (POR)
 		name = por_djm_2.c
-		trigger = 
+		trigger = {
+			tag = POR
+		}
 		add_treasury = 100
 		4565 = {
 			create_colony = 800

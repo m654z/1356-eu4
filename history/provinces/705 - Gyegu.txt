@@ -18,7 +18,11 @@ discovered_by = chinese
 discovered_by = indian
 discovered_by = nomad_group
 
-1435.1.1 = { owner = KAM controller = KAM add_core = KAM }
+1356.12.25 = { 
+	add_province_modifier = medium_nestorian_community
+}
+
+1435.1.1 = { owner = KAM controller = KAM add_core = KAM remove_province_modifier = medium_nestorian_community}
 1637.6.1 = {	controller = KSD
 		owner = KSD
 		add_core = KSD 

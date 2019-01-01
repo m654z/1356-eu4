@@ -550,7 +550,117 @@ country_event = { #Burgundy being told Brabant said yes
 	}
 }
 
+country_event = { #Arles Cultural Decision
+	id = flavor_fla_bur.17
+	title = flavor_fla_bur.17.t
+	desc = flavor_fla_bur.17.desc
+	picture = DIPLOMACY_eventPicture
 
+	fire_only_once = yes
+	major = yes
+	
+	trigger = {
+		tag = ARE
+		OR = {
+			culture = burgundian
+			culture = arpitan
+			culture = occitain
+		}
+		is_at_war = no
+	}
+	
+	mean_time_to_happen = {
+		months = 24
+	}
+	
+	option = { #We are born Burgundians!
+		name = flavor_fla_bur.17.a
+		set_ruler_culture = burgundian
+		set_heir_culture = burgundian
+		change_primary_culture = burgundian
+		add_accepted_culture = occitain
+		add_accepted_culture = arpitan
+		capital_scope = {
+			change_culture = burgundian
+		}
+		add_prestige = -15
+		add_adm_power = 5		
+	}
+	option = { #We are born Arpitans!
+		name = flavor_fla_bur.17.b
+		set_ruler_culture = arpitan
+		set_heir_culture = arpitan
+		change_primary_culture = arpitan
+		add_accepted_culture = burgundian
+		add_accepted_culture = occitain
+		capital_scope = {
+			change_culture = arpitan
+		}
+		add_prestige = -15
+		add_dip_power = 5
+	}
+	option = { #We are born Occitans!
+		name = flavor_fla_bur.17.c
+		set_ruler_culture = occitain
+		set_heir_culture = occitain
+		change_primary_culture = occitain
+		add_accepted_culture = arpitan
+		add_accepted_culture = burgundian
+		capital_scope = {
+			change_culture = occitain
+		}
+		add_prestige = -20
+		add_mil_power = 10
+	}
+	option = { #We stay who we are!
+		name = flavor_fla_bur.17.e
+		add_prestige = 10
+		add_stability = 1
+	}
+}
+
+country_event = { #Arles Capital question.
+	id = flavor_fla_bur.18
+	title = flavor_fla_bur.18.t
+	desc = flavor_fla_bur.18.desc
+	picture = DIPLOMACY_eventPicture
+
+	fire_only_once = yes
+	
+	trigger = {
+		tag = ARE
+	}
+	
+	mean_time_to_happen = {
+		months = 24
+	}
+	
+	option = { #The Historical Capital!
+		name = flavor_fla_bur.18.a
+		201 = {
+			rename_capital = "Arles"
+			move_capital_effect = yes
+		}
+		
+	}
+	option = { #Savoy is the center of the nation!
+		name = flavor_fla_bur.18.b
+		205 = {
+			move_capital_effect = yes
+		}
+	}
+	option = { #Dijonnais is in the more centralized Burgundian Region!
+		name = flavor_fla_bur.18.c
+		192 = {
+			move_capital_effect = yes
+		}
+	}
+	option = { #It stays where it stands!
+		name = flavor_fla_bur.18.e
+		add_adm_power = 50
+		add_prestige = 5
+	}
+}
 
 
 	

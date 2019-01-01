@@ -26,12 +26,18 @@ extra_cost = 16
 center_of_trade = 2
 
 1355.1.1   = { unrest = 10 }
+
+1356.12.25 = { 
+	add_province_modifier = medium_nestorian_community
+}
+
 1394.1.1   = { owner = JNP controller = JNP unrest = 0  }
 
 1486.1.1 = {
 	owner = DLH
 	controller = DLH
 	add_core = DLH
+	remove_province_modifier = medium_nestorian_community
 	remove_core = JNP
 } # Bahlul Lodi places his eldest surviving son Barbak Shah Lodi on the throne of Jaunpur
 1517.11.21 = { controller = REB revolt = { type = nationalist_rebels } } #Revolt of Afghan Nobles

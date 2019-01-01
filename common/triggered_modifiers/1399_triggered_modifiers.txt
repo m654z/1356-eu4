@@ -170,18 +170,6 @@ new_power = { #Do we really need this? I set most of these to Historical Lucky N
 	army_tradition = 1
 }
 
-#time_of_peace = { #Is this an old leftover?
-#	potential = {
-#		has_country_flag = time_of_peace
-#		ai = yes
-#	}
-#	trigger = {
-#	
-#	}
-#
-#	global_unrest = -3	
-#}
-
 shia_persia = {
 	potential = {
 		culture_group = iranian
@@ -247,7 +235,6 @@ baltic_crusader = {
 	core_decay_on_your_own = 2
 	development_cost = 0.4
 	build_time = 0.3
-	diplomats = -1	
 	diplomatic_upkeep = 3
 	unjustified_demands = 0.25 
 	province_warscore_cost = 0.25 
@@ -277,7 +264,6 @@ baltic_crusader = {
 	development_cost = 0.3
 	technology_cost = -0.1
 	build_time = 0.25
-	diplomats = -1	
 	diplomatic_upkeep = 2
 	unjustified_demands = 0.2 
 	province_warscore_cost = 0.25
@@ -308,7 +294,6 @@ baltic_crusader = {
 	development_cost = 0.35
 	technology_cost = -0.05
 	build_time = 0.25
-	diplomats = -1	
 	diplomatic_upkeep = 2
 	unjustified_demands = 0.2
 	province_warscore_cost = 0.25 
@@ -341,7 +326,6 @@ baltic_crusader = {
 	global_institution_spread = -0.5
 	technology_cost = 0.15
 	build_time = 0.5
-	diplomats = -1	
 	diplomatic_upkeep = 2
 	years_of_nationalism = 10
 	unjustified_demands = 0.25 
@@ -412,7 +396,6 @@ baltic_crusader = {
 	raze_power_gain = 0.25
 	global_institution_spread = -0.25 #Is this bad?
 	build_time = 0.5
-	diplomats = -1	
 	diplomatic_upkeep = 1
 	improve_relation_modifier = -0.2
 	culture_conversion_cost = 0.5
