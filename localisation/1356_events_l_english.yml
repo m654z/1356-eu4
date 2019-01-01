@@ -957,6 +957,7 @@
  flasavoy.DESC1: "As the Duchy of Savoy has grown, it's become more and more culturally isolated. When it began as the County of Savoy it was part of the former Kingdom of Burgundy, but still Arpitan at that point. As it grew into Italy through inheritance & Conquest it was elevated to Duchy status in the early 1300's, and since then the Duchy of Savoy has had more interest in its Italian land than its home in Savoy. Perhaps it is time to accept the changes that have occured?"
  flasavoy.1.a: "We've become more Italian as we've grown, we are more Italian than Arpitan now!"
  flasavoy.1.b: "No! We stand by our Arpitan brothers and our French roots!"
+
  flavor_fla_bur.17.t: "The Cultural Question"
  flavor_fla_bur.17.d: "Now that the Kingdom of Arles is once again owned by an independent King many nobles from far away courts whisper of what we are culturally. Arles was formerly a Kingdom of Burgundy, however it has roots in its Arpitian provinces as well, seeing as how core they are to the nation. Then finally, lots of the common folk are considered Occitan, and would appreciate if we recognized them finally. /n/nRegardless of what decision we make, someone will be upset so we should think this over before shushing those whispers."
  flavor_fla_bur.17.a: "The Roots of Arles are Burgundian!"
@@ -980,6 +981,10 @@
  fla_iberia.2.d: "If you're seeing this somehow we broke something, sorry!"
  fla_iberia.2.a: "Whoops!"
  
+ flasavoy.2.t: "Public Welfare in Savoy"
+ flasavoy.2.d: "Amadeus VI, count of Savoy, created one of Europe's first systems of public welfare. By providing for the poor, we would of course run a lower risk of revolt, and our country would generally suffer less from war and poverty."
+ flasavoy.2.a: "We shall give to the needy!"
+ flasavoy.2.b: "They're just peasants, who cares about them?"
  icelandflavor.3.t: "The Settlement of Greenland"
  icelandflavor.3.d: ""
  icelandflavor.3.a: "Everything for our far away brothers!"

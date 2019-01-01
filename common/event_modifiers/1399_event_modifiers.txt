@@ -297,3 +297,9 @@ delhi_sultanate_collapse_modifier = { #Geno remove this when you rework Delhi
 	stability_cost_modifier = 0.5
 	years_of_nationalism = 10	
 }
+
+#Savoy
+sav_public_welfare = {
+	global_unrest = -1
+	war_exhaustion = -0.05
+}
