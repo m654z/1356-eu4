@@ -86,3 +86,36 @@ country_event = {
 		}
 	}
 }
+
+country_event = {
+	id = flasavoy.2
+	title = flasavoy.2.t 
+	desc = flasavoy.2.d 
+	picture = GOOD_WITH_MONARCH_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = SAV
+		is_year = 1370
+		NOT = { is_year = 1420 }
+	}
+	
+	mean_time_to_happen = {
+		months = 100
+	}
+	
+	option = {
+		name = flasavoy.2.a 
+		add_country_modifier = {
+			name = sav_public_welfare
+			duration = 18250
+		}
+		add_adm_power = -75
+	}
+	
+	option = {
+		name = flasavoy.2.b 
+		add_prestige = -5
+	}
+}
