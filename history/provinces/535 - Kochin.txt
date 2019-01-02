@@ -20,7 +20,10 @@ discovered_by = chinese
 discovered_by = east_african
 
 1356.12.25 = { 
-	add_province_modifier = large_nestorian_community
+	add_permanent_province_modifier = {
+		name = large_nestorian_community
+		duration = -1
+	}
 }
 
 1413.1.1 = { discovered_by = chinese }

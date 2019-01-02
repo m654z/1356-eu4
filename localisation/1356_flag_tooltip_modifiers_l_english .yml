@@ -326,4 +326,6 @@
  crusader_state_aid_received_success_tooltip: "[From.TAG.GetName] has sent us aid! It has already been delivered, may we make great use of it!"
  expansion_ideas_unlock_tooltip: "You will have access to the Expansion Ideas group."
  exploration_ideas_unlock_tooltip: "You will have access to the Exploration ideas group."
+ expell_nestorian_tooltip: "You will banish ALL Nestorians from your country, this can not be reversed."
  england_reign_in_northumberland_tt: "All Northumbrian Provinces in the British Isles will become English."
+ 

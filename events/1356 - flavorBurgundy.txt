@@ -228,6 +228,7 @@ country_event = { #Burgundians being told they need to fight or back off
 }
 
 ###Burgundian Chain to Purchase Namur###
+
 #Burgundian Event
 country_event = { #Burgundian Event to purchase Namur
 	id = flavor_fla_bur.8
@@ -398,6 +399,7 @@ country_event = { #Hainaut Event telling them Burgundy backed out
 }
 
 ###Brabant PU Chain###
+
 #Burgundian Event
 country_event = { #Burgundian Event that sets off the PU or annex Brabant chain
 	id = flavor_fla_bur.13
@@ -451,6 +453,7 @@ country_event = { #Burgundian Event that sets off the PU or annex Brabant chain
 		add_legitimacy = -5
 	}
 }
+
 #Brabant Event
 country_event = { #Brabant being told of the Union
 	id = flavor_fla_bur.14
@@ -484,6 +487,7 @@ country_event = { #Brabant being told of the Union
 		}
 	}
 }
+
 #Burgundian Event
 country_event = { #Burgundy being told Brabant said no
 	id = flavor_fla_bur.15
@@ -518,6 +522,7 @@ country_event = { #Burgundy being told Brabant said no
 		add_legitimacy = -5
 	}
 }
+
 #Burgundian Event
 country_event = { #Burgundy being told Brabant said yes
 	id = flavor_fla_bur.16
@@ -553,7 +558,7 @@ country_event = { #Burgundy being told Brabant said yes
 country_event = { #Arles Cultural Decision
 	id = flavor_fla_bur.17
 	title = flavor_fla_bur.17.t
-	desc = flavor_fla_bur.17.desc
+	desc = flavor_fla_bur.17.d
 	picture = DIPLOMACY_eventPicture
 
 	fire_only_once = yes
@@ -562,9 +567,9 @@ country_event = { #Arles Cultural Decision
 	trigger = {
 		tag = ARE
 		OR = {
-			culture = burgundian
-			culture = arpitan
-			culture = occitain
+			primary_culture = burgundian
+			primary_culture = arpitan
+			primary_culture = occitain
 		}
 		is_at_war = no
 	}
@@ -622,7 +627,7 @@ country_event = { #Arles Cultural Decision
 country_event = { #Arles Capital question.
 	id = flavor_fla_bur.18
 	title = flavor_fla_bur.18.t
-	desc = flavor_fla_bur.18.desc
+	desc = flavor_fla_bur.18.d
 	picture = DIPLOMACY_eventPicture
 
 	fire_only_once = yes

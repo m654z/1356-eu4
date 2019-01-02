@@ -23,7 +23,10 @@ discovered_by = ottoman
 discovered_by = chinese
 
 1356.12.25 = { 
-	add_province_modifier = medium_nestorian_community
+	add_permanent_province_modifier = {
+		name = medium_nestorian_community
+		duration = -1
+	}
 }
 
 1399.1.1  = { owner = MYS controller = MYS remove_core = VIJ }

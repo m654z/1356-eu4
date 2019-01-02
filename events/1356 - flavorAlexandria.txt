@@ -111,7 +111,7 @@ country_event = {
 		trigger = { tag = ALX }
 		ai_chance = { factor = 5 }
 		change_religion = coptic
-		change_culture = old_egyptian_mod
+		change_primary_culture = old_egyptian_mod
 		add_stability = -3
 		grant_independence = yes
 		MAM = { 
@@ -176,7 +176,7 @@ province_event = {
 			culture = old_egyptian_mod
 			religion = coptic
 		}
-		ROOT = {
+		owner = { #This should instead reference the TAG
 			NOT = { is_year = 1380 }
 			NOT = { has_global_flag = alexandria_massacure_flag }
 			NOT = { culture_group = byzantine }
@@ -203,13 +203,15 @@ province_event = {
 		trigger = { 
 			NOT = { 358 = { has_province_flag = alexandria_tolerated_copts_flag } }
 		}
-		add_treasury = -100
+		owner = { add_treasury = -100 }
 		hidden = {
-			358 = { set_province_flag = alexandria_tolerated_copts_flag }
-			country_event = { 
-				id = alexandriaflandy.3
-				days = 250
-				random = 180
+			owner = { #These need to reference the TAG not the ROOT
+				358 = { set_province_flag = alexandria_tolerated_copts_flag }
+				country_event = { 
+					id = alexandriaflandy.3
+					days = 250
+					random = 180
+				}
 			}
 		}
 	}
@@ -260,10 +262,7 @@ country_event = {
 			tag = DAM
 			tag = ENA
 			tag = KAF
-			tag = MAK
 		}
-		has_global_flag = alexandria_massacure_flag
-		
 	}
 	
 	mean_time_to_happen = {

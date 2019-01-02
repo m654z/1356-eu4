@@ -23,7 +23,10 @@ discovered_by = muslim
 discovered_by = ottoman
 
 1356.12.25 = { 
-	add_province_modifier = medium_nestorian_community
+	add_permanent_province_modifier = {
+		name = medium_nestorian_community
+		duration = -1
+	}
 }
 
 1389.1.1  = { owner = TIM controller = TIM add_core = TIM remove_province_modifier = medium_nestorian_community }

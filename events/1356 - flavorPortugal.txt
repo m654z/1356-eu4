@@ -85,7 +85,7 @@ country_event = { #Event to colonize the Cannaries
 		months = 30
 		modifier = {
 			factor = 0.1
-			NOT = { age = age_of_feudalism }
+			NOT = { current_age = age_of_feudalism }
 		}
 		modifier = {
 			factor = 0.1
@@ -126,13 +126,13 @@ country_event = { #Event to colonize the Cannaries
 			create_colony = 800
 			add_core = POR
 			change_religion = catholic
-			change_culture = portuguese
+			change_culture = portugese
 		}
 		366 = {
 			create_colony = 800
 			add_core = POR
 			change_religion = catholic
-			change_culture = portuguese
+			change_culture = portugese
 		}
 	}
 	
@@ -204,7 +204,7 @@ country_event = { #Event to colonize The Azores
 		months = 30
 		modifier = {
 			factor = 0.1
-			NOT = { age = age_of_feudalism }
+			NOT = { current_age = age_of_feudalism }
 		}
 		modifier = {
 			factor = 0.1
@@ -231,18 +231,21 @@ country_event = { #Event to colonize The Azores
 		
 	option = { #Sell it to Portugal (CAS)
 		name = por_djm_3.b
+		trigger = { tag = CAS exists = POR}
 		add_treasury = 100
 		367 = {
 			create_colony = 800
 			add_core = POR
 			change_religion = catholic
-			change_culture = portuguese
+			change_culture = portugese
 		}
 	}
 	
 	option = { #Sell it to Castile (POR)
 		name = por_djm_3.c
-		trigger = 
+		trigger = {
+			tag = POR exists = CAS
+		}
 		add_treasury = 100
 		367 = {
 			create_colony = 800
@@ -294,7 +297,7 @@ country_event = { #Event to colonize Maderia
 		months = 30
 		modifier = {
 			factor = 0.1
-			NOT = { age = age_of_feudalism }
+			NOT = { current_age = current_age }
 		}
 		modifier = {
 			factor = 0.1
@@ -321,18 +324,19 @@ country_event = { #Event to colonize Maderia
 		
 	option = { #Sell it to Portugal (CAS)
 		name = por_djm_4.b
+		trigger = { tag = CAS exists = POR}
 		add_treasury = 100
 		368 = {
 			create_colony = 800
 			add_core = POR
 			change_religion = catholic
-			change_culture = portuguese
+			change_culture = portugese
 		}
 	}
 	
 	option = { #Sell it to Castile (POR)
 		name = por_djm_4.c
-		trigger = 
+		trigger = { tag = POR exists = CAS}
 		add_treasury = 100
 		368 = {
 			create_colony = 800

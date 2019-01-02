@@ -1,7 +1,7 @@
 namespace = fla_nestorian
 
 ####Nestorian Community converts province to Nestorian####
-province_event = {
+province_event = { #Wouldnt this event just convert them while leaving the community?
 	id = fla_nestorian.1
 	title = "fla_nestorian.1.t"
 	desc = "fla_nestorian.1.d"
@@ -460,6 +460,55 @@ province_event = {
 			discount = yes
 			skill = 2
 		}
+	}
+}
+
+#Triggered Event to Expel Nestorians
+country_event = { ######CURRENTLY THIS DOESNT WORK. FUCK.
+	id = fla_nestorian.14
+	title = "fla_nestorian.14.t"
+	desc = "fla_nestorian.14.d"
+	picture = FORT_eventPicture
+
+	is_triggered_only = yes
+	#hidden = yes
+	
+	option = {
+		name = "fla_nestorian.14.a"		
+			all_owned_province = { 
+				remove_province_modifier = small_nestorian_community
+				remove_province_modifier = medium_nestorian_community
+				remove_province_modifier = large_nestorian_community
+			}
+	}
+}
+
+#Regular Event to Expel Nestorians that have already been Banished
+country_event = { ######CURRENTLY THIS DOESNT WORK. FUCK.
+	id = fla_nestorian.15
+	title = "fla_nestorian.15.t"
+	desc = "fla_nestorian.15.d"
+	picture = FORT_eventPicture
+
+	hidden = yes
+	
+	trigger = {
+		OR = {
+			has_province_modifier = large_nestorian_community
+			has_province_modifier = medium_nestorian_community
+			has_province_modifier = small_nestorian_community
+		}
+		has_country_modifier = expelled_nestorian 
+		had_recent_war = 10
+	}
+	
+	mean_time_to_happen = {
+		months = 24
+	}
+	
+	option = {
+		name = "fla_nestorian.15.a"		# Large nestorian Community Converts Province
+
 	}
 }
 
