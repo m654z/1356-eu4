@@ -350,7 +350,7 @@ country_event = { #Event for Catholics to send aid to Crusader States
 		months = 90
 		modifier = {
 			factor = 0.9
-			personality = righteous_personality
+			ruler_has_personality = righteous_personality
 		}
 		modifier = {
 			factor = 0.9

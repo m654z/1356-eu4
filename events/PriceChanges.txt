@@ -802,6 +802,7 @@ country_event = {
 			owns_core_province = 2573
 			owns_core_province = 981
 		}
+		NOT = { current_age = age_of_feudalism } #1356 #added to prevent norways colonies bugging this
 		NOT = { has_global_flag = great_fisheries_happened }
 		capital_scope = { NOT = { continent = north_america } }
 		capital_scope = { NOT = { continent = new_world } }
@@ -953,6 +954,7 @@ country_event = {
 				continent = new_world
 			}
 		}
+		NOT = { current_age = age_of_feudalism } #1356 #Added to prevent this spawning right off the bat
 		NOT = { has_global_flag = felt_hats_happened }
 	}
 	mean_time_to_happen = {

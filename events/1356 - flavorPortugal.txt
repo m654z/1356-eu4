@@ -67,12 +67,10 @@ country_event = { #Event to colonize the Cannaries
 		OR = {
 			tag = POR
 			tag = CAS
-			tag = SPA
 			AND = {
 				tag = MOR
 				NOT = { exists = POR }
 				NOT = { exists = CAS }
-				NOT = { exists = SPA }
 			}
 		}
 		num_of_ports = 5
@@ -82,7 +80,7 @@ country_event = { #Event to colonize the Cannaries
 	}
 	
 	mean_time_to_happen = {
-		months = 30
+		months = 500
 		modifier = {
 			factor = 0.1
 			NOT = { current_age = age_of_feudalism }
@@ -103,13 +101,13 @@ country_event = { #Event to colonize the Cannaries
 			}
 		}
 		4565 = {
-			create_colony = 800
+			cede_province = ROOT
 			add_core = ROOT
 			change_religion = ROOT
 			change_culture = ROOT
 		}
 		366 = {
-			create_colony = 800
+			cede_province = ROOT
 			add_core = ROOT
 			change_religion = ROOT
 			change_culture = ROOT
@@ -123,13 +121,13 @@ country_event = { #Event to colonize the Cannaries
 		}
 		add_treasury = 100
 		4565 = {
-			create_colony = 800
+			cede_province = POR
 			add_core = POR
 			change_religion = catholic
 			change_culture = portugese
 		}
 		366 = {
-			create_colony = 800
+			cede_province = POR
 			add_core = POR
 			change_religion = catholic
 			change_culture = portugese
@@ -143,13 +141,13 @@ country_event = { #Event to colonize the Cannaries
 		}
 		add_treasury = 100
 		4565 = {
-			create_colony = 800
+			cede_province = CAS
 			add_core = CAS
 			change_religion = catholic
 			change_culture = castillian
 		}
 		366 = {
-			create_colony = 800
+			cede_province = CAS
 			add_core = CAS
 			change_religion = catholic
 			change_culture = castillian
@@ -160,13 +158,13 @@ country_event = { #Event to colonize the Cannaries
 		name = por_djm_2.e
 		add_treasury = 100
 		4565 = {
-			create_colony = 999
+			cede_province = MOR
 			add_core = MOR
 			change_religion = sunni
 			change_culture = moroccan
 		}
 		366 = {
-			create_colony = 950
+			cede_province = MOR
 			add_core = MOR
 			change_religion = sunni
 			change_culture = moroccan
@@ -187,12 +185,10 @@ country_event = { #Event to colonize The Azores
 		OR = {
 			tag = POR
 			tag = CAS
-			tag = SPA
 			AND = {
 				tag = MOR
 				NOT = { exists = POR }
 				NOT = { exists = CAS }
-				NOT = { exists = SPA }
 			}
 		}
 		num_of_ports = 5
@@ -218,11 +214,10 @@ country_event = { #Event to colonize The Azores
 			OR = {
 				tag = POR
 				tag = CAS
-				tag = SPA
 			}
 		}
 		367 = {
-			create_colony = 800
+			cede_province = ROOT
 			add_core = ROOT
 			change_religion = ROOT
 			change_culture = ROOT
@@ -234,7 +229,7 @@ country_event = { #Event to colonize The Azores
 		trigger = { tag = CAS exists = POR}
 		add_treasury = 100
 		367 = {
-			create_colony = 800
+			cede_province = POR
 			add_core = POR
 			change_religion = catholic
 			change_culture = portugese
@@ -248,7 +243,7 @@ country_event = { #Event to colonize The Azores
 		}
 		add_treasury = 100
 		367 = {
-			create_colony = 800
+			cede_province = CAS
 			add_core = CAS
 			change_religion = catholic
 			change_culture = castillian
@@ -259,7 +254,7 @@ country_event = { #Event to colonize The Azores
 		name = por_djm_3.e
 		add_treasury = 100
 		367 = {
-			create_colony = 999
+			cede_province = MOR
 			add_core = MOR
 			change_religion = sunni
 			change_culture = moroccan
@@ -280,12 +275,10 @@ country_event = { #Event to colonize Maderia
 		OR = {
 			tag = POR
 			tag = CAS
-			tag = SPA
 			AND = {
 				tag = MOR
 				NOT = { exists = POR }
 				NOT = { exists = CAS }
-				NOT = { exists = SPA }
 			}
 		}
 		num_of_ports = 5
@@ -297,7 +290,7 @@ country_event = { #Event to colonize Maderia
 		months = 30
 		modifier = {
 			factor = 0.1
-			NOT = { current_age = current_age }
+			NOT = { current_age = age_of_feudalism }
 		}
 		modifier = {
 			factor = 0.1
@@ -311,11 +304,10 @@ country_event = { #Event to colonize Maderia
 			OR = {
 				tag = POR
 				tag = CAS
-				tag = SPA
 			}
 		}
 		368 = {
-			create_colony = 800
+			cede_province = ROOT
 			add_core = ROOT
 			change_religion = ROOT
 			change_culture = ROOT
@@ -327,7 +319,7 @@ country_event = { #Event to colonize Maderia
 		trigger = { tag = CAS exists = POR}
 		add_treasury = 100
 		368 = {
-			create_colony = 800
+			cede_province = POR
 			add_core = POR
 			change_religion = catholic
 			change_culture = portugese
@@ -339,7 +331,7 @@ country_event = { #Event to colonize Maderia
 		trigger = { tag = POR exists = CAS}
 		add_treasury = 100
 		368 = {
-			create_colony = 800
+			cede_province = CAS
 			add_core = CAS
 			change_religion = catholic
 			change_culture = castillian
@@ -350,7 +342,7 @@ country_event = { #Event to colonize Maderia
 		name = por_djm_4.e
 		add_treasury = 100
 		368 = {
-			create_colony = 999
+			cede_province = MOR
 			add_core = MOR
 			change_religion = sunni
 			change_culture = moroccan

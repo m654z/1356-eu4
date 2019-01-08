@@ -47,3 +47,18 @@ large_nestorian_community = {
 	min_local_autonomy = 15
 	picture = "icon_religious" #Make a Special Icon for this
 }
+
+#Greenland Carrier 
+
+groenlands_knorr_prov_modifier = { #Greenland
+	local_production_efficiency = 0.1
+	local_build_cost = -0.15
+	local_development_cost = -0.1
+	local_institution_spread = 0.25
+}
+
+groenlands_knorr_stockholm_modifier = { #Stockholm
+	province_trade_power_modifier = 0.05
+	local_production_efficiency = 0.1
+	local_institution_spread = 0.05
+}

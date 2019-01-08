@@ -13,6 +13,7 @@ religious_school = jafari_school
 	monarch = {
 		name = "Mehmed I"
 		dynasty = "Eretna"
+		culture = uyghur
 		adm = 3
 		dip = 2
 		mil = 2

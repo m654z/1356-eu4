@@ -602,35 +602,6 @@ scandinavian = { #Nordic #1356
 			Alfredsson Andersson Assarsson Batra Billgren Broman Ekberg Glans Gjedde Glenmark Hansson Jansson Ibrahimovic Järegård Kulle Larsson Lohmander Lundberg Malmkvist Malmsjö Melander Möller Nordqvist Nordström Ohlmarks Persson Poppe Ranelid Sundström Troell Wester Olsson
 		}
 	}
-	vinlandish = { #Colonial Norwegian?
-		primary = NOR
-		male_names = {
-			Ale Alfr Alfgeir Anders Anlaufr Anundr Arnbjörn Arngrimr Arni Arnfast Asbjörn Bagge Baldr Barid Bengt Bersi Bertil Birger Björn Bo Borkvard Botulfr Bragi Buðli
-			Dag Dan Dyre Eilif Egill Emund Einarr Eirikr Eskild Falki Faste Filip Fredrik Frirek Froði Freyr Folki Gandalfr Geirr Georg Gnupa Gorm Greger Grimr Guðfrið Guðmundr Guðröðr Gunnarr Hakon Halsten Haraldr Haukr Helgi
-			Hemming Holmger Hrafn Hrolfr Hrane Hæsteinn Hjalmar Hroðgar Hroðulfr Hrörekr Ingólfr Ingemar Ingjald Ivar Jedvard Jonn Karl Kettil Kettilmund Kjartan Klas Knut Kol Kolbjörn Magnus Markus
-			Magni Mats Nils Niklas Oddr Ofeig Olafr Ormr Ottarr Refr Refil Ragnarr Rikulfr Rögnvaldr Skuli Snorri Sigbjörn Sigtrygg Sigurðr Starkaðr Steinn Sturla Styrbjörn Styrkar Sumarliði Suni Sveinn
-			Sverker Sæmundr Sölvi Sörkver Tjudmund Toke Tolir Þorbjörn Þorfinn Þorbrandr Þordr Þorgil Þorsteinn Þorolfr Toste Totil Tryggve Tyke Ulfr Vagn Valdemar Åke Yngvar Örvar Öysteinn
-		}
-		female_names = {
-			Aleta Alfhildr Alfrið Alvör Anna Asa Aslaug Asta Astrid Beata Birgitta Björg Bodil Bothildr Cecilia
-			Edla Elin Elisabet Freyja Gerðr Gloð Grima Gunnhildr Gurli Gudrun Gyla Gyrið Gyða Hafrid Halla Helena Holmfrid
-			Iliana Inga Ingfrid Ingibjörg Ingegerd Ingridd Karin Katarina Kraka Kristina Linda Maer
-			Malmfrið Margareta Maria Rikissa Ragnfrid Rögnhildr Saga Sara Sif Sigrid Skuld Sofia
-			Svanhildr Ulfhildr Vigdis Ylva Yrsa Þora Þordis Þyra
-		}
-		dynasty_names = {
-			"Hårfagreætta" "Bielke" "Bildt" "Galte" "Paus" "Smør" "Benkestok" "Kane" "Bonde"
-			"Drake" "av Hafrsfjord" "Ytra" "av Askø" "Koss" "av Røra" "av Nordland" "Hylling"
-			"Alfr" "Herja" "Vansö" "Flod" "af Vendel" "av Alfheim" Vidfamne "Bille"
-			"Iuel" "Kaas" "Rosenkrantz" "Urne" "Adeler" "Blixenskiold" "Gyldenpalm" "Holberg"
-			"Rosenheim" "Schouboe" "Tordenskiold" "Wessel" "Westervick" "Falsen" "Knagenhjelm"
-			"Galtung" "Heubsch" "Kløcker" "Løvenskiold" "Rosenvinge" "Werenskiold" "Kruckow"
-			"Mowat" "Rømer" "Handingmann" "Skaktavl" "Tordenstierne" Roos 
-			# CKII
-			"Skanke" "Bolt" "Giske" "Brockenhuus" "Adelswärd" "Kane" "Blixen" "Løvendal" "Balke"
-			"Vedel" "Bjelke" "Galle" "Griis"
-		}
-	}
 
 #End 1356 Cultures
 }	

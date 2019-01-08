@@ -249,3 +249,116 @@ country_event = {
 	}
 	
 }
+
+##############################
+#  Written by Count Flandy   #
+##############################
+
+#Sweden Only
+country_event = { #The Greenland Carrier Start
+	id = scan_djm.5
+	title = scan_djm.5.t
+	desc = scan_djm.5.d
+	picture = NAVAL_MILITARY_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = SWE
+		current_age = age_of_feudalism
+		1104 = { is_core = NOR }
+		1105 = { is_core = NOR }
+		is_subject = no
+		is_at_war = no
+	}
+	
+	mean_time_to_happen = {
+		months = 200
+	}
+	
+	option = { #Send the ship!
+		name = scan_djm.5.a
+		add_treasury = -20
+		country_event = { 
+			id = scan_djm.6
+			days = 365
+			random = 180
+		}
+	}	
+	option = { #We can not afford this
+		name = scan_djm.5.b
+		add_prestige = 1
+	}
+	
+}
+
+#Sweden Only
+country_event = { #The Greenland Carrier reports on Greenland
+	id = scan_djm.6
+	title = scan_djm.6.t
+	desc = scan_djm.6.d
+	picture = NAVAL_MILITARY_eventPicture
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+		
+	option = { #Interesting...let us continue this!
+		name = scan_djm.6.a
+		set_country_flag = greenland_carrier_flag
+		add_treasury = -50
+		1104 = {
+			add_permanent_province_modifier = { 
+				name = groenlands_knorr_prov_modifier
+				duration = -1  
+			}
+		}
+		1105 = {
+			add_permanent_province_modifier = { 
+				name = groenlands_knorr_prov_modifier
+				duration = -1  
+			}
+		}
+		1 = {
+			add_permanent_province_modifier = { 
+				name = groenlands_knorr_stockholm_modifier
+				duration = -1  
+			}
+		}
+	}
+	option = { #Interesting. Leave them to their own devices.
+		name = scan_djm.6.b
+	}
+	
+}
+
+#Sweden Only
+country_event = { #The Greenland Carrier Sinks
+	id = scan_djm.7
+	title = scan_djm.7.t
+	desc = scan_djm.7.d
+	picture = SHIP_SAILING_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = SWE
+		has_country_flag = greenland_carrier_flag
+		NOT = { stability = 0 }
+	}
+	
+	mean_time_to_happen = {
+		months = 500
+	}
+	
+	option = { #Replace it!
+		name = scan_djm.7.a
+		add_treasury = -100
+	}
+	option = { #We can not afford this.
+		name = scan_djm.7.b
+		1104 = { remove_province_modifier = groenlands_knorr_prov_modifier }
+		1105 = { remove_province_modifier = groenlands_knorr_prov_modifier }
+		1 = { remove_province_modifier = groenlands_knorr_stockholm_modifier }
+	}
+	
+}

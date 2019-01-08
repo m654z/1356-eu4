@@ -230,12 +230,14 @@ province_event = {
 	option = {
 		name = "fla_nestorian.7.a"		# Large nestorian Community Converts Province
 		ai_chance = { factor = 100 }
-		define_advisor = {
-			type = trader
-			culture = assyrian
-			religion = nestorian
-			discount = yes
-			skill = 2
+		owner = {
+			define_advisor = {
+				type = trader
+				culture = assyrian
+				religion = nestorian
+				discount = yes
+				skill = 2
+			}
 		}
 	}
 }
@@ -267,12 +269,14 @@ province_event = {
 	option = {
 		name = "fla_nestorian.8.a"		# Large nestorian Community Converts Province
 		ai_chance = { factor = 100 }
-		define_advisor = {
-			type = commandant
-			culture = assyrian
-			religion = nestorian
-			discount = yes
-			skill = 2
+		owner = {
+			define_advisor = {
+				type = commandant
+				culture = assyrian
+				religion = nestorian
+				discount = yes
+				skill = 2
+			}
 		}
 	}
 }
@@ -304,12 +308,14 @@ province_event = {
 	option = {
 		name = "fla_nestorian.9.a"		# Large nestorian Community Converts Province
 		ai_chance = { factor = 100 }
-		define_advisor = {
-			type = grand_captain
-			culture = assyrian
-			religion = nestorian
-			discount = yes
-			skill = 2
+		owner = {
+			define_advisor = {
+				type = grand_captain
+				culture = assyrian
+				religion = nestorian
+				discount = yes
+				skill = 2
+			}
 		}
 	}
 }
@@ -341,12 +347,14 @@ province_event = {
 	option = {
 		name = "fla_nestorian.10.a"		# Large nestorian Community Converts Province
 		ai_chance = { factor = 100 }
-		define_advisor = {
-			type = diplomat
-			culture = assyrian
-			religion = nestorian
-			discount = yes
-			skill = 2
+		owner = {
+			define_advisor = {
+				type = diplomat
+				culture = assyrian
+				religion = nestorian
+				discount = yes
+				skill = 2
+			}
 		}
 	}
 }
@@ -378,12 +386,14 @@ province_event = {
 	option = {
 		name = "fla_nestorian.11.a"		# Large nestorian Community Converts Province
 		ai_chance = { factor = 100 }
-		define_advisor = {
-			type = master_of_mint
-			culture = assyrian
-			religion = nestorian
-			discount = yes
-			skill = 2
+		owner = {
+			define_advisor = {
+				type = master_of_mint
+				culture = assyrian
+				religion = nestorian
+				discount = yes
+				skill = 2
+			}
 		}
 	}
 }
@@ -415,12 +425,14 @@ province_event = {
 	option = {
 		name = "fla_nestorian.12.a"		# Large nestorian Community Converts Province
 		ai_chance = { factor = 100 }
-		define_advisor = {
-			type = treasurer
-			culture = assyrian
-			religion = nestorian
-			discount = yes
-			skill = 2
+		owner = {
+			define_advisor = {
+				type = treasurer
+				culture = assyrian
+				religion = nestorian
+				discount = yes
+				skill = 2
+			}
 		}
 	}
 }
@@ -453,38 +465,68 @@ province_event = {
 	option = {
 		name = "fla_nestorian.13.a"		# Large nestorian Community Converts Province
 		ai_chance = { factor = 100 }
-		define_advisor = {
-			type = treasurer
-			culture = assyrian
-			religion = nestorian
-			discount = yes
-			skill = 2
+		owner = {
+			define_advisor = {
+				type = treasurer
+				culture = assyrian
+				religion = nestorian
+				discount = yes
+				skill = 2
+			}
 		}
 	}
 }
 
-#Triggered Event to Expel Nestorians
-country_event = { ######CURRENTLY THIS DOESNT WORK. FUCK.
-	id = fla_nestorian.14
-	title = "fla_nestorian.14.t"
-	desc = "fla_nestorian.14.d"
-	picture = FORT_eventPicture
+#The Next Two Events are commented out because it was easier to turn them both into a single Province event. 
 
-	is_triggered_only = yes
+#Triggered Event to Expel Nestorians
+# country_event = { 
+	# id = fla_nestorian.14
+	# title = "fla_nestorian.14.t"
+	# desc = "fla_nestorian.14.d"
+	# picture = FORT_eventPicture
+	# is_triggered_only = yes
 	#hidden = yes
-	
-	option = {
-		name = "fla_nestorian.14.a"		
-			all_owned_province = { 
-				remove_province_modifier = small_nestorian_community
-				remove_province_modifier = medium_nestorian_community
-				remove_province_modifier = large_nestorian_community
-			}
-	}
-}
+	# option = {
+		# name = "fla_nestorian.14.a"		
+			# all_owned_province = { 
+				# remove_province_modifier = small_nestorian_community
+				# remove_province_modifier = medium_nestorian_community
+				# remove_province_modifier = large_nestorian_community
+			# }
+	# }
+# }
 
 #Regular Event to Expel Nestorians that have already been Banished
-country_event = { ######CURRENTLY THIS DOESNT WORK. FUCK.
+# country_event = { ######CURRENTLY THIS DOESNT WORK. FUCK.
+	# id = fla_nestorian.15
+	# title = "fla_nestorian.15.t"
+	# desc = "fla_nestorian.15.d"
+	# picture = FORT_eventPicture
+	# hidden = yes
+	# trigger = {
+		# OR = {
+			# any_owned_province = { has_province_modifier = large_nestorian_community }
+			# any_owned_province = { has_province_modifier = medium_nestorian_community }
+			# any_owned_province = { has_province_modifier = small_nestorian_community }
+		# }
+		# has_country_modifier = expelled_nestorian 
+		# had_recent_war = 10
+	# }
+	# mean_time_to_happen = {
+		# months = 24
+	# }
+	# option = {
+		# name = "fla_nestorian.15.a"		# Large nestorian Community Converts Province
+		# all_owned_province = { 
+			# remove_province_modifier = small_nestorian_community
+			# remove_province_modifier = medium_nestorian_community
+			# remove_province_modifier = large_nestorian_community
+		# }
+	# }
+# }
+
+province_event = { ######CURRENTLY THIS DOESNT WORK. FUCK.
 	id = fla_nestorian.15
 	title = "fla_nestorian.15.t"
 	desc = "fla_nestorian.15.d"
@@ -498,8 +540,10 @@ country_event = { ######CURRENTLY THIS DOESNT WORK. FUCK.
 			has_province_modifier = medium_nestorian_community
 			has_province_modifier = small_nestorian_community
 		}
-		has_country_modifier = expelled_nestorian 
-		had_recent_war = 10
+		owner = {
+			has_country_modifier = expelled_nestorian 
+			had_recent_war = 10
+		}
 	}
 	
 	mean_time_to_happen = {
@@ -508,8 +552,11 @@ country_event = { ######CURRENTLY THIS DOESNT WORK. FUCK.
 	
 	option = {
 		name = "fla_nestorian.15.a"		# Large nestorian Community Converts Province
-
+		remove_province_modifier = small_nestorian_community
+		remove_province_modifier = medium_nestorian_community
+		remove_province_modifier = large_nestorian_community
 	}
 }
+
 
 

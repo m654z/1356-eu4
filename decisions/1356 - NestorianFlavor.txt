@@ -22,8 +22,22 @@ country_decisions = {
 			}
 			remove_country_modifier = encourage_nestorian_growth
 			country_event = { 
-				id = fla_nestorian.14
+				id = fla_nestorian.15
 				days = 1
+			}
+			random_country = {
+				limit = {
+					NOT = { tag = TIM }
+					NOT = { has_country_modifier = expelled_nestorian }
+					any_owned_province = {
+						sea_zone = {
+							any_neighbor_province = {
+								owned_by = ROOT
+							}
+						}
+					}
+				}
+				country_event = {  id = assyrianeventsfla.2 days = 10 }
 			}			
 		}
 		ai_will_do = {

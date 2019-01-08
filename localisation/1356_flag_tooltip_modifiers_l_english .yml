@@ -181,7 +181,8 @@
  large_nestorian_community: "Large Nestorian Community"
  expelled_nestorian: "Expelled the Nestorians"
  encourage_nestorian_growth: "Encourage Nestorian Growth"
- 
+ groenlands_knorr_stockholm_modifier: "The Groenlands Knorr"
+ groenlands_knorr_prov_modifier: "The Groenlands Knorr"
  #Policies
  desc_the_inquisitor_act: "The Inquisitor Act"
  desc_blessings_of_religious_leaders: "Blessings of Religious Leaders"
@@ -318,6 +319,7 @@
  yua_toqtoa_diplomacy_reform_mission_8_modifier: "Diplomacy Reform"
  yua_toqtoa_diplomacy_reform_mission_9_modifier: "Diplomacy Reform"
  forming_swiss_diplomatically_tooltip: "$TAG% needs to be the overlord of the following nations. Bern, Zurich, Thurgau, Churraetia, and Wallis."
+
  crusader_accepting_crusaders_decision_tooltip: "We send word to the Papacy and other pious Catholics in Europe that we need aid to further clense our borders of hethens!"
  gave_aid_to_crusader_state_modifier_desc: "The Crusaders in the Holy Land requested aid in any form in order to continue the fight against the heathens that occupy the Holy Land, and we sent all the aid we can spare! We can only pray that it is enough."
  rejected_aid_to_crusader_state_modifier_desc: "The vile Crusaders in the Holy Land requested aid to continue their bitter fight against the heathens that occupy the Holy Land, they have already squandered all the aid previous Kings sent them, so why should we bother to aid a failing cause?"
@@ -328,4 +330,9 @@
  exploration_ideas_unlock_tooltip: "You will have access to the Exploration ideas group."
  expell_nestorian_tooltip: "You will banish ALL Nestorians from your country, this can not be reversed."
  england_reign_in_northumberland_tt: "All Northumbrian Provinces in the British Isles will become English."
+ timur_993_dont_kill_tt: "By choosing this option you will no longer receive events about the Assyrian Genocide & Nestorian Genocide by Timur, and elect to leave them be from here on."
+ timur_993_kill_nestorian_community_tt: "You choose to remove all Nestorian Minorities from your nation. However, your neighbors will grow in strength from this."
+ chinese_warlord_dont_banish_nestorians_tt: "By choosing this option you will no longer receive events about banishing Nestorians from your country, and elect to leave them where they are."
+ chinese_warlord_banish_nestorians_tt: "By choosing this option any provinces under your control containing Nestorian minorities will be removed. There will be no way to get them back. They will leave your nation forever."
+ 
  

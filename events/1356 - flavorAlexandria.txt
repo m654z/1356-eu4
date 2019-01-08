@@ -176,7 +176,9 @@ province_event = {
 			culture = old_egyptian_mod
 			religion = coptic
 		}
-		owner = { #This should instead reference the TAG
+		exists = MAM
+		MAM = { #This should instead reference the TAG
+			tag = MAM
 			NOT = { is_year = 1380 }
 			NOT = { has_global_flag = alexandria_massacure_flag }
 			NOT = { culture_group = byzantine }
@@ -192,9 +194,11 @@ province_event = {
 	option = { #No extra help to the minorities -If Mamluks/Alexandria pick this then remove the Coptic Advisor events from Mamluks
 		name = alexandriaflandy.4.a
 		set_global_flag = alexandria_massacure_flag 
-		country_event = { #Tells the world that the Copts in Alexandria are nothing more but a Minority now, and any chance they may return to their height is now gone.
-			id = alexandriaflandy.5
-			days = 30
+		MAM = {
+			country_event = { #Tells the world that the Copts in Alexandria are nothing more but a Minority now, and any chance they may return to their height is now gone.
+				id = alexandriaflandy.5
+				days = 30
+			}
 		}
 
 	}
@@ -204,14 +208,12 @@ province_event = {
 			NOT = { 358 = { has_province_flag = alexandria_tolerated_copts_flag } }
 		}
 		owner = { add_treasury = -100 }
-		hidden = {
-			owner = { #These need to reference the TAG not the ROOT
-				358 = { set_province_flag = alexandria_tolerated_copts_flag }
-				country_event = { 
-					id = alexandriaflandy.3
-					days = 250
-					random = 180
-				}
+		owner = { #These need to reference the TAG not the ROOT
+			358 = { set_province_flag = alexandria_tolerated_copts_flag }
+			country_event = { 
+				id = alexandriaflandy.3
+				days = 250
+				random = 180
 			}
 		}
 	}
@@ -254,15 +256,15 @@ country_event = {
 	trigger = {
 		has_global_flag = alexandria_massacure_flag
 		religion = coptic
-		OR = {
-			tag = ETH
-			tag = ALO
-			tag = MED
-			tag = MAK
-			tag = DAM
-			tag = ENA
-			tag = KAF
-		}
+		# OR = {
+			# tag = ETH
+			# tag = ALO
+			# tag = MED
+			# tag = MAK
+			# tag = DAM
+			# tag = ENA
+			# tag = KAF
+		# }
 	}
 	
 	mean_time_to_happen = {

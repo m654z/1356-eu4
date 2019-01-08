@@ -24,13 +24,14 @@ country_decisions = {
 			is_subject = no
 			is_at_war = no
 			NOT = { government = tribal }
-			stability = 1
+			stability = 2
+			prestige = 0
 			NOT = { war_exhaustion = 5 }
 			current_age = age_of_feudalism
 			num_of_total_ports = 5
 			total_development = 75
-			navy_size_percentage = 0.50
-			navy_tradition = 10
+			navy_size_percentage = 0.75
+			navy_tradition = 15
 		}
 		effect = { 
 			set_country_flag = age_of_discovery_decision_flag
@@ -38,7 +39,7 @@ country_decisions = {
 		}
 		
 		ai_will_do = {
-			factor = 100
+			factor = 500
 		}
 	}
 	expansion_decision_unlock = {
