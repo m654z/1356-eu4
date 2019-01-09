@@ -20,7 +20,19 @@ discovered_by = eastern
 discovered_by = nomad_group
 discovered_by = indian
 
-1356.1.1 = { owner = SYR controller = SYR add_core = SYR }
+1356.12.24  = { 
+				owner = ATO controller = ATO add_core = ATO
+				religion = nestorian
+} #BT In
+
+1356.12.26  = { 
+				owner = SYR controller = SYR remove_core = ATO
+				religion = sunni
+} #BT Out
+
+#1356.12.24  = { controller = ATO add_claim = ATO add_claim = TPL add_claim = MAM } #BT In
+#1356.12.26  = { controller = SYR remove_claim = ATO remove_claim = TPL remove_claim = MAM } #BT Out
+
 1444.1.1 = { add_core = MAM owner = MAM controller = MAM remove_core = SYR }
 1516.8.24 = {
 	owner = TUR

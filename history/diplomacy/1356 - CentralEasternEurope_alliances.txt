@@ -10,7 +10,7 @@ dependency = {
 	subject_type = "canton"
 	first = ZUR
 	second = RAE
-	start_date = 1355.1.1
+	start_date = 1356.12.26
 	end_date = 1790.1.1
 }
 
@@ -145,14 +145,16 @@ vassal = {
 alliance = {
 	first = BOH
 	second = TEU
-	start_date = 1347.10.11
+	#start_date = 1347.10.11 #Changed for Balance
+	start_date = 1356.12.26
 	end_date = 1378.11.29
 }
 
 guarantee = {
 	first = BOH
 	second = LIV
-	start_date = 1347.10.11
+	#start_date = 1347.10.11 #BT Balance
+	start_date = 1356.12.26
 	end_date = 1378.11.29
 }
 
@@ -184,7 +186,8 @@ union = {
 vassal = {
 	first = HAB
 	second = THG
-	start_date = 1282.12.17
+	#start_date = 1282.12.17
+	start_date = 1356.12.26 #BT Balance
 	end_date = 1379.9.25
 }
 
@@ -413,7 +416,7 @@ vassal = { #Autonomy restored by Maria Threasa
 	end_date = 1876.1.1
 }
 
-vassal = {
+vassal = { #Theey appear to both have an alliance & Vassalage at the same time...
 	first = TEU
 	second = LIV
 	start_date = 1356.12.25

@@ -21,6 +21,9 @@ discovered_by = western
 discovered_by = muslim
 discovered_by = ottoman
 
+1356.12.24  = { owner = BER controller = BER } #BT In
+1356.12.26  = { owner = FRA controller = FRA } #BT Out
+
 1360.10.24 = { owner = BER controller = BER } # Duchy of Berry created
 1416.6.15  = { owner = FRA controller = FRA } # Death of Jean de Valois
 1517.4.11  = { owner = BER controller = BER } # Duchy of Berry created

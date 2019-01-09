@@ -11,7 +11,7 @@ historical_friend = HSA # Lübeck
 historical_friend = BRE # Bremen
 historical_friend = RIG # Riga
 
-1356.1.1 = {
+1356.12.25 = {
 	monarch = {
 		name = "Stadtrat"
 		adm = 2
@@ -20,6 +20,9 @@ historical_friend = RIG # Riga
 		regent = yes
 	}
 }
+
+1356.12.24 = { government = republic merchants_reform }
+1356.12.26 = { government = republic add_government_reform = free_city }
 
 1529.1.1 = { religion = protestant }
 

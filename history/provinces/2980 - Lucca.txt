@@ -22,6 +22,9 @@ discovered_by = ottoman
 extra_cost = 8
 center_of_trade = 1
 
+1356.12.24  = { owner = LUC controller = LUC } #BT In
+1356.12.26  = {  owner = PIS controller = PIS } #BT Out
+
 1370.3.1  = { owner = LUC controller = LUC }
 1400.3.1  = { owner = MLO controller = MLO }
 1402.9.3  = { owner = LUC controller = LUC }

@@ -12,6 +12,9 @@ base_production = 5
 base_manpower = 4
 is_city = yes
 add_core = ERE
+
+1356.12.24  = { owner = RUM controller = RUM add_core = RUM } #BT In
+1356.12.26  = { owner = ERE controller = ERE remove_core = RUM } #BT Out
 discovered_by = western
 discovered_by = eastern
 discovered_by = muslim

@@ -6,6 +6,11 @@ religion = catholic
 primary_culture = austrian
 capital = 1863	# Graz
 
+# BT In
+historical_friend = HAB
+historical_rival = CTH
+# BT Out
+
 1379.9.25 = {
 	monarch = {
 		name = "Leopold III"

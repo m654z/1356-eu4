@@ -21,6 +21,9 @@ discovered_by = ottoman
 extra_cost = 8
 center_of_trade = 1
 
+1356.12.24  = { hre = yes add_claim = CDR } #BT In
+1356.12.26  = { hre = no remove_claim = CDR } #BT Out
+
 1369.1.1   = { owner = PAP controller = PAP add_core = PAP }
 1375.1.1   = { owner = URB controller = URB remove_core = PAP }
 1626.1.1   = { controller = PAP owner = PAP add_core = PAP } # Annexed to the Holy See

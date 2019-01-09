@@ -23,6 +23,9 @@ discovered_by = ottoman
 extra_cost = 16
 center_of_trade = 2
 
+1356.12.24  = { owner = CHP controller = CHP add_core = NAV } #BT In
+1356.12.26  = { owner = FRA controller = FRA remove_core = NAV} #BT Out
+
 1349.10.6  = { add_core = NAV }
 1404.6.9   = { remove_core = NAV }
 1420.5.12  = { owner = ENG controller = ENG add_core = ENG } # Treaty of Troyes, ceded to the English

@@ -333,7 +333,7 @@ vassal = {
 vassal = {
 	first = MAM
 	second = SYR
-	start_date = 1356.12.25
+	start_date = 1356.12.26
 	end_date = 1444.11.11
 }
 
@@ -341,7 +341,7 @@ vassal = {
 vassal = {
 	first = MAM
 	second = ALX
-	start_date = 1356.12.25
+	start_date = 1356.12.26
 	end_date = 1444.11.11
 }
 
@@ -349,7 +349,7 @@ vassal = {
 vassal = {
 	first = MAM
 	second = FAD
-	start_date = 1356.12.25
+	start_date = 1356.12.26
 	end_date = 1444.11.10
 }
 
@@ -357,6 +357,6 @@ vassal = {
 vassal = {
 	first = MAM
 	second = ANZ
-	start_date = 1356.12.25
+	start_date = 1356.12.26
 	end_date = 1444.11.10
 }

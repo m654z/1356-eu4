@@ -24,6 +24,9 @@ discovered_by = muslim
 discovered_by = ottoman
 
 1356.9.19  = { controller = ENG }
+1356.12.24  = { owner = GUY controller = GUY add_core = GUY } #BT In
+1356.12.26  = { controller = ENG owner = FRA remove_core = GUY } #BT Out
+
 1357.9.23  = { controller = FRA }
 1360.5.8   = { owner = ENG controller = ENG } # Treaty of Bretigny
 1372.9.1   = { controller = FRA }

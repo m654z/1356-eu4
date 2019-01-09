@@ -20,7 +20,11 @@ discovered_by = eastern
 extra_cost = 8
 center_of_trade = 1
 
-1356.1.1 = { owner = FZA controller = FZA add_core = FZA }
+1356.12.24 = { owner = FZA controller = FZA add_core = FZA remove_core = MAM }
+1356.12.26 = { add_core = MAM }
+
+#BT Out
+
 1444.1.1 = { add_core = MAM owner = MAM controller = MAM remove_core = FZA }
 
 

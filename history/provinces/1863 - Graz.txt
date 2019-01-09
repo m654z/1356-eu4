@@ -16,6 +16,14 @@ capital = "Graz"
 is_city = yes
 hre = yes
 
+1356.12.24  = { 
+				owner = STY controller = STY
+} #BT In
+
+1356.12.26  = { 
+				owner = HAB controller = HAB
+} #BT Out
+
 discovered_by = western
 discovered_by = eastern
 discovered_by = muslim

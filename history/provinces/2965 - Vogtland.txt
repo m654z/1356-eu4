@@ -20,6 +20,9 @@ discovered_by = western
 discovered_by = muslim
 discovered_by = ottoman
 
+1356.12.24  = { owner = SWB controller = SWB } #BT In
+1356.12.26  = { owner = MEI controller = MEI remove_core = SWB } #BT Out
+
 1423.1.6  = { owner = SAX controller = SAX add_core = SAX } # Incorporated into Saxony
 1485.8.26 = { owner = THU controller = THU add_core = THU remove_core = SAX } # Leipziger Teilung
 1547.5.19 = {	owner = SAX

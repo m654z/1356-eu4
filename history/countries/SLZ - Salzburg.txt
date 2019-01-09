@@ -7,7 +7,38 @@ primary_culture = austrian
 capital = 76	# Salzburg
 fixed_capital = 76 # Cannot move capital away from this province & no power cost to move to it
 
-1343.7.29 = {
+
+1323.5.30 = {
+	monarch = {
+		name = "Albrecht II"
+		dynasty = "von Habsburg"
+		birth_date = 1356.12.25
+		death_date = 1356.12.26
+		adm = 1
+		dip = 1
+		mil = 3
+	}
+}
+
+1339.11.1 = {
+	heir = {
+		name = "Rudolf"
+		monarch_name = "Rudolf IV"
+		dynasty = "von Habsburg"
+		birth_date = 1339.11.1
+		death_date = 1356.12.26
+		claim = 95
+		ADM = 4
+		DIP = 4
+		MIL = 3
+	}
+}
+
+1356.12.24 = { government = monarchy add_government_reform = feudalism_reform }
+
+# BT Out
+
+1356.12.26 = { #1343.7.29
 	monarch = {
 		name = "Ortolf von Weisseneck"
 		birth_date = 1300.1.1

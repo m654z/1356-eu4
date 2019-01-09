@@ -3,7 +3,8 @@ casus_belli = {
 	type = cb_restore_personal_union
 	first = ENG
 	second = FRA
-	start_date = 1337.1.1
+	#start_date = 1337.1.1 #Changed for compatibility/Balance
+	start_date = 1356.12.26
 	end_date = 1471.5.21
 }
 
@@ -26,7 +27,8 @@ alliance = {
 union = {
 	first = BUR
 	second = PBG
-	start_date = 1330.1.21
+	#start_date = 1330.1.21 #Starts on 1330.1.21 for balance/compatibiltiy sake
+	start_date = 1356.12.26
 	end_date = 1361.11.21
 }
 

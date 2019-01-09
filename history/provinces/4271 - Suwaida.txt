@@ -12,6 +12,9 @@ base_production = 1
 base_manpower = 1
 is_city = yes
 add_core = FAD
+
+1356.12.24 = { add_core = SYR add_claim = KOJ } #BT In
+1356.12.26 = { remove_core = SYR remove_claim = KOJ } #BT Out
 discovered_by = east_african
 discovered_by = muslim
 discovered_by = ottoman

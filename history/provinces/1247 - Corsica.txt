@@ -21,7 +21,11 @@ discovered_by = eastern
 discovered_by = muslim
 discovered_by = ottoman
 
-1356.7.1   = { owner = ARA controller = ARA }
+
+
+#1356.12.24 = { controller = ARA remove_core = PAP owner = ANC add_core = ANC } #BT In
+1356.12.26   = { owner = ARA controller = ARA } #BT Out
+
 1369.3.26  = { owner = GEN controller = GEN }
 1464.1.1   = {	owner = MLO
 		controller = MLO

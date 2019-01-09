@@ -2,7 +2,7 @@ bookmark =
 {
 	name = "GC2_NAME"
 	desc = "GC2_DESC"
-	date = 1356.12.25
+	date = 1356.12.26
 	
 	default = yes
 	center = 112	

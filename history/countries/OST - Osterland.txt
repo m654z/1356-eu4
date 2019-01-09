@@ -6,6 +6,17 @@ religion = catholic
 technology_group = western
 capital = 62	# Leipzig
 
+1322.11.13 = {
+	monarch = {
+        	name = "Friedrich IV"
+                dynasty = "Askanier"
+                birth_date = 1356.12.25
+                adm = 2
+                dip = 3
+                mil = 2
+        }
+}
+
 1382.11.13 = {
 	monarch = {
 		name = "Friedrich IV"

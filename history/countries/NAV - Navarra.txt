@@ -6,9 +6,37 @@ add_accepted_culture = cosmopolitan_french
 religion = catholic
 technology_group = western
 historical_friend = NRM
+historical_friend = ARA
 capital = 210	# Pamplona
 
-1349.10.6 = {
+
+1328.10.6 = {
+	monarch = {
+		name = "Sancho IV"
+		dynasty = "Jiménez"
+		culture = cosmopolitan_french
+		birth_date = 1310.6.15
+		adm = 4
+		dip = 5
+		mil = 2
+	}
+1332.5.12 = {
+	queen = {
+		name = "Johanna II"
+		dynasty = "Capet"
+		culture = cosmopolitan_french
+		birth_date = 1311.1.28
+		adm = 2
+		dip = 3
+		mil = 2
+	}
+}
+
+1356.12.26 = { remove_historical_friend = ARA }
+
+# BT Out
+
+1356.12.26 = { # Was 1349.10.6
 	monarch = {
 		name = "Charles II"
 		dynasty = "d'Évreux"
@@ -20,7 +48,7 @@ capital = 210	# Pamplona
 	}
 }
 
-1352.2.12 = {
+1356.12.26 = { # Was 1352.2.12
 	queen = {
 		country_of_origin = FRA
 		name = "Jeanne"

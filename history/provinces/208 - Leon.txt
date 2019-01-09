@@ -23,6 +23,8 @@ discovered_by = ottoman
 extra_cost = 8
 center_of_trade = 1
 
+1356.12.24  = { owner = LON controller = LON remove_core = CTR remove_core = CAS  } #BT In
+1356.12.26  = { owner = CAS controller = CAS add_core = CTR add_core = CAS } #BT Out
 
 1368.7.1   = { owner = CTR controller = CTR } # Siege of Leon
 1369.3.23  = { owner = CAS controller = CAS remove_core = CTR } # End of the First Castillian Civil War

@@ -19,6 +19,9 @@ discovered_by = western
 discovered_by = muslim
 discovered_by = ottoman
 
+1356.12.24  = { add_core = NIC } #BT In
+1356.12.26  = { remove_core = NIC } #BT Out
+
 1388.9.28  = { owner = SAV controller = SAV add_core = SAV remove_core = PRO } # Nice prefers to be under Savoy rule
 1495.1.1   = { hre = no }
 1713.4.12  = {	owner = SIC

@@ -25,6 +25,10 @@ extra_cost = 8
 center_of_trade = 1
 
 1080.1.1 = { change_province_name = Cilicia capital = "Sis" }
+
+1356.12.24  = { add_claim = RUM } #BT In
+1356.12.26  = { remove_claim = RUM} #BT Out
+
 1375.1.1 = { 	owner = RAM
 		controller = RAM
 		add_core = RAM 

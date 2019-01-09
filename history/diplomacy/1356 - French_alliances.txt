@@ -107,7 +107,7 @@ dependency = {
 	subject_type = "french_ducal_vassal"
 	first = FRA
 	second = FOI
-	start_date = 1356.1.1 #This is because it is harder to make them vassals later on, as it's highly possible Foix will no longer exist by 1380.
+	start_date = 1356.12.26 #This is because it is harder to make them vassals later on, as it's highly possible Foix will no longer exist by 1380.
 	#start_date = 1380.5.1 # becomes Lieutenant-général of Languedoc
 	end_date = 1479.2.13 # becomes the King of Navarra
 }
@@ -206,7 +206,8 @@ dependency = {
 union = {
 	first = NAP
 	second = PRO
-	start_date = 1309.5.9
+	#start_date = 1309.5.9 #Balance
+	start_date = 1356.12.26
 	end_date = 1382.5.12 # Carlo III seized the Naples throne
 }
 
@@ -304,7 +305,8 @@ royal_marriage = {
 union = {
 	first = FRA
 	second = DAU
-	start_date = 1349.7.16
+	#start_date = 1349.7.16
+	start_date = 1356.12.26
 	end_date = 1461.7.22 
 }
 

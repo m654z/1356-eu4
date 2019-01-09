@@ -7,7 +7,21 @@ capital = 382	# Damascus
 religious_school = shafii_school
 historical_rival = MAM
 
-1356.11.6 = {	
+1353.9.14 = { 
+	monarch = {
+		name = "Al-Kamil II"
+		dynasty = "Ayyubid"
+		birth_date = 1338.9.14
+		death_date = 1356.12.26
+		adm = 3
+		dip = 6
+		mil = 4
+	}
+}
+
+# BT Out
+
+1356.12.26 = {	# Was 1356.11.6
 	monarch = {
 		name = "Sayf-ad-din II"
 		dynasty = "Nasiraid"
@@ -17,7 +31,8 @@ historical_rival = MAM
 		mil = 4
 	}
 }
-1356.12.24 = {
+
+1356.12.26  = { # Was 1356.12.24
 	heir = {
 		name = "Shihab-ad-din"
 		monarch_name = "Shihab-ad-din II"

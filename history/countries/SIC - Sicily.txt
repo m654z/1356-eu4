@@ -3,6 +3,7 @@ add_government_reform = feudalism_reform
 technology_group = western
 religion = catholic
 primary_culture = sicilian
+add_accepted_culture = neapolitan
 capital = 125	# Palermo
 
 1337.6.25 = {
@@ -68,6 +69,18 @@ capital = 125	# Palermo
 		dip = 2
 		mil = 2
 	}
+}
+
+1356.12.24 = {
+	leader = {	
+		name = "Maximilian von Sizilien"	
+		type = general	
+		fire = 3	
+		shock = 4	
+		manuever = 4	
+		siege = 3	
+		death_date = 1356.12.26
+	} 
 }
 
 1361.4.11 = {

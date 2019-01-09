@@ -21,6 +21,9 @@ discovered_by = ottoman
 discovered_by = eastern
 discovered_by = western
 
+1356.12.24  = { owner = BYZ controller = BYZ remove_core = GEN } #BT In
+1356.12.26  = { owner = GEN controller = GEN add_core = GEN} #BT Out
+
 1528.5.29 = { remove_core = BYZ }
 1555.1.1  = { unrest = 5 } # General discontent with the Janissaries' dominance
 1556.1.1  = { unrest = 0 }

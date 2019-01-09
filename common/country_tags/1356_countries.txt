@@ -40,12 +40,12 @@ NCH = "countries/CharlamagneEmpire.txt"
 #HRE
 GOR = "countries/Gorizia.txt"
 BRG = "countries/Berg.txt"
-OST = "countries/Osterland.txt"
+OST = "countries/Osterland.txt" #Covered in BT
 FRB = "countries/Freiburg.txt"
 THG = "countries/Thurgau.txt"
 WLI = "countries/Wallis.txt"
 RAE = "countries/Raetia.txt"
-SWB = "countries/Swabia.txt"
+#SWB = "countries/Swabia.txt" #Covered in BT
 ZUR = "countries/Zurich.txt"
 BRN = "countries/Bern.txt"
 VAU = "countries/Vaud.txt"

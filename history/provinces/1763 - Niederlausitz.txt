@@ -27,6 +27,9 @@ discovered_by = GLH
 discovered_by = AST
 discovered_by = QAS
 
+1356.12.24  = { owner = BRA controller = BRA } #BT In
+1356.12.26  = { owner = MEI controller = MEI } #BT Out
+
 1364.5.1  = { owner = BRA controller = BRA }
 1367.10.1 = { owner = BOH controller = BOH add_core = BOH remove_core = BRA } # the Province was sold to Bohemia
 1419.12.1 = { unrest = 5 } # Hussite Wars, Battle of Nekmir

@@ -2,57 +2,88 @@ government = monarchy
 add_government_reform = byzantine_empire_reform
 government_rank = 3
 primary_culture = greek
+culture_group_union = byzantine
 religion = orthodox
 technology_group = eastern
 historical_rival = TUR
+historical_rival = RUM
 capital = 151 # Constantinople
 fixed_capital = 151 # Cannot move capital away from this province & no power cost to move to it
 
-1341.6.15 = {
+1327.3.16 = {
 	monarch = {
-		name = "Ioannes V"
-		dynasty = "Palaiologos"
-		birth_date = 1332.6.18
-		adm = 2
-		dip = 2
-		mil = 1
+		name = "Justinian III"
+		dynasty = "Skleroi"
+		birth_date = 1327.3.16
+		death_date = 1356.12.26
+		adm = 4
+		dip = 3
+		mil = 6
+		leader = { name = "Justinian III" type = general fire = 3 shock = 4 manuever = 2 siege = 3 }
 	}
 }
 
-1347.3.31 = {
-	monarch = {
-		name = "Ioannes VI"
-		dynasty = "Kantakouzenos"
-		birth_date = 1292.1.1
-		adm = 1
-		dip = 1
-		mil = 1
-	}
-	queen = {
-		country_of_origin = MOE
-		name = "Irene"
-		dynasty = "Asanina"
-		birth_date = 1300.1.1
-		death_date = 1375.1.1
-		female = yes
-		adm = 2
-		dip = 2
-		mil = 2
-	}
+1352.7.6 = {
 	heir = {
-		name = "Matthaios"
-		monarch_name = "Matthaios Asanes"
-		dynasty = "Kantakouzenos"
-		birth_date = 1325.1.1
-		death_date = 1391.1.1
-		claim = 95
-		adm = 2
-		dip = 2
-		mil = 2
+		name = "Manuel "
+		monarch_name = "Manuel II"
+		dynasty = "Skleroi"
+		birth_date = 1352.7.6
+		death_date = 1356.12.26
+		claim = 100
+		adm = 4
+		dip = 6
+		mil = 4
 	}
 }
 
-1354.12.10 = {
+# 1341.6.15 = { # Was 1341.6.15
+	# monarch = {
+		# name = "Ioannes V"
+		# dynasty = "Palaiologos"
+		# birth_date = 1332.6.18
+		# adm = 2
+		# dip = 2
+		# mil = 1
+	# }
+# }
+
+# 1347.3.31 = { # 1347.3.31
+	# monarch = {
+		# name = "Ioannes VI"
+		# dynasty = "Kantakouzenos"
+		# birth_date = 1292.1.1
+		# adm = 1
+		# dip = 1
+		# mil = 1
+	# }
+	# queen = {
+		# country_of_origin = MOE
+		# name = "Irene"
+		# dynasty = "Asanina"
+		# birth_date = 1300.1.1
+		# death_date = 1375.1.1
+		# female = yes
+		# adm = 2
+		# dip = 2
+		# mil = 2
+	# }
+	# heir = {
+		# name = "Matthaios"
+		# monarch_name = "Matthaios Asanes"
+		# dynasty = "Kantakouzenos"
+		# birth_date = 1325.1.1
+		# death_date = 1391.1.1
+		# claim = 95
+		# adm = 2
+		# dip = 2
+		# mil = 2
+	# }
+# }
+
+# BT Out
+
+1356.12.26 = { # Was 1354.12.10
 	monarch = {
 		name = "Ioannes V"
 		dynasty = "Palaiologos"
@@ -293,4 +324,4 @@ fixed_capital = 151 # Cannot move capital away from this province & no power cos
 	}
 }
 
-1452.1.1 = { leader = {	name = "Giovanni Giustiniani"	type = general	fire = 2	shock = 2	manuever = 3	siege = 0	death_date = 1453.5.29 } }
+1452.1.1 = { leader = { name = "Giovanni Giustiniani" type = general fire = 2 shock = 2 manuever = 3 siege = 0 death_date = 1453.5.29 } }
