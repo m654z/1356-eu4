@@ -640,22 +640,54 @@ country_event = {
 	
 	is_triggered_only = yes
 	
-	option = { 
+	option = { #The Virgin Mary
 		name = scan_djm.20.a
+		set_country_flag = nov_virgin_mary_flag
+		custom_tooltip = scan_djm.20_tt
+		SWE = {
+			country_event = { 
+				id = scan_djm.21
+				days = 30
+			}
+		}
 	}
-	option = {
+	option = { #Original Sin
 		name = scan_djm.20.b
+		set_country_flag = nov_orignal_sin_flag
+		custom_tooltip = scan_djm.20_tt
+		SWE = {
+			country_event = { 
+				id = scan_djm.21
+				days = 30
+			}
+		}
 	}
-	option = {
+	option = { #'Till Death do us Part'
 		name = scan_djm.20.c
+		set_country_flag = nov_divorce_topic_flag
+		custom_tooltip = scan_djm.20_tt
+		SWE = {
+			country_event = { 
+				id = scan_djm.21
+				days = 30
+			}
+		}
 	}
-	option = {
+	option = { #The Holy Father
 		name = scan_djm.20.e
+		set_country_flag = nov_the_holy_father_flag
+		custom_tooltip = scan_djm.20_tt
+		SWE = {
+			country_event = { 
+				id = scan_djm.21
+				days = 30
+			}
+		}
 	}
 }
 
 #Sweden Responds
-country_event = { #The Debate Begins. Both nations learn of this.
+country_event = {
 	id = scan_djm.21
 	title = scan_djm.21.t
 	desc = scan_djm.21.d
@@ -663,17 +695,45 @@ country_event = { #The Debate Begins. Both nations learn of this.
 	
 	is_triggered_only = yes
 	
-	option = { 
+	option = { #Harsh Response
 		name = scan_djm.21.a
+		custom_tooltip = scan_djm.21_tt
+		NOV = {
+			country_event = { 
+				id = scan_djm.22
+				days = 30
+			}
+		}
 	}
-	option = {
+	option = { #Light Response
 		name = scan_djm.21.b
+		custom_tooltip = scan_djm.21_tt
+		NOV = {
+			country_event = { 
+				id = scan_djm.22
+				days = 30
+			}
+		}
 	}
-	option = {
+	option = { #Understanding Response
 		name = scan_djm.21.c
+		custom_tooltip = scan_djm.21_tt
+		NOV = {
+			country_event = { 
+				id = scan_djm.22
+				days = 30
+			}
+		}
 	}
-	option = {
+	option = { #Agree with the Novgorodians
 		name = scan_djm.21.e
+		custom_tooltip = scan_djm.21_tt
+		NOV = {
+			country_event = { 
+				id = scan_djm.22
+				days = 30
+			}
+		}
 	}
 }
 
@@ -686,17 +746,45 @@ country_event = {
 	
 	is_triggered_only = yes
 	
-	option = { 
+	option = { #Aggressively rebuttal Sweden's response
 		name = scan_djm.22.a
+		custom_tooltip = scan_djm.22_tt
+		SWE = {
+			country_event = { 
+				id = scan_djm.23
+				days = 30
+			}
+		}
 	}
-	option = {
+	option = { #Stand firm with the topic
 		name = scan_djm.22.b
+		custom_tooltip = scan_djm.22_tt
+		SWE = {
+			country_event = { 
+				id = scan_djm.23
+				days = 30
+			}
+		}
 	}
-	option = {
+	option = { #Partially agree
 		name = scan_djm.22.c
+		custom_tooltip = scan_djm.22_tt
+		SWE = {
+			country_event = { 
+				id = scan_djm.23
+				days = 30
+			}
+		}
 	}
-	option = {
+	option = { #Do nothing
 		name = scan_djm.22.e
+		custom_tooltip = scan_djm.22_tt
+		SWE = {
+			country_event = { 
+				id = scan_djm.23
+				days = 30
+			}
+		}
 	}
 }
 
@@ -709,17 +797,65 @@ country_event = {
 	
 	is_triggered_only = yes
 	
-	option = { 
+	option = { #The Virgin Mary
 		name = scan_djm.23.a
+		trigger = {
+			NOV = { 
+				NOT = { has_country_flag = nov_virgin_mary_flag }
+			}
+		}
+		custom_tooltip = scan_djm.23_tt
+ 		NOV = {
+			country_event = { 
+				id = scan_djm.24
+				days = 30
+			}
+		}
 	}
-	option = {
+	option = { #Original Sin
 		name = scan_djm.23.b
+		trigger = {
+			NOV = { 
+				NOT = { has_country_flag = nov_orignal_sin_flag }
+			}
+		}
+		custom_tooltip = scan_djm.23_tt
+ 		NOV = {
+			country_event = { 
+				id = scan_djm.24
+				days = 30
+			}
+		}
 	}
-	option = {
+	option = { #'Till Death do us Part'
 		name = scan_djm.23.c
+		trigger = {
+			NOV = { 
+				NOT = { has_country_flag = nov_divorce_topic_flag }
+			}
+		}
+		custom_tooltip = scan_djm.23_tt
+ 		NOV = {
+			country_event = { 
+				id = scan_djm.24
+				days = 30
+			}
+		}
 	}
-	option = {
+	option = { #The Holy Father
 		name = scan_djm.23.e
+		trigger = {
+			NOV = { 
+				NOT = { has_country_flag = nov_the_holy_father_flag }
+			}
+		}
+		custom_tooltip = scan_djm.23_tt
+ 		NOV = {
+			country_event = { 
+				id = scan_djm.24
+				days = 30
+			}
+		}
 	}
 }
 
@@ -732,17 +868,45 @@ country_event = {
 	
 	is_triggered_only = yes
 	
-	option = { 
+	option = { #Harsh Response
 		name = scan_djm.24.a
+		custom_tooltip = scan_djm.24_tt
+ 		SWE = {
+			country_event = { 
+				id = scan_djm.25
+				days = 30
+			}
+		}
 	}
-	option = {
+	option = { #Light Response
 		name = scan_djm.24.b
+		custom_tooltip = scan_djm.24_tt
+ 		SWE = {
+			country_event = { 
+				id = scan_djm.25
+				days = 30
+			}
+		}
 	}
-	option = {
+	option = { #Understanding Response
 		name = scan_djm.24.c
+		custom_tooltip = scan_djm.24_tt
+ 		SWE = {
+			country_event = { 
+				id = scan_djm.25
+				days = 30
+			}
+		}
 	}
-	option = {
+	option = { #Agree with the Swedes
 		name = scan_djm.24.e
+		custom_tooltip = scan_djm.24_tt
+ 		SWE = {
+			country_event = { 
+				id = scan_djm.25
+				days = 30
+			}
+		}
 	}
 }
 
@@ -755,17 +919,69 @@ country_event = {
 	
 	is_triggered_only = yes
 	
-	option = { 
+	option = { #Aggressively rebuttal Sweden's response
 		name = scan_djm.25.a
+		custom_tooltip = scan_djm.25_tt
+ 		SWE = {
+			country_event = { 
+				id = scan_djm.26
+				days = 30
+			}
+		}
+ 		NOV = {
+			country_event = { 
+				id = scan_djm.26
+				days = 30
+			}
+		}
 	}
-	option = {
+	option = { #Stand firm with the topic
 		name = scan_djm.25.b
+		custom_tooltip = scan_djm.25_tt
+ 		SWE = {
+			country_event = { 
+				id = scan_djm.26
+				days = 30
+			}
+		}
+ 		NOV = {
+			country_event = { 
+				id = scan_djm.26
+				days = 30
+			}
+		}
 	}
-	option = {
+	option = { #Partially agree
 		name = scan_djm.25.c
+		custom_tooltip = scan_djm.25_tt
+ 		SWE = {
+			country_event = { 
+				id = scan_djm.26
+				days = 30
+			}
+		}
+ 		NOV = {
+			country_event = { 
+				id = scan_djm.26
+				days = 30
+			}
+		}
 	}
-	option = {
+	option = { #Do nothing
 		name = scan_djm.25.e
+		custom_tooltip = scan_djm.25_tt
+ 		SWE = {
+			country_event = { 
+				id = scan_djm.26
+				days = 30
+			}
+		}
+ 		NOV = {
+			country_event = { 
+				id = scan_djm.26
+				days = 30
+			}
+		}
 	}
 }
 
@@ -780,6 +996,35 @@ country_event = {
 	
 	option = { 
 		name = scan_djm.26.a
+		trigger = { tag = NOV }
+		clr_country_flag = nov_virgin_mary_flag
+		clr_country_flag = nov_orignal_sin_flag
+		clr_country_flag = nov_divorce_topic_flag
+		clr_country_flag = nov_the_holy_father_flag
+		custom_tooltip = scan_djm.26_tt
+	}
+	option = { 
+		name = scan_djm.26.b
+		trigger = { tag = SWE }
+		custom_tooltip = scan_djm.26_tt
+		random_list = {
+			50 = {
+				NOV = {
+					country_event = { 
+						id = scan_djm.27
+						days = 30
+					}
+				}
+			}
+			50 = {
+				SWE = {
+					country_event = { 
+						id = scan_djm.28
+						days = 30
+					}
+				}
+			}
+		}
 	}
 }
 

@@ -3,8 +3,8 @@
 
 owner = HMD
 controller = HMD
-culture = lykian
-religion = orthodox
+culture = turkish
+religion = sunni
 capital = "Burdur"
 trade_goods = grain
 hre = no

@@ -3,7 +3,7 @@
 
 owner = TEK
 controller = TEK
-culture = lykian
+culture = greek
 religion = orthodox
 capital = "Adalia"
 trade_goods = cotton

@@ -1,7 +1,7 @@
 #Scandinavia
 ORK = "countries/Orkney.txt"
 SKN = "countries/Skane.txt"
-#SAP = "countries/Sapmi.txt"
+#SAP = "countries/Sapmi.txt" #WE HAD ONE IN VANILLA ALREADY
 
 #Balkans
 DOB = "countries/Dobruja.txt"
@@ -68,6 +68,7 @@ WOO = "countries/Wallonia.txt"
 #Russia 
 GLY = "countries/Galich.txt"
 MRM = "countries/Murom.txt"
+ING = "countries/Ingria.txt"
 
 #Arabia	
 

@@ -3,7 +3,7 @@
 
 owner = CND
 controller = CND
-culture = bithynian
+culture = greek
 religion = sunni
 capital = "Kastamonu"
 trade_goods = copper

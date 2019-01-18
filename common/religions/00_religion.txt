@@ -938,7 +938,7 @@ christian = { #1356
 
 	nestorian = { #Needs Heretics, icon, and special icons.
 		color = { 255 210 150 } #For now
-		icon = 4
+		icon = 29
 		country = {
 			num_accepted_cultures = 2
 			global_unrest = -2

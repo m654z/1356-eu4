@@ -4,7 +4,7 @@
 owner = SWE
 controller = SWE
 add_core = SWE
-culture = danish
+culture = scanian
 religion = catholic
 hre = no
 base_tax = 3
@@ -31,3 +31,4 @@ discovered_by = ottoman
 1536.3.15 = { revolt = {} controller = DAN } # Liberated by Sweden
 1536.3.15 = { religion = protestant} # Unknown date
 1658.2.26 = { controller = SWE owner = SWE add_core = SWE } # The Peace of Roskilde
+1722.1.1  = { culture = swedish } # The backbone of danishness is finally broken

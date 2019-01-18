@@ -3,7 +3,7 @@
 
 owner = MEN
 controller = MEN
-culture = lykian
+culture = greek
 religion = orthodox
 capital = "Mughla"
 trade_goods = salt

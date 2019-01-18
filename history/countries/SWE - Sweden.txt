@@ -6,6 +6,7 @@ primary_culture = swedish
 religion = catholic
 add_accepted_culture = finnish
 historical_friend = NOR
+historical_rival = NOV
 capital = 1 # Stockholm
 national_focus = MIL
 

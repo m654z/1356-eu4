@@ -3,7 +3,7 @@
 
 owner = TUR
 controller = TUR
-culture = bithynian
+culture = greek
 religion = orthodox
 capital = "Bursa"
 trade_goods = silk

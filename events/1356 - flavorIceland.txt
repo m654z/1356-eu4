@@ -5,7 +5,7 @@ country_event = {
 	id = icelandflavor.1
 	title = icelandflavor.1.t
 	desc = icelandflavor.1.desc
-	picture = RELIGION_eventPicture 
+	picture = BIG_BOOK_eventPicture 
 
 	fire_only_once = yes
 	major = yes
@@ -86,7 +86,7 @@ country_event = { #Maintance event for vinland
 	id = icelandflavor.2
 	title = icelandflavor.2.t
 	desc = icelandflavor.2.d
-	picture = RELIGION_eventPicture
+	picture = BARBARY_PIRATES_eventPicture
 	
 	fire_only_once = yes
 
@@ -135,7 +135,7 @@ country_event = { #Maintance event for greenland
 	id = icelandflavor.3
 	title = icelandflavor.3.t
 	desc = icelandflavor.3.d
-	picture = RELIGION_eventPicture
+	picture = BARBARY_PIRATES_eventPicture
 	
 	is_triggered_only = yes
 	major = yes
@@ -182,7 +182,7 @@ country_event = {
 	id = icelandflavor.4
 	title = icelandflavor.4.t
 	desc = icelandflavor.4.d
-	picture = RELIGION_eventPicture
+	picture = BAD_WITH_MONARCH_eventPicture
 	
 	fire_only_once = yes
 	major = yes
@@ -250,6 +250,72 @@ country_event = {
 			cede_province = XXX
 			change_culture = cree
 			change_religion = totemism
+		}
+	}
+}
+
+country_event = { #Event forcing Norway to lose vision on said tiles after they lose the provinces
+	id = icelandflavor.5
+	title = icelandflavor.5.t
+	desc = icelandflavor.5.d
+	picture = EXPLORERS_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = NOR
+		NOT = { is_year = 1400 }
+		NOT = { owns = 980 }
+		NOT = { owns = 1105 }
+		NOT = { owns = 1104 }
+		NOT = { is_year = 1400 }
+	
+	mean_time_to_happen = {
+		months = 12
+	}
+	option = {
+		name = icelandflavor.5.a
+		1481 = {
+			undiscover_country = NOR
+		}
+		1497 = {
+			undiscover_country = NOR
+		}
+		1924 = {
+			undiscover_country = NOR
+		}
+		1486 = {
+			undiscover_country = NOR
+		}
+		1482 = {
+			undiscover_country = NOR
+		}
+		1493 = {
+			undiscover_country = NOR
+		}
+		1495 = {
+			undiscover_country = NOR
+		}
+		980 = {
+			undiscover_country = NOR
+		}
+		2573 = {
+			undiscover_country = NOR
+		}
+		981 = {
+			undiscover_country = NOR
+		}
+		1104 = {
+			undiscover_country = NOR
+		}
+		1105 = {
+			undiscover_country = NOR
+		}
+		1804 = {
+			undiscover_country = NOR
+		}
+		1610 = {
+			undiscover_country = NOR
 		}
 	}
 }

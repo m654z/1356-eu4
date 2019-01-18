@@ -568,6 +568,7 @@ scandinavian = { #Nordic #1356
 		}
 	}
 	scanian = { #Unused until proper Scanian flavor is added
+		primary = SKN
 		male_names = {
 			Anders Anund Asger Benedikt Bjørn Bo Christopher Daniel Edvard 
 			Einar Fredrik Gorm Grim Hårik 
@@ -1576,9 +1577,8 @@ french	= { #1356
 	occitain = { #1356
 		primary = PRO #Change this with the future OCC tag.
 	}
-	wallonian = { #Remove Wallonia tag?
-		primary = HAI
-	}
+
+	#Lost wallonian to Low Countries group.
 	breton = { #Orignal Breton Culture
 		primary = BRI
 		dynasty_names = { 
@@ -1701,38 +1701,7 @@ french	= { #1356
 			"de Rohan" "de Bar" "d'Albert" "d'Escoubleau" "de Neufville" 
 		}
 	}
-	picard = { #Couldnt find any sources on Names, left with French
-		primary = PIC
-		male_names = {
-			Édouard Érrard Étienne Adémar Adrien Aimery Alain 
-			Aldebert Aldéric Alphonse Amaury Amédée Ancel André Antoine Archambaud Arnaud 
-			Arnault Arnoul Aubry Aymar Barthélémi Baudouin Benoît Bérenger Bernard Bertrand Bohemond 
-			Boson Bouchard Centule Charles Clotaire Ebbon Enguerrand Eudes Eustache Evrard Foulques François 
-			Frédéric Gaucher Gaucelin Gauthier Geoffroi Géraud Gilbert Gilles Godefroi
-			Guichard Guiges Guilhem Guillaume Guy Hélie Hamelin Henri Herbert Hildebert Hugues Humbert Jacques 
-			Jaufré Jaspert Jean Jourdain Julien Léon Léonard Lothaire Louis Loup Mathieu Maurice Nicolas Ogier Onfroi Orson Othon
-			Payen Philippe Pierre Raimbaut Raoul Raymond Raynaud Renaud Richard Robert Robin Roger Rorgues Roubaud Savary Sigismond Simon Thibault Thiébaut 
-			Thierry Thomas Valeran Yves
-		}
-		female_names = {
-			Éléonore Élodie Étiennette Adèle Adalmode Adelaide Adelinde 
-			Agnès Aléarde Alice Aliénor Agathe
-			Alix Almodis Amelie Anne Antoinette Arsinde Aude Aurengarde 
-			Béatrice Béatrix Belleassez Benoîte Bérengère
-			Berthe Blanche Bonne Bourgogne Bourguigne Cécile Cathèrine 
-			Charlotte Constance Denise Douce Echive Eglantine
-			Elisabeth Emma Ermengarde Ermessinde Esclarmonde 
-			Euphrosine Eustachie Eve Gerberge Gisèle Guillaumette Héloise Helvis Hodierne Ide Ildégarde
-			Isabeau Isabelle Jeanne Judith Julienne Mafalda Mahaut Margot Marguerite Marie Marthe
-			Mascarose Mathilde Mélisande Mélisende Mélusine Péronelle Pernelle Perinne Pernette Plaisance 
-			Raymonde Sarrazine Solène Sophie Stéphanie Sybille Tiburge Valence Yolande
-		}
-		dynasty_names = {
-			"de Valois" "de Bourbon" Bonaparte "de la Tour" "d'Anjou" 
-			"de Lorraine" "de Foix" "de Montfort" "de Blois" "de Penthievre" "de Dreux"
-			"de Rohan" "de Bar" "d'Albert" "d'Escoubleau" "de Neufville" 
-		}
-	}
+
 	arpitan = { #Franco-Provençal #Couldnt find any sources on Names, left with French
 		primary = PRO
 		male_names = {
@@ -9186,6 +9155,71 @@ low_lands_culture_group = { #New Group, but Vanilla cultures
 			"van Serooskerken"
 		}
 	}
+	wallonian = { #Remove Wallonia tag? #Removed from French group, 
+		primary = HAI
+		male_names = {
+			Édouard Érrard Étienne Adémar Adrien Aimery Alain 
+			Aldebert Aldéric Alphonse Amaury Amédée Ancel André Antoine Archambaud Arnaud 
+			Arnault Arnoul Aubry Aymar Barthélémi Baudouin Benoît Bérenger Bernard Bertrand Bohemond 
+			Boson Bouchard Centule Charles Clotaire Ebbon Enguerrand Eudes Eustache Evrard Foulques François 
+			Frédéric Gaucher Gaucelin Gauthier Geoffroi Géraud Gilbert Gilles Godefroi
+			Guichard Guiges Guilhem Guillaume Guy Hélie Hamelin Henri Herbert Hildebert Hugues Humbert Jacques 
+			Jaufré Jaspert Jean Jourdain Julien Léon Léonard Lothaire Louis Loup Mathieu Maurice Nicolas Ogier Onfroi Orson Othon
+			Payen Philippe Pierre Raimbaut Raoul Raymond Raynaud Renaud Richard Robert Robin Roger Rorgues Roubaud Savary Sigismond Simon Thibault Thiébaut 
+			Thierry Thomas Valeran Yves
+		}
+		female_names = {
+			Éléonore Élodie Étiennette Adèle Adalmode Adelaide Adelinde 
+			Agnès Aléarde Alice Aliénor Agathe
+			Alix Almodis Amelie Anne Antoinette Arsinde Aude Aurengarde 
+			Béatrice Béatrix Belleassez Benoîte Bérengère
+			Berthe Blanche Bonne Bourgogne Bourguigne Cécile Cathèrine 
+			Charlotte Constance Denise Douce Echive Eglantine
+			Elisabeth Emma Ermengarde Ermessinde Esclarmonde 
+			Euphrosine Eustachie Eve Gerberge Gisèle Guillaumette Héloise Helvis Hodierne Ide Ildégarde
+			Isabeau Isabelle Jeanne Judith Julienne Mafalda Mahaut Margot Marguerite Marie Marthe
+			Mascarose Mathilde Mélisande Mélisende Mélusine Péronelle Pernelle Perinne Pernette Plaisance 
+			Raymonde Sarrazine Solène Sophie Stéphanie Sybille Tiburge Valence Yolande
+		}
+		dynasty_names = {
+			"de Valois" "de Bourbon" Bonaparte "de la Tour" "d'Anjou" 
+			"de Lorraine" "de Foix" "de Montfort" "de Blois" "de Penthievre" "de Dreux"
+			"de Rohan" "de Bar" "d'Albert" "d'Escoubleau" "de Neufville" 
+		}
+	}
+	picard = { #Couldnt find any sources on Names, left with French #Modded, not vanilla.
+		primary = PIC
+		male_names = {
+			Édouard Érrard Étienne Adémar Adrien Aimery Alain 
+			Aldebert Aldéric Alphonse Amaury Amédée Ancel André Antoine Archambaud Arnaud 
+			Arnault Arnoul Aubry Aymar Barthélémi Baudouin Benoît Bérenger Bernard Bertrand Bohemond 
+			Boson Bouchard Centule Charles Clotaire Ebbon Enguerrand Eudes Eustache Evrard Foulques François 
+			Frédéric Gaucher Gaucelin Gauthier Geoffroi Géraud Gilbert Gilles Godefroi
+			Guichard Guiges Guilhem Guillaume Guy Hélie Hamelin Henri Herbert Hildebert Hugues Humbert Jacques 
+			Jaufré Jaspert Jean Jourdain Julien Léon Léonard Lothaire Louis Loup Mathieu Maurice Nicolas Ogier Onfroi Orson Othon
+			Payen Philippe Pierre Raimbaut Raoul Raymond Raynaud Renaud Richard Robert Robin Roger Rorgues Roubaud Savary Sigismond Simon Thibault Thiébaut 
+			Thierry Thomas Valeran Yves
+		}
+		female_names = {
+			Éléonore Élodie Étiennette Adèle Adalmode Adelaide Adelinde 
+			Agnès Aléarde Alice Aliénor Agathe
+			Alix Almodis Amelie Anne Antoinette Arsinde Aude Aurengarde 
+			Béatrice Béatrix Belleassez Benoîte Bérengère
+			Berthe Blanche Bonne Bourgogne Bourguigne Cécile Cathèrine 
+			Charlotte Constance Denise Douce Echive Eglantine
+			Elisabeth Emma Ermengarde Ermessinde Esclarmonde 
+			Euphrosine Eustachie Eve Gerberge Gisèle Guillaumette Héloise Helvis Hodierne Ide Ildégarde
+			Isabeau Isabelle Jeanne Judith Julienne Mafalda Mahaut Margot Marguerite Marie Marthe
+			Mascarose Mathilde Mélisande Mélisende Mélusine Péronelle Pernelle Perinne Pernette Plaisance 
+			Raymonde Sarrazine Solène Sophie Stéphanie Sybille Tiburge Valence Yolande
+		}
+		dynasty_names = {
+			"de Valois" "de Bourbon" Bonaparte "de la Tour" "d'Anjou" 
+			"de Lorraine" "de Foix" "de Montfort" "de Blois" "de Penthievre" "de Dreux"
+			"de Rohan" "de Bar" "d'Albert" "d'Escoubleau" "de Neufville" 
+		}
+	}
+
 }
 
 mongolic_culture_group = {
@@ -9436,7 +9470,8 @@ finnish_urgric_culture_group = { #New Group, Vanilla cultures
 			Mannerheim Furuhjelm Aminoff Armfelt Carpelan Rehbinder Schulman
 		}
 	}	
-	ingrian = {#1356 New Culture #Needs Primairy tag
+	ingrian = {#1356 New Culture 
+		primary = ING
 		male_names = {
 			Kahru Kahrulemb Gáktu Henes Járre Jeansa Juvven John Lágon Lávrrohas Leammá Mellet Mihka Igalemb Ihameel Ihar 
 			Ihatõiv Ihavald Illimar Ilmalemb Ilmar Ilvelemb Jaolemb Kaalep Lättelemb Manivald Mart Maru Mati Mats Meelis Mehis 
@@ -9615,41 +9650,7 @@ lost_cultures_group = {
 			Abdosir Arishat Astarte Batnoam Dido Shayna Sophonisba Tamar
 		}
 	}
-	# scanian = {
-		# male_names = {
-			# Anders Anund Asger Benedikt Bjørn Bo Christopher Daniel Edvard 
-			# Einar Fredrik Gorm Grim Hårik 
-			# Halfdan Halvor Harold Helge Hemming Hjalmar Ingolf Jørn Jacob Jens Joakim Johann
-			# John Knut Kristian Lennart Ludvig Louis Malthe Mads Mikkel Michael 
-			# Mogens Nicholas Odd Olav Peder Pridbjørn Ragnar Ragnvald Rolf Rune Rørik Rurik Severin 
-			# Sigfred Sigtryg Sigurd Sivard Steen Sven Sämund Thorolf Thorvald Torben Torbjørn Glitterhov
-			# Torbjörn Tord Torfinn Torgils Torkel Ture Ubbe Uffe Ulf Vladimir Valentin Yngvar Ingvar
-			# Christian Frederik Erik Christoffer Adolf Niels Karl Magnus Maximilian Ulrik Abel Vilhelm 
-			# Knud Valdemar Harald Oluf Alfred Anton Bent Emanuel Esben Fritjof Frode Gunnar Hans Henrik 
-			# Holger Jørgen Kasper Peter Poul Rudolf Stefan Tobias Torbald Viktor Vilfred Joachim Ernst
-			# Frans Gnupa
-		# }
-		# female_names = {
-			# Sophie Dorothe Margrete Sigrun
-			# Agnethe Anna Asta Benedikte Benedicta Birgitta Brigid Bodil Cecilie Cecilia Christina Dagmar 
-			# Dorothea Dorothy Elisabeth Ellinor Eleanor Emilie Emily Erika Ester Estrid Astrid Frederikke 
-			# Frederique Freja Grethe Gudrun Gunhild Gyda Gytha Helena Helen Ida Ingeborg Ingegerd Ingrid 
-			# Johanne Jutta Karin Karoline Katarina Katrine Catherine Kirsten Klara Lise Luitgard Lykke
-			# Magdalene Magdalena Maren Margrethe Margaret Maria Martha Ragnfrid Ragnhild Rikissa Runa 
-			# Sanna Signe Sigrid Silje Sofie Sophia Svanhild Thyra Tora Thora Thordis Åse Åsa
-		# }
-		# dynasty_names = {
-			# "Hvide" "Galen" "Due" "Saltensee" "Urup" "Neb" "Brahe" "Gøye" "Trolle" "Rantzau"
-			# "Friis" "Gyllenstierna" "Bille" "Adeler" "Arenstorff" "Brockenhuus"
-			# "Beck" "Brock" "Grubbe" "Holck" "Huitfeldt" "Juel" "Kaas" "Krabbe"
-			# "Lindenov" "Lykke" "Marsvin" "Mule" "Munk" "Oxe" "Reedtz" "Rodsteen"
-			# "Rosenkrantz" "Skeel" "Skram" "Urne" "Vind" "Ahlefeldt"
-			# # CKII
-			# "Porse" "Glysing" "Banner" "Thott" "Ulfstand" "Grøn" "Daa"
-			# "Reventlow" "Juul" "Ulfeldt" "Bang" 
-			# Alfredsson Andersson Assarsson Batra Billgren Broman Ekberg Glans Gjedde Glenmark Hansson Jansson Ibrahimovic Järegård Kulle Larsson Lohmander Lundberg Malmkvist Malmsjö Melander Möller Nordqvist Nordström Ohlmarks Persson Poppe Ranelid Sundström Troell Wester Olsson
-		# }
-	# }
+	#Scanian moved into Scandanavian
 	anglosaxon = { #CK2
 		dynasty_names = {
 			Godhelming Beorming Eorling Æbbing Hæsting Ælling Eadricing Eadwulfing Leodwalding
@@ -9733,20 +9734,7 @@ lost_cultures_group = {
 			Amestris Amytis Anzaza Artazostre Artystone Atossa Barsine Damaspia Mandane Parmys Parysatis Phaedymia Rinu Stateira Vashti
 		}
 	}
-	# aramaic = { #EU Rome
-		# dynasty_names = {
-			# Abbarid Adonibaalid Ahiromid Baalhannid Baalid Barcid Bostarid Chelbesid Eshbaalid Eugorid Hannid Hiramid Magoid Mattanid Metallid 
-			# Milkiramid Philosirid
-		# }
-		# male_names = {
-			# Abbar Abdmelqart Adonibaal Agbal Ahirom Azimilik Baal Baalhanno Bodashtart Bodmelqart Bomilcar Bostar Boulomenus Carthalo Chelbes 
-			# Eshbaal Eugoras Germelqart Hamilcar Hannibal Hanno Hasdrubal Himilco Hiram Mago Maharbal Mattan Metallo Milkherem Milkiram 
-			# Paltibaal Philosir
-		# }
-		# female_names = {
-			# Abdosir Arishat Astarte Batnoam Dido Shayna Sophonisba Tamar
-		# }
-	# }
+	#Aramaic Moved into the new Assyrian_group
 	hebrew = { #EU Rome
 		dynasty_names = {
 			Abiatarid Akabonid Amitid Amramid Boazid Dorid Dovid Eiranid Eleazid Heroid Honioid Hillelid Joazid Kahanid Nahumid Nirid Nogahid 

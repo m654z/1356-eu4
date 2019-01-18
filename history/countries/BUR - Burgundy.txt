@@ -131,6 +131,12 @@ capital = 192	# Dijon
 	add_heir_personality = bold_fighter_personality
 }
 
+1420.1.1 = {
+	add_accepted_culture = walloon
+	add_accepted_culture = flemish
+	add_accepted_culture = dutch
+}
+
 1430.1.7 = {
 	queen = {
 		country_of_origin = POR

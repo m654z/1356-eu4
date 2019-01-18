@@ -1780,8 +1780,8 @@ RAE_ideas = {
 
 ALX_ideas = {
 	start = { #They were a center of technology for a time, and were very renouned
-		technology_cost = -0.1
-		diplomatic_reputation = 2
+		technology_cost = -0.05
+		diplomatic_reputation = 1
 	}
 	
 	bonus = { 
@@ -1793,33 +1793,33 @@ ALX_ideas = {
 	}
 	free = yes
 	
-	alx_idea_1 = { #The Nile allows for many populated cities
-		development_cost = -0.1
-		culture_conversion_cost = -0.15
+	alx_idea_7 = { #Egypt should hold many boats
+		naval_forcelimit_modifier = 0.15
+		naval_maintenance_modifier = -0.1
 	}
 	alx_idea_2 = { #Claim decendence from Ancient Egyptian Dynasty
 		legitimacy = 1
 		prestige = 0.5
 	}
+	alx_idea_5 = { #To help with how isolated it is
+		religious_unity = 0.15
+		tolerance_heretic = 1
+		tolerance_heathen = 1
+	}
 	alx_idea_3 = { 
 		land_forcelimit_modifier = 0.1
 		land_maintenance_modifier = -0.05
+	}
+	alx_idea_1 = { #The Nile allows for many populated cities
+		development_cost = -0.1
+		culture_conversion_cost = -0.15
 	}
 	alx_idea_4 = { #A rich land with many goods
 		production_efficiency = 0.1
 		global_trade_goods_size_modifier = 0.05
 	}
-	alx_idea_5 = { #To help with how isolated it is
-		religious_unity = 0.25
-		tolerance_heretic = 1
-		tolerance_heathen = 1
-	}
 	alx_idea_6 = {#Ancient Egypt was great with its Administration
 		possible_adm_policy = 1
-	}
-	alx_idea_7 = { #Egypt should hold many boats
-		naval_forcelimit_modifier = 0.15
-		naval_maintenance_modifier = -0.1
 	}
 }
 
