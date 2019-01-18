@@ -100,7 +100,7 @@ country_event = { #The Xibei Culture Revolts! -Shun and Qin-
 	}
 	
 	mean_time_to_happen = {
-		months = 750
+		months = 325
 	}
 		
 	option = { #Too late to take it back now. Fight the rebels!
@@ -195,7 +195,7 @@ country_event = { #The Jin Culture Revolts! -Jin-
 	}
 	
 	mean_time_to_happen = {
-		months = 750
+		months = 325
 	}
 		
 	option = { #Too late to take it back now. Fight the rebels!
@@ -248,7 +248,7 @@ country_event = { #The Zhili Culture Revolts! -Yan-
 	}
 	
 	mean_time_to_happen = {
-		months = 600
+		months = 350
 	}
 		
 	option = { #Too late to take it back now. Fight the rebels!
@@ -300,7 +300,7 @@ country_event = { #The Shandong Culture Revolts! -Qi-
 	}
 	
 	mean_time_to_happen = {
-		months = 650
+		months = 300
 	}
 		
 	option = { #Too late to take it back now. Fight the rebels!
@@ -362,7 +362,7 @@ country_event = { #The Zhongyuan Culture Revolts! -Liang/Tang-
 	}
 	
 	mean_time_to_happen = {
-		months = 600
+		months = 325
 	}
 		
 	option = { #Too late to take it back now. Fight the rebels!
@@ -434,7 +434,7 @@ country_event = { #The Jinghuai Culture Revolts! -Ming-
 	}
 	
 	mean_time_to_happen = {
-		months = 700
+		months = 350
 	}
 		
 	option = { #Too late to take it back now. Fight the rebels!
@@ -498,7 +498,7 @@ country_event = { #The Wu Culture Revolts! -Wu-
 	}
 	
 	mean_time_to_happen = {
-		months = 750
+		months = 365
 	}
 		
 	option = { #Too late to take it back now. Fight the rebels!
@@ -558,7 +558,7 @@ country_event = { #The Min Culture Revolts! -Min-
 	}
 	
 	mean_time_to_happen = {
-		months = 750
+		months = 375
 	}
 		
 	option = { #Too late to take it back now. Fight the rebels!
@@ -629,7 +629,7 @@ country_event = { #The Hakka Culture Revolts! -Huai-
 	}
 	
 	mean_time_to_happen = {
-		months = 600
+		months = 325
 	}
 		
 	option = { #Too late to take it back now. Fight the rebels!
@@ -682,7 +682,7 @@ country_event = { #The Gan Culture Revolts! -Ning-
 	}
 	
 	mean_time_to_happen = {
-		months = 600
+		months = 325
 	}
 		
 	option = { #Too late to take it back now. Fight the rebels!
@@ -729,7 +729,7 @@ country_event = { #The Xiang Culture Revolts! -Chu-
 	}
 	
 	mean_time_to_happen = {
-		months = 650
+		months = 350
 	}
 		
 	option = { #Too late to take it back now. Fight the rebels!
@@ -776,7 +776,7 @@ country_event = { #The Miao Culture Revolts! -Miao-
 	}
 	
 	mean_time_to_happen = {
-		months = 550
+		months = 275
 	}
 		
 	option = { #Too late to take it back now. Fight the rebels!
@@ -823,7 +823,7 @@ country_event = { #The Hubei Culture Revolts! -Xi-
 	}
 	
 	mean_time_to_happen = {
-		months = 600
+		months = 325
 	}
 		
 	option = { #Too late to take it back now. Fight the rebels!
@@ -876,7 +876,7 @@ country_event = { #The Sichuanese Culture Revolts! -Shu-
 	}
 	
 	mean_time_to_happen = {
-		months = 650
+		months = 325
 	}
 		
 	option = { #Too late to take it back now. Fight the rebels!
@@ -934,7 +934,7 @@ country_event = { #The Cantonese Culture Revolts! -Yue-
 	}
 	
 	mean_time_to_happen = {
-		months = 550
+		months = 275
 	}
 		
 	option = { #Too late to take it back now. Fight the rebels!
@@ -1004,7 +1004,7 @@ country_event = { #The Tibetians think it's time for independence!
 	}
 	
 	mean_time_to_happen = {
-		months = 600
+		months = 325
 	}
 		
 	option = { #Too late to take it back now. Fight the rebels!
@@ -1075,7 +1075,7 @@ country_event = { #The Koreans think it's time for independence! All of Korea
 	}
 	
 	mean_time_to_happen = {
-		months = 350
+		months = 325
 	}
 		
 	option = { #Too late to take it back now. Fight the rebels!
@@ -1108,7 +1108,7 @@ country_event = { #The Bai/Yi think it's time for independence! -Yun-Gui Hinterl
 	}
 	
 	mean_time_to_happen = {
-		months = 400
+		months = 200
 	}
 		
 	option = { #Too late to take it back now. Fight the rebels!
@@ -1358,117 +1358,107 @@ country_event = { #The Manchurians think it's time for independence! -Manchuria/
 
 #Defunct & Never converted to the same system the above rebels use
 
-#Rebel Event in Indochina #Never Converted to New Rebel System
-country_event = { #Just in the case you somehow took land from Indochina
-	id = yuanredturban.135
-	title = yuanredturban.135.t
-	desc = yuanredturban.135.d
-	picture = CIVIL_WAR_eventPicture
-	
-	fire_only_once = yes
-	
-	trigger = {
-		always = no
-		tag = YUA
-		is_emperor_of_china = yes
-		has_disaster = red_turban_rebellion_disaster
-		NOT = { has_country_flag = red_turban_rebellion_over_flag }
-		NOT = { has_country_flag = yuan_red_turban_indochina_revolt_flag } #CLEAR AFTER THE DISASTER
-	}
-	
-	mean_time_to_happen = {
-		months = 150
-	}
-		
-	option = { #Too late to take it back now. Fight the rebels!
-		name = yuanredturban.135.a
-		set_country_flag = yuan_red_turban_indochina_revolt_flag
-		indo_china_region = {
-			limit = {
-				owner = { tag = YUA }
-			}
-			spawn_rebels = {
-				type = nationalist_rebels
-				size = 2
-				unrest = 10
-			}
-		}
-	}
-}
-#Rebel Event in Burma #Never Converted to New Rebel System
-country_event = { #Just in the case you somehow took land from Burma
-	id = yuanredturban.136
-	title = yuanredturban.136.t
-	desc = yuanredturban.136.d
-	picture = CIVIL_WAR_eventPicture
-	
-	fire_only_once = yes
-	
-	trigger = {
-		always = no
-		tag = YUA
-		is_emperor_of_china = yes
-		has_disaster = red_turban_rebellion_disaster
-		NOT = { has_country_flag = red_turban_rebellion_over_flag }
-		NOT = { has_country_flag = yuan_red_turban_burma_revolt_flag } #CLEAR AFTER THE DISASTER
-	}
-	
-	mean_time_to_happen = {
-		months = 180
-	}
-		
-	option = { #Too late to take it back now. Fight the rebels!
-		name = yuanredturban.136.a
-		set_country_flag = yuan_red_turban_burma_revolt_flag
-		burma_region = {
-			limit = {
-				owner = { tag = YUA }
-			}
-			spawn_rebels = {
-				type = nationalist_rebels
-				size = 2
-				unrest = 5
-			}
-		}
-	}
-}
-#Rebel Event in Japan #Never Converted to New Rebel System
-country_event = { #Just in the case you somehow took land from Japan
-	id = yuanredturban.137
-	title = yuanredturban.137.t
-	desc = yuanredturban.137.d
-	picture = CIVIL_WAR_eventPicture
-	
-	fire_only_once = yes
-	
-	trigger = {
-		always = no
-		tag = YUA
-		is_emperor_of_china = yes
-		has_disaster = red_turban_rebellion_disaster
-		NOT = { has_country_flag = red_turban_rebellion_over_flag }
-		NOT = { has_country_flag = yuan_red_turban_japan_revolt_flag } #CLEAR AFTER THE DISASTER
-	}
-	
-	mean_time_to_happen = {
-		months = 80
-	}
-		
-	option = { #Too late to take it back now. Fight the rebels!
-		name = yuanredturban.137.a
-		set_country_flag = yuan_red_turban_japan_revolt_flag
-		japan_region = {
-			limit = {
-				owner = { tag = YUA }
-			}
-			spawn_rebels = {
-				type = nationalist_rebels
-				size = 2
-				unrest = 5
-			}
-		}
-	}
-}
+# #Rebel Event in Indochina #Never Converted to New Rebel System
+# country_event = { #Just in the case you somehow took land from Indochina
+	# id = yuanredturban.135
+	# title = yuanredturban.135.t
+	# desc = yuanredturban.135.d
+	# picture = CIVIL_WAR_eventPicture
+	# fire_only_once = yes
+	# trigger = {
+		# always = no
+		# tag = YUA
+		# is_emperor_of_china = yes
+		# has_disaster = red_turban_rebellion_disaster
+		# NOT = { has_country_flag = red_turban_rebellion_over_flag }
+		# NOT = { has_country_flag = yuan_red_turban_indochina_revolt_flag } #CLEAR AFTER THE DISASTER
+	# }
+	# mean_time_to_happen = {
+		# months = 150
+	# }	
+	# option = { #Too late to take it back now. Fight the rebels!
+		# name = yuanredturban.135.a
+		# set_country_flag = yuan_red_turban_indochina_revolt_flag
+		# indo_china_region = {
+			# limit = {
+				# owner = { tag = YUA }
+			# }
+			# spawn_rebels = {
+				# type = nationalist_rebels
+				# size = 2
+				# unrest = 10
+			# }
+		# }
+	# }
+# }
+
+# #Rebel Event in Burma #Never Converted to New Rebel System
+# country_event = { #Just in the case you somehow took land from Burma
+	# id = yuanredturban.136
+	# title = yuanredturban.136.t
+	# desc = yuanredturban.136.d
+	# picture = CIVIL_WAR_eventPicture
+	# fire_only_once = yes
+	# trigger = {
+		# always = no
+		# tag = YUA
+		# is_emperor_of_china = yes
+		# has_disaster = red_turban_rebellion_disaster
+		# NOT = { has_country_flag = red_turban_rebellion_over_flag }
+		# NOT = { has_country_flag = yuan_red_turban_burma_revolt_flag } #CLEAR AFTER THE DISASTER
+	# }
+	# mean_time_to_happen = {
+		# months = 180
+	# }
+	# option = { #Too late to take it back now. Fight the rebels!
+		# name = yuanredturban.136.a
+		# set_country_flag = yuan_red_turban_burma_revolt_flag
+		# burma_region = {
+			# limit = {
+				# owner = { tag = YUA }
+			# }
+			# spawn_rebels = {
+				# type = nationalist_rebels
+				# size = 2
+				# unrest = 5
+			# }
+		# }
+	# }
+# }
+
+# #Rebel Event in Japan #Never Converted to New Rebel System
+# country_event = { #Just in the case you somehow took land from Japan
+	# id = yuanredturban.137
+	# title = yuanredturban.137.t
+	# desc = yuanredturban.137.d
+	# picture = CIVIL_WAR_eventPicture
+	# fire_only_once = yes
+	# trigger = {
+		# always = no
+		# tag = YUA
+		# is_emperor_of_china = yes
+		# has_disaster = red_turban_rebellion_disaster
+		# NOT = { has_country_flag = red_turban_rebellion_over_flag }
+		# NOT = { has_country_flag = yuan_red_turban_japan_revolt_flag } #CLEAR AFTER THE DISASTER
+	# }
+	# mean_time_to_happen = {
+		# months = 80
+	# }
+	# option = { #Too late to take it back now. Fight the rebels!
+		# name = yuanredturban.137.a
+		# set_country_flag = yuan_red_turban_japan_revolt_flag
+		# japan_region = {
+			# limit = {
+				# owner = { tag = YUA }
+			# }
+			# spawn_rebels = {
+				# type = nationalist_rebels
+				# size = 2
+				# unrest = 5
+			# }
+		# }
+	# }
+# }
 
 
 

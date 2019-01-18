@@ -1,6 +1,6 @@
 government = monarchy
 add_government_reform = iqta
-technology_group = muslim
+technology_group = east_african #It changes to muslim later on
 unit_type = sub_saharan
 religion = sunni
 primary_culture = somali
@@ -43,6 +43,7 @@ religious_school = shafii_school
 # Sultanate of Adal #
 
 1415.1.1 = {
+	technology_group = muslim #Moved here for balance sake, prevents early blob-adal
 	monarch = {
 		name = "Sabr"
 		dynasty = "Walashma"
