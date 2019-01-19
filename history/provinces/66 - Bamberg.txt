@@ -23,7 +23,11 @@ discovered_by = ottoman
 } #BT In
 
 1356.12.26  = { 
-				owner = WBG controller = WBG remove_core = SWB remove_core = BAM remove_claim = FRC
+	owner = WBG
+	controller = WBG
+	remove_core = SWB
+	#remove_core = BAM
+	remove_claim = FRC
 } #BT Out
 
 1632.2.1 = { controller = SWE }
@@ -33,5 +37,6 @@ discovered_by = ottoman
 	controller = BAV
 	add_core = BAV
 	remove_core = WBG
+	remove_core = BAM
 } # Annexed by Bavaria
 1806.7.12 = { hre = no } # The Holy Roman Empire is dissolved

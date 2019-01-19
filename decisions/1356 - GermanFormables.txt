@@ -13,6 +13,7 @@ country_decisions = {
 			NOT = { tag = SWA }
 			NOT = { tag = HAN }
 			NOT = { tag = BOH }
+			NOT = { tag = RHI }
 			was_never_end_game_tag_trigger = yes
 		}
 		provinces_to_highlight = {
@@ -31,8 +32,14 @@ country_decisions = {
 			}
 		}
 		allow = {
+			adm_tech = 16
+			is_free_or_tributary_trigger = yes
+			is_nomad = no
 			is_at_war = no
-			is_subject = no
+			OR = {
+				NOT = { is_part_of_hre = yes }
+				is_elector = yes
+			}
 			owns_core_province = 1872
 			owns_core_province = 74
 			owns_core_province = 75
@@ -50,6 +57,18 @@ country_decisions = {
 				duration = 3650
 			}
 			change_government = monarchy
+			if = {
+				limit = {
+					NOT = { government_rank = 2 }
+				}
+				set_government_rank = 2
+			}
+			if = {
+				limit = {
+					is_playing_custom_nation = no
+				}
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
 		}
 		ai_will_do = {
 			factor = 1
@@ -165,6 +184,8 @@ country_decisions = {
 			NOT = { tag = SWA }
 			NOT = { tag = HAN }
 			NOT = { tag = BOH }
+			NOT = { tag = RHI }
+			NOT = { tag = BAV }
 			was_never_end_game_tag_trigger = yes
 		}
 		provinces_to_highlight = {
@@ -180,8 +201,14 @@ country_decisions = {
 			}
 		}
 		allow = {
+			adm_tech = 16
+			is_free_or_tributary_trigger = yes
+			is_nomad = no
 			is_at_war = no
-			is_subject = no
+			OR = {
+				NOT = { is_part_of_hre = yes }
+				is_elector = yes
+			}
 			owns_core_province = 59
 			owns_core_province = 62
 			owns_core_province = 63
@@ -196,6 +223,18 @@ country_decisions = {
 				duration = 3650
 			}
 			change_government = monarchy
+			if = {
+				limit = {
+					NOT = { government_rank = 2 }
+				}
+				set_government_rank = 2
+			}
+			if = {
+				limit = {
+					is_playing_custom_nation = no
+				}
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
 		}
 		ai_will_do = {
 			factor = 1
@@ -215,6 +254,7 @@ country_decisions = {
 			NOT = { tag = SWA }
 			NOT = { tag = HAN }
 			NOT = { tag = BOH }
+			NOT = { tag = RHI }
 			was_never_end_game_tag_trigger = yes
 		}
 		provinces_to_highlight = {
@@ -230,8 +270,14 @@ country_decisions = {
 			}
 		}
 		allow = {
+			adm_tech = 16
+			is_free_or_tributary_trigger = yes
+			is_nomad = no
 			is_at_war = no
-			is_subject = no
+			OR = {
+				NOT = { is_part_of_hre = yes }
+				is_elector = yes
+			}
 			owns_core_province = 2955
 			owns_core_province = 2957
 			owns_core_province = 2956
@@ -246,6 +292,89 @@ country_decisions = {
 				duration = 3650
 			}
 			change_government = monarchy
+				if = {
+				limit = {
+					NOT = { government_rank = 2 }
+				}
+				set_government_rank = 2
+			}
+			if = {
+				limit = {
+					is_playing_custom_nation = no
+				}
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	rhineland_nation = {
+		major = yes
+		potential = {
+			primary_culture = hessian 
+			NOT = { exists = RHI }
+			NOT = { tag = BAV }
+			NOT = { tag = SAX }
+			NOT = { tag = GER }
+			NOT = { tag = HAB }
+			NOT = { tag = BRA }
+			NOT = { tag = TEU }
+			NOT = { tag = SWA }
+			NOT = { tag = HAN }
+			NOT = { tag = BOH }
+			NOT = { tag = RHI }
+			was_never_end_game_tag_trigger = yes
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 1876 #Frankfurt
+				province_id = 77 #Heidelberg
+				province_id = 85 #Kologne
+				province_id = 1878 #Aachen
+				province_id = 81 #Hessen
+				province_id = 80 #Trier
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		allow = {
+			adm_tech = 16
+			is_free_or_tributary_trigger = yes
+			is_nomad = no
+			is_at_war = no
+			OR = {
+				NOT = { is_part_of_hre = yes }
+				is_elector = yes
+			}
+			owns_core_province = 1876 #Frankfurt
+			owns_core_province = 77 #Heidelberg
+			owns_core_province = 85 #Cologne
+			owns_core_province = 1878 #Aachen
+			owns_core_province = 81 #Hessen
+			owns_core_province = 80 #Trier
+		}
+		effect = {
+			change_tag = RHI
+			add_prestige = 10
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 3650
+			}
+			change_government = monarchy
+			if = {
+				limit = {
+					NOT = { government_rank = 2 }
+				}
+				set_government_rank = 2
+			}
+			if = {
+				limit = {
+					is_playing_custom_nation = no
+				}
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
 		}
 		ai_will_do = {
 			factor = 1

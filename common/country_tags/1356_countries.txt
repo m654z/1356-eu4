@@ -9,8 +9,6 @@ VID = "countries/Vidin.txt"
 TES = "countries/Thessaly.txt"
 MAC = "countries/Macedonia.txt"
 CPP = "countries/Cappadocia.txt"
-BYT = "countries/Bithynia.txt"
-LYC = "countries/Lycia.txt"
 
 #British Isles 
 YRK = "countries/York.txt"
@@ -18,10 +16,10 @@ LNC = "countries/Lancaster.txt"
 
 #Colonies
 
-
-#Eastern Europe
+#Poland-Hungary-Lithuania
 CUM = "countries/Cumania.txt"
 KOG = "countries/Konigsberg.txt"
+LUS = "countries/Lusatia.txt"
 
 #France 
 PBG = "countries/Palatinate of Burgundy.txt"
@@ -35,6 +33,7 @@ ARE = "countries/Arles.txt"
 LOT = "countries/Lotharingia.txt"
 VLS = "countries/Valois.txt"
 NCH = "countries/CharlamagneEmpire.txt"
+OCC = "countries/Occitania.txt"
 
 	
 #HRE
@@ -49,6 +48,7 @@ RAE = "countries/Raetia.txt"
 ZUR = "countries/Zurich.txt"
 BRN = "countries/Bern.txt"
 VAU = "countries/Vaud.txt"
+RHI = "countries/Rhineland.txt"
 
 	
 #Spain

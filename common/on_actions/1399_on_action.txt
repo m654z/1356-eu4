@@ -1,6 +1,6 @@
 on_startup = {
 events = { 
-		hansa.1
+		#hansa.1
 		barbarossa.1
 }
 	if = {

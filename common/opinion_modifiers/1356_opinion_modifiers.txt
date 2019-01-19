@@ -32,28 +32,28 @@ avignon_pap_end = {
 	yearly_decay = 0.75
 }
 
-member_of_hansa_op = {
-	opinion = 100
-}
+# member_of_hansa_op = {
+	# opinion = 100
+# }
 
-dismantled_hansa = {
-	opinion = -100
-	yearly_decay = 2.5
-}
+# dismantled_hansa = {
+	# opinion = -100
+	# yearly_decay = 2.5
+# }
 
-left_hansa = {
-	opinion = -50
-	yearly_decay = 2.5
-}
-passed_reform_opposed = {
-	opinion = -100
-	yearly_decay = 3
-}
+# left_hansa = {
+	# opinion = -50
+	# yearly_decay = 2.5
+# }
+# passed_reform_opposed = {
+	# opinion = -100
+	# yearly_decay = 3
+# }
 
-left_hansa_reform = {
-	opinion = -100
-	yearly_decay = 2.5
-}
+# left_hansa_reform = {
+	# opinion = -100
+	# yearly_decay = 2.5
+# }
 pfaffenbrief_created = {
 	opinion = 100
 	yearly_decay = 1.5
