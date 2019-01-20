@@ -24,6 +24,7 @@ french_missions_integrate_vassals = { #Integrate the Feudal Vassals Tree
 				NOT = { exists = ORL }
 			}
 			is_year = 1363
+			is_at_war = no
 			ORL = {
 				has_opinion = {
 					who = FRA
@@ -52,6 +53,7 @@ french_missions_integrate_vassals = { #Integrate the Feudal Vassals Tree
 			}
 			stability = 1
 			is_year = 1373
+			is_at_war = no
 			FOZ = {
 				has_opinion = {
 					who = FRA
@@ -79,6 +81,7 @@ french_missions_integrate_vassals = { #Integrate the Feudal Vassals Tree
 			}
 			treasury = 200
 			is_year = 1378
+			is_at_war = no
 			BOU = {
 				has_opinion = {
 					who = FRA
@@ -110,6 +113,7 @@ french_missions_integrate_vassals = { #Integrate the Feudal Vassals Tree
 				NOT = { exists = ALE }
 			}
 			is_year = 1386
+			is_at_war = no
 			ALE = {
 				has_opinion = {
 					who = FRA
@@ -137,6 +141,7 @@ french_missions_integrate_vassals = { #Integrate the Feudal Vassals Tree
 			}
 			prestige = 25
 			is_year = 1390
+			is_at_war = no
 			ANJ = {
 				has_opinion = {
 					who = FRA
@@ -171,17 +176,24 @@ french_missions_integrate_vassals = { #Integrate the Feudal Vassals Tree
 			}
 			prestige = 15
 			is_year = 1400
-			AUV = {
-				has_opinion = {
-					who = FRA
-					value = 190
+			is_at_war = no
+			OR = {
+				AUV = {
+					has_opinion = {
+						who = FRA
+						value = 190
+					}
 				}
+				NOT = { exists = AUV }
 			}
-			FOI = {
-				has_opinion = {
-					who = FRA
-					value = 190
+			OR = {
+				FOI = {
+					has_opinion = {
+						who = FRA
+						value = 190
+					}
 				}
+				NOT = { exists = FOI }
 			}
 		}
 		effect = {
@@ -584,6 +596,7 @@ french_missions_integrate_dau = {
 				NOT = { exists = DAU }
 			}			
 			is_year = 1370
+			is_at_war = no
 			DAU = {
 				has_opinion = {
 					who = FRA

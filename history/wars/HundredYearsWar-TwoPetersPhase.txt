@@ -15,7 +15,6 @@ war_goal = {
 	add_attacker = GRA
 	add_attacker = GUY
 	add_attacker = AMG
-	add_attacker = FOI
 	add_attacker = MNF
 	add_attacker = NAV
 	add_defender = FRA
@@ -29,6 +28,7 @@ war_goal = {
 	add_defender = ORL
 	add_defender = BLS
 	add_defender = FOZ
+	add_defender = FOI #Should be attacker, but it caused issues with them being a vassal at war with their overlord 
 }
 
 1356.12.26 = {
@@ -62,7 +62,6 @@ war_goal = {
 	rem_attacker = GRA
 	rem_attacker = GUY
 	rem_attacker = AMG
-	rem_attacker = FOI
 	rem_attacker = MNF
 	rem_attacker = NAV
 	rem_defender = FRA
@@ -76,4 +75,5 @@ war_goal = {
 	rem_defender = ORL
 	rem_defender = BLS
 	rem_defender = FOZ
+	rem_defender = FOI
 }
